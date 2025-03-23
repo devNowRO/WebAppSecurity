@@ -1,0 +1,15 @@
+1. The research process begins by selecting seventy-five Web applications from different online sources listed in https://github.com/daisy2310/ReadMe/blob/main/Web%20apps%20sources.xlsx. 
+2. Four SAST tools (Yasca, Progpilot, Snyk, and SonarQube) and five DAST tools (OWASP ZAP, 
+Wapiti, Vega, Iron WASP, and Burp Suite) were selected. Their download and installation steps are mentioned in https://github.com/daisy2310/ReadMe/ 
+3. These applications are then locally deployed on windows 10 operating system using Xamp web server
+and MySql database.
+4. SAST tools scans source code of web apps and list the vuln. For scanning using DAST tools, we run the web apps dynamically and the url is provided to DAST tools for scanning. 
+For tools present in windows where the web apps are deployed, it is easy to scan providing the localhost url.
+When web apps are deployed in windows and tools (e.g Progpilot, Wapiti) are present in other OS (e.g kali linux), we set the network adapter to bridge to make the wep apps url accessible in kali as well.
+5. All tools list the vuln. found once the scan is completed. Tools except ProgPilot and Snyk generates report of vuln. found. These reports are then saved to record the scanned results.
+6. Each generated report was analysed to categorise the vulnerabilities found into the
+vulnerability types listed in CWE Top 25:2023 and OWASP Top 10:2021. Some tools did provide the categorization itself to OWASP mostly, 
+and in some the categorization was done by examining the vulnerability using OWASP and CWE provided description . 
+
+The details of the tools and the reports generated are available at https://github.com/daisy2310/. 
+A summary of the results is available at https://github.com/daisy2310/ReadMe/blob/main/Result%26Analysis.xlsx.
