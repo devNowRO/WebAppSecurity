@@ -1,0 +1,3056 @@
+[
+    {
+        "source_name": [
+            "$pagetitle"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            258
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/aboutus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 353,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/aboutus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f21300b6b12c8d5d98307c18ff11bee87fe21e3fa8286b108aedb7b392600133",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3180
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3180,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ff619845a02b91158fd517f686af010919a4da2028e72e9b50149a3dd3606a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3484
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3484,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "09ed03098e0626972f7a4588b7561f1954dde474e733607729e6028557ab469e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$lockernum",
+            "$keynum"
+        ],
+        "source_line": [
+            18,
+            19
+        ],
+        "source_column": [
+            407,
+            440
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 46,
+        "sink_column": 1513,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b7b81bfc3a93359df41b967d294a634e83ab41e4f853c7ad3bcf1074156e865f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ahname",
+            "$emailid",
+            "$mobilenumber",
+            "$comadd",
+            "$occupation",
+            "$lockersize",
+            "$lockernum",
+            "$keynum",
+            "$instruction",
+            "$nomineename"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+        ],
+        "source_column": [
+            215,
+            242,
+            271,
+            310,
+            337,
+            372,
+            407,
+            440,
+            467,
+            504
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 54,
+        "sink_column": 1917,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "75e9ab14c3977afc7cc71b3e49b0ea9aac568ded6a27c273e643a111645e6087",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            170
+        ],
+        "source_column": [
+            6908
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 170,
+        "sink_column": 6908,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c90f803001bd88d91e789a0e277666544c02c26ee10bcb3e305d88b1b5c3154",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"SizeofLocker\"]"
+        ],
+        "source_line": [
+            170
+        ],
+        "source_column": [
+            6936
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 170,
+        "sink_column": 6936,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b96c5c4368c582ae603b29e638aae62de607769c4e0b5cc208be1962709edd62",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$lockersize",
+            "$lockerprice"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            215,
+            250
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-lockertype.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-lockertype.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 296,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-lockertype.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a63f88a264c3eefb4f0c920b587500360c8192ebbfed4762c6ef799dd253625a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            13,
+            15,
+            14
+        ],
+        "source_column": [
+            243,
+            280,
+            335,
+            308
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-subadmin.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 429,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/add-subadmin.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "03d8f12e719eb5bbf2b45f7d2b19e094b40c8fd5c36b56134be7f7dc7b462e49",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerNumber\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3442
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3442,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9adac5432c13d019734237040bf5f0c982f237acbf639df6dea21e84ddfde7ab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"KeyNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3509
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3509,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b74a4168e5fe53b8c698c6f6d62c63a97eae7d091aab5d2b1ed565bb6584af7a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3573
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3573,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d36d7b02b601b7c3518dd39080657f940a917252571f83cd24ef58163539350",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3636
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3636,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dc413b5a4b14dada6a5cdfc8d081b60afbb58a25417440f66d66d030820d5def",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3703
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3703,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "11cc181812e1344c114500747d08e078569c7ed5013164bfb46dd645c9041d80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerAssigndate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3998
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3998,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d8bca9da4160448e4303ce9489f15feb951cde9faae8402fc94d11911da38610",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4134
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4134,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6a33ab1305766e55d1bac880131165ac1d22400e17fc7f9d60ecce2f64fd672",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4274
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4274,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6a33ab1305766e55d1bac880131165ac1d22400e17fc7f9d60ecce2f64fd672",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 26,
+        "sink_column": 778,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f28ce0b5cc5aba40b5f54ba2295db33272705d539da72098db94656e005baf35",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3265
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 97,
+        "sink_column": 3295,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f28ce0b5cc5aba40b5f54ba2295db33272705d539da72098db94656e005baf35",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3713
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3713,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "63bdf4bd5b436d0bfbd44bdff187b10ed3df871f46606e58dfe041642e366a29",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"IDproof\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3931
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3931,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeidproof.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a490a97a2b47954cf3a166459daee46fab802e01a9510994c5c869b886e694d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 26,
+        "sink_column": 707,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f4c4d43330d3fe03555b1d25ad3d57065aa40725e0b81c28c37f168c79d0adb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3184
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 97,
+        "sink_column": 3214,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f4c4d43330d3fe03555b1d25ad3d57065aa40725e0b81c28c37f168c79d0adb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3632
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3632,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7f0e13a8c86c88246d6066c9d4a9a427de66b59a3e01b0324b86ab062992246e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Photo\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3839
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3839,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01d1a618a9c9698c6e5bb8b1d35c085b10b9b661564b1ea55f3e0509391b562e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Photo\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3903
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3903,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/changeimage1.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01d1a618a9c9698c6e5bb8b1d35c085b10b9b661564b1ea55f3e0509391b562e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            109
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 144,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5f5ca580a53401b2ca712ab9610fdc76fdcb05d72c4f321cf76a13504beac7e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$email",
+            "$mobnum"
+        ],
+        "source_line": [
+            15,
+            13,
+            14
+        ],
+        "source_column": [
+            312,
+            258,
+            284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 408,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bbe1553d434ecc081799591c622bd58999976cc8946b9fd360ffce9d8cb21115",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3097
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3097,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f07571f2bf80cabf0a0c09eefb17a07270998b09bbe934413f124323c82c54d8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3400
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3400,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00daf4be38d507b6b56dbd7ee2725540b799981a276e9d16c49332f84e3ac5b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3647,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2162adb19d14fe18255e793062771561b95873c20eb14612e6afcb367bc81d00",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3875
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3875,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "57b4aab697280e0fc1b664a98a4714fef21038bddc7a306df9b6c3d4ba4d8deb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ahname",
+            "$emailid",
+            "$mobilenumber",
+            "$comadd",
+            "$occupation",
+            "$lockersize",
+            "$instruction",
+            "$nomineename",
+            "$nomineerelation",
+            "$valuabledetails"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+        ],
+        "source_column": [
+            215,
+            242,
+            271,
+            310,
+            337,
+            372,
+            407,
+            444,
+            481,
+            526
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 662,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ea8983fad9d9837be7bfab4901190ad1b176300a8bcd61cdebdd2a2de16fa1c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            5807
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 5807,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "81bcfdfe2ba29f4e6214d510c7d926d720bc7d5268ec6ca1cb980d82aedc7bc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SizeofLocker\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            5832
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 5832,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68875225dc6cd50613e17e1a6ebd91787edae8c8e7b113feede71354b0a80a15",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4016
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4016,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "333d7b9c9de59bee7b329eb4ee61ee60ed0f92dcda82c7c12797db04a38051cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4288
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4288,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4f12829a4cf0e00f915e43756e7b4c1ec050867b782f9d3fc5312a8bcd92886",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4653
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4653,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e2948d8ce600a66980930c16210f5a9121847c1e95364938a03590a9e59bf2c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CompleteAddress\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4917
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4917,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "751c86fe4559a369d8dcf531d9cda7d5e44fa2b07bd8173ef8c4912cbe838e59",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Occupation\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            5220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 5220,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ff5baf1fdb1ceababa830416df9805107e9ada16d4f2be0f574116bd6d48c26",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"blid\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            5553
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 5553,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c9ad633d88eff617f7e4111997691d578f61394d2ff0a99004d42a12debc809",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"SizeofLocker\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            5583
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 5583,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6111ca5f4ad670538ae11e09ce2491e5cd92284ac1474cf41c4e78ce413efa12",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerNumber\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            6136
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 6136,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "092ef70583edecd77dfd85ae0376c624b0b52f3313d8db8fb08c2524c02cc393",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"KeyNumber\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            6417
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 6417,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "024a38f23c113e40c4d26b5d748ea1d49cfbfa6ffc6b0b13f0ffd086e7d89bf6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Instructions\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            6693
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 6693,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "489c44144769c08e8d8fa08376f0110b8c44eece26506d7e115440d02b990946",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"NomineeName\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            6959
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 6959,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bed52f5bf18c129530a461a883856c02d8f8494b9229b8fab56515ac71bf4c35",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Relationwithnominee\"]"
+        ],
+        "source_line": [
+            156
+        ],
+        "source_column": [
+            7254
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 156,
+        "sink_column": 7254,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ac46371df342625129c7ef035ea7ba0eefedb8f7d3649122384aa424d58272b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ValuableDetails\"]"
+        ],
+        "source_line": [
+            160
+        ],
+        "source_column": [
+            7558
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 160,
+        "sink_column": 7558,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "816e9b73e0745a39d3d290da8c5e0c033657abc713fc400b3193e99154e7cf30",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"IDcard\"]"
+        ],
+        "source_line": [
+            166
+        ],
+        "source_column": [
+            7877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 166,
+        "sink_column": 7877,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e02de304cf8451fa21949bee85da4ec674afa6b549bd2a0f3269eae6b6c9e9f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"IDcard\"]"
+        ],
+        "source_line": [
+            166
+        ],
+        "source_column": [
+            7909
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 166,
+        "sink_column": 7909,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e02de304cf8451fa21949bee85da4ec674afa6b549bd2a0f3269eae6b6c9e9f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"IDproof\"]"
+        ],
+        "source_line": [
+            176
+        ],
+        "source_column": [
+            8397
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 176,
+        "sink_column": 8397,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60e5986be37ab8a0b2b622f3d6edad2cf55817faee63fc641f6abf5433e74e02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            177
+        ],
+        "source_column": [
+            8552
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 177,
+        "sink_column": 8552,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b9b0d19bf701d626dd887150dab0896aa78d79256fa942a6057549d9b8ec51a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Photo\"]"
+        ],
+        "source_line": [
+            182
+        ],
+        "source_column": [
+            8798
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 182,
+        "sink_column": 8798,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af87c4b4e45586513c0bbda3c8d8998994d38fd2262097f784f093039a37f3d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Photo\"]"
+        ],
+        "source_line": [
+            182
+        ],
+        "source_column": [
+            8862
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 182,
+        "sink_column": 8862,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af87c4b4e45586513c0bbda3c8d8998994d38fd2262097f784f093039a37f3d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            182
+        ],
+        "source_column": [
+            8928
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 182,
+        "sink_column": 8928,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b9b0d19bf701d626dd887150dab0896aa78d79256fa942a6057549d9b8ec51a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$lockersize",
+            "$lockerprice"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            252,
+            287
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 361,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "51086af64f8b4f485ace0c312c55ba09140536cda3670889cc8b6597f7c7f671",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3304
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3304,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c9735f4b97db932e6a82b4c2f5a1dec07c823e9b3c84bc72949076e4acbe0696",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"SizeofLocker\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3333
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3333,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a26b4fd71a936133883f0bc36a9f51204a0b9ed421f0bb670b1c19e260bc99c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Priceoflocker\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3946
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3946,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "194cd31be3a65febf7b236696617466d93f3b09242f340185437f2133ed68bb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            252,
+            307,
+            280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8a9c5f68168df795e564484b9670adc4661fffcacffc3c8109f11d5f495debb7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3342
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3342,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d96ff972110b79e6be343dc8b47cde12eaf143719c460978a237a14437fdb027",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3647,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b363528be53865a3ae479a3a35f8e2bb703ac0c1887064f404536e42aa100df9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            4037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 4037,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d0f20c63a6a6d8e1efcafd11365d330ce1ea1799ae34161fe19a60589b519ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4433
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4433,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "79e2a9bacc3f437552d9733b53e62722d1178218156ea7fe985dec15d76298c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            91
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 168,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "47b3bf76a5e65bb414ba9fb0ae3167c7282d24243681478405e80d10b1f05ffc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerNumber\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3667
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3667,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00f199f2462eecbb963d57beeea01ad2c00cd8146c76700de5ca691efe29d31f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"KeyNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3734
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3734,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3266758a89aa80ec345c9a00cb5d76d64670e125e1cdd87c9a910e5268e11367",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3798
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3798,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "97190b2fbd861a2bd54da90595f1149d811bbe41d78b2bec289acbd4cadbb990",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3861
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3861,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "61e6c3a05ccb5c994deffd11146839671db3d7683bd37983b8b4826609095585",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3928
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3928,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aea4fe9b2681b8866813f8876eda9a2445f8abca3467e91772f2f8650263b0d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerAssigndate\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4223
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4223,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a163ee1b5a3547046ba3499dac70411e0fd7617f15d3ebe54ae30e16318ddb2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            4359
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 4359,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f9b3415054583eb61a37775934183a43ec5e5a31a16292a0066b337c81a94fd2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            4499
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 4499,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-locker-form.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f9b3415054583eb61a37775934183a43ec5e5a31a16292a0066b337c81a94fd2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"SizeofLocker\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3514
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3514,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf16509099dc16e650943598393ed2bb951942ee31001f57780a6f0c209548c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Priceoflocker\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3581
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3581,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8b8902b40ef68bb629070a3a1e6fe9e9a4c38fa748bdb8828d05af014a626b50",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CreationDate\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3648
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3648,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ab2d42b49a59f7b85ee12e01a624dba987ebd659a7f7a82fe09df978d5a5a08f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3773
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3773,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58852e74522fdbc4f91bbdf9c18d0839b2798cbb06cd6e8e5cfb4f8fdbc9144d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3912
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3912,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-lockertype.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58852e74522fdbc4f91bbdf9c18d0839b2798cbb06cd6e8e5cfb4f8fdbc9144d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3576
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3576,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cdbbdfd69a4192a55ac4c4fab9b10ddbcc4aafc2a8eaf38e75349d933130393c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3644
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3644,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "146d2c7a8adad79bfeb70aefabb1591e9da139bbfd3f0f770404161fd44d3dac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3707
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3707,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4e38498e7e3bc209e65a4a26c7ac32ea66367a3a03229eb3db01c9bb3dcd7651",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3767
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3767,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7199336cfd5ae1ca6ef149c1e66550bca94969a56f49aec44e64257add4c4312",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3834
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3834,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea0c12ea8f96f37a4655c63da5180f7b7c90cc5a96df36a867bffaa0ce2e0611",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3940
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3940,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e515ffd230fe1a2b3f3a4ef677b5619cc39481d4a52e04db0511c1ad4925644",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4108
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4108,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e515ffd230fe1a2b3f3a4ef677b5619cc39481d4a52e04db0511c1ad4925644",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4350
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4350,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e515ffd230fe1a2b3f3a4ef677b5619cc39481d4a52e04db0511c1ad4925644",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/password-recovery.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 205,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ec20e03772bf47e5b208e3522043d65025d008cd870184aed787a23823a36fd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/password-recovery.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 373,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ec20e03772bf47e5b208e3522043d65025d008cd870184aed787a23823a36fd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            252,
+            307,
+            280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8e7612fba6241d6e4f0b453db076c4400ee24adc52a6ea580c7c1b482713c96c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3273
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3273,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21830350227cac54825745b7173308ef0e2598a79fc750da19ecd5b4118e68b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3575
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3575,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0f8e2feefc90cda382ee3700fddc188a221f9539998ea1f00198d8bc77ea518",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3962
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3962,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f66e5231dbe8ac376a8479234dd3e0a9382f74cafbd7c0f47abbbac9582e1360",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4370
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4370,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc14b2972d7e9be3b2e77674e0b2dc1581771af8f8ad7d79eb4f6b8459a7a4ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4689
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4689,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18597663f69cda8852739a2855d0ee36d81a619d135433ee2479ec2daed8d30b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchby"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1563
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1671,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "65a154a2e11ea5b7a16963d476d565d07d8c2596d71e7a362b522ff4de1e6830",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchby"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1563
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 93,
+        "sink_column": 3089,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5bbcdfafca90c9575985c0f014129e0b25646517039c1a197b47846d06bf2a01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3411
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3411,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc1d963a1afb84fc2acc147e7ec352447759ee4c5412d8bab286dfe86624cf03",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"KeyNumber\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3478
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3478,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8004a47257365fdc4fbdf7d1318415b1a03f1c5e178f231b782d6d8272a956c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3542
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3542,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac4af1413dcbe0c4593b7b2f89ccf77151a329552402e9eae946bed0bc4dc56d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3605
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3605,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fcf00da60084e9624fc27de61387885ae20c74b474c67521cd6619379bf36e8f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3672
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3672,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "369297faa68a8976d9ccc61a36ba29e6a19fb31ed6ceb7eee909d777f35f9c11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerAssigndate\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3967,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "337ce85f19f725a796b573e5919aa8d572366efd89c09aeaed778239177ff2b5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4103
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4103,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "105f9a6773b4fef6386bcec8c29a90b6e8b820f728707e9e5cc79ca4cb5be33a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4243,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/banker\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "105f9a6773b4fef6386bcec8c29a90b6e8b820f728707e9e5cc79ca4cb5be33a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1898
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1898,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eb80f0729da08a83f1e16991f148337318a88d32459866d210536025a7696a19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4125,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eb80f0729da08a83f1e16991f148337318a88d32459866d210536025a7696a19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            4535
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 4535,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f4270cdf25a2d9576aaac1203f46885cfffd72326c23eb34e5efd8954ff3b89",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            4898
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 4898,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3987cadd3da877b6637805755e1b8a3ab6985477ad3ba39167a15d77ad65426c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchby"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1365
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 1488,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "418a1d73e2736350fd50bcefc5c0e789d9a8d65bd4f6b4811ac2828412d5e311",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchby"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1365
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 58,
+        "sink_column": 2193,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b5ba05d7c98062bb71ee63f5997a457af8f10e326a99434283e3fbdc4938e51c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerNumber\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            2518
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 2518,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa2e70687bd81c4b3792c2159ac9fe046834bdcf9b7c549e6480c01461e50ec9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"KeyNumber\"]"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            2585
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2585,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fafad79f58250fceacd4e113e0908d48ce85bda15166bb2eec41800571dc8fe8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2649
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 2649,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eb328af01082fd2a9201705ccfdae19e887467442d437e43cdffbf30fa8adc21",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2712
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 2712,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "730152380f8169c22213e0c8018faced26afbf8bfe702e7a9ba98d080d2a8f62",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2779
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2779,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3213f1358416f244ac6181379c063e3dc51ee5cb5f2010ee1964adb393380922",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerAssigndate\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            3074
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 3074,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca51455e1d2b6273970ab9f79ba5d81ac1e235ec39da5d1fe61638f89edbe917",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3210
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3210,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/search-locker-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "912d6bbb393d5c9f9ab2ab8799fbdaa0e6413a45977a840059da2b3467c2e1c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2088
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 2088,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1132928d522759ec89117b4d830b461935319b69448b3993506f50419f1c9c41",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2155
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2155,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f3b76af660ecafe6728f98d969a4ae3bd65585b5ba7736157e7b04d81fbcd481",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2242
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2242,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8503d43a04a2bb5e15112e429f78c5f1caed3bad5fcb4e957da9dfe7ddf0bd9b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CompleteAddress\"]"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            2324
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 2324,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "46f440c281dc07f2ba4cac57756dc8c2048ee3c3d0e44826179983f16c7848dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Occupation\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2418
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 2418,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70eaa34caa54938f135da0f5a97d3790ea68b560ec62555db2ee17d5d1c52e1d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"SizeofLocker\"]"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            2496
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2496,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68b2c1b7fa84679e3c5fb8cbf567052ec0c49aba2cc2b40fb23c0ee226216611",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LockerNumber\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2590
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2590,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9100580e3dbdf73bbf905bd3e7b33bd14bf0f73e2c1a2aca9499479123937125",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"KeyNumber\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            2666
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2666,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f78090edd33d2aaccc8c347f018fd0c1070d2c3c9a0a3e1c2eed3e745b0fa85e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Instructions\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2763
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2763,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "20da1604aa939683ea7ee6955469743cbba03e34ce787ce7d7e8722e99a11067",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"NomineeName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2844
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2844,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2682954f7d833bd547283c8fb104faba6de4a92650c72740693a78f1b8a93e8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Relationwithnominee\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2945
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2945,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a802b4a802558dc0724c1832c125ee6e994e73f46e06b97e201c29c36a27a51a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ValuableDetails\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3034
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 3034,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2e4368e6cbe1ff1f5f8daf53737418df999139bb41008e303933b76e8cc41a08",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"IDcard\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3126
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3126,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea5312840409d5a95bc1892bfd0c91791d3b29b522ac360c65f53dc6146a9cdf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"IDproof\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3228
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3228,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0faf2eb5bda92c91f2e6b9462e3d2b090eb3ffb8bcae6d8e91edba985238abb5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Photo\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3423
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3423,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e29621a58d1ee1141c28d083e3f69db97354349218a4cd83de4a13bf86ea604",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Photo\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3487
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3487,
+        "sink_file": "\/home\/kali\/Downloads\/22.Bank-locker-Managament-System\/blms\/view-assign-locker.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e29621a58d1ee1141c28d083e3f69db97354349218a4cd83de4a13bf86ea604",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,1190 @@
+[
+    {
+        "source_name": [
+            "$fetch_array_return[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3573
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 119,
+        "sink_column": 3506,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1d8cb9ea0ba30ad4695a75417c091b27bb58f6197d9898499571d0deeb43ed00",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_SERVER[\"HTTP_REFERER\"]"
+        ],
+        "source_line": [
+            188
+        ],
+        "source_column": [
+            5473
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 188,
+        "sink_column": 5454,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "0425ff99d11dc7ef16a8df92468a2ad2145dbb1abd9a15990fdc68c2557e10b5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data"
+        ],
+        "source_line": [
+            245
+        ],
+        "source_column": [
+            7398
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 246,
+        "sink_column": 7450,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dcd199395b62c69f9321c86c6dae91048761865835794be2d977e8a7ab350437",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            248
+        ],
+        "source_column": [
+            7577
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 248,
+        "sink_column": 7530,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f35814c5f084593499e284f044944058c7b399c8af0a4a591df3c43b3e9d019f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fetch_array_return[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3573
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/ajax.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 119,
+        "sink_column": 3506,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b7005e1997b1cdfc36508c3b3a03f667beab61bd9a0fbf5fd3436f4bacec1f80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$save"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            1228
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/ajax.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 1281,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/ajax.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7525347aca261012ab7ec4357d929eda32f60dca47cbc243f47e6130cfab67a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data"
+        ],
+        "source_line": [
+            245
+        ],
+        "source_column": [
+            7398
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 246,
+        "sink_column": 7450,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6609f99058edefed4c458b32d2b8b4f1a99ebd75b3508c3004af78caacb5a7d8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            248
+        ],
+        "source_column": [
+            7577
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 248,
+        "sink_column": 7530,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3997da11eead57cfcd7cf1c2e139db727c7081247584e7ca887609845c7d268d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            1695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 1695,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18011fd21863c779c0aac0ad1b9d473f77fe73d1ab343524e2f4eb30915bd260",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1858
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 1858,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "91d47bf6bc0eff03ff81c4539a0265b5f6721357461f9c46da93638691b0b954",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1895
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 1895,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18011fd21863c779c0aac0ad1b9d473f77fe73d1ab343524e2f4eb30915bd260",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            2022
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 2022,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "91d47bf6bc0eff03ff81c4539a0265b5f6721357461f9c46da93638691b0b954",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            115
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/manage_user.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 4,
+        "sink_column": 69,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/manage_user.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2442f38ed30f6fab01f61b605c070333ffb36c8aeabe6b1a40a90122dec79682",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            1400
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 1400,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9170095c9ea24d2b9dc9771682824e543884a9c2ab12c21d85e7856b3b9e697e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            1426
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 1426,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc887306c4cfdef970b92cc11770bbb5bbe9031042407f3dc44be8862849ff85",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3521
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3521,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc887306c4cfdef970b92cc11770bbb5bbe9031042407f3dc44be8862849ff85",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"cat\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3585
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3585,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a7e39dfee697dd81f9d1bd4f0b5dc89a16446fead97714535de1ed1d1aacc64d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"description\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3668
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3668,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6748f486cef7930f1d53d05247628dc4efff6ac0bb0d97372b53764f6802b828",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3930
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3930,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9170095c9ea24d2b9dc9771682824e543884a9c2ab12c21d85e7856b3b9e697e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3967,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc887306c4cfdef970b92cc11770bbb5bbe9031042407f3dc44be8862849ff85",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"status\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            4008
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 4008,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "956d72f9ac745e6d3274033e52bbcf82297e714569b38d23b73fcfac7442b61d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"description\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            4056
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 4056,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6748f486cef7930f1d53d05247628dc4efff6ac0bb0d97372b53764f6802b828",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"price\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            4103
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 4103,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ea7d240370fa6e89465c32d94325740427f88fa19c21a39ecdab12939fee780",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category_id\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            4150
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 4150,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0beaaac29ef89e6085b64a9b66249ffe87c12ee9ebe7a6a9ac517939792cf1a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"img_path\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            4201
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 4201,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "80fc0482c6e995140fb825516f2985529dae9bb40505e47e397e6e4b050c2c95",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            4332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 4332,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9170095c9ea24d2b9dc9771682824e543884a9c2ab12c21d85e7856b3b9e697e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            611
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 27,
+        "sink_column": 611,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd1373c131aa63ffbcc3717e4d3e704cda9c3e62909643a5cea83be19cebdfd0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"address\"]"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            656
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 28,
+        "sink_column": 656,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "526ab39c23e95e9caa92d099a1dde17fac6d80054d587c119b2ab0faa02ad523",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            29
+        ],
+        "source_column": [
+            704
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 29,
+        "sink_column": 704,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c0baae9defed4ae3dd04030cd412686c30eb9a9f47157a7111612afbffc3a9a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobile\"]"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            750
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 30,
+        "sink_column": 750,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "46d1006f7ffbbb647979df2575d9faa200a917bb2988fbff63ddaef148c8f5ff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            1148
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 1148,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "686b7231bcef62ee2a1e04891a56dd8bff995954ef3d2bc9dee57a044d9613ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            38
+        ],
+        "source_column": [
+            950
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 950,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "118a87be1e01ee77e75e848b423d6c172d9061bd67e79271881d2e53bccdd7a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"username\"]"
+        ],
+        "source_line": [
+            41
+        ],
+        "source_column": [
+            1016
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 41,
+        "sink_column": 1016,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e6d39b1af1c606e7ff4eeaf0833deac2627b960458448ce125f34001caa6551e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1573
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1573,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67a45f8e781eda78fcf73e93cc5f4cd294c01a118a018cdd13a4695f77764752",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            1745
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 1745,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67a45f8e781eda78fcf73e93cc5f4cd294c01a118a018cdd13a4695f77764752",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            361
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 15,
+        "sink_column": 252,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ee5df545cf90d935c7f59df1fafcdae971b5ca1a1e5f27a62629654896108c4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"qty\"]"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            492
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 20,
+        "sink_column": 492,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "36a977fb6ab816f04c69fcb00ca96b76f7dd0718edf4b5d5774a62fba626e7f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            532
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 21,
+        "sink_column": 532,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "27fe4b904b345f16e21d2136d16c1238218b56c2ffa989eca8e08af3734d3a6e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1293
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1293,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/admin\/view_order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c70698a59362a7182976be6fde18dc3bdb3ce9d5ca6ea8c93d41844542ba07c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"img_path\"]"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            2416
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 49,
+        "sink_column": 2416,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac26d524d3171eb5c716f0ce3111be1db26cc078161cb3908b02978a8f30bbdc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            2643
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 2643,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "afc22f90b842b78243f9380e12f6568726b0e63c25548d16523de1f40f73a778",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"description\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            2738
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 2738,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83e3fa7a0e26fb46633358299cde3f7c4dbe4ea9c6d491530be8d99de7649b4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2944
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 2944,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a9a297fcb366696d1b58c24c874d83bd74ff697aa396a8fb1becc88212a8d53b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"img_path\"]"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1879
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 1879,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8e92cc97ddff77830c6ada5be643286895a714ba1ee76e3cb5fff70d5528f27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            2084
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 2084,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d3a4828c35b15ac6864b7bf0293d297496b6b6c1cd3b7134b4ad640bb1cadca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"description\"]"
+        ],
+        "source_line": [
+            38
+        ],
+        "source_column": [
+            2173
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 2173,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4bd25c4bd82b43658c24b6d65eda2076e2fc046b43facb05f5ce9d5e1ca64749",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            40
+        ],
+        "source_column": [
+            2367
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 40,
+        "sink_column": 2367,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/home.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b704b5200e0b17edade1e05db50734ce13417c0552208f8060613d645b35b382",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2560
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2560,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "95eca3c4cc4434df7881a61ffe43cac4748a58f55e542717cf4e9ee93566f7a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2579
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2579,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4e1b6b9f43bc0246009b9f064c86e2cd2decaa696424de229300325ad31ff174",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            108
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 3,
+        "sink_column": 53,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ba4d7eeb95e5b435abf072cd3195e2bf90d750b6c40ec370ce8a0c8e9bc1161d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qry[\"img_path\"]"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            237
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 8,
+        "sink_column": 237,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5aa1e7fcbc9a06a9741d4ef6b29366867f5ae653ae7d9cf970fff7ad28e63add",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qry[\"name\"]"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            368
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 10,
+        "sink_column": 368,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8cbefaea6a21749f316e3f7c5e4334f1972ccf9081c289ed836449661ec6f05e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qry[\"description\"]"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            441
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 11,
+        "sink_column": 441,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e53743c118393c9adaf7566854fb723641f18510c2034554b74324e0c40e9bd6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1960
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 1960,
+        "sink_file": "\/home\/kali\/Downloads\/2.online-pizza-ordering-system\/php-opos\/view_prod.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa2be852d7e0f258a3217429e335db6bea6469a83cb8429f0a54573e11f0dea9",
+        "vuln_type": "taint-style"
+    }
+]

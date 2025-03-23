@@ -1,0 +1,2664 @@
+[
+    {
+        "source_name": [
+            "$AName",
+            "$mobno",
+            "$email"
+        ],
+        "source_line": [
+            11,
+            12,
+            13
+        ],
+        "source_column": [
+            250,
+            281,
+            315
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 356,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "94cd834b109759b3924eb0f090a9a6ba73831c5796609767475cf8d3c7a9ad85",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            1033
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 28,
+        "sink_column": 1666,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c12b5bd5e07d69a00e13520746b1a0d205355efc376081f1afa85b48996d718e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            1033
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 2468,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c12b5bd5e07d69a00e13520746b1a0d205355efc376081f1afa85b48996d718e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            4103
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 4103,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b268893e0feeea174b6b790450e4bcaeb38fbbbaf3c08fbd5fb484024393d4f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4848
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4848,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "04add2d442e48d520b8ad0918c4a224b6fd6273aad6a90a4ec7631a9eadf15a2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5642
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5642,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a88ea8b6f3781f9af7c04250ecfa494d4ca1173bbef65a6a4a5bc7a689903e9f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            6461
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 6461,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6753f862260781cac019dbbf615b6f129a5bc3ea216e964cfd75fb74a38453ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            7150
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 7150,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38b8ba40ac0333c0819bc1593612ea4dd198bf8298ebf76c05a3bc97a3a01061",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$remark",
+            "$status",
+            "$price",
+            "$eid"
+        ],
+        "source_line": [
+            13,
+            12,
+            14,
+            11
+        ],
+        "source_column": [
+            262,
+            235,
+            289,
+            211
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 322,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1bb3c056f1e8737d052c29bdbec08de232bbf7ecb145836f29749abded80883f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3242
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 95,
+        "sink_column": 3270,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d4819f86c273b1b4ba2543948089ff4619fc9e61b99d4be391018560be24ba3b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            171
+        ],
+        "source_column": [
+            5283
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 171,
+        "sink_column": 5283,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e07f446287c5ad44c4bc5819b6755a58b9d9fee0c52d26d82f565349a2054c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Price\"]"
+        ],
+        "source_line": [
+            176
+        ],
+        "source_column": [
+            5365
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 176,
+        "sink_column": 5365,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3c50d8758f8ae77e25943f4420b4194411e95ed85ce16bfc25d939ccc358f7f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OutDate\"]"
+        ],
+        "source_line": [
+            180
+        ],
+        "source_column": [
+            5446
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 180,
+        "sink_column": 5446,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "20ecb1d1e3d9b7ea975ff8a5ecded89aa872a9d2febb64c170a64acc3487d1a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3507
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3507,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bf82af4e563a3ede1f2a53627a7bcf52d959729cb3c0ab969ad6a1c06ede3dd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3647,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ce92090b91d5489b81e2a4661585beb7a591ae27a32bc091cb05f1a955d0ef0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3741
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3741,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e935dd49e89480bd89f24e058c7775ee2456138e490b63099240dbbd8bfa425f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Drivermobilenumber\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            3841
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 3841,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77f440a04ff448016f7130c363ad8eea5a65c6c9af61773935d82f975d2af6de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Driverlicensenumber\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3950
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 3950,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5e22b4c4be3a28f3741b9caf573eef46833e4fd0df89df105619c5c14b69c0f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Vehicleregistrationnumber\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4066
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4066,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7c81e252997f24801680191273dfec2bb40492e5ac9c35f6b7a4038745a0adc5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            4191
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 4191,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "40a486ab77580a04c7950ba8e52792e3e0bdf22afeb8192c41412f9bc6c19b48",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            171
+        ],
+        "source_column": [
+            5283
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 171,
+        "sink_column": 5283,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da8a4ee9b02befd18ce7e98854d7941e34497d0dcc34bf0312e0b1fb02d47c24",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Price\"]"
+        ],
+        "source_line": [
+            176
+        ],
+        "source_column": [
+            5365
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 176,
+        "sink_column": 5365,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a251c1182f5f17223ae9e8405bf5f8d83cc9c498cfe78280bcf1091c0574726",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OutDate\"]"
+        ],
+        "source_line": [
+            180
+        ],
+        "source_column": [
+            5446
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 180,
+        "sink_column": 5446,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/auto-taxi-entry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17a7a8c7e1e45f9ed8a75d8ecb1f4de3fd2a0c8959b5116cc30e47426069c984",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2555
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 77,
+        "sink_column": 2826,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b067d87df53bdaa0e77dfc78076b59f020b690f0b01f3f83a363ca57df753739",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2583
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 77,
+        "sink_column": 2849,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da390309bb7d0bb2dcd4d33fbd6436809af1a11eea5f88689de0ca40a053a7b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            70,
+            71
+        ],
+        "source_column": [
+            2555,
+            2583
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 92,
+        "sink_column": 3315,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f6bbe3b658bfc1782a62462925769d18d40246ad4bf31625132f920d9f3d9e20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4161
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4161,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "967c7daf5b7901592ce49ba8ed539cb7ec23847d1a1d27d37645bd5ec585a91c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4269
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4269,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "967c7daf5b7901592ce49ba8ed539cb7ec23847d1a1d27d37645bd5ec585a91c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4409
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4409,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "967c7daf5b7901592ce49ba8ed539cb7ec23847d1a1d27d37645bd5ec585a91c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3588
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3588,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77a95c7c2a850c1b9914620c68265bd73154a0b01b52f6d8b02d00d9228fb952",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3653
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3653,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b24c35c59b6930ab0114d535de043ec97f0778a4f42c94112695edcfad232dd1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3716
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3716,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a9ad0301298c23b1277956ab852554a10f45500c348aefc2488b21b8118ac24a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3794
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3794,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ab89358f127b3dd88107d7136d0118e7e05e9ca4ab371965be2d59a1969a74ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4161
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4161,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "39da0b18c3910f265a270c1c964875c1f01fd136f92b96718f07e96b1722859d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4269
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4269,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "39da0b18c3910f265a270c1c964875c1f01fd136f92b96718f07e96b1722859d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4409
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4409,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "39da0b18c3910f265a270c1c964875c1f01fd136f92b96718f07e96b1722859d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            162,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/forgot-password.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b3a7f4efe778587d9d3de8dd2928e5525849226b373ccece60e35294603614d7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            117
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 198,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3dd30da6c3e3d22f995c2274aa9291c8d87418e8cbc55e8f07c330f98d94cc19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3939
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3939,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fce8730fb0e9b8fe944eb27f75df4c8de626cabd07b364e15533b90898fd996f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            4004
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 4004,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2f42576829c35029741f5fbe07aaeac01cbdc11e114941826b4ee5400ffb4610",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4067
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4067,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f34d740031ad59907fa1ee07e6280a0adb3183c6271ed32c6fef8d3540e5572",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4145,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c88aac5a8ffe9242bf11f3f137a38079fbce452160f329d98a3aa5abc975f41f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4493
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4493,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2e3c09d1e57a28e73bc508ce7b71ba4526526e2363aab84db7a77e8256998e5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4601
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4601,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2e3c09d1e57a28e73bc508ce7b71ba4526526e2363aab84db7a77e8256998e5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4741
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4741,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/last7days-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2e3c09d1e57a28e73bc508ce7b71ba4526526e2363aab84db7a77e8256998e5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3779
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3779,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "282b75df636ac5b615d36b16cf8f8ed5028b4094e6b2183f5fe7d98e3b48f71d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3843
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3843,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c3680e510e65e2e5f4b9427f961ff63ae029296c0952c5f6077b62d670bee04",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3905
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3905,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84f7f841f724225a07938303c163db5b028c33e21d09c56b08560b04bc842236",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3981
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3981,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25a083629ff94db5466b616bfc30f88e619676df42bf4ffae8f1bbb057e65646",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4323
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4323,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "89039ab7fa33f8109055bf4d5709db885490e87e546f42a508af72ad23e02cb8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4431
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4431,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "89039ab7fa33f8109055bf4d5709db885490e87e546f42a508af72ad23e02cb8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4571,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "89039ab7fa33f8109055bf4d5709db885490e87e546f42a508af72ad23e02cb8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3898
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3898,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "53a2f817c8f6f9b80695d61bac8517c44ebda87418179d218bc3ae7ef46e1856",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3963
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3963,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "33029f7dfce7d12fc6aaf478527cf6d23ed6e3381767cbde3dbef857828475ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4026
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4026,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fb662cf01948fce538ce4328e094ed2d1140d892d8b1e3fce0785d9453b7080a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4104
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4104,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca571c37b509c0ab33cef339d8909ca0e6e970021307c75b478d7fdd4a2a8a8d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4452
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4452,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0d2df5919f9520594459e149bea49560fa70e8d10391a5cb538147ad29fddfa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4560
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4560,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0d2df5919f9520594459e149bea49560fa70e8d10391a5cb538147ad29fddfa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4700
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4700,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-autos-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0d2df5919f9520594459e149bea49560fa70e8d10391a5cb538147ad29fddfa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3899
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3899,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68b576695c2c1f2cf5a8bea6f1926b51cc6e81ecb5e30dee02c4bd6abff3cc40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3964
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3964,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cfef39fb4ffce31a94a74ab42a19c255dbcfd813aea38533df09f0e498c5c29f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4027
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4027,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a2b3a839854b0bac097425c09dcfa49dbfed550a343717c9744c470e2534b76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4105
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4105,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3c0f9b9ec4de20891a2a6292fede581fcecbadc4aa0b3a726f9a2314f60ce9be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4453
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4453,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34b42fa932e56745934c7e9fb63a17cc3cf152644daef889ba8dd9450dbac55d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4561
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4561,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34b42fa932e56745934c7e9fb63a17cc3cf152644daef889ba8dd9450dbac55d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4701
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4701,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/manage-taxies-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34b42fa932e56745934c7e9fb63a17cc3cf152644daef889ba8dd9450dbac55d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vehtype",
+            "$drivername",
+            "$mobnumber",
+            "$licensenumber",
+            "$registrationnumber"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            248,
+            277,
+            311,
+            346,
+            386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/new-autoortaxi-entry-form.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/new-autoortaxi-entry-form.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/new-autoortaxi-entry-form.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/new-autoortaxi-entry-form.php",
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/new-autoortaxi-entry-form.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 445,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/new-autoortaxi-entry-form.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d876aa4339287ec9c948a9db205f97d801236d9da3ea1e555c51b7b945eea40d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            1027
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 1052,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "18230f33018026e0d222abe7fd35aef6ef95adb57a978f4b4e5c7312eaa00b3b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            1517
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 36,
+        "sink_column": 1517,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d8c5d38eec57dbfe4309f52b575ee9f190bc7c81046ac05d2a3764735e2c5542",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            40
+        ],
+        "source_column": [
+            1704
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 40,
+        "sink_column": 1704,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bef45bbbdda3b2c52d1ffd8a0e070d378fb2bc66c28df9f66ebc0fe7355ad874",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            44
+        ],
+        "source_column": [
+            1922
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 44,
+        "sink_column": 1922,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ddadf453cb8dd8a977057219894c6ba6195669229be766f92933e6c6c1d5fa8d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Drivermobilenumber\"]"
+        ],
+        "source_line": [
+            47
+        ],
+        "source_column": [
+            2095
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 47,
+        "sink_column": 2095,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "75bcab1f95dc88bc2865fbbc0acb95dfb3f26f11c627cc93eca13916d3b9c615",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Driverlicensenumber\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            2336
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 2336,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "785e7b49a041e81db4758ba05c4b8dc6edd81f712664c94933eb6a2d1d5b9fa0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Vehicleregistrationnumber\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2542
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 2542,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f96bfdf6d2aa0a3502fbb6204f6f687d822d3745a174fd98d7038b11bcdc8b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2767
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2767,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7f77dd23368dda48b505f9d5a01f6b1b3b7e479fba4e7dc8d91503938432a8d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OutDate\"]"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            3057
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 3057,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3ed329cc5f127e3c27aa52eb85e70b7bdfccabd3f567b12dd409d66ff85209b8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Price\"]"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            3123
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 77,
+        "sink_column": 3123,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b234cf788b711dd4648aad8864714ef83f3d13874039cc9ab01e3de604a92d5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3208
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3208,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b7ec335d6e854c0edc99a38b445615776a5f8d87656229245f5ed3f6ce22dbf0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2489
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2573,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e7bd448772b8714b283be49b9347ebd73627a6934233721a01245553563ae26",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2489
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 92,
+        "sink_column": 3208,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "080aa58d47d03a56649cd8cee3fce7737a88521d32519b51edb8e6affeeb6cb2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3540
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3540,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1188d6b7fba34f725f73422cba5cacd8960a310892350e8dd6e33acca9acb4c7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3605
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3605,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a54e9bb09870e25df54fd0f0e93afcbd998bba4c3f6ed06cf0e5a4301eae426",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3668
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3668,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "821c41ad46f36e50716c5b868bbd5cec5a6bfde614976644f44673e3a455b4d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3746
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3746,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "13d855c93b28a2a48a0c605006d73ce0da407995fac0bd15e5251315d44a2671",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4113
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4113,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "728a7a8c5e56d9bc565654d1f7249b6322bae8a888f87d354050ba290d0a2c6e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4221
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4221,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "728a7a8c5e56d9bc565654d1f7249b6322bae8a888f87d354050ba290d0a2c6e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4361
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4361,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/search-autoortaxi.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "728a7a8c5e56d9bc565654d1f7249b6322bae8a888f87d354050ba290d0a2c6e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3912
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3912,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dbc0e46488e4aed8f477b019d5ba269dfc742b8bd5de026f4f461f84c6f86368",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3977
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3977,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62ba30f0e0caf8826a8e470eab6aae14c575786ddff8b4cd0649c0fce889f87a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4040
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4040,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "522083136c8d184fcf07a5fbdea1dde17f6e329a4461a3f065a5a0c8e4828574",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4118
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4118,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e6cd4deca2e5615377e2025d5f59a5146d526b778d8e8b240abc328844f37246",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4466
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4466,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b407c78e39770835dc2a7fc61b9ab9f5e8293e86079615796ed2e896ee2f685a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4574
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4574,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b407c78e39770835dc2a7fc61b9ab9f5e8293e86079615796ed2e896ee2f685a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4714
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4714,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/today-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b407c78e39770835dc2a7fc61b9ab9f5e8293e86079615796ed2e896ee2f685a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3919
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3919,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b756d031e6d0f792c68a701520d5dda0853a48a8f58f77398e51d34ff9c89ce6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3984
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3984,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "27a171a4b3dbba19b1052d1869d6b1e92b0b8e487c3dc97ca0bed621db9ee75e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4047
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4047,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0ce1878f168821bac97912d89c7f37efe3b1dc94c0a952632c30aa7d2c8b1579",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4125,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "89632a3124f75b361de42b11a6436a888934ace6af5513be51bf0b0f39df1c88",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4473
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4473,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5855f8fa1a48b4f88525209f42aff3fb8cc786c0052559f959e02a6bb4a29591",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4581
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4581,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5855f8fa1a48b4f88525209f42aff3fb8cc786c0052559f959e02a6bb4a29591",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4721
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4721,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/admin\/yesterday-autoortaxi-entry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5855f8fa1a48b4f88525209f42aff3fb8cc786c0052559f959e02a6bb4a29591",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            961
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 986,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "af976e10eafc7c2e12e5490905550067efd45a8343b076e1d0a119ebd7cab03d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1451
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 1451,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c25ac5c9670ed7283aecb780f48a2ebb092366b477f1723f58e3b7ea9dd56d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            38
+        ],
+        "source_column": [
+            1638
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 1638,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "567ad53d9f2bfa3c99ca3bded0ab66ea7f4745239ac5e9680e96ec2c6b82ea6f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            42
+        ],
+        "source_column": [
+            1856
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 42,
+        "sink_column": 1856,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9487283f24e9436177e0729810d83aa852c445a41e4b086c064a37185d619c77",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Drivermobilenumber\"]"
+        ],
+        "source_line": [
+            45
+        ],
+        "source_column": [
+            2029
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 45,
+        "sink_column": 2029,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "90ffd40c3c7d97e67c45251fbece3114d54cf11aaa0fdc477b5d801969dd23aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Driverlicensenumber\"]"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            2270
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 49,
+        "sink_column": 2270,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e59e0804400689ff6c4fa358cb1f730929d28bbcc111b30283d5ce871bb684f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Vehicleregistrationnumber\"]"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            2476
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 2476,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d72d3389f8b5ad7ba3cd9a7b0461284a2387001e813b3be88707e65c9c6fa506",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2701
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2701,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "832da2a3706bdbdf6cb9baa4b61a570ab61d1b110fd1f4c4e699f9bd66c94339",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OutDate\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2991
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2991,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b5983b81b58ac67838f19aff9c78f4df1bf70484261e481ce3ecf0b8e469c77",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Price\"]"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            3057
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 3057,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "573f1ba5f22fdf3b9523e5b2dbf07d837704f0a007fe92108d8c4a937c185c96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            3142
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 3142,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/print.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8eddc66ccad4272866f28312f135fb905ab8951cafc2478e31a1638370a7d9c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2777
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2871,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "338647a285081f44c4579f32deac994319c80dd7a22b9e5b819384b03f9fe366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2777
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 91,
+        "sink_column": 3506,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "de92578224fd020a58a5e0a7ba8b6958c76529b79420fefb1f35464c66850a45",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ParkingNumber\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3838
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3838,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9cc95b294b13a3cb1690fe3691fecf6c2b2520116698dad0cce319a61103e6b6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"VehicleType\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3903
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3903,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f969e8d59aa09a1a4c9717288ec430b7c48edfdc5c2acfe7208499c7d7f3424",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DriverName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3966
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3966,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83e2f6b6dbe27e84a42b8b2529e3e7e5146288268c27a7ab9d01ddfcdb1c0fb9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryDate\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            4044
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 4044,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ab4d73eaeb7d49d8c24e885b6ba2183793d958804cfa0be9b7a6fad4951ba21",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4391
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4391,
+        "sink_file": "\/home\/kali\/Downloads\/20.Auto-Taxi-Stand-Management-System-project\/atsms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6d44eba136437440032bba275f36154310f1c24fa7e1b6824869ce0a873f4280",
+        "vuln_type": "taint-style"
+    }
+]

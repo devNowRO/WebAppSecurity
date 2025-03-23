@@ -1,0 +1,68 @@
+[
+    {
+        "source_name": [
+            "$htmlspecialchars_decode_return"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            148
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/6.online-eyewear-shop-application\/oews\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 5,
+        "sink_column": 148,
+        "sink_file": "\/home\/kali\/Downloads\/6.online-eyewear-shop-application\/oews\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e747175b685a64d1545de699d6e05e5e1eeef5099ed281a0bcb7c224cd89347",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$outputContents"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2501
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/6.online-eyewear-shop-application\/oews\/libs\/phpqrcode\/tools\/merge.php"
+        ],
+        "sink_name": "file_put_contents",
+        "sink_line": 68,
+        "sink_column": 2544,
+        "sink_file": "\/home\/kali\/Downloads\/6.online-eyewear-shop-application\/oews\/libs\/phpqrcode\/tools\/merge.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "e67388cf0b0f83686c41be64da9a7fdb079c29fa64206a982329487b9c02955f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"search\"]"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            154
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/6.online-eyewear-shop-application\/oews\/report\/list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 4,
+        "sink_column": 154,
+        "sink_file": "\/home\/kali\/Downloads\/6.online-eyewear-shop-application\/oews\/report\/list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e18e0f431c892a1bbd47b4b88ff7dbf12d6ae373717b63c00986557c080ac07",
+        "vuln_type": "taint-style"
+    }
+]

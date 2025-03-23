@@ -1,0 +1,24 @@
+[
+    {
+        "source_name": [
+            "$_POST[\"searchdata\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2793
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/25.Car-Rental-Portal\/carrental\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2793,
+        "sink_file": "\/home\/kali\/Downloads\/25.Car-Rental-Portal\/carrental\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d8bc85ad68759a70b3841b22dc5c12a24a0c2992b8ab0283d73416ac4cbc9bcd",
+        "vuln_type": "taint-style"
+    }
+]

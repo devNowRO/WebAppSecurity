@@ -1,0 +1,5382 @@
+[
+    {
+        "source_name": [
+            "$pagetitle"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            236
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/about-us.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 336,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/about-us.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "39d2a05b8c4ae98d5f24281fffc748862baf846c1a083b46040a943fbd6ce812",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3666
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/about-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3666,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/about-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f83472949eea8fde7d6176a79411fbbbb2bf077bc1d3938b16f4cc208447079",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3947
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/about-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3947,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/about-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7dd4a2874914dde3bfdf851cbc196ca67d848dfc720954a4fe076a955cfd14f6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$docspecialization",
+            "$docname",
+            "$docaddress",
+            "$docfees",
+            "$doccontactno",
+            "$docemail"
+        ],
+        "source_line": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            189,
+            241,
+            270,
+            308,
+            337,
+            374
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/add-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/add-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/add-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/add-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/add-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/add-doctor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 443,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/add-doctor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "82076b29d37036d040d9094fe1080154b0d0839b98bb9a31f69863757ec9a235",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"docname\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3555
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3555,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9e8b881a800312a38724975b33ddabd04f58f5795dc07a7f613c1e1f62f7fb7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pname\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3625
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3625,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "657fb6aab002183712c2a2ff19d90360ec3255f41a6594956c7e1d1933bb8c8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"doctorSpecialization\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3675
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3675,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "222b5f05f3019095d3d28c9f595d1b3e0bd071b513c14219682a25c4b9023bf9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"consultancyFees\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3740
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3740,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de107530aa834757670ef475aeb4c7d5477c74158a8f35fe18f0b946688b05cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"appointmentDate\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3800
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3800,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb22a1b14ab9af6446ac7d1c5710cc12f4a90633c704f8cf033263e3c521d699",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"appointmentTime\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3854
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3854,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60b4531347113ad35e8329c7b6747c2a38ca9b6f95df5a827e664ea6e46de242",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3928
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3928,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c54d004eaf01fda6d7f09925e33663d47c0a2dea029ca4ee893c9fcccad60d1c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2231
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 2352,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "61005e86647d0181dd4810e460e73889ba8c446ac6538169768c7debcc9dd2bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2259
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 2375,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a9f3f7c15e422d50255f30deefbd7e637033b27566e8806f2fba1df73cc3e3a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            58,
+            59
+        ],
+        "source_column": [
+            2231,
+            2259
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 79,
+        "sink_column": 2679,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3ba88a5bb27f5a59a4b14406d6d95b883cab0906d0baa8fee34d3d4b68e62531",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2920
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2920,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c88fb3ce60c830a4b585ced4ce26e67bf1f44a2119cefeb5be21c5e3ae9d4088",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2964
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2964,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "24061d54a9d7c6dd5a212091f27ad35f01118da96bb95bcc5b32da3f7c43d7d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3010
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3010,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "787276292686a6bd2af5b8250fcfa9b7283b21a64adb76a1bb40f1f528e97b12",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3056
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3056,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "05df92b0459d12103d1a914ca719bb6fbe3b068dfe9343fbd96ced2a5b115bf0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3101
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3101,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "97a4779bf4a113801e6e75984c4f2911f3ad518f6d656433a938d8e20f2d695a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3185
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3185,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/betweendates-detailsreports.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6c367698f8e5d50c9183e170ac2f8066c8a1666f83b9067087db43754bfa7e86",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cpass"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            314
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/change-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 373,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/change-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "38f8bb3e127ae3065402dbb723f02b84e81c0533fac5f52d89256c2577ff3486",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$npass"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            516
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/change-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 547,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/change-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "16bfb696257c4f0aa97c50aec545a8aab22a5b8ae5c8518029d38def13116c5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            76
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 116,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b32dfce47d9db760982a9a4fae641867c3d2c9f01551dd8ab23677e46d281c46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes",
+            "$email",
+            "$mobnum"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            233,
+            266,
+            295,
+            321
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 360,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "27e020b380b26f6e9b8928864df58c8bf5ded7fe7122541ccacbe12ae3a596b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3732
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3732,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ce26b0235525e8857ec28301abfa7ab701a4dd0c7df509996be52cc6c0f102f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            4012
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 4012,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8c17aea352b458bc0a1b5b159f646a99fa4444bcc89c5036e2d2fa827b5a7889",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4300
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4300,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b477562c07644be02a0ac3b8504c15d5ebeb88e9925359ef8a7cacc7593b89bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4584
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4584,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "113c8be1f82680ea226488e87d33e5ead15cc0f6c9ea4a218b950140235c8b63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"uid\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3289
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3289,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6b40674ade6296c0975fcc38109de71335c10d2c34c3339f6c4404282153d94e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"username\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3355
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3355,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d67eff9643f110358e77da7e9769275b3d8428b5e00861a1289b391d35c9fd4f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"userip\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3408
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3408,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78c5dbf9379c335ee0bfc947b21370560ec474c949d45fbef48326505a87b373",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"loginTime\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3459
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3459,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a401122983561bc8a6710b353b0f03cff96b8818c9d7bbb60f2e290ba409854f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"logout\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3513
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3513,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d3ea9e2c357315cee52b6da6cfccd61c8ad46ff6eefdcb49d1f84b65d9b9d17",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$doctorspecilization"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            190
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 248,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b088fb5e6bad821e7e5ac6c1e5ff55386770ad841a4507124d6665315016339b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sid"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            462
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 482,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d01a6aa9656a68d5a169f4f4ff6a0426b0a4773f086b1754ea51a1b3ca57949e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"specilization\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            5004
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 5004,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f8305444a43435d7b7631b5ba25b8665268d0dcad083e73cd96141b18811fa39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"creationDate\"]"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            5062
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 5062,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "89d43e0c4d722995876301025d5ab18178fffcc7ee665ce6f100b8e3ce5d5c3d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"updationDate\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            5119
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 5119,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3b253dd82330dc7c722fec832cf7db6a8f7601616fda27b774ccf948c005496d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            5326
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 5326,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0cd3f252162a240b6bd848465bd7ead50a660b3ad26bdd53b3429afd1a05c7bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            147
+        ],
+        "source_column": [
+            5513
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 5513,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/doctor-specilization.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0cd3f252162a240b6bd848465bd7ead50a660b3ad26bdd53b3429afd1a05c7bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$docspecialization"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            226
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor-specialization.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 282,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor-specialization.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "af5649d45996aea8e81bef08a819379a0678036815baa15b418c804095b8fe39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"specilization\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor-specialization.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3718,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor-specialization.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c3296fe1f34d5599aacb5494fca1540ce446d3fd054e966781259e0ab5c63d2b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$docspecialization",
+            "$docname",
+            "$docaddress",
+            "$docfees",
+            "$doccontactno",
+            "$docemail"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ],
+        "source_column": [
+            234,
+            286,
+            315,
+            353,
+            382,
+            419
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 455,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/edit-doctor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fad7e10efd6a115341ed2d13c271f29564019aa24a74885f692dc078e99ab51d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$upassword"
+        ],
+        "source_line": [
+            7,
+            8
+        ],
+        "source_column": [
+            110,
+            138
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/index.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 177,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "597834343e1571c396d88fc15fdce3692b7e236354af258bb7cd69bf9c62baa0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$docid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            197
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 230,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1bccd1524c876ead852ce05aabc881ba078f1c9c7538da757edcae2a1d7b2306",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"specilization\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3491
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3491,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0bacd86ab0dcd750af6369d8651665769256ad364754b887468b123d8e2d0fe5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"doctorName\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3549
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3549,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b29fb4aa3da39610b81112f2162a76ad6de113c00d248e7e60ed3eb8425aec9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"creationDate\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3604
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3604,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ed7ae4ac2df49ef313c3d560a1037bbaa03b8e0fa5a0ee268e395497765fa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3796
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3796,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e08ec6e42d01ea36229f941a43974efca26dbabf5b20c91a67d56ec1acfe32ed",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3977
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3977,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-doctors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e08ec6e42d01ea36229f941a43974efca26dbabf5b20c91a67d56ec1acfe32ed",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2726
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2726,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08f31507043e0db49014b7cba342b318d2c9be87573891c0aaf6d891eb9f219b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2770
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2770,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "caffb5bb7fb5806b12713f4d975ec4536c24d5c82c81e18f4e53cd687fc2bdaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2816
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2816,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4afedf84a5bae08fd3a747edd8b94a6ba2f62b7e86467718744b2f663dcb8a2c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2862
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2862,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ed184a876c9e1ea89cc3ea6540cd79611e28efdeaecee87902b5dbc7505fc8e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2907
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2907,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c980ea57a6aee7ff20798e7a79aa89facf6ed4d60d9718d31c3b3dc99a8a1b5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2991
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2991,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac96c36a0eaa80c58fede0a8b3f4c6fa0bbea2c9dc16a956634323b4045eff5c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uid"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            195
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 226,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1436be934360671ebda9aac1486c7cd632c31777d7d48a4b8e368e9438b472e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3587
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3587,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d191d4d02f5afc6a9b5dae3778a524d92eda0ef8176214376993bd6a805832c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"address\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3640
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3640,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "54777a4736ea033cbc3b6b30c3e4312816ff9dfae8a32606a88eaa94d03f7cea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"city\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3692
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3692,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62edc481d6702c4ac1a610948db684741d101d9cef5898bb435a191649e0cdd5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"gender\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3755
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3755,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e6469db3790f9bd02aa3242ac18820295c2b50562feb46e505ec3883643f4f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3806
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3806,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2031381c5ede1550eac066cac29cef3d2f63e86cc592060faab95c1c3d2a187f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"regDate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3856
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3856,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c9d8885178b740104523d75e0db74d77482c2c04e9080bab99af39a3e460842",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"updationDate\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3908
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3908,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0bbbd364f2128fa468aa51f7062c9c89b0fd9c8e3a14bc1dcab141dd271c4db3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4105
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4105,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/manage-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a41904d0927bf2db28a4525e4794f12229737f138e66663349442a4a580dac3f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2561
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2645,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f48ee929a3e7daf59765b7794c246f27a6c20f4a52633f77787569a71d6dd963",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2561
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 91,
+        "sink_column": 2957,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "09cd4ff0814d92df8e062c7af6554d95f4f44f9b04fa8d4f624c27c698816b2e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3251
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3251,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "52ccd72e039117e81158b0fbdf37004695c1df4d9ea6adbffe65da460f4e6062",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3295
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3295,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "705350afb137479969a257c2ba7e4f94db51ca1e00242ad4557f50ae5d046a19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3341
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3341,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "335fb4bb7a5899b1e708895c013bb94746eeebb3eacea18a49480522f586eea4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3387
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3387,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e7034479e6dfc11770fa51533e8fdda99eefd008d3364bc97ece3026aa6c2065",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3432
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3432,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "26845f32d45a425f1749b0e8e64dc821890c0a467159422ac0be495af3622f2c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3516
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3516,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/patient-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f60b9b0ae99814da6484b42d728a6f6e300c6a3a511ea874c262ca37475fbd4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminremark"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            246
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 302,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c12f8b4dbe2ab45a36f4934e267affc0ce185af3e1eca38c821aa0af42330f60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullname\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3319
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3319,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60b90f8cc753a5c98c20aadc75f482d3a4edfb0db99a22cee9e378c56fbb18f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3440
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3440,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd29baeb385f4243b07c32a006fbea3bc8a1032cd88dce028350ffb70120c873",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"contactno\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3563
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3563,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1575bc72ae2381b6714f574113ad2c2d92fc8708aed5113c84633dc637289681",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"message\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3682
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3682,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e2b397f9c927bcd34be45c7e31e5783989de9cbca922c33eab76083e5f0b5744",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3816
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3816,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ad8d246a578dd993fba675575c4bb184961a4fe2db8024244c8314dc89438b00",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRemark\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4502
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 4502,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dcbb128f0351e096792b2278efce6f751bddd4b56ca1487da4fab6771bca402f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"LastupdationDate\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4628
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4628,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/query-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "445d7d05caffa5d7d8d11bcff5b1dadaf49dc49e6353f7cb4152274d9650fcb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullname\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3247
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3247,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7df49bd3171073b64105b971a21d2676aedae4a8d82abd0bbfe66ced02b8833a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3300
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3300,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "36a73039faa15c26fc1c6dc53fafa5760c9e4c17155683de7b66157f5f514200",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"contactno\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3350
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3350,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f2962c8a652900ec6926e6b921325ebface8397d8a66ef61ab93346e707b371",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"message\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3404
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3404,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "26fb9ce18c252291951f89979c6494fe008f5f1d4e99039b1922f3f435fb2e66",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3456
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3456,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd58530a97996594f9167980fda34d114ce628dbd567fbc6f68527dd4c672a25",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3635
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3635,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/read-query.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf749e7d30e76c1326884ea1fd30aabc13895a4347677055c5ee8af56629b5c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$address",
+            "$city",
+            "$gender",
+            "$email"
+        ],
+        "source_line": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "source_column": [
+            76,
+            105,
+            134,
+            157,
+            184
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/registration.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 11,
+        "sink_column": 252,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/registration.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "178114aa96dbdf121ad8bad91c648077d1bf00562917d82731671b6d9a7625e9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullname\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3253
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3253,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd4d2246328acb9fa0602d1563768684ce5b60dba546508eb5fe279386828d6b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3306
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3306,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d69b2439636103a3513c80e5d9c8ded489da099d0dc4f08ec067d14017aabb7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"contactno\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3356
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3356,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "520680611215a6a40fc7d89a39c891c5a6665d18e393e06171e32bacaff29a0b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"message\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3410,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8a821746e7da05080d06ba1169f95499940d09e6ed57b619d0df74edc13b4f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3462
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3462,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b2eef374e327de3a704da291995e474f3fbc6e2e001525ca088afab2fa82346f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3641,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/unread-queries.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30ff1f1eebef14c8f96a76ab85fd5d76f47bf7f11f2c7f0d3529fab7cd44cc56",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"uid\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3276
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3276,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cec056ce2c46ac3772aea9af4139070bd5b0cf4980f242ca63e2010c7cc7f10a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"username\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3342
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3342,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0b4a431463f00f3fc0bea0e292994d017656db32e4c595ae1015fa1b8b61f1a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"userip\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3395
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3395,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62f9c9599bb7ee252edf742763819b6f26fe5330d20b18c198a037552f2ebac8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"loginTime\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3446
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3446,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2bbc20399f4a44e94e53f608eff639f0eda96d6f8b1ef1bc422124f7000e5578",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"logout\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3500
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3500,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/user-logs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "20bbffc5eb0bab93dd40bf616db1fc5e0aa28f029685ae17d01c8cfa755c2eec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid",
+            "$bp",
+            "$bs",
+            "$weight",
+            "$temp",
+            "$pres"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            200,
+            227,
+            250,
+            273,
+            304,
+            330
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 375,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "03b5aeb189e1b28b3a51f7a5b8ff1f8a14a8c68fd48c733164443e33e541cca3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 82,
+        "sink_column": 3026,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cc3e05b8e2c9bd7524dd10578cedf00677e9438966ca1630b55da15c7e36add1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3391
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3391,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "53a4afacd018c99ee718042cccaaa60e00168f74a72d43ec91ae83e7762d0bdc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientEmail\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3474
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3474,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "739cdd452a6a449f0e7cdcce4edb1960c59a6a215ded4625f84376a33e22f483",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3583
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3583,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b1047fa00332906e86ba29eb5708b65091a220116a50447d8331db3cb411eb80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAdd\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3664
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3664,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bda6d39c9a6ab042cdba2d5669c8809a5fc4de73e344933c1208f36c7b5ae874",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3760
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3760,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f1c3e246070850ec31982fbf8ef1cf79e9af75045d8ff85189ea8721890e44c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAge\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3837
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3837,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "067f8c09648c1d389613ce92099c49e9b1052a73e09e38c90d7450e7e6d14c1d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientMedhis\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3954
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3954,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "96f87dd7ac498671fce2d339402934ad9bd002fe63a1d34c464451b4faa18c9a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4037,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00f9492dc63f8ddfce66ab77dc18aa704bf1a281867303382857c835421647e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 121,
+        "sink_column": 4116,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cc3e05b8e2c9bd7524dd10578cedf00677e9438966ca1630b55da15c7e36add1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BloodPressure\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            4706
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 4706,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b893d735fb7e91a3416fec6708f2b812af8aace6226b62d17844cb0cb240ab68",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Weight\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            4754
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 4754,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e7c5ede2e9303a627ff635da34f5ed32fbb203659d468295096a0f389579239",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BloodSugar\"]"
+        ],
+        "source_line": [
+            146
+        ],
+        "source_column": [
+            4795
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 146,
+        "sink_column": 4795,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "314e572e806b41708eb38d1029a90b557225f0e6abba2840ba1866a8d2f73b28",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Temperature\"]"
+        ],
+        "source_line": [
+            147
+        ],
+        "source_column": [
+            4842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 4842,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ddb9285e7a9c8337470371d75402fb008e08ed52b8dee08700928b9807121d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MedicalPres\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            4889
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 4889,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34095ce8363f5a0ea73d559de3074c0e7c392fb5317c84ea57d584895ffea589",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            4936
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 4936,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/admin\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00f9492dc63f8ddfce66ab77dc18aa704bf1a281867303382857c835421647e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            274
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 203,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "21c1d945b0941daf82c7564b38337d00f33f4d59af2584209a0abde7a4c819f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            38
+        ],
+        "source_column": [
+            1609
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/include\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 1609,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/include\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2884f187ac2b6d3bdb2900ffd825f5a6b813ec09985023b83add63f3982be4ea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4585
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4585,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d022a2058757e36ae95e5fd46ba3cb9845cb93b46660593e4ffb35e605d138e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"docname\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3700
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3700,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77f128321502d64769a494f8c554c669534f3eeac433b5a6df9c12307c7616e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"doctorSpecialization\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3752
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3752,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2e24981efa46532d6ca5d6d9706321db6bc25903c4105b3254b5f69b5f8e0226",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"consultancyFees\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3817
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3817,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1266517ee12471c25763172b1d7d40483d99fb0fb7771dc41a51684d79cefa0c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"appointmentDate\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3877,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3948d81d22cb4f7aaa37eb0adddedc79b59df910384d5d118ae9a3f8d59e81dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"appointmentTime\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3931
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3931,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8262ab66eb131fea3d924c39654bad5eac00d7dd63a24be3227a24562dff8110",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            4005
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 4005,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "583bc92f3edb69857a740f145587f61951ff82f340f57d7aec06389f6a2ad988",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4585
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4585,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6efb4ac05872d86ec6354fcf820461ab60392222625b277c9ce6c7c95771fcd3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            76
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/include\/checklogin.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 9,
+        "sink_column": 198,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/include\/checklogin.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "1ef51e6a797384241824f3978f79c1dbf30cc545ec808ec4ccd3d90ca3c29458",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$specilization",
+            "$doctorid",
+            "$fees",
+            "$appdate",
+            "$time"
+        ],
+        "source_line": [
+            10,
+            11,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            166,
+            214,
+            269,
+            292,
+            321
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/book-appointment.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/book-appointment.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/book-appointment.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/book-appointment.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/book-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/book-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4cd4fa0b3fadc910380a0f6fc400f19d6618885bc369279574de29e39ccdff13",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            163
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/change-emaild.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 193,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/change-emaild.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f0f334513a5db536ce9a2b527f5365538a0413cfb5836045015a779418c15ab9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            74
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 112,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "123a5d6729e893f788a6286b2c71838e8a60c3a097d5cfe72e53c8268127ac8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            76
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/checklogin.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 10,
+        "sink_column": 220,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/checklogin.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "ef2c04548ad69aa69eed46e39a277d2022bb28c199444db2c11a2f4dcd7a76fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$patname",
+            "$patcontact",
+            "$patemail",
+            "$gender",
+            "$pataddress",
+            "$patage",
+            "$medhis"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ],
+        "source_column": [
+            218,
+            247,
+            282,
+            313,
+            340,
+            375,
+            402
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 434,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/add-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "24136d69180b12b6c2b4e39a00fa2ca25d7bc29258333c66dab58e34d2e1054f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"doctorName\"]"
+        ],
+        "source_line": [
+            38
+        ],
+        "source_column": [
+            1614
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/include\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 1614,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/include\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b3e9a86dcda65a470235a57faed197a1290dc7b46d3ebda7cb0ab894024c3bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            265
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 193,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1545a85cba28c1f6a8553b6ec1d4d86d398b3130b3340dab883f14198a060330",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4568
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4568,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7a557a8815e1d732768eefbf3829143142b9536968fe180d6737bcc0a8a5528e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fname\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3684
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3684,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "10ad66591f4382de77d334d56752756d4ef80f1626cc3ab49a7e135ba371bbbd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"doctorSpecialization\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3734
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3734,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f3c3a64ecb68c4180e91880aab18df071561c029ec213b498f679eb4a8fc23b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"consultancyFees\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3799
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3799,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b2c1018fa360003c750c4738e0db606783930164424710549a63de84913a526f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"appointmentDate\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3859
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3859,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eddd3431acab2b615ef6cab87ddfb51644bdb31931f8ae7cdc777a0ec7422466",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"appointmentTime\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3913
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3913,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3171d43a26a4ec1a99c703f8de845c65d173e7df279c64229327be446a6bf36",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3987,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "88cd99e9f628ff88f9f34b7ec18cae7bdfce3ba4b1407c147de8962d302ad722",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4568
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4568,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/appointment-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a67c3dd0675be9cc5b120199bf3ed64b0f9c4014e22e3a9a35bfd17223822948",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            74
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 5,
+        "sink_column": 108,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ff73f58cd03343f16697ee3199cd0ff931942ab2d0d41e31952548fd25a709a5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$patname",
+            "$patcontact",
+            "$patemail",
+            "$gender",
+            "$pataddress",
+            "$patage",
+            "$medhis",
+            "$eid"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            11
+        ],
+        "source_column": [
+            216,
+            245,
+            280,
+            311,
+            338,
+            373,
+            400,
+            192
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 432,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5a28fc773483051dfde8dfd4fbfb6255268d8cf3af06f21069c774aca4ea3618",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3062
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 87,
+        "sink_column": 3090,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8de978a565c3307af4b33309f0018fd0e98ed5f5812a5728c54c07cc9ee31814",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAdd\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4683
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4683,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7a38bbe1066da98a4814637077ae5c56b1fc0db234872ae5c33a9d836a6c55a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAge\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4869
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 4869,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f21af1ed9be617ffb703841216f390c6157512547eabe1cab0aad21004d3b77",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientMedhis\"]"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            5130
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 5130,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a9beb9d67ec39de6ef89873e2549130a202b7913495022530e181d172137f522",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            5308
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 5308,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2624634fa44cc57c17a9cc66d6abae14bcd25f352ad60b54d5990650b3eb28fa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3361
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3361,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a90fadc068d5d5275db076ce90883d562dc78ab7ded514a7ffd9a8d18b66fe31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3566
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3566,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c106728e41c2ace6e0b4411c80472c1e2c48ac9e1ce8fd17d4aef177b10e47c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientEmail\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3812
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3812,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d99a854e35d40ef42766539bc7dda24056d2572780133b2d8b3c7a23cf655e0f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAdd\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4683
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4683,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7cdbe6aaacccb2d31484c69cc7523d659ed1e1bee9efac16342dfe3ca3a21717",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAge\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4869
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 4869,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6badf7dfffc019adbbdd3e8473fb0f6ac54a87324d9669f8cd387df54e777ad7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientMedhis\"]"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            5130
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 5130,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9649ade7d014cb69ee40c76dafdbdda766452f3b7c7aa8c2a67b03a379aed2ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            5308
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 5308,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f2d4c150226778318af0e81f771e3f38a64ab01b777821ffa5d3637fd99f663",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$docspecialization",
+            "$docname",
+            "$docaddress",
+            "$docfees",
+            "$doccontactno"
+        ],
+        "source_line": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        "source_column": [
+            189,
+            241,
+            270,
+            308,
+            337
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-profile.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-profile.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-profile.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-profile.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 410,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/edit-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fccd202513bd2bf0951f6bff0051b8c425bc97b450f6f998513648df69e14d1b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$contactno",
+            "$email"
+        ],
+        "source_line": [
+            7,
+            8
+        ],
+        "source_column": [
+            147,
+            180
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/forgot-password.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 212,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9b33c0474cf3916d133d48a9af42f6e45a8a3e37842cc638e97ffbd5d971fb5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 181,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4c198c95216c416d24b9be13d3f47d5c31f561a4cc58485b4b69588567133dd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uid",
+            "$uname"
+        ],
+        "source_line": [
+            15,
+            7
+        ],
+        "source_column": [
+            393,
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/index.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 472,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "02598fb17b1efad9d8a4a308e1d4bc9048a1c06f939b01bb3837eb20356718a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 28,
+        "sink_column": 681,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4c198c95216c416d24b9be13d3f47d5c31f561a4cc58485b4b69588567133dd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2782
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2782,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "33adf2e0c430cabd97a5ad323c1e6773a24af293f795cfa278214bafb8399b4f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2826
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2826,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dbb9c5114e4ac6a522b236a29b85eda2deed600af893bbee59a04ef3d0a53b8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2872
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2872,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f6890a6cb90c49d9b897baffe89baee1f0ad723d96127ba0d2abda13a2e259b6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2918
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2918,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ece49153ad1f12b1fef49d44a4364ae3d1171998293d0fb3d506f684a95f4c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2963
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2963,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "19f258d4d274ef1bb661541172f8c23ca585bd8c9250e22a657c66255367b93a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3047
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3047,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2b78a2f624ce7c61d80a142d58a601444789d6e2cbfb2ef8f687f78ab8baabc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3140
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3140,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/manage-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2b78a2f624ce7c61d80a142d58a601444789d6e2cbfb2ef8f687f78ab8baabc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2653,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "154f0913740395ca743ded47d5b00f95fe74b9a818aace4f510bb5ff70f99556",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 91,
+        "sink_column": 2965,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6b534e323db9c32b7d9f228bfd1ece48457612f9f23e316e3346c8b9acc4b962",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3259
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3259,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2f5064f308469f72f71c1c95d66942113b0ac31593724ada7dd629ed9bdad014",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3303
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3303,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d2b34a2a151e3405ea4e6365cc02b28b8b4bf6b9d731c4f7b3901d33fdfb7a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3349
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3349,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "10da95e3ffc36e0d71b915a138c89d4f719051445ccb19c29176affa133b7688",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3395
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3395,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b94967c6cc65716c8ea27a1dfeca874f48d088f5e27fb27a4043f0f0c2844639",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3440
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3440,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e79606aba7ab3563fd4388069eb3bb0c448335a252d7abf19ed0a63a33ff18ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3524
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3524,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d4b8ed372f74567f46480b75c25b328e911e47c25c7f67649f7f27df9f2e3e07",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3617
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3617,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d4b8ed372f74567f46480b75c25b328e911e47c25c7f67649f7f27df9f2e3e07",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid",
+            "$bp",
+            "$bs",
+            "$weight",
+            "$temp",
+            "$pres"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            200,
+            227,
+            250,
+            273,
+            304,
+            330
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 375,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c48dccf3695c89f93528f92a43710439042bc3d90f791ecb49e04d190d99767b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 82,
+        "sink_column": 3026,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e5d51d6e0ee316f3a0abb9d75c09e866365f2875bf2074d9c2cc5c579c8798f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3391
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3391,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fb896adb0f8458cd102475ab295b5c002c273e18b0196d2af914e5ed3f33ffbf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientEmail\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3474
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3474,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "52e2c9ce1fb303aebf73ccd0a6cea62000d62510c3d6b76363fdbee064cb5005",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3583
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3583,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "be1b4033a8fd3335d7ea0dc5a5c419f6a5bf78d51dec7df742392e31573fbb34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAdd\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3664
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3664,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "992fcb1178170b5e9f924195b6d9e3d70559f05a82a654efc6297a977974d278",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3760
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3760,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "11e172153f0c195a8ad2565e6d56e9c6d669ab4988e92cee5e1c0782b3ddedf9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAge\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3837
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3837,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5c7c88a7af187743d7928946bdf33f289ca3647dc91f92f0fab3416ef85bb71d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientMedhis\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3954
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3954,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d2795b61fc0f43d1f5e07c08c51182999eba506c63b44f7785850da99384f1c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4037,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bc438c9053dbdef3ce6dd521098b12b26e5500bc8052ab46934a5b2e45489436",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 121,
+        "sink_column": 4116,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e5d51d6e0ee316f3a0abb9d75c09e866365f2875bf2074d9c2cc5c579c8798f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BloodPressure\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            4706
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 4706,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7cdb72f9c149ac9529ee74c00bb94a2432299f64060382d32607f77cd12b9534",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Weight\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            4754
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 4754,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "edc71c158875b94988d17b4a8d99798acbaf0a39f695f2c63729422e04105e9a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BloodSugar\"]"
+        ],
+        "source_line": [
+            146
+        ],
+        "source_column": [
+            4795
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 146,
+        "sink_column": 4795,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1ccacc87ffce45702642f43b287dfd44a25fc1eabd33425e9d15deb653f461f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Temperature\"]"
+        ],
+        "source_line": [
+            147
+        ],
+        "source_column": [
+            4842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 4842,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ff10816fd0af153614c06e0d074dfb8958b631ad50fff3b2323e9a27f58ca0f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MedicalPres\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            4889
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 4889,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "caf6e82b75b93f850e71a0213a0f678b7e7ca9989cb4bb758d617013f0b87229",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            4936
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 4936,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/doctor\/view-patient.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bc438c9053dbdef3ce6dd521098b12b26e5500bc8052ab46934a5b2e45489436",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$address",
+            "$city",
+            "$gender"
+        ],
+        "source_line": [
+            9,
+            10,
+            11,
+            12
+        ],
+        "source_column": [
+            165,
+            190,
+            219,
+            242
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/edit-profile.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/edit-profile.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/edit-profile.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/edit-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 276,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/edit-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d8384e286052b6fd9241f26fb876a77524b4875acc133a3eea1d617d7eca933b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email"
+        ],
+        "source_line": [
+            7,
+            8
+        ],
+        "source_column": [
+            147,
+            174
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/forgot-password.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 206,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "25fe061de175e894bc1234ec29706d38fb8fffec26fa42444fc34c627ea6a627",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"specilizationid\"]"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            166
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/get_doctor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 90,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/get_doctor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f52fb721ab4808c12f4c07796930e53baf0c843ba0ffa7f0b8a40f5543b6b964",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"doctor\"]"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            545
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/get_doctor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 486,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/get_doctor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "65bc968af13d4fbb9a75cea4e17069b192ded3d07143d05deb0f9b8a3753398f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2831
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 2831,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c9715c9feb1149d5e9df198fe962afb46a788d18a2dcc122f5b0bcce111e558f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2875
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2875,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "13375322fb5bf990631c4a7b667aa01a185fca5b4d3aaeb09fab8158db3f11a6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2921
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2921,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af873f3b0c201b81e4a266e25ba10f7e826229ab11c74a140090b84a00d91241",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2967,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b4d056bf8e763ef19e3ee4150db543cb2a114b91f70cd704853f61c2c16a087",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            3012
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 3012,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "48292875a2ff51ea6ef711d7543074c21ebf07ed980b354f057689389f11fa90",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            3099
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 3099,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/manage-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b93e409271b940b1034f14e1a2687b1c5efbd30822b579b58b714edb6927958d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$address",
+            "$city",
+            "$gender",
+            "$email"
+        ],
+        "source_line": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "source_column": [
+            76,
+            105,
+            134,
+            157,
+            184
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/registration.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/registration.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 252,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/registration.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4db720d83d4d49fa7b82a91e4daf7862a5d2e065842d8d620fd7b189dd17d085",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$puname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/user-login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 177,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/user-login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d4ac2a65344755444ae0a5897eafd4d655eff72e70041cc4abd3d4a9d0d577b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pid",
+            "$puname"
+        ],
+        "source_line": [
+            15,
+            7
+        ],
+        "source_column": [
+            379,
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/user-login.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/user-login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 521,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/user-login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "aa1c2f1d9f2d087e1f63a2e7f4ecc0685ff69116b6adae925adb674e5e63cb13",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$puname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/user-login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 29,
+        "sink_column": 813,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/user-login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d4ac2a65344755444ae0a5897eafd4d655eff72e70041cc4abd3d4a9d0d577b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid",
+            "$bp",
+            "$bs",
+            "$weight",
+            "$temp",
+            "$pres"
+        ],
+        "source_line": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            174,
+            201,
+            224,
+            247,
+            278,
+            304
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 349,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "929f8c61736eacb031d4fc8e32f1969c49359a89f324cd6647b4c2e7675fdbee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2944
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 81,
+        "sink_column": 3003,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ad9ff85f03d116fa4080cedc3058bac8b5a026fef7cc7fd0f76d415663c60adc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientName\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3368
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3368,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "efeb3c9fec2c3aacc13e0f60918d583d49dd82258cde794b6084545e64591e5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientEmail\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3451
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3451,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c899dc97684d7a66838d089b69ed7f0296c0176ebe1cc914be5748484d161bde",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientContno\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3560
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3560,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "398a51bc927446a3a7f31c08eb9466c23025890ad14c2c429564d8a83a00177d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAdd\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3641,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a73cdca69a81c726645259e701bcdaf717ccab55459f805c924f1986548c734",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientGender\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3737
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3737,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bba05a285f66c15f81c1ba690b981b8dbf8429adbf40c926f570baba6a616efc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientAge\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3814
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3814,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f7cfe7001ec7cd22e34d2b62ccfb808943def3a1f419710207e21f1b045f3de4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientMedhis\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3931
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3931,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b3f977971416777d8ada60840dfc3cce1bb367b4345a70673b19608fc8311f00",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4014
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4014,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acfedc4c18ca01fce4257cbea85f3fc0ab1185496777e63bd32f243713910774",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2944
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 120,
+        "sink_column": 4093,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ad9ff85f03d116fa4080cedc3058bac8b5a026fef7cc7fd0f76d415663c60adc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BloodPressure\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            4683
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 4683,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e90e88958955a884b48ece8e96e225004d84204da274f3c6436df926f4ffa58c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Weight\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            4731
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 4731,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cbf42ad1f101c913b241e34e4e2ba6bcab4ddc7de9eddc47dab8f96127dc5279",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BloodSugar\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            4772
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 4772,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "522a33294d1f004a358a127160329dbf5ebd83f2ce2f7deb937782c1ec491772",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Temperature\"]"
+        ],
+        "source_line": [
+            146
+        ],
+        "source_column": [
+            4819
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 146,
+        "sink_column": 4819,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85c0257b80ae4fd6c573221a9dd2c77eabe059327dc35925794b47a67bc329a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MedicalPres\"]"
+        ],
+        "source_line": [
+            147
+        ],
+        "source_column": [
+            4866
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 4866,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67a72dc330031bb225b08e41910fc18acec3cdd6ff3fd2e56475837df95e6bbb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            4913
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 4913,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/hms\/view-medhistory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acfedc4c18ca01fce4257cbea85f3fc0ab1185496777e63bd32f243713910774",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$mobileno",
+            "$dscrption"
+        ],
+        "source_line": [
+            6,
+            7,
+            8,
+            9
+        ],
+        "source_column": [
+            82,
+            109,
+            136,
+            167
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 209,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6f1c950d9a7c8e687912245e32aa20de0484ac1801af63175c868d0b9789cd9b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            267
+        ],
+        "source_column": [
+            9597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 267,
+        "sink_column": 9597,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "64fd10e7376f0477b80c373ebcb0973554ed2aaf63cdc43c56252d9bebb62fdd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            398
+        ],
+        "source_column": [
+            15421
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 398,
+        "sink_column": 15421,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "64fd10e7376f0477b80c373ebcb0973554ed2aaf63cdc43c56252d9bebb62fdd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            399
+        ],
+        "source_column": [
+            15497
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 399,
+        "sink_column": 15497,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b4810344366fae033b4124a798666343a70b184fe45a3a3045d2724e8abdae5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            400
+        ],
+        "source_column": [
+            15586
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 400,
+        "sink_column": 15586,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f19ba6b58839a30955748213b388f04778c4b8897e8ee6d049c2c9c2d2f499d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            400
+        ],
+        "source_column": [
+            15625
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 400,
+        "sink_column": 15625,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f19ba6b58839a30955748213b388f04778c4b8897e8ee6d049c2c9c2d2f499d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OpenningTime\"]"
+        ],
+        "source_line": [
+            401
+        ],
+        "source_column": [
+            15695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 401,
+        "sink_column": 15695,
+        "sink_file": "\/home\/kali\/Downloads\/14.Hospital-Management-System\/hospital\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2bb60ecd8772f48a1e218f878098a537aa99b4a52a488620c44752b4a61c9165",
+        "vuln_type": "taint-style"
+    }
+]

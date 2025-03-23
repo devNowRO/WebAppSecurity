@@ -1,0 +1,970 @@
+[
+    {
+        "source_name": [
+            "$AName",
+            "$mobno",
+            "$email"
+        ],
+        "source_line": [
+            11,
+            12,
+            13
+        ],
+        "source_column": [
+            248,
+            279,
+            313
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 354,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3609ca91797f3ea62d7de24ae5c77e549e620c24c68928cd030f20de0b293c94",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            1029
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 28,
+        "sink_column": 1646,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fb7627fe8bbc2819eac3aa1edee2e6b9b8422c6bd53ead6e04a44872346250e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            1029
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 2448,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fb7627fe8bbc2819eac3aa1edee2e6b9b8422c6bd53ead6e04a44872346250e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            4356
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 4356,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb9a39b52ee1b366ea782f6e599b36c934ae27d3a4dbc39dcad4ba38148f37bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            5101
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 5101,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "93f34e159a43b991aafce3b5a2e89feeeef14276a4136517c5841b91bf873cac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            5895
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 5895,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "43c5da217c986b5d8e2d1f6563bb5201b1bc3dfd766fceeec07b844f0e570203",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            6714
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 6714,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9aebca0b37b1fa7d970ede29a5e6dc0765cf333ec923b7857766868b6821fdf9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            7403
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 7403,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b58a3209c543fc8958c9efd1a1092a03e2081204dbf9055756979f8f68f2b14",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2809
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2930,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cd5cac6ea64392d6aaf9da11c4ea2bcc2e3eef21faf45ed5a1892e9eae3dc97b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2837
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2953,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f7ef112c9df30aa245b8df2e0e823844d762886f37a9497b7b415e8d9b48dcb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            76,
+            77
+        ],
+        "source_column": [
+            2809,
+            2837
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 98,
+        "sink_column": 3607,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3f070a516c52534f67bf5d5cf3966ffdd892f97d9f9501f03dc50944186488d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3895
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3895,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4eb88979da6db41c4c113e4c033e4accb92f66f70e708b78767728bfc51c9adc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3955
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3955,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a4aef4fd6c5c6fa7aa4e0bcc45f799dc217e6fbc71d02de3a8cf23f1e56c56f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4017
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4017,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84cabe8947e769a916ccbb5844df0d384b3f177ee71684f957ac603c0c4db67f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4108
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4108,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "22948da825df1e23b26920432aab6921d9f5cc36f57b66d2e74750b6faf99d2f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            162,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/forgot-password.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "68fe6e31b7fc33d261e66d29c3bdb1f8be2d94a6ace8eb04003e8494612b7a3f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            117
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 198,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f3eca745755e647051435e07282d778eaf3e7b850fbe400e1c7662e5cfeffc9a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3445
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3445,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acc9255875c3db620b06b6d07f787f4177906630a620b490476a0f19072101cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3504
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3504,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8816e2efcf94cfaef9abd093211c6cd95eae8fb61d5f1c2b35c50904f6502ca5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3565
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3565,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0183275a328dec495775dff98a705ecb8788e24e437c997601e42bfb1baaae7d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3655
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3655,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/manage-newvisitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b53bf22100e5d1c5bb990712c2604fbfcb1d6e01bd99bd88a822eda5cf984792",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2753
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 2837,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "596c1fbd302ad311e3736f1f78bed2429f922b9f021c600f8a03c63facf57f13",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2753
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 97,
+        "sink_column": 3504,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d87e122b042bccd4bb3234f5ab7dd69025d88dff4b355617e2d8f581218d31ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3843
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3843,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ec8b1d0f7da5146638f08c1cc443d0b7b6952dbcac7464ae19fdd85e73a7876b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3903
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3903,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bb88638179e152e2eb436cafe0c7d4aa2c99108379a12949d3f7df1fcc2dc611",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3965
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3965,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0db216376ce1aaaa22faee8e5c41c7ceddc8ecbb086f9b7d75cc897a559b14d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4056
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4056,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/search-visitor.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f1fec58a7244df41cf36b36fdcecf62455113d9d36bd6549b32612f0c8406f2a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$remark",
+            "$eid"
+        ],
+        "source_line": [
+            13,
+            11
+        ],
+        "source_column": [
+            236,
+            210
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 271,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "571e4f65bcf27c273d0eb33cfe1e1a0a3f49b8ab67885c71f7fd1709580bdbec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3461
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 100,
+        "sink_column": 3489,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cafae0bf6c21509074f986e6d2833a05a036ca67bff464c02b4d31b16ca142d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"remark\"]"
+        ],
+        "source_line": [
+            155
+        ],
+        "source_column": [
+            4996
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 4996,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "774a6216d9ec988a2625fe46a42cf1cdebf06f85b13a4b6221d4e188f2f91612",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"outtime\"]"
+        ],
+        "source_line": [
+            161
+        ],
+        "source_column": [
+            5074
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 161,
+        "sink_column": 5074,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "19916bb740e31123eb045ce3ef96d895a35817793c08f40cbb039fbe7d8322cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3758
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3758,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3ebd31a0693182167faa05ae1da9b0184330f7a1de0f60933c3c733cc3b05796",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3842,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9548950e53aba9e6aa47e29ac0125a0fd9c130b55f19b923111c5fbcd50e8a9d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3932
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3932,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "73a10f1e43c29f32bb34bfc6dd50f6fa6726e84837ba46d160195375f5efc68e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Address\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            4021
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 4021,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "79ec399e9b53766bb11cf62f1dfdfe86cd03adbbc1c59076731976338ace066e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"WhomtoMeet\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4110
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4110,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7602d0888dba1a645dd9512d6ba8f1be03135e9d3682c76800dad1c7f9dc3ebb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Deptartment\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            4201
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 4201,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bcf4b94337b4a5e3c536e8721b7238a1b62a79007f4a81bd525b4c521d7a6068",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ReasontoMeet\"]"
+        ],
+        "source_line": [
+            132
+        ],
+        "source_column": [
+            4296
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 132,
+        "sink_column": 4296,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "33cce0aa7c28a37ddf75d13c769dcfd135358591d8a4ee39ffa65512277f8355",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnterDate\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            4397
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 4397,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5fa67729aebd1d929870896eec8d427223cee961848dc44a01e1d3aa99380ec4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"remark\"]"
+        ],
+        "source_line": [
+            155
+        ],
+        "source_column": [
+            4996
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 4996,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00591c8ed3c4c462203565fe23e9a772532af6f8414cbfc93b9dc6eb0fbe20c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"outtime\"]"
+        ],
+        "source_line": [
+            161
+        ],
+        "source_column": [
+            5074
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 161,
+        "sink_column": 5074,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitor-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "158c183f4f7d6f536574e3eec48f207920fa933dae34d4d13d5492f4a819d200",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fullname",
+            "$email",
+            "$mobnumber",
+            "$add",
+            "$whomtomeet",
+            "$department",
+            "$reasontomeet"
+        ],
+        "source_line": [
+            12,
+            15,
+            14,
+            16,
+            17,
+            18,
+            19
+        ],
+        "source_column": [
+            232,
+            298,
+            263,
+            322,
+            346,
+            380,
+            414
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php",
+            "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 460,
+        "sink_file": "\/home\/kali\/Downloads\/27.Company-Visitors-Management-System\/cvms\/visitors-form.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "478bf95d67d242be625d3f5a4626d1721b06ad3b11a759b7e1bd262007c3266b",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,156 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2516
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/between-date-reprtsdetails.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2637,
+        "sink_file": "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/between-date-reprtsdetails.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f02695cf5e92d1ad3cb939d44c3aa8d9e04a40721f1b83b468802c6cf4e63b15",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2544
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/between-date-reprtsdetails.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2660,
+        "sink_file": "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/between-date-reprtsdetails.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f98e9e4482d97dd31b53465185f8e2e8aac6a2438db1a85d4068c5f1cc6c30e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            2677
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2677,
+        "sink_file": "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            3000
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 3000,
+        "sink_file": "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            3102
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 3186,
+        "sink_file": "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c976fa7d25c39ae0e260605742b806eb6cb1b3115c701783088f5eb443557f45",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2806
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/user\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 77,
+        "sink_column": 2806,
+        "sink_file": "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/user\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83ce22bd72bee946d07fce99707d8c9ef7c6f3a5ff4ee2b4bc103c82c4a44a71",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3129
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/user\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3129,
+        "sink_file": "\/home\/kali\/Downloads\/8.Student-Management-System\/studentms\/user\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d1a3b53a8faced7adf2bbe19c6ffff74d96e298f9ebc74210885ea816d5db22",
+        "vuln_type": "taint-style"
+    }
+]

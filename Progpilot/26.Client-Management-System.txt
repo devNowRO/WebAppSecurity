@@ -1,0 +1,90 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1789
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 1910,
+        "sink_file": "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de69410dbc98fbdfff4c351b394e342ce62783ce29929ad33ccc3363a7a53d6a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            1817
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 1933,
+        "sink_file": "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8347daa56dcc18307cfbdc303436d1ec88a236ad21fe89699a72d7098f77b81f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2316
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2400,
+        "sink_file": "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "48d906b58ba162b425f4911a6f4a55f32a4be75faeb835453fae26ecad57aa63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2316
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/client\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2400,
+        "sink_file": "\/home\/kali\/Downloads\/26.Client-Management-System\/clientms\/client\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b3043a40a6cfafa889e76a1fd0d64a74ba0834ddc3bd5cc84d79a591ac889667",
+        "vuln_type": "taint-style"
+    }
+]

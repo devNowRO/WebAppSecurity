@@ -1,0 +1,134 @@
+[
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2777
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2777,
+        "sink_file": "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9a9c24891cf95dc9812a21be57fb0d6c37c35a04f2965f9e41447cfe4b73721",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3207
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3207,
+        "sink_file": "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cf78d041a2c1775d84102fea0d9ee1ba6b49c6364b6ede0738eaf8a527906692",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1869
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/pass-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 1995,
+        "sink_file": "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/pass-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cfe2019fe18983e45a7885d6f2af7ce082a0bf44a862ee4dec7d97845804ccb3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            1897
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/pass-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 2018,
+        "sink_file": "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/pass-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c42dcf9943913d24b0dc7890c0fad3c03f87d8e6a34fa400ab27fffbf561ced2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/search-pass.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2494,
+        "sink_file": "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/admin\/search-pass.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "061c750788050f4ff85ea43cb42521bb4160bda775e4c80879598c738e10de57",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2082
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/download-pass.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 2181,
+        "sink_file": "\/home\/kali\/Downloads\/24.Bus-Pass-Management-System\/buspassms\/download-pass.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6946717c67969ba4d1c95cc0d0a224eb50cca6eb14424eec6203623ecd556e37",
+        "vuln_type": "taint-style"
+    }
+]

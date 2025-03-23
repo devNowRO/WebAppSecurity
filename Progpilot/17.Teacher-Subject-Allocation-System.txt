@@ -1,0 +1,90 @@
+[
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2472
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2472,
+        "sink_file": "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2851
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2851,
+        "sink_file": "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3836
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3920,
+        "sink_file": "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d7bde7fecc80610a693ca43b2ffc49b64a2a35382de3d6808265defd0ba367dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            3103
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 3352,
+        "sink_file": "\/home\/kali\/Downloads\/17.Teacher-Subject-Allocation-System\/tsas\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa12fe86a9f56753b73ccf34cf7000384e9acd4c46dde6cf263d4c40df5179ee",
+        "vuln_type": "taint-style"
+    }
+]

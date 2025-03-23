@@ -1,0 +1,5530 @@
+[
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            443
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 15,
+        "sink_column": 443,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "03e9819d651a19b2fc1d08ec569f8a4b79ad2abd9c203f88fa3c61923573fe55",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            629
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 19,
+        "sink_column": 629,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4e0ee30684f4e0baf4cb30daa3f9901f46f136304a3f481719725e504e214280",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2690
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2690,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f75e9bcda0d9f2695f570fad96404c40ced50f0dd0411a24f614f87259a9729",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2725
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2725,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32041f0a60ddf736ae84af372e2ace8a10bc31a7142069c68d58d3d40e7f0841",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2757
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2757,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32041f0a60ddf736ae84af372e2ace8a10bc31a7142069c68d58d3d40e7f0841",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            2188
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 2188,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d0c6625bc8d972bc0e42f88c9e753f973a6af7330dfd202220873cc75735eeb0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2368
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 2368,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "51b226d86a9ccb6ce5bd18832d9f72ccedc0cb31dd09819a2912189c9407d957",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            242,
+            275
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/aboutus.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/aboutus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 314,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/aboutus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a5322d72a035a9296950b3dc1fb247911ca3c108373f57253c19d819cb10d4a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"ID\"]"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            1849
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 49,
+        "sink_column": 1849,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d9d80ccbd43e1aa956e47068e1047157a9b1d42ce60042f77fd0d0efdfe7be32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"FullName\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            2033
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 2033,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f09c7beab9ff5dbf3dba6f628975e3dabf4421f0ee2d72fbae3d488a823f28ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            458
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2863,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c801d89660ef8c64ded69e60402e880bb3898a6fc925251a50f04ac5f8c001b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3385
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3385,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "73d37827534c125c554dc57998614c5b2d1ab4f0f11206651c50a25f98501d67",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3827
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3827,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67543d1122751a794bbcb63736284077983f8d87dad70f9976f52a0a61ef8a5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$artmed"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            218
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-medium.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 262,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-medium.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "32a62a25fe7f74a82354775f9e20bdf673c65558f60e959dbeb5c033f3d87b93",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$dimension",
+            "$orientation",
+            "$size",
+            "$artist",
+            "$arttype",
+            "$artmed",
+            "$sprice",
+            "$description"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+        ],
+        "source_column": [
+            245,
+            274,
+            311,
+            352,
+            379,
+            410,
+            443,
+            474,
+            505
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 75,
+        "sink_column": 2736,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b522c544c6b3cdd8ec30263101dc5e4eb5ae21ab75d605a20f95cd0568dd492c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            9438
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 9438,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4905ba881d9ac9109301e4d6d194efc1f3f455ee42705ac33a4671aa9238f64d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            9464
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 9464,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d38febfd993ec0c0adf4234fa531335731aeb2f251e6edc2bf45484008f8f855",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            236
+        ],
+        "source_column": [
+            10169
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 236,
+        "sink_column": 10169,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4905ba881d9ac9109301e4d6d194efc1f3f455ee42705ac33a4671aa9238f64d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            236
+        ],
+        "source_column": [
+            10195
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 236,
+        "sink_column": 10195,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "689ee62f365c95edcfb8421d61c85dd94cc24b8d416684fdac00bf2c85cc757a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            250
+        ],
+        "source_column": [
+            10907
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 250,
+        "sink_column": 10907,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4905ba881d9ac9109301e4d6d194efc1f3f455ee42705ac33a4671aa9238f64d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtMedium\"]"
+        ],
+        "source_line": [
+            250
+        ],
+        "source_column": [
+            10933
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 250,
+        "sink_column": 10933,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a70bd742c8cd122473bff9391bc5fdae369c057b16f10f421e1562e7419ab4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arttype"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            218
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-type.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 264,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-art-type.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "df81e1436ac43a611eacd321333b757ba79c5fe9dc738433a0f9cc1fbd67b361",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$mobnum",
+            "$email",
+            "$edudetails",
+            "$awarddetails"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17
+        ],
+        "source_column": [
+            218,
+            245,
+            276,
+            305,
+            344
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-artist.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-artist.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-artist.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-artist.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-artist.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 32,
+        "sink_column": 935,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/add-artist.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bbdda3cc24542de7dbe5ff500411deb286e19f0761050e4478d6f3c3605e410a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aname",
+            "$mobno"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            248,
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 328,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d780dec90c16c827813e9855588bb56b7e15231bc0e3d2d4b64ded397d46ccaf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3741
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3741,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ab92e31c968c145558fa741dbb59f776c7f0b447546d286a2512228399b935d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4144
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4144,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c654220d9e2d09b947e70e42792b3615bc8e34cdbc1d0a543cdd65fafcfdf736",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4606
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4606,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17cb1c8ea17b47a31bc70ab390ec40e28ebae91417bb81f98fc2ceba90c66e97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            5019
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 5019,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f0f173016042a3fb99dfb9c6e574689f77c33997c753d948e409853ee2be5aab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryNumber\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2699
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2699,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f4825492e87cb6100fc395aac29fab3e8bf5583f514034160453af4f28c545f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2764
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2764,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "388f80d2bc8762e46ff26ca45ae1b0d25a2280262f65bcb1b83777fc2b55e1d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2824
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2824,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d3348b473e8966c7322230e57c25945f30303fac60ce813a1fe59fa5e4e57f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryDate\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2888
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2888,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d41d111105748726aa80b274f5aa6d67710fb4eee8f28e4c33171df6b18b9459",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3010
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3010,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/answer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3c820c0c24284e2ab4e94389de111b0375030a7648f40744e682be4d8f8b59f6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            213
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 803,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "29a0c1e26438453b1034e3ad4136e08624697389dc0567c6d9db51f3359744be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3204
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 106,
+        "sink_column": 3232,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "29a0c1e26438453b1034e3ad4136e08624697389dc0567c6d9db51f3359744be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3640
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3640,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a50fa0c067be0a234c631e79b82a107511cdc1340247d0dbebc1dfb515b77978",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3939
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3939,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bec17d1ea3f6c4f044c3cac8eeb8be800a38b6cf672fdc13635e8de27297d08b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            213
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 803,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e3930d667c5f7f8a905fb2bffe8be5a2fbcdf1e13144d36a97fca4a2ee3e12cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 106,
+        "sink_column": 3233,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e3930d667c5f7f8a905fb2bffe8be5a2fbcdf1e13144d36a97fca4a2ee3e12cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3641,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f3aabd97edd13a46e0c34b6ec649db61103bfc3c3c83e4e0eefed452f76852cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image1\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3940
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3940,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage1.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2255d906b9ef302aa52e22c6a84f413c39b6dcb8e0996a878e77299276907b3a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            213
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 803,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "98e5f511de09f3b992f0551711d78e70ffc50909bd29b780f466b8d8f05872b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 106,
+        "sink_column": 3233,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "98e5f511de09f3b992f0551711d78e70ffc50909bd29b780f466b8d8f05872b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3641,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b1f1b79829503edda40f44032a2b753b1cb7fca74f749c5515b51fc8d3131226",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image2\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3940
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3940,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage2.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bfbb1b091d51c9cb2ca5418ea65bad46af1ae24a201fdb967c70294eee253e7d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            213
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 803,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b2cc05680f61baad9ecd2ac01f82e733c00b3888212468817430ca2385c901e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 106,
+        "sink_column": 3233,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b2cc05680f61baad9ecd2ac01f82e733c00b3888212468817430ca2385c901e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3641,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6483208730f134317666392181854338a10cb59097fa74990fcda4c6af7c4021",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image3\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3940
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3940,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage3.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "63d9946a8f8c413fdfb72c885ebba2ca36a4bedd307db01976f817fad23505bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            213
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 803,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4cfe57885ebf2ce6ff1fc51c6a621a0e8284eb0cf09f0b0ca6e984d0734698f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 106,
+        "sink_column": 3233,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4cfe57885ebf2ce6ff1fc51c6a621a0e8284eb0cf09f0b0ca6e984d0734698f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3641,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60196bbeef43fe27f2d9101d24baa6eb055dd8fd97a04604d1a18a36c2664d47",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image4\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3940
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3940,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changeimage4.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d8d5609156ea7578d18f6a26251c4113b24fc3bed51af33e4757e71c4a8467d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$imgid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            213
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 798,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dae24d41a04c8e79f24169f3fb682be81f89503523b24952324615a4d18dfdd7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$imgid"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3196
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 104,
+        "sink_column": 3227,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dae24d41a04c8e79f24169f3fb682be81f89503523b24952324615a4d18dfdd7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3629
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3629,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a7a3779910950f9d71a270621274f930eb7714feb865a6f6ceae798f2a0c33c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profilepic\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3930
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3930,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4cb50c4856ec6f4a65a21505c03014ee6b16a4904681b15193d011bf4014f803",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profilepic\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3997
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3997,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/changepropic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4cb50c4856ec6f4a65a21505c03014ee6b16a4904681b15193d011bf4014f803",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes",
+            "$email",
+            "$phonenum",
+            "$timing"
+        ],
+        "source_line": [
+            12,
+            13,
+            15,
+            16,
+            17
+        ],
+        "source_column": [
+            242,
+            275,
+            306,
+            331,
+            362
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 398,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "25ca7f7f5363b4c6c0081f7125f5f15d5cea2ad6b3ef5900b0f03c198dd943b6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3526
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3526,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e188cdeb5957193a58ccc9bc5e252d9f430c2ee32ca67f98c9dcec25fad469a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3980
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3980,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "64d2ff9cc112d8d93d3803f0030e1a423b2fd2fe2b8d49453c5049905f67bf55",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4400
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4400,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "14c39107cb1cdb0c945d43d9f759618680a83ccaf683a65391db7229a27d3619",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Timing\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            4817
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 4817,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ae4593d976e31f8b4c7c82465044c50e0a5780499a4684f771fbde08217f3b3a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            5256
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 5256,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee1aa4a1c444da36efd3d7dc9c0696086937744193be02821e13b36804a99d73",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$artmed",
+            "$eid"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            213,
+            242
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-medium-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-medium-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 281,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-medium-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "46bf624919b23e5567d2d6f8f14adb6143cafe6ddfba4a5dccd8ba5b6061f7d8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2655
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-medium-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 91,
+        "sink_column": 2683,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-medium-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2a9bc25d0fa01c6966a928c2644d1e12a7e1ffcf477b294abe5a2951932a986a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtMedium\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3096
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-medium-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3096,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-medium-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "07c571b68118c56e1c8db41b7b99d0ca346bb3efed64fce7b2e2e7e88fe7a7d8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$dimension",
+            "$orientation",
+            "$size",
+            "$artist",
+            "$arttype",
+            "$artmed",
+            "$sprice",
+            "$description",
+            "$eid"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "source_column": [
+            218,
+            247,
+            284,
+            325,
+            352,
+            383,
+            416,
+            447,
+            478,
+            519
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 23,
+        "sink_column": 553,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "15f63054f88c662eb5295b3e75bff535c62bafdcf49dff81151ad5e9aa8c83d4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2675
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 78,
+        "sink_column": 2703,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "11cb6926c0a59d745ecfee391f822586298e4744d0ef4d029cd3118cc64be67a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"ID\"]"
+        ],
+        "source_line": [
+            176
+        ],
+        "source_column": [
+            8764
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 176,
+        "sink_column": 8764,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "edffe97f6f4649573187023edb9b5022211c9909732c4809a068510e88a6ac30",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"Name\"]"
+        ],
+        "source_line": [
+            176
+        ],
+        "source_column": [
+            8791
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 176,
+        "sink_column": 8791,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7c88ca58cf012b24a1bc9e2258b6c26f2528276603778f553e11d2ab8f3a3606",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"atid\"]"
+        ],
+        "source_line": [
+            185
+        ],
+        "source_column": [
+            9255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 185,
+        "sink_column": 9255,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4efe1aa8da21431aefcce363810dcc2607a01b6ecc89ba9a69fd052f55269857",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"typename\"]"
+        ],
+        "source_line": [
+            185
+        ],
+        "source_column": [
+            9284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 185,
+        "sink_column": 9284,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd0ce42898edef279d2995b28840efbf34707d57284dd091f8692556cc709cca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row2[\"ID\"]"
+        ],
+        "source_line": [
+            190
+        ],
+        "source_column": [
+            9543
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 190,
+        "sink_column": 9543,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa54f26130300c1a8f6b034ee9e2d27f4f9b471db8cd8deed5bfb54a7a79fccf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row2[\"ArtType\"]"
+        ],
+        "source_line": [
+            190
+        ],
+        "source_column": [
+            9570
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 190,
+        "sink_column": 9570,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "890ad6b86bff4f7b3f4b9629f685b7461852cf0f9a1f9bb24e97a758d4588b7a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"amid\"]"
+        ],
+        "source_line": [
+            199
+        ],
+        "source_column": [
+            10037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 199,
+        "sink_column": 10037,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3286b49f70f5856f55b3d930f97442932dfe7573a97e37febee68f8d675fa034",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"amname\"]"
+        ],
+        "source_line": [
+            199
+        ],
+        "source_column": [
+            10066
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 199,
+        "sink_column": 10066,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "be8e30c2369e7f479851768847decfd21947636bb56088fa95bf26cb1deb89e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row3[\"ID\"]"
+        ],
+        "source_line": [
+            204
+        ],
+        "source_column": [
+            10325
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 204,
+        "sink_column": 10325,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b69c742540f7a15417fd68f7179540ca8123e2fbc939bca39b5b196f70ec6cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row3[\"ArtMedium\"]"
+        ],
+        "source_line": [
+            204
+        ],
+        "source_column": [
+            10352
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 204,
+        "sink_column": 10352,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef37d200cabe49589438907a5702d2e1442762be0f348d332f2d064775f90636",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SellingPricing\"]"
+        ],
+        "source_line": [
+            214
+        ],
+        "source_column": [
+            10842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 214,
+        "sink_column": 10842,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b0da108ff720b9fe8e5bf3b8bc657d0f96e96c4d74ad4492cb5b6d1306d3f268",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            221
+        ],
+        "source_column": [
+            11272
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 221,
+        "sink_column": 11272,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "43931cee4fa648be18752f07a35c29696171c7a2e08268f590905753d3164792",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4994ac78fce6eb4de8fdb4dcf1056a9ec6e9e8c69a1a8d281a5b5db28e54a495",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            4360
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 4360,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "15b522b733f89b17e3830de32c810ce29421b2fd8af5582abae0c107ff2b4e76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            4422
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 4422,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "15b522b733f89b17e3830de32c810ce29421b2fd8af5582abae0c107ff2b4e76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            4483
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 4483,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de5967ceed447bca46abed437c3bb4c3b551cb716d62b8196003bb53131a6954",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image1\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            4791
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 4791,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e17f4c670125bd0136214423aa8f41a332a5e00adaeff901c52917c162a7951",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image1\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            4854
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 4854,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e17f4c670125bd0136214423aa8f41a332a5e00adaeff901c52917c162a7951",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            4917
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 4917,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de5967ceed447bca46abed437c3bb4c3b551cb716d62b8196003bb53131a6954",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image2\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            5224
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 5224,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "168088741eddca46289c8eb005554863ffc92d8f5fb25039132f0ebf931964cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image2\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            5287
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 5287,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "168088741eddca46289c8eb005554863ffc92d8f5fb25039132f0ebf931964cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            5350
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 5350,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de5967ceed447bca46abed437c3bb4c3b551cb716d62b8196003bb53131a6954",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image3\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            5675
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 5675,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12d8dfda6a11c5570d471802e8550d77dd0c9656ac8d35df5e5e4e55a8be83ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image3\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            5738
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 5738,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12d8dfda6a11c5570d471802e8550d77dd0c9656ac8d35df5e5e4e55a8be83ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            5801
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 5801,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de5967ceed447bca46abed437c3bb4c3b551cb716d62b8196003bb53131a6954",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image4\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            6125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 6125,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "243ce71a6064fc46ebf4588345f72df42aa28741a4dd5184760ed2a083ea1e6e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image4\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            6188
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 6188,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "243ce71a6064fc46ebf4588345f72df42aa28741a4dd5184760ed2a083ea1e6e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            6251
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 6251,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de5967ceed447bca46abed437c3bb4c3b551cb716d62b8196003bb53131a6954",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Dimension\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            6626
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 6626,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e03acaea0d594fb7c620475307369b95f0710e78186861c21dc91493aa62eb9d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Orientation\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            7198
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 7198,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c04b2718d176e33fb91d0d5909927c1d4b513bc93bed6c96224e6a8608d06fc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Orientation\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            7234
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 7234,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c04b2718d176e33fb91d0d5909927c1d4b513bc93bed6c96224e6a8608d06fc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Size\"]"
+        ],
+        "source_line": [
+            160
+        ],
+        "source_column": [
+            7841
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 160,
+        "sink_column": 7841,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55a9a56e62cd7483553f71f9f987b743651d6d9c65bd692488adb51ee535e09c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Size\"]"
+        ],
+        "source_line": [
+            160
+        ],
+        "source_column": [
+            7870
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 160,
+        "sink_column": 7870,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55a9a56e62cd7483553f71f9f987b743651d6d9c65bd692488adb51ee535e09c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"arid\"]"
+        ],
+        "source_line": [
+            171
+        ],
+        "source_column": [
+            8481
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 171,
+        "sink_column": 8481,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "664205cc626b70f4b32ecfed04ec597feefc8ef82f69dffa14086abc72fa307c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            171
+        ],
+        "source_column": [
+            8510
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 171,
+        "sink_column": 8510,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c78834f4719d691ca15044eb854c86e5fd110be83fad9a454423b1d3afdf6287",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"atid\"]"
+        ],
+        "source_line": [
+            185
+        ],
+        "source_column": [
+            9255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 185,
+        "sink_column": 9255,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2a3bb10fcd9cf1adba43e7207d8c7853aa6b98affd259ecdb83fff1118acebb9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"typename\"]"
+        ],
+        "source_line": [
+            185
+        ],
+        "source_column": [
+            9284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 185,
+        "sink_column": 9284,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b652d293f8c26134f5939387d6813f1f4499d773322bd6fb37f669ead53597a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"amid\"]"
+        ],
+        "source_line": [
+            199
+        ],
+        "source_column": [
+            10037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 199,
+        "sink_column": 10037,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de250b5708fc891c0bed37480debcf4066302889132ae7662d0b4e7ff4a498f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"amname\"]"
+        ],
+        "source_line": [
+            199
+        ],
+        "source_column": [
+            10066
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 199,
+        "sink_column": 10066,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "154b3c5d8bd6cad5ecf330fc4e7b0eeef46e251fb957bdd71f819b0bece8312b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SellingPricing\"]"
+        ],
+        "source_line": [
+            214
+        ],
+        "source_column": [
+            10842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 214,
+        "sink_column": 10842,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76a67bf02f02697a444065399dcea7dc7cd5905c45ff153eb99f977d1e5cc75e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            221
+        ],
+        "source_column": [
+            11272
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 221,
+        "sink_column": 11272,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-product-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9caf0944cce83a460c66adda33c1a860f9ee8b828ef3b8bf2f8beabf4f3788cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arttype",
+            "$eid"
+        ],
+        "source_line": [
+            13,
+            15
+        ],
+        "source_column": [
+            219,
+            256
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-type-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-type-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 295,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-type-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ed5c46bdf79c6d49c6740a31451a65eb613fdd69a86abfd8acadfe4ed4cd8f55",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2658
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-type-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 95,
+        "sink_column": 2686,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-type-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "378d566229c93548a07e55f523cb39bfe16cb9003855e8c9658f30e745c2617a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3097
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-type-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3097,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-art-type-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2bb7c959993ab9adb56a1e89d90bea63caff23ea0e057814bde321d250d512e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$mobnum",
+            "$email",
+            "$edudetails",
+            "$awarddetails",
+            "$eid"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ],
+        "source_column": [
+            219,
+            246,
+            277,
+            306,
+            345,
+            386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 425,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "073b0b5129090e9907a25db84dc8291d228383f481ac74cd3b54e7957d040ff9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            2945
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 100,
+        "sink_column": 2973,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c3a747c3ff8752f1ee1c0f760ab637e3ae6969a875d07994945be16c68bec888",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3373,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "888d1c6b00a3dc8a96d662038105990379139a754e9a7af60ae54a44aa64e461",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3773
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3773,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f4038f92e509e69682d67222e8c6000bbb777732b48fa46aaf2988d52064239",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            4139
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 4139,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0d2b54a7cde6657ae9905de3485e96b8c31ce2531c098a5e5b362c79f05eb073",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Education\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4509
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4509,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08bad6169a9df2cd0f58e12390db8aade99a36e419c321674b324bdf3c1c6f8f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Award\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            4889
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 4889,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "990fb0268e205cd4e7598368020478a2f27bae0582bd50b80151668e717b8139",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profilepic\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            5191
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 5191,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d3a7560bad5fb1190d4b702d3e719e88f8b40fbc10c6e67547d72aeefc23a8c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profilepic\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            5258
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 5258,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d3a7560bad5fb1190d4b702d3e719e88f8b40fbc10c6e67547d72aeefc23a8c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            5326
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 5326,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/edit-artist-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f8e19af11baaaa18a4a6cc959e552a862b4d2303b901ce3402c561b2104d2dce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            162,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/forgot-password.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e3d2e1f78e56da1793a1fad69db8493be560203333e6fd5c5b5fc46330def99a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 207,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cc75163bf0d789d1057631434d2ee020c7aa9976acdd572b8b5f1079c14bbf22",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtMedium\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2862
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2862,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00eaa0d53297eccc746d2fdc99ce8a2d9176e8adcad9018770ed8b0d01c9d318",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2923
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2923,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "021c6739901bd8cf32794985384425656543928f14c7c6e409b2bf71a420c335",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3029
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3029,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acda906cba43c6024c6c871f470a6d0f37ceea8a1d695d3887052431436ae66d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3128,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-medium.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acda906cba43c6024c6c871f470a6d0f37ceea8a1d695d3887052431436ae66d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RefNum\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2908
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2908,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7dc4ab05429355c83ba3856e58fce5d63771d77f165acbb314d11342ca1f8ab4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2960
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2960,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6671f63b7035807ce7214bd4f4abc8c77acb2f9e2452dd0749d3cb05f5aea329",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3029
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3029,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0ca8c1e460dd1d7441b90bb06ca615c8bd2f89a8428bb5acf930d4fd98adbc63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3113
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3113,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5cbaa84c3f9034f0e7ce9f2e2ca323cd1198627ae6b4ef06792d9d6e5b5410c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3220,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5953450f4cdc1ba73913f0d02a35c84535bf99433bbb99c30ba25b8e703aef64",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3320
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3320,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5953450f4cdc1ba73913f0d02a35c84535bf99433bbb99c30ba25b8e703aef64",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2844
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2844,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d8aae4cb1db34142ed42dcac4c6a3058a8e902bfae3c6c9f144f60f641af284b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2903
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2903,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f852faf0a1c7980b5128572ca041f8a469ac0eeb0edf17e3d93d56634313359",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3007
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3007,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30e14f1f924516162f2f013cbc3003926243c106a225a52cc087f52c5dea68e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3104
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3104,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-art-type.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30e14f1f924516162f2f013cbc3003926243c106a225a52cc087f52c5dea68e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2879
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2879,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a640f00ec99f6ed2291d9b65b6872aa4d5f74eaca80a3647a695741ae01cac6f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            2933
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 2933,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "05ed579ca617e64a91476a1031dd00dc7d2e1e629f96e7a563d7b8d61cc9db08",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2991
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2991,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5e66534d3163fe83b22bb45e16444051ea3812a2c135b5a6ba8e6f92ebb91ec2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3055
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3055,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "23d99b4bf9b09ed031a025370bb48891aacdb7f9b381e58182907cb1e2a660c7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3157
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3157,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1fbd89237fcb371afece0efa13ccf16a34981f7d67f9bd388249ea01109348a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3252
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3252,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/manage-artist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1fbd89237fcb371afece0efa13ccf16a34981f7d67f9bd388249ea01109348a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2581
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2665,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da508bcd932399fc744d707466516f1aa5b458c68b7526114a4a3126c862fb62",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2581
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 102,
+        "sink_column": 3299,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "38aa724a057a5b69cd5f27bb0c0c78b5309a061d83a0f624e1d1c370eefcdc07",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryNumber\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3695,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "380489a885313262903d5ffb232b3f439600eed27ef1ce427d5ad183e88e49ee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            3760
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 3760,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "328eca1f4034441303f742253c91982e7c55fbda4d98ac2f031932b0b6cbe949",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3820
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3820,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe425e8718f9c1b3df021e96e8f09e0edfd4d60ecb26f68cd765f730dfa704de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryDate\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3884
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 3884,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1cf5368ee3798d8a24348c5cd2da392aa6d184e818810a939a67228724b95532",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3986
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3986,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b07ac99a6d328e9747b2b9b4ed5997dabd8f64dfc9877fc08209209f544d95ec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryNumber\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2717
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2717,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b24b06a15500f8e1e0d68cfb95d0bb700c01d14d5777438682abbb9ed0bf4cb3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2782
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2782,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "428854fb3c3e18ebb5677cab591086d6b467be6ca07c1665e0850983b49ef567",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2842,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3eab6c5867ddb7e507095dc8eea744653335899111dedeb28d9ea34f39a8fbf3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2965
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2965,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/total-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c6aacebcc43f41a8c4fc0282fd7e54cb0439c3f99b8a21e38d6cf7b48264196d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryNumber\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2733
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2733,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef1319506d282c217e095fbe74d716319a21b2713584e6ceae3eedcf5817fb5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2798
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2798,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f694069748f9397b7ac20ffd86080b71cd6e3ba20a8384b5c8c5d15cc11fe3f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2858
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2858,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d271d316a9ef18e97c9126d38f2101285330b015e9e123f7dfa732f8aa7d1ec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryDate\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2922
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2922,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b593e6852d7defd589cf14a3edbd4d8ae8a9f1c05658032137e059fe51131fbc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3044
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3044,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/unanswer-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6b828fdccc57346b5c5bb1d2c45b0934868f60eec560b265eeebeb742a2ef089",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$remark",
+            "$cid"
+        ],
+        "source_line": [
+            12,
+            11
+        ],
+        "source_column": [
+            246,
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 315,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6c7d5d0ec63dc4bf7a430de8ec2083bc41493a04c1d7399feb8f06f10c9bf5b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2347
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 86,
+        "sink_column": 2375,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d182ae8796645bdb6b7c6fc7a9f9c923f04a0748df0028e4c20fd731dbbb5659",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRemark\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            5043
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 5043,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "818412ca05fd9c0616d4f45a53825fbfc97f6dc91b6f5917ce7e40600945722e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRemarkdate\"]"
+        ],
+        "source_line": [
+            169
+        ],
+        "source_column": [
+            5142
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 169,
+        "sink_column": 5142,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d186d5e8aa4df1d0015a24454ffe33d8d7dac58eceb7d2386b0af078cc50d8de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryNumber\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2802
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2802,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "194c3006a58a0370b915dec4daf8bc5e7536306e55de893b499f288273f63e99",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            2988
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 2988,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6d67213d753f484623c2307fd15fc6b736c22bd0586b4a03b33feac167e39251",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3147
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3147,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c67910022965ac7f6a60d1fe41010639d46a82603468fe2045010902370af17",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Artpdid\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3263
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3263,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "41ff44841f7a3884a194f8513f64284b00d53ef5d6c5a9111524bc1a697345c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RefNum\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3559
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3559,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b634fab71a19775587432c69f627f42e0b317c826e529434967dde4f98487411",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3684
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3684,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "53ca97b7842072932bcef443a50627ace655cdcd46f5ee34318c0f28f7992a9d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3887
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3887,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f9add95aa0ac0cae776fb619a3a63a0175f7d569ef570aef56ff21c546286ff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryDate\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4073
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4073,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c387cbba3341584733d3e0e21892c57171f924fff5b1b635dea03f7228cc6bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Message\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4293
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4293,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76b640ec8aa3b15a4592312addd7351caf40a624340c303b7e3640e1d93e3f94",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRemark\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            5043
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 5043,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30a27f55e43dbf79836ef975fa10f91820ba698baa8f6d504fc436c87e1bdf77",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRemarkdate\"]"
+        ],
+        "source_line": [
+            169
+        ],
+        "source_column": [
+            5142
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 169,
+        "sink_column": 5142,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/admin\/view-enquiry-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "820293d7d83b55acd78a6f78684416ff664f42f26612b2d0ee6c7ff9662c8229",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid",
+            "$fullname",
+            "$email",
+            "$mobilenumber",
+            "$message"
+        ],
+        "source_line": [
+            12,
+            7,
+            8,
+            9,
+            10
+        ],
+        "source_column": [
+            288,
+            105,
+            140,
+            169,
+            206
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/art-enquiry.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/art-enquiry.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/art-enquiry.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/art-enquiry.php",
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/art-enquiry.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 320,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/art-enquiry.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "955f0d589d84093b9f5f4384568fb0d0dd4f33cda1efc87e4cc45caeaafe38cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2241
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2241,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd43e786bdc5fa1617845cb12ab85203b6bb5d83456ff39c3121b07c596abbe1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            2398
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2398,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8d05495c704bf27f75baa74dd2063a185ec2c403aa5e333b2cb4189aa5c332e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2616
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2616,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c8f52eaa7a5b9017283c336bc3d0e307bfd357dc00a230d2b1b6a10c5a3baf4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Timing\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2681
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2681,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "581fdcffc6f72fe058971fd6024410e008ff70a2b40717f4a054b6f6209ed22f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2867
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2867,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1fc8ea447a3a91e1940f1a0f28766ff2565cfe90c21f3df2acc7612e625ddc40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            7857
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 7857,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a33b87ba4c90e3880f38ef9316eeafb1b3254fa47830fc63239a1b0e484c77cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"typename\"]"
+        ],
+        "source_line": [
+            165
+        ],
+        "source_column": [
+            8042
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 165,
+        "sink_column": 8042,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b12441fdaf2bb1be0971834d8d9b76c291f14dfa4538f1120df354f030af8ccd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            8222
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 168,
+        "sink_column": 8222,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b7e818e3e1167f78d6733a1e96d67421aaeae8f951caa3a6aa167f7257cd043b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            190
+        ],
+        "source_column": [
+            8864
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 190,
+        "sink_column": 8864,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa7018a9cfbeee1df1e5902c2b1d4fb0cd0b8b430aa3246bf801dd459f2cedb9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            192
+        ],
+        "source_column": [
+            8973
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 192,
+        "sink_column": 8973,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "136ae4b4c47a6cfde9d55d7b545da5357e257e0e727ec52bccc760ba024ea0d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"artname\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            2149
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2149,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ba7d66e00d97e470fc9e62784cbb0d87689e301bd21341ffb6a3aa8f1b04975",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3205,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "065540a7d5b20d21f670da0aa876127443421f553ea33133bde8a55d2912ba76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3240
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3240,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4618f1504a8ec8c08f13a85cba8253321edb86781086a94427be66eb7b7229c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3291
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3291,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4618f1504a8ec8c08f13a85cba8253321edb86781086a94427be66eb7b7229c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3675
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 101,
+        "sink_column": 3700,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "48601ec7614a87a1c88942c27fdabc42ddceda97bd456bb6f54b099b052b4455",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4406
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4406,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2adf5ed06cb4a69c39fd2fb8490f46c178f499ac0705f5afacc59e210b0d034a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4669
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4669,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e1de05b8de41ff4c4b6d892ebfe6fa5a219efb83b3ddb093317eef4cd1898573",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            5330
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 5330,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e1de05b8de41ff4c4b6d892ebfe6fa5a219efb83b3ddb093317eef4cd1898573",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            5378
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 5378,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9191345ce28ed9e105d85555dc569d5815436e171c10918a5077c11962df5c70",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            5688
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 5688,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e1de05b8de41ff4c4b6d892ebfe6fa5a219efb83b3ddb093317eef4cd1898573",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"search\"]"
+        ],
+        "source_line": [
+            64
+        ],
+        "source_column": [
+            2220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 2220,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea3928b24be74e9ac19a36961ff5e3436d7d9f9dc8becfa245070a6d1a3c2b01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3275
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3275,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d9198d8118723cd36f6e088f43315a04f315f84a0456a7ff6ae67c6197337273",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3310
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3310,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f592f1b3b3aec51b8b00d1f99233f33804d0b91c3a8e5cdab6ea60cf6202b42",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ArtType\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3361
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3361,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f592f1b3b3aec51b8b00d1f99233f33804d0b91c3a8e5cdab6ea60cf6202b42",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchinput"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3745
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 102,
+        "sink_column": 3782,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "899abdf24a4f1810cbc4ceee7526dbafadc848f4ecf94838b9317f4bf428f91c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4501
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4501,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d31b344269b82e436c9e34a7a2681865e6bf80e59e6878eaa646c1bce254e18e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4764
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4764,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac21b7199e86526e9cf8f3bb368f5ae975bc53ff47739caafd01c99382f6d898",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            5434
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 5434,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac21b7199e86526e9cf8f3bb368f5ae975bc53ff47739caafd01c99382f6d898",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            5482
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 5482,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a5d0e7b98a968873eaabfb5cb81ee4e35d6cbe7f9d056be5db59166d697afb1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            5792
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 5792,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac21b7199e86526e9cf8f3bb368f5ae975bc53ff47739caafd01c99382f6d898",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pid"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2290
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 66,
+        "sink_column": 2315,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1382dab8510de8151c663faa6c553b3306ae40249e20a6dd5c70142ae999573c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image1\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3866
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3866,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5742b2981c077c2eadf1e416f39537c1c11078d196209b36ee94dd77684765f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image1\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            3980
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 3980,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5742b2981c077c2eadf1e416f39537c1c11078d196209b36ee94dd77684765f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image2\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            4304
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 4304,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fcff916413197356fce7e10e5f77c809228b0c1c39376185638ebad0d0b32b27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image2\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            4418
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 4418,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fcff916413197356fce7e10e5f77c809228b0c1c39376185638ebad0d0b32b27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image3\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            4695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 4695,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "97a86a84fd6819cc7911906abe1934fbb5c35abe3abbb6ca72ac3ab235bd4210",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image3\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            4809
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 4809,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "97a86a84fd6819cc7911906abe1934fbb5c35abe3abbb6ca72ac3ab235bd4210",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image4\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            5086
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 5086,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f339372b19ce76ca5ced41ad237917556c1ae27121b36112fe65947e29425f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image4\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            5200
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 5200,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f339372b19ce76ca5ced41ad237917556c1ae27121b36112fe65947e29425f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            5718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 5718,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aaa76a851acbb4e3393582553021c2f3c717113c2f0707190fe8452854204b07",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Size\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            5989
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 5989,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3eeaf207afffce6a1343f5b12ceb91fcb7b2aed97b76b0fa809c93639509a933",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Dimension\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            6065
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 6065,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e115fb2255c482d17ce82e8243d901f5ccf9021be5bf9685b27e71a9016ec3e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Orientation\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            6148
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 6148,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4d553f002939c2d09fa70af09a87872e772f8484100f9d87ebc8aa4eba0a6e6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"amname\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            6466
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 6466,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6844e4201a3d91662b9f442ef7a4e2db60555b6c8df5c10e8dcd67485ffc9a90",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RefNum\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            6551
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 6551,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "040e9e5f57dd48d9c761279db5886d2692630880e83651a89d430306974aed3c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            7751
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 7751,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d13aa956feac6e3be634c61b24fe564a6e8c6feb0b38d91a43877cadf703af0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            3443
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 3443,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1def3b90346c930ac25b70196b16791cc037ef4b3b0dbbec850e8b23c424abad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image\"]"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            3591
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 77,
+        "sink_column": 3591,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1def3b90346c930ac25b70196b16791cc037ef4b3b0dbbec850e8b23c424abad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image1\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3866
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3866,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "09d1253115fc2bb137e872c9a92dc293cd7db80442269c3e5ad70d94bfe9be34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image1\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            3980
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 3980,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "09d1253115fc2bb137e872c9a92dc293cd7db80442269c3e5ad70d94bfe9be34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image2\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            4304
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 4304,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6cb4a3c3220869dbe57461f1da33efa165e4cdf837bb27f622285558ad94ecb5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image2\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            4418
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 4418,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6cb4a3c3220869dbe57461f1da33efa165e4cdf837bb27f622285558ad94ecb5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image3\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            4695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 4695,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2ae7661e7103a4f3350d6da8dfdd0d573574942d0017f698ff96b62730a174ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image3\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            4809
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 4809,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2ae7661e7103a4f3350d6da8dfdd0d573574942d0017f698ff96b62730a174ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image4\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            5086
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 5086,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d886df645868f3bf0be7aa953a765e901b397552d6f31e9cd9d570e46af2b80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Image4\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            5200
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 5200,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d886df645868f3bf0be7aa953a765e901b397552d6f31e9cd9d570e46af2b80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            5687
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 5687,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3b5b2849e38c4dd69f18d888c55442747a107fae359c73e41a75907f4c1be65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            5718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 5718,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4471df79b1a2305ad4f9ae237e671c45a1e1ddbef57ee61234b4b0d4f7cae627",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Size\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            5989
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 5989,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "91617785c5405111e533de7935689c8d11df4c33b842e56322ad2ad77f17e10e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Dimension\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            6065
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 6065,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "75f1c046cf05b90bd2711f182a220afb6490b913dd42f4295438ad82120b1c5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Orientation\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            6148
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 6148,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0662c561f1c3aa46ff70991c4d6ff36a6e2f8417ec6c09af607215849f5485f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"typename\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            6364
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 6364,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58c5aec502b5488813c7d6a59bfc473d3fcef12d7182c6a46b71b8aa2b5fa345",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"amname\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            6466
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 6466,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8cd6926a17ad0a00112e2c1d6b1d565783e1c968365c97ba35e7f2241c88542f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RefNum\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            6551
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 6551,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4df52b025c326c9d01d228ff605c71426ab86dc8d92734f2ccd5a19c5a2a2381",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"apid\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            6913
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 6913,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cf94e9abea00aa59cc04a3bbb6ae3bfffa938407c1370d76654149e82665a414",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Title\"]"
+        ],
+        "source_line": [
+            151
+        ],
+        "source_column": [
+            7681
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 151,
+        "sink_column": 7681,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3b5b2849e38c4dd69f18d888c55442747a107fae359c73e41a75907f4c1be65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            7751
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 7751,
+        "sink_file": "\/home\/kali\/Downloads\/19.Art-Gallery-MS\/agms\/single-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee28160cacd43e3357ede541534e2bd3d16ddb85fe5ae94d3b9ae1fc625b4afc",
+        "vuln_type": "taint-style"
+    }
+]
