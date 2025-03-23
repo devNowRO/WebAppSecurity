@@ -1,11 +1,10 @@
-1.  Results and Analysis: https://github.com/daisy2310/ReadMe/blob/main/Result%26Analysis.xlsx
-2.  Web Application sources:https://github.com/daisy2310/ReadMe/blob/main/Web%20apps%20sources.xlsx
-3.  Report: https://github.com/daisy2310
+1. Results and Analysis: https://github.com/daisy2310/ReadMe/blob/main/Result%26Analysis.xlsx
+2. Web Application sources:https://github.com/daisy2310/ReadMe/blob/main/Web%20apps%20sources.xlsx
+3. Report: https://github.com/daisy2310
 3. Methodolgy used: https://github.com/daisy2310/ReadMe/blob/main/Methodology.txt
-4.  Tools sources and their setup guide:
+4. Tools sources and their setup guide:
 
-
-| SAST Tools  |
+|||SAST Tools|||
 #1:  
 Tool Name: Yasca
 Description: https://github.com/scovetta/yasca
@@ -27,7 +26,7 @@ Description: https://snyk.io/product/snyk-code/
 Usage: "windows 1. download snyk exe 2. snyk auth 3. snyk.exe code test /path/to/sourcecode" 
 
 
-| DAST Tools  | 
+|||DAST Tools||| 
 
 #1:  
 Tool Name: OWASPZap
