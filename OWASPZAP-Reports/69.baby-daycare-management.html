@@ -1,0 +1,2863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>69.baby-daycare-management</title>
+<link
+	href="69.baby-daycare-management/normalize/normalize.css" rel="stylesheet">
+<link
+	href="69.baby-daycare-management/themes/original/main.css" rel="stylesheet">
+<link
+	href="69.baby-daycare-management/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>69.baby-daycare-management</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="69.baby-daycare-management/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Tue 17 Oct 2023, at 13:03:59</span>
+		</p>
+		<p>ZAP Version: 2.12.0</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(5)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(27.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(45.5%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(54.5%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(63.6%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>11</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(9)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(11)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Hidden File Found</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Big Redirect Detected (Potential Sensitive Information Leak)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(109.1%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>11</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (205 bytes)</summary>
+				
+				<pre><code>GET http://localhost/sitemap.xml HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Hidden File Found</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/server-status</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>apache_server_status</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (207 bytes)</summary>
+				
+				<pre><code>GET http://localhost/server-status HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (180 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:41 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Type: text/html; charset=ISO-8859-1
+Content-Length: 47731
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (47731 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Apache Status&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Apache Server Status for localhost (via 127.0.0.1)&lt;/h1&gt;
+
+&lt;dl&gt;&lt;dt&gt;Server Version: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4&lt;/dt&gt;
+&lt;dt&gt;Server MPM: WinNT&lt;/dt&gt;
+&lt;dt&gt;Apache Lounge VS16 Server built: Mar  7 2023 13:21:03
+&lt;/dt&gt;&lt;/dl&gt;&lt;hr /&gt;&lt;dl&gt;
+&lt;dt&gt;Current Time: Tuesday, 17-Oct-2023 13:03:41 Pakistan Standard Time&lt;/dt&gt;
+&lt;dt&gt;Restart Time: Sunday, 15-Oct-2023 22:29:12 Pakistan Standard Time&lt;/dt&gt;
+&lt;dt&gt;Parent Server Config. Generation: 1&lt;/dt&gt;
+&lt;dt&gt;Parent Server MPM Generation: 0&lt;/dt&gt;
+&lt;dt&gt;Server uptime:  1 day 14 hours 34 minutes 29 seconds&lt;/dt&gt;
+&lt;dt&gt;Server load: -1.00 -1.00 -1.00&lt;/dt&gt;
+&lt;dt&gt;Total accesses: 421983 - Total Traffic: 4.3 GB - Total Duration: 72048190&lt;/dt&gt;
+&lt;dt&gt;3.04 requests/sec - 32.6 kB/second - 10.7 kB/request - 170.737 ms/request&lt;/dt&gt;
+&lt;dt&gt;48 requests currently being processed, 102 idle workers&lt;/dt&gt;
+&lt;/dl&gt;&lt;pre&gt;______________________W_________________________________________
+______________________W____WW___WWW____W_WWWWW__WWK_W_WWW_WWWWWW
+WWWWWWWWWWWWWWWWWWWWWW&lt;/pre&gt;
+&lt;p&gt;Scoreboard Key:&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;_&lt;/code&gt;&lt;/b&gt;&quot; Waiting for Connection, 
+&quot;&lt;b&gt;&lt;code&gt;S&lt;/code&gt;&lt;/b&gt;&quot; Starting up, 
+&quot;&lt;b&gt;&lt;code&gt;R&lt;/code&gt;&lt;/b&gt;&quot; Reading Request,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;W&lt;/code&gt;&lt;/b&gt;&quot; Sending Reply, 
+&quot;&lt;b&gt;&lt;code&gt;K&lt;/code&gt;&lt;/b&gt;&quot; Keepalive (read), 
+&quot;&lt;b&gt;&lt;code&gt;D&lt;/code&gt;&lt;/b&gt;&quot; DNS Lookup,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;C&lt;/code&gt;&lt;/b&gt;&quot; Closing connection, 
+&quot;&lt;b&gt;&lt;code&gt;L&lt;/code&gt;&lt;/b&gt;&quot; Logging, 
+&quot;&lt;b&gt;&lt;code&gt;G&lt;/code&gt;&lt;/b&gt;&quot; Gracefully finishing,&lt;br /&gt; 
+&quot;&lt;b&gt;&lt;code&gt;I&lt;/code&gt;&lt;/b&gt;&quot; Idle cleanup of worker, 
+&quot;&lt;b&gt;&lt;code&gt;.&lt;/code&gt;&lt;/b&gt;&quot; Open slot with no current process&lt;br /&gt;
+&lt;/p&gt;
+
+
+&lt;table border=&quot;0&quot;&gt;&lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;th&gt;PID&lt;/th&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;th&gt;M&lt;/th&gt;&lt;th&gt;SS&lt;/th&gt;&lt;th&gt;Req&lt;/th&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;th&gt;Child&lt;/th&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;th&gt;Client&lt;/th&gt;&lt;th&gt;Protocol&lt;/th&gt;&lt;th&gt;VHost&lt;/th&gt;&lt;th&gt;Request&lt;/th&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2106/2106&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1083&lt;/td&gt;&lt;td&gt;907&lt;/td&gt;&lt;td&gt;1568877&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;33.34&lt;/td&gt;&lt;td&gt;33.34
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/index.php?lang=en&amp;amp;pos=0&amp;amp;route=%2F&amp;amp;searchClause=&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3434/3434&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;133180&lt;/td&gt;&lt;td&gt;348131&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;15.77&lt;/td&gt;&lt;td&gt;15.77
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=%27+or+sleep%287%29&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2616/2616&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2122&lt;/td&gt;&lt;td&gt;141226&lt;/td&gt;&lt;td&gt;2035750&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;11.27&lt;/td&gt;&lt;td&gt;11.27
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /68.multi-vendor-online-groceries-management-system/?page=p&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1517/1517&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1083&lt;/td&gt;&lt;td&gt;959&lt;/td&gt;&lt;td&gt;1503051&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;16.85&lt;/td&gt;&lt;td&gt;16.85
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /phpmyadmin/index.php?route=/preferences/manage HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/233/233&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;29842&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.04&lt;/td&gt;&lt;td&gt;0.04
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/form/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/411/411&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1987&lt;/td&gt;&lt;td&gt;127117&lt;/td&gt;&lt;td&gt;340287&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.38&lt;/td&gt;&lt;td&gt;1.38
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=3 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1611/1611&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2134&lt;/td&gt;&lt;td&gt;33057&lt;/td&gt;&lt;td&gt;133246&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;40.69&lt;/td&gt;&lt;td&gt;40.69
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=5 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/6132/6132&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2122&lt;/td&gt;&lt;td&gt;154242&lt;/td&gt;&lt;td&gt;412246&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;62.21&lt;/td&gt;&lt;td&gt;62.21
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /68.multi-vendor-online-groceries-management-system/?page=p&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/650/650&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;35670&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/319/319&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;48201&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.16&lt;/td&gt;&lt;td&gt;0.16
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3712/3712&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;72&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1610537&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;11.34&lt;/td&gt;&lt;td&gt;11.34
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/293/293&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;40634&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/648/648&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;45837&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3380/3380&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;66083&lt;/td&gt;&lt;td&gt;2449670&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;34.62&lt;/td&gt;&lt;td&gt;34.62
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=4 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/318/318&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;&lt;td&gt;40115&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2713/2713&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1176&lt;/td&gt;&lt;td&gt;1137&lt;/td&gt;&lt;td&gt;1590024&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;94.53&lt;/td&gt;&lt;td&gt;94.53
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/index.php?db=tsasdb&amp;amp;pos=0&amp;amp;route=/database/struc&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2142/2142&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1987&lt;/td&gt;&lt;td&gt;120095&lt;/td&gt;&lt;td&gt;327711&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.12&lt;/td&gt;&lt;td&gt;1.12
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=3 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1714/1714&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;66765&lt;/td&gt;&lt;td&gt;164538&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.23&lt;/td&gt;&lt;td&gt;0.23
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/327/327&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;38296&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3388/3388&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2122&lt;/td&gt;&lt;td&gt;128179&lt;/td&gt;&lt;td&gt;636574&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;11.05&lt;/td&gt;&lt;td&gt;11.05
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /68.multi-vendor-online-groceries-management-system/?page=s&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1579/1579&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;80119&lt;/td&gt;&lt;td&gt;698538&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;4.43&lt;/td&gt;&lt;td&gt;4.43
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=4 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1163/1163&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1077&lt;/td&gt;&lt;td&gt;924&lt;/td&gt;&lt;td&gt;1586247&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;10.00&lt;/td&gt;&lt;td&gt;10.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/url.php?url=https://github.com/phpmyadmin/phpmy&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;65/3471/3471&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2108154&lt;/td&gt;&lt;td&gt;85.5&lt;/td&gt;&lt;td&gt;22.28&lt;/td&gt;&lt;td&gt;22.28
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /server-status HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2623/2623&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2122&lt;/td&gt;&lt;td&gt;121151&lt;/td&gt;&lt;td&gt;310080&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.67&lt;/td&gt;&lt;td&gt;0.67
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /68.multi-vendor-online-groceries-management-system/?page=s&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2854/2854&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1080&lt;/td&gt;&lt;td&gt;1096&lt;/td&gt;&lt;td&gt;1604257&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;11.07&lt;/td&gt;&lt;td&gt;11.07
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1963/1963&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2134&lt;/td&gt;&lt;td&gt;46042&lt;/td&gt;&lt;td&gt;151960&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.47&lt;/td&gt;&lt;td&gt;1.47
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=sleep%287%29%231&amp;amp;po&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1992/1992&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;94&lt;/td&gt;&lt;td&gt;68143&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.59&lt;/td&gt;&lt;td&gt;0.59
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2201/2201&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1083&lt;/td&gt;&lt;td&gt;988&lt;/td&gt;&lt;td&gt;1883406&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;14.84&lt;/td&gt;&lt;td&gt;14.84
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /phpmyadmin/index.php?route=/preferences/manage HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2380/2380&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2134&lt;/td&gt;&lt;td&gt;40057&lt;/td&gt;&lt;td&gt;734549&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;9.51&lt;/td&gt;&lt;td&gt;9.51
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=5 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/4104/4104&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;120144&lt;/td&gt;&lt;td&gt;557594&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;4.75&lt;/td&gt;&lt;td&gt;4.75
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=3 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1274/1274&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;72887&lt;/td&gt;&lt;td&gt;173577&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.04&lt;/td&gt;&lt;td&gt;0.04
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=23 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1017/1017&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;86968&lt;/td&gt;&lt;td&gt;194913&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.04&lt;/td&gt;&lt;td&gt;0.04
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=23 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1025/1025&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;220&lt;/td&gt;&lt;td&gt;58480&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.44&lt;/td&gt;&lt;td&gt;2.44
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/form/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1393/1393&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;110&lt;/td&gt;&lt;td&gt;293800&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.83&lt;/td&gt;&lt;td&gt;2.83
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/form/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/988/988&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;59491&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.40&lt;/td&gt;&lt;td&gt;1.40
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1233/1233&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;60910&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;33.23&lt;/td&gt;&lt;td&gt;33.23
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2505/2505&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4065&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;76467&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.23&lt;/td&gt;&lt;td&gt;0.23
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/972/972&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;109&lt;/td&gt;&lt;td&gt;43890&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;23.64&lt;/td&gt;&lt;td&gt;23.64
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/881/881&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;55998&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.32&lt;/td&gt;&lt;td&gt;0.32
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/264/264&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;127136&lt;/td&gt;&lt;td&gt;759932&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.25&lt;/td&gt;&lt;td&gt;1.25
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=24 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1771/1771&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;74058&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.00&lt;/td&gt;&lt;td&gt;1.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2177/2177&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;125&lt;/td&gt;&lt;td&gt;226979&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;4.16&lt;/td&gt;&lt;td&gt;4.16
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2621/2621&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2122&lt;/td&gt;&lt;td&gt;134193&lt;/td&gt;&lt;td&gt;1169791&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;22.44&lt;/td&gt;&lt;td&gt;22.44
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /68.multi-vendor-online-groceries-management-system/?page=p&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1930/1930&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;125&lt;/td&gt;&lt;td&gt;74767&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.09&lt;/td&gt;&lt;td&gt;1.09
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/4585/4585&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1083&lt;/td&gt;&lt;td&gt;891&lt;/td&gt;&lt;td&gt;1472735&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;28.07&lt;/td&gt;&lt;td&gt;28.07
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/index.php?lang=en&amp;amp;pos=0&amp;amp;route=/check-relations&amp;amp;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2079/2079&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4071&lt;/td&gt;&lt;td&gt;110&lt;/td&gt;&lt;td&gt;156276&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.62&lt;/td&gt;&lt;td&gt;1.62
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/817/817&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;&lt;td&gt;43370&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;9.32&lt;/td&gt;&lt;td&gt;9.32
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1416/1416&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;68325&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.52&lt;/td&gt;&lt;td&gt;3.52
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3559/3559&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;126157&lt;/td&gt;&lt;td&gt;3296750&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;16.66&lt;/td&gt;&lt;td&gt;16.66
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=%27+or+sleep%287%29&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1297/1297&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;120121&lt;/td&gt;&lt;td&gt;263308&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.06&lt;/td&gt;&lt;td&gt;0.06
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=24 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/16145/16145&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2134&lt;/td&gt;&lt;td&gt;53051&lt;/td&gt;&lt;td&gt;1257425&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;95.68&lt;/td&gt;&lt;td&gt;95.68
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=sleep%287%29%231&amp;amp;po&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/937/937&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;54181&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/10327/10327&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;140204&lt;/td&gt;&lt;td&gt;2736263&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;35.41&lt;/td&gt;&lt;td&gt;35.41
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=%27+or+sleep%287%29&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3552/3552&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;113142&lt;/td&gt;&lt;td&gt;306818&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.35&lt;/td&gt;&lt;td&gt;2.35
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=3 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2651/2651&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1635442&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;10.08&lt;/td&gt;&lt;td&gt;10.08
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1188/1188&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;14609&lt;/td&gt;&lt;td&gt;67244&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.05&lt;/td&gt;&lt;td&gt;0.05
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/4955/4955&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;212501&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;50.39&lt;/td&gt;&lt;td&gt;50.39
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1346/1346&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;93027&lt;/td&gt;&lt;td&gt;355897&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.48&lt;/td&gt;&lt;td&gt;1.48
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/625/625&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;39618&lt;/td&gt;&lt;td&gt;93535&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.93&lt;/td&gt;&lt;td&gt;0.93
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=22 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/26501/26501&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2122&lt;/td&gt;&lt;td&gt;148236&lt;/td&gt;&lt;td&gt;939902&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;834.50&lt;/td&gt;&lt;td&gt;834.50
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /68.multi-vendor-online-groceries-management-system/?page=p&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3108/3108&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1077&lt;/td&gt;&lt;td&gt;919&lt;/td&gt;&lt;td&gt;1902374&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;12.86&lt;/td&gt;&lt;td&gt;12.86
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/url.php?url=https://github.com/phpmyadmin/phpmy&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/11968/11968&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;109&lt;/td&gt;&lt;td&gt;243909&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;85.53&lt;/td&gt;&lt;td&gt;85.53
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1101/1101&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;57123&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.94&lt;/td&gt;&lt;td&gt;0.94
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2961/2961&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;252912&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.38&lt;/td&gt;&lt;td&gt;1.38
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1162/1162&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1987&lt;/td&gt;&lt;td&gt;140152&lt;/td&gt;&lt;td&gt;368175&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.11&lt;/td&gt;&lt;td&gt;0.11
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=%27+or+sle&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/4460/4460&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1083&lt;/td&gt;&lt;td&gt;878&lt;/td&gt;&lt;td&gt;1612327&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;25.62&lt;/td&gt;&lt;td&gt;25.62
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/index.php?route=%2Fcheck-relations&amp;amp;server=1 HTT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/7852/7852&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;86120&lt;/td&gt;&lt;td&gt;500466&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;82.81&lt;/td&gt;&lt;td&gt;82.81
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=sleep%287%29%231&amp;amp;po&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3867/3867&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;1685985&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;25.40&lt;/td&gt;&lt;td&gt;25.40
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1718/1718&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;79958&lt;/td&gt;&lt;td&gt;195890&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.06&lt;/td&gt;&lt;td&gt;0.06
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=23 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/11031/11031&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1083&lt;/td&gt;&lt;td&gt;957&lt;/td&gt;&lt;td&gt;1537790&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;438.69&lt;/td&gt;&lt;td&gt;438.69
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /phpmyadmin/index.php?route=%2Fcheck-relations&amp;amp;server=1 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/820/820&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;109&lt;/td&gt;&lt;td&gt;38734&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;44.29&lt;/td&gt;&lt;td&gt;44.29
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1574/1574&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4063&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;68302&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.04&lt;/td&gt;&lt;td&gt;0.04
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1851/1851&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;188&lt;/td&gt;&lt;td&gt;72294&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.06&lt;/td&gt;&lt;td&gt;0.06
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2526/2526&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;109&lt;/td&gt;&lt;td&gt;326319&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;5.86&lt;/td&gt;&lt;td&gt;5.86
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/8676/8676&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1077&lt;/td&gt;&lt;td&gt;880&lt;/td&gt;&lt;td&gt;1857437&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;127.48&lt;/td&gt;&lt;td&gt;127.48
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/url.php?url=https://github.com/phpmyadmin/phpmy&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1522/1522&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;&lt;td&gt;58264&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.77&lt;/td&gt;&lt;td&gt;1.77
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/6577/6577&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1083&lt;/td&gt;&lt;td&gt;1034&lt;/td&gt;&lt;td&gt;2051227&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;50.13&lt;/td&gt;&lt;td&gt;50.13
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/index.php?db&amp;amp;lang=en&amp;amp;pos=0&amp;amp;route=/&amp;amp;searchClause&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/659/659&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;19325&lt;/td&gt;&lt;td&gt;67193&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.27&lt;/td&gt;&lt;td&gt;0.27
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3767/3767&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;113087&lt;/td&gt;&lt;td&gt;367416&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;54.39&lt;/td&gt;&lt;td&gt;54.39
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=24 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2742/2742&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;219&lt;/td&gt;&lt;td&gt;97566&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;7.26&lt;/td&gt;&lt;td&gt;7.26
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/755/755&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;52704&lt;/td&gt;&lt;td&gt;126417&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.61&lt;/td&gt;&lt;td&gt;0.61
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1333/1333&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;125&lt;/td&gt;&lt;td&gt;62439&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.49&lt;/td&gt;&lt;td&gt;1.49
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1156/1156&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4065&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;50911&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.51&lt;/td&gt;&lt;td&gt;1.51
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/form/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2102/2102&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;11951&lt;/td&gt;&lt;td&gt;441160&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;87.44&lt;/td&gt;&lt;td&gt;87.44
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2249/2249&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;100122&lt;/td&gt;&lt;td&gt;285488&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;13.83&lt;/td&gt;&lt;td&gt;13.83
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=sleep%287%29%231&amp;amp;po&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/10411/10411&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;107055&lt;/td&gt;&lt;td&gt;1070611&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;46.91&lt;/td&gt;&lt;td&gt;46.91
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62509&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2090/2090&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;94&lt;/td&gt;&lt;td&gt;102986&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.98&lt;/td&gt;&lt;td&gt;0.98
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1872/1872&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;125&lt;/td&gt;&lt;td&gt;334076&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;14.97&lt;/td&gt;&lt;td&gt;14.97
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1628/1628&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;125&lt;/td&gt;&lt;td&gt;277817&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;86.23&lt;/td&gt;&lt;td&gt;86.23
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1564/1564&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2134&lt;/td&gt;&lt;td&gt;60078&lt;/td&gt;&lt;td&gt;187496&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.23&lt;/td&gt;&lt;td&gt;0.23
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=sleep%287%29%231&amp;amp;po&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;2/392/392&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63929&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3258&lt;/td&gt;&lt;td&gt;10.1&lt;/td&gt;&lt;td&gt;9.88&lt;/td&gt;&lt;td&gt;9.88
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62629&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3334/3334&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;59728&lt;/td&gt;&lt;td&gt;172447&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;11.79&lt;/td&gt;&lt;td&gt;11.79
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/13094/13094&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;73103&lt;/td&gt;&lt;td&gt;1379686&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;159.45&lt;/td&gt;&lt;td&gt;159.45
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=4 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2781/2781&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;&lt;td&gt;480505&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;18.31&lt;/td&gt;&lt;td&gt;18.31
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62729&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62709&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62769&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/19726/19726&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;106135&lt;/td&gt;&lt;td&gt;953095&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;267.63&lt;/td&gt;&lt;td&gt;267.63
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=3 HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/9519/9519&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;1987&lt;/td&gt;&lt;td&gt;133134&lt;/td&gt;&lt;td&gt;1650931&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;19.03&lt;/td&gt;&lt;td&gt;19.03
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=2&amp;amp;postid=%27+or+sle&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1239/1239&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;235&lt;/td&gt;&lt;td&gt;951317&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;5.66&lt;/td&gt;&lt;td&gt;5.66
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/form/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3079/3079&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;122&lt;/td&gt;&lt;td&gt;794&lt;/td&gt;&lt;td&gt;1755156&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;16.51&lt;/td&gt;&lt;td&gt;16.51
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62849&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3235/3235&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4064&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;td&gt;134535&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;5.34&lt;/td&gt;&lt;td&gt;5.34
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;31/143/143&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63589&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1424&lt;/td&gt;&lt;td&gt;540.4&lt;/td&gt;&lt;td&gt;4.48&lt;/td&gt;&lt;td&gt;4.48
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62549&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63629&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;1/116/116&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63409&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1529&lt;/td&gt;&lt;td&gt;0.2&lt;/td&gt;&lt;td&gt;5.15&lt;/td&gt;&lt;td&gt;5.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1346/1346&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63669&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;172714&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;25.15&lt;/td&gt;&lt;td&gt;25.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3086/3086&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;19783&lt;/td&gt;&lt;td&gt;1421869&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;8.43&lt;/td&gt;&lt;td&gt;8.43
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=22 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1237/1237&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4067&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;&lt;td&gt;56225&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.56&lt;/td&gt;&lt;td&gt;3.56
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /60.online-food-ordering-system/fetch2.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;41/1254/1254&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63877&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3439&lt;/td&gt;&lt;td&gt;57.9&lt;/td&gt;&lt;td&gt;0.68&lt;/td&gt;&lt;td&gt;0.68
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62689&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;8/19811/19811&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3035472&lt;/td&gt;&lt;td&gt;2.5&lt;/td&gt;&lt;td&gt;107.46&lt;/td&gt;&lt;td&gt;107.46
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/19410/19410&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;&lt;td&gt;93126&lt;/td&gt;&lt;td&gt;371344&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;213.10&lt;/td&gt;&lt;td&gt;213.10
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /69.baby-daycare-management/page.php?id=sleep%287%29%231&amp;amp;po&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62749&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/9233/9233&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;100041&lt;/td&gt;&lt;td&gt;981531&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;60.90&lt;/td&gt;&lt;td&gt;60.90
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=sleep%287%29%23&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62809&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62789&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1441/1441&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62929&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;123811&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;137.94&lt;/td&gt;&lt;td&gt;137.94
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/15748/15748&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4141&lt;/td&gt;&lt;td&gt;46706&lt;/td&gt;&lt;td&gt;1394676&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;112.04&lt;/td&gt;&lt;td&gt;112.04
+&lt;/td&gt;&lt;td&gt;192.168.194.132&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /62.online-cake-shop/admindetail.php?action=edit+&amp;amp;+id=22 HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62869&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/354/354&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62989&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2841&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.79&lt;/td&gt;&lt;td&gt;3.79
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62529&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1462/1462&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62969&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;156123&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;7.59&lt;/td&gt;&lt;td&gt;7.59
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1276/1276&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63029&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;51455&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;5.98&lt;/td&gt;&lt;td&gt;5.98
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/11/11&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62949&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;290&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.15&lt;/td&gt;&lt;td&gt;0.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/14/14&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62909&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;291&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.42&lt;/td&gt;&lt;td&gt;0.42
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/181/181&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63009&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;16190&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.35&lt;/td&gt;&lt;td&gt;2.35
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62589&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62569&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/11/11&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62889&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;384&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.33&lt;/td&gt;&lt;td&gt;0.33
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62609&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/176/176&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63609&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;5236&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;12.70&lt;/td&gt;&lt;td&gt;12.70
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62649&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/175/175&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63649&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;5867&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;21.77&lt;/td&gt;&lt;td&gt;21.77
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62669&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/212/212&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63729&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;8894&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;19.44&lt;/td&gt;&lt;td&gt;19.44
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2914/2914&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63709&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;382146&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;88.66&lt;/td&gt;&lt;td&gt;88.66
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/101/101&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63749&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2564&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.48&lt;/td&gt;&lt;td&gt;1.48
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;82/2425/2425&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63692&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;31065&lt;/td&gt;&lt;td&gt;318.9&lt;/td&gt;&lt;td&gt;28.82&lt;/td&gt;&lt;td&gt;28.82
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;22/731/731&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63882&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2577&lt;/td&gt;&lt;td&gt;17.4&lt;/td&gt;&lt;td&gt;0.48&lt;/td&gt;&lt;td&gt;0.48
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;74/1086/1086&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63878&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3797&lt;/td&gt;&lt;td&gt;21.4&lt;/td&gt;&lt;td&gt;0.66&lt;/td&gt;&lt;td&gt;0.66
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/218/218&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63689&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;10715&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;37.53&lt;/td&gt;&lt;td&gt;37.53
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;33/6200/6200&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63229&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;326942&lt;/td&gt;&lt;td&gt;1499.1&lt;/td&gt;&lt;td&gt;66.26&lt;/td&gt;&lt;td&gt;66.26
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;18/1601/1601&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63882&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;223550&lt;/td&gt;&lt;td&gt;23.1&lt;/td&gt;&lt;td&gt;11.19&lt;/td&gt;&lt;td&gt;11.19
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3728/3728&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63049&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;82817&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;99.80&lt;/td&gt;&lt;td&gt;99.80
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;62829&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;43/755/755&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;63882&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3130&lt;/td&gt;&lt;td&gt;25.7&lt;/td&gt;&lt;td&gt;6.42&lt;/td&gt;&lt;td&gt;6.42
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+ &lt;hr /&gt; &lt;table&gt;
+ &lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;td&gt;Child Server number - generation&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;PID&lt;/th&gt;&lt;td&gt;OS process ID&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;td&gt;Number of accesses this connection / this child / this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;M&lt;/th&gt;&lt;td&gt;Mode of operation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;SS&lt;/th&gt;&lt;td&gt;Seconds since beginning of most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Req&lt;/th&gt;&lt;td&gt;Milliseconds required to process most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;td&gt;Sum of milliseconds required to process all requests&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;td&gt;Kilobytes transferred this connection&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Child&lt;/th&gt;&lt;td&gt;Megabytes transferred this child&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;td&gt;Total megabytes transferred this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;/table&gt;
+&lt;hr&gt;
+&lt;table cellspacing=0 cellpadding=0&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#000000&quot;&gt;
+&lt;b&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Arial,Helvetica&quot;&gt;SSL/TLS Session Cache Status:&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot;&gt;
+cache type: &lt;b&gt;SHMCB&lt;/b&gt;, shared memory: &lt;b&gt;512000&lt;/b&gt; bytes, current entries: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;subcaches: &lt;b&gt;32&lt;/b&gt;, indexes per subcache: &lt;b&gt;88&lt;/b&gt;&lt;br&gt;index usage: &lt;b&gt;0%&lt;/b&gt;, cache usage: &lt;b&gt;0%&lt;/b&gt;&lt;br&gt;total entries stored since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries replaced since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries expired since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total (pre-expiry) entries scrolled out of the cache: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total retrieves since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;total removes since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Consider whether or not the component is actually required in production, if it isn&#39;t then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (221 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (366 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=lb5kshtrmm1hui3c4d6pl4f0oe; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 828
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (828 bytes)</summary>
+				
+				<pre><code>&lt;!--Header: site header with title, description &amp; meta content--&gt;
+&lt;br /&gt;
+&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: Host &#39;localhost&#39; is not allowed to connect to this MariaDB server in C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php:17
+Stack trace:
+#0 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(17): mysqli-&amp;gt;__construct(&#39;localhost&#39;, &#39;root&#39;, Object(SensitiveParameterValue), &#39;sourcecodester_...&#39;)
+#1 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(13): Database-&amp;gt;connectDB()
+#2 C:\xampp\htdocs\69.baby-daycare-management\inc\header.php(10): Database-&amp;gt;__construct()
+#3 C:\xampp\htdocs\69.baby-daycare-management\index.php(2): include(&#39;C:\\xampp\\htdocs...&#39;)
+#4 {main}
+  thrown in &lt;b&gt;C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php&lt;/b&gt; on line &lt;b&gt;17&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Frame-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (204 bytes)</summary>
+				
+				<pre><code>GET http://localhost/robots.txt HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(5)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(5)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Big Redirect Detected (Potential Sensitive Information Leak)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Location header URI length: 44 [http://localhost/69.baby-daycare-management/].</p>
+
+<p>Predicted response size: 344.</p>
+
+<p>Response Body Length: 351.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (220 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (249 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 301 Moved Permanently
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Location: http://localhost/69.baby-daycare-management/
+Content-Length: 351
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (351 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;301 Moved Permanently&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Moved Permanently&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://localhost/69.baby-daycare-management/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (221 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (366 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=lb5kshtrmm1hui3c4d6pl4f0oe; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 828
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (828 bytes)</summary>
+				
+				<pre><code>&lt;!--Header: site header with title, description &amp; meta content--&gt;
+&lt;br /&gt;
+&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: Host &#39;localhost&#39; is not allowed to connect to this MariaDB server in C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php:17
+Stack trace:
+#0 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(17): mysqli-&amp;gt;__construct(&#39;localhost&#39;, &#39;root&#39;, Object(SensitiveParameterValue), &#39;sourcecodester_...&#39;)
+#1 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(13): Database-&amp;gt;connectDB()
+#2 C:\xampp\htdocs\69.baby-daycare-management\inc\header.php(10): Database-&amp;gt;__construct()
+#3 C:\xampp\htdocs\69.baby-daycare-management\index.php(2): include(&#39;C:\\xampp\\htdocs...&#39;)
+#4 {main}
+  thrown in &lt;b&gt;C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php&lt;/b&gt; on line &lt;b&gt;17&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (221 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (366 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=lb5kshtrmm1hui3c4d6pl4f0oe; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 828
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (828 bytes)</summary>
+				
+				<pre><code>&lt;!--Header: site header with title, description &amp; meta content--&gt;
+&lt;br /&gt;
+&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: Host &#39;localhost&#39; is not allowed to connect to this MariaDB server in C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php:17
+Stack trace:
+#0 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(17): mysqli-&amp;gt;__construct(&#39;localhost&#39;, &#39;root&#39;, Object(SensitiveParameterValue), &#39;sourcecodester_...&#39;)
+#1 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(13): Database-&amp;gt;connectDB()
+#2 C:\xampp\htdocs\69.baby-daycare-management\inc\header.php(10): Database-&amp;gt;__construct()
+#3 C:\xampp\htdocs\69.baby-daycare-management\index.php(2): include(&#39;C:\\xampp\\htdocs...&#39;)
+#4 {main}
+  thrown in &lt;b&gt;C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php&lt;/b&gt; on line &lt;b&gt;17&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (221 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (366 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=lb5kshtrmm1hui3c4d6pl4f0oe; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 828
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (828 bytes)</summary>
+				
+				<pre><code>&lt;!--Header: site header with title, description &amp; meta content--&gt;
+&lt;br /&gt;
+&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: Host &#39;localhost&#39; is not allowed to connect to this MariaDB server in C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php:17
+Stack trace:
+#0 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(17): mysqli-&amp;gt;__construct(&#39;localhost&#39;, &#39;root&#39;, Object(SensitiveParameterValue), &#39;sourcecodester_...&#39;)
+#1 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(13): Database-&amp;gt;connectDB()
+#2 C:\xampp\htdocs\69.baby-daycare-management\inc\header.php(10): Database-&amp;gt;__construct()
+#3 C:\xampp\htdocs\69.baby-daycare-management\index.php(2): include(&#39;C:\\xampp\\htdocs...&#39;)
+#4 {main}
+  thrown in &lt;b&gt;C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php&lt;/b&gt; on line &lt;b&gt;17&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.2.4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (221 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (366 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=lb5kshtrmm1hui3c4d6pl4f0oe; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 828
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (828 bytes)</summary>
+				
+				<pre><code>&lt;!--Header: site header with title, description &amp; meta content--&gt;
+&lt;br /&gt;
+&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: Host &#39;localhost&#39; is not allowed to connect to this MariaDB server in C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php:17
+Stack trace:
+#0 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(17): mysqli-&amp;gt;__construct(&#39;localhost&#39;, &#39;root&#39;, Object(SensitiveParameterValue), &#39;sourcecodester_...&#39;)
+#1 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(13): Database-&amp;gt;connectDB()
+#2 C:\xampp\htdocs\69.baby-daycare-management\inc\header.php(10): Database-&amp;gt;__construct()
+#3 C:\xampp\htdocs\69.baby-daycare-management\index.php(2): include(&#39;C:\\xampp\\htdocs...&#39;)
+#4 {main}
+  thrown in &lt;b&gt;C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php&lt;/b&gt; on line &lt;b&gt;17&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (184 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management HTTP/1.1
+Host: localhost
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (366 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:42 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=5nfltv2p76lo6ne5url60pqn31; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 828
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (828 bytes)</summary>
+				
+				<pre><code>&lt;!--Header: site header with title, description &amp; meta content--&gt;
+&lt;br /&gt;
+&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: Host &#39;localhost&#39; is not allowed to connect to this MariaDB server in C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php:17
+Stack trace:
+#0 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(17): mysqli-&amp;gt;__construct(&#39;localhost&#39;, &#39;root&#39;, Object(SensitiveParameterValue), &#39;sourcecodester_...&#39;)
+#1 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(13): Database-&amp;gt;connectDB()
+#2 C:\xampp\htdocs\69.baby-daycare-management\inc\header.php(10): Database-&amp;gt;__construct()
+#3 C:\xampp\htdocs\69.baby-daycare-management\index.php(2): include(&#39;C:\\xampp\\htdocs...&#39;)
+#4 {main}
+  thrown in &lt;b&gt;C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php&lt;/b&gt; on line &lt;b&gt;17&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/69.baby-daycare-management/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was: </p>
+
+<p>localhost</p>
+
+<p>PHPSESSID=lb5kshtrmm1hui3c4d6pl4f0oe</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (221 bytes)</summary>
+				
+				<pre><code>GET http://localhost/69.baby-daycare-management/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (366 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 08:03:32 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=lb5kshtrmm1hui3c4d6pl4f0oe; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 828
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (828 bytes)</summary>
+				
+				<pre><code>&lt;!--Header: site header with title, description &amp; meta content--&gt;
+&lt;br /&gt;
+&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: Host &#39;localhost&#39; is not allowed to connect to this MariaDB server in C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php:17
+Stack trace:
+#0 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(17): mysqli-&amp;gt;__construct(&#39;localhost&#39;, &#39;root&#39;, Object(SensitiveParameterValue), &#39;sourcecodester_...&#39;)
+#1 C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php(13): Database-&amp;gt;connectDB()
+#2 C:\xampp\htdocs\69.baby-daycare-management\inc\header.php(10): Database-&amp;gt;__construct()
+#3 C:\xampp\htdocs\69.baby-daycare-management\index.php(2): include(&#39;C:\\xampp\\htdocs...&#39;)
+#4 {main}
+  thrown in &lt;b&gt;C:\xampp\htdocs\69.baby-daycare-management\lib\Database.php&lt;/b&gt; on line &lt;b&gt;17&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Hidden File Found</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40035/">Hidden File Finder</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/538.html">538</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html">https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</a></li>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/mod_status.html">https://httpd.apache.org/docs/current/mod/mod_status.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Big Redirect Detected (Potential Sensitive Information Leak)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10044/">Big Redirect Detected (Potential Sensitive Information Leak)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://httpd.apache.org/docs/current/mod/core.html#servertokens">http://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007">http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</a></li>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

@@ -1,0 +1,3127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>59.simple-real-time-chatbox</title>
+<link
+	href="59.simple-real-time-chatbox/normalize/normalize.css" rel="stylesheet">
+<link
+	href="59.simple-real-time-chatbox/themes/original/main.css" rel="stylesheet">
+<link
+	href="59.simple-real-time-chatbox/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>59.simple-real-time-chatbox</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="59.simple-real-time-chatbox/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Tue 17 Oct 2023, at 11:38:51</span>
+		</p>
+		<p>ZAP Version: 2.12.0</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(5)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(41.7%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(50.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(58.3%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(12)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Absence of Anti-CSRF Tokens</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Hidden File Found</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Cross-Domain JavaScript Source File Inclusion</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>12</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (204 bytes)</summary>
+				
+				<pre><code>GET http://localhost/robots.txt HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Hidden File Found</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/server-status</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>apache_server_status</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (207 bytes)</summary>
+				
+				<pre><code>GET http://localhost/server-status HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (180 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:29:04 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Type: text/html; charset=ISO-8859-1
+Content-Length: 17838
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (17838 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Apache Status&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Apache Server Status for localhost (via 127.0.0.1)&lt;/h1&gt;
+
+&lt;dl&gt;&lt;dt&gt;Server Version: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4&lt;/dt&gt;
+&lt;dt&gt;Server MPM: WinNT&lt;/dt&gt;
+&lt;dt&gt;Apache Lounge VS16 Server built: Mar  7 2023 13:21:03
+&lt;/dt&gt;&lt;/dl&gt;&lt;hr /&gt;&lt;dl&gt;
+&lt;dt&gt;Current Time: Tuesday, 17-Oct-2023 11:29:04 Pakistan Standard Time&lt;/dt&gt;
+&lt;dt&gt;Restart Time: Sunday, 15-Oct-2023 22:29:12 Pakistan Standard Time&lt;/dt&gt;
+&lt;dt&gt;Parent Server Config. Generation: 1&lt;/dt&gt;
+&lt;dt&gt;Parent Server MPM Generation: 0&lt;/dt&gt;
+&lt;dt&gt;Server uptime:  1 day 12 hours 59 minutes 51 seconds&lt;/dt&gt;
+&lt;dt&gt;Server load: -1.00 -1.00 -1.00&lt;/dt&gt;
+&lt;dt&gt;Total accesses: 28447 - Total Traffic: 599.2 MB - Total Duration: 1623938&lt;/dt&gt;
+&lt;dt&gt;.214 requests/sec - 4717 B/second - 21.6 kB/request - 57.0864 ms/request&lt;/dt&gt;
+&lt;dt&gt;49 requests currently being processed, 101 idle workers&lt;/dt&gt;
+&lt;/dl&gt;&lt;pre&gt;________________________________________________________________
+_____________________KW____WW___WWW____WWWWWWW__WW__W_WWWKWWWWWW
+WWWWWWWWWWWWWWWWWWWWWW&lt;/pre&gt;
+&lt;p&gt;Scoreboard Key:&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;_&lt;/code&gt;&lt;/b&gt;&quot; Waiting for Connection, 
+&quot;&lt;b&gt;&lt;code&gt;S&lt;/code&gt;&lt;/b&gt;&quot; Starting up, 
+&quot;&lt;b&gt;&lt;code&gt;R&lt;/code&gt;&lt;/b&gt;&quot; Reading Request,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;W&lt;/code&gt;&lt;/b&gt;&quot; Sending Reply, 
+&quot;&lt;b&gt;&lt;code&gt;K&lt;/code&gt;&lt;/b&gt;&quot; Keepalive (read), 
+&quot;&lt;b&gt;&lt;code&gt;D&lt;/code&gt;&lt;/b&gt;&quot; DNS Lookup,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;C&lt;/code&gt;&lt;/b&gt;&quot; Closing connection, 
+&quot;&lt;b&gt;&lt;code&gt;L&lt;/code&gt;&lt;/b&gt;&quot; Logging, 
+&quot;&lt;b&gt;&lt;code&gt;G&lt;/code&gt;&lt;/b&gt;&quot; Gracefully finishing,&lt;br /&gt; 
+&quot;&lt;b&gt;&lt;code&gt;I&lt;/code&gt;&lt;/b&gt;&quot; Idle cleanup of worker, 
+&quot;&lt;b&gt;&lt;code&gt;.&lt;/code&gt;&lt;/b&gt;&quot; Open slot with no current process&lt;br /&gt;
+&lt;/p&gt;
+
+
+&lt;table border=&quot;0&quot;&gt;&lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;th&gt;PID&lt;/th&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;th&gt;M&lt;/th&gt;&lt;th&gt;SS&lt;/th&gt;&lt;th&gt;Req&lt;/th&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;th&gt;Child&lt;/th&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;th&gt;Client&lt;/th&gt;&lt;th&gt;Protocol&lt;/th&gt;&lt;th&gt;VHost&lt;/th&gt;&lt;th&gt;Request&lt;/th&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;2/4/4&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2.8&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /elmah.axd HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56831&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;2/392/392&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58252&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3258&lt;/td&gt;&lt;td&gt;10.1&lt;/td&gt;&lt;td&gt;9.88&lt;/td&gt;&lt;td&gt;9.88
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56951&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57052&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57031&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57092&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57172&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;51/54/54&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;703&lt;/td&gt;&lt;td&gt;102.4&lt;/td&gt;&lt;td&gt;0.11&lt;/td&gt;&lt;td&gt;0.11
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /server-status HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;31/143/143&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57912&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1424&lt;/td&gt;&lt;td&gt;540.4&lt;/td&gt;&lt;td&gt;4.48&lt;/td&gt;&lt;td&gt;4.48
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56871&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57952&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;1/116/116&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57732&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1529&lt;/td&gt;&lt;td&gt;0.2&lt;/td&gt;&lt;td&gt;5.15&lt;/td&gt;&lt;td&gt;5.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1346/1346&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57992&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;172714&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;25.15&lt;/td&gt;&lt;td&gt;25.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;41/1254/1254&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58200&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3439&lt;/td&gt;&lt;td&gt;57.9&lt;/td&gt;&lt;td&gt;0.68&lt;/td&gt;&lt;td&gt;0.68
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57011&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57072&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57132&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57112&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1441/1441&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57252&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;123811&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;137.94&lt;/td&gt;&lt;td&gt;137.94
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;61/65/65&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;174&lt;/td&gt;&lt;td&gt;9.1&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;0.02
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /()%20{%20:%3B%20}%3B%20printf%20&#39;Content-Type:%20text/json&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57192&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/354/354&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57312&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2841&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.79&lt;/td&gt;&lt;td&gt;3.79
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56851&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1462/1462&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57292&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;156123&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;7.59&lt;/td&gt;&lt;td&gt;7.59
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/1276/1276&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57352&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;51455&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;5.98&lt;/td&gt;&lt;td&gt;5.98
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/11/11&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57272&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;290&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.15&lt;/td&gt;&lt;td&gt;0.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/14/14&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57232&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;291&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.42&lt;/td&gt;&lt;td&gt;0.42
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/181/181&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57332&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;16190&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.35&lt;/td&gt;&lt;td&gt;2.35
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56911&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56891&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/11/11&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57212&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;384&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.33&lt;/td&gt;&lt;td&gt;0.33
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56931&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/176/176&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57932&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;5236&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;12.70&lt;/td&gt;&lt;td&gt;12.70
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56971&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/175/175&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57972&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;5867&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;21.77&lt;/td&gt;&lt;td&gt;21.77
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;56991&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/212/212&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58052&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;8894&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;19.44&lt;/td&gt;&lt;td&gt;19.44
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/2914/2914&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58032&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;382146&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;88.66&lt;/td&gt;&lt;td&gt;88.66
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/101/101&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58072&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2564&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.48&lt;/td&gt;&lt;td&gt;1.48
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;82/2425/2425&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58015&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;31065&lt;/td&gt;&lt;td&gt;318.9&lt;/td&gt;&lt;td&gt;28.82&lt;/td&gt;&lt;td&gt;28.82
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;22/731/731&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58204&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2577&lt;/td&gt;&lt;td&gt;17.4&lt;/td&gt;&lt;td&gt;0.48&lt;/td&gt;&lt;td&gt;0.48
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;74/1086/1086&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58201&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3797&lt;/td&gt;&lt;td&gt;21.4&lt;/td&gt;&lt;td&gt;0.66&lt;/td&gt;&lt;td&gt;0.66
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/218/218&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58012&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;10715&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;37.53&lt;/td&gt;&lt;td&gt;37.53
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;33/6200/6200&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57552&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;326942&lt;/td&gt;&lt;td&gt;1499.1&lt;/td&gt;&lt;td&gt;66.26&lt;/td&gt;&lt;td&gt;66.26
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;18/1601/1601&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58204&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;223550&lt;/td&gt;&lt;td&gt;23.1&lt;/td&gt;&lt;td&gt;11.19&lt;/td&gt;&lt;td&gt;11.19
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/3728/3728&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57372&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;82817&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;99.80&lt;/td&gt;&lt;td&gt;99.80
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;0/0/0&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;57152&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10348&lt;/td&gt;&lt;td&gt;43/755/755&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;58204&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3130&lt;/td&gt;&lt;td&gt;25.7&lt;/td&gt;&lt;td&gt;6.42&lt;/td&gt;&lt;td&gt;6.42
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+ &lt;hr /&gt; &lt;table&gt;
+ &lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;td&gt;Child Server number - generation&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;PID&lt;/th&gt;&lt;td&gt;OS process ID&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;td&gt;Number of accesses this connection / this child / this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;M&lt;/th&gt;&lt;td&gt;Mode of operation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;SS&lt;/th&gt;&lt;td&gt;Seconds since beginning of most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Req&lt;/th&gt;&lt;td&gt;Milliseconds required to process most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;td&gt;Sum of milliseconds required to process all requests&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;td&gt;Kilobytes transferred this connection&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Child&lt;/th&gt;&lt;td&gt;Megabytes transferred this child&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;td&gt;Total megabytes transferred this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;/table&gt;
+&lt;hr&gt;
+&lt;table cellspacing=0 cellpadding=0&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#000000&quot;&gt;
+&lt;b&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Arial,Helvetica&quot;&gt;SSL/TLS Session Cache Status:&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot;&gt;
+cache type: &lt;b&gt;SHMCB&lt;/b&gt;, shared memory: &lt;b&gt;512000&lt;/b&gt; bytes, current entries: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;subcaches: &lt;b&gt;32&lt;/b&gt;, indexes per subcache: &lt;b&gt;88&lt;/b&gt;&lt;br&gt;index usage: &lt;b&gt;0%&lt;/b&gt;, cache usage: &lt;b&gt;0%&lt;/b&gt;&lt;br&gt;total entries stored since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries replaced since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries expired since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total (pre-expiry) entries scrolled out of the cache: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total retrieves since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;total removes since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Consider whether or not the component is actually required in production, if it isn&#39;t then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (236 bytes)</summary>
+				
+				<pre><code>GET http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (367 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=b9nmhfinhaehqkgq8taark1k7v; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Frame-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Absence of Anti-CSRF Tokens</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No Anti-CSRF tokens were found in a HTML submission form.</p>
+
+<p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p>
+
+<p>CSRF attacks are effective in a number of situations, including:</p>
+
+<p>    * The victim has an active session on the target site.</p>
+
+<p>    * The victim is authenticated via HTTP auth on the target site.</p>
+
+<p>    * The victim is on the same local network as the target site.</p>
+
+<p>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;name&quot; &quot;pass&quot; ].</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (421 bytes)</summary>
+				
+				<pre><code>POST http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost/59.simple-real-time-chatbox/chat/login.php
+Content-Length: 0
+Cookie: PHPSESSID=cip58rd24k7opfc5iiue4ad4lh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Use the ESAPI Session Management control.</p>
+
+<p>This control includes a component for CSRF.</p>
+
+<p>Do not use the GET method for any request that triggers a state change.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (205 bytes)</summary>
+				
+				<pre><code>GET http://localhost/sitemap.xml HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(5)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(5)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (236 bytes)</summary>
+				
+				<pre><code>GET http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (367 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=b9nmhfinhaehqkgq8taark1k7v; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (236 bytes)</summary>
+				
+				<pre><code>GET http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (367 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=b9nmhfinhaehqkgq8taark1k7v; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Cross-Domain JavaScript Source File Inclusion</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The page includes one or more script files from a third-party domain.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (422 bytes)</summary>
+				
+				<pre><code>POST http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost/59.simple-real-time-chatbox/chat/login.php
+Content-Length: 17
+Cookie: PHPSESSID=cip58rd24k7opfc5iiue4ad4lh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (17 bytes)</summary>
+				
+				<pre><code>name=ZAP&amp;pass=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (421 bytes)</summary>
+				
+				<pre><code>POST http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost/59.simple-real-time-chatbox/chat/login.php
+Content-Length: 0
+Cookie: PHPSESSID=cip58rd24k7opfc5iiue4ad4lh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.2.4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (421 bytes)</summary>
+				
+				<pre><code>POST http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost/59.simple-real-time-chatbox/chat/login.php
+Content-Length: 0
+Cookie: PHPSESSID=cip58rd24k7opfc5iiue4ad4lh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (421 bytes)</summary>
+				
+				<pre><code>POST http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost/59.simple-real-time-chatbox/chat/login.php
+Content-Length: 0
+Cookie: PHPSESSID=cip58rd24k7opfc5iiue4ad4lh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>user</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/59.simple-real-time-chatbox/chat/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was: </p>
+
+<p>localhost</p>
+
+<p>PHPSESSID=b9nmhfinhaehqkgq8taark1k7v</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (236 bytes)</summary>
+				
+				<pre><code>GET http://localhost/59.simple-real-time-chatbox/chat/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (367 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 17 Oct 2023 06:28:47 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Set-Cookie: PHPSESSID=b9nmhfinhaehqkgq8taark1k7v; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2589
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2589 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	 &lt;meta charset=&quot;utf-8&quot;&gt;
+	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+	  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--login modal--&gt;
+&lt;div id=&quot;loginModal&quot; class=&quot;modal show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;!-- &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt; --&gt;
+        &lt;h1 style=&quot;margin-left:20px;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Login&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;form class=&quot;form col-md-12 col-sm-6 center-block&quot; method=&quot;POST&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;input class=&quot;form-control input-lg&quot; placeholder=&quot;Password&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg btn-block&quot; name=&quot;submit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt;&amp;nbsp;Sign In&lt;/button&gt;
+              &lt;!--&lt;span class=&quot;pull-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Register&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Need help?&lt;/a&gt;&lt;/span&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;!-- &lt;button class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/button&gt; --&gt;
+              &lt;a href=&quot;register.php&quot; class=&quot;btn btn-primary btn-success btn-lg btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;Register&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+          &lt;!-- &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Cancel&lt;/button&gt; --&gt;
+		  &lt;/div&gt;	
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-fluid text-center&quot;&gt;
+&lt;!-- &lt;h2&gt;Login&lt;/h2&gt; --&gt;
+	&lt;form method=&quot;POST&quot; action=&quot;login.php&quot;&gt;
+	&lt;!-- &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;pass&quot; required&gt;&lt;br&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;send&quot;&gt; --&gt;
+	
+	&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Absence of Anti-CSRF Tokens</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Absence of Anti-CSRF Tokens</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a></li>
+										<li><a
+											href="http://cwe.mitre.org/data/definitions/352.html">http://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Hidden File Found</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40035/">Hidden File Finder</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/538.html">538</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html">https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</a></li>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/mod_status.html">https://httpd.apache.org/docs/current/mod/mod_status.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Cross-Domain JavaScript Source File Inclusion</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10017/">Cross-Domain JavaScript Source File Inclusion</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://httpd.apache.org/docs/current/mod/core.html#servertokens">http://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007">http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</a></li>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
