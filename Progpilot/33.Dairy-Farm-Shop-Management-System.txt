@@ -1,0 +1,2406 @@
+[
+    {
+        "source_name": [
+            "$catname",
+            "$catcode"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            239,
+            270
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-category.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 314,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d1d4529f24a68aee44cb9655a88f4d233cee14c493b2ae93bea0ba8929555d6d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            1332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/includes\/navbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 23,
+        "sink_column": 1332,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/includes\/navbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1e8edc1619b1831484efd239fc61b3fb561683850252740346ae21be9cefdac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cname"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            238
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-company.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 279,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-company.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "967c851d81cc16162151181f6bdb300ca120a8b53354bd3c56bce34db5e32e66",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$catname",
+            "$company",
+            "$pname",
+            "$pprice"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            238,
+            269,
+            301,
+            332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 372,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "80a9467b7e5cf6c32a9260547ce02b644de77799f685a317edff4192c717598a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3106
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3106,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf9ccfe01a9c9dafb62f207bbcdf6fbb316d4d24234e9e26f9559d0ae44c2a60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3142
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3142,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf9ccfe01a9c9dafb62f207bbcdf6fbb316d4d24234e9e26f9559d0ae44c2a60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3634
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3634,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4832a7a12a14db7cd5864febbb9d924e0cf951b6997087e754fccb83c1f5e27b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3669
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3669,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/add-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4832a7a12a14db7cd5864febbb9d924e0cf951b6997087e754fccb83c1f5e27b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 274,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e9bd07c24326cfc6827cd94421f4e4a1ad56aaaf992ffa32727be20131f16eef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2191
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2360,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "adbf41e7788540a88779e38c383baf0b5a2294ecbf457ba793df3bb430dd08da",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2219
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2383,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "75832ad4aadbf41445d704590bc7224a844500847ef65d70b631e82880e7dc87",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            59,
+            60
+        ],
+        "source_column": [
+            2191,
+            2219
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 90,
+        "sink_column": 3789,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2c824644819495e9367ad71ff174c1db157f0347b9ff152e32b9dc62980945cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceNumber\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            4131
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 4131,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4e48b270ac53ed9bb91979b49fda61ce1a2a0dfe287f1359199a994c6f3b0ad9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            4177
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 4177,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "affdfbc1597fdad6c92bb175ae62e5feb816e16522a2bc638649e8352e73c7bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerContactNo\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            4222
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 4222,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f39266b3813b5441f55bb60e3d117437a7ed971f518e55f1222441efb7725275",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PaymentMode\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            4272
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 4272,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "74b11943d6edbcc26d3df9424b2e247a5bed524fca97558d000f8ca6d7cb91de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceGenDate\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            4316
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 4316,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca5f0ff6abdca0a965ed86d81229aa0490518a62af3fd01cfab7c693148e2a7b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cname"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            238
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-ds.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 279,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/bwdate-report-ds.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9c94e178c888530fb919bef92f5530578926eaa0c23d1d112c377a933df39fad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$catname",
+            "$catcode",
+            "$cid"
+        ],
+        "source_line": [
+            13,
+            14,
+            11
+        ],
+        "source_column": [
+            293,
+            324,
+            216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 368,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "31722c5bfa454de40879f117223fa2de8ac95169f563823b1b636dd2099718e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2485
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 73,
+        "sink_column": 2540,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7132ddc3371742bcd8be696186a40a1575efbee82bf5e852f2a2cacfdbb34a01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2884
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2884,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e21eb0900aebc978b73a2c4dcae9d3b8f55957c7431bcfdc86d4da4d8a3ff327",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryCode\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3220,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "029e1a0291d3bee1940f0272e9da498a9c3c474288cc88a5b4dccdc1a5e4c6e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cname",
+            "$cmpid"
+        ],
+        "source_line": [
+            13,
+            11
+        ],
+        "source_column": [
+            292,
+            216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-company.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-company.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 333,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-company.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "65fad6f8f9c6e7b69446bbe97fd2e646b2da83c9b136d572a351a2005322195e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2447
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-company.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 79,
+        "sink_column": 2507,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-company.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ed5c7a628767431a0e1bea2e8a42d21f394a09d7307429ad6607fa3a612d964d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2863
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-company.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2863,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-company.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "50d9caea9aba6b05bdaf58e7e74e7ab6f428201961b550c34820cdb63c1de2d9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$catname",
+            "$company",
+            "$pname",
+            "$pprice",
+            "$pid"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            11
+        ],
+        "source_column": [
+            291,
+            322,
+            354,
+            385,
+            216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 425,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9df58261dbff5c535848b32ea42d852fd00a083701775e0b85354585ba59daf0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pid"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2603
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 80,
+        "sink_column": 2658,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f5cf95c583d2397c5ce2f84c1abcfe32ee2ea977cb1e66db2046a8ec47dd9a20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3243,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "16a40cbdeff5c941110f5c5a94dee7a89d5e7f45a9f0b7fb4d80da32605e8715",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3279,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "16a40cbdeff5c941110f5c5a94dee7a89d5e7f45a9f0b7fb4d80da32605e8715",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rw[\"CompanyName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3828
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3828,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fbd706c66af370af7e09b02a71f76dcac23595a7a49b044304ca248e72f18fa2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rw[\"CompanyName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3862
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3862,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fbd706c66af370af7e09b02a71f76dcac23595a7a49b044304ca248e72f18fa2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CategoryName\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3017
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3017,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d4009c328b982f394c1cf08a289df2cf596d932949447f7e17fb2680db4e3e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$catname"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3056
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3056,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5725f754c6f497132e0d29a71f8e4475754d012abb9d8e0cbbcc6984327d7ab2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CompanyName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3616
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3616,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "729569615537916cc629b2f707a353d910f757ce288e6b66e7812ee11dccf283",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CompanyName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3654
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3654,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "729569615537916cc629b2f707a353d910f757ce288e6b66e7812ee11dccf283",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProductName\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4186
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4186,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1e7243d4f35b82c1325c101797fbe233428eca15fb2dd2f367c76be3adc0f77b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProductPrice\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4529
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4529,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/edit-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0ab57eaffeceb8a151ad609bd70ce2f66906c7c9d394405359597973b6b18630",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            116
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 199,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c7be8179b162fad70d062ad8ec4ed16d5be49907ce72e002ce66c1960b6ca5de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            215
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 272,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "20d5f579724cbe8ea9df62f0c322a940238aa68e9a6d1ca5d759ebe20e9d8b97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceGenDate\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            3211
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 3211,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acfc3ec422c265ba596a2884135a2fb8920d93a406e0ba0bb41e059c20eb0623",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceNumber\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            3334
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 3334,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "46fe8f9037bf24262035b57c5705f8762d67581572253db134c20a846660188b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerName\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3447
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 3447,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb918cba24942514723bba30fcd11af2444d9398f9ddd7aaeb3d09066e48072b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerContactNo\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            3569
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 3569,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cf0fdc7efc2a4eeb0a5f6d7c65fe84270d199f17c7532c8dd4723a511769e813",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PaymentMode\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3690
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3690,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ee8519273fe86898decedff4bbee0c7bd1324ae6253db1d2ce35d9431e7a711",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ProductName\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4711
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4711,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "408b066f9be4db0ac57545212d3ca74e816e1d90a2946f42c96124d60dbbe972",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4755
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4755,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "db11c2c3b55b544a9934aca99a89e74e10d3f3d325d7f16e7a464519f4a6d9a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4800
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4800,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a45170080e6ce34f3f358dc55ceca3e1f2e9b35e3a955f67a2cac8424a3bf2f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qty"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4844
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4844,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f2959db13930682fd754c93cf3817bd2f6e103161d3764116e1560a60f2f33d8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ppu"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4890
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4890,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8311b1c4d367fe408959249d4e12a51f7b323525dfd610af94096b55e507025",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 274,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6b5e5674fb6728c7786a23de928e572c53aa434bd8b8056a757f359e98fe0561",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceNumber\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3935
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3935,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "479706d999459ec193fbabddad7af424f0ebbd0a5d26d7a4ab769fecfceeab7d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerName\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3981
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3981,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87eb7003f287c2468041469660e3ca9df5f78aab0593b69f9d12f6aeb9883d57",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerContactNo\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            4026
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 4026,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78f9677fce6307ef0dbb4e625c50d46c829a5ae1979ae2d30010928340dd46bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PaymentMode\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            4076
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 4076,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "532bff8344d123c320c2ba26b0052fcce0d672322d13070ccb8b2a799dc0b119",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceGenDate\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            4120
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 4120,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "47363c04de09b6772a591f95433a7cd8aa609740321809dbd87438e987f01379",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 274,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f874692968543d73fb1ceb05723b488e3585bf4ede76da4f2ce616a52aa0c11f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3692
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3692,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "07a9bd0998ab0c808594027b94a2ffe295411b77e652c76e405ab41995a62170",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryCode\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3737
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3737,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dfa8f808f6457f083b99a05da81035e39426cdf52f368880b06b31ca57a34bdc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3782
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3782,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c4e0ff70e6795041187509f8fb13a6f6355f65d458ff343af0ada80ccd99aad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            221
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-companies.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-companies.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4206f035b73048b80bcd1d5b5aa2379e10c2f154be6307e0477301d9b20a4108",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3619
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-companies.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3619,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-companies.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "726b8465ccfdadbdf899c8db77adb8a642dd99e56281596b45a6180f842dd884",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3663
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-companies.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3663,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-companies.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e7f80ab90ac867e172c8e48abe3b8eb188e45e59f95bb045db8f75bbd636640f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            3508
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 3508,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2e0eb446f4347e4411165e1cc5f03958756336bec472c6c83b02aee5f77e3c9b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3553
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 3553,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c45080e0f111637be064d40863bfef8d243786e8c99c588e10f81496105896a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ProductName\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            3597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 3597,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "626fb86a76ec6ae2acb7affa7f2d78384c7b9aeece87cdf756eef6f513b2c133",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ProductPrice\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3641,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "52a0461af61f8512edab964e8bdba7c5c73cda7ef363b3ddf8dac8e13a9c300a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3686
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3686,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/manage-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "47372782c18d6b2cc98463e0875a32808da9ae6a29a4a89ea0014ce0dbd9e32f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminname",
+            "$mobileno",
+            "$emailid"
+        ],
+        "source_line": [
+            13,
+            15,
+            14
+        ],
+        "source_column": [
+            270,
+            336,
+            305
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 381,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "12076665bf1d120d9fb9cb031c86d0162cf0aa08a07457efdbd7e27351a74bd7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3061
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3061,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b23fa5078c4dff11bd20b745a8c4627015fb1ad4b55f124878abe96f7bd3c5c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3619
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3619,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b3e8ecd335e74e48bda05e650eea2e25662304d58fe73322394dab5b06f68c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3871
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3871,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "debe3269a3d1898aafcdd629fc5f27b9dcf3f1a2a34dac631a46ffe0b72e8755",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            4196
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 4196,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2d53edcb28a57485dd767fc37fb9352571c2452fe0b087623efce0dfe069390",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2855
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2855,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8d5ea901a0a43d2756eef5b7d73a1af981572829250b1128f916285fc65589a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3061
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3061,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "901c0f4e80d12c95de502a735aabbd063b8b3e1c9136ae6697c36aa4042cbd7c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3297
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3297,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1e477a70c6edbea35fa1fe740156a7dcb9f48d613ed2cc6991aad2d9bd17e106",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3619
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3619,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b9b1445d2d9b159011408bcd81a80dd661cc89d0e8b388d77610615232006d8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3871
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3871,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b07004f2f80ba0c80a003dbb01f5c2ec9c52ec9c49b12a1b75e802be5fb93d6e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            4196
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 4196,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4bab68eae7610bb0c378d4f1d335e3dde2a0c0b52b1603cbdc98f9c2d0ed3f98",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 274,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4ac142cda2fae0aec6c609999bd138ec0effaeebfabb1ed3bdfcea5d6b45f284",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2187
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2352,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "408a37d4a9c624b4a56c790edfee32d3721c3fe8f52a8efdc70b3a177524efa9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2215
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2375,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "86ac4b5c5c7d21c580d120c83048bc0deae7c1e96a951d359254129371fb66a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            59,
+            60
+        ],
+        "source_column": [
+            2187,
+            2215
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 86,
+        "sink_column": 3470,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5418dad1d797eda2385d5a1cd331d4e866774d87bdf453bad435a9b79d6242e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mnth\"]",
+            "$row[\"yearr\"]"
+        ],
+        "source_line": [
+            93,
+            93
+        ],
+        "source_column": [
+            3952,
+            3969
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3952,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c5b2c6ddac91b1799beda3f66dfc8266392d9efe9e748cb81071fa5c59130c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"tt\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            4007
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 4007,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f4c2c4134cad9e0e99f6a58ad2f350e29d86140847e7c9c7e4b549c57780cbba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cname"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            238
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-ds.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 279,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/sales-report-ds.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1fe1e4060b8e892ce8b5c92bbdf0610690c0ed9a9fca8d47fd2e5c2785718184",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pid"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            345
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cad641df1e37d1ab5f5b598926cf730b5c27c0f0a5cf223a2adbb93c494504fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cname",
+            "$cmobileno",
+            "$pmode"
+        ],
+        "source_line": [
+            62,
+            63,
+            64
+        ],
+        "source_column": [
+            2397,
+            2429,
+            2461
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 67,
+        "sink_column": 2572,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "774f006120d79175c28bb72edfa6489ff121da410b2cb2de0af5468780bc2ff1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pname"
+        ],
+        "source_line": [
+            172
+        ],
+        "source_column": [
+            6601
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 173,
+        "sink_column": 6639,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c06eaaf0c2b39e223cad4d60d5ee740cde32f7ca3e1f48ef7d42d0cc4cd05144",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            178
+        ],
+        "source_column": [
+            6855
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 178,
+        "sink_column": 6855,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3f94fedfb631cc1afa279c280ddc847eb29d3fdc8235f8caf96bf85dd1b5fb3e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            181
+        ],
+        "source_column": [
+            6973
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 181,
+        "sink_column": 6973,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a8397c038580a2ed23b7df9d022720bc5aad38872d8bafc8df34df806a33c149",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            182
+        ],
+        "source_column": [
+            7018
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 182,
+        "sink_column": 7018,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5ffe8e2c11aa6ca0a72f0a7b597d4b87be2102cd569963b0569866067df69c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ProductName\"]"
+        ],
+        "source_line": [
+            183
+        ],
+        "source_column": [
+            7062
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 183,
+        "sink_column": 7062,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6d32d3ad48a7d00a8df945529fd87a923225ac122a6a58b087a51adbc54e9745",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ProductPrice\"]"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            7106
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 184,
+        "sink_column": 7106,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/search-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5a1f2c7cdfef2fe6f61b611fe0caf15203f0c9fa6fd5e2c10e715266e65500a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cmpid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            215
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 272,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2e86b0ebb79b4e21720717e24317ebc9f95b97aad24393b612d3939b189b74cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$inid"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2805
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 78,
+        "sink_column": 2863,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "398736a12561cf519024e49ec7774a03e40cfed58fbd5358fb8c4fd383a4e7ac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceGenDate\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            3235
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 3235,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4fb58f0a1d767ecb8780474f19b095260fed6e4e1009e0e4c94b3a804c71757e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InvoiceNumber\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3358
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 3358,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ad1f75de69bdddccaecd03b441a1fa799899e4b9d250a6c21248eb592254fd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerName\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            3471
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 3471,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "86f834125f19f8292366fe251b35dafb90062965f9b67d549f3f71517363a476",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CustomerContactNo\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3593
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3593,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "db1703e536500c94d88639b5649b399343d3173850a0d0a3aa2d6e02e4330df4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PaymentMode\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3714
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3714,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "570587681ab33db4437944c0390fad1288e641a5970921165d2a070d123eff6f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$inid"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2805
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 117,
+        "sink_column": 4321,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "398736a12561cf519024e49ec7774a03e40cfed58fbd5358fb8c4fd383a4e7ac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ProductName\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4735
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4735,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8147054b1544bba89bdd0606fa71ba15a120c74a409d7add3d0ba632bccacb2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CategoryName\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4779
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4779,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "92396f5815f4166dc0bb5b162bbac5ffc6ce45a4ce829771311b7b69b34799e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CompanyName\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4824
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4824,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e02a9d197751234e76e4963bcad201554937c214396ace23857ef6564e5818a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qty"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4868
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4868,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "349f7434726104df21a1707b13ad0d0cac68b39226a30ae551a98f431668ac7d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ppu"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            4914
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 4914,
+        "sink_file": "\/home\/kali\/Downloads\/33.Dairy-Farm-Shop-Management-System\/dfsms\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4f2271a01a834db5d8cc5248986389925b7b863c37c52383c1b7490cc0d27dc",
+        "vuln_type": "taint-style"
+    }
+]

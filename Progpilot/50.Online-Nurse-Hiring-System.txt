@@ -1,0 +1,2778 @@
+[
+    {
+        "source_name": [
+            "$row[\"BookingID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3227
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3227,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d14c9797e9a96e321fa7376c97a7fedf8cb2fad040047e3399385e6a1343f8e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3288
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3288,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f432490fdd1c790fcb135a5a9dd8eaa79241b405ea2068911e6f96a76e6cd961",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactEmail\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3373,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fcf67ab0600d0ddd04735c514d218543a04b59f548f184ca0591db42b1ac025a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3459
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3459,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1554a5445ce6474f14d45f06ce7bd726e9b6dcce716e6e2925cfc085a4481fbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3897
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3897,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e7c2e245014b688a830d2753a8964e5abbbfb706967d17cf0079f6f088e1648",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "63dbb5d9ddac5c099e440fb1f8dc4c9bfd165a33fb869d0afba917e51ee7b3a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Status\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3727
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3727,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/accept-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6cd927ba5f73cba7cd39605812124a0c40b5b9b69c46ff0a0390e69efc186719",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$gender",
+            "$email",
+            "$mobileno",
+            "$address",
+            "$city",
+            "$state",
+            "$languagesknown",
+            "$experience",
+            "$certificate"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "source_column": [
+            265,
+            293,
+            320,
+            347,
+            382,
+            411,
+            434,
+            459,
+            502,
+            537
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 45,
+        "sink_column": 1310,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/add-nurse.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3d4599f2ef5f2452f51dfc71e3ff0bd46ff948a984d3b0afad1a7e17d38a10e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3183,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00a5b715223c15dfdc6d7689ee99486f6a29ca2dc05bc85d345b762252abe5e6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3244
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3244,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bfc74a799ded1dceccb47de1ad7a57800692cdd407547bac49bd770497f127b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactEmail\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3329
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3329,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c22ed43e271a37cdaf37fc56e4940030f515e3fdaf7af58fa56f4002b63cae27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3415
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3415,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f95a7b3c19fd001d116a0c5110ea57f528ed242e2ba62eda38e38815c3912cb0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3853
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3853,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "22e0ce091f6709239564e23ef52fb71a5eb71307db7eb0117968d6703422aab7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4020
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4020,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a8bdcc50a20466aec36886fbd45bd916bc912c24b24e12e018bdab2487d29e23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Status\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3683
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3683,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/all-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a41ab1261e24c5688172e61bcf21e329e59a71cb0a762e9cc5fb1e736311abd6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            81,
+            82
+        ],
+        "source_column": [
+            2654,
+            2682
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 102,
+        "sink_column": 3306,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "daaee10e16fac16c8b46d7acb4cc1e90b0df56cf6f53d0d700b117c782c9d573",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3595
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3595,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a8cada6c70c9d80cd123c4326d9b585f54f11f95dd85197b4e344485637e1fc3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3656
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3656,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2845f72f36385dd40725681c77a0336b1c979ee609da37fc1780b5549b5ffa2d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactEmail\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3741
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3741,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b128636d69c26e135e6835595791ab505423e58f971e9e279d3546e555a47c37",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactNumber\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3827
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3827,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "924aed40875eeac70b61c2384d76832aca755db309013590c3142ad683ce1aae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingDate\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            4265
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 4265,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8c5dc3495d1c2df799cb1e1dbe84b43d01b0c45b69a8cb5d5609d4a1824d93b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4432
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4432,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c7165389f1ff01b674018ef662126f9fe2744a55288c13737d3b375e4949f108",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Status\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4095
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4095,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87e8a5ba857bd3a6a06f0beab5f466792cd3ddd597d8e864a534ca926b749f9a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$gender",
+            "$email",
+            "$mobileno",
+            "$address",
+            "$city",
+            "$state",
+            "$languagesknown",
+            "$experience",
+            "$certificate"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ],
+        "source_column": [
+            289,
+            317,
+            344,
+            371,
+            406,
+            435,
+            458,
+            483,
+            526,
+            561
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 678,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "93f7c1a11b54ff3d68fcb5d46ca1b56983a65348de7fa832f2ac31cb621675e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Name\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3509
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3509,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b93e1b6394855ae944bada1296d7574e1acc7578b71b82fc969593121e36ab37",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Name\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4276
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4276,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b93e1b6394855ae944bada1296d7574e1acc7578b71b82fc969593121e36ab37",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Gender\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4569
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4569,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e66b5f276de2806e5544b70ea7e7ff30437f6a143f8d92ca4416b8c646503e98",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Gender\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4602
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4602,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e66b5f276de2806e5544b70ea7e7ff30437f6a143f8d92ca4416b8c646503e98",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            5085
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 5085,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "09f035a7fb241febdc1bae1349d8881aa9ed713d5c438daafecb1970aef517e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNo\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            5436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 5436,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b02f19732ec13e82b60d1ff738a358c397be860dc3f269ea8d7d47a36243f6b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Address\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            5736
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 5736,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cae964cbb1df8cafcf452228caedaa6943b3da2b008046db03ea44d9773dc04e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"City\"]"
+        ],
+        "source_line": [
+            150
+        ],
+        "source_column": [
+            6033
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 150,
+        "sink_column": 6033,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c151d936fa9272f8df5eb19a6f621aa21dbab5b6ff3564ffe07a192bcaa9d5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"State\"]"
+        ],
+        "source_line": [
+            155
+        ],
+        "source_column": [
+            6319
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 6319,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25f27733f7fea34f79b5c24a3305959dd42e20a1d158b3a54ec2665480f2647f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LanguagesKnown\"]"
+        ],
+        "source_line": [
+            162
+        ],
+        "source_column": [
+            6737
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 162,
+        "sink_column": 6737,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "156d27b3c2237e400dfc4c97b2fb17647df79ab33b1cbb2f1298efb6912be17f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProfilePic\"]"
+        ],
+        "source_line": [
+            167
+        ],
+        "source_column": [
+            6962
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 167,
+        "sink_column": 6962,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "082d0b941cb7ef86667bc46d5be8f87de7250238b2e16275d1190386f8a4fb70",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            7061
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 168,
+        "sink_column": 7061,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c2984cd8814cdd3d438d3ea63a120810cf7f893f254f85164220d8f11027a595",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"NursingExp\"]"
+        ],
+        "source_line": [
+            190
+        ],
+        "source_column": [
+            7931
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 190,
+        "sink_column": 7931,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2bf8076f313b08febca1590dc1d3265e29d2803f33b0463a30c594152191d2c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"NursingCertificate\"]"
+        ],
+        "source_line": [
+            199
+        ],
+        "source_column": [
+            8342
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 199,
+        "sink_column": 8342,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cf5b8324d1c3f25b3470c70f4b653a0405f138d47a26de222760771ca9302419",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"EducationDescription\"]"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            8685
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 207,
+        "sink_column": 8685,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21db7a3183c28c696ffc324e039706fc288209dcc5b8c3f2156adb60734fc73e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CreationDate\"]"
+        ],
+        "source_line": [
+            212
+        ],
+        "source_column": [
+            9025
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 212,
+        "sink_column": 9025,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/edit-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a09c42a81e2b09ac7d41a0d6f2886cd5a4e979d0588ab86dcd2f6f19b4785c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            91
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 168,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e7b8f8e7366b54057414a4ab92367d66e3f34207302f9b1c8c72d24f216c052e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ppicpath"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            331
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 18,
+        "sink_column": 452,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "08ef045cb25928068c001db211c62a0f5574a934ab3e97a32c66bfefac7253df",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProfilePic\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3655
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3655,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f32ee7211768d42c4f2f323dba54da8c916c836a65af7823e4a9578c9993b2c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Name\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3733
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3733,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "886efaaa693954a025c9c0a98b25e09f2eeaf67805e04e5b13b010be3bc11352",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3791
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3791,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8603a34477e0ff5d4c63622027061b460232c2278ed26a2ac2c279a50b073db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNo\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3851
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3851,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78e137c1585099f929a717b3c5affcfa63d5f22da081c51ac2ffb0277e73352a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"CreationDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3914
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3914,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "37d0bf8f84d68490694f5f94c639a385e2da65327d04f6ef42ac58614d032af9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4019
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4019,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ded9528769d25396aa56b08302d9459017dced2165af40abff61efe1b8879ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4182
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4182,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ded9528769d25396aa56b08302d9459017dced2165af40abff61efe1b8879ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProfilePic\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4223
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4223,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/manage-nurse.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f32ee7211768d42c4f2f323dba54da8c916c836a65af7823e4a9578c9993b2c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3204
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3204,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b80a73595085dddcf0cf5a8fbec80c12ca17dce82a317178eee09688be5ebb46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3265
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3265,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "86cba6f9adfe4f1874bab49f61b559716482e4a8bf24efff413436a84429af27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactEmail\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3350
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3350,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6b6029b8883d35655158b514f77678179f2dd208b2b5562c583b02df55e63c0c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3436,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87ffe56fe0989de26bb3bef7f7f07c1d60e8ff144e5a6bf622c3d92e187d4770",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3874
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3874,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b980f7e2f7e872cf17622fde26898638b649eab526ca7eae38cf52b870dbc1af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4041
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4041,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "153bf6adca774b9fd51221493ee01e6a36b593bb264d11d6f87c38da279effdf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Status\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3704
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3704,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/new-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "79800e08a604c82e871c240716c90b72e57a4d5ca07784956497b9f19d430cab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/password-recovery.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 205,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "072010f4584aa56fc58592a02248a26dc2f8aed5eb50a57436b807b50dec974f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/password-recovery.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 372,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "072010f4584aa56fc58592a02248a26dc2f8aed5eb50a57436b807b50dec974f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            252,
+            307,
+            280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2d1831bf0d9b9249a15117a24507e270ee9541e24d94f51776d06a685b7cb40b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3293
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3293,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1e940219c43ee572813e39ead515fe6cf1d1bc6aa4a76b088cdf5e481c501030",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3595
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3595,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f9e06a441a04d914b591dd4cf4194aeccf5ddae143e972e72be2f3e2ec75b27c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3982
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3982,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dccdf6a2aae34d812aeab4409ddd5fbf1cb2c9832a2d1270dfa6443c004b42e6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4390
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4390,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0414ebd554d2fc72f43d7c8d5b95c541aaef9ef943c22237a34702eba643587a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4709
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4709,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f40ce2ed2145cff5527c11f2f3ae3a42ddb4172a175de38abf087f49c6516bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingID\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3227
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3227,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e1e21eb1408bd7a9f120030f9e44b6909aaa57810fe32f98a35e5a65339ade4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3288
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3288,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a210cd9896126ba7643f19f92f1164f5eda89215b537bcab35db1f1896be83e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactEmail\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3373,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2a7014187397d22812b6002b9a4757963f30b13574870057167878d09cc319e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3459
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3459,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d3660e4c0d921c3c60e0bb95beb2c165b431aa19f48ec1dcb54a6a41407ac473",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3897
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3897,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ec5f0c32118d6739b8c54896e859889a0d546b132d6fd2a0373c47c97074fe4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "511f73ac7079dd9b55386636202bc9cd83f9218f7622253a60ccb06c6672ccab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Status\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3727
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3727,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/reject-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bb4cc6bbfcead7ab95450ec38cba3128770efe95426f99a077b980ca40ccc7c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchby"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1585
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1693,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49fa43ea4833071c7006629fa8dc3bc2972b6ee6fd3e0c17a3638eb9c2d942f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchby"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2505
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 96,
+        "sink_column": 3131,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c6c5d48507f268e3eaea8b2e6b864af9845d411314cc1f0d08226a6a62773f49",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingID\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3442
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3442,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d7951fe262ef55b2b8a3c0031ac992b6cc042042bef01b60b81d355e4c1b4ff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3503
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3503,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b95797bac57572df8c6ca004258df5904c029ca47b163feb8c455ee099c340c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactEmail\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3588
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3588,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9351f50b1f6db90385660f700c9e7423b8535d7ecbc8a5af7cfdb73a27d3f51d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3674
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3674,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60a4099412a3fc7be10556e84b9303edbcd2ac989f86aab571fae377a3771580",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingDate\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4112
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4112,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d0fae647e18ad47209096913a757a2e39e29996254710e617351b55634e2938",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4279,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9549459cfd6d286b16bc3b88e9298d9d31a510abe8326c0d604949cdc0e30774",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Status\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3942
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3942,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/search-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b0a22527cd0315f2d2a34dfb1111198b471f4a6cc142a71a2234594b425ba5e6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$oldprofilepic"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            339
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/update-nurse-pic.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 40,
+        "sink_column": 1183,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/update-nurse-pic.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "7ec18984fff95b8dc7d6d13047fcfda595dbec5154bb201ad9ab18c549412d7c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProfilePic\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4390
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/update-nurse-pic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4390,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/update-nurse-pic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "973024f3e0e8e3f52f3e61ae5cfabeff92316395a6101ea674d55b98923e4802",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProfilePic\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            4870
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/update-nurse-pic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 4870,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/update-nurse-pic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "973024f3e0e8e3f52f3e61ae5cfabeff92316395a6101ea674d55b98923e4802",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$remark",
+            "$ressta",
+            "$viewid"
+        ],
+        "source_line": [
+            16,
+            15,
+            14
+        ],
+        "source_column": [
+            309,
+            278,
+            248
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 346,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ce2b3ccbdcb90d3b8159a267b54e6862fda079eacf583a944a5c9a79485677fc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$viewid"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2973
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 94,
+        "sink_column": 3004,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4b132c802fbfa3cad8a9d292e199ba0971f2899465b40672eea56f67c63b93a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingID\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3384
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3384,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "35531c1b5ddd1b278de675bf5c6f8d3dc93440b4ffd1a8aac1124dcfa7cb4f6c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactName\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3476
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3476,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5140ba8f78a2879d0625d5f920e47408821cee04a9d337e70f864f751f674ef9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3557
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3557,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8c2d59c9640b61bd7ee364a787ff410b0b5ad670cdf52ba3be7316f0c5157268",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ContactEmail\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3657
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3657,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7136db42c722136fa233c5a33369955cb97049ff74cae0e9228fcd9af787ea3d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FromDate\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3731
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3731,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "724c6f655340d7ecfa9d5659a09402ff9cadc96aa83e29dd63be00894c3eec36",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ToDate\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            3826
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 3826,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2235b4658a1b63dd87f50923b6a0de32951a941e81460727def31bf90bce1806",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TimeDuration\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3901
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3901,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "558f386698fca1704aaa996da2d229fbaee636a162cfe77a8ce61a34e0e2596b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PatientDescrition\"]"
+        ],
+        "source_line": [
+            132
+        ],
+        "source_column": [
+            4010
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 132,
+        "sink_column": 4010,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "79850d87c7a2445e04675fe765d3fec615353f416b9c1706a313817393b29267",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BookingDate\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            4093
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 4093,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea3438277f2be3b796b43be7a1d89eaca020746ae384ff20ec992eb40d864bdc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            4297
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 4297,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8daa03609ab8245e6ac5b7bcbcc6cff1ed20420fa881cd90021bb716c7e2fc46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Gender\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            4361
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 4361,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dc24e617c2e7f7e310b067cab2373da179c371907ff1430cb50b0ae8dad6d043",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            150
+        ],
+        "source_column": [
+            4448
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 150,
+        "sink_column": 4448,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66aa9306322a1a4f2bd7db524153a40838753ec12aac6bd164c39b55f8325254",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNo\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            4520
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 4520,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f49be41cf6023c31aa0cb266b6f3fc831f855004562077438b365da381e959b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Address\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            4611
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 4611,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "72853cea3c05818c421af79c62bd62a270196dc1e8a0ffb84c88fc024eab5361",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"City\"]"
+        ],
+        "source_line": [
+            159
+        ],
+        "source_column": [
+            4676
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 159,
+        "sink_column": 4676,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21d5c3d5e4f5d45fa8248c59c3f22e05d6e0c82cdc50e6620d713fa4a310e5fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"State\"]"
+        ],
+        "source_line": [
+            164
+        ],
+        "source_column": [
+            4761
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 164,
+        "sink_column": 4761,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9508a661f9a2d51f99cdfcddd98e10d5b55a02ce230ab48278f30514abf3927",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"LanguagesKnown\"]"
+        ],
+        "source_line": [
+            166
+        ],
+        "source_column": [
+            4835
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 166,
+        "sink_column": 4835,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d61e6f00fef694de14c9305baea05ac0f4babc02ff24943973faec76ddf2596f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"NursingExp\"]"
+        ],
+        "source_line": [
+            172
+        ],
+        "source_column": [
+            4939
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 172,
+        "sink_column": 4939,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3e83e59629d85c4321434b256a24ec8cba1e33e4f8f7366945446063aab9437",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"NursingCertificate\"]"
+        ],
+        "source_line": [
+            174
+        ],
+        "source_column": [
+            5022
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 174,
+        "sink_column": 5022,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "20ff3a89ee6ed93ea3db593d32b152124776be9b677436ac533983f43d598bb3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EducationDescription\"]"
+        ],
+        "source_line": [
+            179
+        ],
+        "source_column": [
+            5137
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 179,
+        "sink_column": 5137,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ac60751814a2f13622d8cad3007332413e9e7ef0fc3c23f8f83dc9de9a32b6a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ProfilePic\"]"
+        ],
+        "source_line": [
+            181
+        ],
+        "source_column": [
+            5238
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 181,
+        "sink_column": 5238,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa19a89628954d899836476a277d42192f92b4593afcb40503e7fbe37b302e48",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            217
+        ],
+        "source_column": [
+            5759
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 217,
+        "sink_column": 5759,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/admin\/view-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "65c8b69ed6a36d16e3ba866ceee68ce2e0e5e3d43a8a2fd60882392c0323356c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fromdate",
+            "$todate",
+            "$nbid"
+        ],
+        "source_line": [
+            11,
+            12,
+            7
+        ],
+        "source_column": [
+            278,
+            310,
+            138
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 464,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "45a2ac5b534e9fffd0475e202b7f288c8eedae7042a959b0d1ec058a93ff42d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nbid",
+            "$contactname",
+            "$contphonenum",
+            "$contemail",
+            "$fromdate",
+            "$todate",
+            "$timeduration",
+            "$patientdesc"
+        ],
+        "source_line": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        "source_column": [
+            138,
+            164,
+            203,
+            244,
+            278,
+            310,
+            338,
+            378
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 779,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/book-nurse.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f0a1469b044e1889430a9ee52442077e9690b4e725b29ae9348a61afbd6c6a11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ProfilePic\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3158
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3158,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c59b1022b830bb121ea1a76190242257ddfcd83f2bc1c85c3a1bc6573ce2a82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Name\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3342
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3342,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4fb2b3fb9855d85b67c9ae363a40c08f4038fbd7c76d2e7171a08b4bbdaccd84",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"EducationDescription\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3435
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3435,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d65dc6c75afc2c86c934c800bd2ee9c97a05d667fd4b2c551f01a91dcd4b7a66",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Address\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3667
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3667,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "df67fd50e78d2e70dd89c54adf9d1902c3134f1b68d5712c9c3feeafd7c3b2f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"NursingExp\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3885
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3885,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8fa81e12ac4db13cd9ca220e5c06546da0950bba022cdbfe6d156484998d4abd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"State\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4102
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4102,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3535b966bd27ba2b198a0c6ff2dfa718d79d80a9f757b108363f8a5c6fa88c0b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"City\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4282
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4282,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "991f97363bf47de743b3734f19218fc974f055d553abb628df492fa3e722e9e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"LanguagesKnown\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4495
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4495,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c1b2606a84ded60042a3f15f5212d902ccb4b09bce9d9c3fe491f3e1c201b6b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"NursingCertificate\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4741
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4741,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cd8a30f5d95109a76d3c9eb96306b20344a6e1dd297e922bd86f159d79e4a1fc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            4894
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 4894,
+        "sink_file": "\/home\/kali\/Downloads\/50.Online-Nurse-Hiring-System\/onhs\/team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8db57b1a6b9b429c08da2331b9f56561ecd15ce9f125743c153a3967c019afb1",
+        "vuln_type": "taint-style"
+    }
+]

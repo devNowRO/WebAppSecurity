@@ -1,0 +1,3566 @@
+[
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            246,
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/about-us.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/about-us.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 326,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/about-us.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9352996e30a718617d48681b730bd818dd4fc9f63c5580a27c314ec30478a40e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            42
+        ],
+        "source_column": [
+            1545
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 42,
+        "sink_column": 1545,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f6490492e9fbcb22883a7a1835d853341bf89f037d1af3ff3847b00f07d228cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Name\"]"
+        ],
+        "source_line": [
+            42
+        ],
+        "source_column": [
+            1604
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 42,
+        "sink_column": 1604,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "669d6eb05eb5ec3b2da6d32b9d6610ca9df363e22f782bd53b88259ed9294642",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2495
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2936,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "040b8c5ee1dab66bef49529ddd48493bddd62e4965ea2fb093e8f7fc23aa82fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3022
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/about-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3022,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/about-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "179cf82aa8f942545126d7e985699ef88ba6c3242bc02c30740b7269d4a05216",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/about-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3243,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/about-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e7bacc109dc79c84688665644df625106f9b03bdc7965d72f1f826f05de92bfd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2410,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5be21bd0f9936e74e9f75d27f7223db5db5373606f8ac2246e31748eeb08224a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2452
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2452,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7b3322299a6dc23200b5cf77954fa08e032e2322b63bac4bbc8a745ac6db8eba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2488
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2488,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f3791a8bfab9111bc94261d822dd975e19fe0c9f060e7ee5b41c566655e780e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2531
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2531,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c51cd63507a70a57a32905ae7bc41e2d89a3d7e067c299a2b07a30b6b3a4fb15",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2571,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "15d9b946480f695ce38de93530d7115752246074e041224e0d5c1fe186e50f01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2647,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d1db93549617e38535d27c57c5be2b3b67c8410c084f284315fe1c0f42d3ff7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2797
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2797,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3c8b64e2efae16a36d7d5ddfcfd9dfaa0191d6228f00ecf41eb45ba6bad242f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2843
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2843,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ed5dcc787cb79c3103ba2e99bd1e11621ef4cd60c77d0c5337344d9f0b8afdc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2926
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2926,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b91775f859ab7a2a8029a2824fd0a8d698a4e45fde96e1cccd0a397d4fe9b19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$mobilenum",
+            "$gender",
+            "$details"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            210,
+            237,
+            265,
+            302,
+            329
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 379,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-customer.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "027d1893ad3624621058908d0b8aca59b635b7b7d32083a741e24bb071f9c9c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sername",
+            "$des",
+            "$cost"
+        ],
+        "source_line": [
+            11,
+            12,
+            13
+        ],
+        "source_column": [
+            210,
+            243,
+            267
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-services.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-services.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 310,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/add-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4257235fca1037bf34dab83b12fe22931f754ce12ba4134a98da40f408a164e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aname",
+            "$mobno"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            248,
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 328,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d6373e1be2c8c43ed48ed70ed507413b7fe07eb1d652150e6b41110a6bd5e677",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3008
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3008,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "479d33eeac080985a4d9c3314716aca1344747ddd0981cbe1a4cc0017124abdf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3205,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17db40e02daea2ce20d58b451e628bd1e7e00d2c10ef7611737994766696ddbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3441
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3441,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bcff320bcce4637fb89d8ed48957f7d2ad7ccab6d51590acfcd5e1f8af45064",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3649
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3649,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "47cbf3569f793587bbdd6d526c630c276435e54bd253104afec6a73d70b8a042",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2378
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2378,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e539b616c5cc2bf0fa210b44408da5e7c9fbf3049dfd7c91012a3279286c5a5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2420
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2420,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1d0bc152cbe8adc5d1d6c70def0f5938989d643fc49edfaf01f8ee7c5df27c20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2456
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2456,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6656a28929b4fb79570cd6cff13ecfd7088c3cc52f6a128713943dee9ffb283e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2499
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2499,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12b473115b6b07af2b59244f9edbfacc292db78b13f57e07089b0dcbd814164f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2539
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2539,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e63b8cc4974fe3695fce94b292a97fac47fc8f2c8cfe60461afa5d1b0743ab3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2615
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2615,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3829c1f6ffe611086995de8961938ad4d16743cb8d419bcf3fa7b4deea41c048",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            64
+        ],
+        "source_column": [
+            1987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2108,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2f9cd0de10c31ef30c9a7488eb402dbd8c5cfce94fdbeabf2d1c2480d195ea6c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2015
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2131,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4785009ccaa99163d4229e780394f6c9901513ec952af7c051a01a29acdc821a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            64,
+            65
+        ],
+        "source_column": [
+            1987,
+            2015
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 80,
+        "sink_column": 2408,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e6613dd0e88a3e43ebaf24c24aa3d6b230628d4493e84000994b67e5bac2fee0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2798
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2798,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4956f4ff3c5b6dd7c565e7117c279852a967851a1933e5aed1f4dc75cdfd8796",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2849
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2849,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d399d499e2afc3f3e9196a7e977967dcfa8926d9695895d5ffbeda62d089acf5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2895
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2895,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c78c13fe461efad9c732fe36b46680fb3401732ea4ed08ffe12fe0051f6fc27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2986
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2986,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4956f4ff3c5b6dd7c565e7117c279852a967851a1933e5aed1f4dc75cdfd8796",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$email",
+            "$mobnumber",
+            "$timing",
+            "$pagedes"
+        ],
+        "source_line": [
+            12,
+            14,
+            15,
+            16,
+            13
+        ],
+        "source_column": [
+            246,
+            308,
+            333,
+            366,
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 411,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6f9a7a548dc8a01bb4fce8b0cca8cc42c8be1aba1d43873004d88d3833c47f09",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3275
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3275,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e5cf2910ad5fd1f52c2d30d68c34fe9e301412f960b5e6b94e3a87e4c28d24a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3474
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3474,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "11e0e8dc20b557d9c80b7dd810a276f434045fadf1a839bc807bd85da5bfa962",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3685
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3685,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "abda1b703bb61d0ec94d9fe1756ba891cc3a00a63420a647e92d0ff6918cb4e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Timing\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3890
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3890,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "430146a0fa2ca00087bdbfdcd1288f0df336daec47a53e643999074facf6214a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            4108
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 4108,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7d8c069542b8078a526caf6351a673bffc7ce4b3e96491077b3a80f392a0b275",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2307
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2307,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a0eafe36fd67be580b26fc2ec1074e9d05a7f560088450b66d4ee12fddf04f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2344
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2344,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ca519796efea7a59a334cad465d9b4711e1cc5427879d41c34ccd6a393a88a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2388
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2388,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "852b58eab976324f3ec013f53fbcca494196780a2358926c1d361b214c1e9c62",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2475
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2475,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "187ee4bbcec79fba66f895a1244c7cb71e51f87a8eec0348ec455023a0d73277",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2556
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2556,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "187ee4bbcec79fba66f895a1244c7cb71e51f87a8eec0348ec455023a0d73277",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            2088
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 68,
+        "sink_column": 2116,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f3e639fa47493ad878da261e9a08210f8f08ddc1b0cbc7125ffa77b5c9c00d44",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eefce45dde76bd3fb685996368fe01e87cd95750476f14ce9b1955b1a25c984b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remarkdate\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            4145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 4145,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55249dac04b5d579b16c11818de8f24e45eac349fac9fadc266ef252d18ba945",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2350
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2350,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fdf9de735bedd18f8f18c6c3c87e7753a2089bcd8573b39ac22261e535fcd0ff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2429
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2429,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e3f6108eed551b6c4a2e9dd7345e1f9116272d63d7025d8bf512351f7374a76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2508
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2508,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f4cc663b7235418d8ac92992b61d78820ccff80f192cbd69a1be90451af96ac0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2597,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "829148a1934ca97273eb0791550af47c66f762a06aa28b073291d96b2a1c453d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2695,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e0da13a8b0c9c3badfa7ebc2d69ca275b6287c9885877f1d52eaf2042b6db872",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2789
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2789,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8257ef996a40632b53e3faf70c3d69b7f858476c1b9912caf47f487783d5397",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Services\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            2878
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 2878,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3f8d053321dfa96378eca2c525efaf9a05ab81058bc15e41e132a57a68964691",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ApplyDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            2966
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 2966,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b59f083c3b6b41dc803b31db270e980f075aea691096465ab88519d2f515e328",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d3a13fcd41b3b3907b5f0deaabf2f50fb283c31e0a84045cb3a0a912d061a8c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remarkdate\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            4145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 4145,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "97d1ad90d3e297f12240865ece6f5aa05414a2bc63a7b88cae84bb520d3797ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$mobilenum",
+            "$gender",
+            "$details",
+            "$eid"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            17
+        ],
+        "source_column": [
+            209,
+            236,
+            264,
+            301,
+            328,
+            363
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 404,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ebe3882b1cb73bedda58c6df3b6289a0a30d6f9e35bb6854c675fbca35c9f04f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2710
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 87,
+        "sink_column": 2738,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1ee9d60c32d90f8fe6911ae08b55a8de8e78c8852e81f6ae2ac7abe728a46b2e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Details\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4760
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4760,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "64288605885de0317fbaf206d4abc9c3155bcb4162cc55cf921932028107a190",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3028
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3028,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b06b45b82a0afa3a68d6fc181898a7ed9a3c0a8d988ef960bd4bad5ed595077",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3227
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3227,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ec0a86dfb6ee9385ce2d4af3db54c73eac2a6032e817e92c3937e2fd844276e9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3452
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3452,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd6bb1fa463d85000cc4a285179567873fadcdd18e00eecf3a6201966e191c8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Details\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4760
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4760,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5cdc502d18bf3ec0f94ce9e68517a88dedcba70aca16de10f47fa45c6f27ca16",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4973
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4973,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0d5fa8714a707a07e92c863522058cc27176d2c61dbb3a04a497e1bf22ba52e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sername",
+            "$des",
+            "$cost",
+            "$eid"
+        ],
+        "source_line": [
+            11,
+            13,
+            12,
+            14
+        ],
+        "source_column": [
+            210,
+            269,
+            243,
+            291
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 332,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2a87fdcdeba6d2ce0d977bca460393f403200f476851693ff722f565e1b62ada",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2570
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 84,
+        "sink_column": 2598,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "912c8b17bbbbd37be83888d43c7c41239edcf940e810e563934a2a4ffdbe790d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2927
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2927,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "be660510c2f31b80a75a89b034c3b318d7ae9f0d7b0b05e9e92e75758106e2b6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3119
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3119,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85ce0c21f7d5a03474db6936c673cc3de8c536e350e906dc716fbdecab26ea67",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3323
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3323,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/edit-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "021c48a42da0d265f6dd8d53f72416ab4514924c0d014ea4fc8d860b9e0669a2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            162,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/forgot-password.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1ef10f95df1caa2fcf7d334508990f44d6ff5f248c8de27051195b44e1595907",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 207,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2f6b85580fa218664d08b5835d60c207888ff2bfd8b49e913092f9d59e8e0e03",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2565
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2565,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60970352737a6be5f98a62dbaf4005c61ad15b00a876c5d632c48356263f7d82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2616
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2616,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d90948bf0f2d0e742493c4859f6541c34003968606588866029a37fe7b1a10d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2662
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2662,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0bb9deb17b27631c9c37eb5a30a0738a07bb80055cb4ccb1d330a3db17eba0c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2753
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2753,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60970352737a6be5f98a62dbaf4005c61ad15b00a876c5d632c48356263f7d82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2804
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2804,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6dcc0c7e86c37dbea36b8a22179e00841113abda189cf83a79cb54106dc80061",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2848
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2848,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c1736f9d511788abd2c5e456c72d116d0360f32c51c4098a1d390808d81f6175",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2884
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2884,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "becb5283f9402741f12b53ed18df89ad9024370054af21d66dbaac683e5f6437",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2962
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2962,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ced1846119fb3dccb87fcc3035974ed847d2129270be27829ab40205005174fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            3070
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 3070,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ced1846119fb3dccb87fcc3035974ed847d2129270be27829ab40205005174fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2394
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2394,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "391227f4354123568eb292990d011c877f5fcaa466fc5cc8447124d2ccfa4a27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2436,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f431e20d6da6401631d034a30ddf245e6a6bada0efebfe75da0422b3f5e30083",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2472
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2472,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef768ef7a6fdf846b3a8e1096e24edd1795f36cddfce3ff99b1f935247484a3c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2515
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2515,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "92fe0e855914e65752aa00aa500dda6cc81aa08b5e440058631a54978ea22c46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2555
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2555,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "57f8de8bf6ee12b96438cc1aa60ad78c919537ce461632bbcbaa21042267790e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2631
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2631,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5af745fe19a01cadbdc0be200c9aa9e24fb26876347e0ea54f2884178f97d4c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2410,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a9128ff2079ef2c3cb1baa118476146847c30aec87ef2bf4973305c0717ecf38",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2452
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2452,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c3c7a757f55157af9fc22ca79719e231e483907fc605e48b30e3d7833ac8ceff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2488
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2488,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c31f13bd77d9566990a51d55df156799a2c5da7ebea82899c4e3e56c5bf83ee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2531
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2531,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6c759efefc1036b99d4c017fd553ff4e1686affd0d463815350230921b6dfb14",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2571,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d2f2f58f47e6d462d95535ee218f346903b88ad700df57f2b8cd17946915a66a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2647,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a4b995f3bba0279745d1883cf85a57994ce920383bbfb52f0216b0615763ffbb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            64,
+            65
+        ],
+        "source_column": [
+            1951,
+            1979
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 88,
+        "sink_column": 2568,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "31f5132f393a9dca8af0a4eb21118513f877c1b560ff1c4da71f2dbcaf69cd89",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"lmonth\"]",
+            "$row[\"lyear\"]"
+        ],
+        "source_line": [
+            96,
+            96
+        ],
+        "source_column": [
+            3016,
+            3035
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3016,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0974922323ae135efc924084e1a707bf295cfdebd2471a8211e1d36f3f1d43d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$total"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3088
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3088,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38fc1827ed2db2e8e67745d0ea2d22aeedeabadeeb23754997d9622977f13aae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            64,
+            65
+        ],
+        "source_column": [
+            1951,
+            1979
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 128,
+        "sink_column": 3866,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "31f5132f393a9dca8af0a4eb21118513f877c1b560ff1c4da71f2dbcaf69cd89",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"lyear\"]"
+        ],
+        "source_line": [
+            137
+        ],
+        "source_column": [
+            4281
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 4281,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a3004f8217e6d2866f6e4a17987facf73c84461216366b5ecf91e94b430ea54",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$total"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4334
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4334,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38fc1827ed2db2e8e67745d0ea2d22aeedeabadeeb23754997d9622977f13aae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2567
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2651,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2624af0855aa235b71481cdeeb9e1982cc2dd47e450520c26bcfd1d76d304086",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2567
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 86,
+        "sink_column": 2914,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2a7a116102dbf11fabc27333758aae1d38028820e37d9b0bd0c85add2036416b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3221
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3221,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60c5ffbb0165b2793ea173f1b41e5e6b5842a420a64261ef58e04167a65f2e61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3263
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3263,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "beb1bb643cccb4ef53b390caad15a9a2f01076f6f8e40009c68c51833ded53db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3299
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3299,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1cbc5ace6d2ba529f3a842a6d058b0f3594843cb13d01b452b004ccb03d254a2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3342
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3342,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c22d946a10910609c3b9e0e7d43d293a2ebc1161ff0a77af3a06059b4db6383b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3382
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3382,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "176ec66359bccf4c0f930616d4c3389134b36673ab3dc1931143e1acc3c190fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3458
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3458,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2507b8f47772d5d4e59118a05ca87de4dafb274aba41593e354a5d97e4582007",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2554
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2638,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa528b55100c52fe6dff4e1a2cad2a2f62302e6c4b1f9fbb9ce7afea645aa854",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2554
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 92,
+        "sink_column": 2925,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7f5425593685d7822a063cd25e0e29cad518961fa3a7aedf7472812dbfd15142",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3336
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3336,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d3762ed73cbbf311e3c6cea05d8029b39150b97c2090ce71b7d4ec23105940a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3387
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3387,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8c3f92fabff4fc12bb1f07ba4fbe3bff095ceed494b73f4b864872c2de0307b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3433
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3433,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e88cbe48c93fdb88a1c780fa502b7df8d3533dd67e3e4ea788cb473ca0ee9f74",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3524
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3524,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d3762ed73cbbf311e3c6cea05d8029b39150b97c2090ce71b7d4ec23105940a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2303
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/subcriber.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2303,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/subcriber.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc350c795d182803d4453a559f37c79bde4cbd1f1763f538816126e50db21ea9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DateofSub\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2341
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/subcriber.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2341,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/subcriber.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fd64b793657bad51bed19658174d4b82949148a16da1d98e0a4496d70a2d316c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$remark",
+            "$status",
+            "$cid"
+        ],
+        "source_line": [
+            13,
+            14,
+            12
+        ],
+        "source_column": [
+            249,
+            282,
+            220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 339,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "75683be9344c8ac13abcac14911aa05157428f2ce8c3a5ffe968383c04635f43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2567
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 89,
+        "sink_column": 2595,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ee64227cac3816b774435c2519da05f6316dc91ac0eccb0833709211506d275f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RemarkDate\"]"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            4624
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 184,
+        "sink_column": 4624,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ec64ca1e7ebd574733f00c8aadbe08f1b18451091ac9953d3d1dc245ca031484",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            2829
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 2829,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b10097f76c47a6d0a6b5dd6af8affc3c8b49d5e1a55f5577a0be499e8f3c594d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            2908
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 2908,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d7a14d6000831a9de523e8567cbe7999582465391e1de73dfd7c92a7327b6286",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            2987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 2987,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "04492fbe7292548160da104880638118a54b5786a01bdc3d5ad4bf29a3021c0e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3076
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3076,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d1ac8890525fb9ac47cb772ff844eb2bf2890fc0fac794faa1f74f4826c8806",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3174
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3174,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d15f9dfb7810caba774ca755b4b923ace90f11caf6b381c1de90381d3e70a35",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3268
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 3268,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "184a5b9a84087ae9fc7a9252badb89ce11474bb2385680b601414b3582fd6ade",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Services\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            3357
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 3357,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "782a2d232a3571a9f7b4a0eac56b2e0686f9d43eb7ae5b5b11f753981353ef4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ApplyDate\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            3445
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 3445,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b4a390089f9902271751bd403875840ef64c1a4e81c34de433e1b10d0f3022c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            178
+        ],
+        "source_column": [
+            4543
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 178,
+        "sink_column": 4543,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45d1fe2c4dc2d056f8183e910c08c7c6d4dad53737ef7bbe5569f6e0cb845dd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RemarkDate\"]"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            4624
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 184,
+        "sink_column": 4624,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b508c773bc49358dbbf7a0b90f0ddc872a0c2cb8b320c730fd64710e6c13ae3f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2537
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2537,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "61aedd07ad3ce975785242e40c343b62be9881ca85b39802f37ee35e45b1dbd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2613
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2613,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5cfef0eb64c5da707f155f001d150e9fa02338129af95e0949d873ae60d5c50e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2691
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2691,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f9c84c99442c6b9cbddbc7f33a5f46eaf90b5e79c987b7638154fdaef4454f34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Gender\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2792
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2792,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a9438cecf252442cad3d6cb9dc09f88ea58597eea94fb240b016d498711c7c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2883
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2883,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c1ea1a122680b720bc9948e7447d90abe4b47b8bba4ce74110e82b03ce9df21",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3435
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3435,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a260d04fc2529ab743218dacae8dd33ad649ff28c711cbedfdc914aaa1a2dac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$subtotal"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3479
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3479,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "41ca9d6790568d4303fe09437f0759eac097e48d807e267680cce0b9450c953d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$phone",
+            "$adate",
+            "$atime",
+            "$services"
+        ],
+        "source_line": [
+            9,
+            10,
+            14,
+            12,
+            13,
+            11
+        ],
+        "source_column": [
+            157,
+            183,
+            301,
+            245,
+            273,
+            211
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 387,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c4e2675fd2888c7143f5d04b896b2ed85d8cc26ed07e3682df2eb98d0d83c309",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$phone"
+        ],
+        "source_line": [
+            10,
+            14
+        ],
+        "source_column": [
+            183,
+            301
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 594,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dcd0712c9191d1d5e88402174a431834aea62139a9350825adc33d1e4facfbbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4791
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4791,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49f33490e29f0dcadb2e3b30b665a21dee5d9e63c0e146af076fb1e8fcfa5a1e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4826
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4826,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49f33490e29f0dcadb2e3b30b665a21dee5d9e63c0e146af076fb1e8fcfa5a1e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            2364
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2364,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "012420fa94c71c73d40967cc3ea05877b94bb6efe3fb9d6060e791f4aae8a2ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2530
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 2530,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a37da6def39c7df1ae23a4a2273d97dffb4d8617f4aaaa7abae5ba3fd46413f2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2747
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2747,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0ba679950471a3b03ce10ff6a0a723887db6b0195d0bf729e8f1a0bc69df1dc4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Timing\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2958
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2958,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f78cdce1890610b24918e5075099d7d2aa2e8e7be97790a530b9de0d9577b80f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            4109
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 4109,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b377ac458d467144f0df9b8b230ce78a7ec4d64b08f26b7ea18d17de2f09e59",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            4249
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 4249,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "012420fa94c71c73d40967cc3ea05877b94bb6efe3fb9d6060e791f4aae8a2ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            127
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 173,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "da90402757a4d438c9602435b81bc0b601b008907457e63b0d3f5f39ee4e8b20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            42
+        ],
+        "source_column": [
+            1223
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 42,
+        "sink_column": 1223,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1880143b23f79b4ce47f53b3bcf8835979abd9abe3acce651af010adf5e47f92",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            43
+        ],
+        "source_column": [
+            1334
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 43,
+        "sink_column": 1334,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d243cd5148022166e87e4ebf71e7b00560c7114db5a5c103e495125f1b1a5612",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            45
+        ],
+        "source_column": [
+            1479
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 45,
+        "sink_column": 1479,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e7d5ee100b37c658f771f37020c16f8f8065471529335e3f0aa5f03fc1b16566",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2101
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 2101,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c7856e9047899b3c53e98e88955013f50a6a91adc1b0130f9eeddaeff98800fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2241
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2241,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f46b5f4677b45833b26db2e9a7d4eedb4ee6176e996908b76fd896c84f7d4412",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            2541
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/service-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2541,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/service-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2f60ad42d01bfa9b2fbc1404deea9758ecbb84eaa6f81109acfbc587525e396b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            2586
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/service-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2586,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/service-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "659a388d07f747e5a38eeb286e2899bc8f392c185639b1eac861b3559456256e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            2623
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/service-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 2623,
+        "sink_file": "\/home\/kali\/Downloads\/41.Men-Salon-Management-System\/msms\/service-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a1fb742c858f4fe246ca97446af422e1fb94fdef1083220a032787a19e3e501",
+        "vuln_type": "taint-style"
+    }
+]

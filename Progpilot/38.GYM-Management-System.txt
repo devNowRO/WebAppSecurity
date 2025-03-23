@@ -1,0 +1,156 @@
+[
+    {
+        "source_name": [
+            "$bookindid"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            157
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/admin\/booking-history-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 215,
+        "sink_column": 7849,
+        "sink_file": "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/admin\/booking-history-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fb45dd891768f80945cf6118ccbec0ff553dcccbc4e7422cc0916d301c46cd7e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            100
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 3825,
+        "sink_file": "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "22a6aa3e7344eed56c2fe580a66d2948fca2bacbc8e7ac2617867ffa3a08484c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$lname"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 4005,
+        "sink_file": "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "423047b40965379138d5244ba2dd9d2f8ebb9af5d6e0458c092ff87777eadf50",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            177
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 142,
+        "sink_column": 4186,
+        "sink_file": "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de0719b9417ed58698c8c23c67b02860eb26472cc95e913b13e32f9bafe865b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$mobile"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            150
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 4387,
+        "sink_file": "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a5d1f101e3dbb91697c46bcff80eefea6db633ffa27faacec37e243c0639f57c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$state"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            202
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 4569,
+        "sink_file": "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f4b37f0aae37454077cfc2f33529d9a06a175087fb017cb4e21922f127f2ad86",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$city"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            227
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 151,
+        "sink_column": 4747,
+        "sink_file": "\/home\/kali\/Downloads\/38.GYM-Management-System\/gym\/registration.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c8d51481f26db1905adf93db556fd517226613c40d3866bd2e53cc635b70b95",
+        "vuln_type": "taint-style"
+    }
+]

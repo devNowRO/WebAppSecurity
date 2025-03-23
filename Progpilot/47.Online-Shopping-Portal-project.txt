@@ -1,0 +1,4006 @@
+[
+    {
+        "source_name": [
+            "$_POST[\"value\"]"
+        ],
+        "source_line": [
+            2
+        ],
+        "source_column": [
+            12
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/editable_ajax.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 2,
+        "sink_column": 12,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/editable_ajax.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd80332796a1931f6ccc0b1cf1b0bfe6403d0f14528e278fe1b6254be6e08762",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sQuery"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1673
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 67,
+        "sink_column": 1811,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "51ae7719a6103f37baab514d3353838b24e1bf5e8f62f703a4d8f37aaaa00623",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sOutput"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2462
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2489,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5919b29e0a902988f0df10589e6b2739f82588051bb63321ace176d23cce10de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sOutput"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            3709
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/filter_col.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 3736,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/filter_col.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b4a2fdaa35d92ab6231f9e632edb349f4870808a9a4c755451c80c488fbc48d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"callback\"]"
+        ],
+        "source_line": [
+            195
+        ],
+        "source_column": [
+            5001
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/id_jsonp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 195,
+        "sink_column": 5001,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/id_jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f519976b81d8e1cc9a7a732cd585b9612e0e6d0ef6c55fe68829f17765fb4e65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"callback\"]"
+        ],
+        "source_line": [
+            190
+        ],
+        "source_column": [
+            4858
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/jsonp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 190,
+        "sink_column": 4858,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8502e847328151614e38e16610056ecb8bdfdab0997a6336f91d40286db809f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"callback\"]"
+        ],
+        "source_line": [
+            192
+        ],
+        "source_column": [
+            5041
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/objects_jsonp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 192,
+        "sink_column": 5041,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/objects_jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0019c5441eea087e76513de25bf3985f1e54c8a03fa66956ceb1681a46c4a982",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sOutput"
+        ],
+        "source_line": [
+            198
+        ],
+        "source_column": [
+            5190
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 200,
+        "sink_column": 5217,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1e99f9e6c5113495d4c915142404b8d81677eed4653543d7ea16ae2e3b353282",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sQuery"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3127
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/extras\/Scroller\/media\/data\/server_processing.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 124,
+        "sink_column": 3285,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/extras\/Scroller\/media\/data\/server_processing.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cc1563522833b4099639f8acaf3c97b0ffffbfc58fc6be3e691a1dcca0dd1750",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"id\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2485
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2466,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b2b34340042411d983804dd77f1542095b4874664684725fadfec9666c5c35ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"name\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2524
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2517,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d588d0bd0b5702fc1e3f15ca9d63157e32604c376092c4594b6b1047566e5eac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"phone\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2561
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2554,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5417546ac04e14df111767c5704c03f3e081b5993a19c8207455baa411291aef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"email\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2599
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2592,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38bb630c5705b6b2329c51851b4e62d4cd8221ce29d776a368dfef42653c6c7f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"city\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2637
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2630,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2efdef780e94ac57aab116821cff1282455922ce2063304cb2bf46935a5c1d4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"zip\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2674
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2667,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7efe1461071aa3958a1237cd50a2bdb235cda4c31dece1f3d928c0230fe5ea0e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"state\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2710
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2703,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef1ed2c4f0c2395245a1f267e90affa2e82e713f945a546b8809eae40f4191cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"country\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2748
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2741,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca3ecc17a0c07165c4a8194e565c21dcf067cefaac8d828bc071693303303b5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"zip2\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2788
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2781,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b98db1482cff63b9d7e93bf30ad5bec58be96f352973b3999c34fe88a52c040d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fread_return"
+        ],
+        "source_line": [
+            740
+        ],
+        "source_column": [
+            28684
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/jQuery-File-Upload\/server\/php\/UploadHandler.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 740,
+        "sink_column": 28684,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/assets\/plugins\/jQuery-File-Upload\/server\/php\/UploadHandler.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55d55ee89b05e74e835880d6adaeb77c8f6ac267bf3dd1597c3a8bd44fbf8659",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$description"
+        ],
+        "source_line": [
+            16,
+            17
+        ],
+        "source_column": [
+            300,
+            332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 374,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2920cd0e453f78bad6174bce63b22cb34fb4961462775d2b5c13270a9270a40d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            633
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 579,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "814cc5679d659f5a5fc25b440d40f3be5b2620ab2c010d55c6e44d732b7f1156",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            4377
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 4377,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ebfb46ffdf6d520792b3c9208fd4de515184ed3cd1e049c5a8ca56a439d283d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            4470
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 4470,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ebfb46ffdf6d520792b3c9208fd4de515184ed3cd1e049c5a8ca56a439d283d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$description"
+        ],
+        "source_line": [
+            16,
+            17
+        ],
+        "source_column": [
+            300,
+            332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-category.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 401,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f0d38c3d8f34ace3e9f57ef6eac8bbaa99d2313f6570e12fb67e92fb6086099b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$subcat",
+            "$productname",
+            "$productcompany",
+            "$productprice",
+            "$productdescription",
+            "$productscharge",
+            "$productavailability",
+            "$productpricebd"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            20,
+            21,
+            18
+        ],
+        "source_column": [
+            215,
+            247,
+            280,
+            318,
+            362,
+            446,
+            498,
+            549,
+            402
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 23,
+        "sink_column": 610,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c788b3e98e0c43d8346a3d3e90f088b64203b043f8c34392bf36e79ef4cf2dcd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rw[\"id\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4258
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4258,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "44c67cbbb8a01c2420572050ec9cf8b4ba82162a238404a8cbbcae9bcc16ecf3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rw[\"categoryName\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4283
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4283,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f03e0c1e198cca00d86b0df59de83e88f425af52d56c2715fae284c4669db0ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            204
+        ],
+        "source_column": [
+            7405
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 204,
+        "sink_column": 7405,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "771aff36e3e6b925db2d07662dcdff120e85d2597aa6931caf81fac6f4ff10f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            212
+        ],
+        "source_column": [
+            7756
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 212,
+        "sink_column": 7756,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "771aff36e3e6b925db2d07662dcdff120e85d2597aa6931caf81fac6f4ff10f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            221
+        ],
+        "source_column": [
+            8109
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 221,
+        "sink_column": 8109,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "771aff36e3e6b925db2d07662dcdff120e85d2597aa6931caf81fac6f4ff10f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$subcat"
+        ],
+        "source_line": [
+            16,
+            17
+        ],
+        "source_column": [
+            300,
+            332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 396,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4145d7199e4ed1f7bfb62b327237a7636fefad5c9aba6ff8bb8fa048bb760c6c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cat"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2744
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2744,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a70aeb5497e2307307070bf94caabeb3cf77341506d09f08492bcd1dd9d8618b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2850
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2850,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a13ee2632eef3adfcc802f90dbd2299ac6bde5ec11a8e75362f0cd5fdca6d9fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"categoryName\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2879
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2879,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/edit-subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "003239b958a82c55318b556ce30af822289ab6d728f20fa383ae94084c3113e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            111
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 184,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "85c98113434639d34a7c11d2c4e1c1d90851be452e12986b9dc4e4aca7901cb7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            429
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/index.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 18,
+        "sink_column": 509,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/index.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "0ce732f4f4ce067df038dcb30b4ef830033063e7edf9551c8a6efb976d18a8bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            649
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/index.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 27,
+        "sink_column": 735,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/index.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "0ce732f4f4ce067df038dcb30b4ef830033063e7edf9551c8a6efb976d18a8bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$subcat",
+            "$productname",
+            "$productcompany",
+            "$productprice",
+            "$productdescription",
+            "$productscharge",
+            "$productavailability"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            20,
+            21
+        ],
+        "source_column": [
+            177,
+            209,
+            242,
+            280,
+            324,
+            408,
+            460,
+            511
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 37,
+        "sink_column": 1347,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "111cfbbd23f045e72344e5bbacb4a53d947a9d8fdfe8152f7c20e430db889b5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4555
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4555,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e15f248f06f4a376ae0ee403c7337e2e409c435c5ec9eb4a31686e82f0f98de2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4581
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4581,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/insert-product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da6ad1b62010ff6bc52847d341f927b20637f11cd052da1a48b0fcfb3e6ecff1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            363
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-products.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 309,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-products.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "341801794669dcabf6d5d7cdb79e903da1485508e9cbdac60bd7506c336b9127",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            3083
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 3083,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5405f56ac4a1639c1666f1d9b88c457726704d590178e36fc8fa691ad735e804",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 3183,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5405f56ac4a1639c1666f1d9b88c457726704d590178e36fc8fa691ad735e804",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            363
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-users.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 309,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/manage-users.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b825884e9598f9affcb995948f5df4cd547b0a3e29b089690d38f9733e12e713",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$subcat"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            174,
+            206
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 243,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3624f608cadf799c2b47eb0cea7e1199974eb9f31d1e8300c320cc8f9ee13cf7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            496
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 439,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "49743f742f86d64b491a2794d321dfbf7e80111c96f9eb955a7ed2bf3d6d7487",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2752
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2752,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2402af81c4afb17a23440fd02380462991b754efa63a6536e0751846265abdb8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2778
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2778,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "335a7789306535c927ca6a0175f357a86637b2ca002d34bbecefe79ecd183d1e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4609
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4609,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2402af81c4afb17a23440fd02380462991b754efa63a6536e0751846265abdb8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            4705
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 4705,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2402af81c4afb17a23440fd02380462991b754efa63a6536e0751846265abdb8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status",
+            "$remark"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            194,
+            220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 266,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cb1fa898fbeeb82be060d41263a40b01278d725b1b47f82390aad81ee38497af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            194
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 381,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "602a8f422d02f89b604e913a30d54595dcf6863cf7656255c9808e777b9aad3b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            64
+        ],
+        "source_column": [
+            1810
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 1810,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8573b5b8271cc946de013fafecf0c0082761d37ea6972f0d26d34642a5814e17",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"status\"]"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            1958
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 1958,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef25f8d8ff86a9f73275222551371b51bee6a2c954d0e1d3d576a3007ba7e10d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"remark\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2101
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2101,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/admin\/updateorder.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "23aaa24898efaa0e521e56ac2aedb6b94466eef89c8fb24c220676d52b7f7146",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$baddress",
+            "$bstate",
+            "$bcity",
+            "$bpincode"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            237,
+            276,
+            310,
+            343
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 389,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8c9772877bf40bd87f5b641954e0c1bdce6ee66805d0569e7d7365011486a11b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$saddress",
+            "$sstate",
+            "$scity",
+            "$spincode"
+        ],
+        "source_line": [
+            28,
+            29,
+            30,
+            31
+        ],
+        "source_column": [
+            738,
+            778,
+            814,
+            848
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 32,
+        "sink_column": 895,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "babf5f80f631f3a539baa050780b359f0ecea2f5a9c650f43b47f6d5bcd113c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2982
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2982,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "351319dd5b666df2641d73c92fccce473bdaf57c7e469234b55a907f71339ddb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3039
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3039,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "351319dd5b666df2641d73c92fccce473bdaf57c7e469234b55a907f71339ddb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"productImage1\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3064,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f5132e343c18f330e08e4d90670a70d36c61a78ff8e3091b49283d96f5efd83",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3262
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3262,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "351319dd5b666df2641d73c92fccce473bdaf57c7e469234b55a907f71339ddb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"productName\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3288
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3288,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/main-header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a13e132c37f23fd125668646f26189147b7c2e72092989b8521ce4eadbb69e9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            1130
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/menu-bar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 26,
+        "sink_column": 1130,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/menu-bar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb81e012268a99c70ae0edd2bed1fe86dce433df590bddbc5f0d0c19da3bfb37",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            1157
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/menu-bar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 26,
+        "sink_column": 1157,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/menu-bar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f3dd46ee717ebd9559122cddfb7b27e3385a03479bb1d901da584d93ea81e58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingAddress\"]"
+        ],
+        "source_line": [
+            142
+        ],
+        "source_column": [
+            5517
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 142,
+        "sink_column": 5517,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "502fb80a77fa6e35b024a3146e9b448bf318e84c5a1bd57fd6a5f6428c18ed24",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingState\"]"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            5833
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 5833,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a26bb9e805a735af1573530298c8ef189d6f34919e6ea1f12daf92356cf64ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingCity\"]"
+        ],
+        "source_line": [
+            153
+        ],
+        "source_column": [
+            6163
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 153,
+        "sink_column": 6163,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4184e782f383119dbe927d93809352a2b1b8384684fb9282233c8f4278101c66",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingPincode\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            6490
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 6490,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ae6e57f581f5f23673b037497e8407ad8047f9534e54d8083255d85465648d7a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingAddress\"]"
+        ],
+        "source_line": [
+            195
+        ],
+        "source_column": [
+            7814
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 195,
+        "sink_column": 7814,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "13d77ad3a97580b8964ba0be9500e54e8d0725cf3aa3767bb3976ab8149739b3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingState\"]"
+        ],
+        "source_line": [
+            202
+        ],
+        "source_column": [
+            8136
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 202,
+        "sink_column": 8136,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b732b6ec1bd05b0d6896d0fc038cf87e680b10b3453a7958495e0aeba13ee5e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingCity\"]"
+        ],
+        "source_line": [
+            206
+        ],
+        "source_column": [
+            8470
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 206,
+        "sink_column": 8470,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "90e2879b2e405b3772f132bd3d51ca6a216b455a69e3cc207ed5712a50c8546c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingPincode\"]"
+        ],
+        "source_line": [
+            210
+        ],
+        "source_column": [
+            8801
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 210,
+        "sink_column": 8801,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/bill-ship-addresses.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "61b6f94a94898712cb6c06d3a9794e2a7cffad8ffdc26c7fd136537368db3bea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"pid\"]"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            1022
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 32,
+        "sink_column": 932,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "baa0a782f61740da9db3f55238765dee96b002aa90f767b56d20e81a0a90b0b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            5166
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 5166,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0076a1433ad12eb0b7b52f359df0c71e30eb017aed85d07e72b6d55f4f19d75a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"subcategory\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            5274
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 5274,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c4b594102a1b92f4cdf09ae844be58971d0b92ef4926dc9756840e9992b220d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            151
+        ],
+        "source_column": [
+            6289
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 151,
+        "sink_column": 6289,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0076a1433ad12eb0b7b52f359df0c71e30eb017aed85d07e72b6d55f4f19d75a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            6373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 6373,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1300a0a5ec5c9174b966b8ca82844edebf2db017ee75fa8e1a25dd627e2e0b0b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            242
+        ],
+        "source_column": [
+            9710
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 242,
+        "sink_column": 9710,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0076a1433ad12eb0b7b52f359df0c71e30eb017aed85d07e72b6d55f4f19d75a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            75
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 113,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "43ee78a647d3f4b1cd554f12c61582bcd56fdf12222b090967dc07252fa26abb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contact"
+        ],
+        "source_line": [
+            8,
+            9
+        ],
+        "source_column": [
+            116,
+            145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 221,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f4c9a3878c07ea3a2f9c2d202c1b6ad07ecea21bbd079639ac5c4b2806bcd10e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contact"
+        ],
+        "source_line": [
+            8,
+            9
+        ],
+        "source_column": [
+            116,
+            145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 390,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f4c9a3878c07ea3a2f9c2d202c1b6ad07ecea21bbd079639ac5c4b2806bcd10e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            498
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 19,
+        "sink_column": 578,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "91c7790adddb36aeca4fb7dbf9dab6143840beba288b5e2f4ed0904937d91fdf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            729
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 28,
+        "sink_column": 815,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/forgot-password.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "91c7790adddb36aeca4fb7dbf9dab6143840beba288b5e2f4ed0904937d91fdf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            478
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/side-menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 11,
+        "sink_column": 478,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/side-menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85ed2ff94868f990cdb5b8e9688b022f36b5ab33bd236b3a0d66a36bd3c2d21a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            586
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/side-menu.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 12,
+        "sink_column": 586,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/includes\/side-menu.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7bf27819127f115bf9a99323933324acfae21199b2e1d26d838111f3cfb17be0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            219
+        ],
+        "source_column": [
+            8670
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 219,
+        "sink_column": 8670,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af0e125343ebf33808d8a961e95d606472cbbcac3fe75cd18ed4ca8366bd5063",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            277
+        ],
+        "source_column": [
+            10721
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 277,
+        "sink_column": 10721,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af0e125343ebf33808d8a961e95d606472cbbcac3fe75cd18ed4ca8366bd5063",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            335
+        ],
+        "source_column": [
+            12686
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 335,
+        "sink_column": 12686,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af0e125343ebf33808d8a961e95d606472cbbcac3fe75cd18ed4ca8366bd5063",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            394
+        ],
+        "source_column": [
+            14914
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 394,
+        "sink_column": 14914,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af0e125343ebf33808d8a961e95d606472cbbcac3fe75cd18ed4ca8366bd5063",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            444
+        ],
+        "source_column": [
+            16895
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 444,
+        "sink_column": 16895,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af0e125343ebf33808d8a961e95d606472cbbcac3fe75cd18ed4ca8366bd5063",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            507
+        ],
+        "source_column": [
+            19171
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 507,
+        "sink_column": 19171,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af0e125343ebf33808d8a961e95d606472cbbcac3fe75cd18ed4ca8366bd5063",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            8,
+            9,
+            10
+        ],
+        "source_column": [
+            138,
+            165,
+            192
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 268,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8b1f5b5cca9824317f64f3c7e04a9030e34c07a15a1ea0f68234a9a9672292fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            616
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 26,
+        "sink_column": 687,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "198f628ad716d071813b7fa35888913c3409fd74db1ec01e22ca582109f3f075",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_SESSION[\"login\"]"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            1073
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 36,
+        "sink_column": 999,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "886cff638e4d835950f5d711cba5ccc12acb44c572eede42839d7acd76ca8c96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            1117
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 39,
+        "sink_column": 1197,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "6ac3fdcdefd2dea97ee7e3e91c07aa3423b4a3fd46645f00871bf59a0f233a53",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            45
+        ],
+        "source_column": [
+            1284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 48,
+        "sink_column": 1357,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "198f628ad716d071813b7fa35888913c3409fd74db1ec01e22ca582109f3f075",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            1459
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 51,
+        "sink_column": 1545,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/login.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "6ac3fdcdefd2dea97ee7e3e91c07aa3423b4a3fd46645f00871bf59a0f233a53",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$contactno"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            201,
+            226
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 268,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c36325ffcdf5156b7ccd1870a25fb2bfdb205a61af00efc89dd3732725df85b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            173
+        ],
+        "source_column": [
+            6123
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 173,
+        "sink_column": 6123,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0e67f5eedc12f083522015d96ffcb429da3019ff2f835877bdbe36e864d9272",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            180
+        ],
+        "source_column": [
+            6454
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 180,
+        "sink_column": 6454,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "127e7fcd4f5edcfdcba6376ece6ae9657f42ecdf6c67a332cfc2568c42d0a0a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"contactno\"]"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            6771
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 184,
+        "sink_column": 6771,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1334d0517bd3667174b72e5edbe28d801f890621adc678f6b9578d16ec335334",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$baddress",
+            "$bstate",
+            "$bcity",
+            "$bpincode"
+        ],
+        "source_line": [
+            60,
+            61,
+            62,
+            63
+        ],
+        "source_column": [
+            1226,
+            1265,
+            1299,
+            1332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 64,
+        "sink_column": 1378,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7d50651f5f9d16abc0719ea227fd2cb803ff1d71f52cb006172842a142b30140",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$saddress",
+            "$sstate",
+            "$scity",
+            "$spincode"
+        ],
+        "source_line": [
+            75,
+            76,
+            77,
+            78
+        ],
+        "source_column": [
+            1727,
+            1767,
+            1803,
+            1837
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 79,
+        "sink_column": 1884,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f6cf9a66b05fd0fc5dcdeb21e11498ecda641f38f1ce4d8688abd8dc244c6ce7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            7389
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 7389,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3a5f5e43945d2caf6ed7bacb6b1d1ee46e14b538c0ba8e7f7a790ae2e942385",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"productImage1\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            7414
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 7414,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4fd4dcf501241d278d400a0857d7b0737c6b34d13d04595948dc812789692804",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"productName\"]"
+        ],
+        "source_line": [
+            226
+        ],
+        "source_column": [
+            7672
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 226,
+        "sink_column": 7672,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ff7e2bf76ef1aa2ca7edc832d004826fdb0cde159b264660678f4ef735fcea28",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pd"
+        ],
+        "source_line": [
+            226
+        ],
+        "source_column": [
+            7640
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 235,
+        "sink_column": 7900,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6d1352259641afe15282f48f7fcb08f60ca37cf2a42bd49e164b4d7d5c6d8c6a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            253
+        ],
+        "source_column": [
+            8711
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 253,
+        "sink_column": 8711,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3a5f5e43945d2caf6ed7bacb6b1d1ee46e14b538c0ba8e7f7a790ae2e942385",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"productPrice\"]"
+        ],
+        "source_line": [
+            257
+        ],
+        "source_column": [
+            8890
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 257,
+        "sink_column": 8881,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "95e906fe0b5875dc39ab411ac4e20215d29b5ae7043fb9f111eb7dccaa33697b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingCharge\"]"
+        ],
+        "source_line": [
+            258
+        ],
+        "source_column": [
+            9021
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 258,
+        "sink_column": 9012,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "52f045bac5dfc67512e47b6eacf184f10f4523fc0b3448afc5a1c4b1aba14625",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingAddress\"]"
+        ],
+        "source_line": [
+            292
+        ],
+        "source_column": [
+            10101
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 292,
+        "sink_column": 10101,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ba62fd3d537588c2ff59d1aeb319fbbe73c66a525247924c10efd0b3b0da1f58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingState\"]"
+        ],
+        "source_line": [
+            299
+        ],
+        "source_column": [
+            10417
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 299,
+        "sink_column": 10417,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f92c0a53c7fb7aa99483fdd1d2df80a1aec13834cceb30e55c8c0f6f30dfadb7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingCity\"]"
+        ],
+        "source_line": [
+            303
+        ],
+        "source_column": [
+            10747
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 303,
+        "sink_column": 10747,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38170c61f5025b147770a4b67d454e4b8185b2928bce40cc2853840178cc9a5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"billingPincode\"]"
+        ],
+        "source_line": [
+            307
+        ],
+        "source_column": [
+            11074
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 307,
+        "sink_column": 11074,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ab5e3aa0263991bb91c2f294c1bf7d9a3e9add30466539db58cc198e4d88fb4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingAddress\"]"
+        ],
+        "source_line": [
+            344
+        ],
+        "source_column": [
+            12037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 344,
+        "sink_column": 12037,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b05811c8e42eaf53492f872c8dc6c97021d502b519a7b269a687ca7b6b986a6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingState\"]"
+        ],
+        "source_line": [
+            351
+        ],
+        "source_column": [
+            12359
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 351,
+        "sink_column": 12359,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "435a25e506c7fed8f6177c93aab6d4b04ebbce9023ae4c3c92b1138677015199",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingCity\"]"
+        ],
+        "source_line": [
+            355
+        ],
+        "source_column": [
+            12693
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 355,
+        "sink_column": 12693,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58139f30ed237dbe473e8f9dd2cb4ef10414d83b29a8591d07ac1627e101a0b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"shippingPincode\"]"
+        ],
+        "source_line": [
+            359
+        ],
+        "source_column": [
+            13024
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 359,
+        "sink_column": 13024,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ce26e9f585c8dc452d6560ab74a51f1cb1baa34665b3f8592f202add36fc4b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pd"
+        ],
+        "source_line": [
+            132
+        ],
+        "source_column": [
+            5220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-wishlist.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 133,
+        "sink_column": 5304,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-wishlist.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "53ae71c38ce6ff4f58814cd46f1584f6b7bd752edf41b886bddcc487bdc8e8d4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pid\"]"
+        ],
+        "source_line": [
+            153
+        ],
+        "source_column": [
+            5997
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-wishlist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 153,
+        "sink_column": 5997,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/my-wishlist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "142152429a41f76d9d7aaf68b03c4b900d8e999f9ff0da6acc3426abbfb8c34f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$orderid"
+        ],
+        "source_line": [
+            105,
+            104
+        ],
+        "source_column": [
+            4084,
+            4055
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 106,
+        "sink_column": 4116,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5a1d8bd673b602b67668a87cd8e1ac2b7b57a29dd195052dc8cb4bef11383dee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$orderid"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            4055
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 110,
+        "sink_column": 4353,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "37f89351b3a0e16a25b3f7bc5bdb6349d57005da433a97cfbef0161d295c15dd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pname\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4958
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4958,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c4fea8f00f4fb3e8348c348c569d14bad952c95d1afedd01344b31df660ce582",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pimg1\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4986
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4986,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "caf078884451872acbccc94ddacc67df404b4daab6d9fee7b380950615393199",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"opid\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            5190
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 5190,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f404c18cda4ab0a6fb26890e802b72c71aae69c3882c9f753d29567aa0656b63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pname\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            5226
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 5226,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c4fea8f00f4fb3e8348c348c569d14bad952c95d1afedd01344b31df660ce582",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qty"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            5339
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 5339,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bdf8cc586a09774a8d5a419c6db76a9b239c7fc0252bdb084b0a84e11d8b53c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$price"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            5436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 5436,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8269f382a233fea10cf9ebd25da4cbb7c08ce1efa995b04726d35d6606968c03",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"paym\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            5595
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 5595,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7b96a25090a6aab332761786a2c8795448a348a6d8a4fc03c03061aae9fa4d74",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"odate\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            5671
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 5671,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5319fe342665f9e62b795c6cde176fd1c8b833d5ca902187046c855b2c2c17f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"proid\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            4892
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 4892,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78920b4a15f1d2c78453b22df38080a631c6e28dacacbf6022327182d445dbc9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pimg1\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            4920
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 4920,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17ccdc7aadb1767036107815a23638d2b1e7bfbb4abd2473bce22327e9f4722e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"opid\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            5124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 5124,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "16ece3450fefa8be72b61f1f585d61d3bf3b9c82e0b2756d6b367a34f9e03ed2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pname\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            5160
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 5160,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "65513c0c83b37ede29081d10bc9e01ea5d161cf11798e6a7ac219b970d3006b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qty"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            5273
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 5273,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2c9220af555e1b6b50d9586b49cd1530b7e2d851a59a4374a31e92dbb293726",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$price"
+        ],
+        "source_line": [
+            132
+        ],
+        "source_column": [
+            5370
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 132,
+        "sink_column": 5370,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4107c07dd4d1cde6c95336fa24f33bf33a1b0fa7354288c5b644dca006636e48",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$shippcharge"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            5455
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 5455,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4eee71a5d90a6e58c052de8900cef44fc2f07d1cb63d3844ae7f945eb3fa18d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"paym\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            5645
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 5645,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "95d337f2cdf110e109a29b0f2fbe7c4cd85c9a40c3d3be45a160557f8b36f0ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"odate\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            5721
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 5721,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/order-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef66050d352b1c72aa021c0ab50fe57bc4b2a9a541b29a8fbcf3b99bec3f1926",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"paymethod\"]"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            258
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/payment-method.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 203,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/payment-method.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6cda118f6e6b195f7d52a8978144b6505ab689139f543138964a08bb3bc58d39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            308
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 198,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "04ee55ebcc1f1e662b7a33b63202514a9d798caa4c166dfe6cc059e5078ed451",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"proid\"]"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            5044
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 5044,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "768a716d358f3c2a45a8c9a07e4557e7f3448e54608ba8b5545ba2f7eb7898f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pimg1\"]"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            5072
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 5072,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "97a135773a86cfb7b2f77a4bb5dc2774ba5ffb2fbf3ec5d4b5431c0317f4901d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"opid\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            5276
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 5276,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0603fe760b9e8b8f8063ea6d2066cf667766fdee5df9b16278d902d70934ab8d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"pname\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            5312
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 5312,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "944bbd1b9a3c2c984cdf490cf2afc8af07d93d2e0f7459fecf7ea551fbe10936",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qty"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            5425
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 5425,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e9cd92ea8391262b98660f138d3b030ba397b8e7c6261111dea014c64aaa552",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$price"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            5522
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 5522,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e7f4c314a0ea8bbc9ca06bf295e39f8e08db782bdb8751c2734cf9a0b733dc1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$shippcharge"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            5607
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 5607,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1df24d2480bc8d2768f9f696cb3edc6e9f9b05574e75ac17ffbfeb62386c6ac6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"paym\"]"
+        ],
+        "source_line": [
+            146
+        ],
+        "source_column": [
+            5797
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 146,
+        "sink_column": 5797,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ebe54332b3aae2ab8efe17547481c5ea7164654643cf07c4982f2443c9c41d9c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"odate\"]"
+        ],
+        "source_line": [
+            147
+        ],
+        "source_column": [
+            5873
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 5873,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b02f5d3b9793173692cab8f8e1d075f6b7d8f7429ca37b5ce6a0c8b93431b1f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"oid\"]"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            5957
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 5957,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/pending-orders.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb65eb985ac6ecbda8781db3c2964ed8348723f1943203f2720450be0444e568",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qty",
+            "$price",
+            "$value",
+            "$name",
+            "$summary",
+            "$review"
+        ],
+        "source_line": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+        ],
+        "source_column": [
+            1148,
+            1174,
+            1200,
+            1226,
+            1250,
+            1280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 44,
+        "sink_column": 1308,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f2341e41e2676e5ff711f8633c1b579c7c6ef03e34fdccd3cdfa40085e981738",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            5645
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 5645,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3b3dcef5dd8b9b672671187d3e7633d84b6689f93c25da0a0866f0a72c8a33a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            137
+        ],
+        "source_column": [
+            5729
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 5729,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5379937b51caa40c8d88998b03f2fe69e6adb538c05873026ce9543395c4c6a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            191
+        ],
+        "source_column": [
+            7973
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 191,
+        "sink_column": 7973,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3b3dcef5dd8b9b672671187d3e7633d84b6689f93c25da0a0866f0a72c8a33a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"productDescription\"]"
+        ],
+        "source_line": [
+            468
+        ],
+        "source_column": [
+            18696
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 468,
+        "sink_column": 18696,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3ff8c45bf2b5981a6a8ce1257cb5797254503b1a4ee14cf9743be3d440cabdaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            423
+        ],
+        "source_column": [
+            16980
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 423,
+        "sink_column": 16980,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3b3dcef5dd8b9b672671187d3e7633d84b6689f93c25da0a0866f0a72c8a33a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"productDescription\"]"
+        ],
+        "source_line": [
+            468
+        ],
+        "source_column": [
+            18696
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 468,
+        "sink_column": 18696,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4574b92a2548930900d3347781d8690e27a9944ed3aeb4c3e76ef3fea75e1e32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$subcid",
+            "$cid"
+        ],
+        "source_line": [
+            589,
+            588
+        ],
+        "source_column": [
+            24486,
+            24459
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 596,
+        "sink_column": 24875,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "59615c4b59fb924c93f73959996d71db3dc905f62c198b52f912b9a15b5b57cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rw[\"id\"]"
+        ],
+        "source_line": [
+            636
+        ],
+        "source_column": [
+            26548
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 636,
+        "sink_column": 26548,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/product-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1395006c786b79c2023e2835999b05d380120880cec6d121ac746cf3dbe0685d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"pid\"]"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            1025
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 935,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "85fdac0855758339261eeea653063adb820eac22b2d29dec74cb1e0702330c3b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            5145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 5145,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f1cdabdd6b208e587d85d32935ffe8d74ea14b2271191aa1524d392d9ae9ab82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"subcategory\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            5253
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 5253,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b086eccc27396b8d6961c07ad9693b2118383e82715ba8870440229614c0b773",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            150
+        ],
+        "source_column": [
+            6268
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 150,
+        "sink_column": 6268,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f1cdabdd6b208e587d85d32935ffe8d74ea14b2271191aa1524d392d9ae9ab82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            151
+        ],
+        "source_column": [
+            6352
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 151,
+        "sink_column": 6352,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ba0ce5a8a69c1861fc10bc1bdf7cd28f37012b1b581d7e5567aaea0a2c112c07",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$find"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            79
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 195,
+        "sink_column": 7654,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fd83cbe78fa93b6d913b9083271e97471e527bd8f05a73824c36e33e6605070d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            232
+        ],
+        "source_column": [
+            9411
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 232,
+        "sink_column": 9411,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f1cdabdd6b208e587d85d32935ffe8d74ea14b2271191aa1524d392d9ae9ab82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"pid\"]"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            1024
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 934,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "34990fbb7a31409adfec584ff8dd0d838a89a3f12dc0f8b0b9128c58d8b19000",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            5461
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 5461,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ab0d1257538f397331bb9e906fd076ea67a9fb2a5bd1ec0dbbabdfa87f68364c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            5545
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 5545,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d9081938985e3303846708200eb084a06e6cc20f6eb65c351c2f2c619697a25f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            219
+        ],
+        "source_column": [
+            8876
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 219,
+        "sink_column": 8876,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/sub-category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ab0d1257538f397331bb9e906fd076ea67a9fb2a5bd1ec0dbbabdfa87f68364c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1418
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/track-order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1418,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/track-order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b89841fe604328ebca3e3d1dd0de9aac41738102e90f93657335f24e9dbec59",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"status\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            1566
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/track-order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 1566,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/track-order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dbc7bb0c83a25ff9df42b1978ff8531190999ec7c34f64d8be0a145b78e0bebd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"remark\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            1709
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/track-order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 1709,
+        "sink_file": "\/home\/kali\/Downloads\/47.Online-Shopping-Portal-project\/shopping\/track-order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a08ef9eb36c4313cb259c89b2c0dab25c732db9488d655eeeb69cb04fa6b015",
+        "vuln_type": "taint-style"
+    }
+]

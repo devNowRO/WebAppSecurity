@@ -1,0 +1,1264 @@
+[
+    {
+        "source_name": [
+            "$fullname",
+            "$profession",
+            "$email",
+            "$mobilenumber",
+            "$address",
+            "$city"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            207,
+            242,
+            281,
+            310,
+            353,
+            386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/add-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/add-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/add-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/add-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/add-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/add-directory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 443,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/add-directory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f1d70d7abf2c2f1fcfae66cdb259fdf1f0bb89ac681923a423019feba566c997",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            29
+        ],
+        "source_column": [
+            957
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/include\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 32,
+        "sink_column": 1076,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/include\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2235c06e9fa31c65d1f5e7692c904412e502a773c127b73306259dbb048edf52",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adname"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            249
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 296,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "009b8b3cd7f606d562c512ff7d79bee79d92b4dc6711a7078d08f06ec464ba04",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            2463
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 2463,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0010c51d9caa1e54676757dc5dcd44f77dde186d4c8fe24b57afdb02e7421eb4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            2847
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 2847,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e54fadefc6363089468ad51f5ceb1a68fa399dfd21d381e4692fda568a9fb70d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3235
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3235,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b51ff12c8dbafe866b4c5f7be503d1460c53aa73b2f196a4fedd3719af3c5f15",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3664
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 3664,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cf285e08dcef2e4e1b9956ff18da8401e9c493adb69dd313d28e34f6c6201537",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            1931
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/allrecords.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 1931,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/allrecords.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c9f2db897d8ed397741efd8332b001d788a443bc6a7928786c2ce0ff450f9a56",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            1991
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/allrecords.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 1991,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/allrecords.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "16c93c19199f7e22e59b40c583ffd15c78192c16ed53a81c80ad8b8c2df194d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2107
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/allrecords.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2107,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/allrecords.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f47f2ceb349df3ab804e5931fef912da173a6fec3cfb0639df17110d97b688fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fullname",
+            "$profession",
+            "$email",
+            "$mobilenumber",
+            "$address",
+            "$city",
+            "$stats",
+            "$pdid"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            17
+        ],
+        "source_column": [
+            207,
+            242,
+            281,
+            310,
+            353,
+            386,
+            442,
+            413
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 479,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5cf264adfaaac87551207681d9e9f60d980ad16ce53b2988de35d85e8ebae51e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pdid"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2207
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 89,
+        "sink_column": 2236,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "384cb619a56d03d09936c3bd66431bc209303c8c180ea30ffc026c7a895bf944",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            2752
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 2752,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58f1350d4258283f3af21f1e102ec6420ad10f73c9b7e5f282def2788981760d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profession\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3098
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3098,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5abc50b40f62476228604aafb6a9c575508072d8a6d8ac8b3e5b84fe4c0c02ec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            3465
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 3465,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e56118cbc32b7339fd341186bb132ca47502734f3c4be659f228be6693d7982d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            3892
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 3892,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "177f686bbd92a524b2795544dec6cf37536c698a91939a283ec8c76d5cc81ab2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"City\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            4260
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 4260,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e22e462ff856438aefa97282866ce9181e3e6a979a7d66c086739c9ad43169d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Address\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4638
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4638,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/edit-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e021ab4a9f471420cb9f7f620ce3a40bf58ddae002d7afce13c0aae5e8d06b18",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$mobno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            160,
+            124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/forget-password.php",
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/forget-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 202,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/forget-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "28fcc0a66b6b3cda1235ef7c3e73c910cc30eb99582409b7ffa3ed6765bd3344",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            116
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 197,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d89b7bbe518ffb70092558edee15cf159bc812e2b128e4e0b371a536479d6b93",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            1936
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/manage-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 1936,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/manage-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b98a8613c78f67510db9bd0f3636c91f8944a7b80172922dbc30915e3a603064",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            1996
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/manage-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 1996,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/manage-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "41585215267cc0bcf971d88bb86f27cefd5c83c64b8b0ed9a28eb01db66772d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2112
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/manage-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2112,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/manage-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0d33dbc94d6fe960139d7b71c1a90de2d71e49ee692746cfe9ed864863ea8964",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            1954
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/private.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 1954,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/private.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de07fa4e23a26734e3a15f2ba63002346dccab2ec4d5efe598b6852f71f329ab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2014
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/private.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2014,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/private.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7a325ca125d81dd0d9d64e20e597319e8fbb077f56af3834b7c10f4ee53a00cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2130
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/private.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2130,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/private.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1ed646348fbdfb46681c9e6ff37ad41bc1ad71b711efc65be731fe440efff3e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            1952
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/public.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 1952,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/public.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1df7e0d671e82d88a9ad9be87a7c5ecf566192a4f3b560f648b495452c28cd9b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2012
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/public.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2012,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/public.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da7017a079c283344eb7173e2cab6a0d7e85bfb694caec78db1ffa38ee6428c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/public.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2128,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/public.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb89c66abe1f7c6e494f762134143f2b5becf336572a49f845f920391e87cd3a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2079
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2163,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1682f0ec772303cc6c7b7fdc6410565d337da21ec86c4ba5275a7218d5306d02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2079
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 94,
+        "sink_column": 2527,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9c374a071aaa57da02edeb7da37536846e7428943f9ec1bc73494291ca7b0d43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            2870
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 2870,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e6c272fd6a5d19102bf6d8ffd805449e28c5afa2d01ebe91cd4c89f6935edee2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            2930
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 2930,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e506aa1eb77eb0ca0379f02c39d4a8f727c0185085e175c1f43d47d0a5a4e581",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3046
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3046,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/search-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "014583080986d6db61a1236efaa96a5fe54cdddadd570f86baf4cac3b3c38b75",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            1490
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 71,
+        "sink_column": 1518,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e85f43f4cfbfcc15c29a65329ae2787d3330efe7e36b11567bbbd5b7a7e552f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            1748
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 1748,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0b4fc666bfb0ba3e022cb341df2f73b1973556ff4d21f539ff1719c0f51e8a3d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profession\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            1838
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 1838,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a43b94a96c2f8001ad6b5e8282a181f82dd1a93362f94dcec8d487369a883137",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            1924
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 1924,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7c0b28f86f37c947da4151ad5c75e23496e5f5ad7532f0d048e9a8a2eaca4bd8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2013
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2013,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6295cecae36f73d0d00853fe12e27f0d1b1d1c854a3c7951b2a79496212593d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Address\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            2105
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 2105,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6b67736a2fc7a4f89f27fc3bf3840759b069c81b6ec79cfa8fb391cbfd211e6f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"City\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            2189
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 2189,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/admin\/view-directory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf01833d272ca6a34c59e08d9054f9df2dee8847d2132db4828809b60464ff66",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2504
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2504,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8b0304359f42422e950b278295895319c8974f5cd99fdc3bf0a864d45b9dadc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2579
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2579,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee25b2f388b0d64c44b1f60f98867dbe12529c913c1cedfab0c6ca0db178b295",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2667
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2667,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf3dbfb6c29644fd261ce27d50daaa73fe8a5575a976ebfdc9391a254be600e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profession\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2754
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2754,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ddb5a190458c3b36bfbb4dbb201c7f722cc310de43a5f5c0e0494ec74be63b3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Address\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2844
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2844,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea391a0a093fe1458429893f33e5f74ba2c59f4024151a8d14cef86fa394cbdd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"City\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2930
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2930,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7717e485621f6fa87580dee9fd05a02ca8fc551c0cfe90b4ea721f9161d4abae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            1723
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 1825,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4634626464bbbb37d40e1be8a5ff0aaf55934edb2063c8c155d0a3b2da690e34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            1723
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 73,
+        "sink_column": 1864,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "338abf4686fcd58646bbcacdf446b45572ba7e5a20cecdcedd10e10f7f6c4d12",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2288
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2288,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de584cc88297c894c2426431ff9d8e83519b7b9be3067ce299824cbfc27ee3ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2364
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2364,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf4c4ebd535f008579ef30a53dbf563f0e3b6325d9bbe36fb9048b25260a2b6c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2453
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2453,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5449ccc2904205e78f37cea68a0f8ec1b1d0171ac5f6e88c1a8043add28063a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Profession\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2541
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2541,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cd25d3cf5742e008a84c6a110c2a96b1ba380fc3fb73bdc0b84c8aad3bf872e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Address\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2632
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2632,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f6649187c95e2d8bd31eb62e1c995d3a3ac363951493cf6b441a9e5986d8727",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"City\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2719
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2719,
+        "sink_file": "\/home\/kali\/Downloads\/34.Directory-Management-System\/dms\/searchdata.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6318559e12a34dbb730c1154efb807011839376cca6cd8d0383f48f9c8b9d917",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,3386 @@
+[
+    {
+        "source_name": [
+            "$AName"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            263
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 312,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "125d036c144920e92f7ac1111713af8b6638a73758af1de60b554e84f12cdab8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            43
+        ],
+        "source_column": [
+            1863
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 46,
+        "sink_column": 1980,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "53f595487bda38505280d4ff4c2810fa734a1a29191181d621e11661e5bcbc58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2498
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2498,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8643407e61cdc20291ea3ca9fda66e910f89d5d042bfc7b23effea1937839b98",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2860
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2860,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d7bfa777071626861d9a10ef441f96923205985b97b25d162cc5c920e380aaec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3243,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ea7d60b4e7b4b4a112947d9a288d291bd7dc2fa693ac34e1ca55d067613bf6d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            229
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 262,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b20cb39627a357d921dc06ce5be089d980b9fd49ede1bd15af74f53b9d3a0a8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpCode\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2619
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2619,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6cddaed6d3f8e369e7dcfccef618b372fde156d8b2351ecd2bcc986ee19b63ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpFname\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            2662
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 2662,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b3d9b9c10020b93ab983ff9a62313e5728b7a0d33f148e5ebcb8fb2f5c6e7a80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpLName\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            2707
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 2707,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0d207efdf057b57f0505545b84fe91cf8b01434c153bfa471a5571f153ff6496",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpEmail\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            2750
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 2750,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bc0b615acd611c2a3ca56f06453889988458c20fcb573e44668a2d8dab47d0ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpContactNo\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            2793
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 2793,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5938824c1b1db445f23af4ef18bcae9dae0dab112b80a6e3633d4ccc5b2ed065",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpJoingdate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            2840
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 2840,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18c61fbf8c05ef215e7cf21760fba33aca43b86e7dcbe190d0243c686d925118",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            2922
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 2922,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83560227c7c08863779100a5b0ba88b385b59769e994aee3e1feef7e65b9ff65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3017
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3017,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83560227c7c08863779100a5b0ba88b385b59769e994aee3e1feef7e65b9ff65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3108
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3108,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83560227c7c08863779100a5b0ba88b385b59769e994aee3e1feef7e65b9ff65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3202
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3202,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/allemployees.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83560227c7c08863779100a5b0ba88b385b59769e994aee3e1feef7e65b9ff65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cpassword"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            249
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/changepassword.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 332,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/changepassword.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9fbfabfb31384e06d1259f4b032156b352f68755a71cfbbc02a7dd28e6a2bccd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$newpassword"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            288
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/changepassword.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 478,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/changepassword.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5024e627410a66de83fd59d0bec5b234a609740a651af8d0b0bcd4ec2403191c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$coursepg",
+            "$schoolclgpg",
+            "$yoppg",
+            "$pipg",
+            "$coursegra",
+            "$schoolclggra",
+            "$yopgra",
+            "$pigra",
+            "$coursessc",
+            "$schoolclgssc"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ],
+        "source_column": [
+            260,
+            295,
+            336,
+            365,
+            392,
+            429,
+            472,
+            503,
+            532,
+            569
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 826,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "adc5d50d46cb80284624395d5f4039ba0100ebf8fa8367b88a263bd691859340",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aid"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3022
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 96,
+        "sink_column": 3050,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4b7ae092bd0f55f1c5fbee4ab3b42f84ade72d1090c0e686e7777a2aa8809420",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CoursePG\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3464
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3464,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a1c1fd27ddcc0242935b39650d6b4a5610d0ce09568543a72ca3f2e9ff5e083",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegePG\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3836
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3836,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a20a86d3ff844b6abcb888df73c12f85889bf131192b263b0359911bb2906b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingPG\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4230
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4230,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d230f54b6d403c322507f1a21ca7454bbdaddb666b7b9cb6375e3af2aaf1bb43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentagePG\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            4600
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 4600,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5aa615078040473296798d9c610aeceeed86e24748d9e71c06c551a5c28e76a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseGra\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4949
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4949,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b2cab355dde9a4b93e83ecba463dd70e7a05ff80fbbd87342e3c32b1b2609e09",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeGra\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            5319
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 5319,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76cd27c577c8382e4099934c14be5fb8e17eef4d9f4626c7409a3235ddfdb41e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingGra\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            5711
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 5711,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8709e10c75f8c78dbe182b94935e33e35257a7d7fdc11fd201107eedefa051f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageGra\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            6092
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 6092,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0456a14ba2aeb98b271bfdf813b4a4bd7d48abf76c18c87e7518bfd973c9a73d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseSSC\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            6435
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 6435,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9cc4e41ee63b97be6883bbdd5d5aba100357cefbd113c330925d8e29a652291e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeSSC\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            6798
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 6798,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1edc0a55160c4e82c5061925e995167c542932bbfec3b3d92c2bb68ccc5c08e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingSSC\"]"
+        ],
+        "source_line": [
+            160
+        ],
+        "source_column": [
+            7183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 160,
+        "sink_column": 7183,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f4d829b1d38b2362a1c3157cb98a59d14db769536fdc07538ae1da570d691190",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageSSC\"]"
+        ],
+        "source_line": [
+            166
+        ],
+        "source_column": [
+            7557
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 166,
+        "sink_column": 7557,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5a87c3d2ae04c6d22b5b8872d2605df2b5403e4bb73a35e5a4d1673d08d9e8cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseHSC\"]"
+        ],
+        "source_line": [
+            170
+        ],
+        "source_column": [
+            7900
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 170,
+        "sink_column": 7900,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a1f579d4fd392f6600c0feffd76349967976d9ff3b9e681980d6336cf2526ee2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeHSC\"]"
+        ],
+        "source_line": [
+            174
+        ],
+        "source_column": [
+            8263
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 174,
+        "sink_column": 8263,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4256ea54934847bd244c52a9448a40d7272571f78bf0aaafe1ddbc728b1a23ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingHSC\"]"
+        ],
+        "source_line": [
+            182
+        ],
+        "source_column": [
+            8648
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 182,
+        "sink_column": 8648,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25cbaa06f868f453c3f20fd835936c40d232284824f46efd4ef90937e09dc4d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageHSC\"]"
+        ],
+        "source_line": [
+            188
+        ],
+        "source_column": [
+            9022
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 188,
+        "sink_column": 9022,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "23e5c26ffb71127faec82e31dd7c5d79606f838c6820285daad5273416966010",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$emp1name",
+            "$emp1des",
+            "$emp1ctc",
+            "$emp1wd",
+            "$emp2name",
+            "$emp2des",
+            "$emp2ctc",
+            "$emp2wd",
+            "$emp3name",
+            "$emp3des"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ],
+        "source_column": [
+            258,
+            293,
+            326,
+            359,
+            400,
+            435,
+            468,
+            501,
+            542,
+            577
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 698,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f4125e8e834c474729a42ff6274fc4138ba126dfc948711f1eebf4787254b5d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aid"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2810
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 92,
+        "sink_column": 2838,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fe71f6c968cbc2b1da8b8b0dc0c4f8f0d75a50f8ae36015f3bf6fb5971403f84",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1Name\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3242
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3242,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c64b543bb76d2bd36c97d933681875378ac3d6bb671ebfbcb9ddc2918ea76c87",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1Designation\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3602
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3602,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4a5e96f1846b0b31153154744c6eb73d68e5f1f7719e0abef0ee57231ffe67d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1CTC\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3987,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9636096d4386684a300f0e8cc3174ee129668f628885bb33941696ad06842f57",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1WorkDuration\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4386,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70f96169f257e3d5d86562b94184a778c280c1602a51921888b1789a92718cf8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2Name\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            4739
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 4739,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2208b018bc66ab9016485ac9a9beac4c3c221421b548b9cd8c40dcc669eb16a6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2Designation\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            5099
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 5099,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45fb32e73dc7a90c959544c0a34e7b0f891335ece43292d7ac52a7059cc59f4f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2CTC\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            5484
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 5484,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f0c662e4e6ee4496d6c73578f8036b98c4d13be4153a5e717bc5e379dca3372a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1WorkDuration\"]"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            5883
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 5883,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70f96169f257e3d5d86562b94184a778c280c1602a51921888b1789a92718cf8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3Name\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            6236
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 6236,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f358b6ab163512a7ea23063c4e8fcdc48c41bda869e4b2e43c85fd01a3bef820",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3Designation\"]"
+        ],
+        "source_line": [
+            147
+        ],
+        "source_column": [
+            6596
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 6596,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "63ea56a59456f06d7c997f22b54f3146079ccbfba23c01ea1d424c3c45d66924",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3CTC\"]"
+        ],
+        "source_line": [
+            155
+        ],
+        "source_column": [
+            6981
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 6981,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "638fb3b7b933f171657901e89bb7efe233b99b91d9adf31198f7c762981085f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3WorkDuration\"]"
+        ],
+        "source_line": [
+            161
+        ],
+        "source_column": [
+            7380
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 161,
+        "sink_column": 7380,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e26d4a7695d95f6ddf8e3906dfa4d2b1d81f5a685e80a409096d82c6871136a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$FName",
+            "$LName",
+            "$empcode",
+            "$EmpDept",
+            "$EmpDesignation",
+            "$EmpContactNo",
+            "$gender",
+            "$empjdate",
+            "$eid"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            13
+        ],
+        "source_column": [
+            258,
+            291,
+            323,
+            356,
+            389,
+            436,
+            479,
+            510,
+            231
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 22,
+        "sink_column": 557,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f600561b13425ce4e5255461385dd7b66bc3dbe6646200954f63c953900311bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aid"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2485
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 87,
+        "sink_column": 2513,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "61682dd9ae60527e2208e0cc19debd218d311dfd11bb2d2c7043328f857190d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpFname\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2913
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2913,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00de3c3aea68db8edc9eaaaf53fa71c485fb6859eee96268d8ed689f9cfdfaae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpLName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3258
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3258,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e46bb3027f0189008559d7c1aa352bdf16de0c57c2932e132f744d0b991369d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpCode\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3631
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3631,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5d30d5c4fa00a2b4c1c22613baaf411572828d035393a34e6252c2a6413aa669",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpDept\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3998
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3998,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a124a4033a6c0daad960547b4a4c80a13ff060132c824907cd3a3e48ca7f806",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpDesignation\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4383
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4383,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "93c1db6477f3553f2658720668b51092397ce3301a021dc3fd9682a6e1303ab8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpContactNo\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4771
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4771,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "383adaf3bc49d3013d7d285e2a66b499db026b7dab39cce2d2a62a98f923f695",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpEmail\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            5163
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 5163,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a5ebb677ec09c3df7c0450c90ea547a7a239e684ae89c86e096f72037c5265dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpJoingdate\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            5524
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 5524,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/editempprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd3fe962514dca99e54349cef3423b3fff07507e7784dc20051e51df4bb6c5f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$Password"
+        ],
+        "source_line": [
+            7,
+            8
+        ],
+        "source_column": [
+            97,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/index.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 169,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fbf09461dcdbb0a70905ab6e81b2659902709b4e7f305b6c94a999203e0e77dd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2336
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/welcome.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2453,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/admin\/welcome.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ccbf09494bc79de59c400cdfbb199bf137aa37c7a0191958370006f96ce50305",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cpassword"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            247
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/changepassword.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 330,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/changepassword.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b8e94510979043ce0cb87a7b6a02632407578fee7ad15ebb5544f0ed10cf532e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$newpassword"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            286
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/changepassword.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 483,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/changepassword.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2694474cd4ad8af8f477561de3ab0c9a959e8a106f26ad8b5f4fa5ca738f7a4d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$lname"
+        ],
+        "source_line": [
+            42,
+            43
+        ],
+        "source_column": [
+            1849,
+            1875
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/includes\/header.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 46,
+        "sink_column": 1992,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3f7b1f850e65ab9b4ee44a25ddc78adf464986c8defc95bef6940edb2422db3e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$coursepg",
+            "$schoolclgpg",
+            "$yoppg",
+            "$pipg",
+            "$coursegra",
+            "$schoolclggra",
+            "$yopgra",
+            "$pigra",
+            "$coursessc",
+            "$schoolclgssc"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ],
+        "source_column": [
+            261,
+            296,
+            337,
+            366,
+            393,
+            430,
+            473,
+            504,
+            533,
+            570
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 827,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d9763388ac19c8d1d863a9ff57fca41ea2a2fd4e8b997ff76dfff34fd90ab2c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CoursePG\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3486
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3486,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32606c414d0280ce3547e71e38dc5fd2b96f003fbba56d82519b005c98787d0c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegePG\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3858
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3858,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "324d87c283e082f70d12427d256546c3a782e3931eede2e915d382c92447a0d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingPG\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4252
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4252,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ab8664e986e3103508ef2e27b3410be7c408d83eb2a7a2933f3b44994d7b960e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentagePG\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4622
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4622,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "157390654216d36f034910dc6659d3bcdff8f1bbeffcb383809a577fbae6ae25",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseGra\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            4987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 4987,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "377d246c2b6f380400b79295ffa1fcb9d53e908d60c129776935e16aa8d5acb9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeGra\"]"
+        ],
+        "source_line": [
+            132
+        ],
+        "source_column": [
+            5373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 132,
+        "sink_column": 5373,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7188380503538dc681e99fa41e89d03c24d7ed88d20517bf09548cd6e8a59ba8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingGra\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            5781
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 5781,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee8e96c34954ebe48f802aa31c6ed19ee1a4e3920bb039f4f2199f525e557e7e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageGra\"]"
+        ],
+        "source_line": [
+            146
+        ],
+        "source_column": [
+            6178
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 146,
+        "sink_column": 6178,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "63f91ff29b7e85bde9012f1fac24f6e5427eda382c9052dcfc4eb701eb7f17a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseSSC\"]"
+        ],
+        "source_line": [
+            150
+        ],
+        "source_column": [
+            6537
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 150,
+        "sink_column": 6537,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f28b985ab94afb346a4290cf542505a0ec087dccd55b5bc7efce9a3ba7ef19f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeSSC\"]"
+        ],
+        "source_line": [
+            154
+        ],
+        "source_column": [
+            6916
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 154,
+        "sink_column": 6916,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1898eaf61f3f60395359ea85461119d568b185a2dffaafe72492da43734b1166",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingSSC\"]"
+        ],
+        "source_line": [
+            162
+        ],
+        "source_column": [
+            7317
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 162,
+        "sink_column": 7317,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b9400b4b6f8c48cbe092a3b970b201832efa4683db2b9b2db79f88c6d2a23187",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageSSC\"]"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            7707
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 168,
+        "sink_column": 7707,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c1af5c078808d211635c4b760dc97b86e8508092cfcbec6a0a0e6fcc246b8730",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseHSC\"]"
+        ],
+        "source_line": [
+            172
+        ],
+        "source_column": [
+            8066
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 172,
+        "sink_column": 8066,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "42ce4b2014460b5cc49cf5e0f70daf28c714e80582272c2f6b7fa080f7206634",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeHSC\"]"
+        ],
+        "source_line": [
+            176
+        ],
+        "source_column": [
+            8445
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 176,
+        "sink_column": 8445,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "57cbcb3a5fd4e5d140d40ee835c502e8d1bcc0a713bbd5ed87bd1ea7803d98d7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingHSC\"]"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            8846
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 184,
+        "sink_column": 8846,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f103f2a263befbe3af423f8bba96b90bea0803bed3bc383ee72fc58e7624bcae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageHSC\"]"
+        ],
+        "source_line": [
+            190
+        ],
+        "source_column": [
+            9236
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 190,
+        "sink_column": 9236,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2ed84b3d01b62608ae3dc0642084332b1a93a505cdebe632ff613f7e42fd845",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$emp1name",
+            "$emp1des",
+            "$emp1ctc",
+            "$emp1wd",
+            "$emp2name",
+            "$emp2des",
+            "$emp2ctc",
+            "$emp2wd",
+            "$emp3name",
+            "$emp3des"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+        ],
+        "source_column": [
+            259,
+            294,
+            327,
+            360,
+            401,
+            436,
+            469,
+            502,
+            543,
+            578
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 699,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "146472c0aacc5af5e1d649d700e5facfe8862d1238497a435bc46b065630f417",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1Name\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3269
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3269,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c7e158414d3f1f501fbc15d13d60b8ac368c85f472bcfe92ee3c07c659e82fe8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1Designation\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3629
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3629,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ae2753fc186b0dab3a606741df1c86aeb93468debd323b36945f54ca29b12f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1CTC\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4014
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4014,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "735b1e2e99fa31e8a9fb2e8f22c88b5130e95ed5c0d755907c31ae53b13b89ea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1WorkDuration\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4413
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4413,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f707cb17049be3da596e93534d59c3739f467c18e17518a16f5fdd9cebbcb357",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2Name\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4766
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4766,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "71dce5b617295cc8567cdf909696b0df7ad5e3ca5bbd93df79ae7fdbcf9fc0c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2Designation\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            5126
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 5126,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d65f2d0692680cf573b3bdd6a6791f935e2157368a807ebe50b8ba632eb80d84",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2CTC\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            5511
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 5511,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9664bf0f699f3f14a5666d476c4e01b5b95addb9f665a82fbab679267de7083e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2WorkDuration\"]"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            5910
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 5910,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7cdf4d74c4acd96e87616dfb35ef4a8604385b335e332f9314bdf87358214da3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3Name\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            6263
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 6263,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "194b2b89f31f1040eb20a2b6dade729976232a5920a3b2c9f46b8ebe54ee7652",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3Designation\"]"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            6623
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 6623,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "901e26d2fcc41dea54df1ac29b89110d93973d85877ff6abe69bead73e8dcff9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3CTC\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            7008
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 7008,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "853a2fa3ac0178ac7f3b8612505d6aeb2d4401df746f584978a6d0794cf01c04",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3WorkDuration\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            7407
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 7407,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/editmyexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21bb74fb704d1a47422263aee86435b65dcf97b71a383f7f1320dda61ec02745",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Email",
+            "$empid"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            154,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/forgetpassword.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/forgetpassword.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 196,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/forgetpassword.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "05e3840a9b342ffa0b58f5de6b0961856a3db5d7fff5ac07537061846d473090",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Email",
+            "$Password"
+        ],
+        "source_line": [
+            8,
+            9
+        ],
+        "source_column": [
+            117,
+            145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/loginerms.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/loginerms.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 186,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/loginerms.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a2bc81acc8ac150619d7204842536ff8bfa70d0f7372ae344821903c640e9588",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$coursepg",
+            "$schoolclgpg",
+            "$yoppg",
+            "$pipg",
+            "$coursegra",
+            "$schoolclggra",
+            "$yopgra",
+            "$pigra",
+            "$coursessc"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "source_column": [
+            261,
+            296,
+            337,
+            366,
+            393,
+            430,
+            473,
+            504,
+            533
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 827,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1c513a7fa05a0d9a9f98b942547007d250e181594e70789b65dd9ce2e3053bf3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CoursePG\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3477
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3477,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4da83baa59cd7c8bd23f3f450ce71dacdb3830cb2ff311d4ed539ab3fa5b9850",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegePG\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3574
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3574,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8b9a68d676bc807e08ecb3a81cac4c76853c4933f9cdbba38ab27da535a5b52f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingPG\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3671
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 3671,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cbd812a9d4069708a55d0be43aa13a24548e81869fd69d3f9af46731c0a4619c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentagePG\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            3758
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 3758,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ffc137a5cb91a41481fbf5178dc79eca619d74e85232c729837f302b55d5751c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseGra\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            3853
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 3853,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ce80042a44397a185b891c3c2a9366ff5bfc21d5fafa2dd1ac875817dc12c2e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeGra\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            3946
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 3946,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62f155eaecb7d0d85ba6f145c5953e006af8e4345ba442b4e09ed4113b9ecdaf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingGra\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4052
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 4052,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e76c36236881bd0fb3add49efb912f0dc7c4724eb552bb343d7cfb03f121fee7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageGra\"]"
+        ],
+        "source_line": [
+            137
+        ],
+        "source_column": [
+            4148
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 4148,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30916f9e79770de7ca59edd463b05cbc99c2cfeee3bb09f1b475ebea56788af2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseSSC\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4229
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4229,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "962515d9cdfd946a23f709b8ce507d3e66ee71d6e0f05c550f20074e994e15f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeSSC\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            4317
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 4317,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d97a592e7a6b756ccc170c85fd0db51efe7ecffd1be3549366975cf8721dfa79",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingSSC\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            4416
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 4416,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a0e9e103e09c396cb73d3ee052a68f0019cd51224959765886bdcde8adbfd39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageSSC\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            4505
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 4505,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "499dccc6e70169fa37266562796faf2e39918fff5b7791c981145b9b30c2d045",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CourseHSC\"]"
+        ],
+        "source_line": [
+            155
+        ],
+        "source_column": [
+            4586
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 4586,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "432984e5b9aaa5cac67cca15e1638c314cf573fa67e01c3ddbdb51c5df2e4eb9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"SchoolCollegeHSC\"]"
+        ],
+        "source_line": [
+            159
+        ],
+        "source_column": [
+            4674
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 159,
+        "sink_column": 4674,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0cda78b629d93253c07d1c96db2afd46790f493112cd630366453a37a120663d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"YearPassingHSC\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            4773
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 4773,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "99af711dae35a047900ecc56b7a25e6b94449456580e0f6bec09d6597d08d0e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PercentageHSC\"]"
+        ],
+        "source_line": [
+            167
+        ],
+        "source_column": [
+            4862
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 167,
+        "sink_column": 4862,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myeducation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4deab77cb65e1b2bd09259137e29afbdf8301041a4ae3fca1de6a5290ca17fac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$emp1name",
+            "$emp1des",
+            "$emp1ctc",
+            "$emp1wd",
+            "$emp2name",
+            "$emp2des",
+            "$emp2ctc",
+            "$emp2wd",
+            "$emp3name"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "source_column": [
+            261,
+            296,
+            329,
+            362,
+            403,
+            438,
+            471,
+            504,
+            545
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 701,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a631d9da8e3c700fe20251653738a9737418f1dcabdb2e4f69e698d12a3f7418",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1Name\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3195
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3195,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc32a8cb02982e6bfac6e60d9b13905af3b1e37f3e145e7e31c57642de4d1056",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1Designation\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3295
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3295,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a65378ae511af9bea368b6ee3548619df1a20af84a17553a90b36f7482cee6a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1CTC\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3394
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3394,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7a8a896f37dc74d671b41ead48be84c70f9b013b422de4adba1a58c2f43c9f24",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer1WorkDuration\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3495
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3495,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4199206fec50477146dedbe2e946687cb6cdce5dc95ef493563598a18cd9975d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2Name\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3597,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f3301c51206a7d888058fd69f48fa187c9649686e8724a79b5b534631f4ae8ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2Designation\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            3698
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 3698,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "deb25ca0d73e0de35b55e470c34b47651f6e1306097255b999d37398d115868e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2CTC\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3798
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3798,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18fed27643cb588e9814d74d0bd44910a53b95c9c38e88fac8a2701e810baaa5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer2WorkDuration\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            3900
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 3900,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ddb1718cf21da7fac45aaaee3b4a2bae5b379a3415a64875b39f134a9f990722",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3Name\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            4001
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 4001,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "939bd587e0f0cf25331991310d5f27216ccc8833b1c72298ec947e50b7f9371c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3Designation\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4101
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4101,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25b5bee0050ee76b3e64d67dc8c8e2b1798d4aa788d7f16ec6425045b096ed48",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3CTC\"]"
+        ],
+        "source_line": [
+            142
+        ],
+        "source_column": [
+            4200
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 142,
+        "sink_column": 4200,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "410644c82856ebc45a2de3c0fff75574bbc89d474496d531b1cb666af9fdf2d4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Employer3WorkDuration\"]"
+        ],
+        "source_line": [
+            146
+        ],
+        "source_column": [
+            4301
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 146,
+        "sink_column": 4301,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myexp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e3960c90afe7e5a360c1e15cfaad15d271f50041e4cf4713e15becf00e07d27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$FName",
+            "$LName",
+            "$empcode",
+            "$EmpDept",
+            "$EmpDesignation",
+            "$EmpContactNo",
+            "$gender",
+            "$empjdate"
+        ],
+        "source_line": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+        ],
+        "source_column": [
+            264,
+            297,
+            329,
+            362,
+            395,
+            442,
+            485,
+            516
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 23,
+        "sink_column": 563,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cdaec72e1ff6048bbaa2532f3ab5479227f3f4dfb3057823a35f9700cacd4191",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpFname\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2904
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2904,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6eddfff955fcf827f95af7889a25ec56c5c7b1f68bb15bd041c6ae3b5daaee2a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpLName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3265
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3265,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3b1ee418e7855d032eca91aa6ef8255e545d10f62265bab96ebca3a962587e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpCode\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3654
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3654,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1acf83041c0379f885b1aebaef08c76ae5d30ab41aec34f78cf4f6d9febaa969",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpDept\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4037,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a97f55512ed6ee4e27d8911951b5b5e40d177d8d372b3e61dcdb6a005ebb33b9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpDesignation\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4438
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4438,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d77d8bd7b986d2d17e5ac93233d14289b23b0b6d3a55a9c6c2e55a2c8a409ed0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpContactNo\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 4842,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8fe122e50ae1d76f00d99dfce819133c5f17cb67414ba71257972b64233d78d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpEmail\"]"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            5250
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 5250,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb4685bea98a08807330d4e634f2fa8b6f186684d0d889b033fc14a642bc206b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpJoingdate\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            5611
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 5611,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/myprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25681f09980059ec1a4f54ae413b2fdd5df68b785b6dae90dc59c9ec060942a5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Email"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            195
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 305,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7fecff6965260796f15d964a707793493cf3a5619a1d04b5a93e552a6d6a210b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$FName",
+            "$LName",
+            "$empcode",
+            "$Email",
+            "$Password"
+        ],
+        "source_line": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "source_column": [
+            100,
+            132,
+            163,
+            195,
+            223
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 531,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/registererms.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "817657d97a08098c2eb42f9e0f6f54f9c1b5050a40ef21bed7c34348f19a724d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$password"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            275
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/resetpassword.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 320,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/resetpassword.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0470af10298d0f6d3996d7d024e20043890a3bc73d529e3a42a62cc6578d4711",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$lname"
+        ],
+        "source_line": [
+            73,
+            74
+        ],
+        "source_column": [
+            2352,
+            2378
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/welcome.php",
+            "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/welcome.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2493,
+        "sink_file": "\/home\/kali\/Downloads\/37.Employee-Record-Management-System\/erms\/welcome.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f3d4a25569f1ff421b622538475c220755bdf0b74bd2ac888a7d0c2f5e5ea2cd",
+        "vuln_type": "taint-style"
+    }
+]

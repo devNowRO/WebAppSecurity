@@ -1,0 +1,1928 @@
+[
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1812
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 1812,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55a3a97b452413ff25700119077fcb18d6b329bde5bb4c8d0b399a6ff3d1396e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            574
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 14,
+        "sink_column": 574,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a0b612bc8abea870f3b27d607861f987d1e217183dabe670f3164ca6e86b3cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            712
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 15,
+        "sink_column": 712,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "346b50969cf3228a4d28729846cc9bfa6be06834b44fab3af22c41aa0f73f7a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            825
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 16,
+        "sink_column": 825,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01aa3190cf7f051e95291f793cc845df794c8c38fcf1c7d3caf6f7035884618c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            210,
+            243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/aboutus.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/aboutus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 284,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/aboutus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "59a7adbf144ba29e4def842d5ad7a488778533888f34532514ee75eb28a984af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            1190
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 24,
+        "sink_column": 1278,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b09b55da436e87b305fd5894f9e269a3821d06065c646aa1a1c0f23b43b2ec2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3494
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3494,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8b23bf323f1053f4f54c4257a6269c435c6be5cf5d98e95f6e20d9f589c615e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3774
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3774,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3112d036541a9f0f15f1bea48360c7e1dff4cd1b76a1b7a9487df756913ddea6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$namesc",
+            "$dob",
+            "$contnum",
+            "$commadd",
+            "$emeradd",
+            "$emercontnum"
+        ],
+        "source_line": [
+            9,
+            10,
+            12,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            198,
+            225,
+            248,
+            277,
+            306,
+            335
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-scdetails.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 30,
+        "sink_column": 882,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-scdetails.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b5bff48871e2a9f01768e3d2ae9f915c4ea106464e077e28efac527ca213fe53",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sertitle",
+            "$serdes"
+        ],
+        "source_line": [
+            9,
+            10
+        ],
+        "source_column": [
+            196,
+            227
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-services.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 259,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/add-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "747b584fc2587339f284e1426fd212464a7a84711b3d69ad67f682a7662b5399",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            70,
+            71
+        ],
+        "source_column": [
+            2297,
+            2325
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/bwdates-report-details.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 89,
+        "sink_column": 3015,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/bwdates-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "00448ec4b43141112aa99f72e4e6ef73307bc976179ab448ff9f01253c3bf122",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3955
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3955,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34c5b8545443074d5f2bf38d2253de0c5c8daffa3a1196038d5b0db4a338d8af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4168
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4168,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34c5b8545443074d5f2bf38d2253de0c5c8daffa3a1196038d5b0db4a338d8af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes",
+            "$email",
+            "$mobnum"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14
+        ],
+        "source_column": [
+            210,
+            243,
+            272,
+            298
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 337,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fd406e12b9df050ae492519c6a2eb086f11f8ac23ddd7516f0e5f0633b561c4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3597,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0820e3385fb6b7292aaaf54b8172984e1b0b6522439f9155940728e83ce153a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3877,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6feeac0c7effa40c2c679434af3a118493bda05c7708ea41ea41fc7199769860",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            4165
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 4165,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c90cee51b6190b3a79ef848af3772e7b672612fa9520b259d17a3ee7dacab409",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4449
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4449,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/contactus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f97fd3ae0b1e2da0ccbd114cef71900788669242b27a691285fdeef01e27a5af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$namesc",
+            "$dob",
+            "$contnum",
+            "$commadd",
+            "$emeradd",
+            "$emercontnum"
+        ],
+        "source_line": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        "source_column": [
+            196,
+            223,
+            244,
+            273,
+            302,
+            331
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 399,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "602046e567af6a9e76c5232c721ce62747f4848cda628d63c4f08b84611fea80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            5128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 5128,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-scdetails.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aeffb9993a18206ce7a2289b407b6c30ee167c7531c4c926ea10b2e1eb5994ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sertitle",
+            "$serdes"
+        ],
+        "source_line": [
+            9,
+            10
+        ],
+        "source_column": [
+            196,
+            227
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-services.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 285,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/edit-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d80999e2029a736acfef5d06a6d439a216faf835024892c59c07f0eff119e6b3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            210,
+            243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/eligibility.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/eligibility.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 284,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/eligibility.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "85c25acda2e89b0ab353adc246e76fc971095ead3128ac6b3ceb25ccbced4926",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3503
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/eligibility.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3503,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/eligibility.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a431525fdb636150071c3c52b714e7701ec130436523bc64f018df090221b45",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3783
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/eligibility.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3783,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/eligibility.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d93d019719ddecde070aa2b381852476b257664ec6ba5b2a3b5e40e99d724980",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            156,
+            119
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/forgot-password.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 198,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ccbee56f12e02a2346224ad44c13916056722ac712dce0297f48cdde68e7138e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            105
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 175,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "903e80c05297096c0e519b985aff6b550a99dddc555a0e25c0ddc2bca914657d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            64
+        ],
+        "source_column": [
+            2080
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 2080,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            2392
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 2392,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$scid"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            104
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-scdetails.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 124,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-scdetails.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6ecc5e4803b2bb96093dc0e9a6923187b72ca134578562c1ec107eb8732cc8f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3851
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-scdetails.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3851,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-scdetails.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ed07a2032a75acafc75f41027cd3e04055922bb6ba3a552ef0f94bfa87d470d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-scdetails.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-scdetails.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ed07a2032a75acafc75f41027cd3e04055922bb6ba3a552ef0f94bfa87d470d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$serid"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            104
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 125,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8f8a414a8812d20ad2482d22992599f4cbf6cfe149b80b52fa9cc150cc33abaf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3282
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3282,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6052900382d9fd1e92381267c470d66c8417823a00bd53f7f4e368789e4330e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3494
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3494,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6052900382d9fd1e92381267c470d66c8417823a00bd53f7f4e368789e4330e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aname",
+            "$mobno"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            225,
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 302,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6c41d4f65bc1b28fe35a637985774ea6e14ae19d94a326aef5714c2f25c19c80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3296
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3296,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bfdaa18debc99f72c80a109a9b5cd92c3e64b105dc3531030d06ee7bf2a79ed9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3592
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3592,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5dd49e64bd3746e3179700af76b95bd5c67ae0bd5202a00e979a247269303e62",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3906
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3906,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "43011ff53d64499d596907a0fa2f20839dae4811bf0004979da4ce38f768f523",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            4267
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 4267,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b9a9e2cc618db0228e74121dc6f47e22126e292bcd45c1759a42c97a484b1f46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4547
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4547,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17d5377b6516142cbcffb2e3b0d4df33f15abfa388636edae83340bab4ca3e0d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FirstName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2762
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2762,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f8071369eaf30b7dc6f073deb291ec69b0ac60f9141aa6fbc49c77be161f4c17",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"LastName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2795
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2795,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3f490bcb7c38815d6d5b77dc9bb380bacc009ae9d5500841035b130ad520ee06",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2877,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3fe1870b5e84c752a18fc3144ce01f1a30f922e9d82608ba2e979f64aaa02a47",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryDate\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3035
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3035,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e78e11b2d3da967746ef721733a3da804a6eae6648afdb4488e333d7e9dfa144",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3246
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3246,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/readenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "61230f8c711d9a8af1268347f0cc2f3da2bacca9cc754e78536fb424c59be471",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            210,
+            243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/rules.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/rules.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 284,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/rules.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9b51cc403a5db52bb801d4a70105d4d3d9a9f0140b59d97483b645b53cbdb15e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3467
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/rules.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3467,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/rules.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ade6bd308bff0d14647a1d72a746d69cb98bd2373b7e705ea60e5ffab5f673d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3747
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/rules.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3747,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/rules.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "305cc7f6c4b4dc3a5ce026cb0da082347b6259d701fc92056669d50da5f785e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3197
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3346,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cfd43ca26e2b8369cad5c75880e71b5abce880867711832410d029ffb41052fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3197
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 120,
+        "sink_column": 4029,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "42c70227f239b0ad3ddd409cb0e75e772f275a5c2d1c6f29ac5b3e43026b5445",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            137
+        ],
+        "source_column": [
+            5026
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 5026,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4fe34cfc68bb8d7d569e0ea4ca93588dc65d2b7f96204578d032449ef56fd2ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            5239
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 5239,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4fe34cfc68bb8d7d569e0ea4ca93588dc65d2b7f96204578d032449ef56fd2ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FirstName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2776
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2776,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e82a73155393adb55af41bdf8937e84d2da2c3d9cd6f6b0582fc41a26bb713b8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"LastName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2809
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2809,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "98971200830043c989424a8da5bbcc5d773af8e22b0f6ea1d4e5a4963043c265",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2891
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2891,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6124873af1e550de7ec54190537718502a60d24833814629adcc441f5764ae06",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EnquiryDate\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3049
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3049,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34ca82909aec7a274569807f2c40a7582bf8d8d9d04222216e93fb9d1c7fb84a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3260
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3260,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/unreadenq.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "88e5047d2c3f01aa1c580a771307bfe5dae828b514928c3933244662179bd095",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 225,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "543627285aca1e8729a8a36c79e38e0629a7713ba3fbf8e37e3355230f54255a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 86,
+        "sink_column": 2808,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "543627285aca1e8729a8a36c79e38e0629a7713ba3fbf8e37e3355230f54255a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FirstName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3276
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3276,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a7a9015e759f757e65211c8379e275ddabf9f6c3084b0a9d04da3fbd4ffc6aba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"LastName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3309
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3309,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62afd96cf9af299dec7749f10efeb9ae07ce09a3395ab464b8734a3c6f59812d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3406
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3406,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f15fe6b3206fef9904453cdb9437e091fd134291a025d6242924632570d15001",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Phone\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3508
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3508,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c08f24d211598b78a0384b3b93fa3542898add7d4c65ae99c8030adddb3950c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Message\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3661
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3661,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/admin\/view-enquiry.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dfb9b2ea172c89fd53a2ecc27a173d08acdf7f0fdb2da9bb89be7024e791fe02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$lname",
+            "$phone",
+            "$email",
+            "$message"
+        ],
+        "source_line": [
+            8,
+            9,
+            10,
+            11,
+            12
+        ],
+        "source_column": [
+            119,
+            148,
+            177,
+            206,
+            235
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 282,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5d365b21e4a123755f9a4a27cfc57ea6e096763a270d3cfd1547a11c4a3ff37b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3595
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3595,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a45087c77e9afa6baec2a7be57816e87fea2fcc1114e66d2918275bf9385ea6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3670
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3670,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "228e4b8599d8464d69d2a1c69cfc0b1c1d17e94243d87d528433b82f2ed9efa0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Timing\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3731
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3731,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "24cdfa050eed8f1938545dc6a72c1b4fa1489bfdcf44614e8d9ef96a656968b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3825
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3825,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fd2ab1e55b51de7c99f329c2b9eb83325f62b73c80d646587a3dba4db981ce93",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            1715
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/eligibility.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1715,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/eligibility.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de5891f2cec7c6ddd1ead34f5c6a9fc84494a293587fd1b82f58fba77a94e6be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            1763
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/eligibility.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 1763,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/eligibility.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85df2fd2b77940a33f9467941496a4d764ec3efd00d557723212eaa92451f901",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2276
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 2276,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12f05c245bef95cb8f774a90f270a8cb0c997a0a78b44ba95eb893937e6258b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2325
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 2325,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7385e5208e44d70b38f6310150dd4b7572ab41894a87a2203f7f163bf1dc2e61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2718,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12f05c245bef95cb8f774a90f270a8cb0c997a0a78b44ba95eb893937e6258b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2766
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2766,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7385e5208e44d70b38f6310150dd4b7572ab41894a87a2203f7f163bf1dc2e61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2976
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2976,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12f05c245bef95cb8f774a90f270a8cb0c997a0a78b44ba95eb893937e6258b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3024
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3024,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7385e5208e44d70b38f6310150dd4b7572ab41894a87a2203f7f163bf1dc2e61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            1709
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/rules.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1709,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/rules.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f9f31d922bcd93aed9fd8dfd5c83f79635c008e35870b7a720e945d8e63deab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            1757
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/rules.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 1757,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/rules.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a40cbd68528b2f044da46910adbb0b50645d1bded4be0fbd916626ed42481e73",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2603
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2752,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45aabe916402cd733c9856b938f6c99bf71a76926a9026e658b51fd25b49a072",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2603
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 98,
+        "sink_column": 3435,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "af594a969d878a975eb0eb44e3188a05c06f0c01999378894303a77def8604ac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4432
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4432,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c37d8cd495609c5006f673f18e3d3f1e56668c902fb09554ed25739d09b79b42",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceDescription\"]"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            2095
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2095,
+        "sink_file": "\/home\/kali\/Downloads\/43.Old-Age-Home-Management-system\/oahms\/services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "64b4e7de401e6e33c47df0c7063a24ba30a92eb933a8db4683b465f315877619",
+        "vuln_type": "taint-style"
+    }
+]
