@@ -9,14 +9,12 @@ This repository contains all data related to "Comparative Evaluation of Approach
 
 
 
-============== TOOL SETUP & SOURCES: ==============
-Tools sources and their setup guide:
+============== TOOL SOURCE, SETUP & REPORTS: ==============
+
 
 |||SAST Tools|||
 
-#1:  
-
-Tool Name: Yasca
+#1: Tool Name: Yasca
 
 Description: https://github.com/scovetta/yasca
 
@@ -24,9 +22,8 @@ Usage: "yasca ""source code directory" " windows"
 
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/Yasca-Reports
 
-#2: 
 
-Tool Name: Progpilot
+#2: Tool Name: Progpilot
 
 Description: https://github.com/designsecurity/progpilot 2023
 
@@ -34,9 +31,8 @@ Usage: kali 1.follow option 1 for installation in kali
 
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/Progpilot-Reports
 
-#3: 
 
-Tool Name: SonarQube
+#3: Tool Name: SonarQube
 
 Description: https://www.sonarsource.com/products/sonarqube/downloads/ community edition 
 
@@ -44,9 +40,8 @@ Usage: "windows 1. StartSonar.bat : ~\sonarqube-10.1.0.73491\bin\windows-x86-64 
 
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/SonarQube-Reports
 
-#4: 
 
-Tool Name: Snyk
+#4: Tool Name: Snyk
 
 Description: https://snyk.io/product/snyk-code/
 
@@ -55,12 +50,11 @@ Usage: "windows 1. download snyk exe 2. snyk auth 3. snyk.exe code test /path/to
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/Snyk-Reports
 
 
+
 |||DAST Tools||| 
 
 
-#1:  
-
-Tool Name: OWASPZap
+#1:  Tool Name: OWASPZap
 
 Description: https://www.zaproxy.org/download/
 
@@ -69,9 +63,7 @@ Usage: windows
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/OWASPZAP-Reports
 
 
-#2:  
-
-Tool Name: Wapiti
+#2:  Tool Name: Wapiti
 
 Description: https://github.com/wapiti-scanner/wapiti 2023
 
@@ -79,9 +71,8 @@ Usage: "kali linux wapiti -u ""url"" -o filename.html"
 
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/Wapiti-Reports
 
-#3:   
 
-Tool Name: Vega
+#3:   Tool Name: Vega
 
 Description: https://github.com/vega/vega 2023 
 
@@ -89,9 +80,8 @@ Usage: windows
 
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/Vega-Reports
 
-#4:  
 
-Tool Name: IronWASP
+#4:  Tool Name: IronWASP
 
 Description: https://github.com/swatv3nub/IronWASP 2021
 
@@ -100,12 +90,11 @@ Usage: "windows run 1.ironwasp.exe in ~\IronWASP"
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/IronWASP-Reports
 
 
-#5:  
-
-Tool Name: BurpSuite
+#5:  Tool Name: BurpSuite
 
 Description: https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install burpsuite community edition
 
 Usage: windows vm
 
 Reports: https://github.com/devNowRO/WebAppSecurity/tree/main/BurpSuite-Reports
+
