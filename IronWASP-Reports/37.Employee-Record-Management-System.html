@@ -1,0 +1,1331 @@
+
+<html>
+<head>
+<title>IronWASP Security Analysis Report</title>
+<style>
+body
+{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #555;
+    overflow: auto;
+}
+#report_header
+{
+    background-color: #75D1FF;
+    margin-bottom: 10px;
+}
+#report_title
+{
+    background-color: #555;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: xx-large;
+    color: #FFF;
+    text-align: center;
+}
+#report_sub_title
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #555;
+    text-align: center;
+}
+#report_sub_title a
+{
+    color: #555;
+    font-weight: bold;
+}
+#report_footer
+{
+    color: #FFF;
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+}
+.report
+{    
+     width: 1000px;
+     margin-left: 250px;
+     color: #FFF;
+}
+#overview
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+#index
+{
+    color: #333;
+    background-color: #FFF;
+    border-style: outset;
+    border-color: #555;
+    padding: 20px;
+    margin: 10px;
+    overflow: auto;
+}
+#index a
+{
+    text-decoration: none;
+}
+#index ul
+{
+    list-style-type: square;
+}
+#index ul li
+{
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+#index ol li
+{
+    padding: 3px;
+}
+.index_finding_url
+{
+    color: #333;
+}
+.section_title
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.finding
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+.finding table
+{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+}
+.finding td
+{
+    margin-left: 10px;
+}
+
+.trigger
+{
+    color: #333;
+    border-style: ridge;
+    border-color: #AAA;
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+.trigger_desc
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #50D;
+}
+#quick_nav
+{
+    position: fixed;
+    width: 230px;
+    overflow: auto;
+}
+
+#quick_nav a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+#quick_nav a:hover
+{
+    color: #75D1FF;
+}
+.quick_nav_link
+{
+    width: 220px;
+    background-color: #FFF;
+    padding: 2px;
+    padding-left: 5px; 
+    margin: 2px;
+    margin-top: 5px;
+}
+.host
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.high_finding_title
+{
+    background-color: red;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.medium_finding_title
+{
+    background-color: orange;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.low_finding_title
+{
+    background-color: yellow;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.info_finding_title
+{
+    background-color: blue;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.lead_finding_title
+{
+    background-color: green;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.affected_url
+{
+    color: #0077FF;
+    text-decoration: underline;
+    overflow: auto;
+}
+.reason_title
+{
+    background-color: #3C3;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.finding_nav_links
+{
+    color: #75D1FF;
+}
+.finding_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    margin-left: 0px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+}
+.finding_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+.host_nav_links
+{
+    color: #75D1FF;
+}
+.host_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.host_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+
+.desc
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.desc_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.reason
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.reason_section_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.fpa_check
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.fpa_check_title
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    color: #3C3;
+}
+th
+{
+    background-color: #75D1FF;
+    color: #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.t_high
+{
+    color:  #FF0000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_med
+{
+    color:  #FF9900;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_low
+{
+    color:  #B8B800;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_info
+{
+    color: #0099FF;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_lead
+{
+    color: #339933;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_total
+{
+    color: #000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_high_conf
+{
+    background-color: #000;
+    color: #FFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_med_conf
+{
+    background-color: #444;
+    color: #AAA;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_low_conf
+{
+    background-color: #999;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+            
+}
+.t_host
+{
+    width: 400px;
+    color: #0077FF;
+    text-decoration: underline;
+    text-align: left;
+    overflow: auto;
+}
+
+.legend
+{
+    font-size: small;
+}
+.legend td
+{
+    font-size: small;
+}
+
+.icr { color: red; }
+.icb { color: #0077FF; }
+.icy { color: #B8B800; }
+.ico { color: orange; }
+.icg { color: #3C3; }
+
+.hlr { background-color: red; }
+.hlb { background-color: #0077FF; }
+.hly { background-color: #B8B800; }
+.hlo { background-color: orange; }
+.hlg { background-color: #3C3; }
+    
+.ihh {font-weight: bold; color: #0077FF; text-decoration: underline;}
+.fname {font-weight: bold; }
+</style>
+</head>
+<body>
+<div id='report_header'>
+<div id='report_title'>IronWASP Security Analysis Report</div>
+<div id='report_sub_title'>Report based on the analysis performed by the open source web security software, <a href='https://ironwasp.org'>IronWASP</a></div>
+</div>
+
+
+<span id='quick_nav'>
+    <a href='#overview'><div class='quick_nav_link'>Overview</div></a>
+    <a href='#index'><div class='quick_nav_link'>Index</div></a>
+
+<a href='#host1'><div class='quick_nav_link'>http://localhost/</div></a>
+</span>
+
+
+<div class='report'>
+<div class='section_title'>Overview</div>
+<div id='overview'>
+This report contains the list of security findings discovered by IronWASP. The current section of the report gives a brief overview of the number of different findings, the numbers are categorized by the hosts they were discovered on.
+<br>
+The index section contains the names of all the findings. The sections after that show details of every individual finding.
+<br><br>
+The table below shows the number of findings discovered in each host. The findings are seperated based on their type and severity.<br>
+<br><br>
+<div class='legend'>
+<div class='fname'>Legend:</div>
+<br>
+<table cellpadding='0' cellspacing='0'>
+<tr><td align='right'><span class='icr'><b>High</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;High Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='ico'><b>Medium</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Medium Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icy'><b>Low</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Low Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icb'><b>Info</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Information Findings</td></tr>
+<tr><td align='right'><span class='icg'><b>Test Leads</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Things of interest for manual testing</td></tr>
+</table>
+<br>
+The High, Medium and Low severity vulnerability numbers are also split based on the confidence with which IronWASP has reported them.<br>
+<br>
+<span class='t_high_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; High Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_med_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Medium Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_low_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Low Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<br>
+
+<table cellpadding='0' cellspacing='0'>
+<tr>
+    <th width='100' >High</th>
+    <th width='20'> </th>
+    <th width='100'>Medium</th>
+    <th width='20'> </th>
+    <th width='100'>Low</th>
+    <th width='100'>Info</th>
+    <th width='100'>Test leads</th>
+    <th width='20'> </th>
+    <th width='30'>Total</th>
+    <th width='30'> </th>
+    <th width='400'>Hosts</th>
+</tr>
+<tr>
+    <td height='20px'></td>
+</tr>
+
+<tr>
+            <td>
+                <div class='t_high'>4</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_med'>9</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_low'>2</div>
+            </td>
+            <td>
+                <div class='t_info'>2</div>
+            </td>
+            <td><div class='t_lead'>0</div></td>
+            <td></td>
+            <td><div class='t_total'>17</div></td>
+            <td></td>            
+            <td><div class='t_host'>http://localhost/</div></td>
+        </tr>
+<tr>
+            <td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>0</div></td>
+                        <td width='30'><div class='t_med_conf'>4</div></td>
+                        <td width='30'><div class='t_low_conf'>0</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>8</div></td>
+                        <td width='30'><div class='t_med_conf'>0</div></td>
+                        <td width='30'><div class='t_low_conf'>1</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>2</div></td>
+                        <td width='30'><div class='t_med_conf'>0</div></td>
+                        <td width='30'><div class='t_low_conf'>0</div></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+</table>
+</div>
+<div class='section_title'>Index</div>
+<div id='index'>
+The titles of all the findings are listed below categorized by the host they were discovered on. All items in the list below are links to relevant sections in the report.
+<br>
+
+<a href='#host1'><div class='host'>http://localhost/</div></a>
+<ul>
+
+<li><a href='#finding1'><span class='icr'>SQL Injection Detected</span></a></li>
+<ol>
+<li><a href='#finding1'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></a></li>
+<li><a href='#finding2'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></a></li>
+<li><a href='#finding3'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></a></li>
+<li><a href='#finding4'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></a></li>
+</ol>
+
+
+<li><a href='#finding5'><span class='ico'>Cookie PHPSESSID missing the HttpOnly flag</span></a></li>
+<ol>
+<li><a href='#finding5'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></a></li>
+</ol>
+<li><a href='#finding6'><span class='ico'>Sensitive Form loaded and submitted Insecurely</span></a></li>
+<ol>
+<li><a href='#finding6'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></a></li>
+<li><a href='#finding7'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></a></li>
+<li><a href='#finding8'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/admin/</span></a></li>
+<li><a href='#finding9'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></a></li>
+<li><a href='#finding10'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></a></li>
+<li><a href='#finding11'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/admin/</span></a></li>
+<li><a href='#finding12'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/resetpassword.php</span></a></li>
+</ol>
+
+
+<li><a href='#finding13'><span class='ico'>Session Fixation Found</span></a></li>
+<ol>
+<li><a href='#finding13'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></a></li>
+</ol>
+
+<li><a href='#finding14'><span class='icy'>Server leaks version number</span></a></li>
+<ol>
+<li><a href='#finding14'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/</span></a></li>
+</ol>
+<li><a href='#finding15'><span class='icy'>AutoComplete Enabled on Password Fields</span></a></li>
+<ol>
+<li><a href='#finding15'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></a></li>
+</ol>
+
+
+
+<li><a href='#finding16'><span class='icb'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span></a></li>
+<ol>
+<li><a href='#finding16'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/</span></a></li>
+</ol>
+<li><a href='#finding17'><span class='icb'>Technologies identified on Server</span></a></li>
+<ol>
+<li><a href='#finding17'><span class='index_finding_url'>/37.Employee-Record-Management-System/erms/</span></a></li>
+</ol>
+
+
+</ul>
+</div>
+
+<div class='host' id='host1'>http://localhost/</div>
+<div class='host_nav_links'></div><div class='finding' id='finding1'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding2'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>Email</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>Email</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent three payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>z'||'zzzz</span><br>Payload B - <span class='hlg'>z'+'zzzz</span><br>Payload C - <span class='hlg'>z' 'zzzz</span><br>Payload A is trying to concatenate two strings as per the SQL syntax of Oracle database servers. Payload B is trying to concatenate the same two strings as per SQL syntax of MS SQL database servers. Payload C is trying to concatenate the same two strings as per the SQL syntax of MySQL database servers.<br>The response for Payload B and C were similar to each other and is different from the response received for Payloads A. This indicates that the application was actually trying to perform the string concatenation on the server-side and that the backend database in use is <span class='hlg'>Oracle</span>. Since incase of <span class='hlg'>Oracle</span> database server Payloads B &amp; C would have simply thrown an invalid SQL syntax exception their responses are similar. And Payload A would have executed without this error and so its response was different than the other two.<br>If the application was not actually performing the concatenation then all three payload should have received very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the three payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with different strings and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per Oracle database's syntax. The payload is z'||'zzzz</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>z'%7c%7c'zzzz</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the responses recieved for the payloads that used MS SQL and MySQL databases' concatenation syntax.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MS SQL database's syntax. The payload is z'+'zzzz</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>z'%2b'zzzz</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MySQL database's concatenation syntax</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MySQL database's syntax. The payload is z' 'zzzz</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>z'+'zzzz</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MS SQL database's concatenation syntax</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>zzzzzxxx' or 's'='s</span><br>Payload B - <span class='hlg'>zzzzzxxx' or 's'='r</span><br>Payload C - <span class='hlg'>zzzzzxxx' or 't'='t</span><br>Payload D - <span class='hlg'>zzzzzxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is zzzzzxxx' or 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzzxxx'+or+'s'%3d's</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is zzzzzxxx' or 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzzxxx'+or+'s'%3d'r</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is zzzzzxxx' or 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzzxxx'+or+'t'%3d't</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is zzzzzxxx' or 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzzxxx'+or+'t'%3d'r</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>zzzzz' and 's'='s</span><br>Payload B - <span class='hlg'>zzzzz' and 's'='r</span><br>Payload C - <span class='hlg'>zzzzz' and 't'='t</span><br>Payload D - <span class='hlg'>zzzzz' and 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>AND</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='s which evaluates to true. The payload is zzzzz' and 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzz'+and+'s'%3d's</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='r which evaluates to false. The payload is zzzzz' and 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzz'+and+'s'%3d'r</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='t which evaluates to true. The payload is zzzzz' and 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzz'+and+'t'%3d't</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='r which evaluates to false. The payload is zzzzz' and 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>zzzzz'+and+'t'%3d'r</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 4:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>105203</span> milliseconds. Normally this particular request is processed at around </span>7</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>'+or+sleep(5)%23</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 105203 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 5:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5027</span> milliseconds. Normally this particular request is processed at around </span>7</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5027 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 6:</div>
+IronWASP sent <span class='hlg'>' and sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5031</span> milliseconds. Normally this particular request is processed at around </span>7</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' and sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>Email=<span class='hlg'>'+and+sleep(5)%23</span>&amp;Password=zzzzz&amp;login=login<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5031 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding2'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding1'>&lt;&lt;&lt;</a><a href='#finding3'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>Email</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>Email</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent three payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>z'||'zzzz</span><br>Payload B - <span class='hlg'>z'+'zzzz</span><br>Payload C - <span class='hlg'>z' 'zzzz</span><br>Payload A is trying to concatenate two strings as per the SQL syntax of Oracle database servers. Payload B is trying to concatenate the same two strings as per SQL syntax of MS SQL database servers. Payload C is trying to concatenate the same two strings as per the SQL syntax of MySQL database servers.<br>The response for Payload B and C were similar to each other and is different from the response received for Payloads A. This indicates that the application was actually trying to perform the string concatenation on the server-side and that the backend database in use is <span class='hlg'>Oracle</span>. Since incase of <span class='hlg'>Oracle</span> database server Payloads B &amp; C would have simply thrown an invalid SQL syntax exception their responses are similar. And Payload A would have executed without this error and so its response was different than the other two.<br>If the application was not actually performing the concatenation then all three payload should have received very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the three payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with different strings and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per Oracle database's syntax. The payload is z'||'zzzz</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>z'%7c%7c'zzzz</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the responses recieved for the payloads that used MS SQL and MySQL databases' concatenation syntax.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MS SQL database's syntax. The payload is z'+'zzzz</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>z'%2b'zzzz</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MySQL database's concatenation syntax</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MySQL database's syntax. The payload is z' 'zzzz</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>z'+'zzzz</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MS SQL database's concatenation syntax</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>zzzzzxxx' or 's'='s</span><br>Payload B - <span class='hlg'>zzzzzxxx' or 's'='r</span><br>Payload C - <span class='hlg'>zzzzzxxx' or 't'='t</span><br>Payload D - <span class='hlg'>zzzzzxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is zzzzzxxx' or 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzzxxx'+or+'s'%3d's</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is zzzzzxxx' or 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzzxxx'+or+'s'%3d'r</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is zzzzzxxx' or 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzzxxx'+or+'t'%3d't</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is zzzzzxxx' or 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzzxxx'+or+'t'%3d'r</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>zzzzz' and 's'='s</span><br>Payload B - <span class='hlg'>zzzzz' and 's'='r</span><br>Payload C - <span class='hlg'>zzzzz' and 't'='t</span><br>Payload D - <span class='hlg'>zzzzz' and 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>AND</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='s which evaluates to true. The payload is zzzzz' and 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzz'+and+'s'%3d's</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='r which evaluates to false. The payload is zzzzz' and 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzz'+and+'s'%3d'r</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='t which evaluates to true. The payload is zzzzz' and 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzz'+and+'t'%3d't</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='r which evaluates to false. The payload is zzzzz' and 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>zzzzz'+and+'t'%3d'r</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 4:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>105208</span> milliseconds. Normally this particular request is processed at around </span>23</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>'+or+sleep(5)%23</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 105208 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 5:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>105218</span> milliseconds. Normally this particular request is processed at around </span>23</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 105218 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 6:</div>
+IronWASP sent <span class='hlg'>' and sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5028</span> milliseconds. Normally this particular request is processed at around </span>23</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' and sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>'+and+sleep(5)%23</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5028 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 7:</div>
+IronWASP sent <span class='hlg'>' and sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5030</span> milliseconds. Normally this particular request is processed at around </span>23</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' and sleep(5)='</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br>FirstName=zzzzz&amp;LastName=zzzzz&amp;empcode=zzzzz&amp;Email=<span class='hlg'>'+and+sleep(5)%3d'</span>&amp;Password=zzzzz&amp;RepeatPassword=zzzzz&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5030 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding3'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding2'>&lt;&lt;&lt;</a><a href='#finding4'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>Email</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>Email</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent three payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>v'||'vvvv</span><br>Payload B - <span class='hlg'>v'+'vvvv</span><br>Payload C - <span class='hlg'>v' 'vvvv</span><br>Payload A is trying to concatenate two strings as per the SQL syntax of Oracle database servers. Payload B is trying to concatenate the same two strings as per SQL syntax of MS SQL database servers. Payload C is trying to concatenate the same two strings as per the SQL syntax of MySQL database servers.<br>The response for Payload B and C were similar to each other and is different from the response received for Payloads A. This indicates that the application was actually trying to perform the string concatenation on the server-side and that the backend database in use is <span class='hlg'>Oracle</span>. Since incase of <span class='hlg'>Oracle</span> database server Payloads B &amp; C would have simply thrown an invalid SQL syntax exception their responses are similar. And Payload A would have executed without this error and so its response was different than the other two.<br>If the application was not actually performing the concatenation then all three payload should have received very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the three payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with different strings and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per Oracle database's syntax. The payload is v'||'vvvv</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>v'%7c%7c'vvvv</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the responses recieved for the payloads that used MS SQL and MySQL databases' concatenation syntax.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MS SQL database's syntax. The payload is v'+'vvvv</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>v'%2b'vvvv</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MySQL database's concatenation syntax</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MySQL database's syntax. The payload is v' 'vvvv</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>v'+'vvvv</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MS SQL database's concatenation syntax</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>vvvvvxxx' or 's'='s</span><br>Payload B - <span class='hlg'>vvvvvxxx' or 's'='r</span><br>Payload C - <span class='hlg'>vvvvvxxx' or 't'='t</span><br>Payload D - <span class='hlg'>vvvvvxxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is vvvvvxxx' or 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvvxxx'+or+'s'%3d's</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is vvvvvxxx' or 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvvxxx'+or+'s'%3d'r</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is vvvvvxxx' or 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvvxxx'+or+'t'%3d't</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is vvvvvxxx' or 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvvxxx'+or+'t'%3d'r</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>vvvvv' and 's'='s</span><br>Payload B - <span class='hlg'>vvvvv' and 's'='r</span><br>Payload C - <span class='hlg'>vvvvv' and 't'='t</span><br>Payload D - <span class='hlg'>vvvvv' and 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>AND</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='s which evaluates to true. The payload is vvvvv' and 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvv'+and+'s'%3d's</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='r which evaluates to false. The payload is vvvvv' and 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvv'+and+'s'%3d'r</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='t which evaluates to true. The payload is vvvvv' and 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvv'+and+'t'%3d't</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='r which evaluates to false. The payload is vvvvv' and 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>vvvvv'+and+'t'%3d'r</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 4:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>105206</span> milliseconds. Normally this particular request is processed at around </span>0</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>'+or+sleep(5)%23</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 105206 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 5:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>105207</span> milliseconds. Normally this particular request is processed at around </span>0</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 105207 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 6:</div>
+IronWASP sent <span class='hlg'>' and sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5020</span> milliseconds. Normally this particular request is processed at around </span>0</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' and sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>'+and+sleep(5)%23</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5020 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 7:</div>
+IronWASP sent <span class='hlg'>' and sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5029</span> milliseconds. Normally this particular request is processed at around </span>0</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' and sleep(5)='</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=vvvvv&amp;LastName=vvvvv&amp;empcode=vvvvv&amp;Email=<span class='hlg'>'+and+sleep(5)%3d'</span>&amp;Password=vvvvv&amp;RepeatPassword=vvvvv&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5029 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding4'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding3'>&lt;&lt;&lt;</a><a href='#finding5'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>Email</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Body</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>Email</b></span> parameter of the <span class='ico'><b>Body</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent three payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>e'||'e</span><br>Payload B - <span class='hlg'>e'+'e</span><br>Payload C - <span class='hlg'>e' 'e</span><br>Payload A is trying to concatenate two strings as per the SQL syntax of Oracle database servers. Payload B is trying to concatenate the same two strings as per SQL syntax of MS SQL database servers. Payload C is trying to concatenate the same two strings as per the SQL syntax of MySQL database servers.<br>The response for Payload B and C were similar to each other and is different from the response received for Payloads A. This indicates that the application was actually trying to perform the string concatenation on the server-side and that the backend database in use is <span class='hlg'>Oracle</span>. Since incase of <span class='hlg'>Oracle</span> database server Payloads B &amp; C would have simply thrown an invalid SQL syntax exception their responses are similar. And Payload A would have executed without this error and so its response was different than the other two.<br>If the application was not actually performing the concatenation then all three payload should have received very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the three payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with different strings and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per Oracle database's syntax. The payload is e'||'e</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>e'%7c%7c'e</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the responses recieved for the payloads that used MS SQL and MySQL databases' concatenation syntax.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MS SQL database's syntax. The payload is e'+'e</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>e'%2b'e</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MySQL database's concatenation syntax</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MySQL database's syntax. The payload is e' 'e</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>e'+'e</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used Oracle database's concatenation syntax but similar to the response for the payload that used MS SQL database's concatenation syntax</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>eexxx' or 's'='s</span><br>Payload B - <span class='hlg'>eexxx' or 's'='r</span><br>Payload C - <span class='hlg'>eexxx' or 't'='t</span><br>Payload D - <span class='hlg'>eexxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is eexxx' or 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>eexxx'+or+'s'%3d's</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is eexxx' or 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>eexxx'+or+'s'%3d'r</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is eexxx' or 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>eexxx'+or+'t'%3d't</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is eexxx' or 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>eexxx'+or+'t'%3d'r</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>ee' and 's'='s</span><br>Payload B - <span class='hlg'>ee' and 's'='r</span><br>Payload C - <span class='hlg'>ee' and 't'='t</span><br>Payload D - <span class='hlg'>ee' and 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>AND</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='s which evaluates to true. The payload is ee' and 's'='s</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>ee'+and+'s'%3d's</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='r which evaluates to false. The payload is ee' and 's'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>ee'+and+'s'%3d'r</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='t which evaluates to true. The payload is ee' and 't'='t</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>ee'+and+'t'%3d't</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='r which evaluates to false. The payload is ee' and 't'='r</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>ee'+and+'t'%3d'r</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 4:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>105201</span> milliseconds. Normally this particular request is processed at around </span>15</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>'+or+sleep(5)%23</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 105201 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 5:</div>
+IronWASP sent <span class='hlg'>' or sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>105200</span> milliseconds. Normally this particular request is processed at around </span>15</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' or sleep(5)='</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>'+or+sleep(5)%3d'</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 105200 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 6:</div>
+IronWASP sent <span class='hlg'>' and sleep(5)#</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5042</span> milliseconds. Normally this particular request is processed at around </span>15</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' and sleep(5)#</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>'+and+sleep(5)%23</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5042 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 7:</div>
+IronWASP sent <span class='hlg'>' and sleep(5)='</span> as payload to the application. This payload has a small snippet of SQL code that will cause the database server to sleep for <span class='hlg'>5000</span> milliseconds. If this code is executed then the application will return the response <span class='hlg'>5000</span> milliseconds later than usual. After the payload was injected the response from the application took <span class='hlg'>5035</span> milliseconds. Normally this particular request is processed at around </span>15</span> milliseconds. This indicates that the injected SQL code snippet could have been executed on the server-side.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can manually inject the same payload but by changing the number of seconds of delay to different values. Then you can observe if the time taken for the response to be returned is affected accordingly.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains a SQL query snippet which if executed will cause a delay of 5000 milliseconds. The payload is ' and sleep(5)='</span><br><br>POST http://localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br>FirstName=ee&amp;LastName=ee&amp;empcode=ee&amp;Email=<span class='hlg'>'+and+sleep(5)%3d'</span>&amp;Password=ee&amp;RepeatPassword=ee&amp;submit=Register+Account<br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>It took 5035 milliseconds to get this response. It took so long because of the 5000 milliseconds delay caused by the payload.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding5'>
+<div class='medium_finding_title'>Cookie PHPSESSID missing the HttpOnly flag</div>
+<div class='finding_nav_links'><a href='#finding4'>&lt;&lt;&lt;</a><a href='#finding6'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The HttpOnly flag was missing on the cookie: PHPSESSID. This may allow an attacker to get the cookie information using XSS attacks.</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The value of the cookie is not protected by HttpOnly flag and hence becomes accessible from JavaScript</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 19 Sep 2023 16:41:35 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br><span class='hlg'>Set-Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05; path=/</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html; charset=UTF-8<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding6'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding5'>&lt;&lt;&lt;</a><a href='#finding7'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>GET <span class='hlg'>http://</span>localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form class=&quot;user&quot; method=&quot;post&quot; action=&quot;&quot;&gt;&lt;input type=&quot;email&quot; class=&quot;form-control form-control-user&quot; id=&quot;Email&quot; name=&quot;Email&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Enter Email Address...&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;Password&quot; name=&quot;Password&quot; placeholder=&quot;Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary btn-user btn-block&quot; name=&quot;login&quot; value=&quot;login&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding7'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding6'>&lt;&lt;&lt;</a><a href='#finding8'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>GET <span class='hlg'>http://</span>localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form class=&quot;user&quot; name=&quot;register&quot; method=&quot;post&quot; onsubmit=&quot;return checkpass();&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;form-control form-control-user&quot; id=&quot;FirstName&quot; name=&quot;FirstName&quot; placeholder=&quot;First Name&quot; pattern=&quot;[A-Za-z]+&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;form-control form-control-user&quot; id=&quot;LastName&quot; name=&quot;LastName&quot; placeholder=&quot;Last Name&quot; pattern=&quot;[A-Za-z]+&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;form-control form-control-user&quot; id=&quot;empcode&quot; name=&quot;empcode&quot; placeholder=&quot;Enter your Employee Code&quot; pattern=&quot;[0-9]+&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;email&quot; class=&quot;form-control form-control-user&quot; id=&quot;Email&quot; name=&quot;Email&quot; placeholder=&quot;Email Address&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;Password&quot; name=&quot;Password&quot; placeholder=&quot;Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;RepeatPassword&quot; name=&quot;RepeatPassword&quot; placeholder=&quot;Repeat Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Register Account&quot; class=&quot;btn btn-primary btn-user btn-block&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding8'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding7'>&lt;&lt;&lt;</a><a href='#finding9'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/admin/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>GET <span class='hlg'>http://</span>localhost/37.Employee-Record-Management-System/erms/admin/ HTTP/1.1<br>Host: localhost<br>User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form class=&quot;user&quot; method=&quot;post&quot; action=&quot;&quot;&gt;&lt;input type=&quot;test&quot; class=&quot;form-control form-control-user&quot; id=&quot;username&quot; name=&quot;username&quot; aria-describedby=&quot;emailHelp&quot; required=&quot;true&quot; placeholder=&quot;Enter username ...&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;Password&quot; name=&quot;Password&quot; placeholder=&quot;Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary btn-user btn-block&quot; name=&quot;login&quot; value=&quot;login&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding9'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding8'>&lt;&lt;&lt;</a><a href='#finding10'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>POST <span class='hlg'>http://</span>localhost/37.Employee-Record-Management-System/erms/loginerms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form class=&quot;user&quot; method=&quot;post&quot; action=&quot;&quot;&gt;&lt;input type=&quot;email&quot; class=&quot;form-control form-control-user&quot; id=&quot;Email&quot; name=&quot;Email&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Enter Email Address...&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;Password&quot; name=&quot;Password&quot; placeholder=&quot;Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary btn-user btn-block&quot; name=&quot;login&quot; value=&quot;login&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding10'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding9'>&lt;&lt;&lt;</a><a href='#finding11'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/registererms.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>POST <span class='hlg'>http://</span>localhost/37.Employee-Record-Management-System/erms/registererms.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=233blcfhtjltgcs3ku3go71v05<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form class=&quot;user&quot; name=&quot;register&quot; method=&quot;post&quot; onsubmit=&quot;return checkpass();&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;form-control form-control-user&quot; id=&quot;FirstName&quot; name=&quot;FirstName&quot; placeholder=&quot;First Name&quot; pattern=&quot;[A-Za-z]+&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;form-control form-control-user&quot; id=&quot;LastName&quot; name=&quot;LastName&quot; placeholder=&quot;Last Name&quot; pattern=&quot;[A-Za-z]+&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;form-control form-control-user&quot; id=&quot;empcode&quot; name=&quot;empcode&quot; placeholder=&quot;Enter your Employee Code&quot; pattern=&quot;[0-9]+&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;email&quot; class=&quot;form-control form-control-user&quot; id=&quot;Email&quot; name=&quot;Email&quot; placeholder=&quot;Email Address&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;Password&quot; name=&quot;Password&quot; placeholder=&quot;Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;RepeatPassword&quot; name=&quot;RepeatPassword&quot; placeholder=&quot;Repeat Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Register Account&quot; class=&quot;btn btn-primary btn-user btn-block&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding11'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding10'>&lt;&lt;&lt;</a><a href='#finding12'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/admin/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>POST <span class='hlg'>http://</span>localhost/37.Employee-Record-Management-System/erms/admin/ HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form class=&quot;user&quot; method=&quot;post&quot; action=&quot;&quot;&gt;&lt;input type=&quot;test&quot; class=&quot;form-control form-control-user&quot; id=&quot;username&quot; name=&quot;username&quot; aria-describedby=&quot;emailHelp&quot; required=&quot;true&quot; placeholder=&quot;Enter username ...&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control form-control-user&quot; id=&quot;Password&quot; name=&quot;Password&quot; placeholder=&quot;Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary btn-user btn-block&quot; name=&quot;login&quot; value=&quot;login&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding12'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding11'>&lt;&lt;&lt;</a><a href='#finding13'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/resetpassword.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>GET <span class='hlg'>http://</span>localhost/37.Employee-Record-Management-System/erms/resetpassword.php HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=447m6hm4onnanclefml0bep2j7<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form class=&quot;user&quot; name=&quot;changepassword&quot; method=&quot;post&quot; onsubmit=&quot;return checkpass();&quot;&gt;&lt;input type=&quot;Password&quot; class=&quot;form-control form-control-user&quot; id=&quot;newpassword&quot; name=&quot;newpassword&quot; value=&quot;&quot; required=&quot;true&quot; placeholder=&quot;Enter Your New Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;Password&quot; class=&quot;form-control form-control-user&quot; id=&quot;confirmpassword&quot; name=&quot;confirmpassword&quot; value=&quot;&quot; required=&quot;true&quot; placeholder=&quot;Confirm Your Password&quot; required=&quot;true&quot;&gt;&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary btn-user btn-block&quot; name=&quot;submit&quot; value=&quot;Reset&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding13'>
+<div class='medium_finding_title'>Session Fixation Found</div>
+<div class='finding_nav_links'><a href='#finding12'>&lt;&lt;&lt;</a><a href='#finding14'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Low</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The application does not set a new Session ID in the cookie after what appears to be an authentication attempt by the user. If this was a successful login and the Session IDs are stored in cookies then this application is affected by Session Fixation vulnerability.</div>
+<div class='trigger'>
+
+</div>
+</div>
+<div class='finding' id='finding14'>
+<div class='low_finding_title'>Server leaks version number</div>
+<div class='finding_nav_links'><a href='#finding13'>&lt;&lt;&lt;</a><a href='#finding15'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server's banner contains the version number of the server - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4. The version number found is 2.4.56</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The Server header of this Response indicates the server version as 2.4.56</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 19 Sep 2023 16:41:27 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html; charset=UTF-8<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding15'>
+<div class='low_finding_title'>AutoComplete Enabled on Password Fields</div>
+<div class='finding_nav_links'><a href='#finding14'>&lt;&lt;&lt;</a><a href='#finding16'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/loginerms.php</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>AutoComplete feature has not been disabled on the form/fields that accept Passwords from users</div>
+<div class='trigger'>
+<span class='ihh'> Information about the Analyzed Response: </span><br><br><span class='icb'>This response contains INPUT elements whose type attribute is password but their autocomplete attribute is not set to 'off'</span><br><br>
+</div>
+</div>
+<div class='finding' id='finding16'>
+<div class='info_finding_title'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='finding_nav_links'><a href='#finding15'>&lt;&lt;&lt;</a><a href='#finding17'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server returned this banner in its response headers - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 19 Sep 2023 16:41:27 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html; charset=UTF-8<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding17'>
+<div class='info_finding_title'>Technologies identified on Server</div>
+<div class='finding_nav_links'><a href='#finding16'>&lt;&lt;&lt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/37.Employee-Record-Management-System/erms/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The server makes use of the following technologies:<br> - PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 19 Sep 2023 16:41:27 GMT<br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>X-Powered-By: <span class='hlg'>PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html; charset=UTF-8<br><br><br>
+</div>
+</div>
+</div>
+
+<div id='report_footer'>
+    This report was generated by IronWASP's Reporting Engine on Tuesday, September 19, 2023 at 10:06:02 PM
+</div>
+
+</body></html>
+
