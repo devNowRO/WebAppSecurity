@@ -1,3 +1,7 @@
-FOR RESEARCHERS: The Excel File contains the names and links for all of th 7 web application. The Folder contains OWASP ZAP Report of each web application scan.
+FOR RESEARCHERS: 
+The Excel File contains the names and links for all of the 7 web application. 
+The Folder contains OWASP ZAP Reports of each web application scan.
 
 NOTE: The results of the new scan may slightly vary depending on the OWASP ZAP version and the continuous development and updating cycle of web application code, especially for live web applications.
+
+Source: A. Khanum, S. Qadir and S. Jehan, "OWASP-Based Assessment of Web Application Security," 2023 18th International Conference on Emerging Technologies (ICET), Peshawar, Pakistan, 2023, pp. 240-245, doi: 10.1109/ICET59753.2023.10374730.
