@@ -1,0 +1,4776 @@
+[
+    {
+        "source_name": [
+            "$data[\"PageTitle\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2388
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2388,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d0d5d2942d27606d2a4659c0cf80fa6d2051e34a8ca524e8f8d430d5b0c8fcfc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data[\"PageDescription\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2453
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2453,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a8c5555572f60c37e00fbd098d0e8106f358ff561d2d14f74f6191880f62546b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data[\"PageDescription\"]"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            543
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 12,
+        "sink_column": 543,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "684ee0140d4cf19501ea19e7a2582ccbdfd40c6ffcdb8df52e791922a53afecf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            662
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 13,
+        "sink_column": 662,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b0bc919f2dee6278e1956eb514bdc7a2756885822f67835a269e8631775d8819",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data[\"Email\"]"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            777
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 14,
+        "sink_column": 777,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a9e9aab45e02bfd02eb11d76843a8b3f1586f91bd2da9b518352a55d5349bacc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            258
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/aboutus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 353,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/aboutus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3690ca10ab63bb67a4983602266e62e98d17591f5af87fd12017293de40c8f67",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3204
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3204,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "311f6698cc07181ea9e7a4854fc7d381fab4d203b31a32f3a849ab82728833d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3508
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3508,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "303c9a1844671320dc83e12988db34f8151d4632a5885a3fe0451c91820fd429",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollmentNumber\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3297
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3297,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7de67e74170f804dbfdce81ff95e29d3de52be2bb4d703bd0fa49bd7c7f0a4bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fatherName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3368
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3368,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f37543fc6cdcb92f5606dc85d14590cc09e79779a0a8674c7bf969b08c4cec63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"motherName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3403
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3403,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f24f7fed1dedadab8fefb640ddae33d4f228bf822612840c2546261d83931116",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentmobNo\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3468
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3468,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b6998aa4bf9e109f3d463235065e84f855e94e11e3d7d1acce119b08d675e8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentEmail\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3504
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3504,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "abfc0df85f2258fa6adc4d0a4d39b2785a90ce68ccbc47711483fb70856c18f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3569
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3569,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bd2fda0c073bff60b06c7f675cd5552537720ee964994f3ff51837f70309a12",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3632
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3632,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a426ffed61dd70782eae4145a3e6cd92bf23e174f93c6ba9522007b7f3eee593",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollProgram\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3695,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "86b985fa0c113c984dabe21558ef9d61e518c56f8ea77410d8983b80f2c93616",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3763
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3763,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c232e04e295952c9df0ffb51b2c57b903a0dc2c1de4039fc839a9a69f723f231",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3877,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/accepted-enrolment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "912a4ff27c2f13a987e008d4280e707c7b78eaa5627b4006b5abbd00001d5ef6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid",
+            "$cname",
+            "$agegroup",
+            "$classtiming",
+            "$capacity"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17
+        ],
+        "source_column": [
+            267,
+            292,
+            321,
+            352,
+            389
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 40,
+        "sink_column": 1151,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "94e6c7ea0b365a7b9596e61b21504d5fb5f1b88dca39b949a256cd9672b849a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4568
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4568,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12f06695a07f6e637b499843ba98ece1e6faec6e1550421fbb656535859e342b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4594
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4594,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bad51d3ccb4b18b8c575980e952118c974c9091ab4b78e9f6ef827abd587ec74",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teacherSubject\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4626
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4626,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac97de8895667920f803011caa8c3abd503d0f339d93e481fc08f9cc00f29d2c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            11,
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            241,
+            278,
+            333,
+            306
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-subadmin.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 427,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-subadmin.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ff6cb82500d95567147f692508d32589c22f82799b0c5513accdb69b0980ae0b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$email",
+            "$mobileno",
+            "$tsubject"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            267,
+            295,
+            322,
+            357
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-teacher.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-teacher.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-teacher.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-teacher.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 39,
+        "sink_column": 1122,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/add-teacher.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "affa0cfedfcfa4c194c169a490469e8f638fce3f8da7f9b9c5878416efe75f1e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollmentNumber\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3250
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3250,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e909ade04ac5a2dceca20c5eecaf661d2570420aa5cc6ce7acbf83b904e7cdfe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fatherName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3321
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3321,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fd93ac8443c66cea4ced391d902b733d0cbd65dd2a4a92e2a45d490a98f76cde",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"motherName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3356
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3356,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3b8c97d19b8c634f1098372f51bc9d48d800cfe67d9447a6a49be73d46667597",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentmobNo\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3421
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3421,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21b76f1301b878d88ebc867b79fcf0c176f4f76bf110b81d37739aca53263b33",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentEmail\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3457
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3457,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d5dd8942a4b3a099cacd682f72ff4d637b1f124ab7332676e179e7dde4665625",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3522
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3522,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ae149b06552dc7685079b3974e7b316a6f2422354045b1ebcb0b63ff70a9c692",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3585
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3585,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f34a0c59992402e3e8f9ae68b91fa4125110fec47b3345e1f5433dfe39a2f32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollProgram\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3648
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3648,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb7521ffcad08a2c44062c75ab408a0bdec8d14deea702915d0de712597167d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3716
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3716,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1d370539e180f54b67cafd48f2c450010b905b1bafbb8ae38a934aaa93f3363c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3830
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3830,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bbe6f5357cc9a0bb448681b5dd1789267a68b8aceeec15b6ec894715580c45fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3169
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3169,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85f4a5eed0b0f50e1ac60bc51c157dc6c4ef5bfe4a4d5a7a80d5d1162cb7dbc9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianEmail\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3234
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3234,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c4c8f93a6d5d6f5052efa5a98990a9ff91aaa00a02d44a1ee9712e35ed319cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3300
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3300,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7d7d380f1548a111afdc087373876d3ec36ff96fd5f64b91ed2bfe5b2192a2d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3364
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3364,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "81e5a5617e463c94da9f7f7c4b970dcd9063d33fbb3bebf746946327a4d06b8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"visitTime\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3427
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3427,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "963cefb353f8b47f4a2dff0b8083a11465595d4431c95f7a107899b3e522f60d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3491
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3491,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a523ed76095730b4b6128fc8b0b27f81e4c96e584b7a21efebf1db93ecedbbd2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3597,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/all-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca11c349b1f7a22303e9dfb237cb8f1db38585b3e2ff304ba422f70bc3c87f0c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            109
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 144,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "63553ea06a21fbc4d7a30b70f5fc263247bf7202b6f7caff10cdfd366c45beb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$email",
+            "$mobnum"
+        ],
+        "source_line": [
+            15,
+            13,
+            14
+        ],
+        "source_column": [
+            312,
+            258,
+            284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 408,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f33cc086b5ea2678915108a38212627acfebaec957a493bdae72439188785162",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3120
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3120,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b69dddb84149174e6d0d37a1b84662848f1cd628f2e5b1eb900c2651f9ef0c75",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3423
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3423,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cfa7b95627a5b36140ba284668da8afae8ddee0a22f771e5e116edf4c1519418",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3670
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3670,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc2479711cc74df1441294d89dc67e94fa185ec226aa897acec147a734043615",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3898
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3898,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "490816f69cd6aa8850b34146b2f98e0fa055d4e5fbade9123d15a96fad64a028",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid",
+            "$cname",
+            "$agegroup",
+            "$classtiming",
+            "$capacity"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17
+        ],
+        "source_column": [
+            276,
+            301,
+            330,
+            361,
+            398
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 472,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "577d93e02cfde3d3fb9f4b7618fbb9d09ef23a8545688988848aa407ea8a275c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4243,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4abca9c2911884107b47c08828f42fb5d4828b783a04e2153a5598d3c44330e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4269
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4269,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e5ea5ffda7e04280b75fc13bb9d84a2876cf37798e710632578c1f83be491678",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teacherSubject\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4301
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4301,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4ad5ff8f87ae3bf3bb77f98b53d1ac562ba7fc6a2d14dd3cb720d392adc4b756",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"tid\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4019
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4019,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cdc4b508f2ba4671dd8890f279ee9568c688b44c1a450e09d794e5d524169158",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teachername\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4049
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4049,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "92bfd00b5db50b8d56aa38f53df05a94245ead7140a533722840f52121d5a507",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"className\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4684
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4684,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3749529e2fc2f0ce4f51e2ca2eeb30c8c72c2876556d07309782b8eab9e3ce5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ageGroup\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            4928
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 4928,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "71eb332031ae65b4bbb88dd5e8b18026b851e74e533a8845f77e3334f7445b78",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ageGroup\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            4963
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 4963,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "71eb332031ae65b4bbb88dd5e8b18026b851e74e533a8845f77e3334f7445b78",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classTiming\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            5435
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 5435,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "94b828236ba56e91555019d7a1af7caf8c195d4200255880cb3014feddba88fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classTiming\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            5473
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 5473,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "94b828236ba56e91555019d7a1af7caf8c195d4200255880cb3014feddba88fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"capacity\"]"
+        ],
+        "source_line": [
+            160
+        ],
+        "source_column": [
+            6080
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 160,
+        "sink_column": 6080,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77bb4d25f62541a8f90e9a1e2ea5ec0f2379b4651e6ff343e31b74f18db9691a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"capacity\"]"
+        ],
+        "source_line": [
+            160
+        ],
+        "source_column": [
+            6115
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 160,
+        "sink_column": 6115,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77bb4d25f62541a8f90e9a1e2ea5ec0f2379b4651e6ff343e31b74f18db9691a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"feacturePic\"]"
+        ],
+        "source_line": [
+            181
+        ],
+        "source_column": [
+            6662
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 181,
+        "sink_column": 6662,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "88a256bd305b1b244b9ad95a2916fac44b0d9adfb3117e40e7268f3898d02004",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classid\"]"
+        ],
+        "source_line": [
+            182
+        ],
+        "source_column": [
+            6762
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 182,
+        "sink_column": 6762,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-class.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "98e6dfc5ada0ac22870e4db249617e0aaa21f26dc784e9edd09da9f782d0a8f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            252,
+            307,
+            280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5b729132d7c9f4434750690ef7b3dd01d52d909c0b49f3342ff625f522d4d174",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3354
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3354,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "642042ff62e2927f0077656e48648600f17a58843b6a204f0fe6802996347dbd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3659
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3659,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f8306f613d653d63c0ac12892d2377f07b87acd477c342a8ca40fb1fc0fe075a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            4049
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 4049,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fbfe1a2c57234e30838dd19c4386d9e717766feca2225f2babfa4698d47588ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4445
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4445,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "74d2957f105a906a4d5069839da044fdeaa9ae9eae7f188ab59985d381569468",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$email",
+            "$mobileno",
+            "$tsubject"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            274,
+            302,
+            329,
+            364
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 442,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "db91411026f90a4f43d15cb50e6943f07fd0450dd956843a82f027c0baad4517",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3860
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3860,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ffcc7a86e65b518b3288074f35332b4cd9a270003ac402df601443fc2560a17b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherEmail\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4165
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4165,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "53bf70df3e8718472ba139dbe530d1ffdda2aca8ad20264e9f601ef9c3d327f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherMobileNo\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            4574
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 4574,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b3b5aba5d57bbf096232015dc887488f7a7cdc240e1fa9bd66100c1234812936",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherSubject\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4866
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4866,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "072cd633273579f7f6ff25af303e6ac9e96b02a0edf043ea95866ea8552c6f15",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            5167
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 5167,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2e3123bf52ceb495814ab8080b225b40874091dc2f5c74d91f7a4cb7dccbe3e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            5268
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 5268,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/edit-teacher.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a48aec542931c63438edd2a4532d667f3a42305ddc46017b27ffce047d190941",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$oremark",
+            "$estatus"
+        ],
+        "source_line": [
+            15,
+            14
+        ],
+        "source_column": [
+            331,
+            303
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 373,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0c617a29a21aad3d37101b16f4374cb9c825575437482ab34100fbee9dabbf65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollmentNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3373,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85d16bcc5d831b7d84d9962db5d24140012cd9751fb3f09377e4c23c0cd8bd69",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fatherName\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3535
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3535,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78c93cb73475ccf94e8a65c97ae5e313fbcad44b7490135b60a213f094f13aaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"motherName\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3642
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3642,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0eee62e96a0f7763c3ff68bffe4dbcf6b9eab91f437282604a5c722fe941a3d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentmobNo\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3803
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3803,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b51da2d181984c58e1c5f95c57b417623ae222661efd6d9f3471f8163c5eaba5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentEmail\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3915
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3915,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da83bdb3ea3e0da28495d7b8adeb9ebf52c1e4dd7a4bb581e63be008cc2e0207",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4070
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4070,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e25fbeaf1c695b219a710c0f7b72e7198a99227e8a6645732450ec4a60e26c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4172
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4172,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eed3c65963985f0228fc1507ea9b962eaf4ccd57534000caee3ed2145640c5f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollProgram\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4329
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4329,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "287232621e9146df02dce19acf933d8a364e202cbe32f15d445cf9027b61adca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4440
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4440,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fd031a0409b194e25d1e81a3d747b54bc993e08f68a30626ccd41e5b39198f72",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"message\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            4593
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 4593,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3ad540226a289d9ff90f9a2364aa184a56a74d53635c75998ce56e7239acca02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollStatus\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            4792
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 4792,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b61c7df74527079b35fafa321d5556dc606875b44f23d5e258b3cecd4ae461db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"updationDate\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4908
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4908,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "03b26b30cf57c139b16f1c0a423c2c41572ad72557b82f250a61f690f277b4e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"officialRemark\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            5070
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 5070,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/enrollment-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6606b4d2fddbd93ef311999f0c78b229c0b581d6ce36ca7c6071a75ccf76127a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            94
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 171,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d589dd168116fe42912980c7628cdcb84ce7c0928d126232282731d4c04aee72",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tpicpath"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            325
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 18,
+        "sink_column": 440,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "f7e224ecc5c9856052fe247e565c992b7c0d4f6651fda06fddbd83c97c9cead4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"feacturePic\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3850
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3850,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5b939f38e4d10605a2e2f9b79fa9c66893b790e092d3274088bc8c8528a3d0d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3929
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3929,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08c414dfe97e2259b98f03d69fed7984db4ffe5ead7e17331b321b307519c69e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"className\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3992
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3992,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b845e5527c60d9a90010b2bb2c7cf21fc7644f6d8a441448d019b03b3ff3f992",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ageGroup\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4055
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4055,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af0d102fc9ef234923cbe37efb0764a6476e870e1d5bf8391134ccf9e31e9482",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classTiming\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4117
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4117,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "79a11535c4867a0cfdab466b9169f6f3d01a53b5f775e1978a826fb55cef1670",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"capacity\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4183,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0fef201522724a92a4c528af2b5790c7ae2dc606c8ba754655a1a9c3315ed6af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4246
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4246,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6d3329a135f71c53efc9af7f5da76d51f18266401b22aa2f2f42cc49ea85623a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classid\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4347
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4347,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0abfa130553ead1b1f29f1e54df3c0a3f2f185b0ce71eb517bad4590aecdd0b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classid\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            4516
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 4516,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0abfa130553ead1b1f29f1e54df3c0a3f2f185b0ce71eb517bad4590aecdd0b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            4556
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 4556,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acb27c3d1c68262b9b04123b0b383fa7c38468ec516264b01a7ac5cfd6c97f78",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3592
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3592,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "93bc6890d34992bc533ad9794b5f994c363f74e6e447b1960b84a1445ebdaf41",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3660
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3660,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c8ec5d836325a82651d2a986a060a8695a21e27e01f4de625d53fd50e2fa8fa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3723
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3723,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7501fe8f3483849cc49140a137cec0afdb8f1a2296853e886b84bbfbc2f9abd6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3783
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3783,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0af342beb9d89ef6a2a3b8b08fe786178eee206770449d25e0b249ef17da3602",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3850
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3850,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3920fbbe2092ae64c163fd51d11eb4b728280c2e2fa2f4bbfdf92ea56a081a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3956
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3956,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7220a7873a8caec841b628f1109860dd37b035f2d9872997774281768794c33f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4124,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7220a7873a8caec841b628f1109860dd37b035f2d9872997774281768794c33f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4366
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4366,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7220a7873a8caec841b628f1109860dd37b035f2d9872997774281768794c33f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ppicpath"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            331
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 18,
+        "sink_column": 456,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "ff1e73b413a04ae0db23d8d22d1dda8b22d3d6846ac02d94c8b087ff9940caaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3719
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3719,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e81255137de0bdfe2825ebb5e41eaaa70a8aa0abdc9e00e7a70675701533d12f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3797
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3797,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25c76cf598f72c54f0319e30f701dc6ad0e8d18a11ff2846c5bdd483600e96a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherEmail\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3859
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3859,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "54c2414e3b9a49d9db635e16cea73f16441d394ddec4365b071dcafeb543f31c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherMobileNo\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3925
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3925,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cddea1abf76435608cd2968e8267111a5b17f6d79885b2be14e15934415293cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherSubject\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3995
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3995,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "761e201dd1b5167dc771e1d55b437308c0f7081531c3b989c8123bd81fb1bdb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"regDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ad818310d4c347f17a3285447c9216684d051454f4c3e2955d4f9a4614346865",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4163
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4163,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5313e0a84cebfd8fffa55e744287e5ae0f6ab5cbf59d2e7c5a172cf525fdd03f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4332,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5313e0a84cebfd8fffa55e744287e5ae0f6ab5cbf59d2e7c5a172cf525fdd03f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4373,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/manage-teachers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e81255137de0bdfe2825ebb5e41eaaa70a8aa0abdc9e00e7a70675701533d12f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollmentNumber\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3296
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3296,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "df5fd0105fe8c2de1021646458cababedb0ff16d539e309459b84f54dd7da43f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fatherName\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3367
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3367,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f5181a5face32f37fcc311d0f3a58ed8343eee862938f60f77576f2d6cde360",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"motherName\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3402
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3402,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e814abeaff7b6c7353cf60392492252c748fff797aec94c0b7188479e7d09700",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentmobNo\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3467
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3467,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "74a435a3aae8035ad183f4968e5b981b7f4162b79f6a61fc56524907c502553d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentEmail\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3503
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3503,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e11f4a97091707204d64dc770da42a613fb8fddfc04cdf7b295d0bf1c4536228",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3568
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3568,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8d60e4f7e2114571d6b551a5e4800866c83a4140b1509c281468d79c8e84726a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3631
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3631,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ccdab9020c6362d17feb22c5496bdcc395a24ee00a565c8fbb3c9844d04be37b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollProgram\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3694
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3694,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b1281a25401eb0c4842eeeb44fe7124043618072261b6e036872301786bb0dbd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3762
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3762,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c798e796130fb3abf2f35b7084801b50583129da663212def1c13f0a2c2d7d0a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3876
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3876,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-enrollments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9064efb0a08ebfadb1c4d3affea5b33b04945e2b02e83bbccd0047e11ab94e5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3205,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f8dfec6f515a36ee07373c76058e615ceba1dcc647183dc4cd89a3e37b46e37",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianEmail\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3270
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3270,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76fe877d5ce165b0d1fffd327eaf2e966a2880c80efb57766a925faed6e20250",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3336
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3336,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af4b1fc81fa6958fa1e654fbfe3925c29123bc5098f5910a2edcedacaf810ad8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3400
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3400,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "778cef805b094d31d348d72b735534b27d9a4f9d2547e18c6da2afdaf3b436d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"visitTime\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3463
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3463,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "551833a041752c9178230926606a5d9255faacacac1c13dc7b0b9c94a7e6e110",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3527
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3527,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3ab632ba7204142f81d076c5542b3baf931e530d494c188f96695f9bd1d513eb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3633
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3633,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/new-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2deae2630e4e5eb7e4189ebfd4dfdb7536c7788b6d59475d8821402f1a5038f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3226
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3226,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68dbb4fafeabbc135e34aa0dd4596865146e093b4ef1828ccba15598225533a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianEmail\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3291
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3291,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b931d6e95a9c57574707e8ed678249f7252dafd286fd6b878c51181eb278f75e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3357
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3357,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2f3b9c835b6317b5d78b5363bcc729934be1fa097b3d40545416b82eb3836fbc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3421
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3421,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1199044399a3d4c1e5874bb887603e758e797d6b8e643bd22a7903d2d532f1a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"visitTime\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3484
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3484,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "601bc49628986ac8b60a01292c235c74da5a0b154eb4c2aca1ae2e0131bfe746",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3548
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3548,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5833c902ee065d82cc0e606a032cd734afe8384df0def87535d94c44e69883c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3654
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3654,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/notvisited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1130f1ad7aecb49169f47431063ed13c45f7b32c79687693af7cf5f0b8ed2132",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/password-recovery.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 205,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "24d4577a27527390c03dd03fbe4dc8b6308f039d7d774305357edca5bdd1b8aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/password-recovery.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 372,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "24d4577a27527390c03dd03fbe4dc8b6308f039d7d774305357edca5bdd1b8aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            252,
+            307,
+            280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "72c403d1de842159d1ececb126ae9210ff2ae3004b76a3d7c0232f90ec3d7e71",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3292
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3292,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4db4fd7d8d6aee3caf4373aba73afd6105f9806a7377ae5a4544ddba3ac305d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3594
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3594,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b22c535c4d0084b92893acf2522da1468d9dcd57a4a7d4bf283951d3a7ecbf43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3981
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3981,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ebd95f46000debc4155fde8b3d92ccc0eb688a2434aef03c4c0273f099f25fa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4389
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4389,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dceef4f300843408f0b5b6493679442e33c82dfe0ae0fdac10ea049c4986c9f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4708
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4708,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8e85ab21a65cd4574f51fcf847baa715ec0f78e9a5e5f518f93b72c8466fe0f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollmentNumber\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3297
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3297,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b0427b8e8221b954a3cb67b14843b5db8adae0bc42c5ccec117afbcff21741dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fatherName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3368
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3368,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "75d0915100c33f8554dae7ea028f22ae27e6f6ce91ab5078fb6987cd29724a07",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"motherName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3403
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3403,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0afabe561765974a7acb3e1d998295cec480a0b3953254ff87ff5a05cf9e07c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentmobNo\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3468
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3468,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "904493838dd16234759d83a4cddbc533cd934ba858f2c2c49c95f1c6a88f8201",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"parentEmail\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3504
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3504,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "359ff14312edb8bd26011917e8f5e55bbcbf9018e79f26d07ed1561235bc4a19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3569
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3569,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1347fa8f893ab71062821fda9052cc37e4ab16897cd4ed86b84f8adcd5bcc08",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3632
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3632,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e013a21c38ef28a0a9665319e0c586c479fb8928872a01bf3f17f3ae6aefb186",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"enrollProgram\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3695,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a1980aa633a8e3a4e092a8be7f00b01ce3cf59b0dcc2ae3d1670ac69028e947",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3763
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3763,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0904cd5f39e070629113ecda6e171b607e53cf7d932c788896df5a9c08b4ba33",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3877,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/rejected-enrolments.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bae67a40cb840447c3196f0031f38cc512536c4207249c3ad40dbe3a1bb4cbeb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$oldprofilepic"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            344
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-class-pic.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 40,
+        "sink_column": 1192,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-class-pic.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "ef22501bfb2c135fa6f526af8e5485729e223204768bc75c048eccfd6c2d2d21",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"feacturePic\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4405
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-class-pic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4405,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-class-pic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a106fb5a0e99587b596dd778c09e0d1fd4ea1bfffc9b51c2120d39364347f64",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"feacturePic\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            4886
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-class-pic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 4886,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-class-pic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a106fb5a0e99587b596dd778c09e0d1fd4ea1bfffc9b51c2120d39364347f64",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$oldprofilepic"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            344
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-teacher-pic.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 40,
+        "sink_column": 1198,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-teacher-pic.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "3b63d7823dcc56bde73c247b384148ad92fbb8c07bf6e111012b6036fd4b22b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4417
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-teacher-pic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4417,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-teacher-pic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "721799b205ce773a8a468e7db16b6af2458f63c7b5355058c0579f1d5d8358aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            4897
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-teacher-pic.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 4897,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/update-teacher-pic.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "721799b205ce773a8a468e7db16b6af2458f63c7b5355058c0579f1d5d8358aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3206
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3206,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "92909c90c8366e8a3a39a0f86b55ab454ff48a60aff761d091d640138d91ab58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianEmail\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3271
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3271,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21908caff2d4292a63e2191a5ce80b9a13923d045591e86d644762649418a7ed",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3337
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3337,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b62a5ff9aba7a494f58af11c5bcdcb9bb67e790f8e6f7fed60ad34ec610dd8c7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3401
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3401,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "968228c324f61916ab04872add0fba8dda494f041f4ca15ced17b935268e287b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"visitTime\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3464
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3464,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e33f14a463464625b4ac9e0162d8bc5b94f280bdfc16342cc204f4dcc1665b04",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3528
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3528,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "931d5c2e9966c36b6b1202a111a64b709dca6f85fb878f57ca0f1a6686ec199d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3634
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3634,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visited-visitors.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "858b717fe90168e1dea2d53cd544d60af5e9d1a56c2ad9d7bdff0631f07dae0a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$oremark",
+            "$estatus"
+        ],
+        "source_line": [
+            15,
+            14
+        ],
+        "source_column": [
+            323,
+            295
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 365,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "da4d6c8f6ab7cb8cf180dd16d59f7e49bd7a3eeef329f776cd82819f900e82e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3237
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3237,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5bca147a070f6b5d2f501365fac5f45fff4d5f4eeef5da6c93f654edb93cbca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"gurdianEmail\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3347
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3347,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c7218bc3ed3aa932e95e77a08762768044a657b6dc5a4b42b885ffe985938bc9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3503
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3503,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e5680bc816b8b2ca3e2cff198df89d7bf2a6c1806a598bd07bc5dd9c3559e05",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"childAge\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3605
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3605,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f3432da16768b2bfd1b28ee6dad627daa427473995cb9f8846c3e89164b4d59",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"visitTime\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3754
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3754,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5a14178f2c260c1d6f2aca40a62be219988985eb8bdafd388f22ceb708425952",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3861
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3861,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "267c5ecd617acf458df4b82f2fd3ff532a8dcc6eacd1438a6f9ddfe9728f8795",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"message\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4014
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4014,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ada31fd0af39ad17c33a774ce2c729dd907b961de600971c66e485e1d6acd221",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"status\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4198
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4198,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "807af3a15287894ce4d341bffd706a4b97e5e8b49e080f3a4cfb3542cbc37412",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"updationDate\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4308
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4308,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "db46df327c4811910bc2999e07d9b9806e56104907c1e277027b93ce17fc2b7a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"officeRemark\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            4470
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 4470,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/admin\/visitor-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f7ae837adc621ecc0a024e5b277d3ab55a80561e3e50d4abe853e50ddd2e4b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"feacturePic\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            3140
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 3140,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a18fb9114d72496b375c67a81fac4809218db89a9856a0eb7d620004edac0763",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"className\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            3183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 3183,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70b5ac3f853830635b4c4fea6b61136805fde1ddeb99563c439f285e52161973",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"className\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            3415
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 3415,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70b5ac3f853830635b4c4fea6b61136805fde1ddeb99563c439f285e52161973",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            3738
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 3738,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "83370b7aaba95f0a446646a1e7513f12f4df236180426e7fb69acede690b5af1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3952
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3952,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dab34dbf723a45a917ce306360dde9bf3641171c72d7a5d9dfd2c26ce0f99887",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ageGroup\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            4566
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 4566,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8f9724b2845f3def13b1843c9cf8beec3dccc80c133ab570bde0213fed9a835",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classTiming\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            4989
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 4989,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bcb34be1081af32facbc386d38390d56f6c780d8a651378520a68c97ce0a9584",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"capacity\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            5419
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 5419,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/classes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70e5ced85b96307ec86ae9ed022769103085fbb384a886cb65495f3298811dca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data[\"PageDescription\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2823
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2823,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af4281925b14a6288996204381925c6ed7a49a1479d6fb09f99802918b8cf712",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data[\"Email\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            3298
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 3298,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715c7befa25ae442b88aae37dc7f465ff5a0ffcb7fc1e2fa9c5d69f90f554ff7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            3759
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 3759,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82990cf81a958c22a05503cfbc2da03d1a2845f27ba4ace1d249c2807eb6ae8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mname",
+            "$pmobno",
+            "$pemail",
+            "$cname",
+            "$agegroup",
+            "$erollprogram",
+            "$message"
+        ],
+        "source_line": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "source_column": [
+            75,
+            105,
+            135,
+            167,
+            199,
+            224,
+            255,
+            294
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 375,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/enrollment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8be4fed0f70167c3a47c66e0d34dfc671d35e7b354763fb7e777a61fd42b46be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$gname",
+            "$emailid",
+            "$cname",
+            "$cage",
+            "$message",
+            "$vtime"
+        ],
+        "source_line": [
+            3,
+            4,
+            5,
+            6,
+            8,
+            7
+        ],
+        "source_column": [
+            75,
+            100,
+            129,
+            154,
+            210,
+            181
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 250,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ace0b849da4e33222e243ef31c3e23a57d693f29fa06a829099c3a55b55f5a01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"feacturePic\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            7941
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 7941,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e82ecb4085c85fbb48ea7f38062c1aa6203bc4e6999960716ffde78a4fb00d61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"className\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            7984
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 7984,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e57464a4110bd76b635bc74676730c98ba34ab281b8cbb46449fe83b41ccc60b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"className\"]"
+        ],
+        "source_line": [
+            166
+        ],
+        "source_column": [
+            8216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 166,
+        "sink_column": 8216,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e57464a4110bd76b635bc74676730c98ba34ab281b8cbb46449fe83b41ccc60b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teacherPic\"]"
+        ],
+        "source_line": [
+            169
+        ],
+        "source_column": [
+            8539
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 169,
+        "sink_column": 8539,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f4729cfc0efb44b9ab6b91f36a66960d5eb00b1843413c0975ca19a33a0de63d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            171
+        ],
+        "source_column": [
+            8753
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 171,
+        "sink_column": 8753,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21cee1932562dcb35c713d37ebde239b9e5dbf8d6191a00054e23cac5df28fd6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ageGroup\"]"
+        ],
+        "source_line": [
+            181
+        ],
+        "source_column": [
+            9367
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 181,
+        "sink_column": 9367,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "644b596a9ca78e06528ff2fff2fd072a407cda74ce73881b7c6675b2c82d7564",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"classTiming\"]"
+        ],
+        "source_line": [
+            187
+        ],
+        "source_column": [
+            9790
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 187,
+        "sink_column": 9790,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0b33da65fbf228994870060983dcd221684be97dbf91cebea5813fcf635310e2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"capacity\"]"
+        ],
+        "source_line": [
+            193
+        ],
+        "source_column": [
+            10220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 193,
+        "sink_column": 10220,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "99907b6865ef3b6ac0abb2e65886908744cb2c78d315ddb6a2d06f90e3b9fcc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teacherPic\"]"
+        ],
+        "source_line": [
+            303
+        ],
+        "source_column": [
+            15967
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 303,
+        "sink_column": 15967,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7b70ccaa03158d3d73e2bdd92639a6be77df88d43dcf81c586c380a852eb5dbd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            305
+        ],
+        "source_column": [
+            16098
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 305,
+        "sink_column": 16098,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e346355e511d08d5e77c0dd4ed0deb9b5738a0c3027d0961a957514f75a9d09",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teacherSubject\"]"
+        ],
+        "source_line": [
+            306
+        ],
+        "source_column": [
+            16169
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 306,
+        "sink_column": 16169,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "337926917641834b42eb2cef1e0324c40aacc36090b2aed9ce8936a15da55f58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$gname",
+            "$emailid",
+            "$cname",
+            "$cage",
+            "$message",
+            "$vtime"
+        ],
+        "source_line": [
+            3,
+            4,
+            5,
+            6,
+            8,
+            7
+        ],
+        "source_column": [
+            75,
+            100,
+            129,
+            154,
+            210,
+            181
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/visit.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/visit.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/visit.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/visit.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/visit.php",
+            "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/visit.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 250,
+        "sink_file": "\/home\/kali\/Downloads\/52.Pre-School-Enrollment-System\/preschool\/visit.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2f1f8b30ebe474e0d0a8082e63af71c5b4baed077c1d32d45c03338d590cc233",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2785
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2785,
+        "sink_file": "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9a9c24891cf95dc9812a21be57fb0d6c37c35a04f2965f9e41447cfe4b73721",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3215
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3215,
+        "sink_file": "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cf78d041a2c1775d84102fea0d9ee1ba6b49c6364b6ede0738eaf8a527906692",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1873
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/pass-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 1999,
+        "sink_file": "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/pass-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8c7e9f34e6c23092454f549a3a8715204a0cae0f75e053c067655189afa5f9e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            1901
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/pass-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 2022,
+        "sink_file": "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/pass-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a49ac71a63ebe66b866e05c646ba83d96de0281336a232ce6f60668ae48673b5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2421
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/search-pass.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2505,
+        "sink_file": "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/admin\/search-pass.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a4d8f7d2904626e6f389c3e19b7abbadd8f76efeadd143c749568a94baa173fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2083
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/download-pass.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 2182,
+        "sink_file": "\/home\/kali\/Downloads\/53.Rail-Pass-Management-System\/rpms\/download-pass.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25f5d782a8f4191c349b571d50a5abefdc9237e7a95d05d9f4fd67bf7bc5dd9c",
+        "vuln_type": "taint-style"
+    }
+]

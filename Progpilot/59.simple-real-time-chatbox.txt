@@ -1,0 +1,244 @@
+[
+    {
+        "source_name": [
+            "$row[\"msg\"]"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            370
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/chat.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 18,
+        "sink_column": 370,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/chat.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fab6a2b7b7445f4006d0e2b4e4096aefe7b956863e0e4dbf5a023fec5e1d3e8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"msg\"]"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            578
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/chat.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 26,
+        "sink_column": 578,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/chat.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fab6a2b7b7445f4006d0e2b4e4096aefe7b956863e0e4dbf5a023fec5e1d3e8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"msg\"]"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            934
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/design.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 934,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/design.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f946ee5eb7d2da1c5c44eb12865a4cd2a1886d66b7b271f3ccfd665bc0b1d626",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"msg\"]"
+        ],
+        "source_line": [
+            42
+        ],
+        "source_column": [
+            1143
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/design.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 42,
+        "sink_column": 1143,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/design.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f946ee5eb7d2da1c5c44eb12865a4cd2a1886d66b7b271f3ccfd665bc0b1d626",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            33
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/insert.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 4,
+        "sink_column": 33,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/insert.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "996665a999f1e05922ca0540f9bbff5bb369a7bb84cc8f67dbd6e39c3e09e6aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$msg"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            61
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/insert.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 5,
+        "sink_column": 61,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/insert.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3078d2a528946dcf925ed94e9002521b1bc339316c914dcd53c9391e8538e514",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$insert"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            108
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/insert.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 11,
+        "sink_column": 184,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/insert.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "03af0e654ee3e19233102c2edf5f812455f2ea9e78f5274356e8e3f591e82eba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2714
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/login.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 67,
+        "sink_column": 2804,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "36a70f653f56abce8edffb4134b26a562aa5769e9a3af159eefe8a95cb69607a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query2"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2890
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/login.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 74,
+        "sink_column": 2993,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "30927788ca3d1a2a38d04f7c84164e02b2ef999c347427a8fe8c660b0325b55a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sql"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            2169
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/register.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 53,
+        "sink_column": 2241,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/register.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0aedbf2e7ad9b82afcbfe1a82586ef302de8ed256537399aeaac55b63cf4940e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sql"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            2169
+        ],
+        "source_file": [
+            "\/home\/kali\/59.simple-real-time-chatbox\/chat\/register.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2333,
+        "sink_file": "\/home\/kali\/59.simple-real-time-chatbox\/chat\/register.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "577971b1eb687f67515982a29cf4faf1e4dcc18a933b3360fc660c10eeba4e88",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,2830 @@
+[
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3298
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3298,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d6e8dc0156a85838ad57f10e123dc2caba2c704ab2a68b14bd87f00ab470a608",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3362
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3362,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c026ddfff5c3f20eeee908b53615be22aff9e4ea1e03de948070948618c6e7e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3425
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3425,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e91ae6817f5a67608455c59a12ed4859f22df963d1214b8082125578a9ce43a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3486
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3486,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b1e4b5715fc438cc612d0b93c2b9823438425c671ad1e2fb4ad603ec5ce04c5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3551
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3551,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c9d8f728c1c7288611dd26ca76b82da68df23269c54a98e4cfc3e51d884f9bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3614
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3614,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0575cc854450de7d0084e90f60d3ddcf91b61a5324026175ea37fa4d172199dd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingDate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3680
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3680,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3603759fd1ba796c010b22568eb0bb8d445603317e635dd3fb740eebd82694ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingTime\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3716
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3716,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a38ed9ccf06b4ae34c527022d7aafdd84441dcee859748e70ccfeb6b1b672b20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3782
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3782,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f0aaf22322ab77f24b8b3b786663c5d8476bd81a0f07ae94a705dbc828c6423e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3888
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3888,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/accepted-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31961c3c5341b364a917abaf6204cd5fea857180ced4a69c547c92e89219facd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            11,
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            241,
+            278,
+            333,
+            306
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/add-subadmin.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/add-subadmin.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 427,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/add-subadmin.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "712ed961af76f20ef78f1e93786d684e70b42d7f826077952452e4236941a472",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tno"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            267
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/add-table.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 327,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/add-table.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7c100ae287fdd43eb7734a89c099233277f05854a68826f7e6186a5ea4c86b45",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3250
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3250,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8b3b87dfb9a99cf9e780068caad4a0da0619f2b159726dda3dc9a17dc639ec6d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3314
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3314,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f1922745d7cc0d674ed9251d8e882e94ba8c8139d0be3bfff3453e554d2a127c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3377
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3377,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "14c2a4ad7d2be122abd26b420964a4ad5c62180b7a0333690b514e9f6c2f5590",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3438
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3438,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a36776235fff3de7861902a7f1ee9632bbdbbb8744d13f68437f7067456ac56e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3503
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3503,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7d5072ba9225d96185a31ed9bd7fe9480e76842969b389b899977b22ee05e79b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3566
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3566,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "91227c52ec41bd36a363afac9a9ab75167aa5137f89a2a2fdf3b0ea4dea399e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingDate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3632
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3632,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a03b46a4df808889ec46e074ea32c75edffe3c5c9701545ed5ce25c66a1b31bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingTime\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3668
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3668,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "886e98b0b13b21474d132679017fc47f6f92b2f3a3c739c70b39191b00160dee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3734
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3734,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49bf45be48c9cb88c30a8e83e690718243ad340310e97fb025356c6b938364a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3840
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3840,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/all-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ecdc12e786cddcafb51e5fd6603f6dfab7a00ced8a8f3aa331aff528481782d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tbaleid",
+            "$bdate"
+        ],
+        "source_line": [
+            16,
+            17
+        ],
+        "source_column": [
+            363,
+            390
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 520,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "da50b664ce23dceda5c8251c075b77887b4b3d2e345e84428105054639f745f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$oremark",
+            "$estatus",
+            "$tbaleid"
+        ],
+        "source_line": [
+            15,
+            14,
+            16
+        ],
+        "source_column": [
+            328,
+            300,
+            363
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 26,
+        "sink_column": 980,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f6a279d7dc7d8f721f945937aec6309813735c31a2b58db37045f43beb1fd8fa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3988
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3988,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5d534f5c6c53a0291fbfd16a73fe7672cc2343d696234db01ac215e3a82a26c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4137
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4137,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c3a9a45ad203d64e385eee9b09002f57a43a7d756ef4a6029d73ba3f1ad93cb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4239
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4239,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "823a3ff388cfe7f1d8e87bd0188db170d92e103bc4828252c722f26643403274",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            4391
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 4391,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78d25ead6d113924d9b00678198b57c443fde0aa5d84a92ece8bdd9a6555a5f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            4500
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 4500,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e95ee8fd6420b53bf9deb9482080140baa79007ee8e119b0b2bb6004fb34255",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4654
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4654,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "938d19a7dd186998d5398c887e503a31d0d579a2befe8859c84ec8731d4b9440",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$date"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            4768
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 4768,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f700c2beff59c6c9f45a885b07d69fd0d8451ba2650c28d1659717bdf07eb22",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$btime"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            4810
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 4810,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4dfb362c6f197af982b09ae0ad5d5236999c3f3b74ab9ca50cca965e491ce3b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4983
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 4983,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d11c70495779e803640cbf6fd7b59999fec88f0834d14bd271bf1b1e79672c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$date"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            4768
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 203,
+        "sink_column": 6967,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f700c2beff59c6c9f45a885b07d69fd0d8451ba2650c28d1659717bdf07eb22",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$btime"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            4810
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 204,
+        "sink_column": 7043,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4dfb362c6f197af982b09ae0ad5d5236999c3f3b74ab9ca50cca965e491ce3b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            210
+        ],
+        "source_column": [
+            7342
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 210,
+        "sink_column": 7342,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c8770b5ef2b2cc3a6eeaeec32096a7cbeceb570f92340f687a94702e9e36452",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"tableNumber\"]"
+        ],
+        "source_line": [
+            210
+        ],
+        "source_column": [
+            7368
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 210,
+        "sink_column": 7368,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c93a84bd83059c5d50d8168d5bd94b493de681353d2d336a15d4f6c438fa9289",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"boookingStatus\"]"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            5187
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 5187,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "386b1bf4fc20fab9249b45502ffe37cad5e461ea73bdca450d95fd48c49394da",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"updationDate\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            5300
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 5300,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7d428eb60d88858a3680e0406328bfe5f66e3592819e3e390e35e5bef3d7bca0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"adminremark\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            5454
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 5454,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c15a19937283773546245101be11e93ac0c4bf0fa108ee235eb2cd779eed7b28",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            47,
+            48
+        ],
+        "source_column": [
+            1603,
+            1640
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 96,
+        "sink_column": 3283,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a276f6693cd201fc067935639ba0bab4a9df57b77ef29971f1393dd157ec487f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3547
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3547,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bfe62697ac6b7cd52cd13d9cab0820e3da7315b7d6e3a737ef279344986c142e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3611
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3611,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "50e7b96a4cda960b651ed2ce992c81bd4743c54059317c05e97ae8b2d98c3c4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3674
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3674,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3b0aaa7d4e0a3359a8e92e49595866debf9db57f7418694965e2c6bc5a7b10ff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3735
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3735,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d43a0f116416ba2d2a540554bc48aeab35a0fe77165945c2e0f1dbba1c9f7e34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3800
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3800,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c05ad20a670b000f379d0838de48c2fe8b00c3a43c4984f56464fe59f8948672",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3863
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3863,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5c4b8355bf81f2ebb907a5075ce0598f258f720bbf1bf2d415935379ba1abc2a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingDate\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3929
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3929,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01d13bc7d0bc065ed58418920d326ba111036e9269e7750ad9c91a07c542abb8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingTime\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3965
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3965,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e41b3db7c6f2b523f8c4ce66c559b4a8a108d4618b030f7785000a68dc96acf8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4031
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4031,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cf9673b782c73bb5b134757e7dedcef31e884a9e170d16a492978efc5926e733",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4137
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4137,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/bwdates-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f74cbf9e4595e814a8ac79cfbe0ef48aa83a61f07782bc6bddf3ae8ad08366bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            109
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 144,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8001f484c837d317949f01496bef116c3d3638afcfc6188faee48a386ef34ea0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            252,
+            307,
+            280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c50371387a14364ea3e69143d90931fe73e19324b992e0e2802f48ea642d244c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3357
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3357,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "950c353b1b0b4134f7db2c91bfe97a75343b9a8f1cf124ab08232bbfadd5303e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3662
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3662,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "74a6e2e7c30abf46a677de7013d3bd26e35db6577bfdd629637724223f71c30c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            4052
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 4052,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "27030995e7df36508ecef35e1c92871ee378e3e1217d271ddcffeae3cde21574",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4448
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4448,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/edit-subadmin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "627d8e45c8a95dfcbc64a37a1bda8254259785d4fb7d739a0f34a5320e3b1d6c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            91
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 168,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "35353e1d8805fbe21775b410f04b3413926310eb1bfff02cd94c3c81d553171d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3596
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3596,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "030ae5a240fbce1ed16f6237818d52f64fbddf672659c503de254b656d9cb0a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3664
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3664,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c8f262d055d123bc2fdcf6b144876073e5df877fdcf1e3b98afcbd08ac51ab3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3727
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3727,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9f224ee082dd0ce090dab4a9b9f0c29510f3067ae3b26c9be37eaeed0834fd8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3787
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3787,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "048d927e52aaf55124fae2af833c060f8c1fba0b61b35ca9871a8b9e5fab1430",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3854
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3854,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e46c1cbce8b75d4cd345b12dfbc70cf925539a333d2f58eaa2b81b677e762ce1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3960
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3960,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77d500082920303da924b1fe87d06ed6d60d7901c555e5cb83aec800a249d188",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4128,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77d500082920303da924b1fe87d06ed6d60d7901c555e5cb83aec800a249d188",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4370
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4370,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-subadmins.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77d500082920303da924b1fe87d06ed6d60d7901c555e5cb83aec800a249d188",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"tableNumber\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3614
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3614,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0455035e6f2d8900888ae43fd48ef6e13c7885fede9ff1164e4495498cc4a3ff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3680
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3680,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4781ce580428be0e43f2b41e387f152948f983b3a752814785ffb95f966d36cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"creationDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3743
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3743,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3bb23cbdf736f2326c71e3b4b3bdc0e8c173c7f30e995d470769d8d3f7b135ee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"tid\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3864
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3864,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/manage-tables.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d02adc02781127190cff6bb1dd8b1d4ed4fa76d0ca0462e4bf2561a94438b02e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3301
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3301,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1d5724d1c80f984a66bb8889de4eed275ed2418694801e94389c3ed9e620bfc5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3365
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3365,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "28d828730fb641111b43bc2ed59dd3ce6c1b36fed9c1d5fe7c3fc8cf41162ccc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3428
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3428,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2a50da358dfd75dab0c809887927a7bb8d6ba6bf7eb66f16ae4cd0edcd9bdd23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3489
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3489,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "472073f3c0fa6640113cde188c5d5acccef65b6001af59d623a5427ca3ff474a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3554
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3554,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8f2bcdca336fe36183b45158823c2058c07ca756f9485b5b40ac9cc7b0e168b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3617
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3617,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf4563ba23f6b3213a66cf7ad546ff12ad5eaf886240f14ca0a197f8b35ac75d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingDate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3683
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3683,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e87b19395de0be526cc395b07ac43a0b8b7c0f98ddb9cbb48a4600ae0c5320db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingTime\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3719
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3719,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b79d0fb30b88f7a15b605ba4121dceaea25fb519bfb1e1a54d5d88bc0ee188d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3785
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3785,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a0de5d7c16ce9b8e0adbcad5616d3443a9c8f5f27c047905561f6157c1c0ae5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3891
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3891,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/new-bookigs.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a48f74805d9fbf0c162d9b9040fcd4105b58eba18a84e132a47a49ab3f79c05",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/password-recovery.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 205,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d2e31c895d1e748578e48c89887b80f1d4b98f917e088951895efa6ec815f93e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname",
+            "$mobile"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            100,
+            128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/password-recovery.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 372,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d2e31c895d1e748578e48c89887b80f1d4b98f917e088951895efa6ec815f93e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobileno",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            14,
+            13
+        ],
+        "source_column": [
+            252,
+            307,
+            280
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 385,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d76059f540396d1ac5cfd0e7c9ce5246b96b8d8e82d60436d89d5e6810f2dd8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3292
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3292,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "44d0b9f1ecce73ad03bac9a7f1899e5a44740635bdb408626301fefaf858b83a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3594
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3594,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "03a65f1cd79a597f29f1d114a6393796a1f4788e77f8deabd7cce84abc556001",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Email\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3981
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3981,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af811df0d5cb564e781cad2c258bba86a4bba5ae01e7899eefd7e23c92f7d5c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4389
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4389,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc624409dd31545e2e6542f7d203050bef218fc6639595a110e10eec8e8a46c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4708
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4708,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1dd6362a4748f3c5b55c156eb070337bf252508cde90fe71e007513b26eeb420",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3298
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3298,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7daf4e10f3d920586e75e52585c06c68190eae1fef592ad7ce6460150803b570",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3362
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3362,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "452e79b7762e6e979de06943edca27215ff29cbcf3da15169a7b21091b36cc8f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3425
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3425,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "36362f7618a61fe6add8e1bb1d5ba661b66a4a0ae25cab121e76a38307fb5ce6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3486
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3486,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c07df198e4e362c7300c9a5e9f308262007886cd903120d48f1c701fd3dcbdf0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3551
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3551,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a93e0cfb069d8abac7a88c622a170f7a2117c157108414fb6b87a07c8909bb41",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3614
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3614,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d01b113b701037b5bcac8e9b905375df46b9d79ff79754b09ef6fadeb7956582",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingDate\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3680
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3680,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0ef48e3f4c609651b87c46957e94456bcf44479b15cf33bdff85544098ead5c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingTime\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3716
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3716,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "149175c4b111ca898706194c091fb6235bdcc9eded9f5a06800e8f1dc593531a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3782
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3782,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77d5feefca5419c3a17912e64291fba092534f0f4397cf5599c4b465cd5c80ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3888
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3888,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/admin\/rejected-bookings.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7346f73f45e96d86307bc7da85e473dc15a8ea19445080d486e3ab5faac8bd6f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2284,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d19b589646bde573a536f4633fa0c366c653d4b5dffe383d1584922f9c90365",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2433
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2433,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aaae757860c47044363cb91c4fe0efa2547ac378355e6855da42182e6ee286f2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2535
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2535,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "df275a694cd3cb4ff7c8b79b2c0f679ee04bbd5b47784025e9e00d5b20064d2a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2687
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2687,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8aadda55aa859f6009be7abd81dccaf311ebb4b465736560d41d95edfcd82036",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2796
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2796,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d5e58bd89e8531ba784f4d45e7d216b867305c6b748fae4d5d998cd12cccdac8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2950
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2950,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9bca504f42800a1f0af6957edf14a0fdf144ad58057ed6cc0db2b3136e14edc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$date"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3064,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7d8c98a4b1765ae99c7fa848b900d010c80984f654c2d4aec3b4db2667ccd1b4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$btime"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3106
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3106,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7457706227682ad480490738007930de1a38e00725f164748ec4e78c9d5adf11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3279,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee21ba3f1a7f9ba75002dfbf912362661d8e38a020548f61ba6c0c8fc1bfe18e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"boookingStatus\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3483
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3483,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "33289a15045f48ceb0ff325b4b86b358bed284c0f955d7ed896d5a0998e12a8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"updationDate\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3596
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3596,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac8b76512f57737858d0402a7d322b0cdf40626234f456e684f30180bdda015d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"adminremark\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3750
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3750,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/booking-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30909c64fb239e9dcb2e84d975d3282a221e4e8618a2a1d58f7f5e83d08ee3f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$emailid",
+            "$phonenumber",
+            "$bookingdate",
+            "$bookingtime",
+            "$noadults",
+            "$nochildrens"
+        ],
+        "source_line": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "source_column": [
+            84,
+            108,
+            135,
+            172,
+            209,
+            246,
+            277
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 380,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/check-status.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "54bd524a10be3af359d9ec0dd09c4c8097c22857cf856aad56385d0345121ec0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$emailid",
+            "$phonenumber",
+            "$bookingdate",
+            "$bookingtime",
+            "$noadults",
+            "$nochildrens"
+        ],
+        "source_line": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "source_column": [
+            84,
+            108,
+            135,
+            172,
+            209,
+            246,
+            277
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php",
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 380,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bb3150d7e59e6f2b9941926c980ce31d1cc4957f0b75870669b062fff4d234bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"searchdata\"]"
+        ],
+        "source_line": [
+            39
+        ],
+        "source_column": [
+            1338
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 1338,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d3710de2e526bf8cdbef0b614b28b4b788e47275294ae8ec3aa368eb56849567",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2481
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 79,
+        "sink_column": 2520,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c73e798ea7eb0fa3de0504d034c4dcbffea0fe660bf38b997a1305b3233c9361",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingNo\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2799
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2799,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b0773b6bf0c924e34b4c9ffa346b220f381bbf8f6232010ba2b7c6e9c6c83170",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"fullName\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2863
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2863,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cd7bd0c22c6f4fb243cf4fc90c4280beb4682295f783c4f3384b99d3a0f5a900",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"emailId\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2926
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2926,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d85f357a3600019b2028b13ac1fdb73a8da2b7875b31bd373bf2a28cda50dfe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"phoneNumber\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2987,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cfdb1f95c92ee659762c1fdb57dc55c9ae40615a5fec196044081c9fd92c924b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noAdults\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            3052
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 3052,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2ba4f00b0dc0abea844d7fd623d7931f6a48bbf729f715b175ed40f54e0c9d06",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"noChildrens\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            3115
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 3115,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "655f48ec314cdad008b67df6d3649b409436f505ef5470d13c8a4c25db840174",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingDate\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3181
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3181,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0fcc8157a2ddaf7d28022eda631fbadf7267af07563623d5048d31eef7878b46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"bookingTime\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3217,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "783fa8d86a1506117059a20c2406686e6dbabf426a47cecd4502392b321cc8aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3283
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3283,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd2bd0969ed092885753c319b549ce94ccf4b98ff8414142cdf807e288f5dd22",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3389
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3389,
+        "sink_file": "\/home\/kali\/Downloads\/54.Restaurant-Table-Booking-System\/rtbs\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f36868791ff783bf9e63ca9735e748b18f8d26eb40e5f22fb48dde00c4da119",
+        "vuln_type": "taint-style"
+    }
+]

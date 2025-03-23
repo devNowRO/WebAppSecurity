@@ -1,0 +1,24 @@
+[
+    {
+        "source_name": [
+            "$outputContents"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2501
+        ],
+        "source_file": [
+            "\/home\/kali\/65.leads-management-system\/libs\/phpqrcode\/tools\/merge.php"
+        ],
+        "sink_name": "file_put_contents",
+        "sink_line": 68,
+        "sink_column": 2544,
+        "sink_file": "\/home\/kali\/65.leads-management-system\/libs\/phpqrcode\/tools\/merge.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "790a86df304886b078b1a528c4534d7c9783ac0cc57bac6b7163796027a769d5",
+        "vuln_type": "taint-style"
+    }
+]

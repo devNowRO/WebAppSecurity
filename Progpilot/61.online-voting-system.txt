@@ -1,0 +1,1356 @@
+[
+    {
+        "source_name": [
+            "$file[0]",
+            "$file[1]"
+        ],
+        "source_line": [
+            51,
+            51
+        ],
+        "source_column": [
+            1316,
+            1378
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/admin_class.php",
+            "\/home\/kali\/61.online-voting-system\/admin_class.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 51,
+        "sink_column": 1237,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5e6e79b9b3f66c95a9408f80c95361ec7049675e6e23511b4cdc805bed11c574",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$data",
+            "$data"
+        ],
+        "source_line": [
+            62,
+            64
+        ],
+        "source_column": [
+            1849,
+            1897
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/admin_class.php",
+            "\/home\/kali\/61.online-voting-system\/admin_class.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 66,
+        "sink_column": 1943,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/admin_class.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f858201a8adf13144df482aa0725fbc0298cf1038bbfdaffaf0843b42293492c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$path"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            4748
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/admin_class.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 170,
+        "sink_column": 4871,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/admin_class.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "522fc9f4b4c7fe654ea66671a39fb79fec97b53e85d81c50f8475a4e92a0fc34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$path"
+        ],
+        "source_line": [
+            186
+        ],
+        "source_column": [
+            5209
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/admin_class.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 189,
+        "sink_column": 5397,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/admin_class.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "522fc9f4b4c7fe654ea66671a39fb79fec97b53e85d81c50f8475a4e92a0fc34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$path"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            4748
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/admin_class.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 170,
+        "sink_column": 4871,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/admin_class.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "6472e87284af297b470e08efd423f53600e9905c6b07f2b738d11c0b029a26a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$path"
+        ],
+        "source_line": [
+            186
+        ],
+        "source_column": [
+            5209
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/admin_class.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 189,
+        "sink_column": 5397,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/admin_class.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "6472e87284af297b470e08efd423f53600e9905c6b07f2b738d11c0b029a26a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1616
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 1616,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e6ae1363fa4e43b4e0aad38dad3445505d0a0b3d62dac64d1af1278d02af5fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1769
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 1769,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c7df8f5b05f2b61cb182d6ff0cc90eb8442ee242f7f6a97efb0ec79eb5484845",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1806
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 1806,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e6ae1363fa4e43b4e0aad38dad3445505d0a0b3d62dac64d1af1278d02af5fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1935
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 1935,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c7df8f5b05f2b61cb182d6ff0cc90eb8442ee242f7f6a97efb0ec79eb5484845",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$path[\"id\"]",
+            "$path[\"name\"]"
+        ],
+        "source_line": [
+            63,
+            63
+        ],
+        "source_column": [
+            1624,
+            1642
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php",
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 1549,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f38b53b68f336b75892da65d2df1a3c61827b37a3274c9f964b3ff9068d10db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            2811
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 2811,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32317019b8848ddfc7539ec3377ba7e5fc8d8f0eae83b47292254a34bd63f7b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            2946
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 2946,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ebbf0ec502eeb68836778b15f1f8fdf62fe2019f27373d5f1b57bec74476617",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4273
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4273,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32317019b8848ddfc7539ec3377ba7e5fc8d8f0eae83b47292254a34bd63f7b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4508
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4508,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ebbf0ec502eeb68836778b15f1f8fdf62fe2019f27373d5f1b57bec74476617",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4545
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4545,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32317019b8848ddfc7539ec3377ba7e5fc8d8f0eae83b47292254a34bd63f7b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"file_type\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4582
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4582,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d676ffe786c2cd11aef2737b38e51132e669070e5aa085e6b72dfdb0ef88d1eb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"description\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            4791
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/files.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 4791,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/files.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "98be10a39fff5eb5bbb9bcc47e9124a87b13c4b2664eb35c4c59886739de0979",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            3519
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/home.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 3519,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/home.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e8eca4a02c95e8c3e4f2fb4313744953930bbb6687f283372a29c394efd1a5b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"vid\"]"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            157
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_catset.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 4,
+        "sink_column": 157,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_catset.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d64a3f22c4de96e142ae4abb4c2a10c3f0943b6a780af0bc782ca4190f828872",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"cid\"]"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            237
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_catset.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 5,
+        "sink_column": 237,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_catset.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e9b58b4947c5746539aba9a591b1d807a9a722d4264670aefd306ce15b6bf45",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            308
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_catset.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 6,
+        "sink_column": 308,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_catset.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eb3ff2127a9d0dcec77db6f5bfa6a1aaa7dc83386bce7a28ebe2e2bdfda840c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            378
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_catset.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 7,
+        "sink_column": 378,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_catset.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eb3ff2127a9d0dcec77db6f5bfa6a1aaa7dc83386bce7a28ebe2e2bdfda840c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"max\"]"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            587
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_catset.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 10,
+        "sink_column": 587,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_catset.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a36afd8b3bd6754776122a88387d3ab5a94fa98db4c25381466b54978b02b11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_opt.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 4,
+        "sink_column": 75,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_opt.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c26378886ddaff8f9968f0d0b23c5a2592f2aad1e138fb69a1a2efc4f4fcca50",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"vid\"]"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            374
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_opt.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 13,
+        "sink_column": 374,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_opt.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fdf4bc900f56e008befd7f32974418a4e77a52ebae4d8392a5e803b34b7a8f8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            806
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_opt.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 22,
+        "sink_column": 806,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_opt.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82a2b8d3ff8c8535c365e88ba3e2ea2713eed7b21b9df3553b0001195459187f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            913
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_opt.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 22,
+        "sink_column": 913,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_opt.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "73fc67bf7fbfd76bd47f844fc2777bafe03ec092d04c5af6ef5cd6c1ab75e234",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            115
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_user.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 4,
+        "sink_column": 69,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_user.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "49613509ff2351af5a6a49b250f50244af39a0fb2a9faba4dd651ca89b97726f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            105
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 4,
+        "sink_column": 54,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "258b42b54f30da8a4cad1d9168b384b508a9019e05d98c8b782c56778d173310",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            261
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 8,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "258b42b54f30da8a4cad1d9168b384b508a9019e05d98c8b782c56778d173310",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            559
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 18,
+        "sink_column": 493,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "258b42b54f30da8a4cad1d9168b384b508a9019e05d98c8b782c56778d173310",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            1737
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 65,
+        "sink_column": 1626,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "258b42b54f30da8a4cad1d9168b384b508a9019e05d98c8b782c56778d173310",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            1947
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 1947,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9673b93cfcbee46c845662ba470a4ef22861d3a4cf648c45cbbbccbac3a28816",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$set_arr[0][\"id\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2065
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2065,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e752fa59d84d6fb58e6be5c26ae3cf3731b4e1b59bb383e6cdc57fa18cc8142",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2117
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2117,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f03667533c6de326952d008c59084ab6674276db5df5bc5ea6ee0fe478fae2a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2155
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2155,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9673b93cfcbee46c845662ba470a4ef22861d3a4cf648c45cbbbccbac3a28816",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$set_arr[0][\"max_selection\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2197
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2197,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "15b5dd024b6da94f53e289897d24c60d503f5650fdfa82f2a1600961c73a1442",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$set_arr[0][\"max_selection\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            2325
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2325,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "15b5dd024b6da94f53e289897d24c60d503f5650fdfa82f2a1600961c73a1442",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3390
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3390,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31eefc3e434f5465dd2e8b0c50bed25e69122a6df4c0ba1eb1a0f100584b2850",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3515
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3515,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31eefc3e434f5465dd2e8b0c50bed25e69122a6df4c0ba1eb1a0f100584b2850",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3716
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/manage_voting.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3716,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/manage_voting.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31eefc3e434f5465dd2e8b0c50bed25e69122a6df4c0ba1eb1a0f100584b2850",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            871
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 871,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c02cc59c8f9f25dcf06d2f1f2475206a95dcf0b15a55286597723d90a69b4f84",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"username\"]"
+        ],
+        "source_line": [
+            40
+        ],
+        "source_column": [
+            931
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 40,
+        "sink_column": 931,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ace8e2ba5df28e7cde7126cceb88586f2d6c44115a43fab91aa13bfd281d6897",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            50
+        ],
+        "source_column": [
+            1475
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 50,
+        "sink_column": 1475,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "032baddc8b9190860a3d7367d0920349611df316ca1f45ceeb7d164e5bcbf3b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            1647
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1647,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "032baddc8b9190860a3d7367d0920349611df316ca1f45ceeb7d164e5bcbf3b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            1694
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/view_vote.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 1694,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/view_vote.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "735b773f15bb9b978c9fd0bc46cbb403c8d935746e92ef8403ea416a9621ccaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$opt_arr[0][\"image_path\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2041
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/view_vote.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2041,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/view_vote.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7549a0757d8521b59a83b368a9adea2978515c17b8fc7005c805755cf5d6987f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ucwords_return"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2217
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/view_vote.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2217,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/view_vote.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4951e1bb6a54a87e78e66e9f25b27f3d0ee3a1c48d16920d539ea0c70db2407d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2247
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/vote_sheet.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2247,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/vote_sheet.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1314311687e06ea5f311680d1dbfe77ce907fdb436acf90b1609f97a12b7a8ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$set_arr[0][\"max_selection\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2323
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/vote_sheet.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2323,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/vote_sheet.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b137734eb9de90e1f4f418961103084dd2f8ffd752fd120454196b786f99ca78",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2607
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/vote_sheet.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2607,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/vote_sheet.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a65bfbfdacd5fa02ddfa35842bdc1586a7cc01499e5d5d880e5d6997a9cd3574",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$set_arr[0][\"max_selection\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2644
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/vote_sheet.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2644,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/vote_sheet.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b137734eb9de90e1f4f418961103084dd2f8ffd752fd120454196b786f99ca78",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2708
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/vote_sheet.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2708,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/vote_sheet.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1314311687e06ea5f311680d1dbfe77ce907fdb436acf90b1609f97a12b7a8ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2787
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/vote_sheet.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2787,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/vote_sheet.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a65bfbfdacd5fa02ddfa35842bdc1586a7cc01499e5d5d880e5d6997a9cd3574",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            2163
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/voting_list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2163,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/voting_list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f17ec01bcbfe4d67321be28855490f7af9354aca0b0ce923bac761f19860442",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"title\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            2189
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/voting_list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2189,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/voting_list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "968ec380a0499f0d91c04a61dd45f7dde3ce4640852c5b32e2044f9ea0919cdc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"description\"]"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            2249
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/voting_list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2249,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/voting_list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5de70d3388dbbe7fe56d1362071400be412eb86e34c2260475b85d9bb685632a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2747
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/voting_list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2747,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/voting_list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f17ec01bcbfe4d67321be28855490f7af9354aca0b0ce923bac761f19860442",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2873
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/voting_list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2873,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/voting_list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f17ec01bcbfe4d67321be28855490f7af9354aca0b0ce923bac761f19860442",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2561
+        ],
+        "source_file": [
+            "\/home\/kali\/61.online-voting-system\/voting_list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 2561,
+        "sink_file": "\/home\/kali\/61.online-voting-system\/voting_list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f17ec01bcbfe4d67321be28855490f7af9354aca0b0ce923bac761f19860442",
+        "vuln_type": "taint-style"
+    }
+]

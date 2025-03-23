@@ -1,0 +1,3502 @@
+[
+    {
+        "source_name": [
+            "$_GET[\"useruid\"]"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            505
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 17,
+        "sink_column": 500,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "19767f86cd6826a10a12ea78d7f7bf0b5c8e035eda1cb6ea771b1549f45a7cbd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$date"
+        ],
+        "source_line": [
+            41
+        ],
+        "source_column": [
+            1553
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addprod.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 50,
+        "sink_column": 2082,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addprod.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "07ba18e89db9456d61384995f730241b6a64205d556fb6b51df9d32d8fa37cb5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$date"
+        ],
+        "source_line": [
+            39
+        ],
+        "source_column": [
+            1266
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 3345,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c413257848d4bc40b9af4bc5ae79d32e1ae622ec7017ddc45ce9f6dc1cb7a561",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row3[0]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            3739
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 3739,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ccf4d041efac0e0aea9b63988f453eb895f951e0cbeedcfa6b0308727512c25e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row3[1]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            3764
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 3764,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6b10f8fc5d156b7292d66165ef71c2f4656e822c9dadf11fb098f0a83bf501f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[0]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            4484
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 4484,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee4a16f8f805357a1bceebe4760b2096abecf157e195f7a3c33f85f581f8c3fc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[1]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            4508
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 4508,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f21de71b4a0ddb1a2b7195d971234e463bfe2c16e0000fbfeb943d11ecb3dabe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$date"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1065
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1751,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "92827b99932ae8d7df0eec887c19476824a5b57b27d5acd792457f19dfa23b5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row3[0]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2124
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2124,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca21e9dd21dad1cb61a2b87e4271e31bf2bbb3055aa53d3bfcc332b4be7a9414",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row3[1]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2149
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2149,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea911d13387d13a3148f2798c9703d101f773461f66f0ceae4e5866b1b24e2f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row3[2]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2173
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2173,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dcd416bd8e2cce251018a2b1b55e371ba28cd729f07dc6fb01e5a9de346357a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            391
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 512,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d01faef696e99deaf13d83b8839bb188bfc162a9eadf03ff8c703e9635cd6495",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$zz"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            658
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 48,
+        "sink_column": 1382,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "084fcaba9aa6a31346a5c66ee5e0e6c5908c92a623acd607740de4706f8dcc2c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row2[0]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1752
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 1752,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a39d54f458310577a8f1dd1bbddc51513e8bff402830c10e648433236173362e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row2[1]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1777
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 1777,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/addtransacdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f6726d940b3b9994337877751d67d12241034d574a0069c8fb8cbddd9decb1a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"user_id\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2017
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 2009,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "482ee3a73015ae6d738dc8bfc38216f04b4e69b8bdaf52d22ba07d0103c5a13a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fname\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2084
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 2076,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7103baa42629be56a748ced00ad5d20390bd9db6e3bc88893448950e13911b46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"lname\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2149
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2141,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a008d0b25f0e2d4a7d6a9fc6cd98e649b8b9c139c685ad88ba03d9f786578435",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2214
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2206,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1adeda3c809753aaa48e1e4e43066aaa2a74564501b2ac423e5a9853fc73d927",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"username\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2279
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2271,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d74403ad674dd679f678d728c2755b38e48d3bf583dc25afa36ae7e6a9a10dd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"position\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2347
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2339,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8cb55815b32ad823b49c1bbf455ef374a94ecea9e630be88b52ca00b93ca7a91",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"user_id\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            2559
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2451,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "482ee3a73015ae6d738dc8bfc38216f04b4e69b8bdaf52d22ba07d0103c5a13a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            391
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admindetail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 568,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admindetail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "71173e4044fdf43884f0056e937479553273ca8cd5e3610f69607fbf399c9ff9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$i"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            753
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admindetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1389,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admindetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7303f1bd17945d867ad4490762219e7d4d5ccdaa22115af9e8a11f3a292d9dc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            788
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admindetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 1675,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admindetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca6c21dbdabe81c004649b1400dbcb15e188ac2103e3089b5cd94a9de051ecf3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$d"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            824
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admindetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 1964,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admindetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1303a33e3825e533a9bf5d5c7be0e426bacfd2f9782b8a4adf2d78eb757d5be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            863
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/admindetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2253,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/admindetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c2c436cfb56b5219c7e23e49dd70db793fb651216717f72f30514326c372bbca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"cancel\"]"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            281
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/confirm.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 5,
+        "sink_column": 79,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/confirm.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dabb8036897848b6ff83aa223b073df840da5d54727e315008c3a8f4b1e56f23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"confirm\"]"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            503
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/confirm.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 369,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/confirm.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3ddf20df65e87288f19c54035d7688de52163feb39228d0e1159e039086509de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"user_id\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2013
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/customer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 2005,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/customer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea8a4dc2a184b99cba2849806509880ef088e8b0791dd93511ccbaa2cec7a206",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fname\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2079
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/customer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 2071,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/customer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "997ddb403f1afdc8fde25ffed2ed3af5b4cd417cabcfed43c317cb86fb982c9a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"lname\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2143
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/customer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2135,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/customer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c66e2d57b9ca4b15d3659b359cb8eb55006ca92c42b4a7e383e78908222bb0f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2207
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/customer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2199,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/customer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31288df05ce27d00473d3b046d191b44872a6d6f5e8179d2034d00c979460891",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"contact\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2271
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/customer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2263,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/customer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "37fdc9d14f462735f882c17129dac8fe871871d3984a4b2e578715548636a70a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"address\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2337
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/customer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2329,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/customer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f2f77684916061d8942169b2ec3fe126d1895b6f2eab14924518e2c534d3beb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"user_id\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            2573
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/customer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2438,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/customer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea8a4dc2a184b99cba2849806509880ef088e8b0791dd93511ccbaa2cec7a206",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            195
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/deletecustomer.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 299,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/deletecustomer.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "456f64f91c80d9f24d098dc13e94c6d50cfda6517569e9f3be74c19c14c8d9db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            194
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/deleteproduct.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 297,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/deleteproduct.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a4fc80c645a1ec27bf01a4686597a34051ee0749aedc846a1b889d1d68aaec9c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            194
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/deletetransac.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 296,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/deletetransac.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1cc8c679c4519d4ab2821be98ebf36b988271e53eaa684a9ca03edae7b9db4e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"transac_code\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            2200
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 2070,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84acec5cdbbaf2cbd6b45bb3c06fd4523dfb6fb7064f3e616251718936466fbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            2298
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 2290,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a125377e06112109795e1efe6846fdda5175a28113abf83fc4f5417f87f59d54",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"date\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            2362
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 2354,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c1c3a04ff830a3fc6f4dd3b34b87d9ca5adc73ceb350755c7ecabe1d0d7e9aad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"delivery_date\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2427
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 2419,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf2823067fbb512604469e310840830ebfd0795dd99d40eb21ac6ce5997ccadd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"totalprice\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2500
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 2492,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58d2c2bba460d53e36d6cde80360b1399b760259683af30490a5181189d3e7b3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"status\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2570
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2562,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e5137f0f2145194ad62e4873009993d087beb4a04739211d13ec109d189291b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"transac_code\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2905
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2905,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84acec5cdbbaf2cbd6b45bb3c06fd4523dfb6fb7064f3e616251718936466fbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"transac_code\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            3149
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 3149,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84acec5cdbbaf2cbd6b45bb3c06fd4523dfb6fb7064f3e616251718936466fbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"transac_code\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            3502
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 3502,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84acec5cdbbaf2cbd6b45bb3c06fd4523dfb6fb7064f3e616251718936466fbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"transac_code\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            3858
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 3858,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84acec5cdbbaf2cbd6b45bb3c06fd4523dfb6fb7064f3e616251718936466fbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            188
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 435,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9e5adda0e319b6a8ebc12dd43d2d6f15914bb8de100b711641401d4c878a54d9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cd"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            748
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 30,
+        "sink_column": 962,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3aff1b86a3ed5682aed291794f39a722cfd03033aff153edf798f2b46d353d1b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            622
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 31,
+        "sink_column": 1010,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "20110891c67760492be7048e7ca086d589b9f24023258af555d0323b1870d38b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$contact"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            660
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 32,
+        "sink_column": 1064,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60cca9e73c2954cb535ede54af2da4e71222d3949ce4ce6f65d8cb413c49194a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$address"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            704
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 33,
+        "sink_column": 1120,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "881f3d7f79ad4b7827527527df8a1f540d09366f3a02fb6c1893e5ab8b5b08c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            50
+        ],
+        "source_column": [
+            1983
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 51,
+        "sink_column": 2206,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9e5adda0e319b6a8ebc12dd43d2d6f15914bb8de100b711641401d4c878a54d9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_name\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2481
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2473,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fcccfe54b8b5d0b07477bc9b4d5f363914c434b486146869ccc29626dbaf6639",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"date\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2574
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2566,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "039344fb5c3d71c3c68bc7d382f8ace50ef246bd0de968ad09b64eb41c4eb3db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"qty\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2638
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2630,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66635dbfbac18e21c1a86be34c09d18c1423b1afba6a5f2a8cecf28f23e3211a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"price\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2708
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2693,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a4deaf33c896cc79fa4ee95dec1afef89b250756259b80cf470dbfd696f28a99",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"total\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2780
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2765,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "962ecee88308377a224d216c2d21331c62e639b86c6d64848be5304811642458",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            3161
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 70,
+        "sink_column": 3290,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9e5adda0e319b6a8ebc12dd43d2d6f15914bb8de100b711641401d4c878a54d9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$zz"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            3436
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 4166,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "190c2a1d28f076c3ea790ae94553fd530d08ea6e8f53c74150a0f7c93f7b0817",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            4426
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/detailtransac.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 100,
+        "sink_column": 4555,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/detailtransac.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9e5adda0e319b6a8ebc12dd43d2d6f15914bb8de100b711641401d4c878a54d9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sqls"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            1985
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 72,
+        "sink_column": 2090,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8746d32bbe1a5c19fc5f57cde397a4059a457c78d5fdd819339af7314422bede",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_code\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2300
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2300,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7abd036ec0d9c55a7278dbe6d25b0a2fffdfc3cc60b067cbfe650017d408cb8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_name\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2435
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2435,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38c7fc2b09d7b7116db7210608bf89519dccb6418e511a8308593807b5b1a27a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"available\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2523
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2523,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "916cc9ba43443290d9b461e9f21f3eb15bc40749e48084f438b85f9c4238532d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"selling_price\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2603
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2603,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "636db0ded4c01d39d40baae4d23ae9f239df052d758f0b506b88d2f8f914b297",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"available\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2812
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2812,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "916cc9ba43443290d9b461e9f21f3eb15bc40749e48084f438b85f9c4238532d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_name\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2922
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2922,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38c7fc2b09d7b7116db7210608bf89519dccb6418e511a8308593807b5b1a27a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"selling_price\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3036
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 3036,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/cakes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "636db0ded4c01d39d40baae4d23ae9f239df052d758f0b506b88d2f8f914b297",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$lname",
+            "$email",
+            "$username"
+        ],
+        "source_line": [
+            6,
+            7,
+            8,
+            12
+        ],
+        "source_column": [
+            79,
+            110,
+            140,
+            241
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 17,
+        "sink_column": 427,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "fdd9af3e66d875d7e3006d879b0dc9ce91f7f15a25fa6fb02b72f1d85ed37e04",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            241
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 26,
+        "sink_column": 803,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "f6837f2905f8214a507df0059ac3964acb3ec92aa5929caf6c2fe65ae941c4f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            140
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 30,
+        "sink_column": 943,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "4b3e54cbb7a045b0159683a665cc71e4d270aa865fec055d11f55e947eac3fbd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$lname",
+            "$email",
+            "$username"
+        ],
+        "source_line": [
+            6,
+            7,
+            8,
+            12
+        ],
+        "source_column": [
+            79,
+            110,
+            140,
+            241
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+            "\/home\/kali\/62.online-cake-shop\/includes\/signup.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 34,
+        "sink_column": 1057,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/includes\/signup.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "fdd9af3e66d875d7e3006d879b0dc9ce91f7f15a25fa6fb02b72f1d85ed37e04",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            421
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/insertcustomer.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 614,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/insertcustomer.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bc0c40883b1f10b2e42e962fb9d9474a95e3f7d83668a63e889db39e558b2adb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            683
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/insertproduct.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 34,
+        "sink_column": 1033,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/insertproduct.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4d3e06699dea6561b39196fc922f4afa599edaef2e7edc9d28448b71c6377374",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            384
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/insertsupplier.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 23,
+        "sink_column": 556,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/insertsupplier.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5e68ed69ea037410bf738698e6ed82feced86de07631acf47ab4fe88aad12e8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            286
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/inserttrans.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 490,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/inserttrans.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "74e06aea050e7b730ade36b73c596c99158de6a1b4dafbf94c6506e271a053ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            413
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/inserttransac.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 612,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/inserttransac.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "071e0e7b1e6b5c6b9ddfeed896e4daf1ce04e4b53a41ed31a27c6a8b336eea60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"detail_id\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            2180
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 2172,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4370b81743511493a318e0ee503e5dde84080b24df12feb20f5f5c60d09a8d1e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"transac_code\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2249
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 2241,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a127cafe173927b4b2e246df60a922c7c29af80a8dc63d06f2c51cb7e6a9d74",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"date\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2342
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 2334,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66f8cc051be0f0247c7e10d7c3701aef4b669dc1ef4c74d2f983314518905d73",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"delivery_date\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2406
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2398,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "244271cc9b1a4a14ab5227db9ff4a3b8fbeafd3cb6107d0988bbb9992098e29c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"totalprice\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2486
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2471,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3f482925c8b2b83f894888fe8b632d21c2125be015438b99c52405271f9c8a2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"status\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2556
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2548,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5033742cddb80db4531df5c330541b7471ddaa1236ef116dd745fdd30f82751e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"remarks\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2622
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2614,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "086c8d6e47d5cbeca328c51411f6ff25058bf2b7b19d8610598d5ff1aba7f33b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"transac_code\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            2816
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2725,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a127cafe173927b4b2e246df60a922c7c29af80a8dc63d06f2c51cb7e6a9d74",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            186
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 449,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "05c8e48a4d2ccfe8a6e54ac7c19475122dbac95eed4f82c46842f097987c44d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cd"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            808
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 1353,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d93adf79339f2a7ea9d01811f1972fb96d7c21389465009294650edc4ff260a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            636
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 1401,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3839ff90ab16fef5d0573636d656ce8cfa56cd254c5bc323fe0d0f3c45d21a5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$contact"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            720
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 1455,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70f82efe0469c08d4c2c39ace6ef6c576da96becc0640d8f6992c7428c836376",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$address"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            764
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 40,
+        "sink_column": 1511,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8d11eeaeef4d86feb2a3c31fb9c9b08ce3b4978543c83c25d0a6c56ccf172adb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$del"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            674
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 41,
+        "sink_column": 1575,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "123b260f7919e5848e712f1da31603f7163632a435520076d8e69e52a8a51294",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            64
+        ],
+        "source_column": [
+            2573
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 65,
+        "sink_column": 2796,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "05c8e48a4d2ccfe8a6e54ac7c19475122dbac95eed4f82c46842f097987c44d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_name\"]"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            3071
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 3063,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc763fa586c9a777ce37c6bb54d8a13d46f58fa59582a97122ab6c979d49b77b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"date\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            3164
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 3156,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1721069eed84dd9b7ce2dccb8b1dfde339be774a83ef2477ba887793fbe78e3c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"qty\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            3228
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 3220,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d5c1c741a0203efcd127f58e2d04341dfe9bf5f04bf5f8d44d7f00bca24e8f2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"price\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            3298
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 3283,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8fff0f2b101f7d111485b93d72f2f40429c0814208ffb2d7ebf2e69582aa9318",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"total\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            3370
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 3355,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6c2da6aa04005ed6f0bd5065df5106b380226fbc9bb5d3f7146a3c2985a8ca1b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            3852
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 86,
+        "sink_column": 3981,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "05c8e48a4d2ccfe8a6e54ac7c19475122dbac95eed4f82c46842f097987c44d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$zz"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            4127
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 4877,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca20acca9c0d20f89dc7feea2df81649e7738138fbfca3d34fa760a1cea50a19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            5120
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 109,
+        "sink_column": 5032,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "17928da7379419d570df1bffc7ed687c3fa5c22d3219ff6559d92b953bdce131",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$zz"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            4127
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/orderdetail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 5914,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/orderdetail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca20acca9c0d20f89dc7feea2df81649e7738138fbfca3d34fa760a1cea50a19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_id\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2847
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2839,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17e0c57bb3cd381769bcb28f0859f3dbf05264a44d0826f7f04104f4c6cb3acd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_name\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            2917
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2909,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b2d9f0b01af091aa85ec61b5f65adb06f2e829f259329f84a9f98c224eef3c18",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"quantity\"]"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            2989
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 2981,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "03cdb62edd142efea34ac23a59fe1f374fa7badd1785f2658e6142e18171d1b6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"available\"]"
+        ],
+        "source_line": [
+            63
+        ],
+        "source_column": [
+            3057
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 3049,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e7271bb2a16ed1e2e1b81a274fab5218e36b1b8d281cb21102ff6ad8ee08f8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"price\"]"
+        ],
+        "source_line": [
+            64
+        ],
+        "source_column": [
+            3126
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 3118,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9416858a7d183443c161685b105016c792153cba812edf1f3af16a9253731ddb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"profit\"]"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            3191
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 3183,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "50fc3a232cc839673ec04add4903893ab41eddf3d5cff5913a414106169bb894",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"selling_price\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            3257
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 3249,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "22a856422e26feee347ce48357686e082b8305f425aaba7ae484eaba847aeb91",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"date_in\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            3330
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 3322,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "022b0fde81649c27b3231dc9b09cbe1aaa08d7e0bc5d6f6f822106dd3cb1da5c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"category\"]"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            3397
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 3389,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d9854169168f3a3163392a5691f271524a12ed14a288b7f2a3c3b6978781233d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"supplier_name\"]"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            3465
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 3457,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2547c7591d06d0874545bde11d586e1e18cb1bebafccc6a70bf9d6a6fac2e7b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"name\"]"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            3538
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 3530,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f78a75c3d9f6c0588cf89e0325241c6cc7d449a80991dc192bd5bb9f3a679cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_code\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            3602
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 3594,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9830d8f250ac937d497db1cee19ff64ad80c8a46e19152d98375faceeb7f559c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"status\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            3674
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 3666,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee592aef680d8a7f1839140d9a8799c384e5be78a69a0bb6046806aa25c20231",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_code\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            3904
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/product.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 3776,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/product.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9830d8f250ac937d497db1cee19ff64ad80c8a46e19152d98375faceeb7f559c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"supplier_id\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            1986
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/supplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 1978,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/supplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "23443ea899cfaef0e57dcf998a6483a1771dcab9f4fd527ddf4de8fc6076caac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"supplier_name\"]"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2057
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/supplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 2049,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/supplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2ee80b5de0c3308e8838012f74380fd206987ae72228a5433f0ffc0eed0bf96a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"contact\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2151
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/supplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 2143,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/supplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1704b8a9e26eda5ee2e860d8fc30418ef6b08e23e8be5e49ae791e04ef1139bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2218
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/supplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2210,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/supplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf349527b6b50ab200c28bde25976d374f778894465de8bca4616025cff3490f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"address\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2283
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/supplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2275,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/supplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "10c3579496659bb04bd5f4390fa8e20ac2d41140cef7ab5a00b1cd7ae40f2719",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"supplier_id\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2516
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/supplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2386,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/supplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "23443ea899cfaef0e57dcf998a6483a1771dcab9f4fd527ddf4de8fc6076caac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sqls"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            1996
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 88,
+        "sink_column": 2101,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5600e05f1ec67f36a94e36db545f4635a82d218208583debddf9d13812d2a481",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_code\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2317
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2317,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc7e88fadc47f4bf188d50de2ee828efb63da10d88b7ca9eeb8c75c9a5c0085a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_name\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2452
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2452,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "046fcacfedeb0dc1311aabf61322cc3e6e0bd7a4459efbe81c973a67219c56c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"available\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            2540
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 2540,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a1398010878a2127238ee768f72a7167165d69552ddfe0c91a9059aa27e54a6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"selling_price\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2620
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2620,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e32c2796badcd9eedaaebb9e4958261a8119f03ede809051dca767c63c125734",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"available\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            2829
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 2829,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a1398010878a2127238ee768f72a7167165d69552ddfe0c91a9059aa27e54a6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"product_name\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            2939
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 2939,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "046fcacfedeb0dc1311aabf61322cc3e6e0bd7a4459efbe81c973a67219c56c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"selling_price\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3053
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transaction.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3053,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transaction.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e32c2796badcd9eedaaebb9e4958261a8119f03ede809051dca767c63c125734",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query2"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            536
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transactionsave.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 801,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transactionsave.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6ac694d07883952b041e553f5f732fe1e4cc45ff70592406062656644b6e035c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query3"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            1098
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/transactionsave.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 26,
+        "sink_column": 1324,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/transactionsave.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0d849826d2cd60cf48e290643e16f519e28935ce07abb90aab26acf89140ad5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            391
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 507,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "61f4aa304213854cc95996a46b9599def7f87bbe55a92c7527845add512c28c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$zz"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            653
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1404,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "52ad17cbfea3d68092a46030e28ab6f15b1de0308672ba8673c3cfb20ed224ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$i"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            692
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 1625,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f0e17dfe90a1c1c4b521905000b59341dfd8f3ffa1a199be7510bbf80c492a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            728
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 1841,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dff5836de836b0500c02b21a608bf4bf5447c16ba66818e699dfdb2cc4b466f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            764
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2051,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea0c80120a47114d732e6fb671f5bc141cd79c21fd3c25f65dd09ea2953fd884",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$d"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            800
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 2266,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ae3669a3ac6e4312c8f4c9c448a6e95776186a0b41fd50e669c2e15c3c9dbf77",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            838
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 2480,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8c210cc55f1b896659ea23a8099f7e2035eebd5a383ddc27284a06c3a35358a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatecustomer1.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 451,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatecustomer1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fde061e7b0be807862dfb0c974f60113d0c62fdf1635fe98ce8903e43d293ff3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            376
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 24,
+        "sink_column": 514,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1ade8ea7f368af3a3afb0b7a987c13d0cb6fb762a7d15623b2a4f771e5a8ec00",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$zz"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            660
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 49,
+        "sink_column": 1447,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bc43e3629a55531fb947835ed210103b8f3cec319b59cc3a11283e0714c27c8c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$i"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            702
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 1724,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4e4de170d1ab39b472f63ad4cf76b003b5613b4d30e1feeff2fe13c10dbb7a9f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a"
+        ],
+        "source_line": [
+            29
+        ],
+        "source_column": [
+            745
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 1963,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68d590a0189d45fcdaec0e7f217015f1db5312742c7c574a6ef0585302904fad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            784
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2238,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "00b1dad0489e89097edd6ce82a6d85ec1694896c7681b7484f1c1267f3263798",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            820
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 2506,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66620f9869c3f576605160c75120ac2d5489edff435bc20238a9f3a8ecc80f2c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$d"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            857
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2790,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7295e66a191eceb28c5ccf6a6af59332cff95c9af47d06ba04169e4881f45225",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$e"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            901
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2993,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "904c96c70c300646a65e4438b40e69a94946f11a8f961c7cf27aec2bdf4cadc0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            359
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updateproduct1.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 23,
+        "sink_column": 561,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updateproduct1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d7ffebeee1223b8a275a0ec9a0431de7ab4453be17854496038a0ae17ddf5a33",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            374
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatesupplier.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 24,
+        "sink_column": 497,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatesupplier.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c437025f95301ba904652f611bbed170e3f03bd8858d07587b27d3ccb23c7d20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$zz"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            643
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatesupplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 49,
+        "sink_column": 1393,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatesupplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "761b2c35ef5a85c714be7783f993ee990769872d915f9b7a2c971620217a3800",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$i"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            686
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatesupplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1620,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatesupplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a1030c1a2ad9c02c8e9d9dc3854f2b3f3ebde14ddde97404f9b5d8b2845996a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a"
+        ],
+        "source_line": [
+            29
+        ],
+        "source_column": [
+            730
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatesupplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 1833,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatesupplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c350fde752baa905ec33c1927fc0d2cefbd8269ce943cb211ca2e86ed7b2636",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            768
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatesupplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2043,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatesupplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e740b1cf135f26a43b451ec1d44c33786d9c8114ee93ab9763125849d19f3145",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$d"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            804
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatesupplier.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2258,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatesupplier.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "27576a36c08e3fcb355fd16bdb66e447cb449f0f302510b491a162bd62caa7f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            300
+        ],
+        "source_file": [
+            "\/home\/kali\/62.online-cake-shop\/updatesupplier1.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 497,
+        "sink_file": "\/home\/kali\/62.online-cake-shop\/updatesupplier1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "955bda56a31dacd64a4a1912cb384c9ab4a4874cb4615a784913190b7f7e4e10",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,1448 @@
+[
+    {
+        "source_name": [
+            "$row[\"eid\"]",
+            "$row[\"evtname\"]"
+        ],
+        "source_line": [
+            21,
+            21
+        ],
+        "source_column": [
+            467,
+            483
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/footer.php",
+            "\/home\/kali\/63.events-management-system\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 21,
+        "sink_column": 421,
+        "sink_file": "\/home\/kali\/63.events-management-system\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "295e5894dbbb4e47111dfb9b5e8e19e8918c0f40c40069bd0b9fcdee613c11ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"username\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2410
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/activeuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2403,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/activeuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e249de63aa657f69a86ab886e9374a113950ef041bcae46618acec6d239572c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"firstname\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2450
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/activeuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2443,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/activeuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1042e132b319760846533cd771bb9d9015b0422c861bffa5f0d054e76b7e2e8d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"lastname\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2491
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/activeuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2484,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/activeuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c00b1a2816c2e28c2f9a26b39cd15ba3fda94587cd13eb951b876a3ea67735d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"id\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            2557
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/activeuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2524,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/activeuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e547178c3a59abe204edd145c72b36b7a2e011c7e93cb3618435ba2eda0db315",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"username\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2408
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/banuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 58,
+        "sink_column": 2401,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/banuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78934c138215464af6d226b9af0e6b7f8f01996f530cbe11ada0672ccbf997ec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"firstname\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            2448
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/banuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 2441,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/banuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fefe24f4afbf11900433e9024736eff60f584dda56f30852cce9d1fee8ee144e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"lastname\"]"
+        ],
+        "source_line": [
+            60
+        ],
+        "source_column": [
+            2489
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/banuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2482,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/banuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62e1a3eaf6ad91e4b19bbca5694307c06ecd1b81101055229f5559f18b199277",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"id\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            2558
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/banuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 2522,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/banuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c180d602283fce3ab9987eb233feeb76a7e1dff160ddd235e3e226e091051c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query1"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            50
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkactiveuser.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 7,
+        "sink_column": 120,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkactiveuser.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3089f89c09064f09346f7e618ea6b272b1b441e6746d531e578ec130fc20c61f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query1"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            48
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkbanuser.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 6,
+        "sink_column": 115,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkbanuser.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ea6694568a50a3c20faac27591e8a77e19002ee8a3f9be1d44dde34618661536",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            2250
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkchangepass.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 54,
+        "sink_column": 2325,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkchangepass.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2e9d1144ef00b8f5bd4315f759bf0f7199aa80fe212fe1e47a8b773cabdda71f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2403
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkchangepass.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 58,
+        "sink_column": 2477,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkchangepass.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9af9df72b01391fdc79b8decf0f9fcef709769f2a05b0d82762ec747c5c7b487",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2514
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 79,
+        "sink_column": 2587,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8146e471d5fccb665d53847d76ff1189a7f21b20935e81fd5226dc69c331c735",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"eid\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2890
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2883,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "61edd045af0e70c98249a97353578904bbea85c54b90af7ac1a552236db74f10",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"evtname\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2992
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2959,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "baf5adabe8ed72aa10d1608e33a318d8236056f8afbe4fa8674004a0dedc564b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"evtdate\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3061
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3028,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c9ce351b4b3e23ce79f580043ce4c343e669395674773238a47487e438c3df54",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"evtplace\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3127
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3094,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "86261de71b07552a35241e0c8855d489b62c5b6826ae24003f7664c362283f9b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"evtfee\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3197
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3164,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkdaterep.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2de5ad57f0d6c7e6c4d2a25fdfd575511feb7a93914b40206e55689831954bdc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            1383
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/function.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 53,
+        "sink_column": 1473,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/function.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c51fe7bcc1cb61a48398bc91fe2cf8c6be29d7c8d376e6cbdcf3ccb8382ad8bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            2184
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/chkpostannounce.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 50,
+        "sink_column": 2244,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/chkpostannounce.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "187e6f6d1faec9e1e46dfa6b85c90f18d1ff21d603de95c59487ea482f97a9e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$s"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2337
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/gallary.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2430,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/gallary.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bc6f603a15c3f89c6cf238621c89f193863ac6b629cdb6072234f65f3b9a5364",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtname\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            3332
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/reguser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 3323,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/reguser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5824726099e5b0a1a1a51df095b52f3079b697575ba5a2bf96eec576e2f3456",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtdate\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            3380
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/reguser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 3372,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/reguser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "35d433f47074ff04d4608bfc701c19f7c4f78b93b838a41837cc11b3e663eed3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"username\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            3429
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/reguser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 3421,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/reguser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c1caac09df513fd9df871f6ecb6c7842486888da361071f10e831f17ed3ff63a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3479
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/reguser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3471,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/reguser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0cd9d447abad6730628d770b026936810c6948ef189a87f8bd40a6dbd6ff6b20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"per\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            3526
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/reguser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 3518,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/reguser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "547eb46ef29a3e925fa2cf5514008dad042020c655ece06cceb4810c885c77f0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"attention\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            3571
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/reguser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 3563,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/reguser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a43e9fb2be9da4ab8a97aa0ec3b79efa6374ca47fd18432b725a5f00560118e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtname\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            3253
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewevent.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 3244,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewevent.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0d3285c5fa253feb954b0a4fed930ec1bc7e288ad4879bee1440fb3f90aa8255",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtdate\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            3301
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewevent.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 3293,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewevent.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "94398d0d0d946bc11ab26b5adbddc4f53dad88b0ffc996ce0857028fff56831d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtplace\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            3350
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewevent.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 3342,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewevent.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f9c5bf213bbb005bee3ebc281846b84c1fbe48ef28d34b65cb427c99d316351",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtfee\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3400
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewevent.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3392,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewevent.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "716d580ecf06740ea40bba3b7ee2c68e16cb8f139248e8bb81d7c05bfbe16d3a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"createby\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            3448
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewevent.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 3440,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewevent.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85c7da1f5e2fa7bfbb0ff4a2c9dfaf75d6c7a50c12d99c772df7460e95393f58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            3330
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 3321,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a145165c14245ab047a4eafe178bbfa3aceeafa15def9acadaabfefc637f440e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"firstname\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            3373
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 3365,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "daa862cadda8e5f9b8780c1e955ac56b29af1cd1218c55d4b3b33106cc9ec687",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"lastname\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            3424
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 3416,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "994a4120d495d77f4d24e1eadd80e4a4de0f0868c15794f5e337f0807f5e7782",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"username\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            3474
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 3466,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78f2415b9e43a1539e09544ca5e7623f2e840de0b9f7975cf6a1cf13d3b151c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"birthdate\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            3524
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 3516,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2743925fecf2d389fd5a91c892fa94885f953b4fe7de6dc4a4165afb650b976",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"email\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            3575
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 3567,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ed2b99b82110612a68e44c0e6ef2ad5d50df4a26b6369979bf9106a872ff17c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            3703
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 3652,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a145165c14245ab047a4eafe178bbfa3aceeafa15def9acadaabfefc637f440e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3827
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/viewuser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3774,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/viewuser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a145165c14245ab047a4eafe178bbfa3aceeafa15def9acadaabfefc637f440e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            29
+        ],
+        "source_column": [
+            859
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/chkchangepass.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 30,
+        "sink_column": 934,
+        "sink_file": "\/home\/kali\/63.events-management-system\/chkchangepass.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3ad73a36f3be6cf5492975090238b29c84c7a11871f77e6d8a942863b2ee01b5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            1012
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/chkchangepass.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 34,
+        "sink_column": 1086,
+        "sink_file": "\/home\/kali\/63.events-management-system\/chkchangepass.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0c2d00fc8ad8f1ebf93206c70cbb51b88dc4baca18ca16c87ffe26e678adf18d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            917
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/function.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 37,
+        "sink_column": 1021,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/function.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9315e97004242aaf53d881b17b7bb938c2d446892ad5f60d2c4f92b5a185219c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            45
+        ],
+        "source_column": [
+            1614
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/chkforgot.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 47,
+        "sink_column": 1706,
+        "sink_file": "\/home\/kali\/63.events-management-system\/chkforgot.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dc5262fdc1fd03c75db0c38a191b8152131a608cc75ba069a802d4faf6601026",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"password\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1819
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/chkforgot.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1819,
+        "sink_file": "\/home\/kali\/63.events-management-system\/chkforgot.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ec6368e56389cb03562ca497c0f34fc918030d4db81482be426e0e6bf66c9cc2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            67
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/function.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 6,
+        "sink_column": 180,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/function.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5fa23620b7eff76d0ce0b0c7c4d94512903eb6751e98affe0593216a09515f94",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$role"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            793
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/chklogin.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 35,
+        "sink_column": 984,
+        "sink_file": "\/home\/kali\/63.events-management-system\/chklogin.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f005ab2ced1322f9060da3ea782bc887cb748396e6696c6ea02e60b4068aa8c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$q"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            434
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/admin\/function.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 22,
+        "sink_column": 565,
+        "sink_file": "\/home\/kali\/63.events-management-system\/admin\/function.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "67b2196d744a1554481ee35cad21d32bd843192253f5b419630ba53c6c2d3c8d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"eid\"]",
+            "$row[\"evtname\"]"
+        ],
+        "source_line": [
+            43,
+            43
+        ],
+        "source_column": [
+            1571,
+            1588
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php",
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 43,
+        "sink_column": 1553,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "88ebf4ee4e2d5991f745e77b12acdff8e9bc199e236e12687c9b017fadc30299",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sq"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            1848
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 53,
+        "sink_column": 1923,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5004a66691d6085d6d03c118c534653e4a58317562eafadf37597cd7eb95be70",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtname\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2245
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 2245,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e00d080883249bc3dc3fdc0e91a6543b6165536fa6f045f1eea5e7d9da970dec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtdate\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            2295
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 2295,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a753ad1d387ab35ac557269ff236a431dd451b765d7bd0f9b9817987b62afbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtplace\"]"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            2345
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2345,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a7adb5b204494776b64f7c45e081d905b9c9a419aa8b4602232414a1e80d4495",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"evtfee\"]"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2396
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 2396,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cdc61006cc009d9c58189f0653fccc687da0bdc545dba9ba8e5af6cc74731503",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"createby\"]"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2445
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 2445,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f02dc47bdf6af8fec3d5c482ef5bfe95ec0c5c80fbc0b0d9218bc5c311987b23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"evtname\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2812
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/eventreg.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2812,
+        "sink_file": "\/home\/kali\/63.events-management-system\/eventreg.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08fe97acf84f32e464a8ee5e97aed9d30ef012a487fefa3db0b174e32cb9c38a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"firstname\"]"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            1146
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 32,
+        "sink_column": 1116,
+        "sink_file": "\/home\/kali\/63.events-management-system\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3951415dccef3df6b9bbc7ad190fa99ca7c77cbfc3e8434639dadceaaea7405",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"lastname\"]"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            1213
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 33,
+        "sink_column": 1184,
+        "sink_file": "\/home\/kali\/63.events-management-system\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b09304caadb9451af2c27d98c28f41a53113908e751f90dcac3f0dda073b22a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"email\"]"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1278
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 1250,
+        "sink_file": "\/home\/kali\/63.events-management-system\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "75cd5cbd56ddc2048990ca89647bdca379883be61eec3b9d47fe6adbde57cd76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"gender\"]"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            1338
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 35,
+        "sink_column": 1312,
+        "sink_file": "\/home\/kali\/63.events-management-system\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2b1da9aeb661a42c88a0b2a6ca8712c4bd7262d562c78fc453e6605e3f1684cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$arr[\"role\"]"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            1397
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 36,
+        "sink_column": 1373,
+        "sink_file": "\/home\/kali\/63.events-management-system\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55ce03d194b38fe2393038ac22749d6b2d97e9baf73187eae0a3143df2f3980d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$s"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            1060
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/user_gallary.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 1166,
+        "sink_file": "\/home\/kali\/63.events-management-system\/user_gallary.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ed24936d75469111c87998b44eca7a979fe21245a3465981ffd10c333a07b400",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"aname\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2644
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/userhome.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2571,
+        "sink_file": "\/home\/kali\/63.events-management-system\/userhome.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21e377b31b9e91e1c78eae54ede785f0a43a22b0bb973cd3765c8e9c0e62ea30",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"evtname\"]",
+            "$row1[\"evtplace\"]",
+            "$row1[\"evtdate\"]"
+        ],
+        "source_line": [
+            97,
+            97,
+            97
+        ],
+        "source_column": [
+            3178,
+            3207,
+            3237
+        ],
+        "source_file": [
+            "\/home\/kali\/63.events-management-system\/userhome.php",
+            "\/home\/kali\/63.events-management-system\/userhome.php",
+            "\/home\/kali\/63.events-management-system\/userhome.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3167,
+        "sink_file": "\/home\/kali\/63.events-management-system\/userhome.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9f0ca0970dffcf58aae80a7814cc8ee2a5239dc308370415f8938044ac6abc2",
+        "vuln_type": "taint-style"
+    }
+]

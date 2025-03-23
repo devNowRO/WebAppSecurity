@@ -1,0 +1,648 @@
+[
+    {
+        "source_name": [
+            "$qno"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1383
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 1721,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0b98cf1d87ab138ded5128474ab95329ca18c26594ca18b9d96fc54e4638b670",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$question"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            1420
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1760,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4ee70946bd993b2569f55dfe6317a70da3a50c3c50c02af8f1a6843aad4aa225",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$option1"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            1467
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 1804,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8d02209d7d51da79de7c83c3d53acdacc884e07a9d15013a20984cf3355fbe96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$option2"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1509
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 1847,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "06d5f658321bcd8394aa93bdda6dbcfb5707e19beec01424d23f83fde3022a27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$option3"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            1551
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 63,
+        "sink_column": 1890,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6d3f9103177955ed3ef81b3735dc70f2b064a9ca862b3e608c30476d9de479bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$option4"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1593
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 1933,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18d6b7b257b8fd32b1f1e65f47feee45a7258e0e735c9b00ee9c405540ee1008",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Answer"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1635
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 1976,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e88b778d82bb6ccfc19f978471ad1111d3c8fa48dedc3dad90542126b0950e1c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qno"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1383
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/allquestions.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 2018,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/allquestions.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0b98cf1d87ab138ded5128474ab95329ca18c26594ca18b9d96fc54e4638b670",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            46
+        ],
+        "source_column": [
+            1442
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/editquestion.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 47,
+        "sink_column": 1643,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/editquestion.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2b81ad87cd3c91b21dba54b82b78c61e288da35280cb0a3116e44669ab0dad62",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$question"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            476
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/editquestion.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2642,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/editquestion.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "877f951674fbe8cb2f05508ea63820136ac1d3fe6502fb6d022a937ab1409de3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans1"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            524
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/editquestion.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2782,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/editquestion.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "abd4a1127498d709a5b1605a96488a5de27dcfbb4dda54d550c76d7053d4c7fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans2"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            564
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/editquestion.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2918,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/editquestion.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ff62ea52ca3e4baaa93d5cd8ad63a0fe31ae09246bec333944f6935764ace243",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans3"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            604
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/editquestion.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3054,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/editquestion.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0b5da23b24382c1c5a50591ee955bcdeddb07269b0caea0a6426a70d898fbc96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans4"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            644
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/editquestion.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3190,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/editquestion.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3f8939e99fe8873d5519a7f80a05765c24deaa30d3c4e72b1fd878dac23aedac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            869
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 29,
+        "sink_column": 956,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "df5499524f341848856ef7ae27372dc2e23a31ea4ce517bc8b4560af94daeb1a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query2"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            1058
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 32,
+        "sink_column": 1126,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ffb3d92666e8c5be5127c32119fc823f5c71b599fe19465ed6dad1b5413c601b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            45
+        ],
+        "source_column": [
+            1262
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/players.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 50,
+        "sink_column": 1463,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/players.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84715f608b469af40f2b7170467b9a506353c0e088f9cd2f8e9c95254d1fb6d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            46
+        ],
+        "source_column": [
+            1297
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/players.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1501,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/players.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b2794fc54cf0aba62085452960149bf4cd82cab01945dbb8fba44271c541e824",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$played_on"
+        ],
+        "source_line": [
+            47
+        ],
+        "source_column": [
+            1338
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/players.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1542,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/players.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ea21f07e5eb8fbf0cdea51274ce874b072cad78dae9e464e0483315140a0297",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$score"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1387
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/players.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 53,
+        "sink_column": 1587,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/players.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7cdca155da4850dcdb08a33bd394ab35b50fe4f63a0c7ecb54ad1fde7905eac1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            541
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/process.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 24,
+        "sink_column": 625,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/process.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a2017bcb39bfd9d361cd63c3d2219f6c43287c2226cf06c37ee904902fdb2813",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            424
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 491,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1f88df5a79f497cfd93175d9eac08df93a33b201ee5bb60d260ab35026f30e51",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qno",
+            "$qno"
+        ],
+        "source_line": [
+            20,
+            7
+        ],
+        "source_column": [
+            629,
+            149
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php",
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 2113,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5e2fc7b7d71038e9c7c17ad319a22f2aadc03fd7771e138ffa5a977df3b82e10",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$question"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            667
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 2191,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9183ff5a7b7875c8fee36732f4a0dbe184e5555068446ff44d34e5e38f8a4b71",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans1"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            715
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2363,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3b5d3d9e4f3f7a0f0d1168fd52f5f000f233d638312edc2fe72dceed0b32cbb4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans2"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            755
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2458,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b96778db6ebc57352c5a776548531029f4caf16d522dd8c5060005e91e12199",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans3"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            795
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2553,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4044fadb5c9ee8e58e9bc7edcb6f025648ceac7baad98205b622f230efb06730",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ans4"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            835
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2648,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f0005969bd35781c9378f8194e9f9edbdd126b1c7114e2cd51de9fdfe9a0e89",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qno",
+            "$qno"
+        ],
+        "source_line": [
+            20,
+            7
+        ],
+        "source_column": [
+            629,
+            149
+        ],
+        "source_file": [
+            "\/home\/kali\/66.quiz-web-application\/question.php",
+            "\/home\/kali\/66.quiz-web-application\/question.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2786,
+        "sink_file": "\/home\/kali\/66.quiz-web-application\/question.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5e2fc7b7d71038e9c7c17ad319a22f2aadc03fd7771e138ffa5a977df3b82e10",
+        "vuln_type": "taint-style"
+    }
+]

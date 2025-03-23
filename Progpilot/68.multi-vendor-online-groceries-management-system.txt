@@ -1,0 +1,46 @@
+[
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            302
+        ],
+        "source_file": [
+            "\/home\/kali\/68.multi-vendor-online-groceries-management-system\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 8,
+        "sink_column": 302,
+        "sink_file": "\/home\/kali\/68.multi-vendor-online-groceries-management-system\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b17dadc99dcce00a13d7f109d91a63cfd2a4f4bd1fd76fd35355d6c847b1d207",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$outputContents"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2501
+        ],
+        "source_file": [
+            "\/home\/kali\/68.multi-vendor-online-groceries-management-system\/libs\/phpqrcode\/tools\/merge.php"
+        ],
+        "sink_name": "file_put_contents",
+        "sink_line": 68,
+        "sink_column": 2544,
+        "sink_file": "\/home\/kali\/68.multi-vendor-online-groceries-management-system\/libs\/phpqrcode\/tools\/merge.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "2cf1dd99ff5ad4a1d75cb9c80d56bd221ffe5e8637635fb318fd04290f711ca4",
+        "vuln_type": "taint-style"
+    }
+]
