@@ -1,0 +1,112 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1672
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/booking-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1793,
+        "sink_file": "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/booking-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12725a276ec1829de4087df5f3d025697f6e02b5b30a9e3ea1c4a6c92bfc947e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            1700
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/booking-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1816,
+        "sink_file": "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/booking-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2327f6dda71fbc0881a9df9ecdc3c751f1fedf0fb6a359345ee5b98c9db1c5f6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2270
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/booking-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2354,
+        "sink_file": "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/booking-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58b1a0718e35f47c8cb71f52c9f0e81effbaca79a278ed9ac124ec22d10bbae6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            3858
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 3858,
+        "sink_file": "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            4518
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 4518,
+        "sink_file": "\/home\/kali\/Downloads\/44.Online-Banquet-BooKing-System\/obbs\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    }
+]

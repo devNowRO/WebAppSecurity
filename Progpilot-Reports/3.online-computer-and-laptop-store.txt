@@ -1,0 +1,156 @@
+[
+    {
+        "source_name": [
+            "$_GET[\"oid\"]"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/admin\/orders\/update_status.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 3,
+        "sink_column": 124,
+        "sink_file": "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/admin\/orders\/update_status.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b7cf38311e90ff273b01a0bc50079e7174c1857adcc9274f7a9e5c8c9daedddd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"about_us\"]"
+        ],
+        "source_line": [
+            43
+        ],
+        "source_column": [
+            1484
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/classes\/SystemSettings.php"
+        ],
+        "sink_name": "file_put_contents",
+        "sink_line": 43,
+        "sink_column": 1450,
+        "sink_file": "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/classes\/SystemSettings.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "543b087428b3bc4887b2b927698f3bed70e76cbcf4bc2aacecab1a2d6cf2e020",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"privacy_policy\"]"
+        ],
+        "source_line": [
+            46
+        ],
+        "source_column": [
+            1597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/classes\/SystemSettings.php"
+        ],
+        "sink_name": "file_put_contents",
+        "sink_line": 46,
+        "sink_column": 1554,
+        "sink_file": "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/classes\/SystemSettings.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "a6182e203ddd987a2335ea31410a953578d25bb8b2fbd71f8bf5f31ac1e1263e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$outputContents"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2501
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/libs\/phpqrcode\/tools\/merge.php"
+        ],
+        "sink_name": "file_put_contents",
+        "sink_line": 68,
+        "sink_column": 2544,
+        "sink_file": "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/libs\/phpqrcode\/tools\/merge.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "eb56a5df721b782c2fd59110f06033d50132550e3259801adc37e774e0d73106",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"c\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1923
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1923,
+        "sink_file": "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ee7e6e2cb9648466667a32d18ac606c1eb5acdf8320c2a45736fffd1d69a767",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"c\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            2292
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 2292,
+        "sink_file": "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ee7e6e2cb9648466667a32d18ac606c1eb5acdf8320c2a45736fffd1d69a767",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"search\"]"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2876
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/products.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 2876,
+        "sink_file": "\/home\/kali\/Downloads\/3.online-computer-and-laptop-store\/php-ocls\/products.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0de991a67334e35b82a1e849f17f5c71fee75b3c1b3091cb502ad02bb09753e2",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,1080 @@
+[
+    {
+        "source_name": [
+            "$dateexpense",
+            "$item",
+            "$costitem"
+        ],
+        "source_line": [
+            12,
+            13,
+            14
+        ],
+        "source_column": [
+            244,
+            286,
+            314
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/add-expense.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/add-expense.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/add-expense.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 356,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/add-expense.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "afc9fa6ea47a35715184c11ec5f81dbe40c55a237eed80fd9ef5aeecbf44e9ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            552
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/includes\/sidebar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 21,
+        "sink_column": 646,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/includes\/sidebar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b2a96606b7b689d261122bc9b81fc6261523f943c138b53d7d3d0c834db94a53",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_today_expense"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            1724
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 1886,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f0f27bd8b6ab9ae8865bb5aff007cfabd7657cf015520701857a69152df97229",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_today_expense"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            1724
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 1990,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f0f27bd8b6ab9ae8865bb5aff007cfabd7657cf015520701857a69152df97229",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_yesterday_expense"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2421
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2645,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "73aad7c21ec6d8a3b708a3368fe4f30e170d8e1fe655675ffbc3299aba0da440",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_yesterday_expense"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2421
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2757,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "73aad7c21ec6d8a3b708a3368fe4f30e170d8e1fe655675ffbc3299aba0da440",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_weekly_expense"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3248
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3463,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac850c6e69ccf62482adb28b8d2dc357912253fe95d6e135e61c490ef9e7690a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_weekly_expense"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3248
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 3568,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac850c6e69ccf62482adb28b8d2dc357912253fe95d6e135e61c490ef9e7690a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_monthly_expense"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4061
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 4279,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "df842c21cb952e7b6388f1d0de71e005e8246558dd534e8688e52dec368cbee9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_monthly_expense"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4061
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4387,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "df842c21cb952e7b6388f1d0de71e005e8246558dd534e8688e52dec368cbee9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_yearly_expense"
+        ],
+        "source_line": [
+            158
+        ],
+        "source_column": [
+            4842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 162,
+        "sink_column": 5058,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c47d2b431646f46ddc1f1473ba4b7512f58542fc863bbae9a41be62b9877dcae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_yearly_expense"
+        ],
+        "source_line": [
+            158
+        ],
+        "source_column": [
+            4842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 165,
+        "sink_column": 5164,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c47d2b431646f46ddc1f1473ba4b7512f58542fc863bbae9a41be62b9877dcae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_total_expense"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            5526
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 188,
+        "sink_column": 5733,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d403c1c16b350208cd35e629fe0fc773237fbee21f8c224ee2c597a153b63d67",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum_total_expense"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            5526
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 191,
+        "sink_column": 5837,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d403c1c16b350208cd35e629fe0fc773237fbee21f8c224ee2c597a153b63d67",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1407
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1575,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d44120df1d22bc966b1aa3c0a869328ee56088d66a8ce483c37fd8b85a61eff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1598,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8f3eea89566e6577f43fc9a366e0797826a10a1b92d4eff5f1498a829939831",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            56,
+            57
+        ],
+        "source_column": [
+            1407,
+            1436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 74,
+        "sink_column": 2204,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f2bc2a84cedfc4856a0a2493da54de85aa49b497da2d1149f7e2d7e19dfebf62",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ExpenseDate\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2578
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2578,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c2bd22f9f8978a891433ccca5298737fa85bd2c85172d7c2bf8aefe94cb74186",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ttlsl"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2641
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2641,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-datewise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8870bc6ebd33772c595f6c519c13b4cf003d6d740ae48ca8bd9a7f4db2bacc24",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1579,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21f2ee6e9895ecf58914e7e2e1bf1b01b984109a4661cdb2e046c5380917b7e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1439
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1602,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "94d76ba81dedcbb16a8b39298a16b2aba6173b02027d2fc3056261c08921034e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            56,
+            57
+        ],
+        "source_column": [
+            1410,
+            1439
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 74,
+        "sink_column": 2214,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fbf7b7ee74b58f8c43836e03b01484b04f9f38f8445c97c97bcd931c2d4fb4a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"rptmonth\"]",
+            "$row[\"rptyear\"]"
+        ],
+        "source_line": [
+            83,
+            83
+        ],
+        "source_column": [
+            2659,
+            2680
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2659,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cfa219889a37824b389d330df5dbda0498664f8c1ec4cb241c9abdb9db6b6022",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ttlsl"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2739
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2739,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-monthwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "74a26a7407ae3f0edaae065056d69e0fac20eb1219e21e775af376207bb601be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1380
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1539,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9cca38bc2132222994a7727a70779c177b7b81d6a4bdc3f4fc26890cc135e48",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1409
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1562,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f070387a8df35d87bad1b46d251740c0761cd66a8542739f1bf2fd8126435062",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            56,
+            57
+        ],
+        "source_column": [
+            1380,
+            1409
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 74,
+        "sink_column": 2168,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e4d03b0cae16a6195c21f12672ac4f699cb501961c5d33a806c7416af45cc4f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ExpenseDate\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2540
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2540,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aeea0ac70e506d6276cae4e4e783dca3ce19d5d62ba50af409e3ce7f1165dd9f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ttlsl"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2603
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2603,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7bfb994f319f97c1168fdd2f4858d4fabd40097b9d3672c3f321d93e18f57909",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1407
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1575,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70e2e8e3eaa4c62391c6eb28afafc965f58c43bcd7e946d69f4a12f605b5a4a5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1598,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da08fd8325698282bd102d7ea80db1695c534cc998032f85beaa50f1c483520c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            56,
+            57
+        ],
+        "source_column": [
+            1407,
+            1436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 74,
+        "sink_column": 2204,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4f69a156740b605438a8940683dcf3e46ef162194495d74877cc1f651d60fe50",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"rptyear\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2598
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2598,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12b8862e0f6d7414528d6533ddfc09badd06510ba3e3ee7de16bbc3db151dd61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ttlsl"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2657
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2657,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/expense-yearwise-reports-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2149d38364507ba300f04f782b74e452e3aebf84e1d68bebc5891d19534307f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            162,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/forgot-password.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7dc753cc25ea1bf6aaf41f99afc0b180dbe6d7d0faddc26b5514959b9d5c6692",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            117
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 191,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5b32ca15b79be19a43f15ba348bb75d80f18e9dd3a635b948ca2c207d51f7ea3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ExpenseItem\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2692
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2692,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c863294e9495eb7dc6680ec81b90ca7062e704eaa5213ead11ef3882570ceebd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ExpenseCost\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            2755
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 2755,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d45bf7168fada02a80ba708d0a0c518d860f99f181551e7fd8bbd3fb342ba44f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ExpenseDate\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2818
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2818,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d60ab1795091623e77d74307ce7e6258616540c4e82072c65a0544d220f03d76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            2914
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 2914,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/manage-expense.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "86f95abc500998354b4d6e62480b6d39cafa5977ac8ff2700df756149f4ada4c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            180
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/register.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 253,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/register.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7fb992cc8d071835f16d55720b9cbe3176dbe96934c63ee9d9ba3b62d822b430",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mobno",
+            "$email"
+        ],
+        "source_line": [
+            7,
+            8,
+            9
+        ],
+        "source_column": [
+            118,
+            145,
+            180
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/register.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/register.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/register.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 460,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/register.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0ab7077b70bf8cf05d6d344ff2ca54a0c6cfed8ad73dd925416203c40d0a1dcd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fullname",
+            "$mobno"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            237,
+            269
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php",
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 314,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c3d1f11dba8c0a1cb6476eafd53af22ad831ac6dc7e57e53651263c5711bb846",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2257
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2257,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d846eb8e57ffc042b6c15bf07774dd424cbbe4b3096ba9a4ccf63b9f0c0e663",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2462
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2462,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2a7af91b073e7e5cad11ca0f1b85fc78069e3d252d4674dcad501e961d95f656",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2676
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2676,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "09052173d46e3647177d22b2d56a2a63738e69f97b052090c1d5cab9cab59aa0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegDate\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2927
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2927,
+        "sink_file": "\/home\/kali\/Downloads\/32.Daily-Expense-Tracker\/dets\/user-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aaba3f17d7dcdcd6558aac284ae2a21d15fca2a525ef54fe7d2441d35fc636fb",
+        "vuln_type": "taint-style"
+    }
+]

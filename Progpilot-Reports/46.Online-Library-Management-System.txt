@@ -1,0 +1,90 @@
+[
+    {
+        "source_name": [
+            "$cpath"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            324
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/change-bookimg.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 40,
+        "sink_column": 1215,
+        "sink_file": "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/change-bookimg.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "bf1049326774c52351dab66697a4cc851909cf8b2f58425c0efed57c73772ff2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cpath"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            324
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/chnage-bookimg.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 39,
+        "sink_column": 1205,
+        "sink_file": "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/chnage-bookimg.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "2662fa96f31392532fc774cb0022c40857b38fc51819d749a7691c45c2db3cae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sid"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2054
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/student-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 2131,
+        "sink_file": "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/student-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "75938768e54d9817daa3d4df1b9899b362a2ebeac2c624a84490248f06dc7eaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sid"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2054
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/student-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2436,
+        "sink_file": "\/home\/kali\/Downloads\/46.Online-Library-Management-System\/library\/admin\/student-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "75938768e54d9817daa3d4df1b9899b362a2ebeac2c624a84490248f06dc7eaa",
+        "vuln_type": "taint-style"
+    }
+]

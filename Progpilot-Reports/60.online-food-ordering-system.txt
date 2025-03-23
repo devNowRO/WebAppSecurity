@@ -1,0 +1,3152 @@
+[
+    {
+        "source_name": [
+            "$qqr[\"fld_name\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            5290
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/aboutus.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 5290,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/aboutus.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5e44d0d29ac037a95c4b3e8daa4925c569a13d2575d332669b7967bbba20077",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qqr[\"fld_name\"]"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            5452
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 5452,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66bd99d64e59050b626fb9031fd2d1ff45c246822d1d7f5b41a42bcfdfb2632d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "vuln_rule": "MUST_NOT_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 18,
+        "vuln_column": 253,
+        "vuln_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_description": "cookie options set without secure flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "9dd3a5119223e5dfd7cce347b1a24c0737199b7863e8022764d889e3edc49685",
+        "vuln_type": "custom"
+    },
+    {
+        "vuln_rule": "MUST_NOT_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 18,
+        "vuln_column": 253,
+        "vuln_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_description": "cookie options set without httponly flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "9dd3a5119223e5dfd7cce347b1a24c0737199b7863e8022764d889e3edc49685",
+        "vuln_type": "custom"
+    },
+    {
+        "source_name": [
+            "$row[\"fldvendor_id\"]"
+        ],
+        "source_line": [
+            198
+        ],
+        "source_column": [
+            6995
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 198,
+        "sink_column": 6995,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "501129ccbabb12ae56e95a16b235268a60ebe33922fd1e14a6becd43d7377203",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_email\"]",
+            "$row[\"fldimage\"]"
+        ],
+        "source_line": [
+            199,
+            199
+        ],
+        "source_column": [
+            7073,
+            7107
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 199,
+        "sink_column": 7073,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "abfe1cc7ed5423061c898a34e9de2251c7083f98c1b3562c38b5827eef068a15",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"foodname\"]"
+        ],
+        "source_line": [
+            200
+        ],
+        "source_column": [
+            7179
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 200,
+        "sink_column": 7179,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e8f4b8b493e10c3de8e53097e385c5b54d68d426446f80d2bb012738e6069c7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"cuisines\"]"
+        ],
+        "source_line": [
+            202
+        ],
+        "source_column": [
+            7234
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 202,
+        "sink_column": 7234,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d837ca2b4ca0b0b7de1567feb11926360af453fa8bc786b3e62a4fb2f975bf73",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_name\"]"
+        ],
+        "source_line": [
+            203
+        ],
+        "source_column": [
+            7299
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 203,
+        "sink_column": 7299,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc88c750a6727f94d95f56978bd15f567d59eb2cf5112e2d4c08c58ee7cb6fb4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"food_id\"]"
+        ],
+        "source_line": [
+            204
+        ],
+        "source_column": [
+            7364
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 204,
+        "sink_column": 7364,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49b7d02ce0bb54bb9355992aa97a772f8a9237cc52f5ddffc1ea934bb8a81ee6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"food_id\"]"
+        ],
+        "source_line": [
+            210
+        ],
+        "source_column": [
+            7599
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 210,
+        "sink_column": 7599,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49b7d02ce0bb54bb9355992aa97a772f8a9237cc52f5ddffc1ea934bb8a81ee6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$user"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            652
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 234,
+        "sink_column": 8396,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45aec2faf9a54d0eef305a6f453f7c0afdda78006272c720eacd3ac492038b51",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pass"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            688
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 241,
+        "sink_column": 8732,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "88d7dad5607be2148620610d9a2384b0a03a8c29fd7dc08a49372fc13d336f37",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_email\"]",
+            "$row[\"fld_logo\"]"
+        ],
+        "source_line": [
+            276,
+            276
+        ],
+        "source_column": [
+            10062,
+            10085
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 276,
+        "sink_column": 10062,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ba40d870543eb5dc7cec37d137d43102dfabdcaa53e561982b4fb710dbe7127d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fldvendor_id\"]"
+        ],
+        "source_line": [
+            277
+        ],
+        "source_column": [
+            10192
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 277,
+        "sink_column": 10192,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "501129ccbabb12ae56e95a16b235268a60ebe33922fd1e14a6becd43d7377203",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_name\"]"
+        ],
+        "source_line": [
+            278
+        ],
+        "source_column": [
+            10243
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 278,
+        "sink_column": 10243,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc88c750a6727f94d95f56978bd15f567d59eb2cf5112e2d4c08c58ee7cb6fb4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_address\"]"
+        ],
+        "source_line": [
+            279
+        ],
+        "source_column": [
+            10290
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 279,
+        "sink_column": 10290,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8830c815c7525715879eb84383eeb97c4518e4652b0d9703c6b7dd043d699413",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fldvendor_id\"]"
+        ],
+        "source_line": [
+            286
+        ],
+        "source_column": [
+            10591
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 286,
+        "sink_column": 10591,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "501129ccbabb12ae56e95a16b235268a60ebe33922fd1e14a6becd43d7377203",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$foodid"
+        ],
+        "source_line": [
+            311
+        ],
+        "source_column": [
+            11308
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 312,
+        "sink_column": 11350,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3cc8edc302b43e1dabc1a9e8e5c310590224069d1a2dd994af1a236de0328357",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rrr[\"fld_order_id\"]"
+        ],
+        "source_line": [
+            317
+        ],
+        "source_column": [
+            11509
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 317,
+        "sink_column": 11509,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55002c30342c8dc0b3c17aeba893a4d49a1879d07e8948882ef2eed4cda5d121",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rrr[\"fld_food_id\"]"
+        ],
+        "source_line": [
+            318
+        ],
+        "source_column": [
+            11593
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 318,
+        "sink_column": 11593,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "864da095c21bcdabc0bb65c0e95bf649354cf4890254ba9bdfa8a6954650fcfd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rrr[\"fld_food_id\"]"
+        ],
+        "source_line": [
+            318
+        ],
+        "source_column": [
+            11629
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 318,
+        "sink_column": 11629,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "864da095c21bcdabc0bb65c0e95bf649354cf4890254ba9bdfa8a6954650fcfd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rrr[\"fld_email_id\"]"
+        ],
+        "source_line": [
+            319
+        ],
+        "source_column": [
+            11680
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 319,
+        "sink_column": 11680,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0df96de79a407427a43463800ecb85f88393def801bd3a2d66780570a79b13bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rrr[\"fldstatus\"]"
+        ],
+        "source_line": [
+            324
+        ],
+        "source_column": [
+            11915
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 324,
+        "sink_column": 11915,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1216f9ad1ea7b1da1bf3dbf01e28b9d27c94c3a7aa7dbfaee268f038ecc35251",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rrr[\"fldstatus\"]"
+        ],
+        "source_line": [
+            331
+        ],
+        "source_column": [
+            12060
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 331,
+        "sink_column": 12060,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1216f9ad1ea7b1da1bf3dbf01e28b9d27c94c3a7aa7dbfaee268f038ecc35251",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Vendorid"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 5,
+        "sink_column": 89,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5aaba5b95fb7829d3d33ed505b772573e6e6f66aa17c42b9bef615f714dd7f31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Vendorid"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 282,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5aaba5b95fb7829d3d33ed505b772573e6e6f66aa17c42b9bef615f714dd7f31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$em",
+            "$food_img"
+        ],
+        "source_line": [
+            14,
+            15
+        ],
+        "source_column": [
+            439,
+            471
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 16,
+        "sink_column": 505,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "cc239e207bf301684d8c828274b7baa11d78f940ff758af5f336c46e6e7558af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$em",
+            "$im"
+        ],
+        "source_line": [
+            14,
+            13
+        ],
+        "source_column": [
+            439,
+            408
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 18,
+        "sink_column": 608,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "9919978e28ba3c734a9b04b491d04cef632b580e8f7ca481ce71f168d6afb1db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Vendorid"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 683,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5aaba5b95fb7829d3d33ed505b772573e6e6f66aa17c42b9bef615f714dd7f31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Vendorid"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 758,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5aaba5b95fb7829d3d33ed505b772573e6e6f66aa17c42b9bef615f714dd7f31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Vendorid"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 28,
+        "sink_column": 933,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5aaba5b95fb7829d3d33ed505b772573e6e6f66aa17c42b9bef615f714dd7f31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$Vendorid"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 32,
+        "sink_column": 1121,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5aaba5b95fb7829d3d33ed505b772573e6e6f66aa17c42b9bef615f714dd7f31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$em",
+            "$im"
+        ],
+        "source_line": [
+            31,
+            30
+        ],
+        "source_column": [
+            1090,
+            1059
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 33,
+        "sink_column": 1199,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "9919978e28ba3c734a9b04b491d04cef632b580e8f7ca481ce71f168d6afb1db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$em"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            1090
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "rmdir",
+        "sink_line": 34,
+        "sink_column": 1238,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "3129b7bf60e7e84f52e642eef42ec463f13a003a1564264c6e4aa52d31d436ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$em"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            1090
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php"
+        ],
+        "sink_name": "rmdir",
+        "sink_line": 35,
+        "sink_column": 1283,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deleteVendor.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "3129b7bf60e7e84f52e642eef42ec463f13a003a1564264c6e4aa52d31d436ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            89
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deletefood.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 111,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deletefood.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ccbd3c1ce290f99c488efc12295327635576f160cfbaf1cc099faf8622f0165e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$e",
+            "$img"
+        ],
+        "source_line": [
+            9,
+            10
+        ],
+        "source_column": [
+            312,
+            339
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deletefood.php",
+            "\/home\/kali\/60.online-food-ordering-system\/deletefood.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 11,
+        "sink_column": 364,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deletefood.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "42e36f645f189e89e0be048ae8b46178abc1c86193cea05fa3d6c4c2cdfb98f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            89
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deletefood.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 416,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deletefood.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ccbd3c1ce290f99c488efc12295327635576f160cfbaf1cc099faf8622f0165e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            89
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/deletefood.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 41,
+        "sink_column": 748,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/deletefood.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ccbd3c1ce290f99c488efc12295327635576f160cfbaf1cc099faf8622f0165e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$output"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            554
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/fetch.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 33,
+        "sink_column": 882,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/fetch.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa9a6eb35fa0a2b9d838e41aa2c3c68f4ec94d89141fb9352f45c4b2d0898947",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$output"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            513
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/fetch2.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 33,
+        "sink_column": 833,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/fetch2.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "666315c2891605faf1da68b0976a570b4ba31205a12b07fa90c7f295c057cd5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v_id"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            648
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 45,
+        "sink_column": 902,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6b388d2935ccf3c5b8f4fe91953e3140dc876f7099628bd8e3f0a11bf266e70a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$old_logo"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2011
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 93,
+        "sink_column": 2222,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "97bfd3ac84f892659b51dc94b19fbfafb240385bd327019b3f83d5b43c363544",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vr[\"fld_name\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4472
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4472,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1028287eeefdf8a23b6fb224984ac1206d8561da30a3d0fb96923ec25a4269f2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fldimage\"]"
+        ],
+        "source_line": [
+            242
+        ],
+        "source_column": [
+            8353
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 242,
+        "sink_column": 8314,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f8fa6c43187c65d94bf9e9063bc5115c8ea755d01720a9139dcf7d577ca971a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"foodname\"]"
+        ],
+        "source_line": [
+            243
+        ],
+        "source_column": [
+            8451
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 243,
+        "sink_column": 8451,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "101fa06ebd9584fb2d5062efebbb28248b40a3c20e5c56c41893dab11267b9bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"cost\"]"
+        ],
+        "source_line": [
+            244
+        ],
+        "source_column": [
+            8540
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 244,
+        "sink_column": 8540,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d5b29094d2a7df6131c11f9bf2a95261886b6736e4b491c3ffeaad48113dea39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"cuisines\"]"
+        ],
+        "source_line": [
+            245
+        ],
+        "source_column": [
+            8626
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 245,
+        "sink_column": 8626,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1bff9b09fb4329a8c00a19222c719bee60565816ea38339fefc4f8e52f77b503",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"paymentmode\"]"
+        ],
+        "source_line": [
+            246
+        ],
+        "source_column": [
+            8715
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 246,
+        "sink_column": 8715,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d7bfe09ae3457d49056a5d7afe3dd1f2491ba398083c3c867d2510afebfb82a2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"food_id\"]"
+        ],
+        "source_line": [
+            250
+        ],
+        "source_column": [
+            8864
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 250,
+        "sink_column": 8864,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f25d5adc5d416f1fdf66044b197c0e199c1d4d08e0990ad1dd1e502e2aa3204c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"food_id\"]"
+        ],
+        "source_line": [
+            255
+        ],
+        "source_column": [
+            9064
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 255,
+        "sink_column": 9064,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f25d5adc5d416f1fdf66044b197c0e199c1d4d08e0990ad1dd1e502e2aa3204c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vrid"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            234
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 386,
+        "sink_column": 14956,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cfef790e5d2d6c3a201421575e46f80579ca3dba47035c185fa7d07861df8e9a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$orderrow[\"fld_order_id\"]"
+        ],
+        "source_line": [
+            394
+        ],
+        "source_column": [
+            15217
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 394,
+        "sink_column": 15217,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70cf20defce61f450a99266ea3873085022b8947d37efbc8106ea9bfa1c7a01c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$orderrow[\"fld_email_id\"]"
+        ],
+        "source_line": [
+            395
+        ],
+        "source_column": [
+            15274
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 395,
+        "sink_column": 15274,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2cf1db277fbb768eac1bcb69f536becb807e46ed0f6ae013ef7886f93f0ebff6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$orderrow[\"fld_food_id\"]"
+        ],
+        "source_line": [
+            396
+        ],
+        "source_column": [
+            15331
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 396,
+        "sink_column": 15331,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c2b0e74f0d40276270a56edaaf201e3689ef6057b31f2f14eceb0dca56c996ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$orderrow[\"fldstatus\"]"
+        ],
+        "source_line": [
+            401
+        ],
+        "source_column": [
+            15570
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 401,
+        "sink_column": 15570,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2a3d9e5981d1878b1c8cbb139d8ae4694aea00610321aad8ebd345b2f0c2d0f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$orderrow[\"fld_order_id\"]"
+        ],
+        "source_line": [
+            413
+        ],
+        "source_column": [
+            15876
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 413,
+        "sink_column": 15876,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70cf20defce61f450a99266ea3873085022b8947d37efbc8106ea9bfa1c7a01c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$orderrow[\"fldstatus\"]"
+        ],
+        "source_line": [
+            408
+        ],
+        "source_column": [
+            15720
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/food.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 408,
+        "sink_column": 15720,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/food.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2a3d9e5981d1878b1c8cbb139d8ae4694aea00610321aad8ebd345b2f0c2d0f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            43
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cancelorder.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 73,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cancelorder.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6cd5973afc0cb181ebb5168c43c8713f923e4d00f25529bacd90255a3e389b7d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$product_id"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            167
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 29,
+        "sink_column": 549,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3b06f43c214f75526c45653794af2b691dddfefe32233b2f7a2437a44bbe5b43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fld_email"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            1339
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 75,
+        "sink_column": 1490,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d25a3360ba06dcaee765d112d545a9fc17881df4927ea5bb9f34d4f0b39ccb6f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qqr[\"fld_name\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            3940
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 3940,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "523c710961a7043307706f7b2e54c031548eb0678f8194063c9d30bb2db291c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$vendor_id"
+        ],
+        "source_line": [
+            214
+        ],
+        "source_column": [
+            7581
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 215,
+        "sink_column": 7642,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5a82e2b69a094d220a2e573d13c26de4812d63bfb8bbde7412a444266d2e793c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$em",
+            "$res[\"fldimage\"]"
+        ],
+        "source_line": [
+            217,
+            221
+        ],
+        "source_column": [
+            7795,
+            8004
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 221,
+        "sink_column": 7985,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7a8b9359ca89c42a6d8cf02549937c65927cf051575cb5124ed9c12120e9f016",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"foodname\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            8100
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 8100,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c1102ae7c0a29ec50bbdf01c2ee8529817ee03cc8c26fa16fe83d6450d98d73f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cost\"]"
+        ],
+        "source_line": [
+            223
+        ],
+        "source_column": [
+            8172
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 223,
+        "sink_column": 8166,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6982b009b23b0a90e42ffe293f84b1a19b3bf1377f1981214b7b60ee413b15b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cuisines\"]"
+        ],
+        "source_line": [
+            224
+        ],
+        "source_column": [
+            8234
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 224,
+        "sink_column": 8234,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a7c3da84b941ee62e65a67d70b14cf7dc938922eba30c122a3114a3ac49fe79",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nm"
+        ],
+        "source_line": [
+            218
+        ],
+        "source_column": [
+            7839
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 225,
+        "sink_column": 8300,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7f9ee7ccfc082331c3744187fd55ecae291e02cc5b6514d2dbe66a8550b935d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"fld_cart_id\"]"
+        ],
+        "source_line": [
+            227
+        ],
+        "source_column": [
+            8467
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 227,
+        "sink_column": 8467,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4276fab0c0370aa6dc535790f7a65149d3607ba888fa4cc781543594a8487505",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fld_name"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            1304
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 285,
+        "sink_column": 10284,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "800e299700e61b9af6c4d5293a6e46c0a759a652973bc16400c819172a975b4d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fld_email"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            1339
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 290,
+        "sink_column": 10584,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9045bcad59fe9a45c261b2f664cc7c89a5a1fc5effd7c0f89d669e3b6c9c578f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fld_mobile"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            1376
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 294,
+        "sink_column": 10923,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d2b23fedb5c410b199fe1d89391b1bfed9d60ed24d96788db248857f76093401",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fld_password"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            1415
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 299,
+        "sink_column": 11205,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "faafe193b5151ce115d6e1a19ead598116d4be447dd24537510f8f8e02526613",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qrr[\"foodname\"]"
+        ],
+        "source_line": [
+            339
+        ],
+        "source_column": [
+            12614
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 339,
+        "sink_column": 12614,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8b03da9b6d6c30c13e588413cc3016b718224cdced5a851d2962062a46304b34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qrr[\"cost\"]"
+        ],
+        "source_line": [
+            344
+        ],
+        "source_column": [
+            12712
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 344,
+        "sink_column": 12712,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32b0ef36ddc8e286f6eb42941bab192b443e6af8003b5cf75d3ca45dd74a2325",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fid"
+        ],
+        "source_line": [
+            321
+        ],
+        "source_column": [
+            12131
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 322,
+        "sink_column": 12176,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dc53b69174afdd4d24bdb783d4f43f30a2e2cc69375cad2bcaf40b2343e8d776",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$roww[\"fld_order_id\"]"
+        ],
+        "source_line": [
+            328
+        ],
+        "source_column": [
+            12342
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 328,
+        "sink_column": 12342,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "361fb22537ccf267926092b63c8e2631cfe0862d05c0b68ee3f4ede571822abc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$roww[\"fld_order_id\"]"
+        ],
+        "source_line": [
+            345
+        ],
+        "source_column": [
+            12783
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 345,
+        "sink_column": 12783,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/cart.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "361fb22537ccf267926092b63c8e2631cfe0862d05c0b68ee3f4ede571822abc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_SESSION[\"cust_id\"]"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            531
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/forms.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 24,
+        "sink_column": 531,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/forms.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe70601a485825d8a9f13e9cb17b904d42a84da1913a54eac2babde5291c779c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$product_id"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/forms.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 26,
+        "sink_column": 579,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/forms.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "d542233654ece4cc97c0fff8a19801b8fb98d6811cd6cf9182aafbeeb5728148",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$product_id"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            110
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/forms.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 60,
+        "sink_column": 1309,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/forms.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "d542233654ece4cc97c0fff8a19801b8fb98d6811cd6cf9182aafbeeb5728148",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_SESSION[\"cust_id\"]"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            584
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 31,
+        "sink_column": 584,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b10336c797922e279265db8048e535b6e89f35e728873c215f90be6ac2a35b8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$product_id"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            104
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/index.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 33,
+        "sink_column": 630,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/index.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "220e6bb1a98ad2173daa6b16d6506cd1c863d91a18e861c17a4d3ca981934bac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$product_id"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            104
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/index.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 67,
+        "sink_column": 1326,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/index.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "220e6bb1a98ad2173daa6b16d6506cd1c863d91a18e861c17a4d3ca981934bac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$loginmsg"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            191
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 4947,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c00f4baf7e1e317af18e48af31fa0305f1df26d0e4fbf61f62fa94ce62d74634",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cust_id"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            43
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 3,
+        "sink_column": 43,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c906d1af1379866b710039fc6a47bfc1b8db2df889211ebbfc649a5317ec2a4a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cust_id"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            43
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 5,
+        "sink_column": 80,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "456e5e870fe4381b4ffa3aa2ce3de2671a460567894b452ca0d1d612c9bf17a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cust_id"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            43
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 743,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "456e5e870fe4381b4ffa3aa2ce3de2671a460567894b452ca0d1d612c9bf17a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cart_id"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            493
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 10,
+        "sink_column": 480,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5cbd0d77f0438c20c2fc8992f2282bd1ca7ae7e69a9274bf450e591b894488d7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ven_id"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            545
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 11,
+        "sink_column": 530,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "caf73b845b6569879a65c3e8c6de84c02502218a32761b27ce41d8d1c1346592",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_id"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            595
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 12,
+        "sink_column": 582,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "13f8fb168bedd4ac9d46953c163791190883d136afb71fb703473d68433163f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cost"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            638
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 13,
+        "sink_column": 628,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "444c71f7aa7860e695ff85acf0e9783001c2b199432289823bd5c4d68b4c598b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cart_id",
+            "$ven_id",
+            "$food_id",
+            "$cust_id",
+            "$cost"
+        ],
+        "source_line": [
+            10,
+            11,
+            12,
+            3,
+            13
+        ],
+        "source_column": [
+            493,
+            545,
+            595,
+            43,
+            638
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 743,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "85905df7331cf6c7b82f0326abb5b11766b50aa9a1310f60ec76c8551b1e628b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cart_id"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            493
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/form\/order.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 942,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/form\/order.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "36e37c7503648c098a3195770f4b103fa9f92400fbeef59c05d9658c6c59eb72",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cresult[\"fld_name\"]"
+        ],
+        "source_line": [
+            201
+        ],
+        "source_column": [
+            6808
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 201,
+        "sink_column": 6808,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b55098f388975ad5157083d618d130a004a2dde8219937dcdc0bc53a9f4cfa7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_id"
+        ],
+        "source_line": [
+            328
+        ],
+        "source_column": [
+            11825
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 329,
+        "sink_column": 11854,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5b1441e6bb42884ac8cc461295ca3775f4d571f5c5653f104a26289065f85592",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$hotel_logo"
+        ],
+        "source_line": [
+            335
+        ],
+        "source_column": [
+            12298
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 341,
+        "sink_column": 12634,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3dd4a9d0a16686e14c0c19c2595408103e7e26d1290fd9c46b349390c13bd8f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"fldvendor_id\"]"
+        ],
+        "source_line": [
+            343
+        ],
+        "source_column": [
+            12824
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 343,
+        "sink_column": 12824,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b087a8a5b116809531522f7e0203a1a050f560c0dfdfa15e34520e21836cb576",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"fld_name\"]"
+        ],
+        "source_line": [
+            344
+        ],
+        "source_column": [
+            12951
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 344,
+        "sink_column": 12951,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "57554e2dc897dd89a1323b07cbe67253e4f862544985ebaf4decd01cdf0f7b82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cost\"]"
+        ],
+        "source_line": [
+            346
+        ],
+        "source_column": [
+            13143
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 346,
+        "sink_column": 13143,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ebedc21ae9ed1b206d731fabef820511809cd21c19a30dcc825904682a2e7e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"food_id\"]"
+        ],
+        "source_line": [
+            348
+        ],
+        "source_column": [
+            13335
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 348,
+        "sink_column": 13335,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3fcf59095b3255e4b517ccd94eb256df83b92ad6231694d241b799189372577",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_pic"
+        ],
+        "source_line": [
+            336
+        ],
+        "source_column": [
+            12377
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 355,
+        "sink_column": 13678,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e15b56353798f8ab6df3a45d50b6433f0a9f813a429e254236e4741226f5ae4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cuisines\"]"
+        ],
+        "source_line": [
+            362
+        ],
+        "source_column": [
+            13924
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 362,
+        "sink_column": 13924,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c99854e9ff4b6ab44a2de21f049ddc95a970651c3a6826904c5ab429e96476a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cost\"]"
+        ],
+        "source_line": [
+            363
+        ],
+        "source_column": [
+            13988
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 363,
+        "sink_column": 13982,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ebedc21ae9ed1b206d731fabef820511809cd21c19a30dcc825904682a2e7e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"foodname\"]"
+        ],
+        "source_line": [
+            367
+        ],
+        "source_column": [
+            14154
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 367,
+        "sink_column": 14149,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68b73aa1a2dc761b563118a789a3731009102cea681ea41af3d49e3cdef433b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$hotel_logo"
+        ],
+        "source_line": [
+            411
+        ],
+        "source_column": [
+            15353
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 417,
+        "sink_column": 15941,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3dd4a9d0a16686e14c0c19c2595408103e7e26d1290fd9c46b349390c13bd8f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"fld_name\"]"
+        ],
+        "source_line": [
+            419
+        ],
+        "source_column": [
+            16258
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 419,
+        "sink_column": 16258,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "57554e2dc897dd89a1323b07cbe67253e4f862544985ebaf4decd01cdf0f7b82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cost\"]"
+        ],
+        "source_line": [
+            421
+        ],
+        "source_column": [
+            16539
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 421,
+        "sink_column": 16539,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ebedc21ae9ed1b206d731fabef820511809cd21c19a30dcc825904682a2e7e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"food_id\"]"
+        ],
+        "source_line": [
+            423
+        ],
+        "source_column": [
+            16803
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 423,
+        "sink_column": 16803,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3fcf59095b3255e4b517ccd94eb256df83b92ad6231694d241b799189372577",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_pic"
+        ],
+        "source_line": [
+            412
+        ],
+        "source_column": [
+            15462
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 430,
+        "sink_column": 17406,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e15b56353798f8ab6df3a45d50b6433f0a9f813a429e254236e4741226f5ae4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cuisines\"]"
+        ],
+        "source_line": [
+            436
+        ],
+        "source_column": [
+            17945
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 436,
+        "sink_column": 17945,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c99854e9ff4b6ab44a2de21f049ddc95a970651c3a6826904c5ab429e96476a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cost\"]"
+        ],
+        "source_line": [
+            437
+        ],
+        "source_column": [
+            18062
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 437,
+        "sink_column": 18057,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ebedc21ae9ed1b206d731fabef820511809cd21c19a30dcc825904682a2e7e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"foodname\"]"
+        ],
+        "source_line": [
+            440
+        ],
+        "source_column": [
+            18373
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 440,
+        "sink_column": 18368,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68b73aa1a2dc761b563118a789a3731009102cea681ea41af3d49e3cdef433b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_name\"]"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            652
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 35,
+        "sink_column": 652,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b741906217543f3c36db7f9da68f3bf850b4b9ab4b7f0e98ade7d7203199c842",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qqr[\"fld_name\"]"
+        ],
+        "source_line": [
+            155
+        ],
+        "source_column": [
+            5887
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 5887,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6089cea4c996fa1f33aaf142baa0dce4c67e73c6d47a1141d3ca31f71913ff11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_name\"]"
+        ],
+        "source_line": [
+            223
+        ],
+        "source_column": [
+            8341
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 223,
+        "sink_column": 8341,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b741906217543f3c36db7f9da68f3bf850b4b9ab4b7f0e98ade7d7203199c842",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_address\"]"
+        ],
+        "source_line": [
+            224
+        ],
+        "source_column": [
+            8600
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 224,
+        "sink_column": 8600,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77d72a18129af6e1c01a8a4a9e56c1dfa6fa6ddaef47a8a1b39c7f7f297de1ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_phone\"]"
+        ],
+        "source_line": [
+            225
+        ],
+        "source_column": [
+            8789
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 225,
+        "sink_column": 8789,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2a6713d7cc41b0c89d6f9e3d39f87b4cc437515811f4a550c2454dd0bb26e16d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_mob\"]"
+        ],
+        "source_line": [
+            226
+        ],
+        "source_column": [
+            8995
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 226,
+        "sink_column": 8995,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3fffb1a73901f6ac9f371daf842de4520195570377765b106c33e7d76bbaa3f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fld_email\"]"
+        ],
+        "source_line": [
+            227
+        ],
+        "source_column": [
+            9177
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 227,
+        "sink_column": 9177,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4955c76dd5b71516b6b4b15deca0187bd21fbe6479a8d6dc39a120f6382c220d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qqr[\"fld_name\"]"
+        ],
+        "source_line": [
+            165
+        ],
+        "source_column": [
+            5983
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 165,
+        "sink_column": 5983,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3fba2c5d62e01cb2da8b6b08bdce696fb96a77f86b628aa313f4ea5571195406",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$hotel_logo"
+        ],
+        "source_line": [
+            241
+        ],
+        "source_column": [
+            8699
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 247,
+        "sink_column": 9039,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0ae3aabc6180984e41a5a95f94cfa34b818e5ee8f1928517e04de1c267146e4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"fld_name\"]"
+        ],
+        "source_line": [
+            250
+        ],
+        "source_column": [
+            9289
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 250,
+        "sink_column": 9289,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bfd45a6242409ba0d5fc8b1682a90dc41698b201415d0fa37843ed320aa4c79",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cost\"]"
+        ],
+        "source_line": [
+            252
+        ],
+        "source_column": [
+            9580
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 252,
+        "sink_column": 9580,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "549b259a9dd43deabf1e8efb76b4120702b69ec9ff47d300e2e711da68d991d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_pic"
+        ],
+        "source_line": [
+            242
+        ],
+        "source_column": [
+            8778
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 261,
+        "sink_column": 10106,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ed50036a60d88c99271456d2aeda48286b889e59768c94ea97c7a859c43ee882",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cuisines\"]"
+        ],
+        "source_line": [
+            268
+        ],
+        "source_column": [
+            10352
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 268,
+        "sink_column": 10352,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18e183a9db76805d7f5dd607e3bc8b1655dda89d2fcd3e87bef3c4993f22dd51",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"cost\"]"
+        ],
+        "source_line": [
+            269
+        ],
+        "source_column": [
+            10416
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 269,
+        "sink_column": 10410,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "549b259a9dd43deabf1e8efb76b4120702b69ec9ff47d300e2e711da68d991d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[\"foodname\"]"
+        ],
+        "source_line": [
+            273
+        ],
+        "source_column": [
+            10568
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/searchfood.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 273,
+        "sink_column": 10563,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/searchfood.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8c07c900f3cde3e5031e0c65253a4df19359bad43a408c17687dcea66b522293",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qqr[\"fld_name\"]"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            5035
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 5035,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a6c32643d6a936679ee4c06ed43db47abc364ae89addd69c1b346c03594ba163",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_id"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            139
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 175,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2959435dc0f473caf0d668392651cccb445f6344f962478e05881cabb08eb426",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_id"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            139
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 57,
+        "sink_column": 973,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2959435dc0f473caf0d668392651cccb445f6344f962478e05881cabb08eb426",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_id"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            139
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 60,
+        "sink_column": 1156,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "2963cbffed110752dda65a3a2ce7ef67fba359f5537d515ce7eb38baeac1ee30",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_id"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            139
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 79,
+        "sink_column": 1754,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2959435dc0f473caf0d668392651cccb445f6344f962478e05881cabb08eb426",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rfldimageold"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            460
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 84,
+        "sink_column": 2144,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "6d7328d500cc0e72f7a4f5ffd5a0b3850bd71d92b5ae89e3be8b22f8dcc78f8d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$food_id"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            139
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 85,
+        "sink_column": 2208,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "2963cbffed110752dda65a3a2ce7ef67fba359f5537d515ce7eb38baeac1ee30",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rfoodname"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            322
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 214,
+        "sink_column": 6806,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b1989d0c68a37f2986e8ff0a86f08cd17dfe88eff85f03700d62446a7e7e7845",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rcost"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            357
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 220,
+        "sink_column": 7236,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "934acac5acc99190cf5c76b87070f43536e61fa3cfbe33d1e8c3bb11a31ba48f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rcuisines"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            384
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/update.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 226,
+        "sink_column": 7661,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/update.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3663dfc74c4476b39350ee25a18c096b033b7b47e7c456517d62f27f56b5ea36",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$idd"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/vendor_delete_food.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 113,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/vendor_delete_food.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "407f8ea788e7fcc666bc276f469559335e6406ced497fe3661022c9d1441f489",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$e",
+            "$img"
+        ],
+        "source_line": [
+            9,
+            10
+        ],
+        "source_column": [
+            360,
+            383
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/vendor_delete_food.php",
+            "\/home\/kali\/60.online-food-ordering-system\/vendor_delete_food.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 12,
+        "sink_column": 409,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/vendor_delete_food.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "3c33f131d87623fbf0921b7bfe033aeea3e31372b65835a0f9316839b3912f05",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$idd"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            55
+        ],
+        "source_file": [
+            "\/home\/kali\/60.online-food-ordering-system\/vendor_delete_food.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 486,
+        "sink_file": "\/home\/kali\/60.online-food-ordering-system\/vendor_delete_food.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "407f8ea788e7fcc666bc276f469559335e6406ced497fe3661022c9d1441f489",
+        "vuln_type": "taint-style"
+    }
+]

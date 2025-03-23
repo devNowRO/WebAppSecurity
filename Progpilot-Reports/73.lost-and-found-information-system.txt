@@ -1,0 +1,46 @@
+[
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            251
+        ],
+        "source_file": [
+            "\/home\/kali\/73.lost-and-found-information-system\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 7,
+        "sink_column": 251,
+        "sink_file": "\/home\/kali\/73.lost-and-found-information-system\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b17dadc99dcce00a13d7f109d91a63cfd2a4f4bd1fd76fd35355d6c847b1d207",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            253
+        ],
+        "source_file": [
+            "\/home\/kali\/73.lost-and-found-information-system\/home.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 7,
+        "sink_column": 253,
+        "sink_file": "\/home\/kali\/73.lost-and-found-information-system\/home.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "84f3381ae9366a909f3cf48b500ae297e240d1084fe61a58770851e9df6d43c3",
+        "vuln_type": "taint-style"
+    }
+]

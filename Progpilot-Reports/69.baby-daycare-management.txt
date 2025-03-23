@@ -1,0 +1,1454 @@
+[
+    {
+        "source_name": [
+            "$result[\"description\"]"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            679
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 27,
+        "sink_column": 679,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f65e2a7767f75a928c9c71be4e93fd64ce96d706921ad96bd4d0261f471b78c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"title\"]"
+        ],
+        "source_line": [
+            39
+        ],
+        "source_column": [
+            1019
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 1019,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5a97cb3486696183b47ee6c181efe9b60d723d97fa36eb2ac51fcc52994ce09e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"linkbootstrap\"]"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1295
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 48,
+        "sink_column": 1295,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f4eff12843b49bf72716d3e014730b92a4650374609c36fc84ea2c1af8eace32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"link\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1560
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 1560,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dc9e394f9d79dcb2eb3b3f23cdadd7282ca0cb055defd31bdec07dbe1a040818",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"description\"]"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            678
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 26,
+        "sink_column": 678,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c1915a3d74782a12d2094a1e82042b41b99e6de27cc6935600a209b6762c4546",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"title\"]"
+        ],
+        "source_line": [
+            38
+        ],
+        "source_column": [
+            1018
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 1018,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc7de2aa145f8bf5fe6a04a6fc1eac1c34de0334e63f4d110a633bdcca72cb26",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"linkbootstrap\"]"
+        ],
+        "source_line": [
+            47
+        ],
+        "source_column": [
+            1294
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 47,
+        "sink_column": 1294,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c64a0c7463e8feeaf7a9cdf96fb996a3f788eb05a0011be84fe3718d2dfd87f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"link\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1559
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 1559,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d8320cc3cfd5f3c48772d20163e4b1534159a8d5ef5ec801b935eab54a68f76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"address\"]"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            423
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 16,
+        "sink_column": 423,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f736e7103720553a50806454f5308362c3e947b6b953eb8fffe13bf85e7429e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"link\"]"
+        ],
+        "source_line": [
+            39
+        ],
+        "source_column": [
+            1005
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 1005,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b1a958524c9aad559e6363c0f2bdd2596b7253051a2c1d1abdb48d81e7066689",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"name\"]"
+        ],
+        "source_line": [
+            39
+        ],
+        "source_column": [
+            1053
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 1053,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bc7026f91113ad75bbab3d7494902d6a04990a4efd3cc9ce7dc64983821170b3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            703
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 37,
+        "sink_column": 727,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a9583ef4a8212e418a5e536429252096876ab04abb87e9782b86af35d5b6f605",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            703
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 37,
+        "sink_column": 727,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "183ed251061da0f8686fd7a3297bfe4635135a4b04543894f5bf3550be4363a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            703
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 37,
+        "sink_column": 727,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "08ec5ae0bda3382cd764ca77d5893c3587034d5af1bdaf9ca484b9fa2ab91aca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            703
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 37,
+        "sink_column": 727,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ce153fb5e21ada8e8869f020fabffb5328a58b0fa5b2cd55b4fbf335e4472ee5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"description\"]"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            679
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 27,
+        "sink_column": 679,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87adaf06fef21901eae6d7c25d431c3fcc13cd7cc571ef686bc4373c5515e96f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"title\"]"
+        ],
+        "source_line": [
+            39
+        ],
+        "source_column": [
+            1019
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 1019,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4b050ad7a746d2a7c0981d313383b93592bd044ea574abca02cae547e9e3607",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"linkbootstrap\"]"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1295
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 48,
+        "sink_column": 1295,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8635cac99fbbd54b23917b5e56ec3f0c8b8b2ad31d951ec226ddf115d57c6484",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"link\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1560
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/404.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 1560,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/404.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a1973088c437b86affefe77f5b72e8a604a9070296e5e75792d50ec0db751bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$image"
+        ],
+        "source_line": [
+            39
+        ],
+        "source_column": [
+            1409
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 44,
+        "sink_column": 1578,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "80554711f7125532aa1662508732c298566d8b5bf85369e3c771389e365c4d96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$roleid"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            1342
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 2416,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef521b49ddddae5204b927be4fb0634f23ccfe754a5d7e51c5cb5bdc44753158",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$action"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            1307
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2437,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7937d27dee47926df5b8bc4ad26400d8735ca81f26f04c8f74afed11fd2634b8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"image\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            1776
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 53,
+        "sink_column": 1745,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "9c6d565d12a851d11d22f11a3f21170e00ae94b5844c918c2fad97689bd70c21",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$postid"
+        ],
+        "source_line": [
+            44
+        ],
+        "source_column": [
+            1498
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3061,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "42015f46031426b6660c69ec829f4de13628c5cca44e5a8201acd6dd9ef29c40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"username\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3367
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3367,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa51e137728e5e43f9a1098a8d152d59ec467860368ee8daff4513e4a10d7251",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"email\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3417
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3417,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d400b1ee59ffaf47b7ea87e62b85aa94c389ef90762ab1f88fa5b5ea7754ec58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3576
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3576,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01bb33f9ede23ed7c27f8c307235c5e62707d5946b5ae2af367813fe4a09bdca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3722
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3722,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01bb33f9ede23ed7c27f8c307235c5e62707d5946b5ae2af367813fe4a09bdca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3889
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3889,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01bb33f9ede23ed7c27f8c307235c5e62707d5946b5ae2af367813fe4a09bdca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            4034
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 4034,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01bb33f9ede23ed7c27f8c307235c5e62707d5946b5ae2af367813fe4a09bdca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4209
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4209,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01bb33f9ede23ed7c27f8c307235c5e62707d5946b5ae2af367813fe4a09bdca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4348
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4348,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01bb33f9ede23ed7c27f8c307235c5e62707d5946b5ae2af367813fe4a09bdca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"username\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4990
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4990,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa51e137728e5e43f9a1098a8d152d59ec467860368ee8daff4513e4a10d7251",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"type\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            5040
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 5040,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82614ba3da69b3e65dc8c50b0682ee957ba19265ced360c5f85077eef54dc4c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            5147
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 5147,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01bb33f9ede23ed7c27f8c307235c5e62707d5946b5ae2af367813fe4a09bdca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"image\"]"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            4609
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 4609,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a91a99b7e9a26c1dd3a97ef6ab2681ffe4dc919e4842d4f12b577f65d13b07f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"image\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            5231
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 5231,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a91a99b7e9a26c1dd3a97ef6ab2681ffe4dc919e4842d4f12b577f65d13b07f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"image\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            5792
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 5792,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/pagerole.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a91a99b7e9a26c1dd3a97ef6ab2681ffe4dc919e4842d4f12b577f65d13b07f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"title\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3935
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3935,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8d161040e7432ffc1c4ec0e429316962cc39132cfae4082144e5f5110518a4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"body\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4129
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4129,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4921d75c76b449eea846f26ef78b4860df7f415eed57515d8fe7735f23e32e41",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"image\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4341
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4341,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e278f437111a396d4c8a852a4f36a42a49a6a3de55671bd651c8a255735f18fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"image\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4558
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4558,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e278f437111a396d4c8a852a4f36a42a49a6a3de55671bd651c8a255735f18fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"tags\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            4736
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 4736,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "976aa9c17322fb37ac1573cba2cc41f8b972761b6a0545eb6e0c8353133e527c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            5545
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 5545,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69630ede8e3e2fad1107b5f05cea975d84f9b36a4a4efd407c1f363e2d4125f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            205
+        ],
+        "source_column": [
+            8040
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 205,
+        "sink_column": 8040,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69630ede8e3e2fad1107b5f05cea975d84f9b36a4a4efd407c1f363e2d4125f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"status\"]"
+        ],
+        "source_line": [
+            250
+        ],
+        "source_column": [
+            9911
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 250,
+        "sink_column": 9911,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a052d0c22e898486c4bc08be51cf95df799aec1a08249318180f087a8ba7b558",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"status\"]"
+        ],
+        "source_line": [
+            252
+        ],
+        "source_column": [
+            10108
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 252,
+        "sink_column": 10108,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a052d0c22e898486c4bc08be51cf95df799aec1a08249318180f087a8ba7b558",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"title\"]"
+        ],
+        "source_line": [
+            242
+        ],
+        "source_column": [
+            9415
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 242,
+        "sink_column": 9415,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8d161040e7432ffc1c4ec0e429316962cc39132cfae4082144e5f5110518a4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$image"
+        ],
+        "source_line": [
+            244
+        ],
+        "source_column": [
+            9488
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 244,
+        "sink_column": 9488,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c3ec1930e1ce96ec184e5ac266d18166df903b768c8224a6f2bef88e1ab0652",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"title\"]"
+        ],
+        "source_line": [
+            245
+        ],
+        "source_column": [
+            9683
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 245,
+        "sink_column": 9656,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8d161040e7432ffc1c4ec0e429316962cc39132cfae4082144e5f5110518a4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            250
+        ],
+        "source_column": [
+            9951
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 250,
+        "sink_column": 9951,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69630ede8e3e2fad1107b5f05cea975d84f9b36a4a4efd407c1f363e2d4125f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            254
+        ],
+        "source_column": [
+            10298
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 254,
+        "sink_column": 10298,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69630ede8e3e2fad1107b5f05cea975d84f9b36a4a4efd407c1f363e2d4125f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            255
+        ],
+        "source_column": [
+            10486
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 255,
+        "sink_column": 10486,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69630ede8e3e2fad1107b5f05cea975d84f9b36a4a4efd407c1f363e2d4125f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"image\"]"
+        ],
+        "source_line": [
+            255
+        ],
+        "source_column": [
+            10521
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 255,
+        "sink_column": 10521,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e278f437111a396d4c8a852a4f36a42a49a6a3de55671bd651c8a255735f18fe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            252
+        ],
+        "source_column": [
+            10148
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 252,
+        "sink_column": 10148,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/admin\/posts.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69630ede8e3e2fad1107b5f05cea975d84f9b36a4a4efd407c1f363e2d4125f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$postid"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            321
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/editpost.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 36,
+        "sink_column": 1226,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/editpost.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4796071ac388e6b49506942dd24796b509d8f530c4dd75f58e9ff51f2f97e77b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$postid"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            321
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/editpost.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 43,
+        "sink_column": 1500,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/editpost.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4796071ac388e6b49506942dd24796b509d8f530c4dd75f58e9ff51f2f97e77b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"del_img\"]"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2488
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/editpost.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 65,
+        "sink_column": 2458,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/editpost.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "506137d6d4fcb8d053674c4b736143220e30860c5b7e077639ea7976375226e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            105
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/inc\/contentsectionpage.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 54,
+        "sink_column": 1612,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/inc\/contentsectionpage.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0eebbdef950eacd91724878ceb91959396b27b1dda50ab7fc9724a82231dbc61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            703
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 37,
+        "sink_column": 727,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/lib\/Database.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9464d39abf7086adfc27fc1c2ec09953f2e703ec6b5c762b77523ada6eb6d48f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$msgid"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            315
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/replay.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 21,
+        "sink_column": 592,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/replay.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e41c81b382e8f79862650a9df4fba3d95a1c3d7ebcb564732aec3396e44003c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$msgid"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            315
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/replay.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 28,
+        "sink_column": 962,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/replay.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e41c81b382e8f79862650a9df4fba3d95a1c3d7ebcb564732aec3396e44003c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$msgid"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            315
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/replay.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 31,
+        "sink_column": 1157,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/replay.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e41c81b382e8f79862650a9df4fba3d95a1c3d7ebcb564732aec3396e44003c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$del_img"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            460
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/updatemenu.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 50,
+        "sink_column": 1597,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/updatemenu.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "30d1595a6bb3224c836feb15224438a25ed8fa3645701459ba3dcf28c505f414",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sid"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            321
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/updatesocial.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 25,
+        "sink_column": 666,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/updatesocial.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8987be08abded38a30ffcafa6664569944825c6ffebcf1174146cf50f1b42408",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"del_img\"]"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            1981
+        ],
+        "source_file": [
+            "\/home\/kali\/69.baby-daycare-management\/updatewelcome.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 58,
+        "sink_column": 1960,
+        "sink_file": "\/home\/kali\/69.baby-daycare-management\/updatewelcome.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "29d8494452a76325bd4ed1948f100701bebf35f0bde1416f20f1f65d23da156f",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "source_name": [
+            "$sql"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            202
+        ],
+        "source_file": [
+            "\/home\/kali\/58.online-education-institutes-managing-system\/contact.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 309,
+        "sink_file": "\/home\/kali\/58.online-education-institutes-managing-system\/contact.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "eb5d5302458329573f9f2d45f583973497c61a4654c34d562ee54788dffdfeba",
+        "vuln_type": "taint-style"
+    }
+]

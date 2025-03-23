@@ -1,0 +1,2104 @@
+[
+    {
+        "source_name": [
+            "$_GET[\"w\"]"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            795
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 20,
+        "sink_column": 776,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1073070bc7d5a57ccac5dce42dc0ea9a46a4164a484e836f2581a8213f7a2eab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3934
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 95,
+        "sink_column": 3959,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "100ba4905476caa1aaa622ddf235928f3476415e9ee7c73be45d90c160dd6ba9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$total",
+            "$time",
+            "$eid"
+        ],
+        "source_line": [
+            90,
+            91,
+            93,
+            94
+        ],
+        "source_column": [
+            3835,
+            3860,
+            3911,
+            3934
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 4121,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b48c8e1becb4ed623f985f6543cf913e4c9ac34acc1aaad21f1b4d65a7ff4af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$total",
+            "$time",
+            "$eid"
+        ],
+        "source_line": [
+            90,
+            91,
+            93,
+            94
+        ],
+        "source_column": [
+            3835,
+            3860,
+            3911,
+            3934
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 4526,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b48c8e1becb4ed623f985f6543cf913e4c9ac34acc1aaad21f1b4d65a7ff4af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid",
+            "$sn"
+        ],
+        "source_line": [
+            135,
+            136
+        ],
+        "source_column": [
+            5814,
+            5838
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 139,
+        "sink_column": 5903,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "126850a4823078cee2562f1c30b4ca14bf066ee90e5c824508e7b0198b97d43a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sn",
+            "$qns"
+        ],
+        "source_line": [
+            136,
+            142
+        ],
+        "source_column": [
+            5838,
+            6074
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 6127,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67196fa0f2c77732f482be0c2b98dca48d8220b2c1c2a679f98c5b371c5fa736",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qid"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            6098
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 147,
+        "sink_column": 6221,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "39fc3a3e101fc054e5572d1674b70a870236b145dc72a11ac6849140bd91cc40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid",
+            "$sn",
+            "$total",
+            "$qid"
+        ],
+        "source_line": [
+            135,
+            136,
+            137,
+            143
+        ],
+        "source_column": [
+            5814,
+            5838,
+            5859,
+            6098
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 6293,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8ce96dd2ce62cd4ab761178a8551baa3451f2dc1f31f51d5bebed36521ec40ea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$optionid",
+            "$option"
+        ],
+        "source_line": [
+            152,
+            151
+        ],
+        "source_column": [
+            6517,
+            6485
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 153,
+        "sink_column": 6558,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c4cb71c826abf795c0986c05d96f1b1d50d43902bd0ec3f6c4c0e4f4a92a8423",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid",
+            "$total"
+        ],
+        "source_line": [
+            135,
+            137
+        ],
+        "source_column": [
+            5814,
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 6697,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "632fde52a2288ce4f5e8eafccfd5ff035216e6af1004fac13cf58f2ade19cb3c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            167
+        ],
+        "source_column": [
+            7166
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 168,
+        "sink_column": 7189,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "55862e050b6dcae129808bd754781d79b5bd31f3ffcc25f06679a4e10ea14d2f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qa",
+            "$r",
+            "$w",
+            "$s"
+        ],
+        "source_line": [
+            177,
+            176,
+            175,
+            174
+        ],
+        "source_column": [
+            7567,
+            7550,
+            7532,
+            7514
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 178,
+        "sink_column": 7591,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2aa2a99c653780b5c42f5e798f7371d2530046228ca215bc69794a13527bd7a5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$s"
+        ],
+        "source_line": [
+            186
+        ],
+        "source_column": [
+            8225
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 187,
+        "sink_column": 8248,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f3b36c5bb5e9df0aa6dd3b096fa712439348b58636fa97473271086092ce987b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$title"
+        ],
+        "source_line": [
+            213,
+            90
+        ],
+        "source_column": [
+            9088,
+            3835
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 216,
+        "sink_column": 9123,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "29de822873bf629e78529c038887eaaf0d7d9f0c1834694ce031357b4cd58b90",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            205
+        ],
+        "source_column": [
+            8870
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 210,
+        "sink_column": 8965,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "100ba4905476caa1aaa622ddf235928f3476415e9ee7c73be45d90c160dd6ba9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$title",
+            "$qa",
+            "$r",
+            "$w",
+            "$s"
+        ],
+        "source_line": [
+            213,
+            90,
+            209,
+            208,
+            207,
+            206
+        ],
+        "source_column": [
+            9088,
+            3835,
+            8941,
+            8924,
+            8906,
+            8888
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 216,
+        "sink_column": 9123,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8d99922e4b3c61ade0f37702d51d31cc0c4c8f6a0a6553376b60dfa5c5cf9b45",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$gender",
+            "$college"
+        ],
+        "source_line": [
+            236,
+            237,
+            238
+        ],
+        "source_column": [
+            9828,
+            9848,
+            9872
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 241,
+        "sink_column": 9911,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f7f77b14f49f984b31770f68161926c2c4ea0d491d550ebdfe59040366e03909",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$e"
+        ],
+        "source_line": [
+            231
+        ],
+        "source_column": [
+            9669
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 233,
+        "sink_column": 9710,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "133c686a07e37708a90e24fd7a1b043ff19092a1e4e9fc857177050c3068b0c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$gender",
+            "$college",
+            "$s"
+        ],
+        "source_line": [
+            236,
+            237,
+            238,
+            232
+        ],
+        "source_column": [
+            9828,
+            9848,
+            9872,
+            9687
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/account.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 241,
+        "sink_column": 9911,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/account.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a6d2fdf3ef7d19076f66eb5e81ac0b7b9eebbaf749d1e2d482e5e3e43d7403d7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ref"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            39
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/admin.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 22,
+        "sink_column": 612,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/admin.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "69eb86a0b603c90b3bda3dc42afed63671115bddf3f09b4377d0a4caa5ebca58",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4699
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 115,
+        "sink_column": 4724,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "49189d9e94f7c3a1ac29508ec8eb0b49966a5e943378eb79a4391672163dc451",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$total",
+            "$time",
+            "$eid"
+        ],
+        "source_line": [
+            110,
+            111,
+            113,
+            114
+        ],
+        "source_column": [
+            4600,
+            4625,
+            4676,
+            4699
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4886,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9849fdad02d8f06a0a5d3bb2e4d9e6043234f1b41814605e2754e0c852256d36",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$total",
+            "$time",
+            "$eid"
+        ],
+        "source_line": [
+            110,
+            111,
+            113,
+            114
+        ],
+        "source_column": [
+            4600,
+            4625,
+            4676,
+            4699
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 5291,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9849fdad02d8f06a0a5d3bb2e4d9e6043234f1b41814605e2754e0c852256d36",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$gender",
+            "$college"
+        ],
+        "source_line": [
+            147,
+            148,
+            149
+        ],
+        "source_column": [
+            6424,
+            6444,
+            6468
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 6507,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7b434e3a53361d0a224ba902494eeb3cacd0c14603b0cb9fc0e0a7627810c2c1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$e"
+        ],
+        "source_line": [
+            142
+        ],
+        "source_column": [
+            6265
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 144,
+        "sink_column": 6306,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bb5fd1b30523e644763ddbae419afdfe6b9cbd9d38ef6ef6dc51277aed9f3da1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$gender",
+            "$college",
+            "$s"
+        ],
+        "source_line": [
+            147,
+            148,
+            149,
+            143
+        ],
+        "source_column": [
+            6424,
+            6444,
+            6468,
+            6283
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 6507,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c68ad2bbf412724c38b7dfe90f37b6cc72550d8cae584fbadabbfca20335005",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$gender",
+            "$college",
+            "$email",
+            "$mob"
+        ],
+        "source_line": [
+            168,
+            170,
+            172,
+            171,
+            169
+        ],
+        "source_column": [
+            7107,
+            7151,
+            7206,
+            7181,
+            7130
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 174,
+        "sink_column": 7241,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c04a9e7ae1cd46b5134df95c48e13a9a1c5da7ee26d47a39d477faccd76db086",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id",
+            "$subject",
+            "$email",
+            "$time",
+            "$name"
+        ],
+        "source_line": [
+            196,
+            193,
+            195,
+            192,
+            194
+        ],
+        "source_column": [
+            8191,
+            8114,
+            8166,
+            8091,
+            8143
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 198,
+        "sink_column": 8247,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d03a68170703a591f0fa6013d21264e08072e1ecbf78aa0a6404b59982b4adfb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            196
+        ],
+        "source_column": [
+            8191
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 200,
+        "sink_column": 8572,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1e924ef68526388eadbd921b0df8e32196798694dabde1c55a19a7679ee2a2c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            212
+        ],
+        "source_column": [
+            8867
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 213,
+        "sink_column": 8896,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6a182be29191950ee58d0f4c9f147109a5f6d12eed6150abab5fa1de392a878d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$subject"
+        ],
+        "source_line": [
+            216
+        ],
+        "source_column": [
+            9041
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 9193,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68d64ff6a9302eaf44818b40f51922332f818eace2fd7a25a4a90fe5d54f47ab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$time",
+            "$name",
+            "$feedback"
+        ],
+        "source_line": [
+            219,
+            215,
+            220
+        ],
+        "source_column": [
+            9133,
+            9018,
+            9156
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 223,
+        "sink_column": 9458,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9cd2412731ae9be20f3832e5841ec42b6ce659f81f98ecb9f7799d7fe81f361d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"n\"]",
+            "$_GET[\"eid\"]"
+        ],
+        "source_line": [
+            326,
+            326
+        ],
+        "source_column": [
+            12911,
+            12931
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 323,
+        "sink_column": 12647,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da58c7f44c237a3b9cd3342b21d15df76978f9c4bb5be9a51cc89282192121df",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$total",
+            "$time",
+            "$eid"
+        ],
+        "source_line": [
+            404,
+            405,
+            407,
+            408
+        ],
+        "source_column": [
+            15550,
+            15575,
+            15626,
+            15649
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 409,
+        "sink_column": 15675,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/dash.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9849fdad02d8f06a0a5d3bb2e4d9e6043234f1b41814605e2754e0c852256d36",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$subject",
+            "$feedback"
+        ],
+        "source_line": [
+            4,
+            5,
+            6,
+            10
+        ],
+        "source_column": [
+            57,
+            81,
+            107,
+            194
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/feed.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/feed.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/feed.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/feed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 229,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/feed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3ae49a28412b38edf37c319c114dcfbd3656f6431f74ba5a449afed95f7b7862",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ref"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            39
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/feed.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 12,
+        "sink_column": 370,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/feed.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "65fb407523226506d43209dcb1e54a932a19112ab3cad6143539df589e20bea7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"w\"]"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            725
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/feedback.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 17,
+        "sink_column": 706,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/feedback.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a0daf2e9d068497d03b58ee76bc3cc6faf6240c054ef9111bcf1dbd5140c4e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"q\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3659
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/feedback.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3556,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/feedback.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6774c9df4d576d1ad12a40a236d7edfdcad47537bfca0d0b05a5695df014941b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$mob"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            92
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 8,
+        "sink_column": 125,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fce2701edc04d7c70426fc25aadd1570180880b3e83fb738c9ac7dab415709c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$mob"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            485
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 26,
+        "sink_column": 625,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fce2701edc04d7c70426fc25aadd1570180880b3e83fb738c9ac7dab415709c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$mob"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            485
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 37,
+        "sink_column": 1001,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fce2701edc04d7c70426fc25aadd1570180880b3e83fb738c9ac7dab415709c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$mob",
+            "$mob"
+        ],
+        "source_line": [
+            21,
+            7
+        ],
+        "source_column": [
+            485,
+            92
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 3182,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5418fcbf2dd880fdadaf210c6b8f69a53ac815798ede5f396c635faeaa11842e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$security_question"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            297
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 3363,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/forgot-password.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d2d1f5e519814a7848fe3063f9981b5583843c7c8c8378b2b68c529fcc4d502",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$mob"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            42
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/gg"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 5,
+        "sink_column": 94,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/gg",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a6cf8ffe668ac1a2c0c10c51600695a571657b5e31b3a4a333e3f24acf7c56ec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$password",
+            "$mob"
+        ],
+        "source_line": [
+            4,
+            3
+        ],
+        "source_column": [
+            63,
+            42
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/gg",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/gg"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 8,
+        "sink_column": 207,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/gg",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1018a9a23b79e5ef38b012169a8273ec59c2ae9b9b52bf42c4dcad6f1a621aab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"w\"]"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            751
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 18,
+        "sink_column": 732,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "52e4fe583a0c5bb04501a3cc784ddd9703a6d74091e513b9054dae2ab4eb12c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"q7\"]"
+        ],
+        "source_line": [
+            229
+        ],
+        "source_column": [
+            7544
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 229,
+        "sink_column": 7503,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "98901dd707baec50e119becbd7d7c3d9a4f0f658fdf756ad02bcfe5b065fb30b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ref"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            108
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/login.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 27,
+        "sink_column": 681,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/login.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "3162388bf84930773bc3eff3809984ac9d9793f6b63e6de78b625a05d63a721b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ref"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            75
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/logout.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 6,
+        "sink_column": 94,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/logout.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "519ad88c3e2c622d3f3f2270836539a582e6c97ded68f9f46c348e612ed71e02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            182
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 212,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "88c26325f7cddb22bd71476bd8ee65ea28494db781efb7e04c3f6afcc83fd15d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$demail"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            422
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 454,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "07bd720077808016910a616ed233c4ce8952a6ebc018dca279299277c4ef9ae2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$demail"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            422
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 538,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "07bd720077808016910a616ed233c4ce8952a6ebc018dca279299277c4ef9ae2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$demail"
+        ],
+        "source_line": [
+            17
+        ],
+        "source_column": [
+            422
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 629,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "07bd720077808016910a616ed233c4ce8952a6ebc018dca279299277c4ef9ae2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            847
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 28,
+        "sink_column": 877,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qid"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            1002
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 1028,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4b1d229944e7d5b9eee23d51cd43b91753146777e779bb09915d1b386585c582",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qid"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            1002
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 32,
+        "sink_column": 1109,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4b1d229944e7d5b9eee23d51cd43b91753146777e779bb09915d1b386585c582",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            847
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 34,
+        "sink_column": 1192,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            847
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 35,
+        "sink_column": 1276,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            847
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 36,
+        "sink_column": 1355,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$sahi",
+            "$wrong",
+            "$total",
+            "$time",
+            "$desc",
+            "$tag"
+        ],
+        "source_line": [
+            46,
+            48,
+            49,
+            47,
+            50,
+            52,
+            51
+        ],
+        "source_column": [
+            1595,
+            1656,
+            1681,
+            1630,
+            1707,
+            1753,
+            1731
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 54,
+        "sink_column": 1795,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b219ee2edca45b9680f7559bdf89f30ae3fa09ef602bb548933c5f6edb53a9a5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$total"
+        ],
+        "source_line": [
+            47
+        ],
+        "source_column": [
+            1630
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 56,
+        "sink_column": 1920,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "d2e603785ecd01146e221ad9d2d35f27cc158f520bbfc65f2217a7521df8e01a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid",
+            "$qns",
+            "$ch"
+        ],
+        "source_line": [
+            64,
+            70,
+            65
+        ],
+        "source_column": [
+            2102,
+            2183,
+            2122
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 71,
+        "sink_column": 2210,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b4874ff6fbe4a68a831244ed8ea525100b5a777adae4a50d9f3ca9260ee0ad60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2368
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 80,
+        "sink_column": 2448,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bd85a2fdc7cfabebaad0144dbdab23db16b86fe6acd3c00985557251e649aaf5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2387
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 81,
+        "sink_column": 2542,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0bdd99bb9f46f324e5256def9e100f38f022a7b466b9b68567b2234583bb2b6c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2406
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 82,
+        "sink_column": 2636,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3d5cd5c674fe1334a98ceea5cea9368a394ae6329ccf841af28b9ef149d25537",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$d"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2425
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 83,
+        "sink_column": 2730,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3da3ed115c0a16c4e0f0cc14b3c94566e63efcc58ef45e3db94d2ad004a0bf2b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qid"
+        ],
+        "source_line": [
+            211
+        ],
+        "source_column": [
+            5936
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 212,
+        "sink_column": 5959,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4b8c26584c917e033e7bcb97439e7d687fa732cf189974f03a3c7cc34d8495e6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 219,
+        "sink_column": 6107,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 226,
+        "sink_column": 6245,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 228,
+        "sink_column": 6354,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sn",
+            "$eid"
+        ],
+        "source_line": [
+            208,
+            207
+        ],
+        "source_column": [
+            5879,
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 237,
+        "sink_column": 6551,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9eabdca5e22b9e10eec75dbc1ccb4e314cb53da358fab0b902da59e8750f6609",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 242,
+        "sink_column": 6714,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 250,
+        "sink_column": 6873,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 252,
+        "sink_column": 6986,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sn",
+            "$eid"
+        ],
+        "source_line": [
+            208,
+            207
+        ],
+        "source_column": [
+            5879,
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 260,
+        "sink_column": 7185,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9eabdca5e22b9e10eec75dbc1ccb4e314cb53da358fab0b902da59e8750f6609",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid",
+            "$total"
+        ],
+        "source_line": [
+            207,
+            209
+        ],
+        "source_column": [
+            5859,
+            5896
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 265,
+        "sink_column": 7362,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "f46d3742f75eb3758327a1cc5b8b4983a1707ae768473e88bb94708f57e25adf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 269,
+        "sink_column": 7495,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$s"
+        ],
+        "source_line": [
+            272
+        ],
+        "source_column": [
+            7636
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 278,
+        "sink_column": 7796,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "db8c5fa52053a9b17f66712a7e87f72859a26ce7311503bc531ee2f3d75f184f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 289,
+        "sink_column": 8074,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "c4fc8aeac5b698a8e7402fa6ee5c69adfffe16b9822ea539a33aa51309513ed8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            207
+        ],
+        "source_column": [
+            5859
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 293,
+        "sink_column": 8133,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "c4fc8aeac5b698a8e7402fa6ee5c69adfffe16b9822ea539a33aa51309513ed8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            299
+        ],
+        "source_column": [
+            8256
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 302,
+        "sink_column": 8311,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid"
+        ],
+        "source_line": [
+            299
+        ],
+        "source_column": [
+            8256
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 307,
+        "sink_column": 8475,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c158259f4fd8fc8a95c2c9387bae96b9388e4be338512a8688e700c757c89a97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$eid",
+            "$t"
+        ],
+        "source_line": [
+            299,
+            301
+        ],
+        "source_column": [
+            8256,
+            8292
+        ],
+        "source_file": [
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+            "\/home\/kali\/75.online-examination-system-for-mcq\/update.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 315,
+        "sink_column": 8841,
+        "sink_file": "\/home\/kali\/75.online-examination-system-for-mcq\/update.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "af365c4379dc8039e648d44cbe29d8da067deaac0093b9bc1089805abfcd828f",
+        "vuln_type": "taint-style"
+    }
+]

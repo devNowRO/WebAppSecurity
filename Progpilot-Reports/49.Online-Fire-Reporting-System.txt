@@ -1,0 +1,3194 @@
+[
+    {
+        "source_name": [
+            "$tname",
+            "$tlname",
+            "$mobno",
+            "$tmember"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            228,
+            260,
+            295,
+            329
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/add-team.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/add-team.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/add-team.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/add-team.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 368,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/add-team.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "00538c1099d4ff77a1f1e61f4b79ae1956935c376393721212f6e5a4297a6a0a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$wtitle"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            257
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/includes\/sidebar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 13,
+        "sink_column": 523,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/includes\/sidebar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d4360cfc4d565ce256505ea37cec70d4e50dbcf5924b4f21b21dbb47f79628b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"AdminName\"]"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2898
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/includes\/topbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 57,
+        "sink_column": 2898,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/includes\/topbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5cfb0fa9f31250aeeb4af1e6508e77680c3be27de620e6940d233bf9a9bdd1af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dee35885ef405f9b239eaca8af1ba80ac6a50f9f2779f5c10c9628db8af40574",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4343
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4343,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "96f61ed9bdd525ba2e53bc9426007b9abe31a2bb5f4a680297ccbe56d13f56af",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4428
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4428,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "790f4180554919c6eb6e6d520161313a71e3be238df0d2c53c3e2584bae53b29",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4517
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4517,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fd74da34d9e16b1864df270b92900d65a304715ebfc15e0733ec8fcf3ccddde7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4602
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4602,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a37f398aa7f7197cbaeea54e507a6528b9ce4ea4f2b0f58fceb12571bbe10367",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4686
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4686,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d8c883160940709de5b138ee2ebf61e8026c6737c9e2602d4259a72072a53e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4849
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4849,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/all-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ed3e0214ce689796d96b7ec0dd3bdd5b87d915cecf33676bf203cb33551ce7d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ea916df3e9186a329035f8c1efb9957fb0dd0b7e1c3eb3b9da5a9967e8aa1122",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4376
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4376,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a722eea24dfa72ca2498da55d02d50e8995b2e95a07be64b52a86e5771d6df7e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4461
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4461,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f9d6d7d95b604e6167bfc263796636781918c06bc11d09d2119c743b17c27b6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4550
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4550,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f5b6762684f8ba03c78883c8ac255eb1b8c5235300d20867d6fa10777cfb01c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4635
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4635,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "659b7b79368d1469939770475457a968defe735f1f00e5d0a36aedcfd8c34339",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4719
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4719,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b7a809ace628d926c66f4302ef39d305aee77b388d857384e53215d6a44ce2bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4882
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4882,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/assigned-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "615d769e203e5b3027087e41c8cf4a4c5bbf86582399edcf7c658d655b216b09",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1690
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 1887,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1a864875e9e28ecfd0c874730e9040f7f4212c90917e267d4097a05abc76338",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            1718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 1911,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "002986ba1afd38b3327ab63dfb0c39f499aa977cd0edc9303391e23b1cd09a5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            61,
+            62
+        ],
+        "source_column": [
+            1690,
+            1718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 101,
+        "sink_column": 3827,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c6544a0a97d32f5346a23dca47ff7ae5fb85729bb111e158ca53424abc3b60c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4183
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4183,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12abafea2fa34928a97b332f58759221bc3dc50727a79b96faa15bab8b3335ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4268
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4268,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa0b7309b6cd1b77b5f57a5220e7ee26e7e24c2d7e32bcef7f7307751630989a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4357
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4357,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b7fb846def591143ea26490891eea39b56d55c3ef8e7249e2ec2c179e4583df8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4442
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4442,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "972488c2deaa3153653b7bf7127edb15aa5e534a4aadc56f0901c18c1b51face",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4526
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4526,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3f4b641caf05bc574f1bb5c8d47e486924e44ed10978c8a852e69b6f019126dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4689
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4689,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d95758f3c3aafd51e3fe858dc2c05fdf5773497984fae4de8345d18ada859dab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "99a877eb7642631db4ef8b38479aa357d95a319672a238e888687296af12a9ab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4388
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4388,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a50c887b5103691a7883aa5b70aed3b4f015aef3b86d05da07ab1b99134e5533",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4473
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4473,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6ec12b3f589fc43071f09d4b283fe490f1b9ff3632d4be2d256a8e7c6f0e6241",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4562
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4562,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa3415a6d7f53a90bad3b678e0841ee8bb2f4b324ddfb609870108f09eb91cda",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4647,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "190e5a1592c489703b4b5a0c4961e4cd6dcf0ef3a669ac3ea0a6fcb65663ae5c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4731
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4731,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76bb6c8fc678d7bf37cddc984150928b895cee0064a699cab1bff452f77b9f9f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4894
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4894,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/completed-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7497b239e53f68603dcc2998f29dcb269eefca76d980994ef1ddd0281f44ee4d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tname",
+            "$tlname",
+            "$mobno",
+            "$tmember",
+            "$teamid"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            12
+        ],
+        "source_column": [
+            258,
+            290,
+            325,
+            359,
+            228
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 398,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "82ef98ade28adc6a565c20a90473d850bfef57506d18079014f7ce3a6bc64431",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"tname\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2302
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2302,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1a127c285b3131be7428f7a6e0056c516b71656f4d15c4fd4d9611340645ecd3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$teamid"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2395
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 85,
+        "sink_column": 2428,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8e70e595675e54629f8fa063dcea982acc2ad55d70bd4d8385c5ea511ffad745",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamName\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            2959
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 2959,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25b304914df397d6d90fa28c1e325d05bd453fb9026da1182789fdf141fa7db6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeaderName\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3260
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3260,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cada6fe1c4bc231401f21b0c528c74d0ee0ef8d94fb89879f26e6b68681b81de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeadMobno\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3545
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3545,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45c51477be712ce59ad601623da881d36b3688001c39823bf9e0e5199f25021e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamMembers\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3764
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3764,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/edit-team.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a4b990b95ae5d9356001b5884af92bffc08b17ff4c897f2206f00ec82e5b95e1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            94
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 8,
+        "sink_column": 175,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "10ae0d2897b9b2b41fdd8b31d0301fb4370345b37a0a8a3449d4685335249a32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$logo"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1603
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 1762,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cbc2c0caec8367762826540ec7545088dc30355da30ce422d03d7bb5652fd7a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$wtitle"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            1629
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 1856,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a39da7121ae1b2439588423bf3b8cbd8958a1a91f62c01f838def791b5c08a7a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$wtitle"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            249
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 40,
+        "sink_column": 1312,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "93b3f771e6ce8dbeab925d987c7af31b1699e3306eeb93e8ce50af99624bc189",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$currentppath"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            356
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 41,
+        "sink_column": 1397,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "204838e3eacd5d4289ef9cb415b903adebc346ac4a407dfb5cfaab97a0363e27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"siteLogo\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3664
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3664,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e194885fdba7de0bd297fc16e56f715bb5c912e0189c2df3ea4f9ae510df26d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"siteLogo\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            3894
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 3894,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e194885fdba7de0bd297fc16e56f715bb5c912e0189c2df3ea4f9ae510df26d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"siteTitle\"]"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            4231
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 4231,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-site.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a31877381a793cb17a916c4b56e7056142330ed0ded7c3003b67e9d50e8f5846",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9e01674848727d6d45bb53a9371234bdefe267c199ee2d3d9a2601f5a9508ec5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4337
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4337,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76586c97395f58221f41b851265985ccb55a3285eb99799dad5c68d780c74f94",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeaderName\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4422
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4422,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a486dde74cd1d5e399092eae51688cdda15be85ac6d81b14df3da60294158ece",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeadMobno\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4513
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4513,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "40d3d99462bb978c5731b547f39ada81336f691a616151de0c7527b01ddba862",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamMembers\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4603
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4603,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67eec88178ccd70212e92690d14c929c9b8488d0a8854e1bbda776ffa1fd4939",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4691
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4691,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82d85911a2bd1f4b434ca3f02ca4a9f90880e28b6355a3b0323ec24d98d08259",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4845
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4845,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f5e2481234b1f8b4622331f976dc38a4b5d3b3ed61e2173003ef5bead02a82c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamName\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4877,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76586c97395f58221f41b851265985ccb55a3285eb99799dad5c68d780c74f94",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            5014
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 5014,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/manage-teams.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f5e2481234b1f8b4622331f976dc38a4b5d3b3ed61e2173003ef5bead02a82c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c7dfa9537a49cb4ab2afb7a244a5f43983a5b2edbba86fc248bd8422b54d75d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4363
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4363,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70bd1f3ab422a25e76988e89036871678216108bf945cff0eef10d971fa6880d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4448
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4448,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "750f27438a88231e1cb805685c2b7b57f5f46a6f95e8b45f8bff8cc39302582a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4537
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4537,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "875c676a8347400a7a0e836ad144f5c216d4fdaf44ab19a96180c1f3c6e1bc4f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4622
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4622,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "15e3db4560dd5123154a4e8d8dc58ffe5be568f9cb7657ef08c08b72d8a3e951",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4706
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4706,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45ef2ccd05f609e5e63b092b8aa177908cfe28526ca8523ee27595a774780adf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4869
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4869,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/new-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "810d179f37038fdadc86226f55734a85a3c8b24ba2fd66f6ef31635ef2245484",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aname",
+            "$mobno",
+            "$email"
+        ],
+        "source_line": [
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            260,
+            291,
+            325
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 366,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fe98c1aa1ce3038647c8e1f325edea112f0468741ddf98586b5720ad717918b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3277
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3277,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e3adc56a58007b8bf1fb7a441664b00e7b5b446f06b18a08805f8edf337a9b86",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3577
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3577,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f016fd68b022f48901fed76859d0286676453989c5f9a8afeb76fb03f62dfec2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            3869
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 3869,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12d6e5c5389e8d51d4eaf004edd3cd603288159eba752dbeebf80e921ca96c32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4128
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4128,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ede538f429df9899be05bd8f98ce16a8930cf1a3658b9675ba813d46804e4130",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            4310
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 4310,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6720b944dbba8ead3118899dab12779d8251e5b06b42d5088d0ecdccacbd758",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$assignto",
+            "$rid"
+        ],
+        "source_line": [
+            13,
+            12
+        ],
+        "source_column": [
+            283,
+            253
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 359,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "92b5a9d7c8d4f519fb6d94b6eec5e026a315ac42cfba504ccb4955e825f84d70",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid",
+            "$status",
+            "$remark"
+        ],
+        "source_line": [
+            26,
+            27,
+            28
+        ],
+        "source_column": [
+            812,
+            842,
+            873
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 29,
+        "sink_column": 907,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dc7005ed52a0c434f1616239ea68952d4a86e3161bb1421851d5575c4b65ca39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status",
+            "$rid"
+        ],
+        "source_line": [
+            27,
+            26
+        ],
+        "source_column": [
+            842,
+            812
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 1047,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "39fca1437955f2abfc757c200f09b3688701e3a1ea7f9e45f1cd8068c7fd9bfb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3430
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 110,
+        "sink_column": 3463,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6f2dea423635e0617caa238548f4843dbc25099470d2815f7523ff60e1e40457",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3698
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3698,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "efb08bcc1f5d5633fb2127462aefcc0585a5a9c3cdc81a817a9087f16dabc13c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            3796
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 3796,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f8b74f496e54790b4cba11058c82dc5c6307828fc2fcb923e6bbfcaf864c3265",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3893
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3893,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "46e5ef5c71becb9af34d3002e7f5d85a0485dd11a559f76686b51a22cde0dc4a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            132
+        ],
+        "source_column": [
+            3987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 132,
+        "sink_column": 3987,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "78b0d16f8aec996305301517c29fe7503f23a3efb5b79f55d2ce70063a57e321",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4087
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4087,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "96f05e633c13515e90a9f872708a1e6f474263caaeaaa285776a6ed745ccdfc9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3430
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 172,
+        "sink_column": 5319,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6f2dea423635e0617caa238548f4843dbc25099470d2815f7523ff60e1e40457",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamName\"]"
+        ],
+        "source_line": [
+            183
+        ],
+        "source_column": [
+            5678
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 183,
+        "sink_column": 5678,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f6a979e72b48d82ed513f877b8c481053d2dc9fddc0a600889d383f775b6d5f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeaderName\"]"
+        ],
+        "source_line": [
+            188
+        ],
+        "source_column": [
+            5778
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 188,
+        "sink_column": 5778,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "753927b89de13b49b76dd992dec24a634eec397e59f23fb90b3bc88878abfeac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeadMobno\"]"
+        ],
+        "source_line": [
+            194
+        ],
+        "source_column": [
+            5883
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 194,
+        "sink_column": 5883,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f0edd8003a99858aa826273bf264aefedce9d9f150b6fc2b59510dbcbcd59200",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamMembers\"]"
+        ],
+        "source_line": [
+            199
+        ],
+        "source_column": [
+            5981
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 199,
+        "sink_column": 5981,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "60a80b6d77934b7a1e646dd9a2b8a687e511ab475508b47c6ff2a3c3eefaf636",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"assignTme\"]"
+        ],
+        "source_line": [
+            203
+        ],
+        "source_column": [
+            6080
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 203,
+        "sink_column": 6080,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ebbf681567787c0d4cc6de39daaf0f5dccc9b063931388eff535b3552bdf12a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3430
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 220,
+        "sink_column": 6423,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6f2dea423635e0617caa238548f4843dbc25099470d2815f7523ff60e1e40457",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"remark\"]"
+        ],
+        "source_line": [
+            243
+        ],
+        "source_column": [
+            7267
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 243,
+        "sink_column": 7267,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fee4e8054a1a7c898402ccb9e5107ea65a23e22c8e4c6a21e110188992cafb9f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"status\"]"
+        ],
+        "source_line": [
+            244
+        ],
+        "source_column": [
+            7314
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 244,
+        "sink_column": 7314,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "19202190654b12e697aa9aef216f809e70e7637f8f10e477098d41fe1fc5bcfc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            245
+        ],
+        "source_column": [
+            7360
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 245,
+        "sink_column": 7360,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77c1a8a6fe29c75fcc543989107a0ce4b4ffd9290392443c9ada0e230e728b76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            304
+        ],
+        "source_column": [
+            8902
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 304,
+        "sink_column": 8902,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b32b767c18006e77ef1b10cab0988fe6a12ed96ec832fdef83edbfcb204ea935",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teamName\"]"
+        ],
+        "source_line": [
+            304
+        ],
+        "source_column": [
+            8931
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 304,
+        "sink_column": 8931,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f54f7588d8770e26265f6015ce9de973ff0c8850d3f8e33aecdbcc4886e54c25",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"teamLeaderName\"]"
+        ],
+        "source_line": [
+            304
+        ],
+        "source_column": [
+            8966
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 304,
+        "sink_column": 8966,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "51140ab00bf72099c322ca05608f55cb2c4d9f9ab84e3aa4f6879b8ba4e6399f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3430
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 335,
+        "sink_column": 9976,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/request-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6f2dea423635e0617caa238548f4843dbc25099470d2815f7523ff60e1e40457",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1687
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 1858,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b0ae23a2896687cdb5f594f433e24ac649282d02c72afa1764700fdb68b9511",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1687
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 100,
+        "sink_column": 3776,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dff5975dda698cf4b0654b6916140622503b440528922e31af4200cc27316cb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4208
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4208,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "495a48d9fabe0cb32d72777d9175a66cb76eecf14890bcf35a3c0f497d858fea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4293
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4293,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "71b507abfe979055eed96d97137707920bdf3588eaf211bd19d146983a98d13e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4382
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4382,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6b799b37efe451f1e71328c3f89d4f722381843f6896e83c01203792fa78d91",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4467
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4467,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f2d5e655ac8d8f2a63b26412f7fe9f36f023f254e7adfa5790c455afc8463798",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4551
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4551,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3c211f521d768fa10f0ead46e4b58a65d4e4325843fc1a25e0678a49a17c27a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4714
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4714,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "96af32535613f9f6d98c91418438a6164cc3c5c670f84333916aa0e5e5ee0d5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f8a9763a0e3d47ff849349fc9a9bcc990f54258c753898f7658be8bbd219f688",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4397
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4397,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "862526131fb9f5e5839f76f0d218070ef518efc6ba3b5239d95f8877e7c7f32d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4482
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4482,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8b74427342e2f522f941514a91d0a6a248f9581a42852e8a0ed7c171fdb69a8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4571,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b57778d6ad5cf46be1a927739306ceb50f05eeeb0eba0bd679714bd39f1847d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4656
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4656,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee95a91ce31aa01eaa55735cf64dd23c340e45807251d82afd961a850e008733",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4740
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4740,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7f043ad5f5fc6e0118c751461d2e04e19086e71b7375d6e7a773d6fd809c957f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4903
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4903,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/team-ontheway-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "23061bfb23bdcce6fb5045009dfb8927a3149efd12a0175f11a9ab3524c0df72",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tid"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            255
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "561399912fd93b18f159bad1e9d0f2163ed2f99aac4f81b02d53d7e03af63c8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4426
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4426,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3cb9b99592ec88dbd12f183f8881e03b720aea1b3762b42fa34a65acb7f302c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4511
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4511,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d555867d20ecc682ceca9c687ee7a0129393a07117b67907942196490e1f5f83",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4600
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4600,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "608cd2245218ce0e9ee5ae857f919eb8aafeaac57cadeaf146ce31472ecb8579",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4685
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4685,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "266dab10561f25ff739a0827f939560647c75d54113b2d0de3f17f9efef3e588",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4769
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4769,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5e31541f976f49710143d0d32a22d6b8a18f0198b6e1e5f1fae5f8c9b39264eb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4932
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4932,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/admin\/workin-progress-requests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a9e891e93d06165f5a8cd2644f42e2b535177a09d547988723ff258b6b4aca79",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$logo"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 9,
+        "sink_column": 394,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70bb3fc84c5b1fc479a18f0d3043c18da671fedde82161d2fc63f0905ae28a2f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$wtitle"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            150
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 9,
+        "sink_column": 427,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c5df33389184fdd729e92f5c2619ec259e50b73ff29b788e33b9a2289a0ecb4a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid"
+        ],
+        "source_line": [
+            44
+        ],
+        "source_column": [
+            1502
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 45,
+        "sink_column": 1535,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f6095945d8ccdbd16433805f85f1172aa7bd8a373976392a3936356bb1189a4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1770
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 1770,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ff386ec901d28f754092b118876b0406e4e82eec57f415f2f15246943a177bd9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            56
+        ],
+        "source_column": [
+            1868
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 56,
+        "sink_column": 1868,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f1f934b4a2061bb237c621bf5028fbbc1493609f55a87876dff7af06e477a0b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1965
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 1965,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f13280407fe527334942c4bb3c2c3403df2fd18aee33d2257edb5d8ce6cf488",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            2059
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 2059,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f5d3afb394ee53ce805737b9c79452eedcd86fb1b61a161dc673d4e8a2f76324",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2159
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2159,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e03c039b2da67d612ad818f7e2a97c9ce587a4c5a6d00736ac7c16033116e86",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid"
+        ],
+        "source_line": [
+            44
+        ],
+        "source_column": [
+            1502
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 95,
+        "sink_column": 2835,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f6095945d8ccdbd16433805f85f1172aa7bd8a373976392a3936356bb1189a4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3194
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3194,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bb6ec716453bed4e4cb678c06656780eb7408f139282bd59626a990d12206ee7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeaderName\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3294
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3294,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17269e96825f8b5c800b70d22b1977b1b36d079b6b2dd4c42cc0a44d1c1630d3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamLeadMobno\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3399
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 3399,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe0d52a061b8e118f35ee0c0e17da608447b9177e9dd516346570d0f2d19e59c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"teamMembers\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            3497
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 3497,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8674aa859805ff38064bf35cb4362aa1deeeb2a9e1bdd7cc04519de88997ca90",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"assignTme\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3596
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3596,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bfd4b5639e4844d6486e080bcc5fa0f9e005b2fb12b228c7c0d2473b604230a6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rid"
+        ],
+        "source_line": [
+            44
+        ],
+        "source_column": [
+            1502
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 143,
+        "sink_column": 3939,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f6095945d8ccdbd16433805f85f1172aa7bd8a373976392a3936356bb1189a4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"remark\"]"
+        ],
+        "source_line": [
+            166
+        ],
+        "source_column": [
+            4783
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 166,
+        "sink_column": 4783,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "90491de0c362ace88101c7c2c3c0df04ec8fb02b1c685eadf7bff7d05eb24076",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"status\"]"
+        ],
+        "source_line": [
+            167
+        ],
+        "source_column": [
+            4830
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 167,
+        "sink_column": 4830,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82735d0e0efd9f884df51d8b2d4733331f67f8141c9dd86ec4ca89924bee23d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"postingDate\"]"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            4876
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 168,
+        "sink_column": 4876,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55b6caac624c309afa28f84d31a238e93c47380805a390d8282ab63f9fbd6c5c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$mno",
+            "$location",
+            "$message"
+        ],
+        "source_line": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "source_column": [
+            74,
+            106,
+            139,
+            173
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/reporting.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/reporting.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/reporting.php",
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/reporting.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 212,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/reporting.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a74fdc55ab272a435534c318258d2cf27608832ce196d90f63f630c7db2b4f63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            1032
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 1168,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c5304cb27f296527e364ab85bc6ccb2f77d93e7d78cc6f922378421a08f743b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            1032
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 62,
+        "sink_column": 2620,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "16d709c348cff82173e48e7ff91d1e91d1dbcf5c0f0792f13b69ef752ebe56d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            3052
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 3052,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3ccffac133527e9ca506566c8c2934411b5839f4aaf54767b9b530e4a8072b8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"mobileNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            3137
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 3137,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "347bc0c037c87b1c14dc9fd37b0120137182d4b001f7c1ba7673ac4bc7fecdc6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"location\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            3226
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 3226,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "72a6171abaf401989807a32c6a28742a80656635085f1a850e000fcc57be1fc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"messgae\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            3311
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 3311,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "98027ee543a5b2095d15a95f26926ba7f76bad7c66b1956059f519f86460c8bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"postingDate\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            3395
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 3395,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c39d85a658c5f47333717f264ccdc7d31924f5a49217e4cd1c2483022f632b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            3550
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 77,
+        "sink_column": 3550,
+        "sink_file": "\/home\/kali\/Downloads\/49.Online-Fire-Reporting-System\/ofrs\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2ec845af2c466383497aed3c037ff84c04b28713982f9577c6a513ce11307a65",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            48
+        ],
+        "source_column": [
+            1670
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/booking-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1791,
+        "sink_file": "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/booking-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87e862d1ef95ed871d3bd6681ad778639cede6f856fe420c3a6a7b825bc2e29c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            1698
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/booking-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 52,
+        "sink_column": 1814,
+        "sink_file": "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/booking-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "692276a88c26d5c28e3e7cb65446f30f9afd44e6f6a0a5c48486ecf618988bef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2268
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/booking-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2352,
+        "sink_file": "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/booking-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c1fb4c5d58676b32877b6706491ca459354af21de96319bd966edeb3d1e41c19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            3854
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 3854,
+        "sink_file": "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            4514
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 4514,
+        "sink_file": "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            2259
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/user-search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 60,
+        "sink_column": 2343,
+        "sink_file": "\/home\/kali\/Downloads\/45.online-dj-booking-management-system\/odms\/admin\/user-search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "43f1b7f1279f1477fefb80804c8354fabc15f6323ba3dde6084ad5e12d56ac98",
+        "vuln_type": "taint-style"
+    }
+]

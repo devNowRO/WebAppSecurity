@@ -1,0 +1,90 @@
+[
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2656
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/check-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2740,
+        "sink_file": "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/check-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2bc75536c187a48de615fd8dfc66f1a507aad1177c63626f9dd74bbfbd829487",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            1774
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/doctor\/appointment-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 1895,
+        "sink_file": "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/doctor\/appointment-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d71eabb1d5e95ec8d8cface686829da885e111f789c87b0e6cf41f633417834",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            1802
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/doctor\/appointment-bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 61,
+        "sink_column": 1918,
+        "sink_file": "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/doctor\/appointment-bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4335df4bc5b8350b1ce02c26ee62e3b5fdd8eae6e6291fa39bb34c51fd280884",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            68
+        ],
+        "source_column": [
+            2356
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/doctor\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 70,
+        "sink_column": 2440,
+        "sink_file": "\/home\/kali\/Downloads\/13.Doctor-Appointment-System\/dams\/doctor\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e8e810969400edc6a1b77f282ea38afc5ce8433e9fe507a8217ce8282289e80",
+        "vuln_type": "taint-style"
+    }
+]

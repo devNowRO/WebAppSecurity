@@ -1,0 +1,1418 @@
+[
+    {
+        "source_name": [
+            "$_POST[\"value\"]"
+        ],
+        "source_line": [
+            2
+        ],
+        "source_column": [
+            12
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/editable_ajax.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 2,
+        "sink_column": 12,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/editable_ajax.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd80332796a1931f6ccc0b1cf1b0bfe6403d0f14528e278fe1b6254be6e08762",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sQuery"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1673
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 67,
+        "sink_column": 1811,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e55f6ee10b3db2311a1312118c6ed785ac9c99b9cb0e7de754324850fd6c47ff",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sOutput"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2462
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2489,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/examples_support\/infiniteScroll.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "696b52fd8aa0a9db8bf4ed9d0115b0017a1194d14c988c065872f2d04a12dc4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sOutput"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            3709
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/filter_col.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 3736,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/filter_col.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "282444b9f346f9c2e8d0be9fcc2a7e24d8cbe8309c0061d8020782f729e0a31f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"callback\"]"
+        ],
+        "source_line": [
+            195
+        ],
+        "source_column": [
+            5001
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/id_jsonp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 195,
+        "sink_column": 5001,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/id_jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f519976b81d8e1cc9a7a732cd585b9612e0e6d0ef6c55fe68829f17765fb4e65",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"callback\"]"
+        ],
+        "source_line": [
+            190
+        ],
+        "source_column": [
+            4858
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/jsonp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 190,
+        "sink_column": 4858,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c8502e847328151614e38e16610056ecb8bdfdab0997a6336f91d40286db809f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"callback\"]"
+        ],
+        "source_line": [
+            192
+        ],
+        "source_column": [
+            5041
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/objects_jsonp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 192,
+        "sink_column": 5041,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/objects_jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0019c5441eea087e76513de25bf3985f1e54c8a03fa66956ceb1681a46c4a982",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sOutput"
+        ],
+        "source_line": [
+            198
+        ],
+        "source_column": [
+            5190
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 200,
+        "sink_column": 5217,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/examples\/server_side\/scripts\/post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd51463af6ed0147a69de5253035351352bcb733bb851a276bedbbcd82291044",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sQuery"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3127
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/extras\/Scroller\/media\/data\/server_processing.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 124,
+        "sink_column": 3285,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/extras\/Scroller\/media\/data\/server_processing.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fd5a9bfc17cfb45527493d6e6c7bd76574c87b6d049765241f01c8758243ae9c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"id\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2485
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2466,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fd6f6dbb285a18ef2c72fa4c8ac74087168b3f15d5a544e8ad14f0f94d874aba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"name\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2524
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2517,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a0144ef64916c4122a0b9e6c5d4df382861fe9bc9e844273da69068348133dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"phone\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2561
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2554,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a23cf9166731d25386f589d6abedc29f1f68b0672a520ae961e680cb6744d2c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"email\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2599
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2592,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d04bf48b2544c46bee24cc5b0ac2f5f39dfa1febe1c29cb347d3a1c3ca8704b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"city\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2637
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2630,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "99eda985c786cf619599977c988fab613c39f8a6aae20e109aa85994e9615403",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"zip\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2674
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2667,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e1bc68775ee899e3ab768144fcaa7cda2b7e8e0d0044fedaef25ceb496d63cc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"state\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2710
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2703,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9ff0606b61c1add37e0938da3007556481b8b4ae0a1d2f524df2d47cf9ebe5c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"country\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2748
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2741,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d4911ca386f3c36383d01f7a7c471f94b60efe912a4c4db45120e2828ee572d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aRow[\"zip2\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2788
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2781,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/DataTables\/media\/unit_testing\/performance\/large.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b099acb50c271a2c36e60ed2153323cee53f8487b4c20934f5e22de170859c06",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fread_return"
+        ],
+        "source_line": [
+            740
+        ],
+        "source_column": [
+            28684
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/jQuery-File-Upload\/server\/php\/UploadHandler.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 740,
+        "sink_column": 28684,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/assets\/plugins\/jQuery-File-Upload\/server\/php\/UploadHandler.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "55d55ee89b05e74e835880d6adaeb77c8f6ac267bf3dd1597c3a8bd44fbf8659",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$description"
+        ],
+        "source_line": [
+            16,
+            17
+        ],
+        "source_column": [
+            300,
+            332
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 374,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8dfb7d5d84adf8e7c75a180c51ae034e9893e20da05c993b8076a673c345325e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            633
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 579,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "814cc5679d659f5a5fc25b440d40f3be5b2620ab2c010d55c6e44d732b7f1156",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            4377
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 4377,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9beecd5aa149ea50891e3847207bf73d60a04f1a65bcfaeb4667ee8d8d5e6d02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            4470
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 4470,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/category.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9beecd5aa149ea50891e3847207bf73d60a04f1a65bcfaeb4667ee8d8d5e6d02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"cid\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            2106
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/complaint-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 61,
+        "sink_column": 1854,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/complaint-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c207a4379a42038194c7380c985325ac15628d3ed13cd7bd0f416d78e847f4f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"cid\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            4259
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/complaint-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 124,
+        "sink_column": 3984,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/complaint-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c207a4379a42038194c7380c985325ac15628d3ed13cd7bd0f416d78e847f4f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$description"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            176,
+            208
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-category.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 277,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c8c4a8d28170ad74b7372f446582b98dc84938182b42d8c9d99c8f5cccaaae10",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$state",
+            "$description"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            176,
+            202
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-state.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-state.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 271,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-state.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "60a1aff391220ae55f91174f78dc042c1685fbaf3aec820d002311df6b815043",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$subcat"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            176,
+            208
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-subcategory.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 272,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8b5d36c40b79fee6ee6952ebcd9b5cd46fda475322f34601d114cb8d4be39c2e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"id\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2689
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2689,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "53f96c605998f9d189cbda366737811e501ff74e72e96b2cb75221bcbcee3050",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"categoryName\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2718,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/edit-subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "29f4db03830c8d80fc9c9eeba5bfb89155a4650ee74cc51250394e721fa88647",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            111
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 184,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9618ae55cb905b7ca598eec9066a2159b96445400eba7ee36d1ea0d7a58f61f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            429
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/index.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 18,
+        "sink_column": 509,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/index.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "c3821982f4313f6f6a7aab2a8379c0049dbd87e68be949a457a4218896acf5f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            649
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/index.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 27,
+        "sink_column": 735,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/index.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "c3821982f4313f6f6a7aab2a8379c0049dbd87e68be949a457a4218896acf5f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$userid"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            319
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/manage-users.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 349,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/manage-users.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "705e195de2f6bc766a296bfa65ae5c3e4024cf59b2db3b7ad94435357647ba32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$state",
+            "$description"
+        ],
+        "source_line": [
+            16,
+            17
+        ],
+        "source_column": [
+            300,
+            326
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 368,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1527c28ca4fa2b0ccfab21fb5846b7e09e64d6b7bd7109d9a59acfae5406f9a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            620
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 569,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "347667faec99bd022c56f5d65407e6c78415a2b9092f7435fe7f80fd441e477a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            4326
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 4326,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bff61a7de225927c1a5e2ac920b8f26c288f0bdb29e28af52506036c0816748",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            4416
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 4416,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/state.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9bff61a7de225927c1a5e2ac920b8f26c288f0bdb29e28af52506036c0816748",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$subcat"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            174,
+            206
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 243,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "05727020433ecb3885ef24ad45ab7e36e67f70773b9c463d6f30efe883177a92",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            496
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 439,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "49743f742f86d64b491a2794d321dfbf7e80111c96f9eb955a7ed2bf3d6d7487",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2752
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2752,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3b20fab43137c349d30bdd3546880239ab83557b2d17f3d77cd78498fb43107",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2778
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2778,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "94d557ef4eb0714534f412158900b1f8e3c3d1d134529b192a99afc2b6000f61",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4609
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4609,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3b20fab43137c349d30bdd3546880239ab83557b2d17f3d77cd78498fb43107",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            4705
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 4705,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/subcategory.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3b20fab43137c349d30bdd3546880239ab83557b2d17f3d77cd78498fb43107",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$complaintnumber",
+            "$status",
+            "$remark"
+        ],
+        "source_line": [
+            11,
+            12,
+            13
+        ],
+        "source_column": [
+            167,
+            198,
+            224
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/updatecomplaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/updatecomplaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/updatecomplaint.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 257,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/updatecomplaint.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5e7e24f6b3c61482003c04ee677122f00384e4bf55f8f470952869f1aa408f32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status",
+            "$complaintnumber"
+        ],
+        "source_line": [
+            12,
+            11
+        ],
+        "source_column": [
+            198,
+            167
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/updatecomplaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/updatecomplaint.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 390,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/updatecomplaint.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c9536756e44e0242d1b3add75feb0ea24548ea706977d845060e1e2337c130d6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"uid\"]"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            902
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/userprofile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 36,
+        "sink_column": 851,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/userprofile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "23da5aa1847a466998958f7ed39f319f934ef3be9256131b4ffdc05506ea670f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"fullName\"]"
+        ],
+        "source_line": [
+            45
+        ],
+        "source_column": [
+            1021
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/userprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 45,
+        "sink_column": 1021,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/admin\/userprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e84d70906b0b21d2b86a444015c57747215b74cde875ee67f9b483082ca1e322",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            75
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 113,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1cebe29b2e0a8fb211301d184280d95369f38b970ddac06b4128296de2dd0a98",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"cid\"]"
+        ],
+        "source_line": [
+            38
+        ],
+        "source_column": [
+            1431
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/complaint-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 38,
+        "sink_column": 1227,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/complaint-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d6408cbbc714f7e9c54aa0665022280a5cbcadce11b0536208a75abcedaf712a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"cid\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4153
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/complaint-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 109,
+        "sink_column": 3878,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/complaint-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d6408cbbc714f7e9c54aa0665022280a5cbcadce11b0536208a75abcedaf712a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"username\"]"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            174
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 116,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0158fb937325d82155dd06862ee20df8df6fd63bbead361624bc1d5aee584393",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_SESSION[\"id\"]",
+            "$_SESSION[\"login\"]"
+        ],
+        "source_line": [
+            17,
+            17
+        ],
+        "source_column": [
+            541,
+            563
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 464,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "39a9bee4ddedb0798da100f50e4255cf50ab32ce120954eb9545b50165a26b96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 19,
+        "sink_column": 657,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "e443650a8b4881ad2499f3f8701d7ffb1a645a5c912d8ae7f0251fdf9ced693f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contact"
+        ],
+        "source_line": [
+            38,
+            39
+        ],
+        "source_column": [
+            1037,
+            1066
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 41,
+        "sink_column": 1142,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1e71bd7d6a1cd8299acc5e6caea699c7975b4753a3958ca71900f60d13a7503a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contact"
+        ],
+        "source_line": [
+            38,
+            39
+        ],
+        "source_column": [
+            1037,
+            1066
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 45,
+        "sink_column": 1284,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1e71bd7d6a1cd8299acc5e6caea699c7975b4753a3958ca71900f60d13a7503a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$contactno",
+            "$address",
+            "$state",
+            "$country",
+            "$pincode"
+        ],
+        "source_line": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+        ],
+        "source_column": [
+            319,
+            347,
+            380,
+            409,
+            434,
+            463
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/profile.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/profile.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/profile.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/profile.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/profile.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 22,
+        "sink_column": 499,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a2e277e90d4cc13c5fbbd9df6104d21353ee7d7e90eb1b58b5573461cb364e1a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$subcat",
+            "$complaintype",
+            "$state",
+            "$noc",
+            "$complaintdetials"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ],
+        "source_column": [
+            218,
+            249,
+            281,
+            320,
+            345,
+            366
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 564,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9539a3c4ce7567bebeb424727e52d8d4e2612645b1cc05d0d21f3c0b797dcd06",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$complainno"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            1019
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 33,
+        "sink_column": 1044,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/register-complaint.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d08c9f97b53a063547972d0b673c08b484e075423714cd0f596c30c1d87ccb6f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fullname",
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            6,
+            7,
+            9
+        ],
+        "source_column": [
+            94,
+            126,
+            189
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/registration.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/registration.php",
+            "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/registration.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 243,
+        "sink_file": "\/home\/kali\/Downloads\/28.complaint-management-system\/cms\/users\/registration.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "628da07ae37deb2d575c3c63b8d19af092e97aaab55bf3a5a7b95c6937e525fd",
+        "vuln_type": "taint-style"
+    }
+]

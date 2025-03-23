@@ -1,0 +1,46 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            4205
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/16.student-study-center\/sscms\/admin\/report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 4323,
+        "sink_file": "\/home\/kali\/Downloads\/16.student-study-center\/sscms\/admin\/report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0f9ec036eca76b8dbe1fbbef70cbd37f650595c6f5e9456c540f644eebd1db76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            4233
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/16.student-study-center\/sscms\/admin\/report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 4346,
+        "sink_file": "\/home\/kali\/Downloads\/16.student-study-center\/sscms\/admin\/report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b02f357eb88e6a71b7178672acf67c3d529a8b327938fb766bfcd34ebd7434e",
+        "vuln_type": "taint-style"
+    }
+]

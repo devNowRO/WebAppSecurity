@@ -1,0 +1,24 @@
+[
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            2863
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/11.Blood-Bank-Donor-Management-System\/bbdms\/admin\/request-received-bydonar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 2947,
+        "sink_file": "\/home\/kali\/Downloads\/11.Blood-Bank-Donor-Management-System\/bbdms\/admin\/request-received-bydonar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8dae4c46c56cfe9674e115a94a1eb96b735b7f5b21b2a3637671817c3c37ff85",
+        "vuln_type": "taint-style"
+    }
+]

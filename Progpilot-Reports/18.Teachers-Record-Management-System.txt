@@ -1,0 +1,112 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2574
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2695,
+        "sink_file": "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "edc07e08eb509bb36dc10c5f1c4c0e5a26dbe814f44f73ae61628792b6173433",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2602
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2718,
+        "sink_file": "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31b74c22ce4f58273ac2e000f3d678aa9d7060c9552d0f3e482005447f4d39ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"tname\"]"
+        ],
+        "source_line": [
+            46
+        ],
+        "source_column": [
+            1405
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/queries.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 46,
+        "sink_column": 1405,
+        "sink_file": "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/queries.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "04391215fd6f7b3b4b718e73f4b1bd4c34b1eea9e0f9aa2a2f8d2460b1be771a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3832
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3916,
+        "sink_file": "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "629e88b87ff4d3ec6e6d89ea32b12265fd4234083ec12098a0832232f0fce95c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            47
+        ],
+        "source_column": [
+            2425
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 49,
+        "sink_column": 2569,
+        "sink_file": "\/home\/kali\/Downloads\/18.Teachers-Record-Management-System\/trms\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dbe10a05d1f5a51eb600b4f26ec03a67b82ef11b2d212d4fe4f024f969455429",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,614 @@
+[
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            1294
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/about-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 1294,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/about-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "360a44918fcbd6168f154a57f3326198a13ec842e11d9949d6543323c77b01b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedetails"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            216,
+            249
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/aboutus.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/aboutus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 299,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/aboutus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ee220e3be48adacf18ecbbdb2985af3ce3f04d485063ead800103eb52e37cd42",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$description"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            195,
+            226
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-category.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 282,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "58bcacf48bd56a49ab2c354b085cfa3603bf8ff2e217d63ab431717acb8f5f08",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$posttitle",
+            "$catid",
+            "$subcatid",
+            "$postdetails",
+            "$url"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17,
+            20
+        ],
+        "source_column": [
+            218,
+            251,
+            279,
+            313,
+            418
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-post.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 39,
+        "sink_column": 1120,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-post.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0cd604c14ca4319da4fcdb4f2a7d9721f012cb1bfbd66b7bae2d301085e2a32d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$email"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            223,
+            260
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-subadmins.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-subadmins.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 341,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-subadmins.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "301b1791adbf577ff13c7a9be01a538a2c2b11d043f7fc1372adb67cad821e1a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$categoryid",
+            "$subcatname",
+            "$subcatdescription"
+        ],
+        "source_line": [
+            12,
+            13,
+            14
+        ],
+        "source_column": [
+            199,
+            232,
+            268
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-subcategory.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-subcategory.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 335,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/add-subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d51d2cc23683e5dacdd2e2372f281284904f1a83cfb589ff2b2a86b4669c396a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            109
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 144,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d7cd5a87c0d1e235377df3f5aaea6c77ca090f6db7e4ef23bd3956849b924822",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedetails"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            218,
+            251
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/contactus.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/contactus.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 301,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/contactus.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bd0d03b363b33099cd37e688f11b5bd762f2d174979b11d8879818a9dfb2731a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$description"
+        ],
+        "source_line": [
+            13,
+            14
+        ],
+        "source_column": [
+            223,
+            254
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-category.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 298,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e4dd3dd0802974d8624328fe9fc6e8162d8bec4e2da8b7959c785628b5bb3229",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$posttitle",
+            "$catid",
+            "$subcatid",
+            "$postdetails",
+            "$url"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            18
+        ],
+        "source_column": [
+            194,
+            227,
+            255,
+            289,
+            396
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-post.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-post.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 21,
+        "sink_column": 471,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-post.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "739b7565561ff0af534e3b8897ab93be63e53686ea746d9f91989de7b3a77baa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            222
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-subadmin.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 256,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-subadmin.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1ad307e145f63a2a38529f5ee0ad74c174d805c937911ea09d3c174802bebe16",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$categoryid",
+            "$subcatname",
+            "$subcatdescription"
+        ],
+        "source_line": [
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            241,
+            274,
+            310
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-subcategory.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-subcategory.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-subcategory.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 365,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/edit-subcategory.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7297df1ab33e08549d3cf7920c33cac0c4143f769df1b20c17fc609414d039b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$username"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            154,
+            119
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/forgot-password.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 233,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f0f9f94a9cc8f0834f78255475e73fe62f5b80ead34faa0ea0d30405d22ac7e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$username"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            154,
+            119
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/forgot-password.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 416,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f0f9f94a9cc8f0834f78255475e73fe62f5b80ead34faa0ea0d30405d22ac7e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            199
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 350,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1e3f672bc37170857f133345e4f4fb7a7ee2ac2ccba81cdafe68509bdbf6fe9f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Description\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            1300
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 55,
+        "sink_column": 1300,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f434e21a6fb1aaf41b8a9f4eb2fee6ac1776e1801c428dfeea265a276de7e36",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$comment"
+        ],
+        "source_line": [
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            331,
+            354,
+            379
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 457,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b92bb288458624ad28adb390df85f944c493640d17ed513eca11e6417152adab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$currenturl"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2172
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3838,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "05c6abd57ae0541fec72a66b815637d393242153ec50b7ab14cddddbade5cc01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$currenturl"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2172
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3937,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "05c6abd57ae0541fec72a66b815637d393242153ec50b7ab14cddddbade5cc01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$currenturl"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2172
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4039,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "05c6abd57ae0541fec72a66b815637d393242153ec50b7ab14cddddbade5cc01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$currenturl"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2172
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4163,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "05c6abd57ae0541fec72a66b815637d393242153ec50b7ab14cddddbade5cc01",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$substr_return"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            4546
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 4546,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/news-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c4e30fe91bffdc9627d2777d1825870291b08b4c5553170088ddb7350fa9665",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            38
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/plugins\/jquery.filer\/php\/remove_file.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 5,
+        "sink_column": 114,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/plugins\/jquery.filer\/php\/remove_file.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "c07d69d206482627df746e75ba1014eff7844c8013cd9ff9e6af7f678c09dab5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$st"
+        ],
+        "source_line": [
+            46
+        ],
+        "source_column": [
+            972
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 69,
+        "sink_column": 1540,
+        "sink_file": "\/home\/kali\/Downloads\/42.News-portal-Project\/newsportal\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d93baa1d6c02d47a80f6b7eb820635bf9764bc74a0394d7935194ad180f4b125",
+        "vuln_type": "taint-style"
+    }
+]

@@ -1,0 +1,990 @@
+[
+    {
+        "source_name": [
+            "$qusr"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            472
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/addres.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 22,
+        "sink_column": 585,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/addres.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "35eb94f84f62e8ff3f689b54f90abe192797e0850f579599166cd12c3283682e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qins"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/addres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 40,
+        "sink_column": 1405,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/addres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08a9119009386baf9067452a311711077585a408b8a5ed596a9458e4df36f348",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qins"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            877
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/addres.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 41,
+        "sink_column": 1417,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/addres.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0f01ab7579768a8303fa8f88518bda44aebacaedf9237d5da2835a4f907ae38b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qupd"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/deleres.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 15,
+        "sink_column": 317,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/deleres.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "df73722ad3e25378d2ab28c90b13668a4e4fd29fb9863e5043d83cb24cd29812",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_id\"]"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            839
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 27,
+        "sink_column": 781,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7c4da390f6030015a202958dd5bc02776a831acceb53f1cac625d17e35967eb5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[1]"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            875
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 28,
+        "sink_column": 868,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe82cdaa7844ff58d8add4a353c4937172b05982f87cee2b7b523364ac0b6741",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[2]"
+        ],
+        "source_line": [
+            29
+        ],
+        "source_column": [
+            905
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 29,
+        "sink_column": 898,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "99d50513b58f0b4e21c1f87fc3794b281b461cf9012ffac8ac2ddb02266fb3c7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_id\"]",
+            "$v[\"r_rooms\"]"
+        ],
+        "source_line": [
+            30,
+            30
+        ],
+        "source_column": [
+            963,
+            1002
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 30,
+        "sink_column": 928,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1ef1807c482d2470bd4a7c35042910c7ebc6b523504b79af4af81b716be08d96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_id\"]",
+            "$v[\"r_type\"]"
+        ],
+        "source_line": [
+            31,
+            31
+        ],
+        "source_column": [
+            1068,
+            1106
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 31,
+        "sink_column": 1033,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "47a7a6b663595a5b0e73edcfbd936cb9b563a5b97712b08cdd89c9610975adb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[5]"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            1143
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 32,
+        "sink_column": 1136,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "131dd7f645c8f1f064943e75cf592a8f945f09be358fbeafe44ef6fe4ac4ae2f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[6]"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            1173
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 33,
+        "sink_column": 1166,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8b6606be1c62932dd0d62e4d9e0d370696df5b9db3c0980261f68b25e47a84c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[7]"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1203
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 1196,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bfc1f3e895abd17b2c666d35f878036e70521eea548dd37ba7a86c9f2d4fd537",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[8]"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            1233
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 35,
+        "sink_column": 1226,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d0fa13699589758e488a796f15f4cccac5fa8a13487a3844173015f278136e6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[9]"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            1263
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 36,
+        "sink_column": 1256,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d65f65497b49bffa3d2ddabd8234971f7a92ed28739d5640ea8771f7a381987d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[10]"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            1293
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 1286,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/delres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a8cfef37f52e4bca3d1faf1964681fa97801c03339377e792c431c08ab4f11f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qupd"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            264
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/editres.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 14,
+        "sink_column": 647,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/editres.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0f7ff7553c7d3d8dc745493013520e380e6885965e0d17894c0c980979030ea2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_REQUEST[\"txtemail\"]"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            604
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 32,
+        "sink_column": 604,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f696e516e98ecc2e04731081d81b6358c42a92b0705bb1aec6be41a9c40085e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qsel"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            1669
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 97,
+        "sink_column": 1765,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b5d3c44f33f440533a8d6fc228feabf4ba52a493e4721d609ca2831d62ecbadd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_rooms\"]"
+        ],
+        "source_line": [
+            214
+        ],
+        "source_column": [
+            3844
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 214,
+        "sink_column": 3844,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8a48c6c2a1e2ad036608fb4da0dc12dffe2dda6e5972533a932cfa27c424ec53",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_type\"]"
+        ],
+        "source_line": [
+            217
+        ],
+        "source_column": [
+            4009
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 217,
+        "sink_column": 4009,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1e89bd03cda74f2c065c24b3b2aec29223b99e88b13731645f19f588113e43dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_name\"]"
+        ],
+        "source_line": [
+            221
+        ],
+        "source_column": [
+            4154
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 221,
+        "sink_column": 4154,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9ea519582256f36a9fe5d45ff5bdaa0d4b23cf366e8025e5df3879cdca48f83",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_email\"]"
+        ],
+        "source_line": [
+            225
+        ],
+        "source_column": [
+            4330
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 225,
+        "sink_column": 4330,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1e02593cf73ea55e747b0d3c9bdc925738627eacb2da1456eb07c343b79c480",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_company\"]"
+        ],
+        "source_line": [
+            229
+        ],
+        "source_column": [
+            4504
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 229,
+        "sink_column": 4504,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d88b60dcce1a1aa0c93648eb2c6f97072c128a445ed2526b6f761e69a867b76a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_phone\"]"
+        ],
+        "source_line": [
+            233
+        ],
+        "source_column": [
+            4680
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 233,
+        "sink_column": 4680,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "44486093c44b88c798f55a3a844a833d89ab5045e587d38d9ad500415ce4e1a6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_address\"]"
+        ],
+        "source_line": [
+            237
+        ],
+        "source_column": [
+            4830
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 237,
+        "sink_column": 4830,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8ebf4af7b4e2d4c91ca12d1d0f008f795514167ed5ec231d5b6295582213f10",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"r_spanyreq\"]"
+        ],
+        "source_line": [
+            241
+        ],
+        "source_column": [
+            5000
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 241,
+        "sink_column": 5000,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7610b9178a2ef500f5218a7255fd403e4759eb8ab5b59ffe03dc83a54faef641",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$norm",
+            "$type"
+        ],
+        "source_line": [
+            8,
+            9
+        ],
+        "source_column": [
+            189,
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/connection.php",
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/connection.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 257,
+        "sink_column": 5285,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "49a5813984103ab105ebd5f44077d0ce5f1cc14bacd246f5da093db4016eb8dd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$upd"
+        ],
+        "source_line": [
+            258
+        ],
+        "source_column": [
+            5362
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 259,
+        "sink_column": 5580,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/edres.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4c067062daf10eaf47c78fa4e80323f684e4880cab1a4a98a3d9ce23871a6f54",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$password"
+        ],
+        "source_line": [
+            7,
+            8
+        ],
+        "source_column": [
+            104,
+            136
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/loginsession.php",
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/loginsession.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 10,
+        "sink_column": 179,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/loginsession.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "160cd22efcaa132f785ff9e99c690a8ea40b948702d19302692406eeaa2b8e85",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$res[0]"
+        ],
+        "source_line": [
+            167
+        ],
+        "source_column": [
+            2987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/reservation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 167,
+        "sink_column": 2956,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/reservation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e77310ef58a4260d11931528f15a240cf0d8ae9815729c4bf75d406cf98c99e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qusr"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            265
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariadd1.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 14,
+        "sink_column": 331,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariadd1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "917357cffbb9a3e8d10c02a8663cad1d5f242258f372d1ca5be1085ca6e04353",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qins"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            472
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariadd1.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 21,
+        "sink_column": 609,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariadd1.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b0125dccae7e43dfb6857a2ef9474b9480db4327eb0876a66201ed80c1c9fbf5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qins"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            472
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariadd1.php"
+        ],
+        "sink_name": "exit",
+        "sink_line": 27,
+        "sink_column": 718,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariadd1.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e1fc4d49a9da512d09be2cd75bfec11b8c1465a4110129b3dbac7a6ac60704ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qsel"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            239
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/taried.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 15,
+        "sink_column": 304,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/taried.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "93867e6f808395572cd51aedc5ee0cfd2fa12d99f1e74d874943949d0f4dbbbc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qupd"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            36
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariedit.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 4,
+        "sink_column": 321,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariedit.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1bfeecd662013f55dd55131e4d025677c03d1b01b72ca558a6ce74283013d555",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$qupd"
+        ],
+        "source_line": [
+            3
+        ],
+        "source_column": [
+            36
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariedit.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 11,
+        "sink_column": 476,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariedit.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d5cbbb1edfd987fd4c4b22478a7302738d1d6de67c5bb266c67d84a9e3088aae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[\"type\"]"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            921
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 31,
+        "sink_column": 914,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e83783fb29abace8ef6749223dde28c3347b220373eae4e96057cb3302ca88f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[1]"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            956
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 32,
+        "sink_column": 949,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f47cb730d6ab339afed9dde089b2235e877a77f37ef57377d348c727a0484abf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[2]"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            986
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 33,
+        "sink_column": 979,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "39ca59921cc06d4660052e0b70ab83c9553419d43d38eea2c415413ad29cbb7b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[3]"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            1016
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 34,
+        "sink_column": 1009,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45c510f39248ca5a5081868094bad90cc2697c1522d09e250179c1ca852bce60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[4]"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            1046
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 35,
+        "sink_column": 1039,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3ff8100fee7b1517c5a3b0bf2c2e3345a253420b270b4f9825c48d692f9de34c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[5]"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            1076
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 36,
+        "sink_column": 1069,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9780422e1512ad57b5dc8c107b66c31e8b34d32199422fdff4ac3a5a866dea44",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v[6]"
+        ],
+        "source_line": [
+            37
+        ],
+        "source_column": [
+            1106
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 37,
+        "sink_column": 1099,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/tariff.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e7263211b9b2d6664a2126df68f4a54ee6ac465f354d9825ca828e240853aea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$password"
+        ],
+        "source_line": [
+            5,
+            6
+        ],
+        "source_column": [
+            87,
+            119
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/userdetailinsert.php",
+            "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/userdetailinsert.php"
+        ],
+        "sink_name": "mysql_query",
+        "sink_line": 9,
+        "sink_column": 157,
+        "sink_file": "\/home\/kali\/Downloads\/1.HOTEL_managment\/HOTEL\/userdetailinsert.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7cadbc8546ef65a7766125b67eff762d0cc67eb393f1435c5c44eb3805b6f002",
+        "vuln_type": "taint-style"
+    }
+]

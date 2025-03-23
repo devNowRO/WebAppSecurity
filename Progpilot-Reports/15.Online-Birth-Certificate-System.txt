@@ -1,0 +1,178 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5369
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 5490,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45a5d5e8b12540b77c9bf0a9888589cabf6521cdeb9263698e02935d51cc0178",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            5397
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 5513,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7c355bf0d9c9f9153b8be1b423b868aff834de78ba8d5ae92d5c8f4b92329cda",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            5296
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 5296,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            6248
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 6248,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            7537
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 7621,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d43e9a0e91e9fe15c9f17ba98cd3d12da3ca1c52dc64b9af83e20f6fe94382c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"fname\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            4058
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/users-applications.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 4058,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/admin\/users-applications.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "93db86de1a682b9b001a09cae576ae76e45cff1e209d6753c4eb7676eebafe2e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$regmob"
+        ],
+        "source_line": [
+            153
+        ],
+        "source_column": [
+            6842
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/user\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 156,
+        "sink_column": 6978,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/user\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "626e7d5882d9bf1fe857bed12763b20b7c0ade6697069feafe13e466d0a0ac94",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$certificateno"
+        ],
+        "source_line": [
+            154
+        ],
+        "source_column": [
+            6869
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/user\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 156,
+        "sink_column": 7020,
+        "sink_file": "\/home\/kali\/Downloads\/15.Online-Birth-Certificate-System\/obcs\/user\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7f7eb6c9e77d0350703cd0766d3f28a09ff529d483bdaa5a1b2f13f317f1b8a4",
+        "vuln_type": "taint-style"
+    }
+]

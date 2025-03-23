@@ -1,0 +1,134 @@
+[
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2233
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2360,
+        "sink_file": "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "47712e4cf38ad1f06de22777170d82b66ceb672b737b8c5bc846bf56aa419834",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            70
+        ],
+        "source_column": [
+            2261
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2383,
+        "sink_file": "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69dfa817155e8f157b47a6a1f1cf8a764b9ae5ee0046a86b604a64605f8ba216",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            74
+        ],
+        "source_column": [
+            2420
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 74,
+        "sink_column": 2420,
+        "sink_file": "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2841
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2841,
+        "sink_file": "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2703
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2799,
+        "sink_file": "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/admin\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "205cd17361f4ec1e36299a74f8e529b8c45aabea25818e4fce78171f24981e89",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            1829
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/search-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 64,
+        "sink_column": 1913,
+        "sink_file": "\/home\/kali\/Downloads\/51.Online-Security-Guard-Hiring-System\/osghs\/search-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30781f874043cf55b1953504502bfe694f013a9bbae790f4668c0aea918ad19a",
+        "vuln_type": "taint-style"
+    }
+]

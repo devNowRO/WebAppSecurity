@@ -1,0 +1,3426 @@
+[
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2610
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 69,
+        "sink_column": 2610,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aef669d4615c2ea1c1bfe09db0572f384342b2f8a29ade673945a56544e9f78c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            2724
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/about.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 73,
+        "sink_column": 2724,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/about.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb4acef01ba38ab72f856f3d685fee5aa9905071f913e5f4b554183b13c832a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$substr_return"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            521
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 19,
+        "sink_column": 521,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7583a981b87b72fb3ea3db6579014298f537f7eb408a52f198671a7fd2a1d739",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            1822
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 49,
+        "sink_column": 1822,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62be6a1b412468e7b24bb062d72814de250644f2a3de5d32d741a6e1c40e74de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            50
+        ],
+        "source_column": [
+            1964
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 50,
+        "sink_column": 1964,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21aae282112744dada1ffcdb3df933add03a064733701298efbeacfa30f6da5d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            2109
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 51,
+        "sink_column": 2109,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/includes\/footer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "40a73fd03394fc649553c4a3241c1b94f58fccf779cdd3360a65f3138d632b64",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$pagedes"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            246,
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/about-us.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/about-us.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 326,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/about-us.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "50c9386440cd8162069482b1dc146ced8793ca315eeda7118f567179f1151db1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"ID\"]"
+        ],
+        "source_line": [
+            42
+        ],
+        "source_column": [
+            1545
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 42,
+        "sink_column": 1545,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ad45dc096695052ff5824c957513292239e22dbbfa2c6e3cf6c798573200844b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Name\"]"
+        ],
+        "source_line": [
+            42
+        ],
+        "source_column": [
+            1604
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 42,
+        "sink_column": 1604,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cefdb986761a09945b8dad73723c1033eacc92d483848e104b4a726a3088cd8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            69
+        ],
+        "source_column": [
+            2495
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2936,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "64659684ff72258a42841398315e3208cb106e5443ced4c99f580e72b0626b32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3062
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/about-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3062,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/about-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a12c09f8a16e999ad94c3feb2ac3f9399f3baaa1495a78d8de190e151f45e907",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3283
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/about-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3283,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/about-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12d6669dc1a18c95a9e1b0fc7dde9a8c919d7defa604850af66bd9ce41ec2771",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2410,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "50a556603451e267617fd441935b054125171ff0f9fb3c71b54da7b217bb08f2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2452
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2452,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d997f53622f7114b716053d867d6eebdb33d6935391f6939da7dbc9134b5ef4f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2488
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2488,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd2764e39a9f218b90ad4400a40e7ddd189281eb33a9e49a0624cef7caa2835d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2531
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2531,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cce55f10b040650d97b7fd4c897edcd32cd2f0ce2ea08aa613b991f8cb739bb2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2571,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "72025a466eb3656139b54b94b85c71bef22f7cf6530a69f905dd152b31e40f27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2647,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/accepted-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "80fd0e334c8836a2387eb4f88926abeffb9dd989eb980f0db1c77861c6bce4c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2797
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2797,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa281ff53df1c07bc7ee6c1ceb377dbc61a105c8495da535155e66cc4486a84f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2843
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2843,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "addf12d9d6760a5d09a0c0c87edaa6dc18f77c6268a307e772f7ce205fb13d96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2926
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2926,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "36e74b1cae54e7fcd01e2a3ba67940f041f6ee257b433b1c15b87b82717c0929",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$mobilenum",
+            "$gender",
+            "$details"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            210,
+            237,
+            265,
+            302,
+            329
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 379,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-customer.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3402bc12d24055e70ce784283325ed4735c1b8da5d855c69c5a135226e5aa0c3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sername",
+            "$cost"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            210,
+            243
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-services.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 291,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/add-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0ea6d2facb5f912941d1f528f6c05a590a7589e40433e2dc85b504426d67f369",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aname",
+            "$mobno"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            248,
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 328,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "15c73c8297194d0a164541fc5193f99259c23eb7790972546427918f310dcf1f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            3037
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 3037,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21444417bf5d08a8ec025a71e92375fcc40ff6e2ba4896bb10d4bdf08ba7947f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            3234
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 3234,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a8f9aa928e275a7c0770549a2cee0824fd135ef2c4241d6bcd3516fcb9e4b95",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            3470
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 3470,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bedb8b4bddb9f0501186ff4bf6dd306b70debcdf4afe69bad87f838c5a6e1551",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            3678
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 3678,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/admin-profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a79ddde17ef4a5c3edb27ac2437c11b4d66625740fd0166005ebd3f8078f706",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2378
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2378,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1821ad7f721edd6fce3cc4a0349fbe5ac97d937f243db8e4ed520478e4668383",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2420
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2420,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8bdb15a0951f25df998de134537853e8f45eff0e170af0fdce657ebd1ad332c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2456
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2456,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "abbc082ec933e9ff1960f238ae5ed9b01bf3bd94465399d8475cd8c99ea39343",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2499
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2499,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b967ef8d552319aaf5a97886f1b23341e751bcf7a621d6de3a5752f81044fb27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2539
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2539,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7bc07007cecc5a60b319cbcde36eaceb1014a4ca771d3861197e1f53b5e331bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2615
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2615,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/all-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c09063b6dd52cf39953f9813a5323c84de795cc39647c3628d1a2054756e46b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            64
+        ],
+        "source_column": [
+            1987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2108,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf7c646936d1b010fe74754a086d5553ebff1f6a288786054ea96f60120422ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2015
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 68,
+        "sink_column": 2131,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "71074dbe23463eba55973f313bf08fbb30a79b88d09ed538e4137741668eeb69",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            64,
+            65
+        ],
+        "source_column": [
+            1987,
+            2015
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 80,
+        "sink_column": 2408,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "476207a3bbe881a0cce3f621b1732e1ee98054bc0dc43581c0877da337230714",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2798
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2798,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc74311e4ae3c6b5694ae3733dd135d2ae6b7538b4552898615ab94fa606cc9b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2849
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2849,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "077d9674b819ded5f566efbf8466d6428c4f7ae1ad9057d7969d66dcc2389f76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2895
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2895,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2afd3cbb2dc4b9dd08f09d2434512ec5faf3e712e3ddcffa3b3da664a0eb37d4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2986
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2986,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc74311e4ae3c6b5694ae3733dd135d2ae6b7538b4552898615ab94fa606cc9b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pagetitle",
+            "$email",
+            "$mobnumber",
+            "$timing",
+            "$pagedes"
+        ],
+        "source_line": [
+            12,
+            14,
+            15,
+            16,
+            13
+        ],
+        "source_column": [
+            246,
+            308,
+            333,
+            366,
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 411,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "16173d3feddea324eb44dea0471f4050fce2cddc4ceab7259f92bf619edfd5b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageTitle\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3217,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6b0d8ec002b7f52edf25aae47ef92c8cf1979b21a7c9fab3134c8957e491263",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3416
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3416,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f40a32f6d156a592698a5ab744f8285873c01525542884d9f9cf27906035d01a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3627
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3627,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f331b0ab6b60f1e38a97c162cb62a8ad38450e9397890d414fe06d0b89b3463f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Timing\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3832
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3832,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d0c4732c0c30e574749626765cf9bf1c6054f0fccfea63d3494486a3656390fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            4050
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 4050,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/contact-us.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a5a1085064915e82fbf2c7c97822919e1a0c19cc55b2ee1bf703019f7af7cd2f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2307
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2307,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "642f74dd2486a851269cdbea841823e3fd147bc9bf0a96998af724b46bb89343",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2344
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2344,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "51621539e1acc88af21a25b50fad6d19846e409524ce74c63db82df435ef512a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2388
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2388,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f1736f21467e7fd7acf056a877ac9a177ea6452b3e67389209b637a132dc53ee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2475
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2475,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7157d3f6136f9fb70459303ca157e144fa994811d8a68e10e30bb76bc043a5f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2556
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2556,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/customer-list.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7157d3f6136f9fb70459303ca157e144fa994811d8a68e10e30bb76bc043a5f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            2088
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 68,
+        "sink_column": 2116,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7c6f5106d9a9fd0ed7e760eecf9b8af6f5c46dcd44d675c6dfb3acd5cdb87b8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "90afce7bae3a5f38bbf2a0b7a92589c3bc6db8594529a2be7ae3ec33b109c4d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remarkdate\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            4145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 4145,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ef1b9f58273920e49a712898087f08d0e1f9476d5a5c2564ab8481e7034abaf1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            76
+        ],
+        "source_column": [
+            2350
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 76,
+        "sink_column": 2350,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c3e72631c901065cfc9cab94a298a0b2d635a9b1791b08bfb80ce7bbf5efa383",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2429
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2429,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1deddaa10a01830c6d0ef15dcbc359ea90d49f0f922d3aafa2e9bb739d6566c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2508
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2508,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dc0e7ed1fa05bb7445107f5746b8b1edf9e16e0b7ae6af2421e46880473e0483",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2597
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2597,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "af980b57457ae866570cd89ca4598b3468db517bd03ebf5085a851a7f8c76a90",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2695,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a54c1fc3f16cbfbec0fb7d4e173fcd1ef4331d07b10e7b76bda264101d197014",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2789
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2789,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a74e0be9ee949cf3d5a4b564f45b8e3b2bd714d15adc0f65a2a3283b1908b3fa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Services\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            2878
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 2878,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01fad6c1d1bec28115c13f1a14b03e6507aa3fead772baf50f1bba24926d52a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ApplyDate\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            2966
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 2966,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "230863b8cbb22de7a04383f6449d846584052b819a7d98d9d137d9319da244b9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            4064
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 4064,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "46110bc5cb300995cb5e410579cc0b6418658001a77c8d3a436f4752affd2043",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remarkdate\"]"
+        ],
+        "source_line": [
+            163
+        ],
+        "source_column": [
+            4145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 163,
+        "sink_column": 4145,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd8de7d5fb98c5f2be363837a72aa2e95c080d8c9ea79ed48125ebcca50e9c7d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$mobilenum",
+            "$gender",
+            "$details",
+            "$eid"
+        ],
+        "source_line": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            17
+        ],
+        "source_column": [
+            209,
+            236,
+            264,
+            301,
+            328,
+            363
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 404,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "48e9208ed30786d2ed87578b830f32d4366e459a744a91b242e628976d49dd15",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2734
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 88,
+        "sink_column": 2762,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1abf074455a1d1916944eb1a2caf08b0033d561f5b58da798c8d5a053d4c6c8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Details\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4747
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4747,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c79e9048c10ebfd97deb1370e8a48050a217a8ddeb3d5373fb4740c78864164",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3052
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3052,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc6aef9de2bdf95038f21f0c43c5b991423533e7d21fcdef232e05fd7ef6bdac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            3251
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 3251,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "987e9bbfce46a22a92c9979e7bf468b1771a4a47c10b361d2e53bdf781331591",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3476
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3476,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8b607b926c2b378f3cce74ffc095b359b1c90ed9f7b8f6858a9bfc95700ba43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Details\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4747
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4747,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2f9a89d86e1770ebbbfa48167a7c329bb78c89c05ec320bf537011f937a9ea16",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4960
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4960,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-customer-detailed.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "576a477fd086d0f2dc44c9515933c470bcce5df665d2a282983f0bddaf549d3f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sername",
+            "$cost",
+            "$eid"
+        ],
+        "source_line": [
+            11,
+            12,
+            14
+        ],
+        "source_column": [
+            210,
+            243,
+            272
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 313,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a5706e6f68afb9d64c36bed7e237c8c3884dfea4dd60742415c6ad03db87caa4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2580
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 85,
+        "sink_column": 2608,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "78cb98015ca6f3d5eae94e5312556613f8f89e32aade5bc23e1b8f736f987e7e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2937
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2937,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2da7309bd9956043c5f551642c3e7f7e7e40c27c5c48448b4f8f36b8cf95ac4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3158
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3158,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/edit-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b661295ed9982933f9cf988aa7336334b6503032a0e14e66b67016dde00f2bf7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            162,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/forgot-password.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7e2e1a600f474001166bb92b2f56c6c987827041e3f58f8a027813169356c794",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/index.html"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 207,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/index.html",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fc72e948bf950e4850c6afa09c676a9f2b11485bde7dbbf252b0564f64fce563",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            124
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 207,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2b76c69e6f17ef933044bb928455e603c8aac00eb7bce962d4202f063507d821",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2571,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd5f7dd9ceba729884f410e250ea17993824afa5dbca540bc177e6c3dc96e1fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2622
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2622,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1aabe9cb38f755cca05b70b8dbc22372424a5970f0053286a06c6e698e2a0f92",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2668
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2668,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "86b59cc5cf21b32abccdbe7462fd1099a5c46898a76dbe0a59d751468749b2bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2759
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2759,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dd5f7dd9ceba729884f410e250ea17993824afa5dbca540bc177e6c3dc96e1fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2327
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2327,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "99507b35d3e3f3571e59b68941eed528a64c81bf2493f226b98cec20a10eecaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2371
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2371,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "79865b16e3f38294ed15d1e6a3a3647f38843782ea26c6432efd500f6e59c249",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"CreationDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2407
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2407,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2a5153920e405b23307b76934b9cbb53a34484fe36a5907648b8341942c69db5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2485
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2485,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/manage-services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b1e74134d5b6db39d58168cfbed1db65b4b6db2c95b5cffffb6b18f95bb88881",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2394
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2394,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d119dbf3009d1d419bee26304ff7f901de70df09a765ca024961bec789e83187",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2436,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a77bfaec6e5634f129ff262144c3e36935a3ed674c53565bfe8f5d8c18bb11cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2472
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2472,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e2324fc9e4633288e18d1c52ece815fb18aef271e8d793227a31d014afd2fd6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2515
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2515,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "437691fdc8fc01aadb410b1143ebdc48b91f9ace759190f8abf957155d6489d0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2555
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2555,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da14a2b4a6faa0aec67f158fb8157cf011478161ab9b3d24d9c5b29087a5b863",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2631
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2631,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/new-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8c05fd65f16ce6cd145a05cc6b58969420e7e9f701b863c34e879e6df434af46",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2410,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5dd817a5fb75e2a28cce11b819ae9dd978b6f6ce992831e1aa6c4c6ada7f3788",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2452
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2452,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "087e4dc187b1500f2775f4bd3b7b1eedf77b92b4fb1870e27714dc5e6e9ac984",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2488
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2488,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08e05900ae837e38e77e53e4e225bc68da7241070d97bf78e90d65c860bdfb80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2531
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2531,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5d70f6b8faa26437dfc39f9bb83576d54fc35dae1e571abf0668af53b1bd3cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2571
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2571,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34e98d68922cd08e0ead433593067c21217fb9f02c6262c07567cf5610d93611",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2647
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2647,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/rejected-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "639181720b3fc366ac8164f26cdd3117d5c79c7f7b627ae2432af5aa3277b4b8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            64,
+            65
+        ],
+        "source_column": [
+            1951,
+            1979
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 88,
+        "sink_column": 2568,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "67c56b2e3ec07865d8ce17ce58912dc8467a22d762856a64b266a63321795f44",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"lmonth\"]",
+            "$row[\"lyear\"]"
+        ],
+        "source_line": [
+            96,
+            96
+        ],
+        "source_column": [
+            3016,
+            3035
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3016,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62f28be962294132852d36ce040a7d8f24f60ebd0cdc2aebf86e080cda1891aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$total"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3088
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3088,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dcd75f88e0599fe404fa031bbceb13a3a688ad5cdc2f0afb964b69fe4960f2e9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            64,
+            65
+        ],
+        "source_column": [
+            1951,
+            1979
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 128,
+        "sink_column": 3866,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "67c56b2e3ec07865d8ce17ce58912dc8467a22d762856a64b266a63321795f44",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"lyear\"]"
+        ],
+        "source_line": [
+            137
+        ],
+        "source_column": [
+            4281
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 4281,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "72c915fa8c08c17848e8adc57b546faef27cd952673e6fe0b98200c395b99e40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$total"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            4334
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 4334,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/sales-reports-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dcd75f88e0599fe404fa031bbceb13a3a688ad5cdc2f0afb964b69fe4960f2e9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2567
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2651,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eb4627946a76eec360cebc43975ce972ad5af1cc630a175d1274989653cfccc8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2567
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 86,
+        "sink_column": 2914,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5a44799443baa5d90fb47521bb243d22137e0d6591ff3aebd0ada2683fc3b1ee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3221
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3221,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5acb46f9091e4934ead101db9504c25a96f673b44495d4edf7a16c36928103a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3263
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3263,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1116be2722291e449bb7e99a02a66ab78f2948d5f45e93ec9cc5d39c54f84643",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3299
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3299,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "92f1c50a686a581d34e91fa2cd597032dc9e4b32327e07175bf5d29b31d80b1b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3342
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3342,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bedc6013bd01175af03dd5c602da0f0f0ceb601ef5794908dcbfaae641fbc366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3382
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3382,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0254a529f4ac8a2f813bf95da1b5e8d0c9cc392a83ff99e6a09f1dadcab985e9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3458
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3458,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "77a7864530c1339b7ab3c36d61a80f0d9d434a1c05f233fa9f17ec2b8cc14a48",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2553
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2637,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c58857be3c11594c007ff73e4ff246a8bf25f020d873359dadff4af30eb2c90",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2553
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 92,
+        "sink_column": 2924,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "26faa0cfba4a2b0c2437ac4617a823a184e180f0e10c0c8f962227090f916212",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3335
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3335,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "318d735f66c69951be1585680f7ece99e56fc7e62d7fe2a5a10007c6c2dd17ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3386,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e7da37c99b75ea49714b055ceb7dd7636d32ba3b24529db2ed22881911ca936",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3432
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3432,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f9e0217ceca20da09aed39691de7abe631b0baca8e97b8808513839f55f6802",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"BillingId\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3523
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3523,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/search-invoices.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "318d735f66c69951be1585680f7ece99e56fc7e62d7fe2a5a10007c6c2dd17ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$remark",
+            "$status",
+            "$cid"
+        ],
+        "source_line": [
+            13,
+            14,
+            12
+        ],
+        "source_column": [
+            249,
+            282,
+            220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 339,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "724e89bcfe0126862785977cb057936f0fad08540f57bd805bfa24f4b8438c97",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2509
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 88,
+        "sink_column": 2537,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "257aa8a565169b0379c738e5bcefb8b264e6510b36f9da3f9faa18afd783a73e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RemarkDate\"]"
+        ],
+        "source_line": [
+            183
+        ],
+        "source_column": [
+            4566
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 183,
+        "sink_column": 4566,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82a61a28f3c6657c3d241db95d9e18f70bb6738a07ada8cc243278ed8095151c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptNumber\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            2771
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 2771,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e1df51e86a330cea224f6c794ee43e5eff5199913d0115a3f8ef2a83cdeaeed9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            2850
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 2850,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08ed81d32754fa7d1e7fc4ccea25cfb9267ebb5ca9c1e29b3b29fa8cd20015ae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            2929
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 2929,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d4a001d80a6643d1dacb9fe9bc8ee94157ff949e634f997d0f06e9cd6f397812",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PhoneNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3018
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3018,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "19dad6d104fa9692c9fc5d3698003e91d4f84cec1192c01bfb6600f2af0af62c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3116
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3116,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2ff4668f16cc6805e22b49cce1cad6c44ed5e65dc69098fe9e929143f628a2bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AptTime\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3210
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3210,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cc562c1f2e05015e11897a8401cc62b6733a5251f7921b6faee14c35830748a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Services\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            3299
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 3299,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f65ac11c26249fb1f06e2397d585f59d01bb821ba96e96e9d63b7a62012aa04",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ApplyDate\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            3387
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 3387,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a5160518ef66d0c7f765d796908a7e93bb39c7388f2395cea39650e98b0f9b00",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            177
+        ],
+        "source_column": [
+            4485
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 177,
+        "sink_column": 4485,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c67fc449f44764f986d3a871fd6163b978e85539b743c6553eea6277a69b4bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RemarkDate\"]"
+        ],
+        "source_line": [
+            183
+        ],
+        "source_column": [
+            4566
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 183,
+        "sink_column": 4566,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-appointment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6de184dc93b853b5caf46cde044db4bdb730fe66c96f6cf1eab02d63092b7f2e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Name\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2538
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2538,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "519bdf19aed4b83a77fdb91e0291f4c0c30fd85f808f42611e00a01aac2b67f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2614
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2614,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b373dc3588152661741b55a3d6c9fe78bfcd5ad130e7c489de216ac57f32abcd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2692
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2692,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "da15fe3717ee02b3477081b086c1ace2bd72673c58cf3cdbd4042a2b3d86c462",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Gender\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2793
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2793,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "34f512074561741bfbcb979601cca536d41e6c2ed111f11373fd11cb35746cbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PostingDate\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2884
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2884,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e5d15a9ef35ed4a3177327547ac0a454d186105344e942384bb86ef068cd515b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3436
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3436,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d6ebc3bc18c02e7a6aaf8739e28ca062026f6ecc2a10f2241aa156233ad62f1a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$subtotal"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3480
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3480,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/admin\/view-invoice.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2caa35e273caceb538c1653f9181d750d0fe91d5e6de62f2cf5226ad2aece8c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"PageDescription\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2653
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 2653,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87568ec6a8619eeb6e315047a4f2b8277924985639c700bd56f9d4ad836c049c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            3083
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 3083,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "936c6f7bbc67102eaef31b85f6a28bf91d8b635fdcaa3bdd4911d89c0e24cfd4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            3524
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 3524,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "63127b584a31471fa076fd364d52f7738c0e427d4ebb637cf63e89502cd45540",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Timing\"]"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            3910
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 3910,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/contact.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "19148233001b434954d75df5bcec538c9074eaebd2696cf0e69754b1bf14515f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$phone",
+            "$adate",
+            "$atime",
+            "$services"
+        ],
+        "source_line": [
+            9,
+            10,
+            14,
+            12,
+            13,
+            11
+        ],
+        "source_column": [
+            157,
+            183,
+            301,
+            245,
+            273,
+            211
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 387,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "769dbe2c9b2edc1982a179e41986caed9f10d049b5761bc365539e3c7d03a960",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$phone"
+        ],
+        "source_line": [
+            10,
+            14
+        ],
+        "source_column": [
+            183,
+            301
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 594,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d582638f2f44bad231d2ef35d27a4ef37c467804b7aa91f54de033873a664bcc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            5847
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 5847,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12b1e5c1bf2a53df66611ed16940398564704ce542180df6bbba33334edce459",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            5882
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 5882,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12b1e5c1bf2a53df66611ed16940398564704ce542180df6bbba33334edce459",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ServiceName\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2757
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2757,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "991d370a5f847c4e44d9f00ff570ea67bca3eee225c697d00693214c5b6d81ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Cost\"]"
+        ],
+        "source_line": [
+            72
+        ],
+        "source_column": [
+            2801
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/services.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 72,
+        "sink_column": 2801,
+        "sink_file": "\/home\/kali\/Downloads\/4.quality-beauty-parlour-management-system\/bea\/services.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32458d21985f84bde8c216dec36c95c5e5a0c1e5c4e7473c8e7ac5df7e997d97",
+        "vuln_type": "taint-style"
+    }
+]

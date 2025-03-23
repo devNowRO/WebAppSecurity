@@ -1,0 +1,178 @@
+[
+    {
+        "source_name": [
+            "$_GET[\"item\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            5719
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/items_info.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 5719,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/items_info.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a97bc9bfa2ed4df3bfd75e6a247d41d07b2447a960895be3a186d00f77b681ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"name\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3114
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/member_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3114,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/member_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "152527e6ef56c291c7f1d902306c03b5dcb4e279dd69dc7b4e4ae4a2c2b14ae4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            202
+        ],
+        "source_column": [
+            5373
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/member_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 202,
+        "sink_column": 5373,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/member_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30cc7b5128b53705996516dd8880d2b1708b5ad8ae45157c0f28f26ae5be8fb0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ucwords_return"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3100
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/room_info.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3100,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/room_info.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a5dd43f2b9241d2d246aa76f905f55ff15f17cb3637130dca3d2f5759dc278a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"name\"]"
+        ],
+        "source_line": [
+            215
+        ],
+        "source_column": [
+            5769
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/room_info.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 215,
+        "sink_column": 5769,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/room_info.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "07f7868119e5f4685a2eb1665397d7ba099216df4be74fe68a3bdb721175b6c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            216
+        ],
+        "source_column": [
+            5812
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/room_info.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 216,
+        "sink_column": 5812,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/room_info.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7fb2486b149bfcd950eab1db42a2a70ffd22c2fbc43bb4614c456b47002e5edc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname"
+        ],
+        "source_line": [
+            247
+        ],
+        "source_column": [
+            7425
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/viewmonth.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 250,
+        "sink_column": 7541,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/viewmonth.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4b2445f88cbd04723c3866651659e27ef8351939483ed107d03580abef98d678",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$strtoupper_return"
+        ],
+        "source_line": [
+            253
+        ],
+        "source_column": [
+            7734
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/viewmonth.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 253,
+        "sink_column": 7734,
+        "sink_file": "\/home\/kali\/Downloads\/7.computer-service-management-system\/LabManagement\/views\/viewmonth.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "24ab40fca1602492627da4539e4e873d1c88a4abf4c0d10594349286b3a0c349",
+        "vuln_type": "taint-style"
+    }
+]

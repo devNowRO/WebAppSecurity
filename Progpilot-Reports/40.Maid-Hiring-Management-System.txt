@@ -1,0 +1,90 @@
+[
+    {
+        "source_name": [
+            "$_COOKIE[\"user_login\"]"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2869
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2869,
+        "sink_file": "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "715ea4d388fd3e99d05263c51a206bcdbbf45fb6e8677e0f791aeaf497569366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"userpassword\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            3252
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 3252,
+        "sink_file": "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e4538b5ab00ea9094f19350ee142c8fbe8ee055cc5f32c69d2ae3bcda345b63b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            3276
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/search-booking-request.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 3360,
+        "sink_file": "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/search-booking-request.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8b7f220e38c795c5ae344a3b56cec8c3ea665a5a888b005152b1b7cf4316387c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3621
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/search-maid.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3705,
+        "sink_file": "\/home\/kali\/Downloads\/40.Maid-Hiring-Management-System\/mhms\/admin\/search-maid.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "498cdd5e8de4af1d8b4f6ee990845f4495fe44356d4ea74edfae3bca0058e01b",
+        "vuln_type": "taint-style"
+    }
+]

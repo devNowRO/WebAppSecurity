@@ -1,0 +1,746 @@
+[
+    {
+        "source_name": [
+            "$category"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            202
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 271,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0bf88a6cb47f847b80e6a178938ae71c867b2a972806e2aa065d9fa9dfb442aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fullname"
+        ],
+        "source_line": [
+            52
+        ],
+        "source_column": [
+            3476
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/includes\/leftbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 3693,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/includes\/leftbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1e91963d587300beb4fbd5531bd26db5772dc4f3cc561ffeca01a4103261f26f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category",
+            "$ntitle",
+            "$ndescription"
+        ],
+        "source_line": [
+            9,
+            10,
+            11
+        ],
+        "source_column": [
+            183,
+            218,
+            252
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 338,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ec7e7a996e2bd1cbb36d1ad96b91dd26798d37b55d22ae0c9df3e5743adec2f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2493
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2493,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "95addd4e47290ad240d68620a57f7759359040f6e8c0b8aa7bb747da4cd719d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"categoryName\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            2529
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 71,
+        "sink_column": 2529,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/add-notes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "95addd4e47290ad240d68620a57f7759359040f6e8c0b8aa7bb747da4cd719d2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            7148
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 7148,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2deceab5426f472baf55c0eebf1be98e681ec0c79e5ff1724795cf8f89692d8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            7281
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 7281,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2deceab5426f472baf55c0eebf1be98e681ec0c79e5ff1724795cf8f89692d8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$category"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            202
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/edit-category.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 294,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/edit-category.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5a234d9291269b493093474b70823bd669466faf325519bd4394cda3befef1d9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$emailcon"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            99
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 188,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b25a587524c8b0c123d87d13cceea641df36b5a43ad6e7cf144e9e4a89c06123",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$catid"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            186
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-categories.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 237,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-categories.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8d178c57ac86c4cb2a0526dcb9e1cfef305e21950f27cfc9e7bf7e58df2b0914",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            3770
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 3770,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "261b0625e8e5f34b90cffe4f3798474bdf74d04c708a5a44c45e67208a6ac2bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            3909
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-categories.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 3909,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-categories.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "261b0625e8e5f34b90cffe4f3798474bdf74d04c708a5a44c45e67208a6ac2bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            186
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 235,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e035f2ad5d0b7f69f77cf28ae123c37cca1708ca8cf8d2bb158b4e66d00dc484",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            186
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 321,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e035f2ad5d0b7f69f77cf28ae123c37cca1708ca8cf8d2bb158b4e66d00dc484",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            4010
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 4010,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b77d705513028f7b3e70a3da0a13943e512efc18ef62bcffa93386a04fcc8315",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            4143
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 4143,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/manage-notes.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b77d705513028f7b3e70a3da0a13943e512efc18ef62bcffa93386a04fcc8315",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$lname"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            205,
+            230
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/my-profile.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/my-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 294,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/my-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f31c43ee73857c837b71da7d2113285ecaf6e55028d20c7f668f26f25fa91157",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$cnumber"
+        ],
+        "source_line": [
+            7,
+            8
+        ],
+        "source_column": [
+            113,
+            144
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/password-recovery.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 224,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f2510a20be9bd310db73110552260916b1a4977564a3ec0119c2e9bc94b90dc5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$cnumber"
+        ],
+        "source_line": [
+            7,
+            8
+        ],
+        "source_column": [
+            113,
+            144
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/password-recovery.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 383,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f2510a20be9bd310db73110552260916b1a4977564a3ec0119c2e9bc94b90dc5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$emailid",
+            "$mobileno"
+        ],
+        "source_line": [
+            6,
+            7
+        ],
+        "source_column": [
+            126,
+            155
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 226,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "61cef8678265af453e8174f431e7b03851e5f3178a14a98226eb23cd0f839875",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fname",
+            "$lname",
+            "$emailid",
+            "$mobileno"
+        ],
+        "source_line": [
+            4,
+            5,
+            6,
+            7
+        ],
+        "source_column": [
+            76,
+            101,
+            126,
+            155
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 387,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/registration.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b47908b26f48f98b2f95affb0880dae08dc3b9fb081020e78bb64d30e702fccb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            186
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 235,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b9831df1d227971be56154958a8453e59fb3964e6e734c3483a1d98281c2a066",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            186
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 321,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b9831df1d227971be56154958a8453e59fb3964e6e734c3483a1d98281c2a066",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            1446
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 39,
+        "sink_column": 1640,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32b1ef20fb09c2d67369942e12145ef1df3760ef511ececbcc476dd4ddb289aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            1446
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 73,
+        "sink_column": 3400,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "30fff1b895a024fbf53eaf906cd7130c3e891dbc6bdbad8b720009f9555f90cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            4136
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 4136,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6612d4a1c4b6f695868546920b6471b35f9c64289891d71c021599812af8e587",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            4269
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 4269,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/search-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6612d4a1c4b6f695868546920b6471b35f9c64289891d71c021599812af8e587",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid",
+            "$ndetails"
+        ],
+        "source_line": [
+            9,
+            11
+        ],
+        "source_column": [
+            206,
+            259
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php",
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 288,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b12900b07d531a2d63737f2b63db4a8b38d44a41848b4197a67a379f68f46471",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            584
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 22,
+        "sink_column": 635,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c26622b325cdd850bb836de382b00e796ebb9fcef2fb1e71011a1cf07b072325",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2709
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 66,
+        "sink_column": 2739,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c26622b325cdd850bb836de382b00e796ebb9fcef2fb1e71011a1cf07b072325",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            65
+        ],
+        "source_column": [
+            2709
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 104,
+        "sink_column": 4239,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c26622b325cdd850bb836de382b00e796ebb9fcef2fb1e71011a1cf07b072325",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4556
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4556,
+        "sink_file": "\/home\/kali\/Downloads\/35.e-Diary-Management-System\/edms\/view-note.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "14a32b169fab9c2c49911eaa03d58a263cdeb62318a62f3248e13634413d7c45",
+        "vuln_type": "taint-style"
+    }
+]

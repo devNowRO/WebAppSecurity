@@ -1,0 +1,134 @@
+[
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            73
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/includes\/checklogin.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 10,
+        "sink_column": 211,
+        "sink_file": "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/includes\/checklogin.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "762b4cda1f1b7e1f840ef9d570d199cf6a893923bcd77c015955391888979362",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$host"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            73
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/admin\/includes\/checklogin.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 10,
+        "sink_column": 211,
+        "sink_file": "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/admin\/includes\/checklogin.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "a0ec427736c99a179643e8d221d95a4a6440dedf888225b2ba99e7a3900f6a40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            801
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/index.php"
+        ],
+        "sink_name": "unserialize",
+        "sink_line": 24,
+        "sink_column": 789,
+        "sink_file": "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/index.php",
+        "vuln_name": "code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "af4e15d7366386225979c51d997a82dac4cee4f96ee25d996725b90b0ed7c250",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$log"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            935
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/index.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 28,
+        "sink_column": 1052,
+        "sink_file": "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c3ae1fec7f783b8927f7f313323b23727cbf6471c5e891dd7e85407fab83cd3c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            765
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/login.php"
+        ],
+        "sink_name": "unserialize",
+        "sink_line": 24,
+        "sink_column": 753,
+        "sink_file": "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/login.php",
+        "vuln_name": "code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "663e52504bd9cd6d266cf7e7be4baf401b8b59532f635d59e0b9122ade2868ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$log"
+        ],
+        "source_line": [
+            27
+        ],
+        "source_column": [
+            899
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/login.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 28,
+        "sink_column": 1016,
+        "sink_file": "\/home\/kali\/Downloads\/39.Hostel-management-System\/hostel\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "379a77aba7b3fc384168f135e1695fbf5b196d5db26497b668cb2c852439b9ff",
+        "vuln_type": "taint-style"
+    }
+]

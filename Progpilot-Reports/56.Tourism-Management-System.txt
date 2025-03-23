@@ -1,0 +1,24 @@
+[
+    {
+        "source_name": [
+            "$_GET[\"type\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3576
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/56.Tourism-Management-System\/tms\/page.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3576,
+        "sink_file": "\/home\/kali\/Downloads\/56.Tourism-Management-System\/tms\/page.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c1d4415dfdcacd97051841d65fb86fb8f98c9fd51f1771199b70c80392ed4ca",
+        "vuln_type": "taint-style"
+    }
+]

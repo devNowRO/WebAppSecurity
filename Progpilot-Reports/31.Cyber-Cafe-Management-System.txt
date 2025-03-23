@@ -1,0 +1,1412 @@
+[
+    {
+        "source_name": [
+            "$compname",
+            "$comploc",
+            "$idadd"
+        ],
+        "source_line": [
+            12,
+            13,
+            14
+        ],
+        "source_column": [
+            242,
+            273,
+            302
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-computer.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-computer.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-computer.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 337,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-computer.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "04b3440b6215d13b63258b9fddcacf1d9e835da5bab62f326aad909a05b26743",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            256
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/includes\/sidebar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 14,
+        "sink_column": 680,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/includes\/sidebar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4ff3058620dd8e0e486eac1bb1563fac112471f0a79ab60e6ac3421c7267788a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$uadd",
+            "$mobilenumber",
+            "$email",
+            "$cname",
+            "$idproof"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+        ],
+        "source_column": [
+            242,
+            273,
+            296,
+            335,
+            360,
+            385
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 465,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "89898a581973772784fa025b153592ea8bc3be8fd676c5c2f61ebc3a61c1e2db",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ComputerName\"]"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            5515
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 5515,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e2741c1b7594b81da279d9b8f17b130c282901a97f8c03cc0107f04b184e6833",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ComputerName\"]"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            5551
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 5551,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/add-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e2741c1b7594b81da279d9b8f17b130c282901a97f8c03cc0107f04b184e6833",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$AName",
+            "$mobno",
+            "$email"
+        ],
+        "source_line": [
+            11,
+            12,
+            13
+        ],
+        "source_column": [
+            238,
+            268,
+            301
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 340,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "eb11c128726f75acb5635395e52982ca901617536f3e0603e17a105483e4c7e3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3426
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3426,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a02c5dca658aa0fd4558becb25877188090fbef1543887ccee7001742a49a3a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3668
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3668,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85b66358423cd446cb4f0cf5e20733c78caff5eabf0f54c888ac512b89d9c48b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3921
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3921,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "df9ef3f837e003b3ea23b3a12caf7bb6a3c595660cbfb35bb870058fb8123bde",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4335
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4335,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ad1a579f86d39da75fc3ff4127694072bf4fa24409e9950738d615e3f6a2756c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4739
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4739,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/adminprofile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9fe547613b2aef6118b3a66d17e2f61bd2bf0a2b419d90c92d2e24e82e4f99ac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegNumber\"]"
+        ],
+        "source_line": [
+            100
+        ],
+        "source_column": [
+            3473
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/all-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 100,
+        "sink_column": 3473,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/all-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9648bd147557a64591fbbde6c8c8686c68134b201f52fb91c64470aef55845c5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            3534
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/all-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 3534,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/all-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2d445db3028cd4b5cf27055e4b2a313eb27f2f278a5622f69700996935b5cc70",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3637
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/all-users.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3637,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/all-users.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c71d1a592d88bf1968cd5af62608d37feeaa599d5ee72e34eef593c34b3b4da",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            77
+        ],
+        "source_column": [
+            2526
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2647,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2259a76b889cb2faddb1a39cddb4107482c852e2b1173c24db50d1b919852c9d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2554
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2670,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cb5ceda7c897a67b58a1d813a9bde9753f1d8872fd6f1adbf26ef56accd86995",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            77,
+            78
+        ],
+        "source_column": [
+            2526,
+            2554
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 96,
+        "sink_column": 3217,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2f49ab13d647fda916e49c80f8f94a515aaa483e65194a8a0255ae1521a03da4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryID\"]"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3500
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3500,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c03be3fd94384c3e9dc7679b42185c4c4ac71d4d4809d3578e97d5809fed9b0e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3559
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3559,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "944e67532e5d5ce03b5cdf3ac79d57e24fffe373e63b8806371e8cd57afb6d83",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3653
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3653,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/bwdates-reports-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5a5ad9eb501640de979e387a9ec1c277c0abe40a952c20f688e9e8de86d1e126",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$compname",
+            "$comploc",
+            "$idadd",
+            "$eid"
+        ],
+        "source_line": [
+            12,
+            13,
+            14,
+            10
+        ],
+        "source_column": [
+            262,
+            293,
+            322,
+            208
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 355,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2f808061d763e359ccca7607898ab304563c667bcb0a1972e63bc92ceea5c5b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3233
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 107,
+        "sink_column": 3261,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "086204a2bf391f92158cb92e847abca6f80c7f3deb3e013024b98b3bf649a432",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ComputerName\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3564
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3564,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a1160734ce6f498b6908ba8187d95bce09f793109e342bc81be6a1ec3aa0cafa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ComputerLocation\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3875
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3875,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa1716e62447817357a291da09876049f08d786b662805c3a95c5f577f75ba68",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"IPAdd\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4308
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4308,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/edit-computer-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1073498beb927623fc2ce0a90fd39c1113166e2b05b0926e2082fdb130b813b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$contactno"
+        ],
+        "source_line": [
+            9,
+            8
+        ],
+        "source_column": [
+            162,
+            125
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/forgot-password.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/forgot-password.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/forgot-password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "81ad457c9374b38a6f9e70121899736930e8f3c9ac31494ec397f427e4bb9d52",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$adminuser"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            117
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 198,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3ca73eb0dcac6d6cb9633ac06685ed3225de85352d23c038fb87cc497e025bc0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ComputerName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3104
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-computer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3104,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-computer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a9bcce8259f5f05473bcc5073dfa965b6683283ea74fcc23c150ff9d812d94b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3207
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-computer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3207,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-computer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "68462a3d4980e98333910b962b9e8c26138da60d135c4c6983e34ef7c13552ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryID\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3157
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-newusers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3157,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-newusers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dfbb109bb5465c26f535c1e367677400cc23dd1e7fbe3190640621f10d0268aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-newusers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3216,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-newusers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c73a2df046024a899b826d3846977d04cf0bf2bb2b7c42292a6d23841cb99ad7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3330
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-newusers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3330,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-newusers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7746598dae414d4af06363758f7d24adb5506199fd5576f0e274bd042bccf75b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryID\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3160
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-olduser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3160,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-olduser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1d3ebbe2423e8b1034ad57b17b911b77306995c9741f8fcef015672136b81233",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3219
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-olduser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3219,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-olduser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d80f9e2e13d7a44ad8bb639cb5949d79020bcf54187341310a73d48ac52d18a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3333
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-olduser.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3333,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/manage-olduser.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dc23a8ccd9fc86c1b4392017499a36433e610843c93c7815b88835a28bd65e18",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            4010
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 4094,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a5eccb164762b264bbc285162783372f1ee9bdfca97cb36d1408920c5bcadb9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sdata"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            4010
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 123,
+        "sink_column": 4708,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e21864333e610a9df47fba8e57ab57f7a0922d0d1df2f60152579d574c8e8d3f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryID\"]"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            5046
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 5046,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "062c42ef1a4905cb8ae6750e3e4c8dda4adbeeffd6b19ba6ff91d5198c210168",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            5105
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 5105,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1563a23febd65a9a63836a38493d1f280d16aaaa36f738d2c3a6be19065953c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            5199
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 5199,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/search.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "73611d349561316ba75ec907b390998cb05d350694af4e14f9c4c7bda7673129",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryID\"]"
+        ],
+        "source_line": [
+            96
+        ],
+        "source_column": [
+            3187
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-allusers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 96,
+        "sink_column": 3187,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-allusers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32b8dafe4ffbb3a4a4e1a0afcbef3f21767e8cf25c00c632132bf9729c5237de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3246
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-allusers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3246,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-allusers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b0e635d95e68e89f71745bd87b4512af523e1190a099c6545eaa2821eff27dfa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ID\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3360
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-allusers.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3360,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-allusers.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "930cdb9b5ee8e9fb6388791f1925d988ad0e75afa87ece2cf1600dfc3faa29c6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$remark",
+            "$status",
+            "$fees",
+            "$cid"
+        ],
+        "source_line": [
+            12,
+            13,
+            16,
+            11
+        ],
+        "source_column": [
+            244,
+            277,
+            382,
+            217
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 421,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fa95f377787a09f43a3043c5aaa4d27df6e12856b97267a2127beed78467ce92",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3270
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 110,
+        "sink_column": 3296,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "7c6377a66d465e1c90d8606622f4c11282d298ee9a6a7ab2f12da64b6dd0c65e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            211
+        ],
+        "source_column": [
+            6627
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 211,
+        "sink_column": 6627,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "598254eff4d62ff0ce1e9c203537012fd4e58dcdd92fabb14f7dc0f66891946f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OutTime\"]"
+        ],
+        "source_line": [
+            216
+        ],
+        "source_column": [
+            6718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 216,
+        "sink_column": 6718,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0df4b02f171790d5b7559f5adc730869edfb50727ec7d4cf265e09071815a531",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Fees\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            6804
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 6804,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b3c38f42ae515c944e350a9fbd8c2bdd305b69ea0ba6174da9447ab6359ef40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            227
+        ],
+        "source_column": [
+            6883
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 227,
+        "sink_column": 6883,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a2edd8c40c34cb24f050098eb4bd0b9523f29e3aa5ac449cdc63845622da023",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EntryID\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3607
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3607,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "40c8d8ee1b57d6efdf1d5377142f7b614ffef12593269aae56f94d13bef1b5a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserName\"]"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            3812
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 3812,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b24b950bf008455f6095045f5693274ed502d89ec4b0fdc03ea81e7c24f282fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UserAddress\"]"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            4059
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 4059,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d37fc0a9773a99262ee9ad71aea63e49381c0d68b92e9e5ece806be28485763a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            4285
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 4285,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "56bcf7d3da5487455ccdcc20171840d67f76c2482e0b1b9ebd8ec8f42fba3f54",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            4513
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 4513,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5404877a7f875574c554aea60be33b2ce5c40caa5cd6d8cb87313bb02915c2f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ComputerName\"]"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            4724
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 4724,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6d18fa6488d196a8e9489d36b05b64e85aa9fbe96613d4728d4b1ed99ea313ce",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"IDProof\"]"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            4901
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 4901,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d26f02978d6408ea17a3cfcddfbdbb407ed4a69054787c7da953392bbdaf1325",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"InTime\"]"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            5074
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 5074,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cadc01f1ec79c455f7164c40544f92f1fc1a43c616e39029ab335e5cbde1b565",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Remark\"]"
+        ],
+        "source_line": [
+            211
+        ],
+        "source_column": [
+            6627
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 211,
+        "sink_column": 6627,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ac4d94a78603197f0b80f5f2affe1bf82256d7d5d6a68e33c7f3794291b8df98",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OutTime\"]"
+        ],
+        "source_line": [
+            216
+        ],
+        "source_column": [
+            6718
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 216,
+        "sink_column": 6718,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "37f60624788a9d66375de43f5f290fb9d08f59d88055fcdabf2588987ee51298",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Fees\"]"
+        ],
+        "source_line": [
+            222
+        ],
+        "source_column": [
+            6804
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 222,
+        "sink_column": 6804,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "819be49ff70ac3201cc3f4c362edbea3fcd5a87f594a2450eee61734c99f60f1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"UpdationDate\"]"
+        ],
+        "source_line": [
+            227
+        ],
+        "source_column": [
+            6883
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 227,
+        "sink_column": 6883,
+        "sink_file": "\/home\/kali\/Downloads\/31.Cyber-Cafe-Management-System\/ccms\/view-user-detail.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e55906f2524ddc50016e699994de3c4b99cef105f31360f14b4555d8b9ed441",
+        "vuln_type": "taint-style"
+    }
+]

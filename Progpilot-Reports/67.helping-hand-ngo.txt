@@ -1,0 +1,5934 @@
+[
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            42
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/accept.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 7,
+        "sink_column": 87,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/accept.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "464818bb667a7317b82f85a327fa32b4d0c1f04a7d57192e787b8af42416728e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cat_name"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            328
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/add_cat.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 30,
+        "sink_column": 465,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/add_cat.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9ecf85945c98c7990282151e092a2d89682e6b6e0babb506621c201e5581002f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->cat_id"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3147
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3147,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b5a798790e755271084c369fa434d5a959673feeafd19fd7383791488d34d5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->cat_name"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3206
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3206,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5945919c29efca4dff07b8fcc344ed809a0b30b2e99f36b8c035b96b264516da",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->cat_id"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3293
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3293,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b5a798790e755271084c369fa434d5a959673feeafd19fd7383791488d34d5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->cat_id"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3426
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3426,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/all_cat.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b5a798790e755271084c369fa434d5a959673feeafd19fd7383791488d34d5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum"
+        ],
+        "source_line": [
+            34
+        ],
+        "source_column": [
+            878
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/dashboard.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 169,
+        "sink_column": 5394,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/dashboard.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2434accb1c2e9f4efdcb1f47b14d072f7cbfaf98f3b8d2333357639b75b81b96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            42
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/delete.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 6,
+        "sink_column": 68,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/delete.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4f9f59eac9e0409fd944e300899c4c5032af6d2a0720ac3603ff48cf5a014189",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            42
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/delete_vent.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 6,
+        "sink_column": 68,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/delete_vent.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fedacd285baddabe7be56f8cb293a66013d689819d9dd08fc27afbc691b93c68",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->d_id"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3265
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3265,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "016becd7713ef1a13bc8e0117d21d1e7c302080fc6f27db0fc57764d0e4042c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->title"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3331
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3331,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "76a7bae74be44b48d4922729426a074e1cb20224677de217b29812e99e053478",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->description"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3398
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3398,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2359aca165561eddda10f7c9a6e30f598eac9744806c81acafc580e66eee3dec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact_name"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3471
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3471,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ff88576bbd663343d026b309cc148ed3d9a718ab98a372b07bb6cced7cefd9a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact_number"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3545
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3545,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "01199b335ec1d4f6a4eb3f2d9216981591777dfc1c4b3120e03e17dba7a601c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->d_id"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3655
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3655,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/donate.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "016becd7713ef1a13bc8e0117d21d1e7c302080fc6f27db0fc57764d0e4042c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            43
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 6,
+        "sink_column": 72,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2a79fb2113dae95065df822d4b35a99acae9b1eafabd205c209faa1150792737",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cat",
+            "$id"
+        ],
+        "source_line": [
+            12,
+            5
+        ],
+        "source_column": [
+            201,
+            43
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 15,
+        "sink_column": 241,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a9e7f7c76fde7069e7a7f027e7967b8ac6c448a3b831f71ec339a55a50dda27e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->cat_name"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2876
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2876,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "054537ea18a05b15179fe504b8388cba2f5d2582c5de0dfe17b4ee13e55b6692",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$contact",
+            "$gender",
+            "$dob",
+            "$address",
+            "$city",
+            "$area"
+        ],
+        "source_line": [
+            40,
+            41,
+            44,
+            45,
+            46,
+            48,
+            50,
+            49
+        ],
+        "source_column": [
+            698,
+            725,
+            822,
+            855,
+            886,
+            915,
+            975,
+            948
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 68,
+        "sink_column": 1408,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b5bf8b1d17a7847e444654b2533326a1b21bd624155efbdb4747ec7493e4eaf7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->image"
+        ],
+        "source_line": [
+            73
+        ],
+        "source_column": [
+            1724
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 73,
+        "sink_column": 1700,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "a167a775d166ee240f8beb809c92029c11dd4a877815fc313c781047297dbc98",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->name"
+        ],
+        "source_line": [
+            165
+        ],
+        "source_column": [
+            4841
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 165,
+        "sink_column": 4841,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "073e80e967d40a690769ec7f35daeb010d6a433eeaa8261ebade27b5f9cd4ac4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->email"
+        ],
+        "source_line": [
+            171
+        ],
+        "source_column": [
+            5166
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 171,
+        "sink_column": 5166,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82f4fc7ae6929bbc4b84a1d4187f4c5d50cbe956c1a8c8d16c22731803ce9b8c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->contact"
+        ],
+        "source_line": [
+            177
+        ],
+        "source_column": [
+            5474
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 177,
+        "sink_column": 5474,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "35e874c2c0d383412ac367f595df06edfad3c4c5eaee1f117d5cb8b41822bef8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->password"
+        ],
+        "source_line": [
+            183
+        ],
+        "source_column": [
+            5800
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 183,
+        "sink_column": 5800,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "974e9335f0d3a234e49e3c25dfde43a8ee2947a901a75fac4d7096829a247fbb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->password"
+        ],
+        "source_line": [
+            189
+        ],
+        "source_column": [
+            6138
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 189,
+        "sink_column": 6138,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "974e9335f0d3a234e49e3c25dfde43a8ee2947a901a75fac4d7096829a247fbb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->address"
+        ],
+        "source_line": [
+            209
+        ],
+        "source_column": [
+            7214
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 209,
+        "sink_column": 7214,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6477ce820e2ce97cb8f43836ec7f618d2fff462e5f9acc239c28c734e3bf2321",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_id"
+        ],
+        "source_line": [
+            220
+        ],
+        "source_column": [
+            7744
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 220,
+        "sink_column": 7744,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87edea85103ccd188ab6099ce69f0db606eb345e1e87b01c146b738ee039f398",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_name"
+        ],
+        "source_line": [
+            220
+        ],
+        "source_column": [
+            7828
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 220,
+        "sink_column": 7828,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e558de9363f1dc3ce00cb3c5c716e217d592fde6cd6984ec38f78dd2fd2fe99",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_id"
+        ],
+        "source_line": [
+            237
+        ],
+        "source_column": [
+            8491
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 237,
+        "sink_column": 8491,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe596f267ca97f54c2c03cef3d4624ff0aa3e003876a6a9226a72a7a8eafb4a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_name"
+        ],
+        "source_line": [
+            237
+        ],
+        "source_column": [
+            8575
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 237,
+        "sink_column": 8575,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c4f4149521a6201bee84b20f39fc373e770d495d0938f690e6466af21640668",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_id"
+        ],
+        "source_line": [
+            254
+        ],
+        "source_column": [
+            9246
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 254,
+        "sink_column": 9246,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eda28af901003f9df49ed91c28e5ac4ad4ea72cb9b4399b0ae66149c3f43eb7a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_name"
+        ],
+        "source_line": [
+            254
+        ],
+        "source_column": [
+            9330
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 254,
+        "sink_column": 9330,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/edit_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5fea4daa8029e03f1d10744b03c56ecf0ec422c1b600f68e133598c14daf96e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pass",
+            "$email"
+        ],
+        "source_line": [
+            12,
+            11
+        ],
+        "source_column": [
+            140,
+            112
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/f_password.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/f_password.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 14,
+        "sink_column": 183,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/f_password.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d755122e5f1e2d8da2821c14ad67122bf37963bae7bcb2837471ac1f1f074486",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$pass"
+        ],
+        "source_line": [
+            11,
+            12
+        ],
+        "source_column": [
+            112,
+            140
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/index.php",
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/index.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 14,
+        "sink_column": 183,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2be1ec8720064be3ae8d4bb8869331cb19531bbd902d9fa3bf17f8d3f530d825",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"email\"]"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2682
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2682,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "035b3cb4ea4eb6a5f97015a59bd688b4e4c045481041923f89d83364404bc57c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"password\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2862
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/index.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2862,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0a23d63be5e52115354173a4a1e15b92a968ebb3a8381bc481fa4fe05615396",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->m_id"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3243
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3243,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fb97c2b642ca07d70fd690ad8d30ac5517d9ec93d7cc4e0aa4758b257d2dbc74",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->d_name"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3309
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3309,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "24df6d6d0ad082489a8bca86a6df295673b6b38f3864c218b8bfecca44ffa6cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->amount"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3377
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3377,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b9874a7a57d306f00a8e36c6d8b9ab5aa848239ca170267da2eca102c2136940",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->description"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3445
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3445,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ead5712ccd00211147c391f87af77150bdb3b3aac42b6041349eda00237f7ef9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->date"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3518
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3518,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c1dc37815e4627fe3adc75fa21b4645fa833e69b128ef1584248514ccf57d54",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->e_id"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3039
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3039,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ade2b3b561e2769095f0cecd340d8a55613ba7f9e44e9fa4fed83a9653bf29e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->title"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3096
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3096,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dc4a7a10770baf62a88722ec5512b2ddb3b726469b45568177c74d70a7c13435",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->description"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3154
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3154,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "22d12418d34034c60dd6330e91f7d2fa37ee128b35283c75d26595bf2d2b94ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->date"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3218
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3218,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ded4c57d6f1a4a6ce3552cbf7e5c2e9bd19e3505b1cfc18e7c18de2f7dc51331",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->e_id"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3306
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3306,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ade2b3b561e2769095f0cecd340d8a55613ba7f9e44e9fa4fed83a9653bf29e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3041
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3041,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "09e59e31a76c1e55fc18e37a271785f0c98b0d0ad271f1b40296f53a08b7a359",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->name"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3102
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3102,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3641b615602ce58859f37734c3b5b8d9cca063acc80df20728ea5e257467ffc3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->email"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3160
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3160,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "16ed74ed457ef84115d153b23baedb41454a226103ed3ba698d176196a408cab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3219
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3219,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b4732d82e5a25656d9a56fa6441f51cce278f46802f18e92e24f63b8b08e9f23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3310
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3310,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "09e59e31a76c1e55fc18e37a271785f0c98b0d0ad271f1b40296f53a08b7a359",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3054
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3054,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "597a8d1b6dbef98d12856890d0ba8d009fad5b5f29cc27634998df0a47425bf3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->name"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3115
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3115,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c730711a14aa09684ac28f1d5ca29bacc1c698eafbd72194c752e2c11fdbd0d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->email"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3173
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3173,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2fd59de567021f70b54f7e3ad899f2329f527fbcce848530a3eba18d60d7109f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3232
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3232,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "93480f2b0a0f0397076f96bd87b2ab27cca849691dedd0f262852f6012921cef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3320
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3320,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/m_volunteer.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "597a8d1b6dbef98d12856890d0ba8d009fad5b5f29cc27634998df0a47425bf3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id1"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            316
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 24,
+        "sink_column": 350,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "32e12e091fd1d1fd7eeb0d89725c3326cf14413031aba5e1d4e9978401db710b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->d_id"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2773
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2773,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c75df9b14f08b57dcaca96e8b833d03680d8d53cc2249be2c21fb90b4248b1e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->title"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            2877
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 2877,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa4614437a124b16bd89389d8d6219c666abfafeba1ef27abccacaaa012a84f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->description"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            2997
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 2997,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6befe852fbfd1aad93a63d4913b835575d9f74cb081ef6cdf48e48f1b3c97fbd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->cat_id"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3121
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3121,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7b6dc1822d5b37606a497ed89dc8df00e745e5cc4605de04666657524863e1bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->donation_date"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3222
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3222,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "88b4aad3fdb6af0d8c21f428fe5882b386fc4f9ce29c6af4c0dd12767d567bb5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->address"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            3333
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 3333,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c6f260fd023749723b51e8077ce50786e01d74a27121cecd6457f7f52f2e716",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->city_id"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3438
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 3438,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e21b4d85d0a9ee1ba83092f3696926cbee26a834ead0bafa123574e9a9c3abd5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->area_id"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            3543
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 3543,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c18319088c8e70551678a5a99bbff34c0f229c49c9fff312cc3b51ec0196d54c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->status"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            3647
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 3647,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "373ae3525a55073b52f51f5fb4dcc40a98ad09c33e9eafb25a4968c61c1f55f6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            3751
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 3751,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8bd4ca5ed0745cadfba9978fd7eaf91c228cfef85606f13780eccd49e00616e9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact_name"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            3861
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 3861,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a591e431fec9e68da6c39ed83727bbe1ff102cca8f233681af5154941fccc225",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact_number"
+        ],
+        "source_line": [
+            139
+        ],
+        "source_column": [
+            3978
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 139,
+        "sink_column": 3978,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f338ac97f875af07990fec584465e222468768e94b3741b5a7b0a64a4334e52",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->fromtime"
+        ],
+        "source_line": [
+            143
+        ],
+        "source_column": [
+            4096
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 143,
+        "sink_column": 4096,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4fea230fba6403172985f233ba0bc18db49e9efe0111275e224ac2592c82d051",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->totime"
+        ],
+        "source_line": [
+            147
+        ],
+        "source_column": [
+            4206
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 147,
+        "sink_column": 4206,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62d047d8d80263f6559e5455fcf6d4fa8d4752c7e2dede145734dd3f5fd2c2b8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            316
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 24,
+        "sink_column": 349,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "aa30441fd4c5515ee094bdda92ed130f9fda99b81df5f49cfe8ffbd5b2253f8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->e_id"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2737
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2737,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5fe3871c88f0c18ae42beb99224f42c054fe76aa84b7fda3e9fb7608956352de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->title"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2841
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2841,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ed10927da5d530eca57dd4948e185e6390b3064df436aaf6ae6ed12e5628ee5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->description"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            2961
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 2961,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "006c9200ca403705e0e014d953c2117e1ba7a1b5f82f0649eb9d73c9445133f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->date"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3078
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3078,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "39a40942486a411e1c4a7d5885b7c998aaadcbf19bc0afeacb8bd418aff90a85",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            3180
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 3180,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "35ee88f29ecf0ffd206af64308b2f84c581d5f88d206bcfc84e91b7704a88c8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->status"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3284
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3284,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dde463ad298624f14eb71d03e1ac115ccab22724330309bd5fe7b8d505ab9d4a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->event_type"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            3391
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 3391,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2b185371e952c1574a72069167d8a7687e346223f0dfb3749eb13cf1bf33b71c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->e_id"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            3573
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 3573,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5fe3871c88f0c18ae42beb99224f42c054fe76aa84b7fda3e9fb7608956352de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->e_id"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3707
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3707,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5fe3871c88f0c18ae42beb99224f42c054fe76aa84b7fda3e9fb7608956352de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            318
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 25,
+        "sink_column": 351,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "846f471e6625cb024747717bb546d15eafcccc960a7800956ca0a82e9a0afac6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$city_id"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            460
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 32,
+        "sink_column": 496,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2971e5350c3b45e10fddd4857ee87b9b15ad5b7d4effd9137b4163caac45fc23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$area_id"
+        ],
+        "source_line": [
+            36
+        ],
+        "source_column": [
+            605
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 37,
+        "sink_column": 641,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3b224edfbe4f7076199d3670492b9d6f86a982ce1af3239125359ce32a29e2cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$role_id"
+        ],
+        "source_line": [
+            41
+        ],
+        "source_column": [
+            750
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 42,
+        "sink_column": 786,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "fbcdbf6f83713f353fc9e011a5111027af9365d41e5b6c0c204e9fee17cd4500",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3177
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3177,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bbad019fa7a7bbbee626202e894ef1ede38d34ab8ff9dfc0b826181dc32bc769",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->name"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3283
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3283,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9c79bf21184413a594cb3f686e8a27918212392d84787f8459f7e62d4360feaa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->email"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3396
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 3396,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ca8a8d13b9f29455ae6286c933ff6cfd43f6e9540ccf815e5b0a35099ae155a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            3510
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 3510,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f10f5f33458b390ab2a079b59faa1f1d3dbf37b129abd41449ed539cd5af6f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->gender"
+        ],
+        "source_line": [
+            128
+        ],
+        "source_column": [
+            3614
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 128,
+        "sink_column": 3614,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0209f1519c74147d66c0223598355fcbe90ecc3847290a8df8e9c53138afcd5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->dob"
+        ],
+        "source_line": [
+            132
+        ],
+        "source_column": [
+            3714
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 132,
+        "sink_column": 3714,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18c92f63cb4e2eb000ea4e215060f7292da24e1841aad8e13205cbcd6ae71f79",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->address"
+        ],
+        "source_line": [
+            136
+        ],
+        "source_column": [
+            3815
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 136,
+        "sink_column": 3815,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fef93b3470ff4d5268c121644ecc9d249775d28a6e498921cfd03536a52bcb14",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row_city->city_name"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            3917
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 3917,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3993b7bbbaa652cba1134b7a16c19490e36e8089c2a8c9a084cbd23b7a94b40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row_area->area_name"
+        ],
+        "source_line": [
+            144
+        ],
+        "source_column": [
+            4025
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 144,
+        "sink_column": 4025,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a79c36922432c81c88186ceaa4bf4a0cb5978db14a4e2317b3364ea2eae47622",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->image"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            4139
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 4139,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2cfd1d61e54e3d0d8baa9d1e537806cd37f0d962ea87c5940349530b865bfe68",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->image"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            4266
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 4266,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2cfd1d61e54e3d0d8baa9d1e537806cd37f0d962ea87c5940349530b865bfe68",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->reg_date"
+        ],
+        "source_line": [
+            156
+        ],
+        "source_column": [
+            4397
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 156,
+        "sink_column": 4397,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f49ba4b0cb66029d47d09d417559c2ecfac7d9b6b136a194d601c11f5a91bf19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row_role->role_name"
+        ],
+        "source_line": [
+            160
+        ],
+        "source_column": [
+            4500
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 160,
+        "sink_column": 4500,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_user.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8d69a792424fe736b35186800f0e4b7236056db4ef153f64243265d80b1eb8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            24
+        ],
+        "source_column": [
+            317
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 25,
+        "sink_column": 350,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "3e6b6142d62f89e6d4206626352272ff439b07e96d16db6ebdba4eae8ef3bd37",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$city_id"
+        ],
+        "source_line": [
+            30
+        ],
+        "source_column": [
+            457
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 31,
+        "sink_column": 493,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "479d426cf933d2b2c3b28706b83b1851d505906396a56124b6aa886eaf2bfc9c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$area_id"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            602
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 36,
+        "sink_column": 638,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5d64b45a143f15da1ca71edb5eb38fd9f327ca4eb8f42fd77d014ac83e9368f6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$role_id"
+        ],
+        "source_line": [
+            40
+        ],
+        "source_column": [
+            747
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 41,
+        "sink_column": 783,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "dcd690c8694bd26f0fddf0bd3b7a66e397864b86732ff0f8656bdb887a58ecd7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3180
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3180,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9154cce283287a6c97648917a8e1e4cd2ad743c0b31fbd1882101050837e4416",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->name"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3286
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3286,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b3edd48fe446714c1f9a0b1457a0b8d6e9fc19fae222ebb3eea5850c210baf87",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->email"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            3399
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 3399,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "998b4daeb7bcbb8c7b93b2aa855bb359351bf021043365f0b46d0473f8b6c495",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            3513
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 3513,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "81cc12899f9cb0e9518dd0a7dfac77b83bd67ba396c7d9472e0aa804986e98ad",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->gender"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            3617
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 3617,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a844e41699b72c22670df1ee540ca9bc7490f750f1847c647734bad197649574",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->dob"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            3717
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 3717,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ca87aac707b40f634f6e3b4aed1e9e06c389b50a1eb0a9a9f6a8bea8c1f90df",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->address"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            3818
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 3818,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c9e0a6c8f11d6a7dbd176a4d22b3b4ebea3bb100efc11f793ea088c8d6677844",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row_city->city_name"
+        ],
+        "source_line": [
+            137
+        ],
+        "source_column": [
+            3921
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 3921,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e9e9dfacd90ca843ec396133b2dad93418f528097690db537020e7d9e2419f6b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row_area->area_name"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            4030
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 4030,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bcdad08a0bfcbc8a8e5b0b7fed0113c4d7ca43458aa7d62899882535f8def00d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->image"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            4144
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 4144,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3a92ae0e42b0738ae0ba1ae69470bbd20e858546cb9297320591e7082a776d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->image"
+        ],
+        "source_line": [
+            149
+        ],
+        "source_column": [
+            4271
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 149,
+        "sink_column": 4271,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a3a92ae0e42b0738ae0ba1ae69470bbd20e858546cb9297320591e7082a776d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->reg_date"
+        ],
+        "source_line": [
+            153
+        ],
+        "source_column": [
+            4402
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 153,
+        "sink_column": 4402,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49429b2cc3915e664166649b27b603e2e627b5f70c04d7400c54877283f490f9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row_role->role_name"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            4505
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 4505,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/more_v.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62a7dd31268fd6dc5094a07c6f9dd66b00ed61224f66727b38317d243d019dda",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3148
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3148,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ca4dcef576288d2517b73e80f24ac4b153e8ac95793fda8f34aba985130f361",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->name"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3254
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3254,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f815444b22ff7627f36416e992c8c2e5065f0b47e228130f1825489a5d3ecf23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->email"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3367
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3367,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ad1131d29bcd17ab1da2e94a46d7dd6787e4c1a14ab1c5c05f7a6f25f0a05a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3481
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3481,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c52a24c47f823eddc6169d504370c19d2efd080cf5f041699fcf8bd91c77307d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->gender"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3585
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 3585,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c3710169059a98de50fb93f12376d299c2fb407da391227e8b69c4c7daf35328",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->dob"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            3685
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 3685,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9f0bd78d9ccc52c1eafe8574011b1c7a391598ed5931a6d9fbb85417c073c328",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->address"
+        ],
+        "source_line": [
+            125
+        ],
+        "source_column": [
+            3786
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 125,
+        "sink_column": 3786,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b84393bdb043e6e25a332ac1564b9aae2dc8c164595f0032e2d9ce77e29055ab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v_city->city_name"
+        ],
+        "source_line": [
+            129
+        ],
+        "source_column": [
+            3891
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 129,
+        "sink_column": 3891,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7d88679a43cd3c9d45a99e9aea2f1ec2ef17e512cb8e80a5427d7dde8f7cbdd2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v_area->area_name"
+        ],
+        "source_line": [
+            133
+        ],
+        "source_column": [
+            4000
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 133,
+        "sink_column": 4000,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c00450d676f1d52ef189adf362bbaa7b9b9a2c6c38ed0886ac954be6724c88c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->image"
+        ],
+        "source_line": [
+            137
+        ],
+        "source_column": [
+            4112
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 137,
+        "sink_column": 4112,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e0baeff21ae97498e26b1d7383d0b964cdcdb060a8bcf715d06448ea0a4fb99",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->image"
+        ],
+        "source_line": [
+            141
+        ],
+        "source_column": [
+            4239
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 141,
+        "sink_column": 4239,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7e0baeff21ae97498e26b1d7383d0b964cdcdb060a8bcf715d06448ea0a4fb99",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->reg_date"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            4370
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 4370,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a39edacac9a7d093840dfee5702892d2e24559e8f5b5ed796d860de6df51543",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            4563
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 4563,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7ca4dcef576288d2517b73e80f24ac4b153e8ac95793fda8f34aba985130f361",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            42
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/reject.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 7,
+        "sink_column": 89,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/reject.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bd3e3c3d42345a7f4e1b74da1d5854fb8a10e8c972f7dd887a3aa97e1481d4e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->f_id"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3181
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3181,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "56124810db1ab3d9be738b06a1e9c9b33cc056d68f356c10134c78bc7d83f6de",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->date"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3238
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3238,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2c562bc6f1fa57271183fbaf06c41a383d22075fc3c3d59e81ffbc89c679f402",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->comment"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3295
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3295,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e5a8ec846426921eca7670cd497f60af1a615fc620144c546318f1720225211",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->rating"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3355
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3355,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c4dd30229fd5376320eab11413d37acf8c304edc52d2fe3b9833f020a01a84ac",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->name"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3414
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3414,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_feedback.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "067d587d6ac16c09f14ff2ba67ca24c877d29959172680e4f70b348d431c6a7b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->inq_id"
+        ],
+        "source_line": [
+            105
+        ],
+        "source_column": [
+            3062
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 105,
+        "sink_column": 3062,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "81637eaeee05ae0676c0e2543afe10219cfbe65498d9b079006e1ee02c57ae68",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->name"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            3121
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 3121,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "336c812df4f712c2e2066ae4db05ae466591399038021523cc7325850e5c7885",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->email"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            3178
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 3178,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "27b3922fe431b80d277cdf508b41ee16c74033012ae1fbb6e2fae22f279906cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->contact"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            3236
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 3236,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5f19a5b647646a1debd299f3fae54c2f8a1f3e55afdc1dc0e28be76b44f41e86",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->message"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3296
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3296,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "36fcea902ee5b5cd18774eff16e37035c3228e22eeb1971218289aeb3696cfb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->date"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3356
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3356,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/admin\/v_i.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "abdc7c50beaefe1529a515c10bcef8e7280cee3671411c3c5f4c8e95c8a1d0e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status",
+            "$id",
+            "$msg"
+        ],
+        "source_line": [
+            11,
+            7,
+            12
+        ],
+        "source_column": [
+            135,
+            63,
+            166
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/accept.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/accept.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/accept.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 18,
+        "sink_column": 329,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/accept.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "621abd794af8fe9cf59fa0c5bd32f74d16af9b2cb10db215de68f3c36f9af957",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status",
+            "$id"
+        ],
+        "source_line": [
+            11,
+            7
+        ],
+        "source_column": [
+            135,
+            63
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/accept.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/accept.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 20,
+        "sink_column": 487,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/accept.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9b37b15457fd916de618b867a5df05a2e3dc4f2848c0c4d4942fa749c95dd3e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$contact",
+            "$message"
+        ],
+        "source_line": [
+            8,
+            9,
+            10,
+            11
+        ],
+        "source_column": [
+            90,
+            116,
+            144,
+            176
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/contact.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/contact.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/contact.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/contact.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 14,
+        "sink_column": 245,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/contact.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cbe943d8c325c2123077cbb8f6a057669cf092f9c13778bc9ee3d696e51278ef",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            168
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/delete_event.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 18,
+        "sink_column": 200,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/delete_event.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d27045d18461525ec47cf1ebac321592f7b118b8cd03a2ab68fbde12b08aa667",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$del_msg",
+            "$id"
+        ],
+        "source_line": [
+            12,
+            7
+        ],
+        "source_column": [
+            137,
+            63
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/delivery_donation_post.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/delivery_donation_post.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 20,
+        "sink_column": 314,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/delivery_donation_post.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c7770820a0718ccf1e1c4264a0807ac176c49456369ceb8d984937c3c35dbe4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$amt",
+            "$desc",
+            "$d_name"
+        ],
+        "source_line": [
+            17,
+            18,
+            16
+        ],
+        "source_column": [
+            242,
+            267,
+            211
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donate.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donate.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donate.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 22,
+        "sink_column": 365,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donate.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "00300a52f300ed429e88daa0b271ef4cd232e6c44316c005178f4ae408f3be55",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$desc",
+            "$cat_id",
+            "$dob",
+            "$address",
+            "$city_id",
+            "$area_id",
+            "$time"
+        ],
+        "source_line": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            32
+        ],
+        "source_column": [
+            356,
+            385,
+            412,
+            443,
+            469,
+            498,
+            531,
+            588
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 39,
+        "sink_column": 755,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "67a8b3cf9631624caf19ecb798536726231decf45bf0d845532794cbe0459430",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ca->cat_id"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3260
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3260,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31fbafaf44905205684f7f32eb0a054b17b91cfede91c13d769f34ced615007f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ca->cat_name"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3287
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3287,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a2a35bbb4bd0d604f80ab3d1eda2605d6ef852136195fd94b3c2955790bbc017",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ci->city_id"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            3861
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 3861,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "204828fd24f61e9baf2641ac40e2773278e06ab92747015cd61dfe559ee864aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ci->city_name"
+        ],
+        "source_line": [
+            127
+        ],
+        "source_column": [
+            3889
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 127,
+        "sink_column": 3889,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4baf1f5d21f771d8a80d9f075ee4122f0fe39f10f348ae067e82b029c3d54308",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_id"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4362
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4362,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "966a311adcabce4b12bce9309cc7e52db87cbb09189b362ca23e73f0f70037dc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_name"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            4389
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 4389,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/donations.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cd523f219393677e834b8882416b96a38b0ad33d16a0f249fdede06b3b4e3525",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            169
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 17,
+        "sink_column": 198,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "75e747ad16160ec7a4ce30b209bbcd177faf764c97aa645491b57a2e282dbaa8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$desc",
+            "$date",
+            "$status",
+            "$e_type",
+            "$id"
+        ],
+        "source_line": [
+            26,
+            27,
+            30,
+            29,
+            28,
+            16
+        ],
+        "source_column": [
+            373,
+            402,
+            491,
+            460,
+            429,
+            169
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 32,
+        "sink_column": 527,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "327644ae6c2c02bb80ac8ac95ed066e25c82644a5941243800064efd75c3f435",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->title"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2331
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2331,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "216c9f69e44f24be2460b11d33c62c27fcb7bd1b13047d322a9eecf73443cbf0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->description"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2458
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2458,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bcba77042ca0c2bdd717698fe114758b2b285211dd392ddc24f2b1321f6069fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->status"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2623
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2623,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/edit_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ff24f2b71586d3a09b5e212bb276ca24088236977b9e9bcf7a7573f8f7505aa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$title",
+            "$desc",
+            "$date",
+            "$e_type"
+        ],
+        "source_line": [
+            18,
+            19,
+            21,
+            20
+        ],
+        "source_column": [
+            216,
+            245,
+            303,
+            272
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/event.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/event.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 25,
+        "sink_column": 399,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/event.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b45d1ac82b534218a52a6fd7e6ecf854b9cc8f68fdc7b0cd18083b3df9c2b833",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$password",
+            "$email",
+            "$role"
+        ],
+        "source_line": [
+            9,
+            8,
+            10
+        ],
+        "source_column": [
+            187,
+            155,
+            218
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 18,
+        "sink_column": 327,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cb5f3a3d6f982951017c428e6d545e29149c2cd0e4598ba0d02cfb68d35ebdbf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_id"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2908
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2908,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a43c0a9c5540bc8e1e1700c84db0954746fbfbd8dcb34b5db02102fdc78f9ad9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_name"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2935
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2935,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/f_pass.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "57713f35ef67d66b4ae69d1be57e258e002cf391e9bdec0ea7d572967f8792f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rating",
+            "$comment"
+        ],
+        "source_line": [
+            15,
+            16
+        ],
+        "source_column": [
+            196,
+            228
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/feedback.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/feedback.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 21,
+        "sink_column": 337,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/feedback.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "40bf5342592ffaf10f4251b58145455b2a257631aaaff6cb6aeb2a4b60dfa90b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sum"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            666
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/home.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 321,
+        "sink_column": 10826,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/home.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1c3158c28778d0fcdd2ebd101c132bff0c4b432e891adf039474f97ac4c22541",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$email",
+            "$password",
+            "$role"
+        ],
+        "source_line": [
+            8,
+            9,
+            10
+        ],
+        "source_column": [
+            155,
+            187,
+            218
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 12,
+        "sink_column": 257,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2a2c1f4b2a60cc9ad21cfa05e8349eea7897fcb69f120e53f611bec6afcbcbf7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"email\"]"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2295
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2295,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "40e4a294f220f42d1ab42f82f1871bcb5058c1453e9e205ddac25474dfe752c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[\"password\"]"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2628
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2628,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e41d8ff0806bbbd588cf702964343f6c0722bc4bc7c866de924787732ce69582",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_id"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3008
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3008,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c72aab55565cc07f80a6d1145e55e07aafbab6b11058083e6bc0be98ba8f05cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_name"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            3035
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 3035,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/login.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "469fd68b006bc09e6607e8926d982dff14657c9e30aa24b4c165269cfb4363e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$contact",
+            "$gender",
+            "$dob",
+            "$address",
+            "$city",
+            "$area"
+        ],
+        "source_line": [
+            21,
+            22,
+            25,
+            26,
+            27,
+            29,
+            31,
+            30
+        ],
+        "source_column": [
+            488,
+            515,
+            612,
+            645,
+            676,
+            706,
+            766,
+            739
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 49,
+        "sink_column": 1190,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "454a593170e53f9c6dc79254810fc5528ebfc44f0d9344775d5650c448d0d16e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->image"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1502
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 54,
+        "sink_column": 1487,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "5272ffe2bb7bcd0597812d09f3aec32e327c8cc7a12a5e1df5338864415a694f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->name"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3179
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 3179,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f603bf7bfe6691de91b232a616aaeaa7456a9fc33400b77a3c13ad10c6edf39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->email"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            3361
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 3361,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d3c6254d78065083c33086c59962716bde09fc36bbde5f49a6ffeed2376c43f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->password"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3557
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3557,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d694f1f5bf78f5abf9266451b33c5975ad7ededf2280da2448fba1543461d565",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->password"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            3766
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 3766,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d694f1f5bf78f5abf9266451b33c5975ad7ededf2280da2448fba1543461d565",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->contact"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            3971
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 3971,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2f77b9d513cfd87ba95d69641dea929621212974dd7a5769172059d9f4991740",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->address"
+        ],
+        "source_line": [
+            161
+        ],
+        "source_column": [
+            5142
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 161,
+        "sink_column": 5142,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5fb99c97a311334bfeb01c53f50f5be70cc1f80b90792cc846663ef0b9aa8628",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_id"
+        ],
+        "source_line": [
+            177
+        ],
+        "source_column": [
+            5637
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 177,
+        "sink_column": 5637,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4c21b0e789ace392416b38c34ea5d2bc077b6988dcb05a5d54d24b06f9c62cc0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_name"
+        ],
+        "source_line": [
+            177
+        ],
+        "source_column": [
+            5721
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 177,
+        "sink_column": 5721,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "82b37f6f4ada8309ebf578146865b48ff520f4cd7b9bd04dffe639ec5ac6bc10",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_id"
+        ],
+        "source_line": [
+            193
+        ],
+        "source_column": [
+            6200
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 193,
+        "sink_column": 6200,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8aa64bca6784796dc2074aaec256cd3f3f4c81a828aeaee1c043f30f60068ae0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_name"
+        ],
+        "source_line": [
+            193
+        ],
+        "source_column": [
+            6284
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 193,
+        "sink_column": 6284,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "36f6658535bab970624708ea52b351d26c3d8d7a64c8d7b06fab60e2a8d89feb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_id"
+        ],
+        "source_line": [
+            209
+        ],
+        "source_column": [
+            6763
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 209,
+        "sink_column": 6763,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69db8488e11b498cdd24e665006a29104ae10f446603d448b7bb4e589ded73f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_name"
+        ],
+        "source_line": [
+            209
+        ],
+        "source_column": [
+            6847
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 209,
+        "sink_column": 6847,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0c516857bb32e3a7fe42dc70590efc0990722d777e2f30cc11f3a32039b16ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$contact",
+            "$gender",
+            "$dob",
+            "$address",
+            "$city",
+            "$area"
+        ],
+        "source_line": [
+            21,
+            22,
+            25,
+            26,
+            27,
+            29,
+            31,
+            30
+        ],
+        "source_column": [
+            503,
+            530,
+            627,
+            660,
+            691,
+            721,
+            781,
+            754
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 49,
+        "sink_column": 1205,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0a31b13418328f1cf29dc98bbe8236f924923048670c9a4178c251765e93997b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->image"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1517
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "unlink",
+        "sink_line": 54,
+        "sink_column": 1502,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "9287ffcb1fa68054a5f3d584a9ac2858456b0b01c929ef080ac19cb390d63639",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->name"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            3194
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 3194,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4eb951318198bbde10b07b5487dd28c73dd499d0a3f5eba0a963de3b67e82036",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->email"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            3376
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 3376,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6eea867341e5285cc253dd917f69c9c01336e4536891c1abde5130d4e446d10d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->password"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3572
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3572,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5aa365b65e5d7a74e386e13f1f0a8a76efc0e1c8344655f5260adf1d3c0996e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->password"
+        ],
+        "source_line": [
+            131
+        ],
+        "source_column": [
+            3781
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 131,
+        "sink_column": 3781,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5aa365b65e5d7a74e386e13f1f0a8a76efc0e1c8344655f5260adf1d3c0996e8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->contact"
+        ],
+        "source_line": [
+            135
+        ],
+        "source_column": [
+            3986
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 135,
+        "sink_column": 3986,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d38f3a7dcb7b734e464299104026fdd6021736fc9b0e65bf9451be2f55e5e59",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->address"
+        ],
+        "source_line": [
+            161
+        ],
+        "source_column": [
+            5157
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 161,
+        "sink_column": 5157,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "21e2a0fcafa0d0601070a4e1ac945783e4eb097bb13102a760ef1a4e9dc3c9c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_id"
+        ],
+        "source_line": [
+            177
+        ],
+        "source_column": [
+            5652
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 177,
+        "sink_column": 5652,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6e8073a73f4ebc0967fd108fac83763b83368d5fb478e13fcb8e71bf8644e098",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_name"
+        ],
+        "source_line": [
+            177
+        ],
+        "source_column": [
+            5736
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 177,
+        "sink_column": 5736,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6364d73b2e8c317d269f23a3d4008b7c20da1c15da6f9ed26c09939acd63f290",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_id"
+        ],
+        "source_line": [
+            193
+        ],
+        "source_column": [
+            6215
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 193,
+        "sink_column": 6215,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0c5540c30e5b3f8aa3151b8b19ce28f67a6e0e9015f38f573f4ca9980987381a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_name"
+        ],
+        "source_line": [
+            193
+        ],
+        "source_column": [
+            6299
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 193,
+        "sink_column": 6299,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2ab25469067dc88dae817e8fe7c94c9471109d82e4cc3e65c0990263b839f0ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_id"
+        ],
+        "source_line": [
+            209
+        ],
+        "source_column": [
+            6778
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 209,
+        "sink_column": 6778,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "458845b4672b9cad1e87b0c6e1478b789752e1eb222df3e4bbae6e89093f8167",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_name"
+        ],
+        "source_line": [
+            209
+        ],
+        "source_column": [
+            6862
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 209,
+        "sink_column": 6862,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/m_volunteer_profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "929f66d4c7cae79c4642cc6bfd5564b345c86b8bd92cfa18555c1a31d1cdcbcd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            858
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 29,
+        "sink_column": 891,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "aa6b11096024e975e367cd5cd8d0d66c0507ef076da73a45f6bbb5b31df65c31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->d_id"
+        ],
+        "source_line": [
+            75
+        ],
+        "source_column": [
+            2206
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 75,
+        "sink_column": 2206,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66ccfdf2f0251aec75779b4b10b05557d879b1368291b32343eaabdbd1739f19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->title"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2310
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2310,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f3c4569d586aac7edfa5325239a070253fb4bca4db3ba7a3d75c8ad03d758f40",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->description"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2430
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2430,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5702bebbe4c0e983f6eecd0662020fe55057ba26d0a8b8bc79f0ccfe85a24309",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->cat_id"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2553
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2553,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b53084409c26be1b8aa0ff3a9c970b2fa5f0bd69afbf6e73300e273c85657f12",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->date"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            2658
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 2658,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "eef9f11d1040576300cb85cfb52640470587960788f9a29140ffc01c8df2d3e0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->address"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            2760
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 2760,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ed544106e505d2e7a43bd66bb53b6d2183063cce91ffd5e81a9538949afd6b07",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v_city->city_name"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            2867
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 2867,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "99e4761a84a32788f1630ed1ffd9b10fb90725d8756f7a5bb351693ac1946e96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v_area->area_name"
+        ],
+        "source_line": [
+            106
+        ],
+        "source_column": [
+            2978
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 106,
+        "sink_column": 2978,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "afd4661927a87e925d4603c929f9af2202cf4c8059dcd42ddaacad6bf7af1b60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->status"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            3086
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 3086,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a68e1ab76a7b0111220a180705b0ddb6c0cfaa55f32b67ad168c42851902f76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->user_id"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3194
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3194,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38803359d6d9d51142c0f04096a1757dd2e170eab48f2c53210caeb5a95f838d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact_name"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3308
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3308,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e0660f5cd467c48c1c8fa595cbc9434a763f88d6c1cfb497afadf7d960fcc2ea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->contact_number"
+        ],
+        "source_line": [
+            122
+        ],
+        "source_column": [
+            3425
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 122,
+        "sink_column": 3425,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1f9c844459f56bf1b44274005f3bc4742ad6d2a0a5ed1030a8ac1a7e3c0b6e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->fromtime"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            3539
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 3539,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "de12e556d654ae613f5f1bce3aff33db0b64d44447bebcb0f98545b9d4968c20",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->totime"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            3645
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 3645,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1e272a2db14577ffae1c6e6be06d8ac3539c002014b10a9f9cd07196434c2019",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1->d_id"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            3787
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 3787,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/more_postdonation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66ccfdf2f0251aec75779b4b10b05557d879b1368291b32343eaabdbd1739f19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->d_id"
+        ],
+        "source_line": [
+            78
+        ],
+        "source_column": [
+            2010
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 78,
+        "sink_column": 2010,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "89aeed8c94af67cc93fd1d884c5a1e62bec3e1474baf59033850ecb3cdbfa3f4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->title"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2058
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 79,
+        "sink_column": 2058,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aca88636c49915abad1585908df59e41862910078225ccb6d7d3968d2786f327",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->description"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2107
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2107,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b6fcf21b92aa346b5604692ed9eb69708d6e68147865a7824f1e2fe945618b50",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->address"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2162
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2162,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69555e70afc8ef84ed485c59234594feb89d1e603be49935162935dca77c28cc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->donation_date"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2213
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2213,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c31477ef4ba7e5d5874d6403455ade7d07705a46f0b66e94b1639168f80b969f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->contact_name"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2271
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2271,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "985665981b11fc18fbe79d6eb59e1864aa82b90359f0450ca5f0077646303fb1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->contact_number"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2327
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2327,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8993a1867e66133d5217d07db82d7dac5e5c38cf05f9819f07bc161fb5a30338",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->m_id"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2035
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2035,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a1e3d97fa4c239a3f9de4028498c26ca8b74de1a48a0e3210f4f8e7f0085dde0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->description"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2083
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2083,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b0d7866f90279f1547304371fe400faf81deb6c939e149cb086b77a8244ff5e5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->amount"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2138
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2138,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e8d656691dfdb20c2d4e6d47d06bc340d213de119757e179060151e623988d0c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->date"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2188
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2188,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_money_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "74eb111e4efd10bdb26041f155d01f52c2a762e48c71c1405774b61dda3cf47d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->d_id"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2352
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 80,
+        "sink_column": 2352,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "194656832bb6d143f2ac8bfd35802d111fadb66eed4d404f5136e1dd8abd2296",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->description"
+        ],
+        "source_line": [
+            81
+        ],
+        "source_column": [
+            2412
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 81,
+        "sink_column": 2412,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d92cc54ba76ce3120ce5c55e2512703c4f2cb33a37c457479bff2e595f9947bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->datetime"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2479
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2479,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "aa9a5bbc00300469c540cacb58c10bccc7b4e4f7f429340ddb5585b20906ca60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->status"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2543
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2543,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "43b276d70b450d70680735418f797332316708699eb68729dba06dfd072f84d5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->v_id"
+        ],
+        "source_line": [
+            93
+        ],
+        "source_column": [
+            2962
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 93,
+        "sink_column": 2962,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c857f1a8a1a6fbda17e6bf836fefa111e8fa5c044d47f0d967b5504b591d13fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->v_id"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            3807
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 3807,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/my_post.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c857f1a8a1a6fbda17e6bf836fefa111e8fa5c044d47f0d967b5504b591d13fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->m_d"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            2800
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 2800,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b8acba20b77902a60888a2ca8aa7be2a2136869c8cb08c0db6525779b4af7a48",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$profile->name"
+        ],
+        "source_line": [
+            102
+        ],
+        "source_column": [
+            3086
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 102,
+        "sink_column": 3086,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ae5b331c78cb47c8f3bbbc7c3e9d264941f6bc13bbe236d381b1d76d0ed31fc2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$profile->email"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3141
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3141,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7bd4fc30ca1d42d900fa83f192680528eefddb94afe7b68ac375f471dbbd734f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$profile->contact"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3199
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3199,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/payment.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "87e97a070196557c9b9b5a76cde8e6b2e8cb82086413f8f95d84ac809af51f60",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$v_city_id",
+            "$v_area_id"
+        ],
+        "source_line": [
+            18,
+            19
+        ],
+        "source_column": [
+            329,
+            358
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 21,
+        "sink_column": 399,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "158015eaedf32cc52b6fb1829c83d50901efe92acbeef2af551b56a8c3f11fc2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->d_id"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2468
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2468,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "efcc2d6cbf667b168f26e292bd03fd4830f6ded4504f7ac5701151102c9335c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->title"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2520
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2520,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "30966316bd569ada94eaedd1b75e160c882ca7748bb81c800231134fe3fa983a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->address"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2643
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2643,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a58788924eafb827c8b3165875a1c560e4ffc54db12edec5d5c259aff46f53a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->contact_name"
+        ],
+        "source_line": [
+            89
+        ],
+        "source_column": [
+            2763
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 89,
+        "sink_column": 2763,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a5d074ccf141b6b4d94a78b95f30d17ab805760cccd0a01fa3743c206e6db56c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->d_id"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            3000
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 3000,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/post_donation.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "efcc2d6cbf667b168f26e292bd03fd4830f6ded4504f7ac5701151102c9335c8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->e_id"
+        ],
+        "source_line": [
+            82
+        ],
+        "source_column": [
+            2318
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 82,
+        "sink_column": 2318,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "354dec4a1f4123d20150ec19c8d9347b1212758a3d0ebdec792d9b3e1d3b968e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->title"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2370
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 2370,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9ddfc4d5a2f27f56dca4525bcc337d0c4d4ce3a0c7ccf5878634a634696f06a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->description"
+        ],
+        "source_line": [
+            84
+        ],
+        "source_column": [
+            2423
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 84,
+        "sink_column": 2423,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c7a0fea31a04ca224309774e322694efa453498b88d0c2517f066be365548df1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->status"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2482
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2482,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3cc61a6e0dd621f01a9f6d82b7fab3000a260c52d326d4c0210d9ff698c9b3ec",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->event_type"
+        ],
+        "source_line": [
+            86
+        ],
+        "source_column": [
+            2536
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 86,
+        "sink_column": 2536,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "307b4144ccb472ac4c194f40021fcc5c3049f9152834aedd6c5915cd0bb29700",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->date"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            2594
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 2594,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9815e019babb848e0f7d82eaedaec8d03030e4592c5950c72243b6719801f8fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->e_id"
+        ],
+        "source_line": [
+            91
+        ],
+        "source_column": [
+            2771
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 91,
+        "sink_column": 2771,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "354dec4a1f4123d20150ec19c8d9347b1212758a3d0ebdec792d9b3e1d3b968e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row->e_id"
+        ],
+        "source_line": [
+            92
+        ],
+        "source_column": [
+            2902
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 92,
+        "sink_column": 2902,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/read_event.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "354dec4a1f4123d20150ec19c8d9347b1212758a3d0ebdec792d9b3e1d3b968e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$name",
+            "$email",
+            "$contact",
+            "$gender",
+            "$dob",
+            "$address",
+            "$city",
+            "$area"
+        ],
+        "source_line": [
+            12,
+            13,
+            16,
+            17,
+            18,
+            20,
+            22,
+            21
+        ],
+        "source_column": [
+            246,
+            272,
+            366,
+            398,
+            428,
+            456,
+            514,
+            488
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 42,
+        "sink_column": 928,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c4b9ded2b281da86ece9e57edaa6ca2f4ca2a6c200b6bb7ae78b8e07ca704c2d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_id"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            4997
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 168,
+        "sink_column": 4997,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8cd3b4011693f4ac0c6719dae3369a67df7ff9707ff961ac196c76a934d9369f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c->city_name"
+        ],
+        "source_line": [
+            168
+        ],
+        "source_column": [
+            5024
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 168,
+        "sink_column": 5024,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0e4d66a5e31e587a039d500e8eada92068e66ca536a12edc67dc54c9c65cde4e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_id"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            5503
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 184,
+        "sink_column": 5503,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d4dda97dfe0272d827952b3a150f27c62e8c2c40a6b44cc2c3d75b9f4c88b62c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a->area_name"
+        ],
+        "source_line": [
+            184
+        ],
+        "source_column": [
+            5530
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 184,
+        "sink_column": 5530,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "581d0f60a57264331657e23e146a440838f92467e59de875db7ba522381dc60f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_id"
+        ],
+        "source_line": [
+            200
+        ],
+        "source_column": [
+            6009
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 200,
+        "sink_column": 6009,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9d8818875513821186614bb8328260856cae028725785ea46f56c2809b2e22f5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$r->role_name"
+        ],
+        "source_line": [
+            200
+        ],
+        "source_column": [
+            6036
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 200,
+        "sink_column": 6036,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/register.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "48f9abe0fae12b59be916d323cb514d074203bc2bc0fdd6fef4efe10fb2a599a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$amt",
+            "$desc"
+        ],
+        "source_line": [
+            16,
+            17
+        ],
+        "source_column": [
+            211,
+            236
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/success.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/success.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 21,
+        "sink_column": 334,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/success.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "f0ee43c61d7be88ebec60cbbe91da57c95e3df715bc9c65ac9b51a5fd9106518",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rec_msg",
+            "$id"
+        ],
+        "source_line": [
+            12,
+            7
+        ],
+        "source_column": [
+            137,
+            63
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/update_donation_post.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/update_donation_post.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 20,
+        "sink_column": 314,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/update_donation_post.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "334134e4daea5bc5d1956aad69140190e1228d6278848f60594c4f4c1ae64cde",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$rating",
+            "$comment"
+        ],
+        "source_line": [
+            15,
+            16
+        ],
+        "source_column": [
+            199,
+            231
+        ],
+        "source_file": [
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/volunteer_feedback.php",
+            "\/home\/kali\/67.helping-hand-ngo\/user1\/volunteer_feedback.php"
+        ],
+        "sink_name": "query",
+        "sink_line": 22,
+        "sink_column": 355,
+        "sink_file": "\/home\/kali\/67.helping-hand-ngo\/user1\/volunteer_feedback.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "46f033a65ed3914acc3af538a79ac6f415ac6a4d756687c8923015b1c5ac0f9e",
+        "vuln_type": "taint-style"
+    }
+]

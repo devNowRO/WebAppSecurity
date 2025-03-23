@@ -1,0 +1,1034 @@
+[
+    {
+        "source_name": [
+            "$regno"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            75
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 113,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8294a4e9db9ed71449823d57734c210dbe71a8d74a92bcd54f7a16172b24c3e7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$coursecode",
+            "$coursename",
+            "$courseunit",
+            "$seatlimit"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16
+        ],
+        "source_column": [
+            201,
+            236,
+            271,
+            306
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 344,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6af29e35595b84ab7d7a2466470576d157c14e42288c0f2dbaaffa7e4f533c43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            31
+        ],
+        "source_column": [
+            871
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 31,
+        "sink_column": 819,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "01dbbd19d65e3b726f2ba5de2006f51682a37c4b49dd126f725be9962d07d3a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            140
+        ],
+        "source_column": [
+            5604
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 140,
+        "sink_column": 5604,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1c2f6017a1da72a213f302b016c7e32ebfafa1b8ed7cf9e8b48a78bfb89654b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            142
+        ],
+        "source_column": [
+            5776
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 142,
+        "sink_column": 5776,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/course.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d1c2f6017a1da72a213f302b016c7e32ebfafa1b8ed7cf9e8b48a78bfb89654b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$department"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            181
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/department.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 221,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/department.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "14cdb715632d329f79be821425ea25a8c405d80ef3e02d6f28b31ef64fbd0bf5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$deptid"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            639
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/department.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 668,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/department.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d51c93c2a2576e51537f5068244e1a419c249649c7eb2b1b1f1d3e1637ed72fc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4309
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/department.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4309,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/department.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "225f23d1bdce1971d0ae629846cf6f6c117c95141d0e8671532c3d6a08688c13",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$coursecode",
+            "$coursename",
+            "$courseunit",
+            "$seatlimit"
+        ],
+        "source_line": [
+            14,
+            15,
+            16,
+            17
+        ],
+        "source_column": [
+            325,
+            360,
+            395,
+            430
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-course.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-course.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-course.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-course.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 468,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-course.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "752e1e2f633d7aec72ff9e1039c297a77f602b3cbafb14ee87d2784b8c01d732",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$studentname",
+            "$cgpa"
+        ],
+        "source_line": [
+            14,
+            18
+        ],
+        "source_column": [
+            231,
+            306
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-student-profile.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-student-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 426,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/edit-student-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "39200e98bc593d3fc32816386ad1e35e2016a276f36d6444d47bbfcd5d84364b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"cid\"]"
+        ],
+        "source_line": [
+            87
+        ],
+        "source_column": [
+            4003
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/enroll-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 87,
+        "sink_column": 4003,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/enroll-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "79003d603621b98ce29dfdabc29a8b718f5496f3982ca286dd42968039cc374e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            115
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 193,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c432e23ab20dca19ab9caa352c4efce6af7acf6952c6ff3591aff656bccd9956",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$level"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            181
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/level.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 211,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/level.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a616243938f1a073686c923d58bb0607eba6e668aec7e1eb185eb44a176e95b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            506
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/level.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 455,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/level.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "bf75d153275f130fec580ff853cc903be95983a1111e92f4bf6601b4b86d166d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4181
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/level.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4181,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/level.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1ca9903d5823ed7f8394f9fc6735edeecfc667b2b45c903744309878bf45cc80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 220,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ee5b7acefd55fccad2a8f275f7468cb211e9e7dda4350c607d8ae847822a0f63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            25
+        ],
+        "source_column": [
+            683
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 600,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ee5b7acefd55fccad2a8f275f7468cb211e9e7dda4350c607d8ae847822a0f63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"StudentRegno\"]"
+        ],
+        "source_line": [
+            99
+        ],
+        "source_column": [
+            3947
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 99,
+        "sink_column": 3947,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "943f478ca9b8e1bf2c076a2349a5c50a922a76a1a7608f0a9c01f701d568c694",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"StudentRegno\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            4136
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 4136,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "943f478ca9b8e1bf2c076a2349a5c50a922a76a1a7608f0a9c01f701d568c694",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"StudentRegno\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            4375
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 4375,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/manage-students.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "943f478ca9b8e1bf2c076a2349a5c50a922a76a1a7608f0a9c01f701d568c694",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$ntitle",
+            "$ndescription"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            205,
+            235
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/news.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/news.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 278,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/news.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ef866dbf9f8580b884adfe48860348658ff89a873aeab3f86bbd8831279d106c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            704
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/news.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 29,
+        "sink_column": 727,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/news.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "51b435bf575113598c89dbdd3caeb8a06dffc85e7cc67b6e42692eed2b3377ea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4629
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/news.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4629,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/news.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5e89679ed50c40e2320e214345011dd70284f90b824f862db10a69e188d62b6d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$semester"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            202
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/semester.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 238,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/semester.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "6c250906a476a208c332819418a4d10f825412a46c457edf9746c7dc0f1a1e31",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sid"
+        ],
+        "source_line": [
+            26
+        ],
+        "source_column": [
+            657
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/semester.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 27,
+        "sink_column": 680,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/semester.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "a00b1a8a57fbe6e971eae666411af6c3ed69d425c7ea8b4ba42c40d8bdb3eb2d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            4520
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/semester.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 4520,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/semester.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0a14fd9d0fccf7ccac1be88d9582a417d596822ee2834802b550e1adcbfcf587",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$sesssion"
+        ],
+        "source_line": [
+            13
+        ],
+        "source_column": [
+            202
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/session.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 238,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/session.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "4db3cf0f7b7a091defe6aa4265023d07c1dfa6b76c0a1af577b976ff899c1679",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            691
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/session.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 28,
+        "sink_column": 638,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/session.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1cba66b4829c708088efb3b2b0c75b1057d63287b33413b9607d4f88f1bf2ab9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4448
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/session.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4448,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/session.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "811c42c6463f83359ec56b7f2e0a557c2a28fdd74e9a20e7b08fcdbbbadbdf43",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$studentname",
+            "$studentregno"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            179,
+            216
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/student-registration.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/student-registration.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 329,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/admin\/student-registration.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e483fb385f71ffab60f2630d213cb2f0db900f72e113453a18d9c063fdf3dba9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"userip\"]"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            627
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 19,
+        "sink_column": 627,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0de83bf7a16d75d8e957843c6493ae2d153321dc467e460b5f14ff66f011679e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"loginTime\"]"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            660
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/includes\/header.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 19,
+        "sink_column": 660,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/includes\/header.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "efbde0cc0c81674c49cd3be3f3195bd706237d325a4ac442ffe15a6f6e9ac811",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            88
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 148,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b02270a3949146931838b641f0834070462ad8aee49c466cd8ba0c30005d338a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            475
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 509,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b02270a3949146931838b641f0834070462ad8aee49c466cd8ba0c30005d338a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$cid"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            475
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 626,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b02270a3949146931838b641f0834070462ad8aee49c466cd8ba0c30005d338a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"cid\"]"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            3881
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll-history.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 83,
+        "sink_column": 3881,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll-history.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "58d7408e6627a77e653e13f5a995c1d3368306b6755cc1e56ecdda4fe00722f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$studentregno",
+            "$pincode",
+            "$session",
+            "$dept",
+            "$level",
+            "$course",
+            "$sem"
+        ],
+        "source_line": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ],
+        "source_column": [
+            232,
+            271,
+            300,
+            329,
+            358,
+            383,
+            410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 20,
+        "sink_column": 436,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/enroll.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d441f5f240d3d58b1846823a28cca0145a6ab68fd884c431e27b6d0b51ac0e0a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$regno"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            115
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 187,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1b75725f3384ed306d4827b71c00b4ccc20cfc1b7199ba49dca521c8a758ac10",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_SESSION[\"login\"]"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            577
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/index.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 18,
+        "sink_column": 500,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "5f0f641d738c15f7505df91874be6a785a2c562d6777662d727de6c7dc9f9853",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$studentname",
+            "$cgpa"
+        ],
+        "source_line": [
+            13,
+            15
+        ],
+        "source_column": [
+            199,
+            270
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/my-profile.php",
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/my-profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 390,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/my-profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c69f2afc4736dea90a2bec2691a82e2503c609604bddcac1f17d065babce162f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$regno"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            115
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/news-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 187,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/news-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "2f4a03c1c8ca6ed94060ef1ab09ca5b07f6af2a2e7f4900668dc7976d7867f80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_SESSION[\"login\"]"
+        ],
+        "source_line": [
+            19
+        ],
+        "source_column": [
+            610
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/news-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 19,
+        "sink_column": 533,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/news-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "75a76387b47ef1b6972d11fca5814de241522c0c5acb9d19352fd00982a0c104",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$nid"
+        ],
+        "source_line": [
+            83
+        ],
+        "source_column": [
+            2485
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/news-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 84,
+        "sink_column": 2510,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/news-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "8d9e5ac07810597268254d8db0b9e81ec38ffa729af1bb9e0db93eedd01da860",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$trim_return"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/pincode-verification.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 15,
+        "sink_column": 326,
+        "sink_file": "\/home\/kali\/Downloads\/9.online-course-registration\/onlinecourse\/pincode-verification.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "43f0eb0f57bf247ccf429559ddf4b1b24c5a3930265b8c4b02423d22080668a9",
+        "vuln_type": "taint-style"
+    }
+]

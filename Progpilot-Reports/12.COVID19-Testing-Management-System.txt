@@ -1,0 +1,4346 @@
+[
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            326
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/add-phlebotomist.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 16,
+        "sink_column": 440,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/add-phlebotomist.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9342f3c50928e1ac9987c34057c8722a0de6324db2b6c97213ab66fb2f52efc5",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            3529
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 3529,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9986133ca8a2b21ecd55d5c0827865bdc33357d4e396df506b3c728b3956fe99",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            59
+        ],
+        "source_column": [
+            3559
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 59,
+        "sink_column": 3559,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe18712a715fe8206430f82060e31a4ed4e3259e7db69de6878e584463da5e57",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            4026
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 4026,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5d4d61e6e35dc384dfdd886cbc2b9b86795ccacada0bc6fb6eaac1fc4c9380ca",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            4165
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 67,
+        "sink_column": 4165,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe18712a715fe8206430f82060e31a4ed4e3259e7db69de6878e584463da5e57",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row1[\"AdminName\"]"
+        ],
+        "source_line": [
+            94
+        ],
+        "source_column": [
+            5420
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 94,
+        "sink_column": 5420,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/includes\/topbar.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fc114f26ad53359b6cb88f3edd958e12e1f6fd4cea6c3d6d2b171f476ea61b11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4372
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4372,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "963e1ddab0b3204922a51cc516b283402a3b2e0476423eb1554498a59cfca3e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4460
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4460,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "80bd2817f84947d1ade7c1271448efd1550795e7a4885992a88141297f2b9c0d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4545
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4545,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "69bab8a84f703245188a1213263f61a00a24217bbdc2e1a8d341578e27180be6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4634
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4634,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f6ecefeb58dd7b973a5bdb89b6fc3aa84fa4ac5231191c84404a33afe90e93fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4719
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4719,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a2af4d29d6426368f5984fa1df216e0e3cde5e4c425cd7222a170eb1c95f6f8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4809
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4809,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "62b1cd402e4db9d1618ec3e72c12c0089a23d1d8f10aa2751619283e399b5631",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4968
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4968,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67d608ce6b162627402f6d627c6f9c24bb9670285c27d2882ea378b41831147a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5002
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5002,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/all-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "963e1ddab0b3204922a51cc516b283402a3b2e0476423eb1554498a59cfca3e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4428
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4428,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a101f6a6d43acc51b855f727aa5acdba93567a7ebedc236983460679f32a2c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4516
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4516,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "12d8cb9ae243dc50be08e63aebaeb303e2dd29098721a89a58a569daaf1a7358",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4601
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4601,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "45c284c0df42da414b2bc4870a7e32829eb28da3ed625477b5fa2f8790938078",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4690
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4690,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0fd739939cb1ec906d6db10757568f24c315c4a485db1441f7a67f2d765333a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4775
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4775,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "280a7a59a407abbec7d7ceb8c1982e6a6d9407da13482d5dee1fddac59194213",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4865
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4865,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "827af8fafc613930bee05e304d3a89c7b2e92d97ac4d1189cc0dea6190bfa1f6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5024
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5024,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d977869aedd82e894823ecd3e7c2be21134eba41f17fe3c1f521c7a8e0ed05d4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5058
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5058,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/assigned-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a101f6a6d43acc51b855f727aa5acdba93567a7ebedc236983460679f32a2c9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            400
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-ds.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 557,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-ds.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9798e5a167ac1679907f04f9b64f726774d1533df7be910ad80ef68c5bce8415",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1695
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 1892,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7002faa4ad66c1264320bbe65dcc8e3320fe557624ef59529ec45ce549dafb79",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$tdate"
+        ],
+        "source_line": [
+            62
+        ],
+        "source_column": [
+            1723
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 66,
+        "sink_column": 1916,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e297ed7a6ce4c76018682eb341bc74305be5c2320297e0f19979fee232dffe81",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$fdate",
+            "$tdate"
+        ],
+        "source_line": [
+            61,
+            62
+        ],
+        "source_column": [
+            1695,
+            1723
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 103,
+        "sink_column": 3963,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9f8089481052fa5b5071f85e04766cc6287b88ba6532fd3cc7b109d5ea39cc44",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4598
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4598,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85ea92aec63758a1e5aaef60da5087696b372171974c11cf2747f3ffdf8918ab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4686
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4686,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "118f2b70e0babb9b412d3b1dce65a2713c9831ec23b6dc04107df64ec8c80850",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4771
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4771,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "776102c4de733202a0fbf978e2f4315f56153743322e83bd183f4685d22ec270",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4860
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4860,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2dd8989db3bfe35f937cc42d60a6e0f7a69b0962aacdd2c3f77d572ffadeb97a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            4945
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 4945,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bb15f5bc511189415cf935cea2cf32c289a49b361b16ac4149db5be6d149af1f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            5035
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 5035,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "97f2e95659ad3a719ee69328f3ca89a014fac05828ca0fb025ed1fb3a5f8ef63",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            5194
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 5194,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b5fbede088e74ceee7623245db0f93a8dde25a890b7c0e9430acac79399f2c35",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            121
+        ],
+        "source_column": [
+            5228
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 121,
+        "sink_column": 5228,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/bwdates-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "85ea92aec63758a1e5aaef60da5087696b372171974c11cf2747f3ffdf8918ab",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$mnumber"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            123
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 7,
+        "sink_column": 166,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c6e67191ca13d41c5cd87db2f218685b05b36b49b525558c457967e120b23132",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$empid"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            774
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/check_availability.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 25,
+        "sink_column": 816,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/check_availability.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1e30a6033145ba961cd3ab2720b9b70419367db3d4a204baa57da8bef2f9f989",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            16
+        ],
+        "source_column": [
+            377
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 482,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "d9d86144d83574cb53738adadcb4754adfdb65bb4910881807640996c7929684",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            88
+        ],
+        "source_column": [
+            2560
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 88,
+        "sink_column": 2560,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "861e56de023df1469e960ebf8a45d73c146aeb2af2764ec160762d1591701a1b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegDate\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            3245
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 3245,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "463c6df0ed5dfa55b0debd1920619d9515b418d931b754783b925bad837ef3cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpID\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3535
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3535,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "37758a7ae5efcee2096afc0d60aa1eba2e0f773ec2967a8b4fb71cc8087c2272",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            3987
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 3987,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "861e56de023df1469e960ebf8a45d73c146aeb2af2764ec160762d1591701a1b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            4446
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 4446,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/edit-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bd8d8726649ce7a37104cb3dae4edeb923a700cc2b07b8ded6f07a3bcff23cb6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"state\"]"
+        ],
+        "source_line": [
+            97
+        ],
+        "source_column": [
+            3658
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/live-test-updates.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 97,
+        "sink_column": 3658,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/live-test-updates.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5e14edad9ce9a3409b1264ae7aaf67f856160768567ad30b26c45cb1c893f1f2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"totaltest\"]"
+        ],
+        "source_line": [
+            98
+        ],
+        "source_column": [
+            3740
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/live-test-updates.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 98,
+        "sink_column": 3740,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/live-test-updates.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "349764aefeea44a20b0dd9a62b6658e094bb1c31d84d54aec0895686e9f28d68",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$uname"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            97
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/login.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 176,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/login.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "28b9035afd700d30040529ee350462fb9670a73642f1adaf6509fc566038776f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"EmpID\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            4087
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 4087,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1f1a2b5c493cf412eadb83dd51f8e60c6e3f7632ee9cd7db79ee97dc23a7a348",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4169
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4169,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "adba039dbce561b8b748165f1b58bd65d3dbd0e3a7c0b1bdf19bf15741a64da6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4254
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4254,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "233e121c59befe252ccf9daac0fa9488b6bc394dd41d9cc6b699b5709b800c0d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegDate\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4344
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4344,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f6ca6cfe44542f0eac62fe838edcf24bd92ef69c40660f76b1c415308e574830",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4499
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4499,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "10c9c3e72da0f4e3548a2d3db9aba23e3cd0b17bf3aad1043f34f5d926a96ccf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"id\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4650
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4650,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/manage-phlebotomist.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "10c9c3e72da0f4e3548a2d3db9aba23e3cd0b17bf3aad1043f34f5d926a96ccf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4423
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4423,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c72aeb1cfb6da785b9eae2da8d9ba43d1dd111683bcfbe0d4c33d62a66cc2701",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4511
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4511,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "430603b208c8c9978f271052e799a3fd655930fe0adb375ea56ee27d91811b11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4596
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4596,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "08d1e4e8ea4a1ab4939dd397224616f1d75d97c9d5061667f70c21285195a763",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4685
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4685,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "060f98679303412d6457e9d4b41e0f096ec7dc9277f0336d5bc606a8a7b7310c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4770
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4770,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bb2de83f6d79f58c6efbca33c071f1fd66bb0da4ccd0f3c2eefd7dc3269a5b44",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4860
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4860,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "96185fac7f4cb8e3f256428fc3b57f6200c7f6781f50bccc0daf23dd97a1a39f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5019
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5019,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "daf1c7d1f03e04b5b6db76a7d02f4014c253ab056cd0adc33f65925f76fa516a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5053
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5053,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/new-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c72aeb1cfb6da785b9eae2da8d9ba43d1dd111683bcfbe0d4c33d62a66cc2701",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4445
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4445,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "db92f733eb514413efb9556d8c3f8735666e9c6b78f44f14d60719ebbedd7ad1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4533
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4533,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4d18e3132fbd983371d2add9e110b0157f978311f4c5904e713e45fb49758162",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4618
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4618,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ea0f0b30fd7521dca5ad93a9ab69f98547d10d67aa98b57a76aaf0973c268b35",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4707
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4707,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bf227ad6beb54bfae4eced70dc55ca25e52cb13b414f4791845997064a200960",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4792
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4792,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1bb0a402d1f98a77ae5f16952d1706dd61eb94184bf538a4d3915fe99c1e23cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4882
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4882,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4a9e30e7004bbd2084df0a68442f236679558574128e627169eaa7c6f298e8bd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5041
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5041,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e46350ce46d1553adc8fa9f77c66884486d0a6a4f48ee6e5ab493ce2da758a4f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5075
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5075,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/ontheway-samplecollection-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "db92f733eb514413efb9556d8c3f8735666e9c6b78f44f14d60719ebbedd7ad1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$contactno"
+        ],
+        "source_line": [
+            8,
+            7
+        ],
+        "source_column": [
+            127,
+            94
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/password-recovery.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1ded87879171e8190d28287da1b8db01b741411cfb8414ac74daf2f11bc739bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$username",
+            "$contactno"
+        ],
+        "source_line": [
+            8,
+            7
+        ],
+        "source_column": [
+            127,
+            94
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/password-recovery.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/password-recovery.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 14,
+        "sink_column": 391,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/password-recovery.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1ded87879171e8190d28287da1b8db01b741411cfb8414ac74daf2f11bc739bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DateOfBirth\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2778
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2778,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "328fabdb73508954aa76bd9c8b4f29a32e11cb123f5850b3a8ccaaa413601fcc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"GovtIssuedId\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            2882
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 2882,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "18b09b376bc2dddca16152eb5f4accb528758a887db2008ffdda2b12fc5d8ea3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"GovtIssuedIdNo\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            2990
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 2990,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c6e3b780c37cd0ba625ccddefa9867881d643bfef5b7e2c771c2d63cd697bdb3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullAddress\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3095
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3095,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a1a21e02252e915f82b848cc7b051f77626ded2ccd9359990c9918dc6780e56c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"State\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3187
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3187,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49a397ca98ccb042b069c0fe31c020db7b70f18bafe96abedf6a5c65fe449d27",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ReportStatus\"]"
+        ],
+        "source_line": [
+            165
+        ],
+        "source_column": [
+            4479
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 165,
+        "sink_column": 4479,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f38426af9a44f3ce508c08b275e0c3ff71027261a11c9e6f3a931ccb9da9ea92",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssigntoName\"]"
+        ],
+        "source_line": [
+            175
+        ],
+        "source_column": [
+            4644
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 175,
+        "sink_column": 4644,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4f804e3dfac8d3e2d7216ee725b79f005383175f676c3f6a55f14942942a3aae",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssignedtoEmpId\"]"
+        ],
+        "source_line": [
+            175
+        ],
+        "source_column": [
+            4680
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 175,
+        "sink_column": 4680,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1610bb17dab95b7e6f81a08269ff0021bc079bfab8b414d6adeae621c3e29066",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssignedTime\"]"
+        ],
+        "source_line": [
+            180
+        ],
+        "source_column": [
+            4785
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 180,
+        "sink_column": 4785,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8aaa854c303687d0b4e8370c1b6071c7585afae99723887049eb173ee168f608",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FinalReport\"]"
+        ],
+        "source_line": [
+            186
+        ],
+        "source_column": [
+            4950
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 186,
+        "sink_column": 4950,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7b0af743ad727d893ca86d01c9f895b0d0f1e97838b32997fa7e0d7dc1b317b0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ReportUploadTime\"]"
+        ],
+        "source_line": [
+            191
+        ],
+        "source_column": [
+            5088
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 191,
+        "sink_column": 5088,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "48b1b96d1777ebfb0027ee6bb9ad5c23704585d450b8e8c92c013286e1669172",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            85
+        ],
+        "source_column": [
+            2572
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 85,
+        "sink_column": 2572,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1b504fbe3fb138ed98b67a5b407178c657d60a8a92678ec14a4f984d4282ae49",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            90
+        ],
+        "source_column": [
+            2670
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 90,
+        "sink_column": 2670,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ad0c800576b448ced9b2e44f993f5b9658a7c4508795895514b0d03e0e38434",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DateOfBirth\"]"
+        ],
+        "source_line": [
+            95
+        ],
+        "source_column": [
+            2778
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 95,
+        "sink_column": 2778,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a4e098f7d53276dc81e54cca365643582ed3c71116c585c3d2212efa6d42b626",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"GovtIssuedId\"]"
+        ],
+        "source_line": [
+            101
+        ],
+        "source_column": [
+            2882
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 101,
+        "sink_column": 2882,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bfbd6ae0872f7711f73a50a5701628638fec07a8488e91aa5b1f2ae02ce450be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"GovtIssuedIdNo\"]"
+        ],
+        "source_line": [
+            107
+        ],
+        "source_column": [
+            2990
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 107,
+        "sink_column": 2990,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "830fa26578c20b5cde5f6d0b20da6a94f366f6b8c7457a1d3666c27b90bc547a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullAddress\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            3095
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 3095,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cfc2fd4545ba036403d14738b59523d7c01ad69c6bb2f61bdb253bee1210ac82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"State\"]"
+        ],
+        "source_line": [
+            118
+        ],
+        "source_column": [
+            3187
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 118,
+        "sink_column": 3187,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9273e84be9a22e0d4f802d30e9464bb486a7b0ba312ab3749bd74a1f7c4f40fb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            123
+        ],
+        "source_column": [
+            3284
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 123,
+        "sink_column": 3284,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b7cfeb0b4b986ed2c11a0f9f27bed2d031996e41b6c6b1aa08af413fbf0b7a74",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            146
+        ],
+        "source_column": [
+            4090
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 146,
+        "sink_column": 4090,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "bc52408e4e43844f1a5b4a2dc97863ac54231e43983aaa721681748a4dc6b90a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            151
+        ],
+        "source_column": [
+            4186
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 151,
+        "sink_column": 4186,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fae813a37e95f52417b44ec5cfc511c71ccd1763979f8af10271ea22c1e0ad75",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            157
+        ],
+        "source_column": [
+            4281
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 157,
+        "sink_column": 4281,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c03e61c7f95e98f5571b68423916c9a0ec37eb263465e55022534bebc14238a0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssigntoName\"]"
+        ],
+        "source_line": [
+            175
+        ],
+        "source_column": [
+            4644
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 175,
+        "sink_column": 4644,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c44e618c3b8df7d29adab28b14225845a1257ecceefd5af897e74eca14a261a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssignedtoEmpId\"]"
+        ],
+        "source_line": [
+            175
+        ],
+        "source_column": [
+            4680
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 175,
+        "sink_column": 4680,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5152ffb86f392d047103b813413dc078e3cdd33dea9bae8922d4ec7d7cb2ec7f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssignedTime\"]"
+        ],
+        "source_line": [
+            180
+        ],
+        "source_column": [
+            4785
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 180,
+        "sink_column": 4785,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "acee5432c051d2a25b6bf38594bc14d0f4406b8a3891eb5bca52198adc87e8cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FinalReport\"]"
+        ],
+        "source_line": [
+            186
+        ],
+        "source_column": [
+            4950
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 186,
+        "sink_column": 4950,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8a0a3f5dfb279882d0cc6b0e454623a2676ee53f168dba8f57aae5de716c8d7f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ReportUploadTime\"]"
+        ],
+        "source_line": [
+            191
+        ],
+        "source_column": [
+            5088
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 191,
+        "sink_column": 5088,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e7a925788322577024572f4c32dd514957b3e2635787641408f960e5b4157e96",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ReportStatus\"]"
+        ],
+        "source_line": [
+            165
+        ],
+        "source_column": [
+            4479
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 165,
+        "sink_column": 4479,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7fb29a4f6bb304f3e568d7298e210186d58f488119617cb1be123d6e6408c376",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Remark\"]"
+        ],
+        "source_line": [
+            235
+        ],
+        "source_column": [
+            6370
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 235,
+        "sink_column": 6370,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9a6a5dfe83e73a25c197e48071328332abba3e2cfbdbe14cc47a0369f7db3c28",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Status\"]"
+        ],
+        "source_line": [
+            236
+        ],
+        "source_column": [
+            6417
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 236,
+        "sink_column": 6417,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d797091c0d559f9ca8569dec21375718bc66995f2d86809262be65713066f11d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"PostingTime\"]"
+        ],
+        "source_line": [
+            237
+        ],
+        "source_column": [
+            6463
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 237,
+        "sink_column": 6463,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3651948b6e4a356233e2649569a08c11b6ffe5e215b9a9aa5d3394938de834a4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            238
+        ],
+        "source_column": [
+            6514
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 238,
+        "sink_column": 6514,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a47fe66084b971a8e7d13af04b3bb72f987ade07340fd635252dc8aefc317fb3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            1591
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 62,
+        "sink_column": 1762,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0eb0f9535565a0ac744136756b1e0ef66e5c7a1e8c35e46b1f5eac9ce7cb9fbf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            58
+        ],
+        "source_column": [
+            1591
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 99,
+        "sink_column": 3812,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9f48dfb53f913ad2c3d8311312d8bb54268e94fc6a60572d85687ce92b51f4f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4523
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4523,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d15ca5a51cf175578f5e1d66c35dc9ce8d18eca3b2757fa8311fb168e955be3d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4611
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4611,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dc8bce240c90501313c60b4f592944cd0d9208bf57382120bc9f646edaf4a96c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4696
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4696,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "31bdb7c4278574fb243ab0b788a5fa945854befeaf7ac769faf82c762983e53c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4785
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4785,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "977e17f6ffd020039bf5f1f987a77742c3798f47daed48e4f9e333e411452162",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4870
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4870,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fd59df493c1af9022f586bf1fd00ff2f68bd9a4cf5f7694650de8b4f3d66dc1e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4960
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4960,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8edac5fc2b84dccf4821aa04271d57c1ee394c194b6b27655671bccfbcd3b4c4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5129
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5129,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fe387dbc6e241e5cf274044bc006b4437fd74077353bda0ed71e80052b6c801b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5163
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5163,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/patient-report.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d15ca5a51cf175578f5e1d66c35dc9ce8d18eca3b2757fa8311fb168e955be3d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$aname",
+            "$mobno",
+            "$email"
+        ],
+        "source_line": [
+            13,
+            14,
+            15
+        ],
+        "source_column": [
+            260,
+            291,
+            325
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 17,
+        "sink_column": 366,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "ae4ea3c1531f2c97273dc32bd4319786cac042c869d8d462651b7230ca812f1b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminRegdate\"]"
+        ],
+        "source_line": [
+            104
+        ],
+        "source_column": [
+            2845
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 104,
+        "sink_column": 2845,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "334714210407ee58b8c9c8a0b1656ba47d6984a86aa5f789ed728eb2fec49e82",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            3145
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 3145,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3a75152f4919fe5a4c861975411e367ad3fd21cb08f60b08c0607438c21fd532",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AdminuserName\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            3437
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 3437,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "95283533e27077560da29b17061e08eb0962878c02c808437fd370fb3c1e8d8a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"Email\"]"
+        ],
+        "source_line": [
+            119
+        ],
+        "source_column": [
+            3696
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 119,
+        "sink_column": 3696,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "66beafabdfeca67859e1c91f96c5ed7caa75e0c02096d8b246552fa96d153376",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            124
+        ],
+        "source_column": [
+            3878
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 124,
+        "sink_column": 3878,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/profile.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7f2c839007735f29dbbc3ba3566fdd989f996840fad6485ef8e8862c0ced35bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            279
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 436,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9bf327e8cf7b8a87e0649ca7c140ee194b30d37f40da1d1877f3b03bc0d47165",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"regmobilenumber\"]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3670
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 103,
+        "sink_column": 3670,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fef7785ea35eb5b5fd25d98879318bd70748840ac85905d01abbf249f4915b78",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            126
+        ],
+        "source_column": [
+            4703
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 126,
+        "sink_column": 4703,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "67fc7ee1f5918a9e7eac97eb7e7d8e9c157425457ff624cd897b02ba6def6f5e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            130
+        ],
+        "source_column": [
+            5075
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 130,
+        "sink_column": 5075,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b124b62d9949db4d3d524c9e2bec914229bd87e96e09e9e1e7e46bb8e9646ef9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"DateOfBirth\"]"
+        ],
+        "source_line": [
+            134
+        ],
+        "source_column": [
+            5452
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 134,
+        "sink_column": 5452,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a21bd3cfa6933685c08e092a67f2b9fb0839771d8d7c6f766d07339b141f90a1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"GovtIssuedId\"]"
+        ],
+        "source_line": [
+            138
+        ],
+        "source_column": [
+            5818
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 138,
+        "sink_column": 5818,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2fafc89456349708739f619fb7961eca63f84742b9712d20c0ea9129330ed41e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"GovtIssuedIdNo\"]"
+        ],
+        "source_line": [
+            142
+        ],
+        "source_column": [
+            6203
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 142,
+        "sink_column": 6203,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ab7f0e9fdd234f7c292957538089fe6d79d9532d2f97bc1e4441e4b90f1703cf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullAddress\"]"
+        ],
+        "source_line": [
+            148
+        ],
+        "source_column": [
+            6587
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 148,
+        "sink_column": 6587,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a1a9a9c2cdcda65453689eb695115b91075cf8ec330153c2f436fd88bd19e05c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"State\"]"
+        ],
+        "source_line": [
+            152
+        ],
+        "source_column": [
+            6889
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 152,
+        "sink_column": 6889,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/registered-user-testing.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b26147dbdf8e821f92b7c4d80f8ae2ea651bebc2a57a6c4a53677c299b2ce393",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4420
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4420,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9cfd8c82e127de4edb48137122497336975d381a570bbafc9affa7e1a9fc8088",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4508
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4508,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "064b0de5b96e4b5e6acabeeab7c05ac238e94f6fed52b52d811d8c9ab8c06577",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4593
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4593,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "93d958f9d30eaec4db45174f6404bff688d649366b75cb98a9ca58e221a23258",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4682
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4682,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5c331cbe7a39236a58708019ff3a9c6130d1aa2dd9ff7c198717e4fdb19bbd3b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4767
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4767,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1781bb714c25d946e6b42678b556ca73f5aee6ad34745791f9b419b486bf03b7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4857
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4857,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a4dfa9257740a44605db2139d4b4a420ba6f86c6245ab65a3a8ac2ddd39bf483",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5016
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5016,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c0dcd56af39b526137df8c93925715314a602fcbf3933bd1669e37bd4fbf365b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5050
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5050,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/reportdelivered-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9cfd8c82e127de4edb48137122497336975d381a570bbafc9affa7e1a9fc8088",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4427
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4427,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25be09eb16110e0a5cf08273a2fb627b51bf131d500af06b4854da5275b07698",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4515
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4515,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7923af3e0741addd97200e3aeea9318c5352254b63bf7c254ba4497f8a8a717d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4600
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4600,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "000a97a0a534fc4de7548ba962bfffff7a511924ef1a938f8b665a4a992becf9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4689
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4689,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f1b09defec6da00cab75b9e48c6464efcadea34f3637a3484b5e6c090d15e44",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4774
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4774,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8e02ba8e4894881befdd2f894b4fe944702433f45d9f8ab20ef327b595b9d94e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4864
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4864,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "70788dbfed99fbc03d9133b8c6537abd93bba40b970ca2c59d5b5846a2cbc4bc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5023
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5023,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2677e8784588fce4f6fb9e3a2c2ec20d0df57cd46f61942279f36ff8b7cece56",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5057
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5057,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "25be09eb16110e0a5cf08273a2fb627b51bf131d500af06b4854da5275b07698",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4427
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4427,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "726a85eb9ed3468a05dc8f3da9633d4d74a138d412c825bfc08f5aa7156cad32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4515
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4515,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a7ec723aa9409a0b4565798613333db55fc53dd7df6c02e63824b614bab82b06",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4600
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4600,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "02e825a96896e2ffb6984ce716e93e704f3e0028c1651aab6d2a8dfb1db7ee5f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4689
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4689,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5ee810b0973450851e5cb8974090d1e5851c88fbfe666963d9d43ccdd0e2c904",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4774
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4774,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "39c837b7289ee411876fdfc7bbe8c5633e6f80099a5382095605d67d67da572b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4864
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4864,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32e295e57f1cfbe08ca633aaf4442ae6c078e095429fdda34f4faf90fe5ca14a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5023
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5023,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9722d69f9f2fdc6fde8a6fda29cfe0053d43307736f4600bab60f11af77207dd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5057
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5057,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/sample-collected-tests.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "726a85eb9ed3468a05dc8f3da9633d4d74a138d412c825bfc08f5aa7156cad32",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            108
+        ],
+        "source_column": [
+            4410
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 108,
+        "sink_column": 4410,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38079ac59ffa83d56063a8bf4efc3a21a9376ea1b2dbceafe3348253b70e6f91",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            109
+        ],
+        "source_column": [
+            4498
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 109,
+        "sink_column": 4498,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a292d55ac0d7bb868d4f5836d7c4a5e09bc23d782ccd4f1ed3e9bf4ef7b8de3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            110
+        ],
+        "source_column": [
+            4583
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 110,
+        "sink_column": 4583,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a0dc21c940c9d66ef7c74b178fa7336a6bf402f6cd2a5aa03ad0595d4d81634f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            111
+        ],
+        "source_column": [
+            4672
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 111,
+        "sink_column": 4672,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "49d3dc2816b775a79a3da97eef6227a030de96d4174cbce93921f310f0de588e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4757
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4757,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d7896a0254dec83c4fa7ddc5763c15ac5f44a704bcd02a94822b3e9b057c8c0",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4847
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4847,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "96597c9a8f8bf7019b98ccc3394993e93c372e693b2f7cb426fb10fb57fe19c2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5006
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5006,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9df683b7fd4575b3e23592d219a013e14153ed7c113e9f9f6bcc545dcb4b3cd7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            5040
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 5040,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/samplesent-lab-test.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "38079ac59ffa83d56063a8bf4efc3a21a9376ea1b2dbceafe3348253b70e6f91",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1692
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 65,
+        "sink_column": 1863,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5fce93005ec3e1f01312c3b1bdfc9dab5f49e75f0d2fe6ea8626e75e20665a02",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$searchdata"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1692
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 102,
+        "sink_column": 3913,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "e342b6f21981d0fefc75853bda7373b71d23b04e827afee79b7ebd2a33fe84e4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            112
+        ],
+        "source_column": [
+            4624
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 112,
+        "sink_column": 4624,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "35cbd1f99bffa4ff67594a1262494ba05290c187813b4219f33ac1158ba379cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            113
+        ],
+        "source_column": [
+            4712
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 113,
+        "sink_column": 4712,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fb6fbeb4ddeaa9f7cc8daf326b150b48c71d0279e375ce1a4327d7196a5099bf",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            114
+        ],
+        "source_column": [
+            4797
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 114,
+        "sink_column": 4797,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ce987ce5f22c5e06562c13ceef3ae12d34d9395140eae7acb02bece90bdb8e16",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            115
+        ],
+        "source_column": [
+            4886
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 115,
+        "sink_column": 4886,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b9c8c11e82d05d5122ae01b7faf4bec54e764b07aec00e6fb92f81aa53a1e7b8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            116
+        ],
+        "source_column": [
+            4971
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 116,
+        "sink_column": 4971,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "5b9a6db0aa5599058f7c5ac3e3a6a391a8b994b82979f1e5f7eba0d3fffb5a86",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            117
+        ],
+        "source_column": [
+            5061
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 117,
+        "sink_column": 5061,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3036703de46c9b7c52fb3a156566711051919f3842957f814e0576bbfc50a5f3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"testid\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            5220
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 5220,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6988ea8727397b8230c852b79bf31ffa7f053d2728695224f7215e8002cba82a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            120
+        ],
+        "source_column": [
+            5254
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 120,
+        "sink_column": 5254,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/search-report-result.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "35cbd1f99bffa4ff67594a1262494ba05290c187813b4219f33ac1158ba379cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status",
+            "$remark"
+        ],
+        "source_line": [
+            28,
+            29
+        ],
+        "source_column": [
+            879,
+            906
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 51,
+        "sink_column": 1755,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9fbd896457da15f78b3c115edbf449c424885e0ca8ab8509dba141d8b7d9eaee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            879
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 52,
+        "sink_column": 1898,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cf93069451c2d917ae2bdccc4b36cbd69e8f9a73aa96df1a8a8fc1401d00fe11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status",
+            "$remark"
+        ],
+        "source_line": [
+            28,
+            29
+        ],
+        "source_column": [
+            879,
+            906
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 59,
+        "sink_column": 2223,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "9fbd896457da15f78b3c115edbf449c424885e0ca8ab8509dba141d8b7d9eaee",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$status"
+        ],
+        "source_line": [
+            28
+        ],
+        "source_column": [
+            879
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 60,
+        "sink_column": 2366,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "cf93069451c2d917ae2bdccc4b36cbd69e8f9a73aa96df1a8a8fc1401d00fe11",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullName\"]"
+        ],
+        "source_line": [
+            145
+        ],
+        "source_column": [
+            5076
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 145,
+        "sink_column": 5076,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1ba785772ef7c05b11bd5510c5d398495ece105c8d0239e374766744fbae52a2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"MobileNumber\"]"
+        ],
+        "source_line": [
+            150
+        ],
+        "source_column": [
+            5174
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 150,
+        "sink_column": 5174,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c3bcd57dd419589fb46a5cfb98ce62cfc936ea3a2932875f2087203ab5f1a9ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"DateOfBirth\"]"
+        ],
+        "source_line": [
+            155
+        ],
+        "source_column": [
+            5282
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 155,
+        "sink_column": 5282,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f46745a3c247548a3fb5264f5693401f872feb500d4404b2dcf865394e69185b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"GovtIssuedId\"]"
+        ],
+        "source_line": [
+            161
+        ],
+        "source_column": [
+            5386
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 161,
+        "sink_column": 5386,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b7fce2af6eaeabeffde487199b3880551a177254a8cf583799f594758851bb75",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"GovtIssuedIdNo\"]"
+        ],
+        "source_line": [
+            167
+        ],
+        "source_column": [
+            5494
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 167,
+        "sink_column": 5494,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "28ec9dbdce291969c7b598bed585411b3e31e0e8085ac4f95bf8d93695ce1221",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FullAddress\"]"
+        ],
+        "source_line": [
+            173
+        ],
+        "source_column": [
+            5599
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 173,
+        "sink_column": 5599,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "44321b530e3177bcac9bb401f488ad1df6e37ded7d6d2cbca6c2200214076b19",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"State\"]"
+        ],
+        "source_line": [
+            178
+        ],
+        "source_column": [
+            5691
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 178,
+        "sink_column": 5691,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d0937e131edda11de248428b1b007d196a5de0179a8b619f45dd3506c625e579",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"RegistrationDate\"]"
+        ],
+        "source_line": [
+            183
+        ],
+        "source_column": [
+            5788
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 183,
+        "sink_column": 5788,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f44e33f839ab75e6a5761d785e23f3d958f3efc4c66db61d859a9624720c6bb2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"OrderNumber\"]"
+        ],
+        "source_line": [
+            206
+        ],
+        "source_column": [
+            6594
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 206,
+        "sink_column": 6594,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "144e5801ce2a146aa5cfc60b9300af0343221a019cdb3b004f94883447211536",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestType\"]"
+        ],
+        "source_line": [
+            211
+        ],
+        "source_column": [
+            6690
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 211,
+        "sink_column": 6690,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "10526989ae5b319d938f29e7e15a3635fb6fcf88ba1803bdd6f456abb700a7fc",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"TestTimeSlot\"]"
+        ],
+        "source_line": [
+            217
+        ],
+        "source_column": [
+            6785
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 217,
+        "sink_column": 6785,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "23025c89b2fff6f3ab50c15dd7863e418bc00588fc1462e6cda0a85c0bccf6ea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Remark\"]"
+        ],
+        "source_line": [
+            307
+        ],
+        "source_column": [
+            9472
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 307,
+        "sink_column": 9472,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8f3eeabfb6fcec978f8650ce46134368935196fec1c8a63e619f417475d74e2f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"Status\"]"
+        ],
+        "source_line": [
+            308
+        ],
+        "source_column": [
+            9519
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 308,
+        "sink_column": 9519,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6a371d8736bf85a20c5a9bce39129dd2ed830fc956093335172f7d5fcb82e4cd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"PostingTime\"]"
+        ],
+        "source_line": [
+            309
+        ],
+        "source_column": [
+            9565
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 309,
+        "sink_column": 9565,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "7591583c62bf064dd6081a5899a61f1ffb8a50ac2bb91579b855eb1b8f873968",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"AdminName\"]"
+        ],
+        "source_line": [
+            310
+        ],
+        "source_column": [
+            9616
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 310,
+        "sink_column": 9616,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2dc9928d98e1dfce0bef2b3722254d576eed2e0525e8f86dbf03625107850231",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]",
+            "$result[\"EmpID\"]"
+        ],
+        "source_line": [
+            364,
+            364
+        ],
+        "source_column": [
+            11106,
+            11130
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 364,
+        "sink_column": 11106,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b76f3c942677677a36600485fdd9331ad018c9b2eaec3fbc63b0cef2da8614bb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"FullName\"]"
+        ],
+        "source_line": [
+            364
+        ],
+        "source_column": [
+            11162
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 364,
+        "sink_column": 11162,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4bc6e7a37ac8b77132ca809770c80d1689bf9b88e46291dd17731196d51dc5b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$result[\"EmpID\"]"
+        ],
+        "source_line": [
+            364
+        ],
+        "source_column": [
+            11197
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 364,
+        "sink_column": 11197,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6d7d0cf8734ce53b8c49a52a9d485ebfa2d23ed01f927105e27741d1babd5af4",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssigntoName\"]"
+        ],
+        "source_line": [
+            235
+        ],
+        "source_column": [
+            7148
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 235,
+        "sink_column": 7148,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "32c9279d722278569093ebc1417aa59758741a6d55a737c355c24678c2aeb0b2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssignedtoEmpId\"]"
+        ],
+        "source_line": [
+            235
+        ],
+        "source_column": [
+            7184
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 235,
+        "sink_column": 7184,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "e91cc20b2951efc11c590b88b6eebd5f545e30b0781ba377b0134df957b3ad35",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"AssignedTime\"]"
+        ],
+        "source_line": [
+            240
+        ],
+        "source_column": [
+            7289
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 240,
+        "sink_column": 7289,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6f1ab282d5d921cda6703e6ef214305bbd67908cf465422d0b926beb066ee8a8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"FinalReport\"]"
+        ],
+        "source_line": [
+            246
+        ],
+        "source_column": [
+            7454
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 246,
+        "sink_column": 7454,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3d46dc10495adb58af0bae84b30812dc3967e3c9b0d09c2c7312ed8183423da8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ReportUploadTime\"]"
+        ],
+        "source_line": [
+            251
+        ],
+        "source_column": [
+            7592
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 251,
+        "sink_column": 7592,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a022aa4e8ffd808b38d42c40ed9e91e4f31efe523b7e13eddb6fedb1e0a28c5a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$row[\"ReportStatus\"]"
+        ],
+        "source_line": [
+            225
+        ],
+        "source_column": [
+            6983
+        ],
+        "source_file": [
+            "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 225,
+        "sink_column": 6983,
+        "sink_file": "\/home\/kali\/Downloads\/12.COVID19-Testing-Management-System\/covid-tms\/test-details.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2952b1ad5bf79894f493d371d9e78fbe80a30a63eb8c13696580eea90dcf3035",
+        "vuln_type": "taint-style"
+    }
+]
