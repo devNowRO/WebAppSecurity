@@ -1,0 +1,3495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.HOTEL_managment</title>
+<link
+	href="1.HOTEL_managment/normalize/normalize.css" rel="stylesheet">
+<link
+	href="1.HOTEL_managment/themes/original/main.css" rel="stylesheet">
+<link
+	href="1.HOTEL_managment/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>1.HOTEL_managment</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="1.HOTEL_managment/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Fri 29 Sept 2023, at 20:36:47</span>
+		</p>
+		<p>ZAP Version: 2.12.0</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(15.4%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(23.1%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(7.7%)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(46.2%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(7.7%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(23.1%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(30.8%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(15.4%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(7.7%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(23.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(23.1%)</span></td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(61.5%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(15.4%)</span></td>
+							<td><span>13</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(6)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(13)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Absence of Anti-CSRF Tokens</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(76.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Application Error Disclosure</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(7.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>46</span><br> <span
+								class="additional-info-percentages">(353.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Directory Browsing</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(7.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Hidden File Found</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(15.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>40</span><br> <span
+								class="additional-info-percentages">(307.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Big Redirect Detected (Potential Sensitive Information Leak)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(7.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>40</span><br> <span
+								class="additional-info-percentages">(307.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>71</span><br> <span
+								class="additional-info-percentages">(546.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>64</span><br> <span
+								class="additional-info-percentages">(492.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Charset Mismatch (Header Versus Meta Content-Type Charset)</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(7.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">Modern Web Application</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(30.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-12">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>24</span><br> <span
+								class="additional-info-percentages">(184.6%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>13</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (204 bytes)</summary>
+				
+				<pre><code>GET http://localhost/robots.txt HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Hidden File Found</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/server-status</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>apache_server_status</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (207 bytes)</summary>
+				
+				<pre><code>GET http://localhost/server-status HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (180 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:32:08 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Type: text/html; charset=ISO-8859-1
+Content-Length: 49064
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (49064 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Apache Status&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Apache Server Status for localhost (via 127.0.0.1)&lt;/h1&gt;
+
+&lt;dl&gt;&lt;dt&gt;Server Version: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4&lt;/dt&gt;
+&lt;dt&gt;Server MPM: WinNT&lt;/dt&gt;
+&lt;dt&gt;Apache Lounge VS16 Server built: Mar  7 2023 13:21:03
+&lt;/dt&gt;&lt;/dl&gt;&lt;hr /&gt;&lt;dl&gt;
+&lt;dt&gt;Current Time: Friday, 29-Sep-2023 20:32:08 Pakistan Standard Time&lt;/dt&gt;
+&lt;dt&gt;Restart Time: Thursday, 21-Sep-2023 18:06:39 Pakistan Standard Time&lt;/dt&gt;
+&lt;dt&gt;Parent Server Config. Generation: 1&lt;/dt&gt;
+&lt;dt&gt;Parent Server MPM Generation: 0&lt;/dt&gt;
+&lt;dt&gt;Server uptime:  8 days 2 hours 25 minutes 28 seconds&lt;/dt&gt;
+&lt;dt&gt;Server load: -1.00 -1.00 -1.00&lt;/dt&gt;
+&lt;dt&gt;Total accesses: 1863457 - Total Traffic: 233.3 GB - Total Duration: 79862776661&lt;/dt&gt;
+&lt;dt&gt;2.66 requests/sec - 349.5 kB/second - 131.3 kB/request - 42857.3 ms/request&lt;/dt&gt;
+&lt;dt&gt;2 requests currently being processed, 148 idle workers&lt;/dt&gt;
+&lt;/dl&gt;&lt;pre&gt;_________________________________________K_W____________________
+________________________________________________________________
+______________________&lt;/pre&gt;
+&lt;p&gt;Scoreboard Key:&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;_&lt;/code&gt;&lt;/b&gt;&quot; Waiting for Connection, 
+&quot;&lt;b&gt;&lt;code&gt;S&lt;/code&gt;&lt;/b&gt;&quot; Starting up, 
+&quot;&lt;b&gt;&lt;code&gt;R&lt;/code&gt;&lt;/b&gt;&quot; Reading Request,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;W&lt;/code&gt;&lt;/b&gt;&quot; Sending Reply, 
+&quot;&lt;b&gt;&lt;code&gt;K&lt;/code&gt;&lt;/b&gt;&quot; Keepalive (read), 
+&quot;&lt;b&gt;&lt;code&gt;D&lt;/code&gt;&lt;/b&gt;&quot; DNS Lookup,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;C&lt;/code&gt;&lt;/b&gt;&quot; Closing connection, 
+&quot;&lt;b&gt;&lt;code&gt;L&lt;/code&gt;&lt;/b&gt;&quot; Logging, 
+&quot;&lt;b&gt;&lt;code&gt;G&lt;/code&gt;&lt;/b&gt;&quot; Gracefully finishing,&lt;br /&gt; 
+&quot;&lt;b&gt;&lt;code&gt;I&lt;/code&gt;&lt;/b&gt;&quot; Idle cleanup of worker, 
+&quot;&lt;b&gt;&lt;code&gt;.&lt;/code&gt;&lt;/b&gt;&quot; Open slot with no current process&lt;br /&gt;
+&lt;/p&gt;
+
+
+&lt;table border=&quot;0&quot;&gt;&lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;th&gt;PID&lt;/th&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;th&gt;M&lt;/th&gt;&lt;th&gt;SS&lt;/th&gt;&lt;th&gt;Req&lt;/th&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;th&gt;Child&lt;/th&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;th&gt;Client&lt;/th&gt;&lt;th&gt;Protocol&lt;/th&gt;&lt;th&gt;VHost&lt;/th&gt;&lt;th&gt;Request&lt;/th&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/16758/16758&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;520425&lt;/td&gt;&lt;td&gt;171&lt;/td&gt;&lt;td&gt;2995011&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;283.83&lt;/td&gt;&lt;td&gt;283.83
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /11.Blood-Bank-Donor-Management-System/bbdms/contact-blood&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/21061/21061&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;681114&lt;/td&gt;&lt;td&gt;487&lt;/td&gt;&lt;td&gt;3063934&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;361.24&lt;/td&gt;&lt;td&gt;361.24
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /45.online-dj-booking-management-system/odms/css/touchTouch&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/22229/22229&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;681114&lt;/td&gt;&lt;td&gt;1186&lt;/td&gt;&lt;td&gt;3980790&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;714.58&lt;/td&gt;&lt;td&gt;714.58
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /42.News-portal-Project/newsportal/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/10817/10817&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;681114&lt;/td&gt;&lt;td&gt;506&lt;/td&gt;&lt;td&gt;5437813&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;266.92&lt;/td&gt;&lt;td&gt;266.92
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /45.online-dj-booking-management-system/odms52603904&#39;%20or%&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/6991/6991&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;680681&lt;/td&gt;&lt;td&gt;24&lt;/td&gt;&lt;td&gt;748047&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;540.50&lt;/td&gt;&lt;td&gt;540.50
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /35.e-Diary-Management-System/edms/password-recovery.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/22923/22923&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;519202&lt;/td&gt;&lt;td&gt;24&lt;/td&gt;&lt;td&gt;3739987&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;427.79&lt;/td&gt;&lt;td&gt;427.79
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /22.Bank-locker-Managament-System/blms/css1/flexslider.css &lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/652432/652432&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;td&gt;23681935&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;41434.46&lt;/td&gt;&lt;td&gt;41434.46
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/deluxe.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/23384/23384&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;681114&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;4442069&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;284.63&lt;/td&gt;&lt;td&gt;284.63
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /45.online-dj-booking-management-system/odms&#39;%20and%20&#39;7535&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/2403/2403&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;689843&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;203282&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;550.13&lt;/td&gt;&lt;td&gt;550.13
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /17.Teacher-Subject-Allocation-System/tsas/assets/css/lib/b&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/16155/16155&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;681114&lt;/td&gt;&lt;td&gt;503&lt;/td&gt;&lt;td&gt;3545150&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;196.93&lt;/td&gt;&lt;td&gt;196.93
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /45.online-dj-booking-management-system&#39;%3bdeclare%20@q%20v&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/24281/24281&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;681114&lt;/td&gt;&lt;td&gt;1226&lt;/td&gt;&lt;td&gt;8251615&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;4665.09&lt;/td&gt;&lt;td&gt;4665.09
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /42.News-portal-Project/newsportal/admin/forgot-password.p&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/354856/354856&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;351997&lt;/td&gt;&lt;td&gt;15485&lt;/td&gt;&lt;td&gt;45926767&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;141683.53&lt;/td&gt;&lt;td&gt;141683.53
+&lt;/td&gt;&lt;td&gt;192.168.10.7&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /25.Car-Rental-Portal/carrental/profile.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/13672/13672&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;680681&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;7225800&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;457.61&lt;/td&gt;&lt;td&gt;457.61
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /41.Men-Salon-Management-System/msms/service-list.php HTTP/&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/25740/25740&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;520425&lt;/td&gt;&lt;td&gt;168&lt;/td&gt;&lt;td&gt;3627026&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1665.29&lt;/td&gt;&lt;td&gt;1665.29
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /11.Blood-Bank-Donor-Management-System/bbdms/contact-blood&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/28399/28399&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;680681&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;12271538&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1336.16&lt;/td&gt;&lt;td&gt;1336.16
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /39.Hostel-management-System/hostel/logout.php/index.php HT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/23679/23679&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;520660&lt;/td&gt;&lt;td&gt;421&lt;/td&gt;&lt;td&gt;6890396&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;750.81&lt;/td&gt;&lt;td&gt;750.81
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/24429/24429&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514556&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;11461628&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1957.25&lt;/td&gt;&lt;td&gt;1957.25
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /53.Rail-Pass-Management-System/rpms/js/SmoothScroll.min.js&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/20144/20144&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514556&lt;/td&gt;&lt;td&gt;38&lt;/td&gt;&lt;td&gt;2697758&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;429.05&lt;/td&gt;&lt;td&gt;429.05
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /53.Rail-Pass-Management-System/rpms/css/style.css HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352061064&lt;/td&gt;&lt;td&gt;704122129&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/16528/16528&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;680681&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3615144&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;194.08&lt;/td&gt;&lt;td&gt;194.08
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /39.Hostel-management-System/hostel/logout.php/dub06jvgngz1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/26307/26307&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;520246&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;6592173&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;564.20&lt;/td&gt;&lt;td&gt;564.20
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /11.Blood-Bank-Donor-Management-System/bbdms/index.php HTTP&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/13639/13639&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;685332&lt;/td&gt;&lt;td&gt;832&lt;/td&gt;&lt;td&gt;5345335&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2070.27&lt;/td&gt;&lt;td&gt;2070.27
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /40.Maid-Hiring-Management-System/mhms/assets/css/slick.css&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/15761/15761&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;682776&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2354888&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;240.89&lt;/td&gt;&lt;td&gt;240.89
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /49.Online-Fire-Reporting-System/ofrs/admin/vendor/fontawes&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/31844/31844&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514550&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;5524715&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;867.42&lt;/td&gt;&lt;td&gt;867.42
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /53.Rail-Pass-Management-System/rpms/images/overlay.png HTT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/16072/16072&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;681114&lt;/td&gt;&lt;td&gt;649&lt;/td&gt;&lt;td&gt;4656648&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;499.63&lt;/td&gt;&lt;td&gt;499.63
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /50.Online-Nurse-Hiring-System/onhs/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352131791&lt;/td&gt;&lt;td&gt;704263582&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/8/8&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;49&lt;/td&gt;&lt;td&gt;702282119&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.09&lt;/td&gt;&lt;td&gt;0.09
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/standard.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/83597/83597&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514556&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;td&gt;6400236&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;631.23&lt;/td&gt;&lt;td&gt;631.23
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /53.Rail-Pass-Management-System/rpms/css/font-awesome.css H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/20123/20123&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;520425&lt;/td&gt;&lt;td&gt;175&lt;/td&gt;&lt;td&gt;14988660&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;868.08&lt;/td&gt;&lt;td&gt;868.08
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /11.Blood-Bank-Donor-Management-System/bbdms/contact-blood&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/20202/20202&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514556&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;td&gt;5091695&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;395.19&lt;/td&gt;&lt;td&gt;395.19
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /53.Rail-Pass-Management-System/rpms/css/flexslider.css HTT&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/18509/18509&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514556&lt;/td&gt;&lt;td&gt;67&lt;/td&gt;&lt;td&gt;3721115&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1439.93&lt;/td&gt;&lt;td&gt;1439.93
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /53.Rail-Pass-Management-System/rpms/js/jarallax.js HTTP/1.&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/11/11&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;163&lt;/td&gt;&lt;td&gt;702501647&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/image/4352_1.jpg HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/21870/21870&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;676682&lt;/td&gt;&lt;td&gt;453&lt;/td&gt;&lt;td&gt;3703239&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;508.40&lt;/td&gt;&lt;td&gt;508.40
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /25.Car-Rental-Portal/carrental/page.php?type=z4lkw$%7b632&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/26290/26290&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514526&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;6371707&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;443.84&lt;/td&gt;&lt;td&gt;443.84
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /52.Pre-School-Enrollment-System/preschool/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351540663&lt;/td&gt;&lt;td&gt;703081327&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/16680/16680&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;680681&lt;/td&gt;&lt;td&gt;717&lt;/td&gt;&lt;td&gt;2964234&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;559.11&lt;/td&gt;&lt;td&gt;559.11
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /33.Dairy-Farm-Shop-Management-System/dfsms/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/59/59&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;99&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;702662071&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.06&lt;/td&gt;&lt;td&gt;0.06
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/image HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/4/4&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;734&lt;/td&gt;&lt;td&gt;702261924&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/login.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/12139/12139&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;686862&lt;/td&gt;&lt;td&gt;1096&lt;/td&gt;&lt;td&gt;2768985&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;855.20&lt;/td&gt;&lt;td&gt;855.20
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /56.Tourism-Management-System/tms/admin/index.php/1&#39;%2bsle&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/12440/12440&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;680680&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;2431078&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;185.08&lt;/td&gt;&lt;td&gt;185.08
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /24.Bus-Pass-Management-System/buspassms/contact.php HTTP/1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/13/13&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;72&lt;/td&gt;&lt;td&gt;702343889&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.15&lt;/td&gt;&lt;td&gt;0.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/image/310042_137777_1156182440.jpg&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;55/181/181&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;702822153&lt;/td&gt;&lt;td&gt;28.6&lt;/td&gt;&lt;td&gt;0.44&lt;/td&gt;&lt;td&gt;0.44
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /lfm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/32/32&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;135&lt;/td&gt;&lt;td&gt;702421816&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.11&lt;/td&gt;&lt;td&gt;0.11
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/image/delicacy.jpg HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;19/207/207&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;702443564&lt;/td&gt;&lt;td&gt;5.7&lt;/td&gt;&lt;td&gt;0.56&lt;/td&gt;&lt;td&gt;0.56
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /server-status HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/24587/24587&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;514496&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;6853494&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;483.59&lt;/td&gt;&lt;td&gt;483.59
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /52.Pre-School-Enrollment-System/preschool/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/18333/18333&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;520425&lt;/td&gt;&lt;td&gt;171&lt;/td&gt;&lt;td&gt;8186836&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;267.69&lt;/td&gt;&lt;td&gt;267.69
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /11.Blood-Bank-Donor-Management-System/bbdms/contact-blood&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/10/10&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;135&lt;/td&gt;&lt;td&gt;702522748&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/suite.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/20/20&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;158&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;702201620&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.35&lt;/td&gt;&lt;td&gt;0.35
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /php-ocls/plugins/datatables-responsive/js/responsive.boots&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/29/29&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;158&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;702180663&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.04&lt;/td&gt;&lt;td&gt;0.04
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /php-ocls/dist/js/adminlte.js HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/8/8&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;79&lt;/td&gt;&lt;td&gt;702602448&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;0.02
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/image/dining2.jpg HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/637/637&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353181534&lt;/td&gt;&lt;td&gt;706388160&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;7.97&lt;/td&gt;&lt;td&gt;7.97
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352411909&lt;/td&gt;&lt;td&gt;704823819&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/3/3&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;179&lt;/td&gt;&lt;td&gt;702762371&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/r3.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/12/12&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;82&lt;/td&gt;&lt;td&gt;702362047&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.07&lt;/td&gt;&lt;td&gt;0.07
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/image/dining1.jpg HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351420615&lt;/td&gt;&lt;td&gt;702841231&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351490217&lt;/td&gt;&lt;td&gt;702980435&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351891712&lt;/td&gt;&lt;td&gt;703783424&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352571952&lt;/td&gt;&lt;td&gt;705143905&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/9115/9115&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;685332&lt;/td&gt;&lt;td&gt;790&lt;/td&gt;&lt;td&gt;2830081&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;4905.49&lt;/td&gt;&lt;td&gt;4905.49
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /40.Maid-Hiring-Management-System/mhms/assets/css/fontaweso&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351530230&lt;/td&gt;&lt;td&gt;703060460&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/41814/41814&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;676682&lt;/td&gt;&lt;td&gt;485&lt;/td&gt;&lt;td&gt;8197310&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;7712.71&lt;/td&gt;&lt;td&gt;7712.71
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /25.Car-Rental-Portal/carrental/vehical-details.php?vhid=h&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352691986&lt;/td&gt;&lt;td&gt;705383973&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351580677&lt;/td&gt;&lt;td&gt;703161354&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352781321&lt;/td&gt;&lt;td&gt;705562643&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/13/13&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;242&lt;/td&gt;&lt;td&gt;702581688&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/r1.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351691648&lt;/td&gt;&lt;td&gt;703383296&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/74/74&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351620682&lt;/td&gt;&lt;td&gt;703242742&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.18&lt;/td&gt;&lt;td&gt;0.18
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351700715&lt;/td&gt;&lt;td&gt;703401430&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351660697&lt;/td&gt;&lt;td&gt;703321395&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/3/3&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;356&lt;/td&gt;&lt;td&gt;702682375&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/b4.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/3/3&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;153&lt;/td&gt;&lt;td&gt;86&lt;/td&gt;&lt;td&gt;702741493&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /1.HOTEL_managment/HOTEL/image/caption.jpg HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/5128/5128&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352181104&lt;/td&gt;&lt;td&gt;706828416&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;9660.56&lt;/td&gt;&lt;td&gt;9660.56
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351740730&lt;/td&gt;&lt;td&gt;703481461&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351780750&lt;/td&gt;&lt;td&gt;703561500&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351931728&lt;/td&gt;&lt;td&gt;703863456&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351940818&lt;/td&gt;&lt;td&gt;703881637&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351900798&lt;/td&gt;&lt;td&gt;703801596&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/962/962&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352941398&lt;/td&gt;&lt;td&gt;705907886&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;23.36&lt;/td&gt;&lt;td&gt;23.36
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351851703&lt;/td&gt;&lt;td&gt;703703406&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351450210&lt;/td&gt;&lt;td&gt;702900419&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351860788&lt;/td&gt;&lt;td&gt;703721577&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351460640&lt;/td&gt;&lt;td&gt;702921281&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351500645&lt;/td&gt;&lt;td&gt;703001290&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352011745&lt;/td&gt;&lt;td&gt;704023491&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352651976&lt;/td&gt;&lt;td&gt;705303952&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351570250&lt;/td&gt;&lt;td&gt;703140500&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/2/2&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352051754&lt;/td&gt;&lt;td&gt;704128458&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352812058&lt;/td&gt;&lt;td&gt;705624117&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351610262&lt;/td&gt;&lt;td&gt;703220525&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351650261&lt;/td&gt;&lt;td&gt;703300523&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352141087&lt;/td&gt;&lt;td&gt;704282175&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352171813&lt;/td&gt;&lt;td&gt;704343626&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352901385&lt;/td&gt;&lt;td&gt;705802771&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352221131&lt;/td&gt;&lt;td&gt;704442260&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352981425&lt;/td&gt;&lt;td&gt;705962850&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352261143&lt;/td&gt;&lt;td&gt;704522286&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351731660&lt;/td&gt;&lt;td&gt;703463321&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352381177&lt;/td&gt;&lt;td&gt;704762354&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352291874&lt;/td&gt;&lt;td&gt;704583748&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/88/88&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353101490&lt;/td&gt;&lt;td&gt;706210570&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.64&lt;/td&gt;&lt;td&gt;0.64
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351771664&lt;/td&gt;&lt;td&gt;703543328&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352371896&lt;/td&gt;&lt;td&gt;704743792&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/4/4&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353541697&lt;/td&gt;&lt;td&gt;707083783&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;0.02
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351811680&lt;/td&gt;&lt;td&gt;703623360&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351820766&lt;/td&gt;&lt;td&gt;703641533&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/index.php H&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1205/1205&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353501669&lt;/td&gt;&lt;td&gt;707023472&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;7.72&lt;/td&gt;&lt;td&gt;7.72
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352501221&lt;/td&gt;&lt;td&gt;705002443&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/22/22&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353621735&lt;/td&gt;&lt;td&gt;707247906&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.20&lt;/td&gt;&lt;td&gt;0.20
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/231/231&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353261563&lt;/td&gt;&lt;td&gt;706537502&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.28&lt;/td&gt;&lt;td&gt;2.28
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351981020&lt;/td&gt;&lt;td&gt;703962041&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/65079/65079&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353461655&lt;/td&gt;&lt;td&gt;709366905&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;6631.97&lt;/td&gt;&lt;td&gt;6631.97
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/410/410&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353341607&lt;/td&gt;&lt;td&gt;706720364&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.15&lt;/td&gt;&lt;td&gt;3.15
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/326/326&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353381625&lt;/td&gt;&lt;td&gt;706789021&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.98&lt;/td&gt;&lt;td&gt;1.98
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352621270&lt;/td&gt;&lt;td&gt;705242541&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;351971745&lt;/td&gt;&lt;td&gt;703943490&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352661277&lt;/td&gt;&lt;td&gt;705322554&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/4/4&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352021041&lt;/td&gt;&lt;td&gt;704043805&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352701301&lt;/td&gt;&lt;td&gt;705402600&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352772029&lt;/td&gt;&lt;td&gt;705544059&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352741313&lt;/td&gt;&lt;td&gt;705482626&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352732011&lt;/td&gt;&lt;td&gt;705464023&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352091774&lt;/td&gt;&lt;td&gt;704183548&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352101075&lt;/td&gt;&lt;td&gt;704202149&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352852062&lt;/td&gt;&lt;td&gt;705704125&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352821338&lt;/td&gt;&lt;td&gt;705642676&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352861361&lt;/td&gt;&lt;td&gt;705722720&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352892069&lt;/td&gt;&lt;td&gt;705784138&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352211823&lt;/td&gt;&lt;td&gt;704423647&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352972097&lt;/td&gt;&lt;td&gt;705944194&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352251855&lt;/td&gt;&lt;td&gt;704503710&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/49/49&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353012098&lt;/td&gt;&lt;td&gt;706024824&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.09&lt;/td&gt;&lt;td&gt;0.09
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/205/205&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353061481&lt;/td&gt;&lt;td&gt;706131393&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.50&lt;/td&gt;&lt;td&gt;1.50
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352301164&lt;/td&gt;&lt;td&gt;704602328&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352331888&lt;/td&gt;&lt;td&gt;704663776&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/726/726&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353581709&lt;/td&gt;&lt;td&gt;707385501&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;12.94&lt;/td&gt;&lt;td&gt;12.94
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352341163&lt;/td&gt;&lt;td&gt;704682327&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/345/345&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353141515&lt;/td&gt;&lt;td&gt;706300833&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;43.49&lt;/td&gt;&lt;td&gt;43.49
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/20100/20100&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352491943&lt;/td&gt;&lt;td&gt;705909831&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;648.87&lt;/td&gt;&lt;td&gt;648.87
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/2924/2924&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353301595&lt;/td&gt;&lt;td&gt;706823025&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;37.97&lt;/td&gt;&lt;td&gt;37.97
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352451925&lt;/td&gt;&lt;td&gt;704903851&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352421197&lt;/td&gt;&lt;td&gt;704842394&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/635/635&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352932075&lt;/td&gt;&lt;td&gt;705877931&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;10.14&lt;/td&gt;&lt;td&gt;10.14
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/2/2&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352461210&lt;/td&gt;&lt;td&gt;704922452&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.03
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1333/1333&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353421628&lt;/td&gt;&lt;td&gt;706900596&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;12.52&lt;/td&gt;&lt;td&gt;12.52
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352531937&lt;/td&gt;&lt;td&gt;705063875&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352541248&lt;/td&gt;&lt;td&gt;705082495&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/6003/6003&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353221549&lt;/td&gt;&lt;td&gt;706577008&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;76.63&lt;/td&gt;&lt;td&gt;76.63
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352581249&lt;/td&gt;&lt;td&gt;705162498&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/73/73&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;353021435&lt;/td&gt;&lt;td&gt;706052150&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.83&lt;/td&gt;&lt;td&gt;0.83
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/search-result.php&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19900&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;344917&lt;/td&gt;&lt;td&gt;352611966&lt;/td&gt;&lt;td&gt;705223932&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;www.example.com:443&lt;/td&gt;&lt;td nowrap&gt;POST /54.Restaurant-Table-Booking-System/rtbs/admin/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+ &lt;hr /&gt; &lt;table&gt;
+ &lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;td&gt;Child Server number - generation&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;PID&lt;/th&gt;&lt;td&gt;OS process ID&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;td&gt;Number of accesses this connection / this child / this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;M&lt;/th&gt;&lt;td&gt;Mode of operation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;SS&lt;/th&gt;&lt;td&gt;Seconds since beginning of most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Req&lt;/th&gt;&lt;td&gt;Milliseconds required to process most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;td&gt;Sum of milliseconds required to process all requests&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;td&gt;Kilobytes transferred this connection&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Child&lt;/th&gt;&lt;td&gt;Megabytes transferred this child&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;td&gt;Total megabytes transferred this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;/table&gt;
+&lt;hr&gt;
+&lt;table cellspacing=0 cellpadding=0&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#000000&quot;&gt;
+&lt;b&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Arial,Helvetica&quot;&gt;SSL/TLS Session Cache Status:&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot;&gt;
+cache type: &lt;b&gt;SHMCB&lt;/b&gt;, shared memory: &lt;b&gt;512000&lt;/b&gt; bytes, current entries: &lt;b&gt;11&lt;/b&gt;&lt;br&gt;subcaches: &lt;b&gt;32&lt;/b&gt;, indexes per subcache: &lt;b&gt;88&lt;/b&gt;&lt;br&gt;time left on oldest entries&#39; objects: avg: &lt;b&gt;104&lt;/b&gt; seconds, (range: 100...105)&lt;br&gt;index usage: &lt;b&gt;0%&lt;/b&gt;, cache usage: &lt;b&gt;0%&lt;/b&gt;&lt;br&gt;total entries stored since starting: &lt;b&gt;52544&lt;/b&gt;&lt;br&gt;total entries replaced since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries expired since starting: &lt;b&gt;36905&lt;/b&gt;&lt;br&gt;total (pre-expiry) entries scrolled out of the cache: &lt;b&gt;15540&lt;/b&gt;&lt;br&gt;total retrieves since starting: &lt;b&gt;833&lt;/b&gt; hit, &lt;b&gt;91&lt;/b&gt; miss&lt;br&gt;total removes since starting: &lt;b&gt;88&lt;/b&gt; hit, &lt;b&gt;125&lt;/b&gt; miss&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Consider whether or not the component is actually required in production, if it isn&#39;t then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Application Error Disclosure</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces">WSTG-v42-ERRH-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling">WSTG-v42-ERRH-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (279 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/login.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://localhost/1.HOTEL_managment/HOTEL/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (198 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 136
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (136 bytes)</summary>
+				
+				<pre><code>&lt;br /&gt;
+&lt;b&gt;Parse error&lt;/b&gt;:  Unclosed &#39;{&#39; on line 69 in &lt;b&gt;C:\xampp\htdocs\1.HOTEL_managment\HOTEL\login.php&lt;/b&gt; on line &lt;b&gt;84&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;b&gt;Parse error&lt;/b&gt;:  Unclosed &#39;{&#39; on line 69 in &lt;b&gt;C:\xampp\htdocs\1.HOTEL_managment\HOTEL\login.php&lt;/b&gt; on line &lt;b&gt;84&lt;/b&gt;&lt;br /&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Directory Browsing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/image/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>It is possible to view the directory listing.  Directory listing may reveal hidden scripts, include files, backup source files, etc. which can be accessed to read sensitive information.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (276 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/image/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://localhost/1.HOTEL_managment/HOTEL/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (173 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:31:36 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Content-Type: text/html;charset=UTF-8
+Content-Length: 9515
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (9515 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Index of /1.HOTEL_managment/HOTEL/image&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+&lt;h1&gt;Index of /1.HOTEL_managment/HOTEL/image&lt;/h1&gt;
+  &lt;table&gt;
+   &lt;tr&gt;&lt;th valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/blank.gif&quot; alt=&quot;[ICO]&quot;&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=N;O=D&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=M;O=A&quot;&gt;Last modified&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=S;O=A&quot;&gt;Size&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=D;O=A&quot;&gt;Description&lt;/a&gt;&lt;/th&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan=&quot;5&quot;&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/back.gif&quot; alt=&quot;[PARENTDIR]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;/1.HOTEL_managment/HOTEL/&quot;&gt;Parent Directory&lt;/a&gt;       &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;1.gif&quot;&gt;1.gif&lt;/a&gt;                  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 29K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;273-2-zoom-1-aminta-grand-hotel-sorrento-lounge.jpg&quot;&gt;273-2-zoom-1-aminta-..&amp;gt;&lt;/a&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 31K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;1234.jpg&quot;&gt;1234.jpg&lt;/a&gt;               &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 49K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;4352_1.jpg&quot;&gt;4352_1.jpg&lt;/a&gt;             &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 15K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;310042_137777_1156182440.jpg&quot;&gt;310042_137777_115618..&amp;gt;&lt;/a&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 25K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Yuvraj-Surat.jpg&quot;&gt;Yuvraj-Surat.jpg&lt;/a&gt;       &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 16K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;bar-lobby-of-the-hotel.jpg&quot;&gt;bar-lobby-of-the-hot..&amp;gt;&lt;/a&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 39K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;caption.jpg&quot;&gt;caption.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 33K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;delicacy.jpg&quot;&gt;delicacy.jpg&lt;/a&gt;           &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.7K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;dining1.jpg&quot;&gt;dining1.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.5K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;dining2.jpg&quot;&gt;dining2.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;5.2K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;dining3.jpg&quot;&gt;dining3.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.6K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;dining4.jpg&quot;&gt;dining4.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;8.7K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;dubai_hotel_001p.jpg&quot;&gt;dubai_hotel_001p.jpg&lt;/a&gt;   &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 42K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;exe1.jpg&quot;&gt;exe1.jpg&lt;/a&gt;               &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2.6K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hbusicent.jpg&quot;&gt;hbusicent.jpg&lt;/a&gt;          &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.4K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hdefault.jpg&quot;&gt;hdefault.jpg&lt;/a&gt;           &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.7K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hdining.jpg&quot;&gt;hdining.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 71K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;helegance.jpg&quot;&gt;helegance.jpg&lt;/a&gt;          &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.6K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hmarriage.jpg&quot;&gt;hmarriage.jpg&lt;/a&gt;          &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.4K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hmeetings.jpg&quot;&gt;hmeetings.jpg&lt;/a&gt;          &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.7K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hoverview.jpg&quot;&gt;hoverview.jpg&lt;/a&gt;          &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.0K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hrooms.jpg&quot;&gt;hrooms.jpg&lt;/a&gt;             &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.1K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;hsuites.jpg&quot;&gt;hsuites.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;5.5K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;im8ages.jpg&quot;&gt;im8ages.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.8K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;ima2ges.jpg&quot;&gt;ima2ges.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2.5K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;image111s.jpg&quot;&gt;image111s.jpg&lt;/a&gt;          &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.4K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;images1.jpg&quot;&gt;images1.jpg&lt;/a&gt;            &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2.3K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;little-india-hotels-5.jpg&quot;&gt;little-india-hotels-..&amp;gt;&lt;/a&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 31K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;meeting1.jpg&quot;&gt;meeting1.jpg&lt;/a&gt;           &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2.8K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;meeting2.jpg&quot;&gt;meeting2.jpg&lt;/a&gt;           &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.3K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;meeting3.jpg&quot;&gt;meeting3.jpg&lt;/a&gt;           &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.4K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;meeting4.jpg&quot;&gt;meeting4.jpg&lt;/a&gt;           &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;6.8K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;p01.jpg&quot;&gt;p01.jpg&lt;/a&gt;                &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 18K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;pic5.jpg&quot;&gt;pic5.jpg&lt;/a&gt;               &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2.3K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;piccolino_hotel_10.jpg&quot;&gt;piccolino_hotel_10.jpg&lt;/a&gt; &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt; 40K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;regal3.jpg&quot;&gt;regal3.jpg&lt;/a&gt;             &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.5K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;regal4.jpg&quot;&gt;regal4.jpg&lt;/a&gt;             &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.5K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;std1.jpg&quot;&gt;std1.jpg&lt;/a&gt;               &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2.7K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/image2.gif&quot; alt=&quot;[IMG]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;superior.jpg&quot;&gt;superior.jpg&lt;/a&gt;           &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2023-08-14 19:43  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;3.1K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan=&quot;5&quot;&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>http://localhost/1.HOTEL_managment/HOTEL/image/</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Parent Directory</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Disable directory browsing.  If this is required, make sure the listed files does not induce risks.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (218 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (199 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 1133
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1133 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;index page&lt;/title&gt;
+	&lt;script language=&quot;javascript&quot;&gt;
+	function mouseover()
+	{
+		document.getElementById(&quot;img1&quot;).height=350;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	function mouseout()
+	{
+		document.getElementById(&quot;img1&quot;).height=200;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#fff2e5&quot;&gt;
+&lt;body&gt;
+	&lt;marquee behavior=alternate bgcolor=&quot;#7e0000&quot;&gt;&lt;font color=white&gt;&lt;b&gt;&lt;i&gt;WELCOME TO HOTEL PARAS&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/marquee&gt;
+	
+	&lt;form&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;img src=&quot;image/1234.jpg&quot; name=&quot;img1&quot; width=1386 height=216 id=img1 onMouseOver=&quot;mouseover()&quot; onMouseOut=&quot;mouseout()&quot;&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td align=center&gt;&lt;a href=home.php&gt;Home&lt;/a&gt;	|
+			&lt;a href=location.php&gt;Location&lt;/a&gt;	|
+			&lt;a href=accommodation.php&gt;Accomodation&lt;/a&gt;	|
+			&lt;a href=tariff.php&gt;Tariff &amp; Policies&lt;/a&gt;	|
+			&lt;a href=restaurant.php&gt;Restaurant&lt;/a&gt;	|
+			&lt;a href=bancon.php&gt;Banquet &amp; Conforance&lt;/a&gt;	|
+			&lt;a href=aboutus.php&gt;About us&lt;/a&gt;  |
+			&lt;a href=login.php&gt;Login&lt;/a&gt;  |
+			&lt;a href=feedback.php&gt;feedback&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/form&gt;
+	&lt;/table&gt;
+
+&lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Frame-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Absence of Anti-CSRF Tokens</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No Anti-CSRF tokens were found in a HTML submission form.</p>
+
+<p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p>
+
+<p>CSRF attacks are effective in a number of situations, including:</p>
+
+<p>    * The victim has an active session on the target site.</p>
+
+<p>    * The victim is authenticated via HTTP auth on the target site.</p>
+
+<p>    * The victim is on the same local network as the target site.</p>
+
+<p>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;&quot; ].</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (218 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (199 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 1133
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1133 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;index page&lt;/title&gt;
+	&lt;script language=&quot;javascript&quot;&gt;
+	function mouseover()
+	{
+		document.getElementById(&quot;img1&quot;).height=350;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	function mouseout()
+	{
+		document.getElementById(&quot;img1&quot;).height=200;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#fff2e5&quot;&gt;
+&lt;body&gt;
+	&lt;marquee behavior=alternate bgcolor=&quot;#7e0000&quot;&gt;&lt;font color=white&gt;&lt;b&gt;&lt;i&gt;WELCOME TO HOTEL PARAS&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/marquee&gt;
+	
+	&lt;form&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;img src=&quot;image/1234.jpg&quot; name=&quot;img1&quot; width=1386 height=216 id=img1 onMouseOver=&quot;mouseover()&quot; onMouseOut=&quot;mouseout()&quot;&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td align=center&gt;&lt;a href=home.php&gt;Home&lt;/a&gt;	|
+			&lt;a href=location.php&gt;Location&lt;/a&gt;	|
+			&lt;a href=accommodation.php&gt;Accomodation&lt;/a&gt;	|
+			&lt;a href=tariff.php&gt;Tariff &amp; Policies&lt;/a&gt;	|
+			&lt;a href=restaurant.php&gt;Restaurant&lt;/a&gt;	|
+			&lt;a href=bancon.php&gt;Banquet &amp; Conforance&lt;/a&gt;	|
+			&lt;a href=aboutus.php&gt;About us&lt;/a&gt;  |
+			&lt;a href=login.php&gt;Login&lt;/a&gt;  |
+			&lt;a href=feedback.php&gt;feedback&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/form&gt;
+	&lt;/table&gt;
+
+&lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Use the ESAPI Session Management control.</p>
+
+<p>This control includes a component for CSRF.</p>
+
+<p>Do not use the GET method for any request that triggers a state change.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (217 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (246 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 301 Moved Permanently
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Location: http://localhost/1.HOTEL_managment/HOTEL/
+Content-Length: 348
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (348 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;301 Moved Permanently&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Moved Permanently&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://localhost/1.HOTEL_managment/HOTEL/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Big Redirect Detected (Potential Sensitive Information Leak)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Location header URI length: 41 [http://localhost/1.HOTEL_managment/HOTEL/].</p>
+
+<p>Predicted response size: 341.</p>
+
+<p>Response Body Length: 348.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (217 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (246 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 301 Moved Permanently
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+Location: http://localhost/1.HOTEL_managment/HOTEL/
+Content-Length: 348
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (348 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;301 Moved Permanently&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Moved Permanently&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://localhost/1.HOTEL_managment/HOTEL/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (218 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (199 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 1133
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1133 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;index page&lt;/title&gt;
+	&lt;script language=&quot;javascript&quot;&gt;
+	function mouseover()
+	{
+		document.getElementById(&quot;img1&quot;).height=350;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	function mouseout()
+	{
+		document.getElementById(&quot;img1&quot;).height=200;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#fff2e5&quot;&gt;
+&lt;body&gt;
+	&lt;marquee behavior=alternate bgcolor=&quot;#7e0000&quot;&gt;&lt;font color=white&gt;&lt;b&gt;&lt;i&gt;WELCOME TO HOTEL PARAS&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/marquee&gt;
+	
+	&lt;form&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;img src=&quot;image/1234.jpg&quot; name=&quot;img1&quot; width=1386 height=216 id=img1 onMouseOver=&quot;mouseover()&quot; onMouseOut=&quot;mouseout()&quot;&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td align=center&gt;&lt;a href=home.php&gt;Home&lt;/a&gt;	|
+			&lt;a href=location.php&gt;Location&lt;/a&gt;	|
+			&lt;a href=accommodation.php&gt;Accomodation&lt;/a&gt;	|
+			&lt;a href=tariff.php&gt;Tariff &amp; Policies&lt;/a&gt;	|
+			&lt;a href=restaurant.php&gt;Restaurant&lt;/a&gt;	|
+			&lt;a href=bancon.php&gt;Banquet &amp; Conforance&lt;/a&gt;	|
+			&lt;a href=aboutus.php&gt;About us&lt;/a&gt;  |
+			&lt;a href=login.php&gt;Login&lt;/a&gt;  |
+			&lt;a href=feedback.php&gt;feedback&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/form&gt;
+	&lt;/table&gt;
+
+&lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.2.4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (218 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (199 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 1133
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1133 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;index page&lt;/title&gt;
+	&lt;script language=&quot;javascript&quot;&gt;
+	function mouseover()
+	{
+		document.getElementById(&quot;img1&quot;).height=350;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	function mouseout()
+	{
+		document.getElementById(&quot;img1&quot;).height=200;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#fff2e5&quot;&gt;
+&lt;body&gt;
+	&lt;marquee behavior=alternate bgcolor=&quot;#7e0000&quot;&gt;&lt;font color=white&gt;&lt;b&gt;&lt;i&gt;WELCOME TO HOTEL PARAS&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/marquee&gt;
+	
+	&lt;form&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;img src=&quot;image/1234.jpg&quot; name=&quot;img1&quot; width=1386 height=216 id=img1 onMouseOver=&quot;mouseover()&quot; onMouseOut=&quot;mouseout()&quot;&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td align=center&gt;&lt;a href=home.php&gt;Home&lt;/a&gt;	|
+			&lt;a href=location.php&gt;Location&lt;/a&gt;	|
+			&lt;a href=accommodation.php&gt;Accomodation&lt;/a&gt;	|
+			&lt;a href=tariff.php&gt;Tariff &amp; Policies&lt;/a&gt;	|
+			&lt;a href=restaurant.php&gt;Restaurant&lt;/a&gt;	|
+			&lt;a href=bancon.php&gt;Banquet &amp; Conforance&lt;/a&gt;	|
+			&lt;a href=aboutus.php&gt;About us&lt;/a&gt;  |
+			&lt;a href=login.php&gt;Login&lt;/a&gt;  |
+			&lt;a href=feedback.php&gt;feedback&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/form&gt;
+	&lt;/table&gt;
+
+&lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/standard1.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (300 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/standard1.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://localhost/1.HOTEL_managment/HOTEL/accommodation.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (199 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 1807
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1807 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;standard1&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#fff2e5&quot;&gt;
+	&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;room&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+	&lt;a href=suite1.php&gt;Suite	|&lt;a/&gt;
+	&lt;a href=superdeluxe1.php&gt;Superdeluxe	|&lt;/a&gt;
+	&lt;a href=deluxe1.php&gt;Deluxe	|&lt;/a&gt;
+	&lt;a href=standard1.php&gt;Standard&lt;/a&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;	&lt;h3 align=center&gt;&lt;font color=chocolate&gt;STANDARD ROOM&lt;/font&gt;&lt;/h3&gt;
+	&lt;center&gt;&lt;a href=standard.php&gt;&lt;img src=&quot;image/piccolino_hotel_10.jpg&quot; width=446 height=297&gt;&lt;/a&gt;
+	&lt;/center&gt;
+	&lt;table border=0&gt;
+	&lt;tr&gt;
+		&lt;th&gt;&lt;font size=4&gt;Location:4&lt;sup&gt;th&lt;/sup&gt;floor&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;&lt;font size=4&gt;size:12&lt;sup&gt;&#39;&lt;/sup&gt;00&lt;sup&gt;&quot;&lt;/sup&gt;*11&lt;sup&gt;&#39;&lt;/sup&gt;6&lt;sup&gt;&quot;&lt;/sup&gt;&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;/table&gt;
+	&lt;br&gt;&lt;br&gt;
+	&lt;table align=center&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+		&lt;ul type=square&gt;
+			&lt;li&gt;&lt;font color=&quot;#7c0000&quot; size=4&gt;Room&lt;/font&gt;
+		&lt;font color=&quot;choco&quot;&gt;
+		&lt;ul type=disc&gt;
+			&lt;li&gt;Single/Twin bed.
+			&lt;li&gt;Individually controlled air conditioning.
+			&lt;li&gt;Direct access internet.
+			&lt;li&gt;21&lt;sup&gt;th&lt;/sup&gt;flat interactive television.
+			&lt;li&gt;Electronic door locks.
+			&lt;li&gt;Satelight entertainment &amp; new channels.
+			&lt;li&gt;Fully stocked minibar.
+			&lt;li&gt;Direct IDD telephone with voicemail.		
+			&lt;li&gt;Laptop compatible digital safe.
+			&lt;li&gt;Tiles flooring.
+			&lt;li&gt;Data port on telephone.
+			&lt;li&gt;Power socket on besides and desk.
+			&lt;li&gt;Separate luggage area with luggage rack.
+			&lt;li&gt;Daily complimentary newspaper.
+			&lt;li&gt;Room locar facalities.
+		&lt;/ul&gt;
+		&lt;li&gt;&lt;font color=&quot;#7c0000&quot; size=4&gt;Bathroom&lt;/font&gt;
+		&lt;ul type=disc&gt;
+			&lt;li&gt;ensuite bathroom.
+			&lt;li&gt;Bath tubs.
+			&lt;li&gt;Cosmetic mirror.
+			&lt;li&gt;Hair dryer.
+			&lt;li&gt;Weighing scale.
+			&lt;li&gt;Power socket.
+			&lt;li&gt;Running hot &amp; cold water in showers.			
+		&lt;/ul&gt;
+		&lt;/ul&gt;
+		&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;a href=accommodation.php&gt;home&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+			
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;a/&gt;
+	</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-12">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (181 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL HTTP/1.1
+Host: localhost
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (199 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:32:14 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 1133
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1133 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;index page&lt;/title&gt;
+	&lt;script language=&quot;javascript&quot;&gt;
+	function mouseover()
+	{
+		document.getElementById(&quot;img1&quot;).height=350;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	function mouseout()
+	{
+		document.getElementById(&quot;img1&quot;).height=200;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#fff2e5&quot;&gt;
+&lt;body&gt;
+	&lt;marquee behavior=alternate bgcolor=&quot;#7e0000&quot;&gt;&lt;font color=white&gt;&lt;b&gt;&lt;i&gt;WELCOME TO HOTEL PARAS&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/marquee&gt;
+	
+	&lt;form&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;img src=&quot;image/1234.jpg&quot; name=&quot;img1&quot; width=1386 height=216 id=img1 onMouseOver=&quot;mouseover()&quot; onMouseOut=&quot;mouseout()&quot;&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td align=center&gt;&lt;a href=home.php&gt;Home&lt;/a&gt;	|
+			&lt;a href=location.php&gt;Location&lt;/a&gt;	|
+			&lt;a href=accommodation.php&gt;Accomodation&lt;/a&gt;	|
+			&lt;a href=tariff.php&gt;Tariff &amp; Policies&lt;/a&gt;	|
+			&lt;a href=restaurant.php&gt;Restaurant&lt;/a&gt;	|
+			&lt;a href=bancon.php&gt;Banquet &amp; Conforance&lt;/a&gt;	|
+			&lt;a href=aboutus.php&gt;About us&lt;/a&gt;  |
+			&lt;a href=login.php&gt;Login&lt;/a&gt;  |
+			&lt;a href=feedback.php&gt;feedback&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/form&gt;
+	&lt;/table&gt;
+
+&lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Charset Mismatch (Header Versus Meta Content-Type Charset)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/1.HOTEL_managment/HOTEL/contectus.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there&#39;s a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content&#39;s correct character set.</p>
+
+<p>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>There was a charset mismatch between the HTTP Header and the META content-type encoding declarations: [UTF-8] and [iso-8859-1] do not match.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (295 bytes)</summary>
+				
+				<pre><code>GET http://localhost/1.HOTEL_managment/HOTEL/contectus.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64; rv:105.0esr) Gecko/20010101 Firefox/105.0esr
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://localhost/1.HOTEL_managment/HOTEL/location.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (199 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 29 Sep 2023 15:29:26 GMT
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By: PHP/8.2.4
+Content-Length: 3915
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3915 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;
+&lt;title&gt;Untitled Document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body bgcolor=&quot;#fff2e5&quot; alink=&quot;#0000FF&quot; vlink=&quot;#0000FF&quot;&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;index page&lt;/title&gt;
+	&lt;script language=&quot;javascript&quot;&gt;
+	function mouseover()
+	{
+		document.getElementById(&quot;img1&quot;).height=350;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	function mouseout()
+	{
+		document.getElementById(&quot;img1&quot;).height=200;
+		document.getElementById(&quot;img1&quot;).width=1050;
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#fff2e5&quot;&gt;
+&lt;body&gt;
+	&lt;marquee behavior=alternate bgcolor=&quot;#7e0000&quot;&gt;&lt;font color=white&gt;&lt;b&gt;&lt;i&gt;WELCOME TO HOTEL PARAS&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/marquee&gt;
+	
+	&lt;form&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;img src=&quot;image/1234.jpg&quot; name=&quot;img1&quot; width=1386 height=216 id=img1 onMouseOver=&quot;mouseover()&quot; onMouseOut=&quot;mouseout()&quot;&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td align=center&gt;&lt;a href=home.php&gt;Home&lt;/a&gt;	|
+			&lt;a href=location.php&gt;Location&lt;/a&gt;	|
+			&lt;a href=accommodation.php&gt;Accomodation&lt;/a&gt;	|
+			&lt;a href=tariff.php&gt;Tariff &amp; Policies&lt;/a&gt;	|
+			&lt;a href=restaurant.php&gt;Restaurant&lt;/a&gt;	|
+			&lt;a href=bancon.php&gt;Banquet &amp; Conforance&lt;/a&gt;	|
+			&lt;a href=aboutus.php&gt;About us&lt;/a&gt;  |
+			&lt;a href=login.php&gt;Login&lt;/a&gt;  |
+			&lt;a href=feedback.php&gt;feedback&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/form&gt;
+	&lt;/table&gt;
+
+&lt;/body&gt;
+	
+&lt;/html&gt;
+&lt;p&gt;&lt;em&gt;&lt;font color=&quot;#FF9900&quot;&gt;&lt;strong&gt;&lt;u&gt;&lt;font size=&quot;7&quot;&gt;&lt;font face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Contact Us&lt;/font&gt;&lt;/font&gt;&lt;/u&gt;&lt;/strong&gt; &lt;/font&gt;&lt;/em&gt;&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;font color=&quot;#FFCC00&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#FF0066&quot; size=&quot;5&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Connect Publishers Pvt. Ltd .&lt;/font&gt;&lt;/strong&gt;&lt;/font&gt;&lt;/em&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;font color=&quot;#FF0066&quot; size=&quot;5&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt; &lt;/font&gt;&lt;/strong&gt;&lt;/em&gt;&lt;font color=&quot;#FF0000&quot;&gt;&lt;/font&gt;&lt;font color=&quot;#FF0000&quot;&gt;&lt;/font&gt;&lt;font color=&quot;#FF0000&quot;&gt;&lt;/font&gt;&lt;font color=&quot;#FF0000&quot;&gt;&lt;/font&gt;
+&lt;font color=&quot;#FF0000&quot;&gt;&lt;TR&gt;&lt;/tr&gt;
+&lt;/font&gt;&lt;font color=&quot;#FF0000&quot;&gt;&lt;em&gt;&lt;strong&gt;&lt;font color=&quot;#FF9933&quot; size=&quot;5&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Finava Vipul&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;&lt;font color=&quot;#C0C0C0&quot;&gt;&lt;/br&gt;
+&lt;/font&gt;&lt;/strong&gt;&lt;/font&gt;&lt;font color=&quot;#0000&quot;&gt;&lt;strong&gt;&lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Uma Vansi&lt;/font&gt;&lt;/em&gt;  &lt;br&gt;
+&lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Vdiya Road,&lt;/font&gt;&lt;/em&gt;&lt;/br&gt; 
+&lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Anida-365450.&lt;/font&gt;&lt;/em&gt; &lt;br&gt;
+&lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;E-mail : finava.vipul@gmail.com&lt;/font&gt;&lt;/em&gt;&lt;/br&gt; 
+&lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Mobile :  9825817442&lt;/font&gt;&lt;/em&gt; &lt;br&gt;
+ &lt;/strong&gt;&lt;/font&gt;  
+&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&quot;#FF0066&quot;&gt;&lt;strong&gt;&lt;font size=&quot;5&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;&lt;em&gt;Connect Publishers Pvt. Ltd.&lt;/em&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/font&gt;
+&lt;font color=&quot;#FF0000&quot;&gt;&lt;br&gt;
+&lt;TR&gt;&lt;/tr&gt;
+&lt;/font&gt;
+&lt;p&gt;&lt;font color=&quot;#FF0000&quot;&gt;&lt;strong&gt;&lt;em&gt;&lt;font color=&quot;#FF9933&quot; size=&quot;5&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Metaliya Nikunj&lt;/font&gt;&lt;/em&gt;&lt;font color=&quot;#C0C0C0&quot;&gt;&lt;/br&gt; 
+  &lt;/font&gt;&lt;/strong&gt;&lt;/font&gt; &lt;font color=&quot;#0000&quot;&gt;&lt;strong&gt;
+    &lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Near Cinema &lt;/font&gt;&lt;/em&gt;&lt;br&gt;
+    &lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Chavand Road&lt;/font&gt;&lt;/em&gt;&lt;/br&gt; 
+    &lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Lathi-365430&lt;/font&gt;&lt;/em&gt; &lt;br&gt;
+    &lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;E-mail : metaliya_nikunj@yahoo.com&lt;/font&gt;&lt;/em&gt;&lt;/br&gt; 
+    &lt;em&gt;&lt;font size=&quot;4&quot; face=&quot;Georgia, Times New Roman, Times, serif&quot;&gt;Mobile : 9601626442&lt;/font&gt;&lt;/em&gt;&lt;br&gt;
+     &lt;/strong&gt;&lt;/font&gt;
+&lt;/p&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Absence of Anti-CSRF Tokens</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Absence of Anti-CSRF Tokens</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a></li>
+										<li><a
+											href="http://cwe.mitre.org/data/definitions/352.html">http://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Application Error Disclosure</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90022/">Application Error Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Directory Browsing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/0/">Directory Browsing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/548.html">548</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>48</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://httpd.apache.org/docs/mod/core.html#options">http://httpd.apache.org/docs/mod/core.html#options</a></li>
+										<li><a
+											href="http://alamo.satlug.org/pipermail/satlug/2002-February/000053.html">http://alamo.satlug.org/pipermail/satlug/2002-February/000053.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Hidden File Found</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40035/">Hidden File Finder</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/538.html">538</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html">https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</a></li>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/mod_status.html">https://httpd.apache.org/docs/current/mod/mod_status.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Big Redirect Detected (Potential Sensitive Information Leak)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10044/">Big Redirect Detected (Potential Sensitive Information Leak)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://httpd.apache.org/docs/current/mod/core.html#servertokens">http://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007">http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</a></li>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Charset Mismatch (Header Versus Meta Content-Type Charset)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90011/">Charset Mismatch</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/436.html">436</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection">http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-12">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
