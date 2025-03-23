@@ -1,0 +1,1191 @@
+
+<html>
+<head>
+<title>IronWASP Security Analysis Report</title>
+<style>
+body
+{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #555;
+    overflow: auto;
+}
+#report_header
+{
+    background-color: #75D1FF;
+    margin-bottom: 10px;
+}
+#report_title
+{
+    background-color: #555;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: xx-large;
+    color: #FFF;
+    text-align: center;
+}
+#report_sub_title
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #555;
+    text-align: center;
+}
+#report_sub_title a
+{
+    color: #555;
+    font-weight: bold;
+}
+#report_footer
+{
+    color: #FFF;
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+}
+.report
+{    
+     width: 1000px;
+     margin-left: 250px;
+     color: #FFF;
+}
+#overview
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+#index
+{
+    color: #333;
+    background-color: #FFF;
+    border-style: outset;
+    border-color: #555;
+    padding: 20px;
+    margin: 10px;
+    overflow: auto;
+}
+#index a
+{
+    text-decoration: none;
+}
+#index ul
+{
+    list-style-type: square;
+}
+#index ul li
+{
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+#index ol li
+{
+    padding: 3px;
+}
+.index_finding_url
+{
+    color: #333;
+}
+.section_title
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.finding
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+.finding table
+{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+}
+.finding td
+{
+    margin-left: 10px;
+}
+
+.trigger
+{
+    color: #333;
+    border-style: ridge;
+    border-color: #AAA;
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+.trigger_desc
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #50D;
+}
+#quick_nav
+{
+    position: fixed;
+    width: 230px;
+    overflow: auto;
+}
+
+#quick_nav a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+#quick_nav a:hover
+{
+    color: #75D1FF;
+}
+.quick_nav_link
+{
+    width: 220px;
+    background-color: #FFF;
+    padding: 2px;
+    padding-left: 5px; 
+    margin: 2px;
+    margin-top: 5px;
+}
+.host
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.high_finding_title
+{
+    background-color: red;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.medium_finding_title
+{
+    background-color: orange;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.low_finding_title
+{
+    background-color: yellow;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.info_finding_title
+{
+    background-color: blue;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.lead_finding_title
+{
+    background-color: green;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.affected_url
+{
+    color: #0077FF;
+    text-decoration: underline;
+    overflow: auto;
+}
+.reason_title
+{
+    background-color: #3C3;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.finding_nav_links
+{
+    color: #75D1FF;
+}
+.finding_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    margin-left: 0px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+}
+.finding_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+.host_nav_links
+{
+    color: #75D1FF;
+}
+.host_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.host_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+
+.desc
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.desc_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.reason
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.reason_section_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.fpa_check
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.fpa_check_title
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    color: #3C3;
+}
+th
+{
+    background-color: #75D1FF;
+    color: #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.t_high
+{
+    color:  #FF0000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_med
+{
+    color:  #FF9900;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_low
+{
+    color:  #B8B800;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_info
+{
+    color: #0099FF;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_lead
+{
+    color: #339933;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_total
+{
+    color: #000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_high_conf
+{
+    background-color: #000;
+    color: #FFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_med_conf
+{
+    background-color: #444;
+    color: #AAA;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_low_conf
+{
+    background-color: #999;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+            
+}
+.t_host
+{
+    width: 400px;
+    color: #0077FF;
+    text-decoration: underline;
+    text-align: left;
+    overflow: auto;
+}
+
+.legend
+{
+    font-size: small;
+}
+.legend td
+{
+    font-size: small;
+}
+
+.icr { color: red; }
+.icb { color: #0077FF; }
+.icy { color: #B8B800; }
+.ico { color: orange; }
+.icg { color: #3C3; }
+
+.hlr { background-color: red; }
+.hlb { background-color: #0077FF; }
+.hly { background-color: #B8B800; }
+.hlo { background-color: orange; }
+.hlg { background-color: #3C3; }
+    
+.ihh {font-weight: bold; color: #0077FF; text-decoration: underline;}
+.fname {font-weight: bold; }
+</style>
+</head>
+<body>
+<div id='report_header'>
+<div id='report_title'>IronWASP Security Analysis Report</div>
+<div id='report_sub_title'>Report based on the analysis performed by the open source web security software, <a href='https://ironwasp.org'>IronWASP</a></div>
+</div>
+
+
+<span id='quick_nav'>
+    <a href='#overview'><div class='quick_nav_link'>Overview</div></a>
+    <a href='#index'><div class='quick_nav_link'>Index</div></a>
+
+<a href='#host1'><div class='quick_nav_link'>http://localhost/</div></a>
+</span>
+
+
+<div class='report'>
+<div class='section_title'>Overview</div>
+<div id='overview'>
+This report contains the list of security findings discovered by IronWASP. The current section of the report gives a brief overview of the number of different findings, the numbers are categorized by the hosts they were discovered on.
+<br>
+The index section contains the names of all the findings. The sections after that show details of every individual finding.
+<br><br>
+The table below shows the number of findings discovered in each host. The findings are seperated based on their type and severity.<br>
+<br><br>
+<div class='legend'>
+<div class='fname'>Legend:</div>
+<br>
+<table cellpadding='0' cellspacing='0'>
+<tr><td align='right'><span class='icr'><b>High</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;High Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='ico'><b>Medium</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Medium Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icy'><b>Low</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Low Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icb'><b>Info</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Information Findings</td></tr>
+<tr><td align='right'><span class='icg'><b>Test Leads</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Things of interest for manual testing</td></tr>
+</table>
+<br>
+The High, Medium and Low severity vulnerability numbers are also split based on the confidence with which IronWASP has reported them.<br>
+<br>
+<span class='t_high_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; High Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_med_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Medium Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_low_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Low Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<br>
+
+<table cellpadding='0' cellspacing='0'>
+<tr>
+    <th width='100' >High</th>
+    <th width='20'> </th>
+    <th width='100'>Medium</th>
+    <th width='20'> </th>
+    <th width='100'>Low</th>
+    <th width='100'>Info</th>
+    <th width='100'>Test leads</th>
+    <th width='20'> </th>
+    <th width='30'>Total</th>
+    <th width='30'> </th>
+    <th width='400'>Hosts</th>
+</tr>
+<tr>
+    <td height='20px'></td>
+</tr>
+
+<tr>
+            <td>
+                <div class='t_high'>8</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_med'>6</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_low'>2</div>
+            </td>
+            <td>
+                <div class='t_info'>2</div>
+            </td>
+            <td><div class='t_lead'>2</div></td>
+            <td></td>
+            <td><div class='t_total'>20</div></td>
+            <td></td>            
+            <td><div class='t_host'>http://localhost/</div></td>
+        </tr>
+<tr>
+            <td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>1</div></td>
+                        <td width='30'><div class='t_med_conf'>6</div></td>
+                        <td width='30'><div class='t_low_conf'>1</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>3</div></td>
+                        <td width='30'><div class='t_med_conf'>2</div></td>
+                        <td width='30'><div class='t_low_conf'>1</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>2</div></td>
+                        <td width='30'><div class='t_med_conf'>0</div></td>
+                        <td width='30'><div class='t_low_conf'>0</div></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+</table>
+</div>
+<div class='section_title'>Index</div>
+<div id='index'>
+The titles of all the findings are listed below categorized by the host they were discovered on. All items in the list below are links to relevant sections in the report.
+<br>
+
+<a href='#host1'><div class='host'>http://localhost/</div></a>
+<ul>
+<li><a href='#finding1'><span class='icr'>Cross-site Scripting Detected</span></a></li>
+<ol>
+<li><a href='#finding1'><span class='index_finding_url'>/php-trs/admin/./?page=reminders/manage_reminder</span></a></li>
+</ol>
+
+<li><a href='#finding3'><span class='icr'>Local File Include Found</span></a></li>
+<ol>
+<li><a href='#finding3'><span class='index_finding_url'>/php-trs/./?page=reminders</span></a></li>
+<li><a href='#finding4'><span class='index_finding_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></a></li>
+</ol>
+<li><a href='#finding5'><span class='icr'>Server Side Request Forgery Found</span></a></li>
+<ol>
+<li><a href='#finding5'><span class='index_finding_url'>/php-trs/admin/././?page=reminders</span></a></li>
+<li><a href='#finding6'><span class='index_finding_url'>/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=ssss</span></a></li>
+</ol>
+<li><a href='#finding7'><span class='icr'>SQL Injection Detected</span></a></li>
+<ol>
+<li><a href='#finding7'><span class='index_finding_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></a></li>
+<li><a href='#finding8'><span class='index_finding_url'>/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=ssss</span></a></li>
+</ol>
+
+<li><a href='#finding2'><span class='icr'>Local File Include Found</span></a></li>
+<ol>
+<li><a href='#finding2'><span class='index_finding_url'>/php-trs/admin/./?page=reminders</span></a></li>
+</ol>
+
+<li><a href='#finding9'><span class='ico'>Cookie PHPSESSID missing the HttpOnly flag</span></a></li>
+<ol>
+<li><a href='#finding9'><span class='index_finding_url'>/php-trs/</span></a></li>
+</ol>
+<li><a href='#finding10'><span class='ico'>Sensitive Form loaded and submitted Insecurely</span></a></li>
+<ol>
+<li><a href='#finding10'><span class='index_finding_url'>/php-trs/admin/?page=user</span></a></li>
+</ol>
+<li><a href='#finding11'><span class='ico'>Password Sent in URL</span></a></li>
+<ol>
+<li><a href='#finding11'><span class='index_finding_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></a></li>
+</ol>
+
+<li><a href='#finding13'><span class='ico'>Directory Listing at : /php-trs//classes/</span></a></li>
+<ol>
+<li><a href='#finding13'><span class='index_finding_url'>/php-trs//classes/</span></a></li>
+</ol>
+<li><a href='#finding14'><span class='ico'>Directory Listing at : /php-trs/classes/</span></a></li>
+<ol>
+<li><a href='#finding14'><span class='index_finding_url'>/php-trs/classes/?C=N%3bO%3dD</span></a></li>
+</ol>
+
+<li><a href='#finding12'><span class='ico'>Session Fixation Found</span></a></li>
+<ol>
+<li><a href='#finding12'><span class='index_finding_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></a></li>
+</ol>
+
+<li><a href='#finding15'><span class='icy'>Server leaks version number</span></a></li>
+<ol>
+<li><a href='#finding15'><span class='index_finding_url'>/php-trs/</span></a></li>
+</ol>
+<li><a href='#finding16'><span class='icy'>AutoComplete Enabled on Password Fields</span></a></li>
+<ol>
+<li><a href='#finding16'><span class='index_finding_url'>/php-trs/admin/?page=user</span></a></li>
+</ol>
+
+
+
+<li><a href='#finding19'><span class='icb'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span></a></li>
+<ol>
+<li><a href='#finding19'><span class='index_finding_url'>/php-trs/</span></a></li>
+</ol>
+<li><a href='#finding20'><span class='icb'>Technologies identified on Server</span></a></li>
+<ol>
+<li><a href='#finding20'><span class='index_finding_url'>/php-trs/</span></a></li>
+</ol>
+
+<li><a href='#finding17'><span class='icg'>DOM XSS Sources found</span></a></li>
+<ol>
+<li><a href='#finding17'><span class='index_finding_url'>/php-trs/</span></a></li>
+</ol>
+<li><a href='#finding18'><span class='icg'>DOM XSS Sources and Sinks found</span></a></li>
+<ol>
+<li><a href='#finding18'><span class='index_finding_url'>/php-trs/admin/</span></a></li>
+</ol>
+
+</ul>
+</div>
+
+<div class='host' id='host1'>http://localhost/</div>
+<div class='host_nav_links'></div><div class='finding' id='finding1'>
+<div class='high_finding_title'>Cross-site Scripting Detected</div>
+<div class='finding_nav_links'><a href='#finding2'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/./?page=reminders/manage_reminder</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Cross-site Scripting was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check that discovered this issue are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to insert the string 'dzkqivxy' as a JavaScript statement. The payload is '});dzkqivxy;/*</span><br><br>GET http://localhost/php-trs/admin/./?page=<span class='hlg'>'%7d)%3bdzkqivxy%3b%2f*</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Response from the Server: </span><br><br><span class='icb'>The string 'dzkqivxy' is found as an statement in the JavaScript code section of this response. This was inserted by the payload.</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:24 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 22344<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>-corner&quot;&gt;&lt;/div&gt;<br>        &lt;/div&gt;<br>        &lt;!-- /.sidebar --&gt;<br>      &lt;/aside&gt;<br>      &lt;script&gt;<br>    $(document).ready(function(){<br>      var page = ''});<span class='hlg'>dzkqivxy</span>;/*';<br>      page = page.replace(/\//g,'_');<br>      console.log(page, $('.nav-link.nav-'+page)[0])<br>      if($('.nav-link.nav-'+page).length &gt; 0){<br>  <span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xjx' and attribute value 'yjy'. The payload is &lt;/script&gt;&lt;h xjx=yjy&gt;</span><br><br>GET http://localhost/php-trs/admin/./?page=<span class='hlg'>%3c%2fscript%3e%3ch+xjx%3dyjy%3e</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xjx' and attribute value 'yjy'. This was inserted by the payload.</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:24 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 22349<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>lbar-corner&quot;&gt;&lt;/div&gt;<br>        &lt;/div&gt;<br>        &lt;!-- /.sidebar --&gt;<br>      &lt;/aside&gt;<br>      &lt;script&gt;<br>    $(document).ready(function(){<br>      var page = '<span class='hlg'>&lt;/script&gt;&lt;h xjx=yjy&gt;</span>';<br>      page = page.replace(/\//g,'_');<br>      console.log(page, $('.nav-link.nav-'+page)[0])<br>      if($('.nav-link.nav-'+page).length &gt; 0){<br>     <span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xjx' and attribute value 'yjy'. The payload is --&gt;&lt;/script&gt;&lt;h xjx=yjy&gt;</span><br><br>GET http://localhost/php-trs/admin/./?page=<span class='hlg'>--%3e%3c%2fscript%3e%3ch+xjx%3dyjy%3e</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xjx' and attribute value 'yjy'. This was inserted by the payload.</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:24 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 22352<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>lbar-corner&quot;&gt;&lt;/div&gt;<br>        &lt;/div&gt;<br>        &lt;!-- /.sidebar --&gt;<br>      &lt;/aside&gt;<br>      &lt;script&gt;<br>    $(document).ready(function(){<br>      var page = '<span class='hlg'>--&gt;&lt;/script&gt;&lt;h xjx=yjy&gt;</span>';<br>      page = page.replace(/\//g,'_');<br>      console.log(page, $('.nav-link.nav-'+page)[0])<br>      if($('.nav-link.nav-'+page).length &gt; 0){<br>     <span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+</div>
+<div class='finding' id='finding2'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding1'>&lt;&lt;&lt;</a><a href='#finding3'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Low</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/./?page=reminders</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../reminders</span><br>Payload B - <span class='hlg'>aa../reminders</span><br>Payload C - <span class='hlg'>bb/../reminders</span><br>Payload D - <span class='hlg'>bb../reminders</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>reminders</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>reminders</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>reminders</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the reminders file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../reminders</span><br><br>GET http://localhost/php-trs/admin/./?page=<span class='hlg'>aa%2f..%2freminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the reminders file. The payload is aa../reminders</span><br><br>GET http://localhost/php-trs/admin/./?page=<span class='hlg'>aa..%2freminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the reminders file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../reminders</span><br><br>GET http://localhost/php-trs/admin/./?page=<span class='hlg'>bb%2f..%2freminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the reminders file. The payload is bb../reminders</span><br><br>GET http://localhost/php-trs/admin/./?page=<span class='hlg'>bb..%2freminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding3'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding2'>&lt;&lt;&lt;</a><a href='#finding4'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/./?page=reminders</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\reminders</span><br>Payload B - <span class='hlg'>aa..\reminders</span><br>Payload C - <span class='hlg'>bb\..\reminders</span><br>Payload D - <span class='hlg'>bb..\reminders</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>reminders</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>reminders</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>reminders</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the reminders file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\reminders</span><br><br>GET http://localhost/php-trs/./?page=<span class='hlg'>aa%5c..%5creminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the reminders file. The payload is aa..\reminders</span><br><br>GET http://localhost/php-trs/./?page=<span class='hlg'>aa..%5creminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the reminders file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\reminders</span><br><br>GET http://localhost/php-trs/./?page=<span class='hlg'>bb%5c..%5creminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the reminders file. The payload is bb..\reminders</span><br><br>GET http://localhost/php-trs/./?page=<span class='hlg'>bb..%5creminders</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding4'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding3'>&lt;&lt;&lt;</a><a href='#finding5'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>img</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>img</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../nnnn</span><br>Payload B - <span class='hlg'>aa../nnnn</span><br>Payload C - <span class='hlg'>bb/../nnnn</span><br>Payload D - <span class='hlg'>bb../nnnn</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>nnnn</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>nnnn</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>nnnn</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the nnnn file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../nnnn</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=<span class='hlg'>aa%2f..%2fnnnn</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the nnnn file. The payload is aa../nnnn</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=<span class='hlg'>aa..%2fnnnn</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the nnnn file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../nnnn</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=<span class='hlg'>bb%2f..%2fnnnn</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the nnnn file. The payload is bb../nnnn</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=<span class='hlg'>bb..%2fnnnn</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding5'>
+<div class='high_finding_title'>Server Side Request Forgery Found</div>
+<div class='finding_nav_links'><a href='#finding4'>&lt;&lt;&lt;</a><a href='#finding6'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/././?page=reminders</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Server Side Request Forgery was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Server Side Request Forgery is an issue where it is possible to forge an HTTP request on the server-side by sending the url in a request. For more details on this issue refer <span class='icb'>http://cwe.mitre.org/data/definitions/918.html</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>localhost:65555</span><br>Payload B - <span class='hlg'>localhost:65533</span><br>Payload C - <span class='hlg'>localhost:66666</span><br>Payload D - <span class='hlg'>localhost:65534</span><br><br>Payloads A and C are similar in nature. They both refer to ports 65555 and 66666 on the server which are invalid ports.<br>Payloads B and D are similar to each other but different from A &amp; C. They both refer to ports 65533 and 65534 on the server which are valid ports.<br>If the application is vulnerable to SSRF then it will try to connect to these ports and connections to invalid ports with throw an exception of different type than the exception or error caused by connecting to the valid ports 65533 and 65534 which are most likely to be closed.<br>This would mean that the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. <br><br>The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by chaning the port number to some other invalid port and change payloads B &amp; D to some other valid port numbers and check of the four response show the same pattern as before.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the invalid port 65555 on localhost. The payload is localhost:65555</span><br><br>GET http://localhost/php-trs/admin/././?page=<span class='hlg'>localhost%3a65555</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the valid port 65533 on localhost. The payload is localhost:65533</span><br><br>GET http://localhost/php-trs/admin/././?page=<span class='hlg'>localhost%3a65533</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the invalid port 66666 on localhost. The payload is localhost:66666</span><br><br>GET http://localhost/php-trs/admin/././?page=<span class='hlg'>localhost%3a66666</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the valid port 65534 on localhost. The payload is localhost:65534</span><br><br>GET http://localhost/php-trs/admin/././?page=<span class='hlg'>localhost%3a65534</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding6'>
+<div class='high_finding_title'>Server Side Request Forgery Found</div>
+<div class='finding_nav_links'><a href='#finding5'>&lt;&lt;&lt;</a><a href='#finding7'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=ssss</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>remind_to</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Server Side Request Forgery was identified in the <span class='ico'><b>remind_to</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Server Side Request Forgery is an issue where it is possible to forge an HTTP request on the server-side by sending the url in a request. For more details on this issue refer <span class='icb'>http://cwe.mitre.org/data/definitions/918.html</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>localhost:65555</span><br>Payload B - <span class='hlg'>localhost:65533</span><br>Payload C - <span class='hlg'>localhost:66666</span><br>Payload D - <span class='hlg'>localhost:65534</span><br><br>Payloads A and C are similar in nature. They both refer to ports 65555 and 66666 on the server which are invalid ports.<br>Payloads B and D are similar to each other but different from A &amp; C. They both refer to ports 65533 and 65534 on the server which are valid ports.<br>If the application is vulnerable to SSRF then it will try to connect to these ports and connections to invalid ports with throw an exception of different type than the exception or error caused by connecting to the valid ports 65533 and 65534 which are most likely to be closed.<br>This would mean that the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. <br><br>The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by chaning the port number to some other invalid port and change payloads B &amp; D to some other valid port numbers and check of the four response show the same pattern as before.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the invalid port 65555 on localhost. The payload is localhost:65555</span><br><br>GET http://localhost/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=<span class='hlg'>localhost%3a65555</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the valid port 65533 on localhost. The payload is localhost:65533</span><br><br>GET http://localhost/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=<span class='hlg'>localhost%3a65533</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the invalid port 66666 on localhost. The payload is localhost:66666</span><br><br>GET http://localhost/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=<span class='hlg'>localhost%3a66666</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload points to the valid port 65534 on localhost. The payload is localhost:65534</span><br><br>GET http://localhost/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=<span class='hlg'>localhost%3a65534</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding7'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding6'>&lt;&lt;&lt;</a><a href='#finding8'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>middlename</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>middlename</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>nnnnxxx&quot; or &quot;s&quot;=&quot;s</span><br>Payload B - <span class='hlg'>nnnnxxx&quot; or &quot;s&quot;=&quot;r</span><br>Payload C - <span class='hlg'>nnnnxxx&quot; or &quot;t&quot;=&quot;t</span><br>Payload D - <span class='hlg'>nnnnxxx&quot; or &quot;t&quot;=&quot;r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition &quot;s&quot;=&quot;s which evaluates to true. The payload is nnnnxxx&quot; or &quot;s&quot;=&quot;s</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=<span class='hlg'>nnnnxxx%22+or+%22s%22%3d%22s</span>&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition &quot;s&quot;=&quot;r which evaluates to false. The payload is nnnnxxx&quot; or &quot;s&quot;=&quot;r</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=<span class='hlg'>nnnnxxx%22+or+%22s%22%3d%22r</span>&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition &quot;t&quot;=&quot;t which evaluates to true. The payload is nnnnxxx&quot; or &quot;t&quot;=&quot;t</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=<span class='hlg'>nnnnxxx%22+or+%22t%22%3d%22t</span>&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition &quot;t&quot;=&quot;r which evaluates to false. The payload is nnnnxxx&quot; or &quot;t&quot;=&quot;r</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=<span class='hlg'>nnnnxxx%22+or+%22t%22%3d%22r</span>&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding8'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding7'>&lt;&lt;&lt;</a><a href='#finding9'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=ssss&amp;remind_from=ssss&amp;remind_to=ssss</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>title</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>title</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reason:<br>
+<div class='reason'><div class='reason_title'>Reason:</div>
+IronWASP sent three payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>s&quot;||&quot;sss</span><br>Payload B - <span class='hlg'>s&quot;+&quot;sss</span><br>Payload C - <span class='hlg'>s&quot; &quot;sss</span><br>Payload A is trying to concatenate two strings as per the SQL syntax of Oracle database servers. Payload B is trying to concatenate the same two strings as per SQL syntax of MS SQL database servers. Payload C is trying to concatenate the same two strings as per the SQL syntax of MySQL database servers.<br>The response for Payload A and C were similar to each other and is different from the response received for Payloads B. This indicates that the application was actually trying to perform the string concatenation on the server-side and that the backend database in use is <span class='hlg'>MS SQL</span>. Since incase of <span class='hlg'>MS SQL</span> database server Payloads A &amp; C would have simply thrown an invalid SQL syntax exception their responses are similar. And Payload B would have executed without this error and so its response was different than the other two.<br>If the application was not actually performing the concatenation then all three payload should have received very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the three payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with different strings and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per Oracle database's syntax. The payload is s&quot;||&quot;sss</span><br><br>GET http://localhost/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=<span class='hlg'>s%22%7c%7c%22sss</span>&amp;remind_from=ssss&amp;remind_to=ssss HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used MS SQL database's concatenation syntax but similar to the response for the payload that used MySQL database's concatenation syntax</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MS SQL database's syntax. The payload is s&quot;+&quot;sss</span><br><br>GET http://localhost/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=<span class='hlg'>s%22%2b%22sss</span>&amp;remind_from=ssss&amp;remind_to=ssss HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the responses recieved for the payloads that used MySQL and Oracle databases' concatenation syntax.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to concatenate two strings as per MySQL database's syntax. The payload is s&quot; &quot;sss</span><br><br>GET http://localhost/php-trs/admin/./?id=ssss&amp;user_id=ssss&amp;title=<span class='hlg'>s%22+%22sss</span>&amp;remind_from=ssss&amp;remind_to=ssss HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is different from the response recieved for the payloads that used MS SQL database's concatenation syntax but similar to the response for the payload that used Oracle database's concatenation syntax</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding9'>
+<div class='medium_finding_title'>Cookie PHPSESSID missing the HttpOnly flag</div>
+<div class='finding_nav_links'><a href='#finding8'>&lt;&lt;&lt;</a><a href='#finding10'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The HttpOnly flag was missing on the cookie: PHPSESSID. This may allow an attacker to get the cookie information using XSS attacks.</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The value of the cookie is not protected by HttpOnly flag and hence becomes accessible from JavaScript</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:12 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br><span class='hlg'>Set-Cookie: PHPSESSID=qlsgl1002pmvtj1i272f538l8g; path=/</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 17655<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding10'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding9'>&lt;&lt;&lt;</a><a href='#finding11'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/?page=user</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>GET <span class='hlg'>http://</span>localhost/php-trs/admin/?page=user HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form action=&quot;&quot; id=&quot;manage-user&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;id&quot; value=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot; class=&quot;form-control&quot; value=&quot;&quot; required=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;middlename&quot; id=&quot;middlename&quot; class=&quot;form-control&quot; value=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;lastname&quot; id=&quot;lastname&quot; class=&quot;form-control&quot; value=&quot;&quot; required=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot; class=&quot;form-control&quot; value=&quot;&quot; required=&quot;&quot; autocomplete=&quot;off&quot;&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; class=&quot;form-control&quot; value=&quot;&quot; autocomplete=&quot;off&quot;&gt;&lt;input type=&quot;file&quot; class=&quot;custom-file-input rounded-circle&quot; id=&quot;customFile&quot; name=&quot;img&quot; onchange=&quot;displayImg(this,$(this))&quot; accept=&quot;image/png, image/jpeg&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding11'>
+<div class='medium_finding_title'>Password Sent in URL</div>
+<div class='finding_nav_links'><a href='#finding10'>&lt;&lt;&lt;</a><a href='#finding12'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The application sends the user's password in clear-text over the URL.</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>Parameter name 'password' was found in the Query, this looks like a field containing password</span><br><br>GET http://localhost/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;<span class='hlg'>password</span>=nnnn&amp;img=nnnn HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=cvifb491vtir1onh617um6fn74<br><br><br><br>
+</div>
+</div>
+<div class='finding' id='finding12'>
+<div class='medium_finding_title'>Session Fixation Found</div>
+<div class='finding_nav_links'><a href='#finding11'>&lt;&lt;&lt;</a><a href='#finding13'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Low</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/?id=nnnn&amp;firstname=nnnn&amp;middlename=nnnn&amp;lastname=nnnn&amp;username=nnnn&amp;password=nnnn&amp;img=nnnn</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The application does not set a new Session ID in the cookie after what appears to be an authentication attempt by the user. If this was a successful login and the Session IDs are stored in cookies then this application is affected by Session Fixation vulnerability.</div>
+<div class='trigger'>
+
+</div>
+</div>
+<div class='finding' id='finding13'>
+<div class='medium_finding_title'>Directory Listing at : /php-trs//classes/</div>
+<div class='finding_nav_links'><a href='#finding12'>&lt;&lt;&lt;</a><a href='#finding14'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs//classes/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>A directory listing vulnerability was found at <span class='hlo'>/php-trs//classes/</span><br>A directory listing provides an attacker with the complete index of all the resources locatedinside of the directory. The specific risks and consequences vary dependingon which files are listed and accessible.<br><span class='icb'><b>References:</b></span><br>CWE-548: Information Exposure Through Directory Listing</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>Text found in this response body indicates that there is Directory Listing on the server</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:17 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html;charset=UTF-8<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>on&lt;/a&gt;&lt;/th&gt;&lt;/tr&gt;<br>   &lt;tr&gt;&lt;th colspan=&quot;5&quot;&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/back.gif&quot; alt=&quot;[PARENTDIR]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;/php-trs/&quot;&gt;<span class='hlg'>Parent Directory&lt;/a&gt;</span>       &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/text.gif&quot; alt=&quot;[TXT]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a hre<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+</div>
+<div class='finding' id='finding14'>
+<div class='medium_finding_title'>Directory Listing at : /php-trs/classes/</div>
+<div class='finding_nav_links'><a href='#finding13'>&lt;&lt;&lt;</a><a href='#finding15'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/classes/?C=N%3bO%3dD</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>A directory listing vulnerability was found at <span class='hlo'>/php-trs/classes/</span><br>A directory listing provides an attacker with the complete index of all the resources locatedinside of the directory. The specific risks and consequences vary dependingon which files are listed and accessible.<br><span class='icb'><b>References:</b></span><br>CWE-548: Information Exposure Through Directory Listing</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>Text found in this response body indicates that there is Directory Listing on the server</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:17 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html;charset=UTF-8<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>on&lt;/a&gt;&lt;/th&gt;&lt;/tr&gt;<br>   &lt;tr&gt;&lt;th colspan=&quot;5&quot;&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/back.gif&quot; alt=&quot;[PARENTDIR]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;/php-trs/&quot;&gt;<span class='hlg'>Parent Directory&lt;/a&gt;</span>       &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/text.gif&quot; alt=&quot;[TXT]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a hre<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+</div>
+<div class='finding' id='finding15'>
+<div class='low_finding_title'>Server leaks version number</div>
+<div class='finding_nav_links'><a href='#finding14'>&lt;&lt;&lt;</a><a href='#finding16'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server's banner contains the version number of the server - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4. The version number found is 2.4.56</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The Server header of this Response indicates the server version as 2.4.56</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:12 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 17655<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding16'>
+<div class='low_finding_title'>AutoComplete Enabled on Password Fields</div>
+<div class='finding_nav_links'><a href='#finding15'>&lt;&lt;&lt;</a><a href='#finding17'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/?page=user</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>AutoComplete feature has not been disabled on the form/fields that accept Passwords from users</div>
+<div class='trigger'>
+<span class='ihh'> Information about the Analyzed Response: </span><br><br><span class='icb'>This response contains INPUT elements whose type attribute is password but their autocomplete attribute is not set to 'off'</span><br><br>
+</div>
+</div>
+<div class='finding' id='finding17'>
+<div class='lead_finding_title'>DOM XSS Sources found</div>
+<div class='finding_nav_links'><a href='#finding16'>&lt;&lt;&lt;</a><a href='#finding18'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icg'>Test Lead</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>DOM XSS Sources were found in the Body of the Response. Analyze the Response for presence of DOM XSS<br> <span class='ih'> Sources:</span><br>	[name=<br>	name<br>	top<br>	.top <br></div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>4 DOM XSS Sources and 0 DOM XSS Sinks were found in the JavaScript contained in this response body</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:12 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 17655<br><br>&lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot; class=&quot;&quot; style=&quot;height: auto;&quot;&gt;<br>&lt;head&gt;<br>    &lt;meta charset=&quot;utf-8&quot;&gt;<br>    &lt;meta <span class='hlg'>name</span>=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;<br>  	&lt;title&gt;Task Reminder System - PHP&lt;/title&gt;<br>    &lt;link rel=&quot;icon&quot; href=&quot;http://localhost/<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>n:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;<span class='hlg'>top</span>:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand&gt;div{position:absolute;width:1000000p<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>ow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand&gt;div{position:absolute;width:1000000px;height:1000000px;left:0;<span class='hlg'>top</span>:0}.chartjs-size-monitor-shrink&gt;div{position:absolute;width:200%;height:200%;left:0;<span class='hlg'>top</span>:0}<br>    &lt;/style&gt;<br><br>     &lt;!-- jQuery --&gt;<br>    &lt;script src=&quot;http://localhost/php-trs/plugins/jquery/jquery.min.js&quot;&gt;&lt;/script&gt;<br>    &lt;!-- jQuery UI 1.11.<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>39539565826330536) 49%, rgba(0,212,255,0) 100%)!important;<br>    }<br>    #main-header:before{<br>        content:&quot;&quot;;<br>        position:absolute;<br>        <span class='hlg'>top</span>:0;<br>        left:0;<br>        width:100%;<br>        height:100%;<br>        background-image:url(http://localhost/php-trs/uploads/cover.png?v=1681694880)<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>e: cover;<br>        filter: drop-shadow(0px 7px 6px black);<br>        z-index:-1;<br>    }<br><br> &lt;/style&gt;<br><br>  &lt;/head&gt;  &lt;body class=&quot;hold-transition layout-<span class='hlg'>top</span>-nav layout-fixed layout-navbar-fixed  text-sm&quot;&gt;<br>    &lt;div class=&quot;wrapper&quot;&gt;<br>     &lt;style&gt;<br>  .user-img{<br>      position: absolute;<br>      height: 27px<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>&quot;&gt;<br>     &lt;style&gt;<br>  .user-img{<br>      position: absolute;<br>      height: 27px;<br>      width: 27px;<br>      object-fit: cover;<br>      left: -7%;<br>      <span class='hlg'>top</span>: -12%;<br>  }<br>  .user-dd:hover{<br>    color:#fff !important<br>  }<br>&lt;/style&gt;<br>&lt;nav class=&quot;main-header navbar navbar-expand-lg navbar-dark bg-gradient-pri<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>://localhost/php-trs/&quot;&gt;<br>        &lt;img src=&quot;http://localhost/php-trs/uploads/logo.png?v=1681720857&quot; width=&quot;30&quot; height=&quot;30&quot; class=&quot;d-inline-block align-<span class='hlg'>top</span> rounded-circle&quot; alt=&quot;&quot; loading=&quot;lazy&quot;&gt;<br>        PHP - TRS        &lt;/a&gt;<br>        <br>        &lt;!-- &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupport<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>      $('#mainNav').addClass('navbar-shrink')<br>    })<br>    $('#navbarResponsive').on('hidden.bs.collapse', function () {<br>        if($('body').offset.<span class='hlg'>top</span> == 0)<br>          $('#mainNav').removeClass('navbar-shrink')<br>    })<br>  })<br><br>  $('#search-form').submit(function(e){<br>    e.preventDefault()<br>     va<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>      $('#mainNav').removeClass('navbar-shrink')<br>    })<br>  })<br><br>  $('#search-form').submit(function(e){<br>    e.preventDefault()<br>     var sTxt = $('<span class='hlg'>[<span class='hlg'>name</span>=</span>&quot;search&quot;]').val()<br>     if(sTxt != '')<br>      location.href = './?p=products&amp;search='+sTxt;<br>  })<br>&lt;/script&gt;           <br>           &lt;!-- Content Wrapp<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>cript&gt;<br> $(function(){<br>   var code = (Math.random() + 1).toString(36).substring(2);<br>   var data = $('&lt;div&gt;')<br>   data.attr('id',code)<br>   data.css('<span class='hlg'>top</span>','4.5em')<br>   data.css('position','fixed')<br>   data.css('right','-1.5em')<br>   data.css('width','auto')<br>   data.css('opacity','.5')<br>   data.css('z-i<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>cript&gt;<br> $(function(){<br>   var code = (Math.random() + 1).toString(36).substring(2);<br>   var data = $('&lt;div&gt;')<br>   data.attr('id',code)<br>   data.css('<span class='hlg'>top</span>','4.5em')<br>   data.css('position','fixed')<br>   data.css('right','-1.5em')<br>   data.css('width','auto')<br>   data.css('opacity','.5')<br>   data.css('z-i<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>){<br>      start_loader()<br>      var t = $src.split('.')<br>      t = t[1]<br>      if(t =='mp4'){<br>        var view = $(&quot;&lt;video src='&quot;+$src+&quot;' controls au<span class='hlg'>top</span>lay&gt;&lt;/video&gt;&quot;)<br>      }else{<br>        var view = $(&quot;&lt;img src='&quot;+$src+&quot;' /&gt;&quot;)<br>      }<br>      $('#viewer_modal .modal-content video,#viewer_modal .moda<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>tn-primary&quot; disabled=&quot;disabled&quot; type=&quot;button&quot;&gt;Apply&lt;/button&gt; &lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div class=&quot;jqvmap-label&quot; style=&quot;display: none; left: 1093.83px; <span class='hlg'>top</span>: 394.361px;&quot;&gt;Idaho&lt;/div&gt;  &lt;/body&gt;<br>&lt;/html&gt;<br><br>
+</div>
+</div>
+<div class='finding' id='finding18'>
+<div class='lead_finding_title'>DOM XSS Sources and Sinks found</div>
+<div class='finding_nav_links'><a href='#finding17'>&lt;&lt;&lt;</a><a href='#finding19'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icg'>Test Lead</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/admin/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>DOM XSS Sources and Sinks were found in the Body of the Response. Analyze the Response for presence of DOM XSS<br> <span class='ih'> Sources:</span><br>	.parent(<br>	parent<br><br> <span class='ih'> Sinks:</span><br>	replace(<br>	replace<br></div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>2 DOM XSS Sources and 2 DOM XSS Sinks were found in the JavaScript contained in this response body</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:16 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 24315<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>   &lt;/div&gt;<br>        &lt;!-- /.sidebar --&gt;<br>      &lt;/aside&gt;<br>      &lt;script&gt;<br>    $(document).ready(function(){<br>      var page = 'home';<br>      page = page.<span class='hlg'><span class='hlg'>replace</span>(</span>/\//g,'_');<br>      console.log(page, $('.nav-link.nav-'+page)[0])<br>      if($('.nav-link.nav-'+page).length &gt; 0){<br>             $('.nav-link.nav-'+pag<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>.hasClass('tree-item') == true){<br>            $('.nav-link.nav-'+page).addClass('active')<br>          $('.nav-link.nav-'+page).closest('.nav-treeview')<span class='hlg'>.<span class='hlg'>parent</span>(</span>).addClass('menu-open')<br>        }<br>        if($('.nav-link.nav-'+page).hasClass('nav-is-tree') == true){<br>          $('.nav-link.nav-'+page)<span class='hlg'>.<span class='hlg'>parent</span>(</span>).addClass('menu-open')<br>        }<br><br>      }<br>      $('.nav-link.active').addClass('bg-gradient-navy')<br>    })<br>  &lt;/script&gt;           <br>           &lt;!<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+</div>
+<div class='finding' id='finding19'>
+<div class='info_finding_title'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='finding_nav_links'><a href='#finding18'>&lt;&lt;&lt;</a><a href='#finding20'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server returned this banner in its response headers - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:12 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 17655<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding20'>
+<div class='info_finding_title'>Technologies identified on Server</div>
+<div class='finding_nav_links'><a href='#finding19'>&lt;&lt;&lt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-trs/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The server makes use of the following technologies:<br> - PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:52:12 GMT<br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>X-Powered-By: <span class='hlg'>PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 17655<br><br><br>
+</div>
+</div>
+</div>
+
+<div id='report_footer'>
+    This report was generated by IronWASP's Reporting Engine on Tuesday, October 17, 2023 at 6:29:11 PM
+</div>
+
+</body></html>
+

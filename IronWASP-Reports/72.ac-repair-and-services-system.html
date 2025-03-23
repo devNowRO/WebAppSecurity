@@ -1,0 +1,1533 @@
+
+<html>
+<head>
+<title>IronWASP Security Analysis Report</title>
+<style>
+body
+{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #555;
+    overflow: auto;
+}
+#report_header
+{
+    background-color: #75D1FF;
+    margin-bottom: 10px;
+}
+#report_title
+{
+    background-color: #555;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: xx-large;
+    color: #FFF;
+    text-align: center;
+}
+#report_sub_title
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #555;
+    text-align: center;
+}
+#report_sub_title a
+{
+    color: #555;
+    font-weight: bold;
+}
+#report_footer
+{
+    color: #FFF;
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+}
+.report
+{    
+     width: 1000px;
+     margin-left: 250px;
+     color: #FFF;
+}
+#overview
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+#index
+{
+    color: #333;
+    background-color: #FFF;
+    border-style: outset;
+    border-color: #555;
+    padding: 20px;
+    margin: 10px;
+    overflow: auto;
+}
+#index a
+{
+    text-decoration: none;
+}
+#index ul
+{
+    list-style-type: square;
+}
+#index ul li
+{
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+#index ol li
+{
+    padding: 3px;
+}
+.index_finding_url
+{
+    color: #333;
+}
+.section_title
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.finding
+{
+    color: #333;
+     background-color: #FFF;
+     border-style: outset;
+     border-color: #555;
+     padding: 20px;
+     margin: 10px;
+     overflow: auto;
+}
+.finding table
+{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+}
+.finding td
+{
+    margin-left: 10px;
+}
+
+.trigger
+{
+    color: #333;
+    border-style: ridge;
+    border-color: #AAA;
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+.trigger_desc
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #50D;
+}
+#quick_nav
+{
+    position: fixed;
+    width: 230px;
+    overflow: auto;
+}
+
+#quick_nav a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+#quick_nav a:hover
+{
+    color: #75D1FF;
+}
+.quick_nav_link
+{
+    width: 220px;
+    background-color: #FFF;
+    padding: 2px;
+    padding-left: 5px; 
+    margin: 2px;
+    margin-top: 5px;
+}
+.host
+{
+    color: #555;
+    border-color: #75D1FF;;
+    border-style: solid;
+    border-width: thick;
+    background-color: #75D1FF;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: auto;
+}
+.high_finding_title
+{
+    background-color: red;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.medium_finding_title
+{
+    background-color: orange;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.low_finding_title
+{
+    background-color: yellow;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.info_finding_title
+{
+    background-color: blue;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.lead_finding_title
+{
+    background-color: green;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.affected_url
+{
+    color: #0077FF;
+    text-decoration: underline;
+    overflow: auto;
+}
+.reason_title
+{
+    background-color: #3C3;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.finding_nav_links
+{
+    color: #75D1FF;
+}
+.finding_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    margin-left: 0px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+}
+.finding_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+.host_nav_links
+{
+    color: #75D1FF;
+}
+.host_nav_links a
+{
+    font-weight: bold;
+    color: #75D1FF;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px;
+    border-color: #75D1FF;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.host_nav_links a:hover
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #75D1FF;
+}
+
+.desc
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.desc_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.reason
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.reason_section_title
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.fpa_check
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.fpa_check_title
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    color: #3C3;
+}
+th
+{
+    background-color: #75D1FF;
+    color: #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.t_high
+{
+    color:  #FF0000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_med
+{
+    color:  #FF9900;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_low
+{
+    color:  #B8B800;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_info
+{
+    color: #0099FF;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_lead
+{
+    color: #339933;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_total
+{
+    color: #000;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.t_high_conf
+{
+    background-color: #000;
+    color: #FFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_med_conf
+{
+    background-color: #444;
+    color: #AAA;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.t_low_conf
+{
+    background-color: #999;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+            
+}
+.t_host
+{
+    width: 400px;
+    color: #0077FF;
+    text-decoration: underline;
+    text-align: left;
+    overflow: auto;
+}
+
+.legend
+{
+    font-size: small;
+}
+.legend td
+{
+    font-size: small;
+}
+
+.icr { color: red; }
+.icb { color: #0077FF; }
+.icy { color: #B8B800; }
+.ico { color: orange; }
+.icg { color: #3C3; }
+
+.hlr { background-color: red; }
+.hlb { background-color: #0077FF; }
+.hly { background-color: #B8B800; }
+.hlo { background-color: orange; }
+.hlg { background-color: #3C3; }
+    
+.ihh {font-weight: bold; color: #0077FF; text-decoration: underline;}
+.fname {font-weight: bold; }
+</style>
+</head>
+<body>
+<div id='report_header'>
+<div id='report_title'>IronWASP Security Analysis Report</div>
+<div id='report_sub_title'>Report based on the analysis performed by the open source web security software, <a href='https://ironwasp.org'>IronWASP</a></div>
+</div>
+
+
+<span id='quick_nav'>
+    <a href='#overview'><div class='quick_nav_link'>Overview</div></a>
+    <a href='#index'><div class='quick_nav_link'>Index</div></a>
+
+<a href='#host1'><div class='quick_nav_link'>http://localhost/</div></a>
+</span>
+
+
+<div class='report'>
+<div class='section_title'>Overview</div>
+<div id='overview'>
+This report contains the list of security findings discovered by IronWASP. The current section of the report gives a brief overview of the number of different findings, the numbers are categorized by the hosts they were discovered on.
+<br>
+The index section contains the names of all the findings. The sections after that show details of every individual finding.
+<br><br>
+The table below shows the number of findings discovered in each host. The findings are seperated based on their type and severity.<br>
+<br><br>
+<div class='legend'>
+<div class='fname'>Legend:</div>
+<br>
+<table cellpadding='0' cellspacing='0'>
+<tr><td align='right'><span class='icr'><b>High</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;High Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='ico'><b>Medium</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Medium Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icy'><b>Low</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Low Severity Vulnerability</td></tr>
+<tr><td align='right'><span class='icb'><b>Info</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Information Findings</td></tr>
+<tr><td align='right'><span class='icg'><b>Test Leads</b></span></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;Things of interest for manual testing</td></tr>
+</table>
+<br>
+The High, Medium and Low severity vulnerability numbers are also split based on the confidence with which IronWASP has reported them.<br>
+<br>
+<span class='t_high_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; High Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_med_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Medium Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class='t_low_conf'>&nbsp;&nbsp;0&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; Low Confidence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<br>
+
+<table cellpadding='0' cellspacing='0'>
+<tr>
+    <th width='100' >High</th>
+    <th width='20'> </th>
+    <th width='100'>Medium</th>
+    <th width='20'> </th>
+    <th width='100'>Low</th>
+    <th width='100'>Info</th>
+    <th width='100'>Test leads</th>
+    <th width='20'> </th>
+    <th width='30'>Total</th>
+    <th width='30'> </th>
+    <th width='400'>Hosts</th>
+</tr>
+<tr>
+    <td height='20px'></td>
+</tr>
+
+<tr>
+            <td>
+                <div class='t_high'>12</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_med'>5</div>
+            </td>
+            <td></td>
+            <td>
+                <div class='t_low'>2</div>
+            </td>
+            <td>
+                <div class='t_info'>2</div>
+            </td>
+            <td><div class='t_lead'>0</div></td>
+            <td></td>
+            <td><div class='t_total'>21</div></td>
+            <td></td>            
+            <td><div class='t_host'>http://localhost/</div></td>
+        </tr>
+<tr>
+            <td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>3</div></td>
+                        <td width='30'><div class='t_med_conf'>9</div></td>
+                        <td width='30'><div class='t_low_conf'>0</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>3</div></td>
+                        <td width='30'><div class='t_med_conf'>1</div></td>
+                        <td width='30'><div class='t_low_conf'>1</div></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+<td>
+                <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td width='30'><div class='t_high_conf'>2</div></td>
+                        <td width='30'><div class='t_med_conf'>0</div></td>
+                        <td width='30'><div class='t_low_conf'>0</div></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+</table>
+</div>
+<div class='section_title'>Index</div>
+<div id='index'>
+The titles of all the findings are listed below categorized by the host they were discovered on. All items in the list below are links to relevant sections in the report.
+<br>
+
+<a href='#host1'><div class='host'>http://localhost/</div></a>
+<ul>
+<li><a href='#finding10'><span class='icr'>SQL Injection Detected</span></a></li>
+<ol>
+<li><a href='#finding10'><span class='index_finding_url'>/php-acrss/?page=services/view&amp;id=2</span></a></li>
+<li><a href='#finding11'><span class='index_finding_url'>/php-acrss/?page=services/view&amp;id=1</span></a></li>
+</ol>
+<li><a href='#finding12'><span class='icr'>Cross-site Scripting Detected</span></a></li>
+<ol>
+<li><a href='#finding12'><span class='index_finding_url'>/php-acrss/admin/?page=services</span></a></li>
+</ol>
+
+<li><a href='#finding1'><span class='icr'>Local File Include Found</span></a></li>
+<ol>
+<li><a href='#finding1'><span class='index_finding_url'>/php-acrss/?page=services</span></a></li>
+<li><a href='#finding2'><span class='index_finding_url'>/php-acrss/?page=booking</span></a></li>
+<li><a href='#finding3'><span class='index_finding_url'>/php-acrss/?page=about</span></a></li>
+<li><a href='#finding4'><span class='index_finding_url'>/php-acrss/?page=services/view&amp;id=2</span></a></li>
+<li><a href='#finding5'><span class='index_finding_url'>/php-acrss/?page=booking&amp;sid=2</span></a></li>
+<li><a href='#finding6'><span class='index_finding_url'>/php-acrss/admin/?page=pages/welcome_page</span></a></li>
+<li><a href='#finding7'><span class='index_finding_url'>/php-acrss/./?page=services</span></a></li>
+<li><a href='#finding8'><span class='index_finding_url'>/php-acrss/admin/?page=pages/about_page</span></a></li>
+<li><a href='#finding9'><span class='index_finding_url'>/php-acrss/admin/?page=inquiries</span></a></li>
+</ol>
+
+
+<li><a href='#finding13'><span class='ico'>Cookie PHPSESSID missing the HttpOnly flag</span></a></li>
+<ol>
+<li><a href='#finding13'><span class='index_finding_url'>/php-acrss/</span></a></li>
+</ol>
+<li><a href='#finding15'><span class='ico'>Sensitive Form loaded and submitted Insecurely</span></a></li>
+<ol>
+<li><a href='#finding15'><span class='index_finding_url'>/php-acrss/admin/?page=user</span></a></li>
+</ol>
+<li><a href='#finding16'><span class='ico'>Password Sent in URL</span></a></li>
+<ol>
+<li><a href='#finding16'><span class='index_finding_url'>/php-acrss/admin/?id=ee&amp;firstname=ee&amp;middlename=ee&amp;lastname=ee&amp;username=ee&amp;password=ee&amp;img=ee</span></a></li>
+</ol>
+
+<li><a href='#finding14'><span class='ico'>Directory Listing at : /php-acrss/classes/</span></a></li>
+<ol>
+<li><a href='#finding14'><span class='index_finding_url'>/php-acrss/classes/</span></a></li>
+</ol>
+
+<li><a href='#finding17'><span class='ico'>Session Fixation Found</span></a></li>
+<ol>
+<li><a href='#finding17'><span class='index_finding_url'>/php-acrss/admin/?id=ee&amp;firstname=ee&amp;middlename=ee&amp;lastname=ee&amp;username=ee&amp;password=ee&amp;img=ee</span></a></li>
+</ol>
+
+<li><a href='#finding18'><span class='icy'>Server leaks version number</span></a></li>
+<ol>
+<li><a href='#finding18'><span class='index_finding_url'>/php-acrss/</span></a></li>
+</ol>
+<li><a href='#finding19'><span class='icy'>AutoComplete Enabled on Password Fields</span></a></li>
+<ol>
+<li><a href='#finding19'><span class='index_finding_url'>/php-acrss/admin/?page=user</span></a></li>
+</ol>
+
+
+
+<li><a href='#finding20'><span class='icb'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span></a></li>
+<ol>
+<li><a href='#finding20'><span class='index_finding_url'>/php-acrss/</span></a></li>
+</ol>
+<li><a href='#finding21'><span class='icb'>Technologies identified on Server</span></a></li>
+<ol>
+<li><a href='#finding21'><span class='index_finding_url'>/php-acrss/</span></a></li>
+</ol>
+
+
+</ul>
+</div>
+
+<div class='host' id='host1'>http://localhost/</div>
+<div class='host_nav_links'></div><div class='finding' id='finding1'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding2'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/?page=services</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../services</span><br>Payload B - <span class='hlg'>aa../services</span><br>Payload C - <span class='hlg'>bb/../services</span><br>Payload D - <span class='hlg'>bb../services</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>services</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>services</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>services</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%2f..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the services file. The payload is aa../services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%2f..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the services file. The payload is bb../services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\services</span><br>Payload B - <span class='hlg'>aa..\services</span><br>Payload C - <span class='hlg'>bb\..\services</span><br>Payload D - <span class='hlg'>bb..\services</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>services</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>services</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>services</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%5c..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the services file. The payload is aa..\services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%5c..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the services file. The payload is bb..\services</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding2'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding1'>&lt;&lt;&lt;</a><a href='#finding3'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/?page=booking</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../booking</span><br>Payload B - <span class='hlg'>aa../booking</span><br>Payload C - <span class='hlg'>bb/../booking</span><br>Payload D - <span class='hlg'>bb../booking</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>booking</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>booking</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>booking</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%2f..%2fbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the booking file. The payload is aa../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%2fbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%2f..%2fbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the booking file. The payload is bb../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%2fbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\booking</span><br>Payload B - <span class='hlg'>aa..\booking</span><br>Payload C - <span class='hlg'>bb\..\booking</span><br>Payload D - <span class='hlg'>bb..\booking</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>booking</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>booking</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>booking</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%5c..%5cbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the booking file. The payload is aa..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%5cbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%5c..%5cbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the booking file. The payload is bb..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%5cbooking</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding3'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding2'>&lt;&lt;&lt;</a><a href='#finding4'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/?page=about</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../about</span><br>Payload B - <span class='hlg'>aa../about</span><br>Payload C - <span class='hlg'>bb/../about</span><br>Payload D - <span class='hlg'>bb../about</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>about</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>about</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>about</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the about file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%2f..%2fabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the about file. The payload is aa../about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%2fabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the about file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%2f..%2fabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the about file. The payload is bb../about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%2fabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\about</span><br>Payload B - <span class='hlg'>aa..\about</span><br>Payload C - <span class='hlg'>bb\..\about</span><br>Payload D - <span class='hlg'>bb..\about</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>about</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>about</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>about</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the about file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%5c..%5cabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the about file. The payload is aa..\about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%5cabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the about file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%5c..%5cabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the about file. The payload is bb..\about</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%5cabout</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding4'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding3'>&lt;&lt;&lt;</a><a href='#finding5'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/?page=services/view&amp;id=2</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../services/view</span><br>Payload B - <span class='hlg'>aa../services/view</span><br>Payload C - <span class='hlg'>bb/../services/view</span><br>Payload D - <span class='hlg'>bb../services/view</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>services/view</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>services/view</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>services/view</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services/view file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%2f..%2fservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the services/view file. The payload is aa../services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%2fservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services/view file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%2f..%2fservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the services/view file. The payload is bb../services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%2fservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\services/view</span><br>Payload B - <span class='hlg'>aa..\services/view</span><br>Payload C - <span class='hlg'>bb\..\services/view</span><br>Payload D - <span class='hlg'>bb..\services/view</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>services/view</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>services/view</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>services/view</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services/view file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%5c..%5cservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the services/view file. The payload is aa..\services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%5cservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services/view file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%5c..%5cservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the services/view file. The payload is bb..\services/view</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%5cservices%2fview</span>&amp;id=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding5'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding4'>&lt;&lt;&lt;</a><a href='#finding6'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/?page=booking&amp;sid=2</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../booking</span><br>Payload B - <span class='hlg'>aa../booking</span><br>Payload C - <span class='hlg'>bb/../booking</span><br>Payload D - <span class='hlg'>bb../booking</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>booking</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>booking</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>booking</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%2f..%2fbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the booking file. The payload is aa../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%2fbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%2f..%2fbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the booking file. The payload is bb../booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%2fbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\booking</span><br>Payload B - <span class='hlg'>aa..\booking</span><br>Payload C - <span class='hlg'>bb\..\booking</span><br>Payload D - <span class='hlg'>bb..\booking</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>booking</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>booking</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>booking</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa%5c..%5cbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the booking file. The payload is aa..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>aa..%5cbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the booking file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb%5c..%5cbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the booking file. The payload is bb..\booking</span><br><br>GET http://localhost/php-acrss/?page=<span class='hlg'>bb..%5cbooking</span>&amp;sid=2 HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding6'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding5'>&lt;&lt;&lt;</a><a href='#finding7'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?page=pages/welcome_page</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../pages/welcome_page</span><br>Payload B - <span class='hlg'>aa../pages/welcome_page</span><br>Payload C - <span class='hlg'>bb/../pages/welcome_page</span><br>Payload D - <span class='hlg'>bb../pages/welcome_page</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>pages/welcome_page</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>pages/welcome_page</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>pages/welcome_page</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/welcome_page file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa%2f..%2fpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the pages/welcome_page file. The payload is aa../pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa..%2fpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/welcome_page file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb%2f..%2fpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the pages/welcome_page file. The payload is bb../pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb..%2fpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\pages/welcome_page</span><br>Payload B - <span class='hlg'>aa..\pages/welcome_page</span><br>Payload C - <span class='hlg'>bb\..\pages/welcome_page</span><br>Payload D - <span class='hlg'>bb..\pages/welcome_page</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>pages/welcome_page</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>pages/welcome_page</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>pages/welcome_page</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/welcome_page file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa%5c..%5cpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the pages/welcome_page file. The payload is aa..\pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa..%5cpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/welcome_page file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb%5c..%5cpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the pages/welcome_page file. The payload is bb..\pages/welcome_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb..%5cpages%2fwelcome_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding7'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding6'>&lt;&lt;&lt;</a><a href='#finding8'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/./?page=services</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../services</span><br>Payload B - <span class='hlg'>aa../services</span><br>Payload C - <span class='hlg'>bb/../services</span><br>Payload D - <span class='hlg'>bb../services</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>services</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>services</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>services</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>aa%2f..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the services file. The payload is aa../services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>aa..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>bb%2f..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the services file. The payload is bb../services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>bb..%2fservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\services</span><br>Payload B - <span class='hlg'>aa..\services</span><br>Payload C - <span class='hlg'>bb\..\services</span><br>Payload D - <span class='hlg'>bb..\services</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>services</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>services</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>services</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>aa%5c..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the services file. The payload is aa..\services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>aa..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the services file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>bb%5c..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the services file. The payload is bb..\services</span><br><br>GET http://localhost/php-acrss/./?page=<span class='hlg'>bb..%5cservices</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding8'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding7'>&lt;&lt;&lt;</a><a href='#finding9'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?page=pages/about_page</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../pages/about_page</span><br>Payload B - <span class='hlg'>aa../pages/about_page</span><br>Payload C - <span class='hlg'>bb/../pages/about_page</span><br>Payload D - <span class='hlg'>bb../pages/about_page</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>pages/about_page</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>pages/about_page</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>pages/about_page</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/about_page file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa%2f..%2fpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the pages/about_page file. The payload is aa../pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa..%2fpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/about_page file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb%2f..%2fpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the pages/about_page file. The payload is bb../pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb..%2fpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\pages/about_page</span><br>Payload B - <span class='hlg'>aa..\pages/about_page</span><br>Payload C - <span class='hlg'>bb\..\pages/about_page</span><br>Payload D - <span class='hlg'>bb..\pages/about_page</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>pages/about_page</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>pages/about_page</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>pages/about_page</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/about_page file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa%5c..%5cpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the pages/about_page file. The payload is aa..\pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa..%5cpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the pages/about_page file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb%5c..%5cpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the pages/about_page file. The payload is bb..\pages/about_page</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb..%5cpages%2fabout_page</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding9'>
+<div class='high_finding_title'>Local File Include Found</div>
+<div class='finding_nav_links'><a href='#finding8'>&lt;&lt;&lt;</a><a href='#finding10'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?page=inquiries</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Local File Include/Path Traversal was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>Local File Include is an issue where it is possible to load and view the raw contents of any files present on the web server. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/Path_Traversal</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa/../inquiries</span><br>Payload B - <span class='hlg'>aa../inquiries</span><br>Payload C - <span class='hlg'>bb/../inquiries</span><br>Payload D - <span class='hlg'>bb../inquiries</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>inquiries</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>../</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>inquiries</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>inquiries</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>../</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the inquiries file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa/../inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa%2f..%2finquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the inquiries file. The payload is aa../inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa..%2finquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the inquiries file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb/../inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb%2f..%2finquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the inquiries file. The payload is bb../inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb..%2finquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application.<br>Payload A - <span class='hlg'>aa\..\inquiries</span><br>Payload B - <span class='hlg'>aa..\inquiries</span><br>Payload C - <span class='hlg'>bb\..\inquiries</span><br>Payload D - <span class='hlg'>bb..\inquiries</span><br><br>Payloads A and C are similar in nature. They both refer to the file <span class='hlg'>inquiries</span> by including an imaginary directory in the path (aa &amp; bb) but then also invalidating it by traversing upwards by one directory using <span class='hlg'>..\</span>. So these payloads must have the same effect as referring to the file <span class='hlg'>inquiries</span> normally.<br>Payloads B and D are similar to each other but different from A &amp; C. They refer to the file <span class='hlg'>inquiries</span> inside invalid directories (aa &amp; bb).<br>If the application is vulnerable to Local File Include then the response for Payloads A &amp; C must be similar to each other and different from responses for Payloads B&amp;D. The responses for the injected payloads were analyzed and it was found that Payloads A &amp; C got a similar looking response and were also different from responses got from Payloads B &amp; D, thereby indicating the presence of this vulnerability.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+To check if this was a valid case or a false positive you can first manually look at the responses received for Payloads A, B, C and D. Analyze these payloads and verify if indeed A &amp; C got similar responses and were different from B &amp; D. You can also change the payloads for A &amp; C by adding one more invalid directory and one more <span class='hlg'>..\</span> to invalidate that directory. This must get the same response as the responses for A &amp; C.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the inquiries file by doing a proper upward directory traversal of a dummy directory 'aa'. The payload is aa\..\inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa%5c..%5cinquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'aa' and so does not refer to the inquiries file. The payload is aa..\inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>aa..%5cinquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger after the next.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload refers to the inquiries file by doing a proper upward directory traversal of a dummy directory 'bb'. The payload is bb\..\inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb%5c..%5cinquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the next trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>This payload does not do a proper upward directory traversal of the dummy directory 'bb' and so does not refer to the inquiries file. The payload is bb..\inquiries</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>bb..%5cinquiries</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>The contents of this response are different from the response of the previous trigger but are similar to the response of the trigger before the previous.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding10'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding9'>&lt;&lt;&lt;</a><a href='#finding11'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/?page=services/view&amp;id=2</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>id</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>id</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent <span class='hlg'>&#191;'&quot;(</span> as payload to the application and the response that came back had the error message <span class='hlg'>You have an error in your SQL syntax;</span>. This error message is usually associated with SQL query related errors and it appears that the payload was able to break out of the data context and cause this error. This is an indication of SQL Injection.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the response received for the payload and confirm if the error message actually is because of some SQL related exception on the server-side. Try sending the same request without the payload and check if the error goes away.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request is meant to trigger database error messages. The payload is &#191;'&quot;(.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>&#191;'&quot;(</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Response from the Server: </span><br><br><span class='icb'>This response contains database error messages.</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:59:07 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html; charset=UTF-8<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>-xl px-4&quot;&gt;<br>          &lt;div id=&quot;msg-container&quot;&gt;<br>             <br>          &lt;/div&gt;<br>          &lt;br /&gt;<br>&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: <span class='hlg'>You have an error in your SQL syntax;</span> check the manual that corresponds to your MariaDB server version for the right syntax to use near '&amp;quot;(' and `status` = 1' at line 1 in C:\xampp\h<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent six payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>3-1</span><br>Payload B - <span class='hlg'>4-2</span><br>Payload C - <span class='hlg'>11-5</span><br>Payload D - <span class='hlg'>12-6</span><br>Payload E - <span class='hlg'>2-a</span><br>Payload F - <span class='hlg'>2-b</span><br>Payload A and B is the subtraction of two numbers whose difference is <span class='hlg'>2</span>. Payload C and D is also the subtraction of two numbers whose difference would be <span class='hlg'>6</span>. Payload E and F are invalid subtraction attempts as a string is being deducted from a number.<br>The response for Payload A and B is similar to each other and is different from Payloads C, D, E and F. This indicates that the application actually performed the subtraction of the two numbers in the Payload A and B. Since their differnce is the same their responses are similar. Payloads C and D have a different difference values. Payload E and F are invalid subtraction attempts. If the application was not actually performing subtraction then all six payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the six payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with different numbers and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to subtract the number 3 from 1.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>3-1</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>Refer to the 'Reasons' section of this vulnerabilty's description to understand how to interpret this response.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to subtract the number 4 from 2.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>4-2</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>Refer to the 'Reasons' section of this vulnerabilty's description to understand how to interpret this response.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to subtract the number 11 from 5.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>11-5</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>Refer to the 'Reasons' section of this vulnerabilty's description to understand how to interpret this response.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to subtract the number 12 from 6.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>12-6</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>Refer to the 'Reasons' section of this vulnerabilty's description to understand how to interpret this response.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request is an invalid attempt to subtract the number 2 from the string a.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2-a</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>Refer to the 'Reasons' section of this vulnerabilty's description to understand how to interpret this response.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request is an invalid attempt to subtract the number 2 from the string b.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2-b</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>Refer to the 'Reasons' section of this vulnerabilty's description to understand how to interpret this response.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 3:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>2xxx' or 's'='s</span><br>Payload B - <span class='hlg'>2xxx' or 's'='r</span><br>Payload C - <span class='hlg'>2xxx' or 't'='t</span><br>Payload D - <span class='hlg'>2xxx' or 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>OR</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='s which evaluates to true. The payload is 2xxx' or 's'='s</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2xxx'+or+'s'%3d's</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 's'='r which evaluates to false. The payload is 2xxx' or 's'='r</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2xxx'+or+'s'%3d'r</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='t which evaluates to true. The payload is 2xxx' or 't'='t</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2xxx'+or+'t'%3d't</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'or' followed by the SQL condition 't'='r which evaluates to false. The payload is 2xxx' or 't'='r</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2xxx'+or+'t'%3d'r</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 4:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>2' and 's'='s</span><br>Payload B - <span class='hlg'>2' and 's'='r</span><br>Payload C - <span class='hlg'>2' and 't'='t</span><br>Payload D - <span class='hlg'>2' and 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>AND</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='s which evaluates to true. The payload is 2' and 's'='s</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2'+and+'s'%3d's</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='r which evaluates to false. The payload is 2' and 's'='r</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2'+and+'s'%3d'r</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='t which evaluates to true. The payload is 2' and 't'='t</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2'+and+'t'%3d't</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='r which evaluates to false. The payload is 2' and 't'='r</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>2'+and+'t'%3d'r</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding11'>
+<div class='high_finding_title'>SQL Injection Detected</div>
+<div class='finding_nav_links'><a href='#finding10'>&lt;&lt;&lt;</a><a href='#finding12'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/?page=services/view&amp;id=1</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>id</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>SQL Injection was identified in the <span class='ico'><b>id</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.<br><br>SQL Injection is an issue where it is possible execute SQL queries on the database being used on the server-side. For more details on this issue refer <span class='icb'>https://www.owasp.org/index.php/SQL_Injection</span><br><br></div>
+<div class='reason_section_title'>Reasons:</div>
+IronWASP has reported this issue because of the following reasons:<br>
+<div class='reason'><div class='reason_title'>Reason 1:</div>
+IronWASP sent <span class='hlg'>&#191;'&quot;(</span> as payload to the application and the response that came back had the error message <span class='hlg'>You have an error in your SQL syntax;</span>. This error message is usually associated with SQL query related errors and it appears that the payload was able to break out of the data context and cause this error. This is an indication of SQL Injection.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the response received for the payload and confirm if the error message actually is because of some SQL related exception on the server-side. Try sending the same request without the payload and check if the error goes away.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request is meant to trigger database error messages. The payload is &#191;'&quot;(.</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>&#191;'&quot;(</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Response from the Server: </span><br><br><span class='icb'>This response contains database error messages.</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:59:26 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html; charset=UTF-8<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>-xl px-4&quot;&gt;<br>          &lt;div id=&quot;msg-container&quot;&gt;<br>             <br>          &lt;/div&gt;<br>          &lt;br /&gt;<br>&lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught mysqli_sql_exception: <span class='hlg'>You have an error in your SQL syntax;</span> check the manual that corresponds to your MariaDB server version for the right syntax to use near '&amp;quot;(' and `status` = 1' at line 1 in C:\xampp\h<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+</div>
+<div class='reason'><div class='reason_title'>Reason 2:</div>
+IronWASP sent four payloads to the application with SQL code snippets in them.<br>Payload A - <span class='hlg'>1' and 's'='s</span><br>Payload B - <span class='hlg'>1' and 's'='r</span><br>Payload C - <span class='hlg'>1' and 't'='t</span><br>Payload D - <span class='hlg'>1' and 't'='r</span><br>Payload A and C have a boolean condition after the <span class='hlg'>AND</span> keyword that will evaluate to true. The boolean condition in Payload B and D would evaluate to false.<br>The response for Payload A and C were similar to each other and were different from the response received for Payload B and D. This indicates that the application was actually evaluating the boolean condition in the payloads. So since Payload A and C both has a true boolean condition their responses are similar, C and D had a false boolean condition.<br>If the application was not actually evaluating the boolean condition then all four payload should have returned very similar responses. Therefore this indicates that SQL syntax from the payload is executed as part of the SQL query on the server.
+<div class='fpa_check'><div class='fpa_check_title'>False Positive Check Assistance:</div>
+Manually analyze the responses received for the four payloads and confirm if the type of similarity explained above actually exists in them. Try resending the same payloads again but with values in the boolean expression and check if this behaviour is repeated.<br>If you discover that this issue was a false positive then please consider reporting this to <span class='icb'>lava<span class='inv'></span>@<span class='inv'></span>ironwasp<span class='inv'></span>.<span class='inv'></span>org</span>. Your feedback will help improve the accuracy of the scanner.
+</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check explained in this reason section are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='s which evaluates to true. The payload is 1' and 's'='s</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>1'+and+'s'%3d's</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean true condition based payload. This response is equal to the response of the second boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 's'='r which evaluates to false. The payload is 1' and 's'='r</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>1'+and+'s'%3d'r</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the first boolean false condition based payload. This response is equal to the response of the second boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='t which evaluates to true. The payload is 1' and 't'='t</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>1'+and+'t'%3d't</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean true condition based payload. This response is equal to the response of the first boolean true condition payload and different from the responses of the boolean false condition payloads.</span><br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request contains the conditional operator 'and' followed by the SQL condition 't'='r which evaluates to false. The payload is 1' and 't'='r</span><br><br>GET http://localhost/php-acrss/?page=services/view&amp;id=<span class='hlg'>1'+and+'t'%3d'r</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Information about the Response from the Server: </span><br><br><span class='icb'>This response is the result of the second boolean false condition based payload. This response is equal to the response of the first boolean false condition payload and different from the responses of the boolean true condition payloads.</span><br><br>
+</div>
+</div>
+</div>
+<div class='finding' id='finding12'>
+<div class='high_finding_title'>Cross-site Scripting Detected</div>
+<div class='finding_nav_links'><a href='#finding11'>&lt;&lt;&lt;</a><a href='#finding13'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icr'>High</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Active Scanning</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?page=services</span></td></div></tr>
+<tr><div class='affected_parameter'><td><span class='fname'>Affected Parameter:</span></td><td>page</td></div></tr>
+<tr><div class='affected_section'><td><span class='fname'>Parameter Location:</span></td><td>Query</td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Cross-site Scripting was identified in the <span class='ico'><b>page</b></span> parameter of the <span class='ico'><b>Query</b></span> section of the scanned request.</div>
+<div class='trigger_desc'>The relevant parts of the requests/responses pairs associated with the check that discovered this issue are available below.</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xhx' and attribute value 'yhy'. The payload is &lt;h xhx=yhy&gt;</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>%3ch+xhx%3dyhy%3e</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xhx' and attribute value 'yhy'. This was inserted by the payload.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>The scanner reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;h xhx=yhy&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. The payload is a&quot;&gt;&lt;h xex=yey&gt;&lt;b&quot;</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>a%22%3e%3ch+xex%3dyey%3e%3cb%22</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. This was inserted by the payload.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>The scanner reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>a&quot;&gt;&lt;h xex=yey&gt;&lt;b&quot;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. The payload is a'&gt;&lt;h xex=yey&gt;&lt;b'</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>a'%3e%3ch+xex%3dyey%3e%3cb'</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. This was inserted by the payload.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>The scanner reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>a'&gt;&lt;h xex=yey&gt;&lt;b'<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. The payload is a&gt;&lt;h xex=yey&gt;&lt;b</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>a%3e%3ch+xex%3dyey%3e%3cb</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. This was inserted by the payload.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>The scanner reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>a&gt;&lt;h xex=yey&gt;&lt;b<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. The payload is a&quot;&gt;&lt;h xex=yey&gt;</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>a%22%3e%3ch+xex%3dyey%3e</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. This was inserted by the payload.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>The scanner reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>a&quot;&gt;&lt;h xex=yey&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. The payload is a'&gt;&lt;h xex=yey&gt;</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>a'%3e%3ch+xex%3dyey%3e</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. This was inserted by the payload.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>The scanner reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>a'&gt;&lt;h xex=yey&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+<div class='trigger'>
+<span class='ihh'> Request sent by Scanner: </span><br><br><span class='icb'>The payload in this request tries to inject an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. The payload is a&gt;&lt;h xex=yey&gt;</span><br><br>GET http://localhost/php-acrss/admin/?page=<span class='hlg'>a%3e%3ch+xex%3dyey%3e</span> HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Response from the Server: </span><br><br><span class='icb'>This response contains an HTML tag named 'h' with attribute name 'xex' and attribute value 'yey'. This was inserted by the payload.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>The scanner reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>a&gt;&lt;h xex=yey&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding13'>
+<div class='medium_finding_title'>Cookie PHPSESSID missing the HttpOnly flag</div>
+<div class='finding_nav_links'><a href='#finding12'>&lt;&lt;&lt;</a><a href='#finding14'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The HttpOnly flag was missing on the cookie: PHPSESSID. This may allow an attacker to get the cookie information using XSS attacks.</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The value of the cookie is not protected by HttpOnly flag and hence becomes accessible from JavaScript</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:53:06 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br><span class='hlg'>Set-Cookie: PHPSESSID=216mq86r63qo18242cqmohkhl3; path=/</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 277220<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding14'>
+<div class='medium_finding_title'>Directory Listing at : /php-acrss/classes/</div>
+<div class='finding_nav_links'><a href='#finding13'>&lt;&lt;&lt;</a><a href='#finding15'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Medium</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/classes/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>A directory listing vulnerability was found at <span class='hlo'>/php-acrss/classes/</span><br>A directory listing provides an attacker with the complete index of all the resources locatedinside of the directory. The specific risks and consequences vary dependingon which files are listed and accessible.<br><span class='icb'><b>References:</b></span><br>CWE-548: Information Exposure Through Directory Listing</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>Text found in this response body indicates that there is Directory Listing on the server</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:53:10 GMT<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Type: text/html;charset=UTF-8<br><br><span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span>&lt;/a&gt;&lt;/th&gt;&lt;/tr&gt;<br>   &lt;tr&gt;&lt;th colspan=&quot;5&quot;&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/back.gif&quot; alt=&quot;[PARENTDIR]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;/php-acrss/&quot;&gt;<span class='hlg'>Parent Directory&lt;/a&gt;</span>       &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/text.gif&quot; alt=&quot;[TXT]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a hre<span class='icb'>[---- Snipped parts of HTTP body section for brevity ----]</span><br>
+</div>
+</div>
+<div class='finding' id='finding15'>
+<div class='medium_finding_title'>Sensitive Form loaded and submitted Insecurely</div>
+<div class='finding_nav_links'><a href='#finding14'>&lt;&lt;&lt;</a><a href='#finding16'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?page=user</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>Form with sensitive contents, which includes password fields, is loaded and submitted over HTTP</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>This Request was made over HTTP</span><br><br>GET <span class='hlg'>http://</span>localhost/php-acrss/admin/?page=user HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br><span class='ihh'> Interesting part of Analyzed Response: </span><br><br><span class='icb'>The HTML form containing password fields is displayed below. The unnecessary elements from this form have been stripped away for clarity.</span><br><br>IronWASP is not able to automatically highlight the interesting section of the Response, you would have to identify it manually.<br>IronWASP's Passive Analyzer reported the following text as being of interest in this case:<br><br> <span class='icb'>----- START OF INTERESTING TEXT -----</span> <br>&lt;form action=&quot;&quot; id=&quot;manage-user&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;id&quot; value=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot; class=&quot;form-control&quot; value=&quot;&quot; required=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;middlename&quot; id=&quot;middlename&quot; class=&quot;form-control&quot; value=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;lastname&quot; id=&quot;lastname&quot; class=&quot;form-control&quot; value=&quot;&quot; required=&quot;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot; class=&quot;form-control&quot; value=&quot;&quot; required=&quot;&quot; autocomplete=&quot;off&quot;&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; class=&quot;form-control&quot; value=&quot;&quot; autocomplete=&quot;off&quot;&gt;&lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;customFile&quot; name=&quot;img&quot; onchange=&quot;displayImg(this,$(this))&quot; accept=&quot;image/png, image/jpeg&quot;&gt;&lt;/form&gt;<br> <span class='icb'>----- END OF INTERESTING TEXT -----</span> <br><br>
+</div>
+</div>
+<div class='finding' id='finding16'>
+<div class='medium_finding_title'>Password Sent in URL</div>
+<div class='finding_nav_links'><a href='#finding15'>&lt;&lt;&lt;</a><a href='#finding17'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?id=ee&amp;firstname=ee&amp;middlename=ee&amp;lastname=ee&amp;username=ee&amp;password=ee&amp;img=ee</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The application sends the user's password in clear-text over the URL.</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Request: </span><br><br><span class='icb'>Parameter name 'password' was found in the Query, this looks like a field containing password</span><br><br>GET http://localhost/php-acrss/admin/?id=ee&amp;firstname=ee&amp;middlename=ee&amp;lastname=ee&amp;username=ee&amp;<span class='hlg'>password</span>=ee&amp;img=ee HTTP/1.1<br>Host: localhost<br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Cookie: PHPSESSID=q01n2q17kaeqjomj3fp935ara7<br><br><br><br>
+</div>
+</div>
+<div class='finding' id='finding17'>
+<div class='medium_finding_title'>Session Fixation Found</div>
+<div class='finding_nav_links'><a href='#finding16'>&lt;&lt;&lt;</a><a href='#finding18'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='ico'>Medium</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>Low</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?id=ee&amp;firstname=ee&amp;middlename=ee&amp;lastname=ee&amp;username=ee&amp;password=ee&amp;img=ee</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The application does not set a new Session ID in the cookie after what appears to be an authentication attempt by the user. If this was a successful login and the Session IDs are stored in cookies then this application is affected by Session Fixation vulnerability.</div>
+<div class='trigger'>
+
+</div>
+</div>
+<div class='finding' id='finding18'>
+<div class='low_finding_title'>Server leaks version number</div>
+<div class='finding_nav_links'><a href='#finding17'>&lt;&lt;&lt;</a><a href='#finding19'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server's banner contains the version number of the server - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4. The version number found is 2.4.56</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br><span class='icb'>The Server header of this Response indicates the server version as 2.4.56</span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:53:06 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 277220<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding19'>
+<div class='low_finding_title'>AutoComplete Enabled on Password Fields</div>
+<div class='finding_nav_links'><a href='#finding18'>&lt;&lt;&lt;</a><a href='#finding20'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</td><td></span>Vulnerability</td></div></tr>
+<tr><div class='severity'><td><span class='fname'>Severity:</span></td><td><span class='icy'>Low</span></td></div></tr>
+<tr><div class='confidence'><td><span class='fname'>Confidence:</span></td><td>High</td></div>
+</tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/admin/?page=user</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>AutoComplete feature has not been disabled on the form/fields that accept Passwords from users</div>
+<div class='trigger'>
+<span class='ihh'> Information about the Analyzed Response: </span><br><br><span class='icb'>This response contains INPUT elements whose type attribute is password but their autocomplete attribute is not set to 'off'</span><br><br>
+</div>
+</div>
+<div class='finding' id='finding20'>
+<div class='info_finding_title'>Runs on Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='finding_nav_links'><a href='#finding19'>&lt;&lt;&lt;</a><a href='#finding21'>&gt;&gt;&gt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The Web Server returned this banner in its response headers - Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:53:06 GMT<br><span class='hlg'>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 277220<br><br><br>
+</div>
+</div>
+<div class='finding' id='finding21'>
+<div class='info_finding_title'>Technologies identified on Server</div>
+<div class='finding_nav_links'><a href='#finding20'>&lt;&lt;&lt;</a></div>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='type'><td><span class='fname'>Type:</span></td><td><span class='icb'>Information</span></td></div></tr>
+<tr><div class='type'><td><span class='fname'>Found By:</span></td><td>Passive Analysis</td></div></tr>
+</table>
+<br>
+<table cellpadding='2' cellspacing='2'>
+<tr><div class='affected_host'><td><span class='fname'>Affected Site:</span></td><td>http://localhost/</td></div></tr>
+<tr><div class='affected_url'><td><span class='fname'>Affected Url:</span></td><td><span class='affected_url'>/php-acrss/</span></td></div></tr>
+</table>
+<div class='desc'><div class='desc_title'>Description:</div>The server makes use of the following technologies:<br> - PHP/8.2.4</div>
+<div class='trigger'>
+<span class='ihh'> Analyzed Response: </span><br><br>HTTP/1.1 200 OK<br>Date: Tue, 17 Oct 2023 12:53:06 GMT<br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t <span class='hlg'>PHP/8.2.4</span><br>X-Powered-By: <span class='hlg'>PHP/8.2.4</span><br><span class='icb'>[---- Snipped parts of HTTP headers section for brevity ----]</span><br>Content-Length: 277220<br><br><br>
+</div>
+</div>
+</div>
+
+<div id='report_footer'>
+    This report was generated by IronWASP's Reporting Engine on Tuesday, October 17, 2023 at 6:31:04 PM
+</div>
+
+</body></html>
+
